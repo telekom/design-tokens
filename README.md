@@ -72,7 +72,7 @@ Our commitment to open source means that we are enabling - even encouraging - al
 
 # Licensing
 
-Copyright (c) 2021 Egor Kirpichev and contributors, Deutsche Telekom AG
+Copyright (c) 2021 Lukas Oppermann and contributors, Deutsche Telekom AG
 
 Licensed under the **Mozilla Public License 2.0 (MPL-2.0)** (the "License"); you may not use this file except in compliance with the License.
 

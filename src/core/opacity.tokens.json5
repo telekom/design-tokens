@@ -1,0 +1,11 @@
+{
+  "core": {
+    opacity: {
+      lowest: 0.25,
+      low: 0.35,
+      medium: 0.5,
+      high: 0.75,
+      highest: 0.85
+    }
+  }
+}

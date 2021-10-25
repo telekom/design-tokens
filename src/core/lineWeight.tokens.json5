@@ -1,0 +1,18 @@
+{
+  "core": {
+    lineWeight: {
+      sm: {
+        value: 1,
+        type: "dimension"
+      },
+      md: {
+        value: 2,
+        type: "dimension"
+      },
+      lg: {
+        value: 4,
+        type: "dimension"
+      }
+    }
+  }
+}
