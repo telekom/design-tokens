@@ -1,0 +1,22 @@
+{
+  "name": "@telekom/design-tokens",
+  "version": "1.0.0",
+  "description": "TODO: update below statement to fit design token's use case, but preserve the hint that it contains our corporate design",
+  "main": "index.js",
+  "scripts": {
+    "build": "style-dictionary build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/telekom/design-tokens.git"
+  },
+  "author": "",
+  "license": "MPL-2.0",
+  "bugs": {
+    "url": "https://github.com/telekom/design-tokens/issues"
+  },
+  "homepage": "https://github.com/telekom/design-tokens#readme",
+  "devDependencies": {
+    "style-dictionary": "^3.0.3"
+  }
+}
