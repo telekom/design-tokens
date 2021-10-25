@@ -1,41 +1,124 @@
+{
 // This is to plan out the desired output
 // top level should be light / dark for colors & shadows
 // - no prefix
 // - no type / category
-"light": {
-  // deep nesting for folder structure
-  "Text & Icon": {
-    "Text Standard": {
-      "value": "#000000",
-      "type": "color"
+  "light": {
+    // deep nesting for folder structure
+    "Text & Icon": {
+      "Text Standard": {
+        "value": "#000000",
+        "type": "color"
+      },
+      // ....
     },
-    // ....
-  },
-  "Background": {
-    "comment": "Background colors are used for page, app and component backgrounds",
     "Background": {
-      "value": "{core.color.white.value}",
-      "type": "color"
-    },
-    "Background Subtle": {
-      "value": "#fcfcfc",
-      "type": "color"
-    }
-  },
-  "UI": {
-    "comment": "UI colors are used to create UI elements like dividers, checkboxes, buttons, etc.",
-    "Subtle": {
-      "UI Subtle": {
+      "comment": "Background colors are used for page, app and component backgrounds",
+      "Background": {
         "value": "{core.color.white.value}",
         "type": "color"
       },
-      "UI Subtle hovered": {
+      "Background Subtle": {
         "value": "#fcfcfc",
         "type": "color"
+      }
+    },
+    "UI": {
+      "comment": "UI colors are used to create UI elements like dividers, checkboxes, buttons, etc.",
+      "Subtle": {
+        "UI Subtle": {
+          "value": "{core.color.white.value}",
+          "type": "color"
+        },
+        "UI Subtle hovered": {
+          "value": "#fcfcfc",
+          "type": "color"
+        },
+        "UI Subtle pressed": {
+          "value": "#fcfcfc",
+          "type": "color"
+        }
+      }
+    }
+  },
+  "Body text": {
+    "Body-long Bold": {
+      "value": {
+        "fontFamily": "TeleNeo",
+        "fontWeight": "Bold",
+        "lineHeight": 24,
+        "fontSize": 16,
+        "letterSpacing": 0,
+        "paragraphSpacing": 0
       },
-      "UI Subtle pressed": {
-        "value": "#fcfcfc",
-        "type": "color"
+      "type": "typography"
+    }
+  },
+  {
+    xs: {
+      "value": 1,
+      "type": "borderRadius"
+    },
+    sm: {
+      "value": 2,
+      "type": "borderRadius"
+    },
+    md: {
+      "value": 4,
+      "type": "borderRadius"
+    },
+    lg: {
+      "value": 8,
+      "type": "borderRadius"
+    },
+  },
+  {
+    lowest: {
+      "value": 0.25,
+      "type": "opacity"
+    },
+    low: {
+      "value": 0.35,
+      "type": "opacity"
+    },
+    medium: {
+      "value": 0.5,
+      "type": "opacity"
+    },
+    high: {
+      "value": 0.75,
+      "type": "opacity"
+    },
+    highest: {
+      "value": 0.85,
+      "type": "opacity"
+    },
+    lineWeight: {
+      sm: {
+        value: 1,
+        type: "sizing"
+      },
+      md: {
+        value: 2,
+        type: "sizing"
+      },
+      lg: {
+        value: 4,
+        type: "sizing"
+      }
+    },
+    lineWeight: {
+      sm: {
+        value: 1,
+        type: "borderWidth"
+      },
+      md: {
+        value: 2,
+        type: "borderWidth"
+      },
+      lg: {
+        value: 4,
+        type: "borderWidth"
       }
     }
   }
