@@ -5,6 +5,10 @@
         "value": "#ffffff",
         "type": "color"
       },
+      "black": {
+        "value": "#000000",
+        "type": "color"
+      },
       "magenta": {
         "brand": {
           "value": "#e20074",
