@@ -1,0 +1,42 @@
+// This is to plan out the desired output
+// top level should be light / dark for colors & shadows
+// - no prefix
+// - no type / category
+"light": {
+  // deep nesting for folder structure
+  "Text & Icon": {
+    "Text Standard": {
+      "value": "#000000",
+      "type": "color"
+    },
+    // ....
+  },
+  "Background": {
+    "comment": "Background colors are used for page, app and component backgrounds",
+    "Background": {
+      "value": "{core.color.white.value}",
+      "type": "color"
+    },
+    "Background Subtle": {
+      "value": "#fcfcfc",
+      "type": "color"
+    }
+  },
+  "UI": {
+    "comment": "UI colors are used to create UI elements like dividers, checkboxes, buttons, etc.",
+    "Subtle": {
+      "UI Subtle": {
+        "value": "{core.color.white.value}",
+        "type": "color"
+      },
+      "UI Subtle hovered": {
+        "value": "#fcfcfc",
+        "type": "color"
+      },
+      "UI Subtle pressed": {
+        "value": "#fcfcfc",
+        "type": "color"
+      }
+    }
+  }
+}
