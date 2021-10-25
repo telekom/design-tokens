@@ -121,5 +121,11 @@
         type: "borderWidth"
       }
     }
+  },
+  {
+    "between related": {
+      "value": 16,
+      "type": "spacing"
+    }
   }
 }
