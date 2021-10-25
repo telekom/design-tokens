@@ -4,7 +4,7 @@
   "description": "TODO: update below statement to fit design token's use case, but preserve the hint that it contains our corporate design",
   "main": "index.js",
   "scripts": {
-    "build": "style-dictionary build"
+    "start": "node build.js"
   },
   "repository": {
     "type": "git",

@@ -1,0 +1,28 @@
+{
+  "core": {
+    motion: {
+      duration: {
+        immediate: {
+          value: 100,
+          type: "time"
+        },
+        fast: {
+          value: 200,
+          type: "time"
+        },
+        slower: {
+          value: 600,
+          type: "time"
+        },
+        deliberate: {
+          value: 800,
+          type: "time"
+        }
+      },
+      easing: {
+        standard: 'cubic-bezier(0.42, 0, 0.58, 1)',
+        enter: 'cubic-bezier(0.390, 0.575, 0.565, 1)',
+      },
+    }
+  }
+}
