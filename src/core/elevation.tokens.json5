@@ -1,0 +1,60 @@
+{
+  "core": {
+    elevation: {
+      'level 1': {
+        value: [{
+          x: 0,
+          y: 2,
+          blur: 8,
+          spread: 0,
+          color: '#0000001a',
+          type: 'dropShadow'
+        }, {
+          x: 0,
+          y: 1,
+          blur: 2,
+          spread: 0,
+          color: '#0000001a',
+          type: 'dropShadow'
+        }],
+        type: "shadow"
+      },
+      'level 2': {
+        value: [{
+          x: 0,
+          y: 4,
+          blur: 16,
+          spread: 0,
+          color: '#0000001a',
+          type: 'dropShadow'
+        }, {
+          x: 0,
+          y: 2,
+          blur: 4,
+          spread: 0,
+          color: '#0000001a',
+          type: 'dropShadow'
+        }],
+        type: "shadow"
+      },
+      'level 3': {
+        value: [{
+          x: 0,
+          y: 6,
+          blur: 24,
+          spread: 0,
+          color: '#0000001a',
+          type: 'dropShadow'
+        }, {
+          x: 0,
+          y: 3,
+          blur: 6,
+          spread: 0,
+          color: '#0000001a',
+          type: 'dropShadow'
+        }],
+        type: "shadow"
+      }
+    }
+  }
+}
