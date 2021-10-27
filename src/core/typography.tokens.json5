@@ -1,7 +1,7 @@
 {
   core: {
     typography: {
-      fontFamily: {
+      "font-family": {
         sans: {
           value: 'TeleNeoWeb, sans-serif',
           type: 'font'
@@ -11,7 +11,7 @@
           type: 'font'
         }
       },
-      fontWeight: {
+      "font-weight": {
         thin: {
           value: 200,
           type: 'number'
@@ -33,7 +33,7 @@
           type: 'number'
         }
       },
-      fontSize: {
+      "font-size": {
         'small-1': {
           value: '10px',
           type: 'dimension'
@@ -71,7 +71,7 @@
           type: 'dimension'
         }
       },
-      lineSpacing: {
+      "line-spacing": {
         none: {
           value: 1.0,
           type: 'number'
@@ -93,7 +93,7 @@
           type: 'number'
         }
       },
-      letterSpacing: {
+      "letter-spacing": {
         standard: {
           value: 0,
           type: 'number'

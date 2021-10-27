@@ -1,43 +1,43 @@
 {
   core: {
-    'z index': {
-      'level 1': {
+    'z-index': {
+      'level-1': {
         value: 10,
         type: 'number'
       },
-      'level 2': {
+      'level-2': {
         value: 20,
         type: 'number'
       },
-      'level 3': {
+      'level-3': {
         value: 30,
         type: 'number'
       },
-      'level 4': {
+      'level-4': {
         value: 40,
         type: 'number'
       },
-      'level 5': {
+      'level-5': {
         value: 50,
         type: 'number'
       },
-      'level 6': {
+      'level-6': {
         value: 60,
         type: 'number'
       },
-      'level 7': {
+      'level-7': {
         value: 70,
         type: 'number'
       },
-      'level 8': {
+      'level-8': {
         value: 80,
         type: 'number'
       },
-      'level 9': {
+      'level-9': {
         value: 90,
         type: 'number'
       },
-      'level 10': {
+      'level-10': {
         value: 100,
         type: 'number'
       }
