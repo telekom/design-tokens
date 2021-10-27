@@ -1,38 +1,59 @@
 {
-  "core": {
-    "typography": {
-      "fontFamily": {
-        "sans": "TeleNeoWeb, sans-serif",
-        "mono": "monospace"
+  core: {
+    typography: {
+      fontFamily: {
+        sans: {
+          value: 'TeleNeoWeb, sans-serif',
+          type: 'font'
+        },
+        mono: {
+          value: 'monospace',
+          type: 'font'
+        }
       },
       fontWeight: {
-        thin: 200,
-        regular: 400,
-        medium: 500,
-        bold: 700,
-        extrabold: 800,
+        thin: {
+          value: 200,
+          type: 'number'
+        },
+        regular: {
+          value: 400,
+          type: 'number'
+        },
+        medium: {
+          value: 500,
+          type: 'number'
+        },
+        bold: {
+          value: 700,
+          type: 'number'
+        },
+        extrabold: {
+          value: 800,
+          type: 'number'
+        }
       },
       fontSize: {
         tiny: {
           value: 10,
-          type: "dimension"
+          type: 'dimension'
         },
         smaller: 12,
         small: 14,
         standard: 16,
-        "20": 20,
-        "24": 24,
-        "32": 32,
-        "40": 40,
-        "56": 56,
+        '20': 20,
+        '24': 24,
+        '32': 32,
+        '40': 40,
+        '56': 56
       },
       lineHeight: {
         xs: 1.14,
-        sm: 1.20,
+        sm: 1.2,
         md: 1.25,
         lg: 1.33,
-        xl: 1.50,
+        xl: 1.5
       }
-    },
+    }
   }
 }
