@@ -13,7 +13,29 @@
 
     },
     radius: {
-
+      "small": {
+        value: '{core.radius.sm}',
+        type: "dimension"
+      },
+      "standard": {
+        comment: "Used for our main ui elements like buttons, etc.",
+        value: '{core.radius.md}',
+        type: "dimension"
+      },
+      "large": {
+        value: '{core.radius.lg}',
+        type: "dimension"
+      },
+      "pill": {
+        comment: "Used for pill-shaped ui elements",
+        value: '{core.radius.pill}',
+        type: "dimension"
+      },
+      "circle": {
+        comment: "Used for ui elements like radio buttons or things like avatars",
+        value: '{core.radius.circle}',
+        type: "percentage"
+      }
     },
     opacity: {
 
