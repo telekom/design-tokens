@@ -3,19 +3,19 @@
     motion: {
       duration: {
         immediate: {
-          value: 100,
+          value: '100ms',
           type: "time"
         },
         fast: {
-          value: 200,
+          value: '200ms',
           type: "time"
         },
         slower: {
-          value: 600,
+          value: '600ms',
           type: "time"
         },
         deliberate: {
-          value: 800,
+          value: '800ms',
           type: "time"
         }
       },
