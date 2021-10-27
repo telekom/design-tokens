@@ -34,25 +34,70 @@
         }
       },
       fontSize: {
-        tiny: {
-          value: 10,
+        'small-1': {
+          value: '10px',
           type: 'dimension'
         },
-        smaller: 12,
-        small: 14,
-        standard: 16,
-        '20': 20,
-        '24': 24,
-        '32': 32,
-        '40': 40,
-        '56': 56
+        'small-2': {
+          value: '12px',
+          type: 'dimension'
+        },
+        'small-3': {
+          value: '14px',
+          type: 'dimension'
+        },
+        'medium-1': {
+          value: '16px',
+          type: 'dimension'
+        },
+        'medium-2': {
+          value: '20px',
+          type: 'dimension'
+        },
+        'medium-3': {
+          value: '24px',
+          type: 'dimension'
+        },
+        'large-1': {
+          value: '32px',
+          type: 'dimension'
+        },
+        'large-2': {
+          value: '40px',
+          type: 'dimension'
+        },
+        'large-3': {
+          value: '56px',
+          type: 'dimension'
+        }
       },
-      lineHeight: {
-        xs: 1.14,
-        sm: 1.2,
-        md: 1.25,
-        lg: 1.33,
-        xl: 1.5
+      lineSpacing: {
+        none: {
+          value: 1.0,
+          type: 'number'
+        },
+        xs: {
+          value: 1.15,
+          type: 'number'
+        },
+        sm: {
+          value: 1.2,
+          type: 'number'
+        },
+        md: {
+          value: 1.35,
+          type: 'number'
+        },
+        lg: {
+          value: 1.5,
+          type: 'number'
+        }
+      },
+      letterSpacing: {
+        standard: {
+          value: 0,
+          type: 'number'
+        }
       }
     }
   }
