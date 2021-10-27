@@ -46,32 +46,28 @@
           value: '14px',
           type: 'dimension'
         },
-        "standard": {
+        "medium-1": {
           value: '16px',
           type: 'dimension'
         },
-        "large-1": {
+        "medium-2": {
           value: '20px',
           type: 'dimension'
         },
-        "large-2": {
+        "medium-3": {
           value: '24px',
           type: 'dimension'
         },
-        "large-3": {
+        "large-1": {
           value: '32px',
           type: 'dimension'
         },
-        "extra-large-1": {
+        "large-2": {
           value: '40px',
           type: 'dimension'
         },
-        'extra-large-2': {
+        'large-3': {
           value: '56px',
-          type: 'dimension'
-        },
-        'extra-large-3': {
-          value: '72px',
           type: 'dimension'
         }
       },
