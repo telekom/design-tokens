@@ -1,7 +1,7 @@
 {
   core: {
     elevation: {
-      'level 1': {
+      'level-1': {
         value: [
           {
             x: 0,
@@ -22,7 +22,7 @@
         ],
         type: 'shadow'
       },
-      'level 2': {
+      'level-2': {
         value: [
           {
             x: 0,
@@ -43,7 +43,7 @@
         ],
         type: 'shadow'
       },
-      'level 3': {
+      'level-3': {
         value: [
           {
             x: 0,
@@ -64,7 +64,7 @@
         ],
         type: 'shadow'
       },
-      'level 4': {
+      'level-4': {
         value: [
           {
             x: 0,
@@ -85,7 +85,7 @@
         ],
         type: 'shadow'
       },
-      'level 5': {
+      'level-5': {
         value: [
           {
             x: 0,
@@ -106,7 +106,7 @@
         ],
         type: 'shadow'
       },
-      'level 6': {
+      'level-6': {
         value: [
           {
             x: 0,
@@ -128,7 +128,7 @@
         type: 'shadow'
       }
     },
-    'level 7': {
+    'level-7': {
         value: [
           {
             x: 0,
@@ -149,7 +149,7 @@
         ],
         type: 'shadow'
       },
-      'level 8': {
+      'level-8': {
         value: [
           {
             x: 0,
@@ -170,7 +170,7 @@
         ],
         type: 'shadow'
       },
-      'level 9': {
+      'level-9': {
         value: [
           {
             x: 0,
@@ -191,7 +191,7 @@
         ],
         type: 'shadow'
       },
-      'level 10': {
+      'level-10': {
         value: [
           {
             x: 0,
