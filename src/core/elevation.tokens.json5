@@ -126,9 +126,8 @@
           }
         ],
         type: 'shadow'
-      }
-    },
-    'level-7': {
+      },
+      'level-7': {
         value: [
           {
             x: 0,
