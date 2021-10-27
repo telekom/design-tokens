@@ -1,10 +1,26 @@
 {
   "core": {
     radius: {
-      xs: 1,
-      sm: 2,
-      md: 4,
-      lg: 8,
+      sm: {
+        value: 4,
+        type: "dimension"
+      },
+      md: {
+        value: 8,
+        type: "dimension"
+      },
+      lg: {
+        value: 12,
+        type: "dimension"
+      },
+      circle: {
+        value: '50%',
+        type: "percentage"
+      },
+      pill: {
+        value: 999,
+        type: "dimension"
+      },
     }
   }
 }
