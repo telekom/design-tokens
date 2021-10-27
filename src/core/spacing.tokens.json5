@@ -2,51 +2,51 @@
   "core": {
     spacing: {
       "small-1": {
-        value: 1,
+        value: '1px',
         type: "dimension"
       },
       "small-2": {
-        value: 2,
+        value: '2px',
         type: "dimension"
       },
       "small-3": {
-        value: 4,
+        value: '4px',
         type: "dimension"
       },
       "medium-1": {
-        value: 8,
+        value: '8px',
         type: "dimension"
       },
       "medium-2": {
-        value: 12,
+        value: '12px',
         type: "dimension"
       },
       "medium-3": {
-        value: 16,
+        value: '16px',
         type: "dimension"
       },
       "large-1": {
-        value: 24,
+        value: '24px',
         type: "dimension"
       },
       "large-2": {
-        value: 32,
+        value: '32px',
         type: "dimension"
       },
       "large-3": {
-        value: 40,
+        value: '40px',
         type: "dimension"
       },
       "extra-large-1": {
-        value: 48,
+        value: '48px',
         type: "dimension"
       },
       "extra-large-2": {
-        value: 64,
+        value: '64px',
         type: "dimension"
       },
       "extra-large-3": {
-        value: 80,
+        value: '80px',
         type: "dimension"
       }
     }

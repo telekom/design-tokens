@@ -2,15 +2,15 @@
   "core": {
     lineWeight: {
       sm: {
-        value: 1,
+        value: '1px',
         type: "dimension"
       },
       md: {
-        value: 2,
+        value: '2px',
         type: "dimension"
       },
       lg: {
-        value: 4,
+        value: '4px',
         type: "dimension"
       }
     }
