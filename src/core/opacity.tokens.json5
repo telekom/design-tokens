@@ -1,12 +1,30 @@
 {
   "core": {
     opacity: {
-      none: 0,
-      low: 0.35,
-      medium: 0.5,
-      normal: 0.75,
-      high: 0.85,
-      full: 1
+      none: {
+        type: 'number',
+        value: 0
+      },
+      low: {
+        type: 'number',
+        value: 0.35
+      },
+      medium: {
+        type: 'number',
+        value: 0.5
+      },
+      normal: {
+        type: 'number',
+        value: 0.75
+      },
+      high: {
+        type: 'number',
+        value: 0.85
+      },
+      full: {
+        type: 'number',
+        value: 1
+      }
     }
   }
 }
