@@ -1,6 +1,6 @@
 {
   "semantic": {
-    "textStyle": {
+    "text-style": {
       
     }
     "typography": {
@@ -9,7 +9,7 @@
     "spacing": {
 
     },
-    lineWeight: {
+    "line-weight": {
 
     },
     radius: {
@@ -21,7 +21,7 @@
     motion: {
 
     },
-    zIndex: {
+    "z-index": {
 
     }
   }
