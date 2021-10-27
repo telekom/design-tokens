@@ -1,18 +1,54 @@
 {
   "core": {
     spacing: {
-      // 1: 1,
-      // 2: 2,
-      // 4: 4,
-      // 8: 8,
-      // 12: 12,
-      // 16: 16,
-      // 24: 24,
-      // 32: 32,
-      // 40: 40,
-      // 48: 48,
-      // 64: 64,
-      // 80: 80,
+      "small-1": {
+        value: 1,
+        type: "dimension"
+      },
+      "small-2": {
+        value: 2,
+        type: "dimension"
+      },
+      "small-3": {
+        value: 4,
+        type: "dimension"
+      },
+      "medium-1": {
+        value: 8,
+        type: "dimension"
+      },
+      "medium-2": {
+        value: 12,
+        type: "dimension"
+      },
+      "medium-3": {
+        value: 16,
+        type: "dimension"
+      },
+      "large-1": {
+        value: 24,
+        type: "dimension"
+      },
+      "large-2": {
+        value: 32,
+        type: "dimension"
+      },
+      "large-3": {
+        value: 40,
+        type: "dimension"
+      },
+      "extra-large-1": {
+        value: 48,
+        type: "dimension"
+      },
+      "extra-large-2": {
+        value: 64,
+        type: "dimension"
+      },
+      "extra-large-3": {
+        value: 80,
+        type: "dimension"
+      }
     }
   }
 }
