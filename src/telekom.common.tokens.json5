@@ -1,52 +1,38 @@
 {
-  "semantic": {
-    "text-style": {
-      
-    },
-    "typography": {
-      
-    },
-    "spacing": {
-
-    },
-    "line-weight": {
-
-    },
+  semantic: {
+    'text-style': {},
+    typography: {},
+    spacing: {},
+    'line-weight': {},
     radius: {
-      "small": {
-        comment: "Used for small elements like checkboxes, etc.",
+      small: {
+        comment: 'Used for small elements like checkboxes, etc.',
         value: '{core.radius.sm}',
-        type: "dimension"
+        type: 'dimension'
       },
-      "standard": {
-        comment: "Used for our main ui elements like buttons, etc.",
+      standard: {
+        comment: 'Used for our main ui elements like buttons, etc.',
         value: '{core.radius.md}',
-        type: "dimension"
+        type: 'dimension'
       },
-      "large": {
-        comment: "Used mainly for containers like cards or dialogs",
+      large: {
+        comment: 'Used mainly for containers like cards or dialogs',
         value: '{core.radius.lg}',
-        type: "dimension"
+        type: 'dimension'
       },
-      "pill": {
-        comment: "Used for pill-shaped ui elements",
+      pill: {
+        comment: 'Used for pill-shaped ui elements',
         value: '{core.radius.pill}',
-        type: "dimension"
+        type: 'dimension'
       },
-      "circle": {
-        comment: "Used for ui elements like radio buttons or things like avatars",
+      circle: {
+        comment: 'Used for ui elements like radio buttons or things like avatars',
         value: '{core.radius.circle}',
-        type: "percentage"
+        type: 'percentage'
       }
     },
-    opacity: {
-
-    },
-    motion: {
-
-    },
-    "z-index": {
-
-    }
+    opacity: {},
+    motion: {},
+    'z-index': {}
   }
 }
