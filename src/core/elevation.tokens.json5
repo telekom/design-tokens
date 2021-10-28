@@ -221,8 +221,50 @@
             type: "dropShadow",
           },
         ],
-        type: "shadow",
+        type: 'shadow'
       },
-    },
-  },
+      'level-11': {
+        value: [
+          {
+            x: 0,
+            y: 22,
+            blur: 88,
+            spread: 0,
+            color: '#0000001a',
+            type: 'dropShadow'
+          },
+          {
+            x: 0,
+            y: 11,
+            blur: 22,
+            spread: 0,
+            color: '#0000001a',
+            type: 'dropShadow'
+          }
+        ],
+        type: 'shadow'
+      },
+      'level-12': {
+        value: [
+          {
+            x: 0,
+            y: 24,
+            blur: 96,
+            spread: 0,
+            color: '#0000001a',
+            type: 'dropShadow'
+          },
+          {
+            x: 0,
+            y: 12,
+            blur: 24,
+            spread: 0,
+            color: '#0000001a',
+            type: 'dropShadow'
+          }
+        ],
+        type: 'shadow'
+      }
+    }
+  }
 }
