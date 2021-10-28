@@ -14,6 +14,7 @@
     },
     radius: {
       "small": {
+        comment: "Used for small elements like checkboxes, etc.",
         value: '{core.radius.sm}',
         type: "dimension"
       },
@@ -23,6 +24,7 @@
         type: "dimension"
       },
       "large": {
+        comment: "Used mainly for containers like cards or dialogs",
         value: '{core.radius.lg}',
         type: "dimension"
       },
