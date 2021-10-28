@@ -1,0 +1,30 @@
+{
+  "component": {
+    "button": {
+      "color": {
+        "text": {
+          "idle": {
+            "value": "{color.primary.standard.value}"
+          },
+          "hovered": {
+            "value": "{color.primary.hovered.value}"
+          },
+          "pressed": {
+            "value": "{color.primary.pressed.value}"
+          }
+        },
+        "background": {
+          "idle": {
+            "value": "{color.background.standard.value}"
+          },
+          "hovered": {
+            "value": "{color.background.standard.value}"
+          },
+          "pressed": {
+            "value": "{color.background.standard.value}"
+          }
+        }
+      }
+    }
+  }
+}

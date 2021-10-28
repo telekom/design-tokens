@@ -1,0 +1,20 @@
+{
+  "color": {
+    "text": {
+      "standard": {
+        "value": "{core.color.white.value}"
+      },
+      "inverse": {
+        "value": "{core.color.black.value}"
+      },
+      "primary": {
+        "value": "{core.color.magenta.base.value}"
+      }
+    },
+    "background": {
+      "standard": {
+        "value": "{core.color.black.value}"
+      }
+    }
+  }
+}

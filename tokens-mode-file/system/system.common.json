@@ -1,0 +1,18 @@
+{
+  "motion": {
+    "duration": {
+      "immediate": {
+        "value": "{core.motion.duration.100.value}"
+      },
+      "fast": {
+        "value": "{core.motion.duration.200.value}"
+      },
+      "slower": {
+        "value": "{core.motion.duration.600.value}"
+      },
+      "deliberate": {
+        "value": "{core.motion.duration.800.value}"
+      }
+    }
+  }
+}
