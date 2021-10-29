@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "start": "node script/build.js",
-    "build-mode:file": "rimraf tokens-mode-file/build && node tokens-mode-file/build.js",
+    "build-mode:file": "rimraf temp/tokens-mode-file/build && node temp/tokens-mode-file/build.js",
     "build-mode:attr": "TODO",
-    "test-mode:file": "servor tokens-mode-file test.html --reload"
+    "test-mode:file": "servor temp/tokens-mode-file test.html --reload"
   },
   "repository": {
     "type": "git",

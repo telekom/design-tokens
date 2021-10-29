@@ -1,14 +1,15 @@
 const StyleDictionary = require('style-dictionary')
 
 const PREFIX = 'scl'
-const CSS_OUTPUT_PATH = 'tokens-mode-file/build/'
+const CSS_OUTPUT_PATH = 'temp/tokens-mode-file/build/'
+const SOURCE_PATH = 'temp/tokens-mode-file/'
 
 /**
- * Testing handling light and dark modes with file names (foo.light.json)
+ * Testing handling light and dark modes with filenames (foo.light.json)
  * 
  * for CSS
  * -------
- * This builds a variables.css in light mode, including core tokens
+ * Builds a variables.css in light mode, including core tokens, 
  * and a variables.dark.css with only the dark mode overwrites.
  * 
  * for Sketch
@@ -23,11 +24,11 @@ const CSS_OUTPUT_PATH = 'tokens-mode-file/build/'
 // CSS light mode (default)
 StyleDictionary.extend({
   source: [
-    'tokens-mode-file/core/**.json',
-    'tokens-mode-file/system/system.common.json',
-    `tokens-mode-file/system/system.light.json`,
-    'tokens-mode-file/components/**/*.common.json',
-    'tokens-mode-file/components/**/*.light.json'
+    SOURCE_PATH + 'core/**.json',
+    SOURCE_PATH + 'system/system.common.json',
+    SOURCE_PATH + `system/system.light.json`,
+    SOURCE_PATH + 'components/**/*.common.json',
+    SOURCE_PATH + 'components/**/*.light.json'
   ],
   platforms: {
     css: {
@@ -49,13 +50,13 @@ StyleDictionary.extend({
 // CSS dark mode
 StyleDictionary.extend({
   include: [
-    'tokens-mode-file/system/system.light.json',
+    SOURCE_PATH + 'system/system.light.json',
   ],
   source: [
-    'tokens-mode-file/core/**.json',
-    'tokens-mode-file/system/system.common.json',
-    `tokens-mode-file/system/system.dark.json`,
-    'tokens-mode-file/components/**/*.dark.json'
+    SOURCE_PATH + 'core/**.json',
+    SOURCE_PATH + 'system/system.common.json',
+    SOURCE_PATH + `system/system.dark.json`,
+    SOURCE_PATH + 'components/**/*.dark.json'
   ],
   platforms: {
     css: {
