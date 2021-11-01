@@ -2,7 +2,7 @@
 
 - [ ] TODO: update below statement to fit design token's use case, but preserve the hint that it contains our corporate design
 
-Telekom design tokens are the design value source of truth for telekom products. By default, design tokens is built to align with our corporate brand and design but allows for easy customization to fit your particular product. 
+Telekom design tokens are the design value source of truth for telekom products. By default, design tokens is built to align with our corporate brand and design but allows for easy customization to fit your particular product.
 
 - [ ] TODO: about/description
 
@@ -46,17 +46,36 @@ If you want to use the source code, remove the following folders. These folders 
 
 Please note that the use of the Telekom brand and design assets – including but not limited to the logos, the color magenta, the typeface and icons, as well as the footer and header components – are not available for free use and require Deutsche Telekom's express permission for use in commerce.
 
-- [ ] TODO describe how to use the telekom-branded version 
+- [ ] TODO describe how to use the telekom-branded version
 
-### Setup with NPM 
+### Setup with NPM
 
-### Setup with ... 
+### Setup with ...
 
 ### Using the source code directly
 
 Simply clone/download this repository and use the source code as is.
 
 # Contributing
+
+## Conventions
+
+### Scales
+
+A scale is a way of defining related tokens so that it is easy for a user to predict what the next token is and what value a token has.
+
+#### Types of scales
+
+Scales can be of different types, like numerical scales, t-shirt sizes, or other named scales.
+
+!!!!!!!! Explain scales
+
+#### Scales start with 0 / none, end with full
+
+As a convetion all scales that can sensibly start with `0`, `none` or similar should so so.
+Additionally all scale that have a sensible end like `100%` should end there.
+
+This includes things like `percentages` or e.g. shadows where `none` is the beginning of the scale.
 
 ## Code of conduct
 
