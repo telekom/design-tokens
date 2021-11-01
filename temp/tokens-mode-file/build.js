@@ -4,6 +4,13 @@ const PREFIX = 'scl'
 const CSS_OUTPUT_PATH = 'temp/tokens-mode-file/build/'
 const SOURCE_PATH = 'temp/tokens-mode-file/'
 
+StyleDictionary.registerAction({
+  name: 'bundle_css',
+  do: function(dictionary, config) {
+    // TODO
+  }
+})
+
 /**
  * Testing handling light and dark modes with filenames (foo.light.json)
  * 
@@ -74,7 +81,8 @@ StyleDictionary.extend({
       options: {
         outputReferences: true,
         selector: '[data-mode="dark"]'
-      }
+      },
+      actions: ['bundle_css']
     }
   }
 }).buildAllPlatforms()
