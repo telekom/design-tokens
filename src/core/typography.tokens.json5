@@ -1,7 +1,7 @@
 {
   core: {
     typography: {
-      "font-family": {
+      'font-family': {
         sans: {
           value: 'TeleNeoWeb, sans-serif',
           type: 'font'
@@ -11,7 +11,7 @@
           type: 'font'
         }
       },
-      "font-weight": {
+      'font-weight': {
         thin: {
           value: 200,
           type: 'number'
@@ -28,60 +28,85 @@
           value: 700,
           type: 'number'
         },
-        extrabold: {
+        'extra-bold': {
           value: 800,
           type: 'number'
         }
       },
-      "font-size": {
-        'small-1': {
+      'font-scale': {
+        comment: 'Font scale is based on a formular: stepX = fontScale[x - 1] + (parseInt((x - 2) / 4) + 1) * 2; fontScale.push(stepX), where fontScale[0] = 10',
+        '0': {
           value: '10px',
           type: 'dimension'
         },
-        'small-2': {
+        '1': {
           value: '12px',
           type: 'dimension'
         },
-        'small-3': {
+        '2': {
           value: '14px',
           type: 'dimension'
         },
-        'medium-1': {
+        '3': {
           value: '16px',
           type: 'dimension'
         },
-        'medium-2': {
+        '4': {
+          value: '18px',
+          type: 'dimension'
+        },
+        '5': {
           value: '20px',
           type: 'dimension'
         },
-        'medium-3': {
+        '6': {
           value: '24px',
           type: 'dimension'
         },
-        'large-1': {
+        '7': {
+          value: '28px',
+          type: 'dimension'
+        },
+        '8': {
           value: '32px',
           type: 'dimension'
         },
-        'large-2': {
-          value: '40px',
+        '9': {
+          value: '36px',
           type: 'dimension'
         },
-        'large-3': {
-          value: '56px',
+        '10': {
+          value: '42px',
+          type: 'dimension'
+        },
+        '11': {
+          value: '48px',
+          type: 'dimension'
+        },
+        '12': {
+          value: '54px',
+          type: 'dimension'
+        },
+        '13': {
+          value: '60px',
+          type: 'dimension'
+        },
+        '14': {
+          value: '68px',
+          type: 'dimension'
+        },
+        '15': {
+          value: '76px',
           type: 'dimension'
         }
       },
-      "line-spacing": {
-        none: {
-          value: 1.0,
-          type: 'number'
-        },
+      'line-spacing': {
         xs: {
           value: 1.15,
           type: 'number'
         },
         sm: {
-          value: 1.2,
+          value: 1.25,
           type: 'number'
         },
         md: {
@@ -93,8 +118,8 @@
           type: 'number'
         }
       },
-      "letter-spacing": {
-        standard: {
+      'letter-spacing': {
+        none: {
           value: 0,
           type: 'number'
         }
