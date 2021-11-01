@@ -1,6 +1,18 @@
 {
   core: {
     elevation: {
+      'level-0': {
+        value: [
+          {
+            x: 0,
+            y: 0,
+            blur: 0,
+            spread: 0,
+            color: '#00000000',
+            type: 'dropShadow'
+          }
+        ]
+      },
       'level-1': {
         value: [
           {
