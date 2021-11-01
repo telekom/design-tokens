@@ -1,6 +1,10 @@
 {
   core: {
     'z-index': {
+      'level-0': {
+        value: 0,
+        type: 'number'
+      },
       'level-1': {
         value: 10,
         type: 'number'

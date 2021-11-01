@@ -1,28 +1,32 @@
 {
-  "core": {
+  core: {
     radius: {
+      none: {
+        value: '0px',
+        type: 'dimension'
+      },
       sm: {
         value: '4px',
-        type: "dimension"
+        type: 'dimension'
       },
       md: {
         value: '8px',
-        type: "dimension"
+        type: 'dimension'
       },
       lg: {
         value: '12px',
-        type: "dimension"
+        type: 'dimension'
       },
       circle: {
-        comment: "Used for ui elements like radio buttons or things like avatars",
+        comment: 'Used for ui elements like radio buttons or things like avatars',
         value: '50%',
-        type: "percentage"
+        type: 'percentage'
       },
       pill: {
-        comment: "Used for pill-shaped ui elements",
+        comment: 'Used for pill-shaped ui elements',
         value: '999px',
-        type: "dimension"
-      },
+        type: 'dimension'
+      }
     }
   }
 }
