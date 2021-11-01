@@ -1,53 +1,57 @@
 {
-  "core": {
+  core: {
     spacing: {
-      "small-1": {
+      none: {
+        value: '0px',
+        type: 'dimension'
+      },
+      'small-1': {
         value: '1px',
-        type: "dimension"
+        type: 'dimension'
       },
-      "small-2": {
+      'small-2': {
         value: '2px',
-        type: "dimension"
+        type: 'dimension'
       },
-      "small-3": {
+      'small-3': {
         value: '4px',
-        type: "dimension"
+        type: 'dimension'
       },
-      "medium-1": {
+      'medium-1': {
         value: '8px',
-        type: "dimension"
+        type: 'dimension'
       },
-      "medium-2": {
+      'medium-2': {
         value: '12px',
-        type: "dimension"
+        type: 'dimension'
       },
-      "medium-3": {
+      'medium-3': {
         value: '16px',
-        type: "dimension"
+        type: 'dimension'
       },
-      "large-1": {
+      'large-1': {
         value: '24px',
-        type: "dimension"
+        type: 'dimension'
       },
-      "large-2": {
+      'large-2': {
         value: '32px',
-        type: "dimension"
+        type: 'dimension'
       },
-      "large-3": {
+      'large-3': {
         value: '40px',
-        type: "dimension"
+        type: 'dimension'
       },
-      "extra-large-1": {
+      'extra-large-1': {
         value: '48px',
-        type: "dimension"
+        type: 'dimension'
       },
-      "extra-large-2": {
+      'extra-large-2': {
         value: '64px',
-        type: "dimension"
+        type: 'dimension'
       },
-      "extra-large-3": {
+      'extra-large-3': {
         value: '80px',
-        type: "dimension"
+        type: 'dimension'
       }
     }
   }
