@@ -1,0 +1,24 @@
+{
+  "core": {
+    "motion": {
+      "duration": {
+        "100": {
+          "value": "100ms",
+          "type": "time"
+        },
+        "200": {
+          "value": "200ms",
+          "type": "time"
+        },
+        "600": {
+          "value": "600ms",
+          "type": "time"
+        },
+        "800": {
+          "value": "800ms",
+          "type": "time"
+        }
+      }
+    }
+  }
+}
