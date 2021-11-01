@@ -48,7 +48,7 @@ StyleDictionary.extend({
       }],
       options: {
         outputReferences: true,
-        selector: ':root'
+        selector: ':root, [data-mode="light"]'
       }
     }
   }
