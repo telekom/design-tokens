@@ -1,8 +1,8 @@
 const StyleDictionary = require('style-dictionary')
 
 const PREFIX = 'scl'
-const CSS_OUTPUT_PATH = 'temp/tokens-attr-file/build/'
-const SOURCE_PATH = 'temp/tokens-attr-file/'
+const CSS_OUTPUT_PATH = 'temp/tokens-mode-attr/build/'
+const SOURCE_PATH = 'temp/tokens-mode-attr/'
 
 function modeFormatWrapper(mode, format) {
   return function (args) {

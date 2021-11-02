@@ -1,0 +1,61 @@
+/**
+ * Do not edit directly
+ * Generated on Tue, 02 Nov 2021 15:35:20 GMT
+ */
+
+:root, [data-mode="light"] {
+  --scl-core-motion-duration-800: 800ms;
+  --scl-core-motion-duration-600: 600ms;
+  --scl-core-motion-duration-200: 200ms;
+  --scl-core-motion-duration-100: 100ms;
+  --scl-core-color-grey-90: #191919;
+  --scl-core-color-grey-80: #333333;
+  --scl-core-color-grey-70: #4C4C4C;
+  --scl-core-color-grey-60: #666666;
+  --scl-core-color-grey-50: #7F7F7F;
+  --scl-core-color-grey-40: #999999;
+  --scl-core-color-grey-30: #B2B2B2;
+  --scl-core-color-grey-20: #CCCCCC;
+  --scl-core-color-grey-10: #E5E5E5;
+  --scl-core-color-grey-0: #F2F2F2;
+  --scl-core-color-white: #FFFFFF;
+  --scl-core-color-black: #000000;
+  --scl-core-color-magenta-shade: #CB0068;
+  --scl-core-color-magenta-tint: #F90984;
+  --scl-core-color-magenta-base: #E20074;
+  --scl-motion-duration-deliberate: var(--scl-core-motion-duration-800);
+  --scl-motion-duration-slower: var(--scl-core-motion-duration-600);
+  --scl-motion-duration-fast: var(--scl-core-motion-duration-200);
+  --scl-motion-duration-immediate: var(--scl-core-motion-duration-100);
+  --scl-color-background-standard: var(--scl-core-color-white);
+  --scl-color-primary-pressed: var(--scl-core-color-magenta-shade);
+  --scl-color-primary-hovered: var(--scl-core-color-magenta-tint);
+  --scl-color-primary-standard: var(--scl-core-color-magenta-base);
+  --scl-color-text-primary: var(--scl-core-color-magenta-base);
+  --scl-color-text-inverse: var(--scl-core-color-white);
+  --scl-color-text-additional: var(--scl-core-color-grey-60);
+  --scl-color-text-standard: var(--scl-core-color-black);
+  --scl-component-button-color-background-pressed: var(--scl-color-primary-pressed);
+  --scl-component-button-color-background-hovered: var(--scl-color-primary-hovered);
+  --scl-component-button-color-background-idle: var(--scl-color-primary-standard);
+  --scl-component-button-color-text-pressed: var(--scl-color-text-standard);
+  --scl-component-button-color-text-hovered: var(--scl-color-text-standard);
+  --scl-component-button-color-text-idle: var(--scl-color-text-standard);
+}
+
+/**
+ * Do not edit directly
+ * Generated on Tue, 02 Nov 2021 15:35:20 GMT
+ */
+
+[data-mode="dark"] {
+  --scl-color-background-standard: var(--scl-core-color-black);
+  --scl-color-text-inverse: var(--scl-core-color-black);
+  --scl-color-text-standard: var(--scl-core-color-white);
+  --scl-component-button-color-background-pressed: var(--scl-color-background-standard);
+  --scl-component-button-color-background-hovered: var(--scl-color-background-standard);
+  --scl-component-button-color-background-idle: var(--scl-color-background-standard);
+  --scl-component-button-color-text-pressed: var(--scl-color-primary-pressed);
+  --scl-component-button-color-text-hovered: var(--scl-color-primary-hovered);
+  --scl-component-button-color-text-idle: var(--scl-color-primary-standard);
+}
