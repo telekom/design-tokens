@@ -115,7 +115,32 @@
         type: 'percentage'
       }
     },
-    opacity: {},
+    opacity: {
+      invisible: {
+        type: 'number',
+        value: '{core.opacity.none.value}'
+      },
+      transparent: {
+        type: 'number',
+        value: '{core.opacity.low.value}'
+      },
+      'semi-transparent': {
+        type: 'number',
+        value: '{core.opacity.medium.value}'
+      },
+      translucent: {
+        type: 'number',
+        value: '{core.opacity.normal}'
+      },
+      'semi-translucent': {
+        type: 'number',
+        value: '{core.opacity.high.value}'
+      },
+      solid: {
+        type: 'number',
+        value: '{core.opacity.full.value}'
+      }
+    },
     motion: {},
     'z-index': {}
   }
