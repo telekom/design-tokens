@@ -42,3 +42,21 @@
   --scl-component-button-color-text-hovered: var(--scl-color-text-standard);
   --scl-component-button-color-text-idle: var(--scl-color-text-standard);
 }
+
+/**
+ * Do not edit directly
+ * Generated on Thu, 04 Nov 2021 17:26:04 GMT
+ */
+
+[data-mode="dark"] {
+  --scl-color-background-standard: var(--scl-core-color-black);
+  --scl-color-text-primary: var(--scl-core-color-magenta-base);
+  --scl-color-text-inverse: var(--scl-core-color-black);
+  --scl-color-text-standard: var(--scl-core-color-white);
+  --scl-component-button-color-background-pressed: var(--scl-color-background-standard);
+  --scl-component-button-color-background-hovered: var(--scl-color-background-standard);
+  --scl-component-button-color-background-idle: var(--scl-color-background-standard);
+  --scl-component-button-color-text-pressed: var(--scl-color-primary-pressed);
+  --scl-component-button-color-text-hovered: var(--scl-color-primary-hovered);
+  --scl-component-button-color-text-idle: var(--scl-color-primary-standard);
+}

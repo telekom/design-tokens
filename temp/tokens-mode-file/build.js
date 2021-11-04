@@ -1,15 +1,9 @@
+const fs = require('fs/promises')
 const StyleDictionary = require('style-dictionary')
 
 const PREFIX = 'scl'
 const CSS_OUTPUT_PATH = 'temp/tokens-mode-file/build/'
 const SOURCE_PATH = 'temp/tokens-mode-file/'
-
-StyleDictionary.registerAction({
-  name: 'bundle_css',
-  do: function(dictionary, config) {
-    // TODO
-  }
-})
 
 /**
  * Testing handling light and dark modes with filenames (foo.light.json)
@@ -27,6 +21,21 @@ StyleDictionary.registerAction({
  * ---------
  * TODO
  */
+
+StyleDictionary.registerAction({
+  name: 'bundle_css',
+  do: async function(dictionary, config) {
+    // TODO get these from `config`?
+    const COMMON_PATH = CSS_OUTPUT_PATH + 'css/'
+    const light = await fs.readFile(COMMON_PATH + 'variables.css')
+    const dark = await fs.readFile(COMMON_PATH + 'variables.dark.css')
+    await fs.writeFile(COMMON_PATH + 'variables.all.css', light + '\n' + dark)
+  },
+  undo: async function() {
+    const COMMON_PATH = CSS_OUTPUT_PATH + 'css/'
+    await fs.rm(COMMON_PATH + 'variables.all.css')
+  }
+})
 
 // CSS light mode (default)
 StyleDictionary.extend({
