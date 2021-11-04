@@ -6,7 +6,7 @@ const CSS_OUTPUT_PATH = 'temp/tokens-mode-composite/build/'
 const SOURCE_PATH = 'temp/tokens-mode-composite/'
 
 /**
- * Testing handling light and dark modes with filenames (foo.light.json)
+ * Testing handling light and dark modes with composite tokens
  * 
  * for CSS
  * -------
@@ -61,16 +61,6 @@ StyleDictionary.registerTransform({
   }
 })
 
-StyleDictionary.registerTransformGroup({
-  name: 'css-mode-light',
-  transforms: ['value/mode-light', ...StyleDictionary.transformGroup.css]
-})
-
-StyleDictionary.registerTransformGroup({
-  name: 'css-mode-dark',
-  transforms: ['value/mode-dark', ...StyleDictionary.transformGroup.css]
-})
-
 StyleDictionary.extend({
   source: [
     SOURCE_PATH + '/core/**/*.json',
@@ -79,7 +69,10 @@ StyleDictionary.extend({
   ],
   platforms: {
     css: {
-      transformGroup: 'css-mode-light',
+      transforms: [
+        'value/mode-light',
+        ...StyleDictionary.transformGroup.css
+      ],
       prefix: PREFIX,
       buildPath: CSS_OUTPUT_PATH + 'css/',
       files: [{
@@ -90,19 +83,12 @@ StyleDictionary.extend({
           selector: ':root, [data-mode="light"]'
         }
       }]
-    }
-  }
-}).buildAllPlatforms()
-
-StyleDictionary.extend({
-  source: [
-    SOURCE_PATH + '/core/**/*.json',
-    SOURCE_PATH + '/system/**/*.json',
-    SOURCE_PATH + '/components/**/*.json'
-  ],
-  platforms: {
-    css: {
-      transformGroup: 'css-mode-dark',
+    },
+    cssDark: {
+      transforms: [
+        'value/mode-dark',
+        ...StyleDictionary.transformGroup.css
+      ],
       prefix: PREFIX,
       buildPath: CSS_OUTPUT_PATH + 'css/',
       files: [{
@@ -115,6 +101,28 @@ StyleDictionary.extend({
         }
       }],
       actions: ['bundle_css']
+    },
+    js: {
+      transforms: [
+        'value/mode-light',
+        ...StyleDictionary.transformGroup.js
+      ],
+      buildPath: CSS_OUTPUT_PATH + 'js/',
+      files: [{
+        destination: 'variables.light.js',
+        format: 'javascript/es6',
+      }]
+    },
+    jsDark: {
+      transforms: [
+        'value/mode-dark',
+        ...StyleDictionary.transformGroup.js
+      ],
+      buildPath: CSS_OUTPUT_PATH + 'js/',
+      files: [{
+        destination: 'variables.dark.js',
+        format: 'javascript/es6'
+      }]
     }
   }
 }).buildAllPlatforms()

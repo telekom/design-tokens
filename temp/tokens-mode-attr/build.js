@@ -21,7 +21,7 @@ function modeFormatWrapper(mode, format) {
 }
 
 /**
- * Testing handling light and dark modes with filenames (foo.light.json)
+ * Testing handling light and dark modes with attributes
  * 
  * for CSS
  * -------
