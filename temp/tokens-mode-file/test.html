@@ -1,36 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Testing "mode file"</title>
-  <link rel="stylesheet" href="build/css/variables.css">
-  <link rel="stylesheet" href="build/css/variables.dark.css">
-  <style>
-    body {
-      background-color: var(--scl-color-background-standard);
-      color: var(--scl-color-text-standard);
-    }
-  </style>
-</head>
-<body data-mode="dark">
-  <button id="toggle">Toggle mode</button>
-  <h1>It works!</h1>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Testing "mode file"</title>
+    <link rel="stylesheet" href="build/css/variables.css" />
+    <link rel="stylesheet" href="build/css/variables.dark.css" />
+    <style>
+      body {
+        background-color: var(--scl-color-background-standard);
+        color: var(--scl-color-text-standard);
+      }
+    </style>
+  </head>
+  <body data-mode="dark">
+    <button id="toggle">Toggle mode</button>
+    <h1>It works!</h1>
 
-  <script type="module">
-    const button = document.getElementById('toggle')
-    const mq = window.matchMedia('(prefers-color-scheme: dark)')
-    const update = (matches) => {
-      document.body.dataset.mode = matches ? 'dark' : 'light'
-    }
-    mq.addEventListener('change', ({ matches }) => {
-      update(matches)
-    })
-    button.onclick = () => {
-      update(document.body.dataset.mode === 'dark' ? false : true)
-    }
-    update(mq.matches)
-  </script>
-</body>
+    <script type="module">
+      const button = document.getElementById('toggle');
+      const mq = window.matchMedia('(prefers-color-scheme: dark)');
+      const update = (matches) => {
+        document.body.dataset.mode = matches ? 'dark' : 'light';
+      };
+      mq.addEventListener('change', ({ matches }) => {
+        update(matches);
+      });
+      button.onclick = () => {
+        update(document.body.dataset.mode === 'dark' ? false : true);
+      };
+      update(mq.matches);
+    </script>
+  </body>
 </html>
