@@ -4,7 +4,7 @@
       "color": {
         "text": {
           "idle": {
-            "value": { 
+            "value": {
               "light": "{color.text.standard.value}",
               "dark": "{color.primary.standard.value}"
             }
@@ -16,7 +16,7 @@
             }
           },
           "pressed": {
-            "value": { 
+            "value": {
               "light": "{color.text.standard.value}",
               "dark": "{color.primary.pressed.value}"
             }

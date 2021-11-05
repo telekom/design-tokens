@@ -10,7 +10,8 @@
     "build-mode:attr": "rimraf temp/tokens-mode-attr/build && node temp/tokens-mode-attr/build.js",
     "test-mode:attr": "servor temp/tokens-mode-attr test.html --reload",
     "build-mode:comp": "rimraf temp/tokens-mode-composite/build && node temp/tokens-mode-composite/build.js",
-    "test-mode:comp": "servor temp/tokens-mode-composite test.html --reload"
+    "test-mode:comp": "servor temp/tokens-mode-composite test.html --reload",
+    "format": "prettier --write \"temp/**/*{js,json,css,html}\" \"!temp/*/build/**/*\""
   },
   "repository": {
     "type": "git",
@@ -23,6 +24,8 @@
   },
   "homepage": "https://github.com/telekom/design-tokens#readme",
   "devDependencies": {
+    "deep-get-set": "^1.1.1",
+    "prettier": "^2.4.1",
     "rimraf": "^3.0.2",
     "servor": "^4.0.2",
     "style-dictionary": "^3.0.3"

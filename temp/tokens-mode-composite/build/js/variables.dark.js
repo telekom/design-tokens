@@ -1,42 +1,79 @@
 /**
  * Do not edit directly
- * Generated on Thu, 04 Nov 2021 17:33:37 GMT
+ * Generated on Fri, 05 Nov 2021 13:29:24 GMT
  */
 
-export const CoreColorMagentaBase = "#E20074";
-export const CoreColorMagentaTint = "#F90984";
-export const CoreColorMagentaShade = "#CB0068";
-export const CoreColorBlack = "#000000";
-export const CoreColorWhite = "#FFFFFF";
-export const CoreColorGrey0 = "#F2F2F2";
-export const CoreColorGrey10 = "#E5E5E5";
-export const CoreColorGrey20 = "#CCCCCC";
-export const CoreColorGrey30 = "#B2B2B2";
-export const CoreColorGrey40 = "#999999";
-export const CoreColorGrey50 = "#7F7F7F";
-export const CoreColorGrey60 = "#666666";
-export const CoreColorGrey70 = "#4C4C4C";
-export const CoreColorGrey80 = "#333333";
-export const CoreColorGrey90 = "#191919";
-export const CoreMotionDuration100 = "100ms";
-export const CoreMotionDuration200 = "200ms";
-export const CoreMotionDuration600 = "600ms";
-export const CoreMotionDuration800 = "800ms";
-export const ColorTextStandard = "#FFFFFF";
-export const ColorTextAdditional = "#666666";
-export const ColorTextInverse = "#000000";
-export const ColorTextPrimary = "#E20074";
-export const ColorPrimaryStandard = "#E20074";
-export const ColorPrimaryHovered = "#F90984";
-export const ColorPrimaryPressed = "#CB0068";
-export const ColorBackgroundStandard = "#000000";
-export const MotionDurationImmediate = "100ms";
-export const MotionDurationFast = "200ms";
-export const MotionDurationSlower = "600ms";
-export const MotionDurationDeliberate = "800ms";
-export const ComponentButtonColorTextIdle = "#E20074";
-export const ComponentButtonColorTextHovered = "#F90984";
-export const ComponentButtonColorTextPressed = "#CB0068";
-export const ComponentButtonColorBackgroundIdle = "#000000";
-export const ComponentButtonColorBackgroundHovered = "#000000";
-export const ComponentButtonColorBackgroundPressed = "#000000";
+export const core = {
+  color: {
+    magenta: {
+      base: '#E20074',
+      tint: '#F90984',
+      shade: '#CB0068',
+    },
+    black: '#000000',
+    white: '#FFFFFF',
+    grey: {
+      0: '#F2F2F2',
+      10: '#E5E5E5',
+      20: '#CCCCCC',
+      30: '#B2B2B2',
+      40: '#999999',
+      50: '#7F7F7F',
+      60: '#666666',
+      70: '#4C4C4C',
+      80: '#333333',
+      90: '#191919',
+    },
+  },
+  motion: {
+    duration: {
+      100: '100ms',
+      200: '200ms',
+      600: '600ms',
+      800: '800ms',
+    },
+  },
+}
+
+export const color = {
+  text: {
+    standard: '#FFFFFF',
+    additional: '#666666',
+    inverse: '#000000',
+    primary: '#E20074',
+  },
+  primary: {
+    standard: '#E20074',
+    hovered: '#F90984',
+    pressed: '#CB0068',
+  },
+  background: {
+    standard: '#000000',
+  },
+}
+
+export const motion = {
+  duration: {
+    immediate: '100ms',
+    fast: '200ms',
+    slower: '600ms',
+    deliberate: '800ms',
+  },
+}
+
+export const component = {
+  button: {
+    color: {
+      text: {
+        idle: '#E20074',
+        hovered: '#F90984',
+        pressed: '#CB0068',
+      },
+      background: {
+        idle: '#000000',
+        hovered: '#000000',
+        pressed: '#000000',
+      },
+    },
+  },
+}
