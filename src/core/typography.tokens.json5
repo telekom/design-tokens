@@ -114,7 +114,7 @@
           type: 'number'
         },
         lg: {
-          value: 1.5,
+          value: 1.45,
           type: 'number'
         }
       },

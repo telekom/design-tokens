@@ -41,16 +41,6 @@
         },
         type: 'textStyle'
       },
-      "body-long": {
-        value: {
-          'font-family': '{semantic.typography.font-family.sans.value}',
-          'font-size': '{semantic.typography.font-size.body.value}',
-          'font-weight': '{semantic.typography.font-weight.regular.value}',
-          'line-spacing': '{semantic.typography.line-spacing.loose.value}',
-          'letter-spacing': '{semantic.typography.letter-spacing.standard.value}'
-        },
-        type: 'textStyle'
-      },
       callout: {
         value: {
           'font-family': '{semantic.typography.font-family.sans.value}',
