@@ -51,7 +51,7 @@
         },
         type: 'textStyle'
       },
-      "heading-6": {
+      'heading-6': {
         value: {
           'font-family': '{semantic.typography.font-family.sans.value}',
           'font-size': '{semantic.typography.font-size.body.value}',
@@ -61,7 +61,7 @@
         },
         type: 'textStyle'
       },
-      "heading-5": {
+      'heading-5': {
         value: {
           'font-family': '{semantic.typography.font-family.sans.value}',
           'font-size': '{semantic.typography.font-size.callout.value}',
@@ -71,7 +71,7 @@
         },
         type: 'textStyle'
       },
-      "heading-4": {
+      'heading-4': {
         value: {
           'font-family': '{semantic.typography.font-family.sans.value}',
           'font-size': '{semantic.typography.font-size.headline-3.value}',
@@ -81,7 +81,7 @@
         },
         type: 'textStyle'
       },
-      "heading-3": {
+      'heading-3': {
         value: {
           'font-family': '{semantic.typography.font-family.sans.value}',
           'font-size': '{semantic.typography.font-size.headline-2.value}',
@@ -91,7 +91,7 @@
         },
         type: 'textStyle'
       },
-      "heading-2": {
+      'heading-2': {
         value: {
           'font-family': '{semantic.typography.font-family.sans.value}',
           'font-size': '{semantic.typography.font-size.headline-1.value}',
@@ -101,7 +101,7 @@
         },
         type: 'textStyle'
       },
-      "heading-1": {
+      'heading-1': {
         value: {
           'font-family': '{semantic.typography.font-family.sans.value}',
           'font-size': '{semantic.typography.font-size.title-3.value}',
@@ -111,7 +111,7 @@
         },
         type: 'textStyle'
       },
-      "title-2": {
+      'title-2': {
         value: {
           'font-family': '{semantic.typography.font-family.sans.value}',
           'font-size': '{semantic.typography.font-size.title-2.value}',
@@ -121,7 +121,7 @@
         },
         type: 'textStyle'
       },
-      "title-1": {
+      'title-1': {
         value: {
           'font-family': '{semantic.typography.font-family.sans.value}',
           'font-size': '{semantic.typography.font-size.title-1.value}',
@@ -130,52 +130,52 @@
           'letter-spacing': '{semantic.typography.letter-spacing.standard.value}'
         },
         type: 'textStyle'
-      },
+      }
     },
     typography: {
       'font-size': {
         footnote: {
-          value: '{core.typography.font-scale.0.value}',
-          type: 'dimension'
-        },
-        small: {
           value: '{core.typography.font-scale.1.value}',
           type: 'dimension'
         },
-        caption: {
+        small: {
           value: '{core.typography.font-scale.2.value}',
           type: 'dimension'
         },
-        body: {
+        caption: {
           value: '{core.typography.font-scale.3.value}',
           type: 'dimension'
         },
-        callout: {
-          value: '{core.typography.font-scale.5.value}',
+        body: {
+          value: '{core.typography.font-scale.4.value}',
           type: 'dimension'
         },
-        'headline-3': {
+        callout: {
           value: '{core.typography.font-scale.6.value}',
           type: 'dimension'
         },
+        'headline-3': {
+          value: '{core.typography.font-scale.7.value}',
+          type: 'dimension'
+        },
         'headline-2': {
-          value: '{core.typography.font-scale.8.value}',
+          value: '{core.typography.font-scale.9.value}',
           type: 'dimension'
         },
         'headline-1': {
-          value: '{core.typography.font-scale.10.value}',
+          value: '{core.typography.font-scale.11.value}',
           type: 'dimension'
         },
         'title-3': {
-          value: '{core.typography.font-scale.12.value}',
+          value: '{core.typography.font-scale.13.value}',
           type: 'dimension'
         },
         'title-2': {
-          value: '{core.typography.font-scale.14.value}',
+          value: '{core.typography.font-scale.15.value}',
           type: 'dimension'
         },
         'title-1': {
-          value: '{core.typography.font-scale.15.value}',
+          value: '{core.typography.font-scale.16.value}',
           type: 'dimension'
         }
       },
