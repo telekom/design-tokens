@@ -4,7 +4,8 @@
   "description": "TODO: update below statement to fit design token's use case, but preserve the hint that it contains our corporate design",
   "main": "index.js",
   "scripts": {
-    "start": "node script/build.js"
+    "start": "node script/build.js",
+    "format": "prettier --write \"src/**/*{json,json5}\""
   },
   "repository": {
     "type": "git",
@@ -17,6 +18,7 @@
   },
   "homepage": "https://github.com/telekom/design-tokens#readme",
   "devDependencies": {
+    "prettier": "^2.4.1",
     "style-dictionary": "^3.0.3"
   }
 }
