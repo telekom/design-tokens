@@ -1,129 +1,129 @@
 {
   core: {
     typography: {
-      'font-family': {
+      "font-family": {
         sans: {
-          value: 'TeleNeoWeb, sans-serif',
-          type: 'font'
+          value: "TeleNeoWeb, sans-serif",
+          type: "font",
         },
         mono: {
-          value: 'monospace',
-          type: 'font'
-        }
+          value: "monospace",
+          type: "font",
+        },
       },
-      'font-weight': {
+      "font-weight": {
         thin: {
           value: 200,
-          type: 'number'
+          type: "number",
         },
         regular: {
           value: 400,
-          type: 'number'
+          type: "number",
         },
         medium: {
           value: 500,
-          type: 'number'
+          type: "number",
         },
         bold: {
           value: 700,
-          type: 'number'
+          type: "number",
         },
-        'extra-bold': {
+        "extra-bold": {
           value: 800,
-          type: 'number'
-        }
+          type: "number",
+        },
       },
-      'font-scale': {
-        comment: 'Font scale is based on a formular: stepX = fontScale[x - 1] + (parseInt((x - 2) / 4) + 1) * 2; fontScale.push(stepX), where fontScale[0] = 10',
-        '1': {
-          value: '10px',
-          type: 'dimension'
+      "font-scale": {
+        comment: "Font scale is based on a formular: stepX = fontScale[x - 1] + (parseInt((x - 2) / 4) + 1) * 2; fontScale.push(stepX), where fontScale[0] = 10",
+        "1": {
+          value: "10px",
+          type: "dimension",
         },
-        '2': {
-          value: '12px',
-          type: 'dimension'
+        "2": {
+          value: "12px",
+          type: "dimension",
         },
-        '3': {
-          value: '14px',
-          type: 'dimension'
+        "3": {
+          value: "14px",
+          type: "dimension",
         },
-        '4': {
-          value: '16px',
-          type: 'dimension'
+        "4": {
+          value: "16px",
+          type: "dimension",
         },
-        '5': {
-          value: '18px',
-          type: 'dimension'
+        "5": {
+          value: "18px",
+          type: "dimension",
         },
-        '6': {
-          value: '20px',
-          type: 'dimension'
+        "6": {
+          value: "20px",
+          type: "dimension",
         },
-        '7': {
-          value: '24px',
-          type: 'dimension'
+        "7": {
+          value: "24px",
+          type: "dimension",
         },
-        '8': {
-          value: '28px',
-          type: 'dimension'
+        "8": {
+          value: "28px",
+          type: "dimension",
         },
-        '9': {
-          value: '32px',
-          type: 'dimension'
+        "9": {
+          value: "32px",
+          type: "dimension",
         },
-        '10': {
-          value: '36px',
-          type: 'dimension'
+        "10": {
+          value: "36px",
+          type: "dimension",
         },
-        '11': {
-          value: '42px',
-          type: 'dimension'
+        "11": {
+          value: "42px",
+          type: "dimension",
         },
-        '12': {
-          value: '48px',
-          type: 'dimension'
+        "12": {
+          value: "48px",
+          type: "dimension",
         },
-        '13': {
-          value: '54px',
-          type: 'dimension'
+        "13": {
+          value: "54px",
+          type: "dimension",
         },
-        '14': {
-          value: '60px',
-          type: 'dimension'
+        "14": {
+          value: "60px",
+          type: "dimension",
         },
-        '15': {
-          value: '68px',
-          type: 'dimension'
+        "15": {
+          value: "68px",
+          type: "dimension",
         },
-        '16': {
-          value: '76px',
-          type: 'dimension'
-        }
+        "16": {
+          value: "76px",
+          type: "dimension",
+        },
       },
-      'line-spacing': {
+      "line-spacing": {
         xs: {
           value: 1.15,
-          type: 'number'
+          type: "number",
         },
         sm: {
           value: 1.25,
-          type: 'number'
+          type: "number",
         },
         md: {
           value: 1.35,
-          type: 'number'
+          type: "number",
         },
         lg: {
           value: 1.5,
-          type: 'number'
-        }
+          type: "number",
+        },
       },
-      'letter-spacing': {
+      "letter-spacing": {
         none: {
           value: 0,
-          type: 'number'
-        }
-      }
-    }
-  }
+          type: "number",
+        },
+      },
+    },
+  },
 }
