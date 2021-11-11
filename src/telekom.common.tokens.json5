@@ -379,7 +379,44 @@
         value: '{core.opacity.full.value}'
       }
     },
-    motion: {},
+    motion: {
+      duration: {
+        instant: {
+          value: '{core.motion.duration.instant.value}',
+          type: 'time'
+        },
+        immediate: {
+          value: '{core.motion.duration.immediate.value}',
+          type: 'time'
+        },
+        transition: {
+          value: '{core.motion.duration.fast.value}',
+          type: 'time'
+        },
+        animation: {
+          value: '{core.motion.duration.slow.value}',
+          type: 'time'
+        },
+        'animation-deliberate': {
+          value: '{core.motion.duration.deliberate.value}',
+          type: 'time'
+        }
+      },
+      easing: {
+        standard: {
+          value: '{core.motion.easing.easeInOut.value}',
+          type: 'cubic-bezier'
+        },
+        enter: {
+          value: '{core.motion.easing.easeOut.value}',
+          type: 'cubic-bezier'
+        },
+        leave: {
+          value: '{core.motion.easing.easeIn.value}',
+          type: 'cubic-bezier'
+        },
+      }
+    },
     'z-index': {}
   }
 }
