@@ -14,7 +14,7 @@
           value: '200ms',
           type: 'time'
         },
-        slower: {
+        slow: {
           value: '600ms',
           type: 'time'
         },
@@ -24,8 +24,18 @@
         }
       },
       easing: {
-        standard: 'cubic-bezier(0.42, 0, 0.58, 1)',
-        enter: 'cubic-bezier(0.390, 0.575, 0.565, 1)'
+        easeInOut: {
+          value: [0.4, 0, 0.6, 1],
+          type: 'cubic-bezier'
+        },
+        easeOut: {
+          value: [0.4, 0.6, 0.6, 1],
+          type: 'cubic-bezier'
+        },
+        easeIn: {
+          value: [0.4, 0, 1, 1],
+          type: 'cubic-bezier'
+        },
       }
     }
   }
