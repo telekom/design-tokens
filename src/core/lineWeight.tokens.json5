@@ -1,18 +1,18 @@
 {
-  "core": {
+  core: {
     "line-weight": {
       sm: {
-        value: '1px',
-        type: "dimension"
+        value: "1px",
+        type: "dimension",
       },
       md: {
-        value: '2px',
-        type: "dimension"
+        value: "2px",
+        type: "dimension",
       },
       lg: {
-        value: '4px',
-        type: "dimension"
-      }
-    }
-  }
+        value: "4px",
+        type: "dimension",
+      },
+    },
+  },
 }

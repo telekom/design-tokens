@@ -1,421 +1,421 @@
 {
   semantic: {
-    'text-style': {
+    "text-style": {
       footnote: {
         value: {
-          'font-family': '{semantic.typography.font-family.sans.value}',
-          'font-size': '{semantic.typography.font-size.footnote.value}',
-          'font-weight': '{semantic.typography.font-weight.regular.value}',
-          'line-spacing': '{semantic.typography.line-spacing.tight.value}',
-          'letter-spacing': '{semantic.typography.letter-spacing.standard.value}'
+          "font-family": "{semantic.typography.font-family.sans.value}",
+          "font-size": "{semantic.typography.font-size.footnote.value}",
+          "font-weight": "{semantic.typography.font-weight.regular.value}",
+          "line-spacing": "{semantic.typography.line-spacing.tight.value}",
+          "letter-spacing": "{semantic.typography.letter-spacing.standard.value}",
         },
-        type: 'textStyle'
+        type: "textStyle",
       },
       small: {
         value: {
-          'font-family': '{semantic.typography.font-family.sans.value}',
-          'font-size': '{semantic.typography.font-size.small.value}',
-          'font-weight': '{semantic.typography.font-weight.regular.value}',
-          'line-spacing': '{semantic.typography.line-spacing.standard.value}',
-          'letter-spacing': '{semantic.typography.letter-spacing.standard.value}'
+          "font-family": "{semantic.typography.font-family.sans.value}",
+          "font-size": "{semantic.typography.font-size.small.value}",
+          "font-weight": "{semantic.typography.font-weight.regular.value}",
+          "line-spacing": "{semantic.typography.line-spacing.standard.value}",
+          "letter-spacing": "{semantic.typography.letter-spacing.standard.value}",
         },
-        type: 'textStyle'
+        type: "textStyle",
       },
       caption: {
         value: {
-          'font-family': '{semantic.typography.font-family.sans.value}',
-          'font-size': '{semantic.typography.font-size.caption.value}',
-          'font-weight': '{semantic.typography.font-weight.regular.value}',
-          'line-spacing': '{semantic.typography.line-spacing.standard.value}',
-          'letter-spacing': '{semantic.typography.letter-spacing.standard.value}'
+          "font-family": "{semantic.typography.font-family.sans.value}",
+          "font-size": "{semantic.typography.font-size.caption.value}",
+          "font-weight": "{semantic.typography.font-weight.regular.value}",
+          "line-spacing": "{semantic.typography.line-spacing.standard.value}",
+          "letter-spacing": "{semantic.typography.letter-spacing.standard.value}",
         },
-        type: 'textStyle'
+        type: "textStyle",
       },
       body: {
         value: {
-          'font-family': '{semantic.typography.font-family.sans.value}',
-          'font-size': '{semantic.typography.font-size.body.value}',
-          'font-weight': '{semantic.typography.font-weight.regular.value}',
-          'line-spacing': '{semantic.typography.line-spacing.standard.value}',
-          'letter-spacing': '{semantic.typography.letter-spacing.standard.value}'
+          "font-family": "{semantic.typography.font-family.sans.value}",
+          "font-size": "{semantic.typography.font-size.body.value}",
+          "font-weight": "{semantic.typography.font-weight.regular.value}",
+          "line-spacing": "{semantic.typography.line-spacing.standard.value}",
+          "letter-spacing": "{semantic.typography.letter-spacing.standard.value}",
         },
-        type: 'textStyle'
+        type: "textStyle",
       },
       callout: {
         value: {
-          'font-family': '{semantic.typography.font-family.sans.value}',
-          'font-size': '{semantic.typography.font-size.callout.value}',
-          'font-weight': '{semantic.typography.font-weight.regular.value}',
-          'line-spacing': '{semantic.typography.line-spacing.standard.value}',
-          'letter-spacing': '{semantic.typography.letter-spacing.standard.value}'
+          "font-family": "{semantic.typography.font-family.sans.value}",
+          "font-size": "{semantic.typography.font-size.callout.value}",
+          "font-weight": "{semantic.typography.font-weight.regular.value}",
+          "line-spacing": "{semantic.typography.line-spacing.standard.value}",
+          "letter-spacing": "{semantic.typography.letter-spacing.standard.value}",
         },
-        type: 'textStyle'
+        type: "textStyle",
       },
-      'heading-6': {
+      "heading-6": {
         value: {
-          'font-family': '{semantic.typography.font-family.sans.value}',
-          'font-size': '{semantic.typography.font-size.body.value}',
-          'font-weight': '{semantic.typography.font-weight.bold.value}',
-          'line-spacing': '{semantic.typography.line-spacing.standard.value}',
-          'letter-spacing': '{semantic.typography.letter-spacing.standard.value}'
+          "font-family": "{semantic.typography.font-family.sans.value}",
+          "font-size": "{semantic.typography.font-size.body.value}",
+          "font-weight": "{semantic.typography.font-weight.bold.value}",
+          "line-spacing": "{semantic.typography.line-spacing.standard.value}",
+          "letter-spacing": "{semantic.typography.letter-spacing.standard.value}",
         },
-        type: 'textStyle'
+        type: "textStyle",
       },
-      'heading-5': {
+      "heading-5": {
         value: {
-          'font-family': '{semantic.typography.font-family.sans.value}',
-          'font-size': '{semantic.typography.font-size.callout.value}',
-          'font-weight': '{semantic.typography.font-weight.extra-bold.value}',
-          'line-spacing': '{semantic.typography.line-spacing.standard.value}',
-          'letter-spacing': '{semantic.typography.letter-spacing.standard.value}'
+          "font-family": "{semantic.typography.font-family.sans.value}",
+          "font-size": "{semantic.typography.font-size.callout.value}",
+          "font-weight": "{semantic.typography.font-weight.extra-bold.value}",
+          "line-spacing": "{semantic.typography.line-spacing.standard.value}",
+          "letter-spacing": "{semantic.typography.letter-spacing.standard.value}",
         },
-        type: 'textStyle'
+        type: "textStyle",
       },
-      'heading-4': {
+      "heading-4": {
         value: {
-          'font-family': '{semantic.typography.font-family.sans.value}',
-          'font-size': '{semantic.typography.font-size.headline-3.value}',
-          'font-weight': '{semantic.typography.font-weight.extra-bold.value}',
-          'line-spacing': '{semantic.typography.line-spacing.standard.value}',
-          'letter-spacing': '{semantic.typography.letter-spacing.standard.value}'
+          "font-family": "{semantic.typography.font-family.sans.value}",
+          "font-size": "{semantic.typography.font-size.headline-3.value}",
+          "font-weight": "{semantic.typography.font-weight.extra-bold.value}",
+          "line-spacing": "{semantic.typography.line-spacing.standard.value}",
+          "letter-spacing": "{semantic.typography.letter-spacing.standard.value}",
         },
-        type: 'textStyle'
+        type: "textStyle",
       },
-      'heading-3': {
+      "heading-3": {
         value: {
-          'font-family': '{semantic.typography.font-family.sans.value}',
-          'font-size': '{semantic.typography.font-size.headline-2.value}',
-          'font-weight': '{semantic.typography.font-weight.extra-bold.value}',
-          'line-spacing': '{semantic.typography.line-spacing.standard.value}',
-          'letter-spacing': '{semantic.typography.letter-spacing.standard.value}'
+          "font-family": "{semantic.typography.font-family.sans.value}",
+          "font-size": "{semantic.typography.font-size.headline-2.value}",
+          "font-weight": "{semantic.typography.font-weight.extra-bold.value}",
+          "line-spacing": "{semantic.typography.line-spacing.standard.value}",
+          "letter-spacing": "{semantic.typography.letter-spacing.standard.value}",
         },
-        type: 'textStyle'
+        type: "textStyle",
       },
-      'heading-2': {
+      "heading-2": {
         value: {
-          'font-family': '{semantic.typography.font-family.sans.value}',
-          'font-size': '{semantic.typography.font-size.headline-1.value}',
-          'font-weight': '{semantic.typography.font-weight.extra-bold.value}',
-          'line-spacing': '{semantic.typography.line-spacing.tight.value}',
-          'letter-spacing': '{semantic.typography.letter-spacing.standard.value}'
+          "font-family": "{semantic.typography.font-family.sans.value}",
+          "font-size": "{semantic.typography.font-size.headline-1.value}",
+          "font-weight": "{semantic.typography.font-weight.extra-bold.value}",
+          "line-spacing": "{semantic.typography.line-spacing.tight.value}",
+          "letter-spacing": "{semantic.typography.letter-spacing.standard.value}",
         },
-        type: 'textStyle'
+        type: "textStyle",
       },
-      'heading-1': {
+      "heading-1": {
         value: {
-          'font-family': '{semantic.typography.font-family.sans.value}',
-          'font-size': '{semantic.typography.font-size.title-3.value}',
-          'font-weight': '{semantic.typography.font-weight.extra-bold.value}',
-          'line-spacing': '{semantic.typography.line-spacing.extra-tight.value}',
-          'letter-spacing': '{semantic.typography.letter-spacing.standard.value}'
+          "font-family": "{semantic.typography.font-family.sans.value}",
+          "font-size": "{semantic.typography.font-size.title-3.value}",
+          "font-weight": "{semantic.typography.font-weight.extra-bold.value}",
+          "line-spacing": "{semantic.typography.line-spacing.extra-tight.value}",
+          "letter-spacing": "{semantic.typography.letter-spacing.standard.value}",
         },
-        type: 'textStyle'
+        type: "textStyle",
       },
-      'title-2': {
+      "title-2": {
         value: {
-          'font-family': '{semantic.typography.font-family.sans.value}',
-          'font-size': '{semantic.typography.font-size.title-2.value}',
-          'font-weight': '{semantic.typography.font-weight.extra-bold.value}',
-          'line-spacing': '{semantic.typography.line-spacing.extra-tight.value}',
-          'letter-spacing': '{semantic.typography.letter-spacing.standard.value}'
+          "font-family": "{semantic.typography.font-family.sans.value}",
+          "font-size": "{semantic.typography.font-size.title-2.value}",
+          "font-weight": "{semantic.typography.font-weight.extra-bold.value}",
+          "line-spacing": "{semantic.typography.line-spacing.extra-tight.value}",
+          "letter-spacing": "{semantic.typography.letter-spacing.standard.value}",
         },
-        type: 'textStyle'
+        type: "textStyle",
       },
-      'title-1': {
+      "title-1": {
         value: {
-          'font-family': '{semantic.typography.font-family.sans.value}',
-          'font-size': '{semantic.typography.font-size.title-1.value}',
-          'font-weight': '{semantic.typography.font-weight.extra-bold.value}',
-          'line-spacing': '{semantic.typography.line-spacing.extra-tight.value}',
-          'letter-spacing': '{semantic.typography.letter-spacing.standard.value}'
+          "font-family": "{semantic.typography.font-family.sans.value}",
+          "font-size": "{semantic.typography.font-size.title-1.value}",
+          "font-weight": "{semantic.typography.font-weight.extra-bold.value}",
+          "line-spacing": "{semantic.typography.line-spacing.extra-tight.value}",
+          "letter-spacing": "{semantic.typography.letter-spacing.standard.value}",
         },
-        type: 'textStyle'
-      }
+        type: "textStyle",
+      },
     },
     typography: {
-      'font-size': {
+      "font-size": {
         footnote: {
-          value: '{core.typography.font-scale.1.value}',
-          type: 'dimension'
+          value: "{core.typography.font-scale.1.value}",
+          type: "dimension",
         },
         small: {
-          value: '{core.typography.font-scale.2.value}',
-          type: 'dimension'
+          value: "{core.typography.font-scale.2.value}",
+          type: "dimension",
         },
         caption: {
-          value: '{core.typography.font-scale.3.value}',
-          type: 'dimension'
+          value: "{core.typography.font-scale.3.value}",
+          type: "dimension",
         },
         body: {
-          value: '{core.typography.font-scale.4.value}',
-          type: 'dimension'
+          value: "{core.typography.font-scale.4.value}",
+          type: "dimension",
         },
         callout: {
-          value: '{core.typography.font-scale.6.value}',
-          type: 'dimension'
+          value: "{core.typography.font-scale.6.value}",
+          type: "dimension",
         },
-        'headline-3': {
-          value: '{core.typography.font-scale.7.value}',
-          type: 'dimension'
+        "headline-3": {
+          value: "{core.typography.font-scale.7.value}",
+          type: "dimension",
         },
-        'headline-2': {
-          value: '{core.typography.font-scale.9.value}',
-          type: 'dimension'
+        "headline-2": {
+          value: "{core.typography.font-scale.9.value}",
+          type: "dimension",
         },
-        'headline-1': {
-          value: '{core.typography.font-scale.11.value}',
-          type: 'dimension'
+        "headline-1": {
+          value: "{core.typography.font-scale.11.value}",
+          type: "dimension",
         },
-        'title-3': {
-          value: '{core.typography.font-scale.13.value}',
-          type: 'dimension'
+        "title-3": {
+          value: "{core.typography.font-scale.13.value}",
+          type: "dimension",
         },
-        'title-2': {
-          value: '{core.typography.font-scale.15.value}',
-          type: 'dimension'
+        "title-2": {
+          value: "{core.typography.font-scale.15.value}",
+          type: "dimension",
         },
-        'title-1': {
-          value: '{core.typography.font-scale.16.value}',
-          type: 'dimension'
-        }
+        "title-1": {
+          value: "{core.typography.font-scale.16.value}",
+          type: "dimension",
+        },
       },
-      'font-family': {
+      "font-family": {
         sans: {
-          value: '{core.typography.font-family.sans.value}',
-          type: 'font'
+          value: "{core.typography.font-family.sans.value}",
+          type: "font",
         },
         mono: {
-          value: '{core.typography.font-family.mono.value}',
-          type: 'font'
-        }
+          value: "{core.typography.font-family.mono.value}",
+          type: "font",
+        },
       },
-      'font-weight': {
+      "font-weight": {
         thin: {
-          value: '{core.typography.font-weight.thin.value}',
-          type: 'number'
+          value: "{core.typography.font-weight.thin.value}",
+          type: "number",
         },
         regular: {
-          value: '{core.typography.font-weight.regular.value}',
-          type: 'number'
+          value: "{core.typography.font-weight.regular.value}",
+          type: "number",
         },
         medium: {
-          value: '{core.typography.font-weight.medium.value}',
-          type: 'number'
+          value: "{core.typography.font-weight.medium.value}",
+          type: "number",
         },
         bold: {
-          value: '{core.typography.font-weight.bold.value}',
-          type: 'number'
+          value: "{core.typography.font-weight.bold.value}",
+          type: "number",
         },
-        'extra-bold': {
-          value: '{core.typography.font-weight.extra-bold.value}',
-          type: 'number'
-        }
+        "extra-bold": {
+          value: "{core.typography.font-weight.extra-bold.value}",
+          type: "number",
+        },
       },
-      'line-spacing': {
-        'extra-tight': {
-          comment: 'Use for large titles like H1 or H2',
-          value: '{core.typography.line-spacing.xs.value}',
-          type: 'number'
+      "line-spacing": {
+        "extra-tight": {
+          comment: "Use for large titles like H1 or H2",
+          value: "{core.typography.line-spacing.xs.value}",
+          type: "number",
         },
         tight: {
-          comment: 'Use for large headlines like H3, etc.',
-          value: '{core.typography.line-spacing.sm.value}',
-          type: 'number'
+          comment: "Use for large headlines like H3, etc.",
+          value: "{core.typography.line-spacing.sm.value}",
+          type: "number",
         },
         standard: {
-          comment: 'Use for most text elements like normal copy, etc.',
-          value: '{core.typography.line-spacing.md.value}',
-          type: 'number'
+          comment: "Use for most text elements like normal copy, etc.",
+          value: "{core.typography.line-spacing.md.value}",
+          type: "number",
         },
         loose: {
-          comment: 'Use for multi line text passages with long lines.',
-          value: '{core.typography.line-spacing.lg.value}',
-          type: 'number'
-        }
+          comment: "Use for multi line text passages with long lines.",
+          value: "{core.typography.line-spacing.lg.value}",
+          type: "number",
+        },
       },
-      'letter-spacing': {
+      "letter-spacing": {
         standard: {
-          value: '{core.typography.letter-spacing.none.value}',
-          type: 'number'
-        }
-      }
+          value: "{core.typography.letter-spacing.none.value}",
+          type: "number",
+        },
+      },
     },
-    'line-weight': {
+    "line-weight": {
       standard: {
-        comment: 'Used for ui elements like inputs, dividers, etc.',
-        value: '{core.line-weight.sm.value}',
-        type: 'dimension'
+        comment: "Used for ui elements like inputs, dividers, etc.",
+        value: "{core.line-weight.sm.value}",
+        type: "dimension",
       },
       highlight: {
-        comment: 'E.g. use for active menu items.',
-        value: '{core.line-weight.md.value}',
-        type: 'dimension'
+        comment: "E.g. use for active menu items.",
+        value: "{core.line-weight.md.value}",
+        type: "dimension",
       },
       bold: {
-        value: '{core.line-weight.lg.value}',
-        type: 'dimension'
-      }
+        value: "{core.line-weight.lg.value}",
+        type: "dimension",
+      },
     },
     spacing: {
       none: {
-        value: '{core.spacing.spacing-unit-x0.value}',
-        type: 'dimension'
+        value: "{core.spacing.spacing-unit-x0.value}",
+        type: "dimension",
       },
       inner: {
-        comment: 'Use for spacing within elements e.g. between text & icon',
+        comment: "Use for spacing within elements e.g. between text & icon",
         xs: {
-          value: '{core.spacing.spacing-unit-x025.value}',
-          type: 'dimension'
+          value: "{core.spacing.spacing-unit-x025.value}",
+          type: "dimension",
         },
         sm: {
-          value: '{core.spacing.spacing-unit-x05.value}',
-          type: 'dimension'
+          value: "{core.spacing.spacing-unit-x05.value}",
+          type: "dimension",
         },
         md: {
-          value: '{core.spacing.spacing-unit-x1.value}',
-          type: 'dimension'
+          value: "{core.spacing.spacing-unit-x1.value}",
+          type: "dimension",
         },
         lg: {
-          value: '{core.spacing.spacing-unit-x2.value}',
-          type: 'dimension'
-        }
+          value: "{core.spacing.spacing-unit-x2.value}",
+          type: "dimension",
+        },
       },
       grouped: {
-        comment: 'Use when grouping items e.g. fields in a form',
+        comment: "Use when grouping items e.g. fields in a form",
         sm: {
-          value: '{core.spacing.spacing-unit-x3.value}',
-          type: 'dimension'
+          value: "{core.spacing.spacing-unit-x3.value}",
+          type: "dimension",
         },
         md: {
-          value: '{core.spacing.spacing-unit-x4.value}',
-          type: 'dimension'
+          value: "{core.spacing.spacing-unit-x4.value}",
+          type: "dimension",
         },
         lg: {
-          value: '{core.spacing.spacing-unit-x6.value}',
-          type: 'dimension'
-        }
+          value: "{core.spacing.spacing-unit-x6.value}",
+          type: "dimension",
+        },
       },
       related: {
-        comment: 'Use for related items e.g. Title and content below or button below intro text',
+        comment: "Use for related items e.g. Title and content below or button below intro text",
         sm: {
-          value: '{core.spacing.spacing-unit-x8.value}',
-          type: 'dimension'
+          value: "{core.spacing.spacing-unit-x8.value}",
+          type: "dimension",
         },
         md: {
-          value: '{core.spacing.spacing-unit-x10.value}',
-          type: 'dimension'
+          value: "{core.spacing.spacing-unit-x10.value}",
+          type: "dimension",
         },
         lg: {
-          value: '{core.spacing.spacing-unit-x12.value}',
-          type: 'dimension'
-        }
+          value: "{core.spacing.spacing-unit-x12.value}",
+          type: "dimension",
+        },
       },
       unrelated: {
-        comment: 'Use for unrelated items e.g. between different sections on a page',
+        comment: "Use for unrelated items e.g. between different sections on a page",
         sm: {
-          value: '{core.spacing.spacing-unit-x16.value}',
-          type: 'dimension'
+          value: "{core.spacing.spacing-unit-x16.value}",
+          type: "dimension",
         },
         md: {
-          value: '{core.spacing.spacing-unit-x18.value}',
-          type: 'dimension'
+          value: "{core.spacing.spacing-unit-x18.value}",
+          type: "dimension",
         },
         lg: {
-          value: '{core.spacing.spacing-unit-x20.value}',
-          type: 'dimension'
-        }
-      }
+          value: "{core.spacing.spacing-unit-x20.value}",
+          type: "dimension",
+        },
+      },
     },
     radius: {
       small: {
-        comment: 'Used for small elements like checkboxes, etc.',
-        value: '{core.radius.sm.value}',
-        type: 'dimension'
+        comment: "Used for small elements like checkboxes, etc.",
+        value: "{core.radius.sm.value}",
+        type: "dimension",
       },
       standard: {
-        comment: 'Used for our main ui elements like buttons, etc.',
-        value: '{core.radius.md.value}',
-        type: 'dimension'
+        comment: "Used for our main ui elements like buttons, etc.",
+        value: "{core.radius.md.value}",
+        type: "dimension",
       },
       large: {
-        comment: 'Used mainly for containers like cards or dialogs',
-        value: '{core.radius.lg.value}',
-        type: 'dimension'
+        comment: "Used mainly for containers like cards or dialogs",
+        value: "{core.radius.lg.value}",
+        type: "dimension",
       },
       pill: {
-        comment: 'Used for pill-shaped ui elements',
-        value: '{core.radius.pill.value}',
-        type: 'dimension'
+        comment: "Used for pill-shaped ui elements",
+        value: "{core.radius.pill.value}",
+        type: "dimension",
       },
       circle: {
-        comment: 'Used for ui elements like radio buttons or things like avatars',
-        value: '{core.radius.circle.value}',
-        type: 'percentage'
-      }
+        comment: "Used for ui elements like radio buttons or things like avatars",
+        value: "{core.radius.circle.value}",
+        type: "percentage",
+      },
     },
     opacity: {
       invisible: {
-        type: 'number',
-        value: '{core.opacity.none.value}'
+        type: "number",
+        value: "{core.opacity.none.value}",
       },
       transparent: {
-        type: 'number',
-        value: '{core.opacity.low.value}'
+        type: "number",
+        value: "{core.opacity.low.value}",
       },
-      'semi-transparent': {
-        type: 'number',
-        value: '{core.opacity.medium.value}'
+      "semi-transparent": {
+        type: "number",
+        value: "{core.opacity.medium.value}",
       },
       translucent: {
-        type: 'number',
-        value: '{core.opacity.normal}'
+        type: "number",
+        value: "{core.opacity.normal}",
       },
-      'semi-translucent': {
-        type: 'number',
-        value: '{core.opacity.high.value}'
+      "semi-translucent": {
+        type: "number",
+        value: "{core.opacity.high.value}",
       },
       solid: {
-        type: 'number',
-        value: '{core.opacity.full.value}'
-      }
+        type: "number",
+        value: "{core.opacity.full.value}",
+      },
     },
     motion: {
       duration: {
         instant: {
-          value: '{core.motion.duration.instant.value}',
-          type: 'time'
+          value: "{core.motion.duration.instant.value}",
+          type: "time",
         },
         immediate: {
-          value: '{core.motion.duration.immediate.value}',
-          type: 'time'
+          value: "{core.motion.duration.immediate.value}",
+          type: "time",
         },
         transition: {
-          value: '{core.motion.duration.fast.value}',
-          type: 'time'
+          value: "{core.motion.duration.fast.value}",
+          type: "time",
         },
         animation: {
-          value: '{core.motion.duration.slow.value}',
-          type: 'time'
+          value: "{core.motion.duration.slow.value}",
+          type: "time",
         },
-        'animation-deliberate': {
-          value: '{core.motion.duration.deliberate.value}',
-          type: 'time'
-        }
+        "animation-deliberate": {
+          value: "{core.motion.duration.deliberate.value}",
+          type: "time",
+        },
       },
       easing: {
         standard: {
-          value: '{core.motion.easing.easeInOut.value}',
-          type: 'cubic-bezier'
+          value: "{core.motion.easing.easeInOut.value}",
+          type: "cubic-bezier",
         },
         enter: {
-          value: '{core.motion.easing.easeOut.value}',
-          type: 'cubic-bezier'
+          value: "{core.motion.easing.easeOut.value}",
+          type: "cubic-bezier",
         },
         leave: {
-          value: '{core.motion.easing.easeIn.value}',
-          type: 'cubic-bezier'
+          value: "{core.motion.easing.easeIn.value}",
+          type: "cubic-bezier",
         },
-      }
-    }
-  }
+      },
+    },
+  },
 }
