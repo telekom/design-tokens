@@ -1,98 +1,98 @@
 {
   core: {
     spacing: {
-      'spacing-unit-x0': {
-        value: '0px',
-        type: 'dimension'
+      "spacing-unit-x0": {
+        value: "0px",
+        type: "dimension",
       },
-      'spacing-unit-x025': {
-        value: '1px',
-        type: 'dimension'
+      "spacing-unit-x025": {
+        value: "1px",
+        type: "dimension",
       },
-      'spacing-unit-x05': {
-        value: '2px',
-        type: 'dimension'
+      "spacing-unit-x05": {
+        value: "2px",
+        type: "dimension",
       },
-      'spacing-unit-x1': {
-        value: '4px',
-        type: 'dimension'
+      "spacing-unit-x1": {
+        value: "4px",
+        type: "dimension",
       },
-      'spacing-unit-x2': {
-        value: '8px',
-        type: 'dimension'
+      "spacing-unit-x2": {
+        value: "8px",
+        type: "dimension",
       },
-      'spacing-unit-x3': {
-        value: '12px',
-        type: 'dimension'
+      "spacing-unit-x3": {
+        value: "12px",
+        type: "dimension",
       },
-      'spacing-unit-x4': {
-        value: '16px',
-        type: 'dimension'
+      "spacing-unit-x4": {
+        value: "16px",
+        type: "dimension",
       },
-      'spacing-unit-x5': {
-        value: '20px',
-        type: 'dimension'
+      "spacing-unit-x5": {
+        value: "20px",
+        type: "dimension",
       },
-      'spacing-unit-x6': {
-        value: '24px',
-        type: 'dimension'
+      "spacing-unit-x6": {
+        value: "24px",
+        type: "dimension",
       },
-      'spacing-unit-x7': {
-        value: '28px',
-        type: 'dimension'
+      "spacing-unit-x7": {
+        value: "28px",
+        type: "dimension",
       },
-      'spacing-unit-x8': {
-        value: '32px',
-        type: 'dimension'
+      "spacing-unit-x8": {
+        value: "32px",
+        type: "dimension",
       },
-      'spacing-unit-x9': {
-        value: '36px',
-        type: 'dimension'
+      "spacing-unit-x9": {
+        value: "36px",
+        type: "dimension",
       },
-      'spacing-unit-x10': {
-        value: '40px',
-        type: 'dimension'
+      "spacing-unit-x10": {
+        value: "40px",
+        type: "dimension",
       },
-      'spacing-unit-x11': {
-        value: '44px',
-        type: 'dimension'
+      "spacing-unit-x11": {
+        value: "44px",
+        type: "dimension",
       },
-      'spacing-unit-x12': {
-        value: '48px',
-        type: 'dimension'
+      "spacing-unit-x12": {
+        value: "48px",
+        type: "dimension",
       },
-      'spacing-unit-x13': {
-        value: '52px',
-        type: 'dimension'
+      "spacing-unit-x13": {
+        value: "52px",
+        type: "dimension",
       },
-      'spacing-unit-x14': {
-        value: '56px',
-        type: 'dimension'
+      "spacing-unit-x14": {
+        value: "56px",
+        type: "dimension",
       },
-      'spacing-unit-x15': {
-        value: '60px',
-        type: 'dimension'
+      "spacing-unit-x15": {
+        value: "60px",
+        type: "dimension",
       },
-      'spacing-unit-x16': {
-        value: '64px',
-        type: 'dimension'
+      "spacing-unit-x16": {
+        value: "64px",
+        type: "dimension",
       },
-      'spacing-unit-x17': {
-        value: '68px',
-        type: 'dimension'
+      "spacing-unit-x17": {
+        value: "68px",
+        type: "dimension",
       },
-      'spacing-unit-x18': {
-        value: '72px',
-        type: 'dimension'
+      "spacing-unit-x18": {
+        value: "72px",
+        type: "dimension",
       },
-      'spacing-unit-x19': {
-        value: '76px',
-        type: 'dimension'
+      "spacing-unit-x19": {
+        value: "76px",
+        type: "dimension",
       },
-      'spacing-unit-x20': {
-        value: '80px',
-        type: 'dimension'
-      }
-    }
-  }
+      "spacing-unit-x20": {
+        value: "80px",
+        type: "dimension",
+      },
+    },
+  },
 }

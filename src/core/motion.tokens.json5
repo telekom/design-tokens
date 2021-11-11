@@ -3,40 +3,40 @@
     motion: {
       duration: {
         instant: {
-          value: '0ms',
-          type: 'time'
+          value: "0ms",
+          type: "time",
         },
         immediate: {
-          value: '100ms',
-          type: 'time'
+          value: "100ms",
+          type: "time",
         },
         fast: {
-          value: '200ms',
-          type: 'time'
+          value: "200ms",
+          type: "time",
         },
         slow: {
-          value: '600ms',
-          type: 'time'
+          value: "600ms",
+          type: "time",
         },
         deliberate: {
-          value: '800ms',
-          type: 'time'
-        }
+          value: "800ms",
+          type: "time",
+        },
       },
       easing: {
         easeInOut: {
           value: [0.4, 0, 0.6, 1],
-          type: 'cubic-bezier'
+          type: "cubic-bezier",
         },
         easeOut: {
           value: [0.4, 0.6, 0.6, 1],
-          type: 'cubic-bezier'
+          type: "cubic-bezier",
         },
         easeIn: {
           value: [0.4, 0, 1, 1],
-          type: 'cubic-bezier'
+          type: "cubic-bezier",
         },
-      }
-    }
-  }
+      },
+    },
+  },
 }
