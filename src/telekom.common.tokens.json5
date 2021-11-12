@@ -417,5 +417,84 @@
         },
       },
     },
-  },
+    // TODO:
+    // this needs to be adjusted for dark & light mode
+    elevation: {
+      flat: {
+        comment: 'Exclusivly for flat design elements',
+        value: '{core.elevation.level-0.value}',
+        type: 'shadow'
+      },
+      'flat-hover': {
+        comment: 'Exclusivly for flat design elements',
+        value: '{core.elevation.level-1.value}',
+        type: 'shadow'
+      },
+      'flat-pressed': {
+        comment: 'Exclusivly for flat design elements',
+        value: '{core.elevation.level-0.value}',
+        type: 'shadow'
+      },
+      // resting state
+      resting: {
+        comment: 'Default for interactable elements like buttons, etc.',
+        value: '{core.elevation.level-1.value}',
+        type: 'shadow'
+      },
+      'resting-hover': {
+        comment: 'Default for interactable elements like buttons, etc.',
+        value: '{core.elevation.level-3.value}',
+        type: 'shadow'
+      },
+      'resting-pressed': {
+        comment: 'Default for interactable elements like buttons, etc.',
+        value: '{core.elevation.level-0.value}',
+        type: 'shadow'
+      },
+      // raised state
+      raised: {
+        comment: 'For bigger interactable elements like cards, etc.',
+        value: '{core.elevation.level-4.value}',
+        type: 'shadow'
+      },
+      'raised-hover': {
+        comment: 'For bigger interactable elements like cards, etc.',
+        value: '{core.elevation.level-8.value}',
+        type: 'shadow'
+      },
+      'raised-pressed': {
+        comment: 'For bigger interactable elements like cards, etc.',
+        value: '{core.elevation.level-2.value}',
+        type: 'shadow'
+      },
+      // floating state
+      floating: {
+        comment: 'For floating elements that mostly stay in a fixed position like a FAB.',
+        value: '{core.elevation.level-6.value}',
+        type: 'shadow'
+      },
+      'floating-hover': {
+        comment: 'For floating elements that mostly stay in a fixed position like a FAB.',
+        value: '{core.elevation.level-12.value}',
+        type: 'shadow'
+      },
+      'floating-pressed': {
+        comment: 'For floating elements that mostly stay in a fixed position like a FAB.',
+        value: '{core.elevation.level-4.value}',
+        type: 'shadow'
+      },
+      // flying state
+      overlay: {
+        comment: 'For fixed elements that overlay the content e.g. sidebars or bottom sheets',
+        value: '{core.elevation.level-8.value}',
+        type: 'shadow'
+      },
+      // top state above all
+      top: {
+        comment: 'Highest level e.g. for dialogs or modals',
+        value: '{core.elevation.level-12.value}',
+        type: 'shadow'
+      }
+    }
+  }
 }
