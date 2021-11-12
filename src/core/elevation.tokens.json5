@@ -1,5 +1,8 @@
 {
   core: {
+    // TODO:
+    // - improve shadows visually
+    // - implement dark & light mode for shadows
     elevation: {
       "level-0": {
         value: [
