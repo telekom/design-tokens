@@ -1,64 +1,85 @@
 {
   semantic: {
     color: {
-      comment: "Telekom color design tokens light mode",
-      "Text & Icon": {
-        "Text Standard": {
+      comment: "Telekom brand color design tokens",
+      "Text-&-Icon": {
+        "Standard": {
           value: "#000000",
           type: "color",
         },
-        "Text Additional": {
+        "Additional": {
           value: "#7C7C7C",
           type: "color",
         },
-        "Text Disabled": {
+        "Disabled": {
           value: "#9E9E9E",
           type: "color",
         },
-        "Text Inverted": {
+        "Inverted": {
           value: "{core.color.white.value}",
           type: "color",
         },
-        "Text Link": {
+        "Link": {
           value: "#3D8CFF",
           type: "color",
         },
-        "Text Link hovered": {
+        "Link-hovered": {
           value: "#3D8CFF",
           type: "color",
         },
-        "Text Link visited": {
+        "Link-visited": {
           value: "#3D8CFF",
           type: "color",
         },
-        "Text Primary": {
+        "Link-active": {
           value: "#3D8CFF",
           type: "color",
         },
-        "Text Informational": {
+        "Primary": {
           value: "#3D8CFF",
           type: "color",
         },
-        "Text Success": {
+        "Informational": {
           value: "#3D8CFF",
           type: "color",
         },
-        "Text Danger": {
+        "Success": {
           value: "#3D8CFF",
           type: "color",
         },
-        "Text Warning": {
+        "Danger": {
+          value: "#3D8CFF",
+          type: "color",
+        },
+        "Warning": {
           value: "#3D8CFF",
           type: "color",
         },
       },
       Background: {
         comment: "Background colors are used for page, app and component backgrounds",
-        Background: {
+        Canvas: {
+          comment: "Used as the background for your product (app, website, etc.)",
           value: "{core.color.white.value}",
           type: "color",
         },
-        "Background Subtle": {
+        "Canvas-Subtle": {
+          comment: "Used as the background for your product (app, website, etc.)",
+          value: "#fcfcfc",
+          type: "color",
+        },
+        "Backdrop": {
+          comment: "Use to overlay content below dialogs to separate dialog from content below",
+          value: "#fcfcfc",
+          type: "color",
+        },
+        "Surface": {
+          comment: "Use as the background of elements like cards, headers, bottom bars, etc.",
+          value: "#fcfcfc",
+          type: "color",
+        },
+        "Surface-Subtle": {
+          comment: "Use as the background of elements like cards, headers, bottom bars, etc.",
           value: "#fcfcfc",
           type: "color",
         },
@@ -66,85 +87,85 @@
       UI: {
         comment: "UI colors are used to create UI elements like dividers, checkboxes, buttons, etc.",
         Subtle: {
-          "UI Subtle": {
+          "Standard": {
             value: "{core.color.white.value}",
             type: "color",
           },
-          "UI Subtle hovered": {
+          "Hovered": {
             value: "#fcfcfc",
             type: "color",
           },
-          "UI Subtle pressed": {
+          "Pressed": {
             value: "#fcfcfc",
             type: "color",
           },
         },
         Normal: {
-          "UI Normal": {
+          "Standard": {
             value: "{core.color.white.value}",
             type: "color",
           },
-          "UI Normal hovered": {
+          "Hovered": {
             value: "#fcfcfc",
             type: "color",
           },
-          "UI Normal pressed": {
+          "Pressed": {
             value: "#fcfcfc",
             type: "color",
           },
         },
         Bold: {
-          "UI Bold": {
+          "Standard": {
             value: "{core.color.white.value}",
             type: "color",
           },
-          "UI Bold hovered": {
+          "Hovered": {
             value: "#fcfcfc",
             type: "color",
           },
-          "UI Bold pressed": {
+          "Pressed": {
             value: "#fcfcfc",
             type: "color",
           },
         },
       },
       Primary: {
-        Primary: {
+        Standard: {
           value: "#216BFF",
           type: "color",
         },
-        "Primary hovered": {
+        "Hovered": {
           value: "#216BFF",
           type: "color",
         },
-        "Primary pressed": {
+        "Pressed": {
           value: "#216BFF",
           type: "color",
         },
-        "Primary Subtle": {
+        "Subtle": {
           value: "#216BFF",
           type: "color",
         },
       },
       Functional: {
-        "Focus Ring": {
+        "Focus": {
           value: "#216BFF",
           type: "color",
         },
         Success: {
-          "Success Standard": {
+          "Standard": {
             value: "#216BFF",
             type: "color",
           },
-          "Success Hovered": {
+          "Hovered": {
             value: "#216BFF",
             type: "color",
           },
-          "Success Pressed": {
+          "Pressed": {
             value: "#216BFF",
             type: "color",
           },
-          "Success Subtle": {
+          "Subtle": {
             value: "#216BFF",
             type: "color",
           },
@@ -154,51 +175,51 @@
             value: "#216BFF",
             type: "color",
           },
-          "Informational hovered": {
+          "Hovered": {
             value: "#216BFF",
             type: "color",
           },
-          "Informational pressed": {
+          "Pressed": {
             value: "#216BFF",
             type: "color",
           },
-          "Informational Subtle": {
+          "Subtle": {
             value: "#216BFF",
             type: "color",
           },
         },
         Warning: {
-          Warning: {
+          Standard: {
             value: "#216BFF",
             type: "color",
           },
-          "Warning hovered": {
+          "Hovered": {
             value: "#216BFF",
             type: "color",
           },
-          "Warning pressed": {
+          "Pressed": {
             value: "#216BFF",
             type: "color",
           },
-          "Warning Subtle": {
+          "Subtle": {
             value: "#216BFF",
             type: "color",
           },
         },
         Danger: {
-          Danger: {
+          Standard: {
             value: "#216BFF",
             type: "color",
           },
-          "Danger hovered": {
+          "Hovered": {
             value: "#216BFF",
             type: "color",
           },
-          "Danger pressed": {
+          "Pressed": {
             value: "#216BFF",
             type: "color",
           },
-          "Danger Subtle": {
+          "Subtle": {
             value: "#216BFF",
             type: "color",
           },
