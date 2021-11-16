@@ -1,131 +1,181 @@
 {
-// This is to plan out the desired output
-// top level should be light / dark for colors & shadows
-// - no prefix
-// - no type / category
-  "light": {
+  // This is to plan out the desired output
+  // top level should be light / dark for colors & shadows
+  // - no prefix
+  // - no type / category
+  light: {
     // deep nesting for folder structure
-    "Text & Icon": {
-      "Text Standard": {
-        "value": "#000000",
-        "type": "color"
+    'Text & Icon': {
+      Standard: {
+        value: '#000000',
+        type: 'color'
       },
-      // ....
-    },
-    "Background": {
-      "comment": "Background colors are used for page, app and component backgrounds",
-      "Background": {
-        "value": "{core.color.white.value}",
-        "type": "color"
+      Additional: {
+        value: '#7C7C7C',
+        type: 'color'
       },
-      "Background Subtle": {
-        "value": "#fcfcfc",
-        "type": "color"
+      Disabled: {
+        value: '#9E9E9E',
+        type: 'color'
+      },
+      Inverted: {
+        value: '#ffffff',
+        type: 'color'
+      },
+      Link: {
+        value: '#3D8CFF',
+        type: 'color'
+      },
+      'Link-hovered': {
+        value: '#3D8CFF',
+        type: 'color'
+      },
+      'Link-visited': {
+        value: '#3D8CFF',
+        type: 'color'
+      },
+      'Link-active': {
+        value: '#3D8CFF',
+        type: 'color'
+      },
+      Primary: {
+        value: '#3D8CFF',
+        type: 'color'
+      },
+      Informational: {
+        value: '#3D8CFF',
+        type: 'color'
+      },
+      Success: {
+        value: '#3D8CFF',
+        type: 'color'
+      },
+      Danger: {
+        value: '#3D8CFF',
+        type: 'color'
+      },
+      Warning: {
+        value: '#3D8CFF',
+        type: 'color'
       }
     },
-    "UI": {
-      "comment": "UI colors are used to create UI elements like dividers, checkboxes, buttons, etc.",
-      "Subtle": {
-        "UI Subtle": {
-          "value": "{core.color.white.value}",
-          "type": "color"
+    Background: {
+      comment: 'Background colors are used for page, app and component backgrounds',
+      Background: {
+        value: '{core.color.white.value}',
+        type: 'color'
+      },
+      'Background Subtle': {
+        value: '#fcfcfc',
+        type: 'color'
+      }
+    },
+    UI: {
+      comment: 'UI colors are used to create UI elements like dividers, checkboxes, buttons, etc.',
+      Subtle: {
+        'UI Subtle': {
+          value: '{core.color.white.value}',
+          type: 'color'
         },
-        "UI Subtle hovered": {
-          "value": "#fcfcfc",
-          "type": "color"
+        'UI Subtle hovered': {
+          value: '#fcfcfc',
+          type: 'color'
         },
-        "UI Subtle pressed": {
-          "value": "#fcfcfc",
-          "type": "color"
+        'UI Subtle pressed': {
+          value: '#fcfcfc',
+          type: 'color'
         }
       }
     }
   },
-  "Body text": {
-    "Body-long Bold": {
-      "value": {
-        "fontFamily": "TeleNeo",
-        "fontWeight": "Bold",
-        "lineHeight": 24,
-        "fontSize": 16,
-        "letterSpacing": 0,
-        "paragraphSpacing": 0
+  dark: {
+    'Text & Icon': {}
+  },
+  'Body text': {
+    'Body-long Bold': {
+      value: {
+        fontFamily: 'TeleNeo',
+        fontWeight: 'Bold',
+        lineHeight: 24,
+        fontSize: 16,
+        letterSpacing: 0,
+        paragraphSpacing: 0
       },
-      "type": "typography"
+      type: 'typography'
     }
   },
-  {
+  radius: {
     xs: {
-      "value": 1,
-      "type": "borderRadius"
+      value: 1,
+      type: 'borderRadius'
     },
     sm: {
-      "value": 2,
-      "type": "borderRadius"
+      value: 2,
+      type: 'borderRadius'
     },
     md: {
-      "value": 4,
-      "type": "borderRadius"
+      value: 4,
+      type: 'borderRadius'
     },
     lg: {
-      "value": 8,
-      "type": "borderRadius"
-    },
+      value: 8,
+      type: 'borderRadius'
+    }
   },
-  {
+  opacity: {
     lowest: {
-      "value": 0.25,
-      "type": "opacity"
+      value: 0.25,
+      type: 'opacity'
     },
     low: {
-      "value": 0.35,
-      "type": "opacity"
+      value: 0.35,
+      type: 'opacity'
     },
     medium: {
-      "value": 0.5,
-      "type": "opacity"
+      value: 0.5,
+      type: 'opacity'
     },
     high: {
-      "value": 0.75,
-      "type": "opacity"
+      value: 0.75,
+      type: 'opacity'
     },
     highest: {
-      "value": 0.85,
-      "type": "opacity"
+      value: 0.85,
+      type: 'opacity'
     },
-    lineWeight: {
+    'line weight': {
       sm: {
         value: 1,
-        type: "sizing"
+        type: 'sizing'
       },
       md: {
         value: 2,
-        type: "sizing"
+        type: 'sizing'
       },
       lg: {
         value: 4,
-        type: "sizing"
+        type: 'sizing'
       }
     },
-    lineWeight: {
+    'line weight': {
       sm: {
         value: 1,
-        type: "borderWidth"
+        type: 'borderWidth'
       },
       md: {
         value: 2,
-        type: "borderWidth"
+        type: 'borderWidth'
       },
       lg: {
         value: 4,
-        type: "borderWidth"
+        type: 'borderWidth'
       }
     }
   },
-  {
-    "between related": {
-      "value": 16,
-      "type": "spacing"
+  spacing: {
+    'between related': {
+      value: 16,
+      type: 'spacing'
     }
   }
 }
