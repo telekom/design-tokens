@@ -4,55 +4,96 @@
       comment: "Telekom brand color design tokens",
       "Text-&-Icon": {
         Standard: {
-          value: "#000000",
+          value: {
+            light: "{core.color.grey.200.value}",
+            dark: "{core.color.grey.0.value}",
+          },
           type: "color",
         },
         Additional: {
-          value: "#7C7C7C",
-          type: "color",
-        },
-        Disabled: {
-          value: "#9E9E9E",
-          type: "color",
-        },
-        Inverted: {
-          value: "{core.color.white.value}",
+          value: {
+            light: "{core.color.grey.120.value}",
+            dark: "{core.color.grey.80.value}",
+          },
           type: "color",
         },
         Link: {
-          value: "#3D8CFF",
+          value: {
+            light: "{core.color.blue.60.value}",
+            dark: "{core.color.blue.50.value}",
+          },
           type: "color",
         },
         "Link-hovered": {
-          value: "#3D8CFF",
+          value: {
+            light: "{core.color.blue.70.value}",
+            dark: "{core.color.blue.40.value}",
+          },
           type: "color",
         },
         "Link-visited": {
-          value: "#3D8CFF",
+          value: {
+            light: "{core.color.pigeon.80.value}",
+            dark: "{core.color.pigeon.60.value}",
+          },
           type: "color",
         },
         "Link-active": {
-          value: "#3D8CFF",
+          value: {
+            light: "{core.color.blue.90.value}",
+            dark: "{core.color.blue.30.value}",
+          },
           type: "color",
         },
         Primary: {
-          value: "#3D8CFF",
+          value: {
+            light: "{core.color.magenta.brand.value}",
+            dark: "{core.color.magenta.brand.value}",
+          },
           type: "color",
         },
         Informational: {
-          value: "#3D8CFF",
+          value: {
+            light: "{core.color.blue.70.value}",
+            dark: "{core.color.blue.50.value}",
+          },
           type: "color",
         },
         Success: {
-          value: "#3D8CFF",
+          value: {
+            light: "{core.color.pine.80.value}",
+            dark: "{core.color.pine.60.value}",
+          },
           type: "color",
         },
         Danger: {
-          value: "#3D8CFF",
+          value: {
+            light: "{core.color.red.60.value}",
+            dark: "{core.color.red.50.value}",
+          },
           type: "color",
         },
         Warning: {
-          value: "#3D8CFF",
+          value: {
+            light: "{core.color.orange.60.value}",
+            dark: "{core.color.orange.50.value}",
+          },
+          type: "color",
+        },
+        White: {
+          comment: "This text color is white in all modes (light & dark)",
+          value: {
+            light: "{core.color.white.value}",
+            dark: "{core.color.white.value}",
+          },
+          type: "color",
+        },
+        Black: {
+          comment: "This text color is black in all modes (light & dark)",
+          value: {
+            light: "{core.color.black.100.value}",
+            dark: "{core.color.black.100.value}",
+          },
           type: "color",
         },
       },
@@ -60,167 +101,268 @@
         comment: "Background colors are used for page, app and component backgrounds",
         Canvas: {
           comment: "Used as the background for your product (app, website, etc.)",
-          value: "{core.color.white.value}",
+          value: {
+            light: "{core.color.white.value}",
+            dark: "{core.color.grey.200.value}",
+          },
           type: "color",
         },
         "Canvas-Subtle": {
           comment: "Used as the background for your product (app, website, etc.)",
-          value: "#fcfcfc",
+          value: {
+            light: "{core.color.grey.10.value}",
+            dark: "{core.color.grey.190.value}",
+          },
           type: "color",
         },
         Backdrop: {
           comment: "Use to overlay content below dialogs to separate dialog from content below",
-          value: "#fcfcfc",
+          value: {
+            light: "{core.color.black.50.value}",
+            dark: "{core.color.black.70.value}",
+          },
           type: "color",
         },
         Surface: {
           comment: "Use as the background of elements like cards, headers, bottom bars, etc.",
-          value: "#fcfcfc",
+          value: {
+            light: "{core.color.white.value}",
+            dark: "{core.color.grey.180.value}",
+          },
           type: "color",
         },
         "Surface-Subtle": {
           comment: "Use as the background of elements like cards, headers, bottom bars, etc.",
-          value: "#fcfcfc",
+          value: {
+            light: "{core.color.grey.10.value}",
+            dark: "{core.color.grey.170.value}",
+          },
           type: "color",
         },
       },
       UI: {
         comment: "UI colors are used to create UI elements like dividers, checkboxes, buttons, etc.",
         Subtle: {
-          Standard: {
-            value: "{core.color.white.value}",
-            type: "color",
+          value: {
+            light: "{core.color.grey.20.value}",
+            dark: "{core.color.grey.180.value}",
           },
-          Hovered: {
-            value: "#fcfcfc",
-            type: "color",
+          type: "color",
+        },
+        Light: {
+          value: {
+            light: "{core.color.grey.60.value}",
+            dark: "{core.color.grey.170.value}",
           },
-          Pressed: {
-            value: "#fcfcfc",
-            type: "color",
-          },
+          type: "color",
         },
         Normal: {
-          Standard: {
-            value: "{core.color.white.value}",
-            type: "color",
+          value: {
+            light: "{core.color.grey.100.value}",
+            dark: "{core.color.grey.160.value}",
           },
-          Hovered: {
-            value: "#fcfcfc",
-            type: "color",
-          },
-          Pressed: {
-            value: "#fcfcfc",
-            type: "color",
-          },
+          type: "color",
         },
-        Bold: {
-          Standard: {
-            value: "{core.color.white.value}",
-            type: "color",
+        strong: {
+          value: {
+            light: "{core.color.grey.140.value}",
+            dark: "{core.color.grey.140.value}",
           },
-          Hovered: {
-            value: "#fcfcfc",
-            type: "color",
+          type: "color",
+        },
+        "extra-strong": {
+          value: {
+            light: "{core.color.grey.200.value}",
+            dark: "{core.color.grey.0.value}",
           },
-          Pressed: {
-            value: "#fcfcfc",
-            type: "color",
-          },
+          type: "color",
         },
       },
       Primary: {
         Standard: {
-          value: "#216BFF",
+          value: {
+            light: "{core.color.magenta.brand.value}",
+            dark: "{core.color.magenta.brand.value}",
+          },
           type: "color",
         },
         Hovered: {
-          value: "#216BFF",
+          value: {
+            light: "{core.color.magenta.dark.value}",
+            dark: "{core.color.magenta.dark.value}",
+          },
           type: "color",
         },
         Pressed: {
-          value: "#216BFF",
+          value: {
+            light: "{core.color.magenta.darker.value}",
+            dark: "{core.color.magenta.darker.value}",
+          },
           type: "color",
         },
         Subtle: {
-          value: "#216BFF",
+          value: {
+            light: "{core.color.magenta.tint.value}",
+            dark: "{core.color.magenta.shade.value}",
+          },
           type: "color",
         },
       },
       Functional: {
         Focus: {
-          value: "#216BFF",
+          value: {
+            light: "{core.color.blue.60.value}",
+            dark: "{core.color.blue.50.value}",
+          },
           type: "color",
         },
         Success: {
           Standard: {
-            value: "#216BFF",
+            value: {
+              light: "{core.color.pine.60.value}",
+              dark: "{core.color.pine.100.value}",
+            },
             type: "color",
           },
           Hovered: {
-            value: "#216BFF",
+            value: {
+              light: "{core.color.pine.80.value}",
+              dark: "{core.color.pine.80.value}",
+            },
             type: "color",
           },
           Pressed: {
-            value: "#216BFF",
+            value: {
+              light: "{core.color.pine.100.value}",
+              dark: "{core.color.pine.60.value}",
+            },
             type: "color",
           },
           Subtle: {
-            value: "#216BFF",
+            value: {
+              light: "{core.color.pine.0.value}",
+              dark: "{core.color.pine.150.value}",
+            },
+            type: "color",
+          },
+        },
+        Interaction: {
+          Standard: {
+            value: {
+              light: "{core.color.blue.60.value}",
+              dark: "{core.color.blue.50.value}",
+            },
+            type: "color",
+          },
+          Hovered: {
+            value: {
+              light: "{core.color.blue.70.value}",
+              dark: "{core.color.blue.40.value}",
+            },
+            type: "color",
+          },
+          Pressed: {
+            value: {
+              light: "{core.color.blue.80.value}",
+              dark: "{core.color.blue.30.value}",
+            },
+            type: "color",
+          },
+          Subtle: {
+            value: {
+              light: "{core.color.blue.0.value}",
+              dark: "{core.color.blue.100.value}",
+            },
             type: "color",
           },
         },
         Informational: {
-          Informational: {
-            value: "#216BFF",
+          Standard: {
+            value: {
+              light: "{core.color.blue.60.value}",
+              dark: "{core.color.blue.50.value}",
+            },
             type: "color",
           },
           Hovered: {
-            value: "#216BFF",
+            value: {
+              light: "{core.color.blue.70.value}",
+              dark: "{core.color.blue.40.value}",
+            },
             type: "color",
           },
           Pressed: {
-            value: "#216BFF",
+            value: {
+              light: "{core.color.blue.80.value}",
+              dark: "{core.color.blue.30.value}",
+            },
             type: "color",
           },
           Subtle: {
-            value: "#216BFF",
+            value: {
+              light: "{core.color.blue.0.value}",
+              dark: "{core.color.blue.100.value}",
+            },
             type: "color",
           },
         },
         Warning: {
           Standard: {
-            value: "#216BFF",
+            value: {
+              light: "{core.color.orange.50.value}",
+              dark: "{core.color.orange.60.value}",
+            },
             type: "color",
           },
           Hovered: {
-            value: "#216BFF",
+            value: {
+              light: "{core.color.orange.60.value}",
+              dark: "{core.color.orange.50.value}",
+            },
             type: "color",
           },
           Pressed: {
-            value: "#216BFF",
+            value: {
+              light: "{core.color.orange.70.value}",
+              dark: "{core.color.orange.40.value}",
+            },
             type: "color",
           },
           Subtle: {
-            value: "#216BFF",
+            value: {
+              light: "{core.color.orange.0.value}",
+              dark: "{core.color.orange.100.value}",
+            },
             type: "color",
           },
         },
         Danger: {
           Standard: {
-            value: "#216BFF",
+            value: {
+              light: "{core.color.red.50.value}",
+              dark: "{core.color.red.60.value}",
+            },
             type: "color",
           },
           Hovered: {
-            value: "#216BFF",
+            value: {
+              light: "{core.color.red.60.value}",
+              dark: "{core.color.red.50.value}",
+            },
             type: "color",
           },
           Pressed: {
-            value: "#216BFF",
+            value: {
+              light: "{core.color.red.70.value}",
+              dark: "{core.color.red.40.value}",
+            },
             type: "color",
           },
           Subtle: {
-            value: "#216BFF",
+            value: {
+              light: "{core.color.red.0.value}",
+              dark: "{core.color.red.100.value}",
+            },
             type: "color",
           },
         },
@@ -780,6 +922,5 @@
         },
       },
     },
-    elevation: {},
   },
 }

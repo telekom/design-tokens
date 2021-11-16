@@ -6,24 +6,67 @@
         type: "color",
       },
       black: {
-        value: "#000000",
-        type: "color",
+        comment: "Black with increasing opacity from 10% to 100%",
+        "10": {
+          value: "#0000001a",
+          type: "color",
+        },
+        "20": {
+          value: "#00000033",
+          type: "color",
+        },
+        "30": {
+          value: "#0000004d",
+          type: "color",
+        },
+        "40": {
+          value: "#00000066",
+          type: "color",
+        },
+        "50": {
+          value: "#00000080",
+          type: "color",
+        },
+        "60": {
+          value: "#00000099",
+          type: "color",
+        },
+        "70": {
+          value: "#000000b3",
+          type: "color",
+        },
+        "80": {
+          value: "#000000cc",
+          type: "color",
+        },
+        "90": {
+          value: "#000000e6",
+          type: "color",
+        },
+        "100": {
+          value: "#000000",
+          type: "color",
+        },
       },
       magenta: {
         brand: {
           value: "#e20074",
           type: "color",
         },
-        highlight: {
-          value: "#F90984",
+        dark: {
+          value: "#C00063",
           type: "color",
         },
-        shade: {
-          value: "#b8005f",
+        darker: {
+          value: "#9E0051",
           type: "color",
         },
         tint: {
-          value: "#ffebf5",
+          value: "#FEF2F8",
+          type: "color",
+        },
+        shade: {
+          value: "#2D0017",
           type: "color",
         },
       },
@@ -436,140 +479,151 @@
         },
       },
       orange: {
+        comment: "Scale needs to be rebuild",
         "0": {
-          value: "#fffcdf",
+          value: "#FFF9F2",
           type: "color",
         },
         "10": {
-          value: "#fff4c6",
+          value: "#1AF0BD",
           type: "color",
         },
         "20": {
-          value: "#ffe9ae",
+          value: "#1AF0BD",
           type: "color",
         },
         "30": {
-          value: "#ffda97",
+          value: "#1AF0BD",
           type: "color",
         },
         "40": {
-          value: "#ffc780",
+          value: "#ffa348",
           type: "color",
         },
         "50": {
-          value: "#ffb26a",
+          value: "#ff9124",
           type: "color",
         },
         "60": {
-          value: "#fc9a55",
+          value: "#ff7f00",
           type: "color",
         },
         "70": {
-          value: "#df6d3f",
+          value: "#dc6d00",
           type: "color",
         },
         "80": {
-          value: "#ae461c",
+          value: "#1AF0BD",
           type: "color",
         },
         "90": {
-          value: "#973209",
+          value: "#1AF0BD",
           type: "color",
         },
         "100": {
-          value: "#7d1f09",
+          value: "#4d2600",
           type: "color",
         },
       },
       red: {
         "0": {
-          value: "#ffc5cb",
+          value: "#fef6f8",
           type: "color",
         },
         "10": {
-          value: "#ffaab6",
+          value: "#f9d0da",
           type: "color",
         },
         "20": {
-          value: "#fe94a5",
+          value: "#f2abbb",
           type: "color",
         },
         "30": {
-          value: "#f98093",
+          value: "#ea879d",
           type: "color",
         },
         "40": {
-          value: "#f36a80",
+          value: "#e16580",
           type: "color",
         },
         "50": {
-          value: "#ef556e",
+          value: "#d64562",
           type: "color",
         },
         "60": {
-          value: "#ed425b",
+          value: "#c02f4c",
           type: "color",
         },
         "70": {
-          value: "#d82a48",
+          value: "#9a2a3f",
           type: "color",
         },
         "80": {
-          value: "#c31c3b",
+          value: "#752332",
           type: "color",
         },
         "90": {
-          value: "#ad0f31",
+          value: "#521b24",
           type: "color",
         },
         "100": {
-          value: "#990024",
+          value: "#301116",
           type: "color",
         },
       },
       blue: {
         "0": {
-          value: "#d6f8ff",
+          value: "#f4f8ff",
           type: "color",
         },
+
         "10": {
-          value: "#b5ebff",
+          value: "#c9dcfe",
           type: "color",
         },
+
         "20": {
-          value: "#95daff",
+          value: "#9ec0fd",
           type: "color",
         },
+
         "30": {
-          value: "#77c4ff",
+          value: "#75a3fa",
           type: "color",
         },
+
         "40": {
-          value: "#59aaff",
+          value: "#4d87f6",
           type: "color",
         },
+
         "50": {
-          value: "#3d8cff",
+          value: "#256bf1",
           type: "color",
         },
+
         "60": {
-          value: "#216bff",
+          value: "#1154d9",
           type: "color",
         },
+
         "70": {
-          value: "#0d39df",
+          value: "#1045ae",
           type: "color",
         },
+
         "80": {
-          value: "#000bbf",
+          value: "#0e3584",
           type: "color",
         },
+
         "90": {
-          value: "#03009f",
+          value: "#0b255b",
           type: "color",
         },
+
         "100": {
-          value: "#140080",
+          value: "#071533",
           type: "color",
         },
       },
@@ -662,6 +716,10 @@
         },
         "100": {
           value: "#177345",
+          type: "color",
+        },
+        "150": {
+          value: "#002613",
           type: "color",
         },
       },
