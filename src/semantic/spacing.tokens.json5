@@ -1,0 +1,74 @@
+{
+  semantic: {
+    spacing: {
+      none: {
+        value: '{core.spacing.spacing-unit-x0.value}',
+        type: 'dimension'
+      },
+      inner: {
+        comment: 'Use for spacing within elements e.g. between text & icon',
+        xs: {
+          value: '{core.spacing.spacing-unit-x025.value}',
+          type: 'dimension'
+        },
+        sm: {
+          value: '{core.spacing.spacing-unit-x05.value}',
+          type: 'dimension'
+        },
+        md: {
+          value: '{core.spacing.spacing-unit-x1.value}',
+          type: 'dimension'
+        },
+        lg: {
+          value: '{core.spacing.spacing-unit-x2.value}',
+          type: 'dimension'
+        }
+      },
+      grouped: {
+        comment: 'Use when grouping items e.g. fields in a form',
+        sm: {
+          value: '{core.spacing.spacing-unit-x3.value}',
+          type: 'dimension'
+        },
+        md: {
+          value: '{core.spacing.spacing-unit-x4.value}',
+          type: 'dimension'
+        },
+        lg: {
+          value: '{core.spacing.spacing-unit-x6.value}',
+          type: 'dimension'
+        }
+      },
+      related: {
+        comment: 'Use for related items e.g. Title and content below or button below intro text',
+        sm: {
+          value: '{core.spacing.spacing-unit-x8.value}',
+          type: 'dimension'
+        },
+        md: {
+          value: '{core.spacing.spacing-unit-x10.value}',
+          type: 'dimension'
+        },
+        lg: {
+          value: '{core.spacing.spacing-unit-x12.value}',
+          type: 'dimension'
+        }
+      },
+      unrelated: {
+        comment: 'Use for unrelated items e.g. between different sections on a page',
+        sm: {
+          value: '{core.spacing.spacing-unit-x16.value}',
+          type: 'dimension'
+        },
+        md: {
+          value: '{core.spacing.spacing-unit-x18.value}',
+          type: 'dimension'
+        },
+        lg: {
+          value: '{core.spacing.spacing-unit-x20.value}',
+          type: 'dimension'
+        }
+      }
+    }
+  }
+}
