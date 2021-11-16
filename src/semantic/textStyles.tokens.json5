@@ -1,0 +1,136 @@
+{
+  semantic: {
+    "text-style": {
+      footnote: {
+        value: {
+          "font-family": "{semantic.typography.font-family.sans.value}",
+          "font-size": "{semantic.typography.font-size.footnote.value}",
+          "font-weight": "{semantic.typography.font-weight.regular.value}",
+          "line-spacing": "{semantic.typography.line-spacing.tight.value}",
+          "letter-spacing": "{semantic.typography.letter-spacing.standard.value}",
+        },
+        type: "textStyle",
+      },
+      small: {
+        value: {
+          "font-family": "{semantic.typography.font-family.sans.value}",
+          "font-size": "{semantic.typography.font-size.small.value}",
+          "font-weight": "{semantic.typography.font-weight.regular.value}",
+          "line-spacing": "{semantic.typography.line-spacing.standard.value}",
+          "letter-spacing": "{semantic.typography.letter-spacing.standard.value}",
+        },
+        type: "textStyle",
+      },
+      caption: {
+        value: {
+          "font-family": "{semantic.typography.font-family.sans.value}",
+          "font-size": "{semantic.typography.font-size.caption.value}",
+          "font-weight": "{semantic.typography.font-weight.regular.value}",
+          "line-spacing": "{semantic.typography.line-spacing.standard.value}",
+          "letter-spacing": "{semantic.typography.letter-spacing.standard.value}",
+        },
+        type: "textStyle",
+      },
+      body: {
+        value: {
+          "font-family": "{semantic.typography.font-family.sans.value}",
+          "font-size": "{semantic.typography.font-size.body.value}",
+          "font-weight": "{semantic.typography.font-weight.regular.value}",
+          "line-spacing": "{semantic.typography.line-spacing.standard.value}",
+          "letter-spacing": "{semantic.typography.letter-spacing.standard.value}",
+        },
+        type: "textStyle",
+      },
+      callout: {
+        value: {
+          "font-family": "{semantic.typography.font-family.sans.value}",
+          "font-size": "{semantic.typography.font-size.callout.value}",
+          "font-weight": "{semantic.typography.font-weight.regular.value}",
+          "line-spacing": "{semantic.typography.line-spacing.standard.value}",
+          "letter-spacing": "{semantic.typography.letter-spacing.standard.value}",
+        },
+        type: "textStyle",
+      },
+      "heading-6": {
+        value: {
+          "font-family": "{semantic.typography.font-family.sans.value}",
+          "font-size": "{semantic.typography.font-size.body.value}",
+          "font-weight": "{semantic.typography.font-weight.bold.value}",
+          "line-spacing": "{semantic.typography.line-spacing.standard.value}",
+          "letter-spacing": "{semantic.typography.letter-spacing.standard.value}",
+        },
+        type: "textStyle",
+      },
+      "heading-5": {
+        value: {
+          "font-family": "{semantic.typography.font-family.sans.value}",
+          "font-size": "{semantic.typography.font-size.callout.value}",
+          "font-weight": "{semantic.typography.font-weight.extra-bold.value}",
+          "line-spacing": "{semantic.typography.line-spacing.standard.value}",
+          "letter-spacing": "{semantic.typography.letter-spacing.standard.value}",
+        },
+        type: "textStyle",
+      },
+      "heading-4": {
+        value: {
+          "font-family": "{semantic.typography.font-family.sans.value}",
+          "font-size": "{semantic.typography.font-size.headline-3.value}",
+          "font-weight": "{semantic.typography.font-weight.extra-bold.value}",
+          "line-spacing": "{semantic.typography.line-spacing.standard.value}",
+          "letter-spacing": "{semantic.typography.letter-spacing.standard.value}",
+        },
+        type: "textStyle",
+      },
+      "heading-3": {
+        value: {
+          "font-family": "{semantic.typography.font-family.sans.value}",
+          "font-size": "{semantic.typography.font-size.headline-2.value}",
+          "font-weight": "{semantic.typography.font-weight.extra-bold.value}",
+          "line-spacing": "{semantic.typography.line-spacing.standard.value}",
+          "letter-spacing": "{semantic.typography.letter-spacing.standard.value}",
+        },
+        type: "textStyle",
+      },
+      "heading-2": {
+        value: {
+          "font-family": "{semantic.typography.font-family.sans.value}",
+          "font-size": "{semantic.typography.font-size.headline-1.value}",
+          "font-weight": "{semantic.typography.font-weight.extra-bold.value}",
+          "line-spacing": "{semantic.typography.line-spacing.tight.value}",
+          "letter-spacing": "{semantic.typography.letter-spacing.standard.value}",
+        },
+        type: "textStyle",
+      },
+      "heading-1": {
+        value: {
+          "font-family": "{semantic.typography.font-family.sans.value}",
+          "font-size": "{semantic.typography.font-size.title-3.value}",
+          "font-weight": "{semantic.typography.font-weight.extra-bold.value}",
+          "line-spacing": "{semantic.typography.line-spacing.extra-tight.value}",
+          "letter-spacing": "{semantic.typography.letter-spacing.standard.value}",
+        },
+        type: "textStyle",
+      },
+      "title-2": {
+        value: {
+          "font-family": "{semantic.typography.font-family.sans.value}",
+          "font-size": "{semantic.typography.font-size.title-2.value}",
+          "font-weight": "{semantic.typography.font-weight.extra-bold.value}",
+          "line-spacing": "{semantic.typography.line-spacing.extra-tight.value}",
+          "letter-spacing": "{semantic.typography.letter-spacing.standard.value}",
+        },
+        type: "textStyle",
+      },
+      "title-1": {
+        value: {
+          "font-family": "{semantic.typography.font-family.sans.value}",
+          "font-size": "{semantic.typography.font-size.title-1.value}",
+          "font-weight": "{semantic.typography.font-weight.extra-bold.value}",
+          "line-spacing": "{semantic.typography.line-spacing.extra-tight.value}",
+          "letter-spacing": "{semantic.typography.letter-spacing.standard.value}",
+        },
+        type: "textStyle",
+      },
+    }
+  }
+}
