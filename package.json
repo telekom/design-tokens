@@ -7,7 +7,7 @@
     "start": "npm run build",
     "prebuild": "rimraf build",
     "build": "node config/build.js",
-    "format": "prettier --write \"src/**/*{json,json5}\""
+    "format": "prettier --write \"src/**/*{json,json5}\" \"config/**/*.js\""
   },
   "repository": {
     "type": "git",
