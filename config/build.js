@@ -2,11 +2,14 @@ const fs = require('fs/promises');
 const deep = require('deep-get-set');
 const prettier = require('prettier');
 const StyleDictionary = require('style-dictionary');
-const startCase = require('lodash/startCase');
+const { upperFirst } = require('style-dictionary/lib/utils/es6_');
 
 const PREFIX = 'scl';
 const OUTPUT_PATH = 'build/';
 const SOURCE_PATH = 'src/';
+
+const FIGMA_KEY_LIGHT = 'light';
+const FIGMA_KEY_DARK = 'dark';
 
 /**
  * This is WIP, we'll split it out in different files as we make progress.
@@ -78,10 +81,10 @@ StyleDictionary.registerAction({
 });
 
 StyleDictionary.registerAction({
-  name: 'bundle_json',
+  name: 'bundle_figma',
   do: async function (dictionary, config) {
     // TODO get these from `config`?
-    const COMMON_PATH = OUTPUT_PATH + 'json/';
+    const COMMON_PATH = OUTPUT_PATH + 'figma/';
     const modeless = JSON.parse(
       await fs.readFile(COMMON_PATH + 'variables.modeless.json')
     );
@@ -92,8 +95,8 @@ StyleDictionary.registerAction({
       await fs.readFile(COMMON_PATH + 'variables.dark.json')
     );
     const output = {
-      light: { ...light },
-      dark: { ...dark },
+      [FIGMA_KEY_LIGHT]: { ...light },
+      [FIGMA_KEY_DARK]: { ...dark },
       ...modeless,
     };
     await fs.writeFile(
@@ -202,9 +205,9 @@ StyleDictionary.extend({
         },
       ],
     },
-    jsonModeless: {
+    figmaModeless: {
       transforms: [...transformsFigma],
-      buildPath: OUTPUT_PATH + 'json/',
+      buildPath: OUTPUT_PATH + 'figma/',
       files: [
         {
           destination: 'variables.modeless.json',
@@ -220,9 +223,9 @@ StyleDictionary.extend({
         },
       ],
     },
-    jsonLight: {
+    figmaLight: {
       transforms: ['mode-light', ...transformsFigma],
-      buildPath: OUTPUT_PATH + 'json/',
+      buildPath: OUTPUT_PATH + 'figma/',
       files: [
         {
           destination: 'variables.light.json',
@@ -239,9 +242,9 @@ StyleDictionary.extend({
         },
       ],
     },
-    jsonDark: {
+    figmaDark: {
       transforms: ['mode-dark', ...transformsFigma],
-      buildPath: OUTPUT_PATH + 'json/',
+      buildPath: OUTPUT_PATH + 'figma/',
       files: [
         {
           destination: 'variables.dark.json',
@@ -257,7 +260,7 @@ StyleDictionary.extend({
           },
         },
       ],
-      actions: ['bundle_json'],
+      actions: ['bundle_figma'],
     },
   },
 }).buildAllPlatforms();
@@ -268,15 +271,18 @@ function formatJSON(allTokens, nameCaseFn = figmaCase) {
   allTokens.forEach((token) => {
     let path = token.path.map(nameCaseFn);
     if (path[0] === 'Semantic') path.shift(); // TODO remove after removing `semantic` key in source
-    deep(output, path, token.value);
+    deep(output, path, { value: token.value, type: token.type });
   });
   return output;
 }
 
-/**
- * @todo If we want `UI` uppercase, we're better off with
- *       only `startCase` or transforming `UI` ad-hoc
- **/
 function figmaCase(str) {
-  return startCase(str.replace('-', ' ').toLowerCase());
+  return str
+    .toLowerCase()
+    .replace('Ui', 'UI')
+    .replace('&-', '& ') // weird edge case
+    .replace('-', ' ')
+    .split(/\s/)
+    .map(upperFirst)
+    .join(' ');
 }
