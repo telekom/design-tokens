@@ -3,23 +3,23 @@
     color: {
       comment: "Telekom brand color design tokens",
       "Text-&-Icon": {
-        "Standard": {
+        Standard: {
           value: "#000000",
           type: "color",
         },
-        "Additional": {
+        Additional: {
           value: "#7C7C7C",
           type: "color",
         },
-        "Disabled": {
+        Disabled: {
           value: "#9E9E9E",
           type: "color",
         },
-        "Inverted": {
+        Inverted: {
           value: "{core.color.white.value}",
           type: "color",
         },
-        "Link": {
+        Link: {
           value: "#3D8CFF",
           type: "color",
         },
@@ -35,23 +35,23 @@
           value: "#3D8CFF",
           type: "color",
         },
-        "Primary": {
+        Primary: {
           value: "#3D8CFF",
           type: "color",
         },
-        "Informational": {
+        Informational: {
           value: "#3D8CFF",
           type: "color",
         },
-        "Success": {
+        Success: {
           value: "#3D8CFF",
           type: "color",
         },
-        "Danger": {
+        Danger: {
           value: "#3D8CFF",
           type: "color",
         },
-        "Warning": {
+        Warning: {
           value: "#3D8CFF",
           type: "color",
         },
@@ -68,12 +68,12 @@
           value: "#fcfcfc",
           type: "color",
         },
-        "Backdrop": {
+        Backdrop: {
           comment: "Use to overlay content below dialogs to separate dialog from content below",
           value: "#fcfcfc",
           type: "color",
         },
-        "Surface": {
+        Surface: {
           comment: "Use as the background of elements like cards, headers, bottom bars, etc.",
           value: "#fcfcfc",
           type: "color",
@@ -87,43 +87,43 @@
       UI: {
         comment: "UI colors are used to create UI elements like dividers, checkboxes, buttons, etc.",
         Subtle: {
-          "Standard": {
+          Standard: {
             value: "{core.color.white.value}",
             type: "color",
           },
-          "Hovered": {
+          Hovered: {
             value: "#fcfcfc",
             type: "color",
           },
-          "Pressed": {
+          Pressed: {
             value: "#fcfcfc",
             type: "color",
           },
         },
         Normal: {
-          "Standard": {
+          Standard: {
             value: "{core.color.white.value}",
             type: "color",
           },
-          "Hovered": {
+          Hovered: {
             value: "#fcfcfc",
             type: "color",
           },
-          "Pressed": {
+          Pressed: {
             value: "#fcfcfc",
             type: "color",
           },
         },
         Bold: {
-          "Standard": {
+          Standard: {
             value: "{core.color.white.value}",
             type: "color",
           },
-          "Hovered": {
+          Hovered: {
             value: "#fcfcfc",
             type: "color",
           },
-          "Pressed": {
+          Pressed: {
             value: "#fcfcfc",
             type: "color",
           },
@@ -134,38 +134,38 @@
           value: "#216BFF",
           type: "color",
         },
-        "Hovered": {
+        Hovered: {
           value: "#216BFF",
           type: "color",
         },
-        "Pressed": {
+        Pressed: {
           value: "#216BFF",
           type: "color",
         },
-        "Subtle": {
+        Subtle: {
           value: "#216BFF",
           type: "color",
         },
       },
       Functional: {
-        "Focus": {
+        Focus: {
           value: "#216BFF",
           type: "color",
         },
         Success: {
-          "Standard": {
+          Standard: {
             value: "#216BFF",
             type: "color",
           },
-          "Hovered": {
+          Hovered: {
             value: "#216BFF",
             type: "color",
           },
-          "Pressed": {
+          Pressed: {
             value: "#216BFF",
             type: "color",
           },
-          "Subtle": {
+          Subtle: {
             value: "#216BFF",
             type: "color",
           },
@@ -175,15 +175,15 @@
             value: "#216BFF",
             type: "color",
           },
-          "Hovered": {
+          Hovered: {
             value: "#216BFF",
             type: "color",
           },
-          "Pressed": {
+          Pressed: {
             value: "#216BFF",
             type: "color",
           },
-          "Subtle": {
+          Subtle: {
             value: "#216BFF",
             type: "color",
           },
@@ -193,15 +193,15 @@
             value: "#216BFF",
             type: "color",
           },
-          "Hovered": {
+          Hovered: {
             value: "#216BFF",
             type: "color",
           },
-          "Pressed": {
+          Pressed: {
             value: "#216BFF",
             type: "color",
           },
-          "Subtle": {
+          Subtle: {
             value: "#216BFF",
             type: "color",
           },
@@ -211,15 +211,15 @@
             value: "#216BFF",
             type: "color",
           },
-          "Hovered": {
+          Hovered: {
             value: "#216BFF",
             type: "color",
           },
-          "Pressed": {
+          Pressed: {
             value: "#216BFF",
             type: "color",
           },
-          "Subtle": {
+          Subtle: {
             value: "#216BFF",
             type: "color",
           },
