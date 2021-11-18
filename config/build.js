@@ -8,8 +8,8 @@ const PREFIX = 'scl';
 const OUTPUT_PATH = 'build/';
 const SOURCE_PATH = 'src/';
 
-const FIGMA_KEY_LIGHT = 'light';
-const FIGMA_KEY_DARK = 'dark';
+const FIGMA_KEY_LIGHT = 'Light';
+const FIGMA_KEY_DARK = 'Dark';
 
 /**
  * This is WIP, we'll split it out in different files as we make progress.
