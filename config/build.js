@@ -2,6 +2,7 @@ const fs = require('fs/promises');
 const deep = require('deep-get-set');
 const prettier = require('prettier');
 const StyleDictionary = require('style-dictionary');
+const startCase = require('lodash/startCase');
 
 const PREFIX = 'scl';
 const OUTPUT_PATH = 'build/';
@@ -34,29 +35,26 @@ StyleDictionary.registerFormat({
   },
 });
 
-const transformGroupFigma = [
-  'attribute/cti',
-  'name/cti/pascal', // TODO something custom
-  'size/px',
-  'color/hex',
-];
+const transformsFigma = ['attribute/cti', 'shadow/figma'];
 
 StyleDictionary.registerFormat({
   name: 'json/figma',
   formatter: function ({ dictionary }) {
-    const output = dictionary.tokens.semantic;
-    return JSON.stringify(minifyDictionary2(output), null, 2);
+    const output = formatJSON(dictionary.allTokens);
+    return JSON.stringify(output, null, 2);
   },
 });
 
 StyleDictionary.registerFormat({
-  name: 'json/figma-color',
+  name: 'json/figma-mode',
   formatter: function ({ dictionary }) {
-    const output = {
-      ...dictionary.tokens.semantic.color,
-      ...dictionary.tokens.semantic.elevation,
-    };
-    return JSON.stringify(minifyDictionary2(output), null, 2);
+    const output = formatJSON(
+      dictionary.allTokens.filter(
+        (token) =>
+          token.path.includes('color') || token.path.includes('elevation')
+      )
+    );
+    return JSON.stringify(output, null, 2);
   },
 });
 
@@ -133,11 +131,27 @@ StyleDictionary.registerTransform({
   },
 });
 
+// This does nothing for now
+StyleDictionary.registerTransform({
+  type: 'value',
+  name: 'shadow/figma',
+  // TODO remove `elevation` in path check?
+  matcher: (token) =>
+    token.original.type === 'shadow' || token.path.includes('elevation'),
+  transformer: function (token) {
+    const { value } = token.original;
+    const transform = (x) => ({
+      ...x,
+    });
+    return Array.isArray(value) ? value.map(transform) : transform(value);
+  },
+});
+
 StyleDictionary.extend({
   source: [SOURCE_PATH + '**/*.json5'],
   platforms: {
     css: {
-      transforms: ['mode-light', ...StyleDictionary.transformGroup.css],
+      transforms: [...StyleDictionary.transformGroup.css],
       prefix: PREFIX,
       buildPath: OUTPUT_PATH + 'css/',
       files: [
@@ -189,7 +203,7 @@ StyleDictionary.extend({
       ],
     },
     jsonModeless: {
-      transforms: [...transformGroupFigma],
+      transforms: [...transformsFigma],
       buildPath: OUTPUT_PATH + 'json/',
       files: [
         {
@@ -207,12 +221,12 @@ StyleDictionary.extend({
       ],
     },
     jsonLight: {
-      transforms: ['mode-light', ...transformGroupFigma],
+      transforms: ['mode-light', ...transformsFigma],
       buildPath: OUTPUT_PATH + 'json/',
       files: [
         {
           destination: 'variables.light.json',
-          format: 'json/figma-color',
+          format: 'json/figma-mode',
           filter: (token) => {
             return (
               token.path[0] === 'semantic' &&
@@ -226,12 +240,12 @@ StyleDictionary.extend({
       ],
     },
     jsonDark: {
-      transforms: ['mode-dark', ...transformGroupFigma],
+      transforms: ['mode-dark', ...transformsFigma],
       buildPath: OUTPUT_PATH + 'json/',
       files: [
         {
           destination: 'variables.dark.json',
-          format: 'json/figma-color',
+          format: 'json/figma-mode',
           filter: (token) => {
             return (
               token.path[0] === 'semantic' &&
@@ -248,30 +262,21 @@ StyleDictionary.extend({
   },
 }).buildAllPlatforms();
 
-/**
- * Modified version of `minifyDictionary` in formatHelpers module
- * that returns `{ value, type }` instead of just `value`
- * @param {Object} obj - The object to minify. You will most likely pass `dictionary.tokens` to it.
- * @returns {Object}
- */
-function minifyDictionary2(obj) {
-  if (typeof obj !== 'object' || Array.isArray(obj)) {
-    return obj;
-  }
-
-  let output = {};
-
-  if (obj.hasOwnProperty('value')) {
-    return {
-      value: obj.value,
-      type: obj.type,
-    };
-  } else {
-    for (const name in obj) {
-      if (obj.hasOwnProperty(name)) {
-        output[name] = minifyDictionary2(obj[name]);
-      }
-    }
-  }
+function formatJSON(allTokens, nameCaseFn = figmaCase) {
+  const output = {};
+  deep.p = true;
+  allTokens.forEach((token) => {
+    let path = token.path.map(nameCaseFn);
+    if (path[0] === 'Semantic') path.shift(); // TODO remove after removing `semantic` key in source
+    deep(output, path, token.value);
+  });
   return output;
+}
+
+/**
+ * @todo If we want `UI` uppercase, we're better off with
+ *       only `startCase` or transforming `UI` ad-hoc
+ **/
+function figmaCase(str) {
+  return startCase(str.replace('-', ' ').toLowerCase());
 }
