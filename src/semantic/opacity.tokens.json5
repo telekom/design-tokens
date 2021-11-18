@@ -15,7 +15,7 @@
       },
       translucent: {
         type: "number",
-        value: "{core.opacity.normal}",
+        value: "{core.opacity.normal.value}",
       },
       "semi-translucent": {
         type: "number",
