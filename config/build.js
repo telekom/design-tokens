@@ -79,11 +79,12 @@ StyleDictionary.registerFormat({
     const colorTransform =
       StyleDictionary.transform['color/sketch'].transformer;
     const output = dictionary.allTokens.map((token) => {
+      const name = token.path.slice(2).map(figmaCase).join('/');
       if (token.path.includes('color')) {
         return {
           _class: 'swatch',
           do_objectID: '',
-          name: token.path.slice(2).map(figmaCase).join('/'),
+          name,
           value: {
             _class: 'color',
             ...colorTransform(token),
@@ -92,16 +93,16 @@ StyleDictionary.registerFormat({
       }
       if (token.path.includes('text-style')) {
         // FIXME this `name` is just a POC, this can be better handled (explore "assets")
-        const name =
+        const fontFamily =
           fontFamilyMap['TeleNeoWeb'] +
           '-' +
           fontWeightMap[token.value['font-weight']];
-        const size = parseFloat(token.value['font-size']);
+        const fontSize = parseFloat(token.value['font-size']);
         const lineHeight = Math.round(
-          size * parseFloat(token.value['line-spacing'])
+          fontSize * parseFloat(token.value['line-spacing'])
         );
         return {
-          name: 'TEXT',
+          name,
           textStyle: {
             _class: 'textStyle',
             encodedAttributes: {
@@ -116,8 +117,8 @@ StyleDictionary.registerFormat({
               MSAttributedStringFontAttribute: {
                 _class: 'fontDescriptor',
                 attributes: {
-                  name,
-                  size,
+                  name: fontFamily,
+                  size: fontSize,
                 },
               },
               paragraphStyle: {
