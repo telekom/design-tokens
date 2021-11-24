@@ -226,35 +226,73 @@ StyleDictionary.registerTransform({
   },
 });
 
+// Overwrite to change matcher
+StyleDictionary.registerTransform({
+  type: 'value',
+  name: 'size/rem',
+  matcher: (token) => token.original.type === 'dimension',
+  transformer: StyleDictionary.transform['size/rem'].transformer,
+});
+
+// Overwrite to change matcher
+StyleDictionary.registerTransform({
+  type: 'value',
+  name: 'color/css',
+  matcher: (token) => token.original.type === 'color',
+  transformer: StyleDictionary.transform['color/css'].transformer,
+});
+
+StyleDictionary.registerTransform({
+  type: 'value',
+  name: 'shadow/composite',
+  matcher: (token) => token.original.type === 'shadow',
+  transformer: (token) => {
+    const px = (x) => `${x}px`;
+    const toCssValue = ({ x, y, blur, spread, color }) =>
+      `${px(x)} ${px(y)} ${px(blur)} ${px(spread)} ${color}`;
+    return Array.isArray(token.value)
+      ? token.value.map(toCssValue).join(', ')
+      : toCssValue(token.value);
+  },
+});
+
 StyleDictionary.extend({
   source: [SOURCE_PATH + '**/*.json5'],
   platforms: {
+    // TODO text styles: split into separate variables, plus maybe add css classes? 
     css: {
-      transforms: [...StyleDictionary.transformGroup.css],
+      transforms: [...StyleDictionary.transformGroup.css, 'shadow/composite'],
       prefix: PREFIX,
       buildPath: OUTPUT_PATH + 'css/',
       files: [
         {
           destination: 'tokens.css',
           format: 'css/variables',
+          filter: (token) =>
+            token.path[0] !== 'core' && token.type !== 'textStyle',
           options: {
-            outputReferences: true,
             selector: ':root, [data-mode="light"]',
           },
         },
       ],
     },
     cssDark: {
-      transforms: ['mode-dark', ...StyleDictionary.transformGroup.css],
+      transforms: [
+        'mode-dark',
+        ...StyleDictionary.transformGroup.css,
+        'shadow/composite',
+      ],
       prefix: PREFIX,
       buildPath: OUTPUT_PATH + 'css/',
       files: [
         {
           destination: 'tokens.dark.css',
           format: 'css/variables',
-          filter: (token) => token.original.value?.dark != null,
+          filter: (token) =>
+            token.path[0] !== 'core' &&
+            token.original.value?.dark != null &&
+            token.type !== 'textStyle',
           options: {
-            outputReferences: true,
             selector: '[data-mode="dark"]',
           },
         },
