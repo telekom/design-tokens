@@ -3,6 +3,7 @@ const deep = require('deep-get-set');
 const prettier = require('prettier');
 const StyleDictionary = require('style-dictionary');
 const upperFirst = require('lodash/upperFirst');
+const camelCase = require('lodash/camelCase');
 
 const PREFIX = 'scl';
 const OUTPUT_PATH = 'build/';
@@ -21,9 +22,15 @@ StyleDictionary.registerFormat({
     const tokens = Object.create(null);
     const header = StyleDictionary.formatHelpers.fileHeader({ file });
     deep.p = true;
-    dictionary.allTokens.forEach((token) => {
-      deep(tokens, token.path, token.value);
-    });
+    dictionary.allTokens
+      .filter((token) => token.path[0] !== 'core')
+      .map((token) => ({
+        ...token,
+        path: token.path.slice(1),
+      }))
+      .forEach((token) => {
+        deep(tokens, token.path.map(camelCase), token.value);
+      });
     const output = Object.keys(tokens).reduce((acc, name) => {
       const category = tokens[name];
       return (
@@ -259,7 +266,7 @@ StyleDictionary.registerTransform({
 StyleDictionary.extend({
   source: [SOURCE_PATH + '**/*.json5'],
   platforms: {
-    // TODO text styles: split into separate variables, plus maybe add css classes? 
+    // TODO text styles: split into separate variables, plus maybe add css classes?
     css: {
       transforms: [...StyleDictionary.transformGroup.css, 'shadow/composite'],
       prefix: PREFIX,
@@ -300,7 +307,11 @@ StyleDictionary.extend({
       actions: ['bundle_css'],
     },
     js: {
-      transforms: ['mode-light', ...StyleDictionary.transformGroup.js],
+      transforms: [
+        'mode-light',
+        ...StyleDictionary.transformGroup.js,
+        'shadow/composite',
+      ],
       buildPath: OUTPUT_PATH + 'js/',
       files: [
         {
@@ -310,7 +321,11 @@ StyleDictionary.extend({
       ],
     },
     jsDark: {
-      transforms: ['mode-dark', ...StyleDictionary.transformGroup.js],
+      transforms: [
+        'mode-dark',
+        ...StyleDictionary.transformGroup.js,
+        'shadow/composite',
+      ],
       buildPath: OUTPUT_PATH + 'js/',
       files: [
         {
