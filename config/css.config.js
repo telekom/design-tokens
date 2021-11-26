@@ -1,4 +1,4 @@
-const fs = require('fs/promises');
+const fs = require('fs-extra');
 const StyleDictionary = require('style-dictionary');
 const { PREFIX, OUTPUT_PATH } = require('./shared');
 

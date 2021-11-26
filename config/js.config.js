@@ -4,6 +4,11 @@ const prettier = require('prettier');
 const camelCase = require('lodash/camelCase');
 const { OUTPUT_PATH } = require('./shared');
 
+/*
+  TODO
+  - [ ] text styles: camel case key
+*/
+
 const jsTransformGroup = StyleDictionary.transformGroup.js;
 
 StyleDictionary.registerFormat({

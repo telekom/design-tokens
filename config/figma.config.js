@@ -1,4 +1,4 @@
-const fs = require('fs/promises');
+const fs = require('fs-extra');
 const deep = require('deep-get-set');
 const StyleDictionary = require('style-dictionary');
 const {
@@ -66,13 +66,13 @@ StyleDictionary.registerAction({
     // TODO get these from `config`?
     const COMMON_PATH = OUTPUT_PATH + 'figma/';
     const modeless = JSON.parse(
-      await fs.readFile(COMMON_PATH + 'variables.modeless.json')
+      await fs.readFile(COMMON_PATH + 'tokens.modeless.json')
     );
     const light = JSON.parse(
-      await fs.readFile(COMMON_PATH + 'variables.light.json')
+      await fs.readFile(COMMON_PATH + 'tokens.light.json')
     );
     const dark = JSON.parse(
-      await fs.readFile(COMMON_PATH + 'variables.dark.json')
+      await fs.readFile(COMMON_PATH + 'tokens.dark.json')
     );
     const output = {
       [FIGMA_KEY_LIGHT]: { ...light },
@@ -80,13 +80,16 @@ StyleDictionary.registerAction({
       ...modeless,
     };
     await fs.writeFile(
-      COMMON_PATH + 'variables.all.json',
+      COMMON_PATH + 'tokens.json',
       JSON.stringify(output, null, 2)
     );
+    await fs.remove(COMMON_PATH + 'tokens.modeless.json')
+    await fs.remove(COMMON_PATH + 'tokens.light.json')
+    await fs.remove(COMMON_PATH + 'tokens.dark.json')
   },
   undo: async function () {
     const COMMON_PATH = OUTPUT_PATH + 'json/';
-    await fs.rm(COMMON_PATH + 'variables.all.json');
+    await fs.rm(COMMON_PATH + 'tokens.json');
   },
 });
 
@@ -98,7 +101,7 @@ module.exports = {
       buildPath: OUTPUT_PATH + 'figma/',
       files: [
         {
-          destination: 'variables.modeless.json',
+          destination: 'tokens.modeless.json',
           format: 'json/figma',
           filter: (token) => {
             if (token.path[0] === 'core') return false;
@@ -116,7 +119,7 @@ module.exports = {
       buildPath: OUTPUT_PATH + 'figma/',
       files: [
         {
-          destination: 'variables.light.json',
+          destination: 'tokens.light.json',
           format: 'json/figma-mode',
           filter: (token) => {
             return (
@@ -135,7 +138,7 @@ module.exports = {
       buildPath: OUTPUT_PATH + 'figma/',
       files: [
         {
-          destination: 'variables.dark.json',
+          destination: 'tokens.dark.json',
           format: 'json/figma-mode',
           filter: (token) => {
             return (

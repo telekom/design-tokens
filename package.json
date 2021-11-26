@@ -7,6 +7,7 @@
     "start": "npm run build",
     "prebuild": "rimraf build",
     "build": "node config/build.js",
+    "prerelease": "PRERELEASE=1 npm run build",
     "format": "prettier --write \"src/**/*{json,json5}\" \"config/**/*.js\""
   },
   "repository": {
@@ -24,6 +25,7 @@
     "lodash": "^4.17.21",
     "prettier": "^2.4.1",
     "rimraf": "^3.0.2",
+    "fs-extra": "^10.0.0",
     "style-dictionary": "^3.0.3"
   }
 }
