@@ -1,5 +1,5 @@
 const StyleDictionary = require('style-dictionary');
-const fs = require('fs-extra')
+const fs = require('fs-extra');
 
 require('./shared'); // register common transforms
 
@@ -13,7 +13,7 @@ const configs = [
 configs.forEach((config) => StyleDictionary.extend(config).buildAllPlatforms());
 
 if (process.env.PRERELEASE) {
-  updateDistFolder()
+  updateDistFolder();
 }
 
 /**
@@ -21,7 +21,7 @@ if (process.env.PRERELEASE) {
  * @todo explain why this is here
  */
 async function updateDistFolder() {
-  await fs.emptyDir('dist')
-  await fs.copy('build/figma', 'dist/figma')
-  await fs.copy('build/sketch', 'dist/sketch')
+  await fs.emptyDir('dist');
+  await fs.copy('build/figma', 'dist/figma');
+  await fs.copy('build/sketch', 'dist/sketch');
 }

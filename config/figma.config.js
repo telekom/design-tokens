@@ -83,9 +83,9 @@ StyleDictionary.registerAction({
       COMMON_PATH + 'tokens.json',
       JSON.stringify(output, null, 2)
     );
-    await fs.remove(COMMON_PATH + 'tokens.modeless.json')
-    await fs.remove(COMMON_PATH + 'tokens.light.json')
-    await fs.remove(COMMON_PATH + 'tokens.dark.json')
+    await fs.remove(COMMON_PATH + 'tokens.modeless.json');
+    await fs.remove(COMMON_PATH + 'tokens.light.json');
+    await fs.remove(COMMON_PATH + 'tokens.dark.json');
   },
   undo: async function () {
     const COMMON_PATH = OUTPUT_PATH + 'json/';
