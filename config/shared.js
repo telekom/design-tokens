@@ -53,13 +53,15 @@ StyleDictionary.registerTransform({
 });
 
 /**
- * Built-in `size/rem` transform with different matcher function
+ * Transform px to rem, replace built-in
  */
 StyleDictionary.registerTransform({
   type: 'value',
   name: 'size/rem',
-  matcher: (token) => token.original.type === 'dimension',
-  transformer: StyleDictionary.transform['size/rem'].transformer,
+  matcher: (token) => token.original.type === 'dimension' && token.original.value.indexOf('px') > -1,
+  transformer: function (token) {
+    return `${parseFloat(token.original.value) / 16}rem`
+  },
 });
 
 /**
