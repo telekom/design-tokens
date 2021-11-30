@@ -21,11 +21,22 @@ function formatJSON(allTokens, nameCaseFn = figmaCase) {
   return output;
 }
 
+/**
+ * Handle some special cases
+ */
 function getJSONValue(token) {
-  const type = token.type === 'shadow' ? 'boxShadow' : token.type;
+  const attributes = {
+    type: token.type,
+  };
+  if (token.comment) {
+    attributes.description = token.comment;
+  }
+  if (token.type === 'shadow') {
+    attributes.type = 'boxShadow';
+  }
   return {
     value: token.value,
-    type,
+    ...attributes,
   };
 }
 
