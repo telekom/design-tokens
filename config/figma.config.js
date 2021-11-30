@@ -8,7 +8,7 @@ const {
   figmaCase,
 } = require('./shared');
 
-const figmaTransformGroup = ['attribute/cti', 'shadow/figma'];
+const figmaTransformGroup = ['attribute/cti'];
 
 function formatJSON(allTokens, nameCaseFn = figmaCase) {
   const output = {};
@@ -16,28 +16,33 @@ function formatJSON(allTokens, nameCaseFn = figmaCase) {
   allTokens.forEach((token) => {
     let path = token.path.map(nameCaseFn);
     if (path[0] === 'Semantic') path.shift(); // TODO remove after removing `semantic` key in source
-    deep(output, path, { value: token.value, type: token.type });
+    deep(output, path, getJSONValue(token));
   });
   return output;
 }
 
-/**
- * This does nothing for now
- */
-StyleDictionary.registerTransform({
-  type: 'value',
-  name: 'shadow/figma',
-  // TODO remove `elevation` in path check?
-  matcher: (token) =>
-    token.original.type === 'shadow' || token.path.includes('elevation'),
-  transformer: function (token) {
-    const { value } = token.original;
-    const transform = (x) => ({
-      ...x,
-    });
-    return Array.isArray(value) ? value.map(transform) : transform(value);
-  },
-});
+function getJSONValue(token) {
+  const type = token.type === 'shadow' ? 'boxShadow' : token.type;
+  return {
+    value: token.value,
+    type,
+  };
+}
+
+// StyleDictionary.registerTransform({
+//   type: 'value',
+//   name: 'shadow/figma',
+//   // TODO remove `elevation` in path check?
+//   matcher: (token) =>
+//     token.original.type === 'shadow' || token.path.includes('elevation'),
+//   transformer: function (token) {
+//     const { value } = token.original;
+//     const transform = (x) => ({
+//       ...x,
+//     });
+//     return Array.isArray(value) ? value.map(transform) : transform(value);
+//   },
+// });
 
 StyleDictionary.registerFormat({
   name: 'json/figma',
