@@ -140,6 +140,36 @@
           type: "color",
         },
       },
+      Primary: {
+        Standard: {
+          value: {
+            light: "{core.color.magenta.brand.value}",
+            dark: "{core.color.magenta.brand.value}",
+          },
+          type: "color",
+        },
+        Hovered: {
+          value: {
+            light: "{core.color.magenta.dark.value}",
+            dark: "{core.color.magenta.dark.value}",
+          },
+          type: "color",
+        },
+        Pressed: {
+          value: {
+            light: "{core.color.magenta.darker.value}",
+            dark: "{core.color.magenta.darker.value}",
+          },
+          type: "color",
+        },
+        Subtle: {
+          value: {
+            light: "{core.color.magenta.tint.value}",
+            dark: "{core.color.magenta.shade.value}",
+          },
+          type: "color",
+        },
+      },
       UI: {
         comment: "UI colors are used to create UI elements like dividers, checkboxes, buttons, etc.",
         Subtle: {
@@ -174,36 +204,6 @@
           value: {
             light: "{core.color.grey.200.value}",
             dark: "{core.color.grey.0.value}",
-          },
-          type: "color",
-        },
-      },
-      Primary: {
-        Standard: {
-          value: {
-            light: "{core.color.magenta.brand.value}",
-            dark: "{core.color.magenta.brand.value}",
-          },
-          type: "color",
-        },
-        Hovered: {
-          value: {
-            light: "{core.color.magenta.dark.value}",
-            dark: "{core.color.magenta.dark.value}",
-          },
-          type: "color",
-        },
-        Pressed: {
-          value: {
-            light: "{core.color.magenta.darker.value}",
-            dark: "{core.color.magenta.darker.value}",
-          },
-          type: "color",
-        },
-        Subtle: {
-          value: {
-            light: "{core.color.magenta.tint.value}",
-            dark: "{core.color.magenta.shade.value}",
           },
           type: "color",
         },
