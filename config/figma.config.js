@@ -14,12 +14,22 @@ function formatJSON(allTokens, nameCaseFn = figmaCase) {
   const output = {};
   deep.p = true;
   allTokens.forEach((token) => {
-    let path = token.path.map(nameCaseFn);
+    const path = token.path.map(nameCaseFn);
     if (path[0] === 'Semantic') path.shift(); // TODO remove after removing `semantic` key in source
+    if (path[0] === 'Color' || path[0] === 'Elevation') path.shift();
     deep(output, path, getJSONValue(token));
   });
   return output;
 }
+
+const categoryTypeMap = {
+  'line-weight': 'borderWidth',
+  opacity: 'opacity',
+  radius: 'borderRadius',
+  shadow: 'boxShadow',
+  spacing: 'spacing',
+  textStyle: 'typography',
+};
 
 /**
  * Handle some special cases
@@ -31,9 +41,25 @@ function getJSONValue(token) {
   if (token.comment) {
     attributes.description = token.comment;
   }
-  if (token.type === 'shadow') {
-    attributes.type = 'boxShadow';
+  if (token.type === 'textStyle') {
+    attributes.type = categoryTypeMap['textStyle'];
   }
+  if (token.type === 'shadow') {
+    attributes.type = categoryTypeMap['shadow'];
+  }
+  if (token.path.includes('line-weight')) {
+    attributes.type = categoryTypeMap['line-weight'];
+  }
+  if (token.path.includes('opacity')) {
+    attributes.type = categoryTypeMap['opacity'];
+  }
+  if (token.path.includes('radius')) {
+    attributes.type = categoryTypeMap['radius'];
+  }
+  if (token.path.includes('spacing')) {
+    attributes.type = categoryTypeMap['spacing'];
+  }
+
   return {
     value: token.value,
     ...attributes,
@@ -124,6 +150,8 @@ module.exports = {
             if (token.path[0] === 'semantic' && token.path[1] === 'color')
               return false;
             if (token.path[0] === 'semantic' && token.path[1] === 'elevation')
+              return false;
+            if (token.path[0] === 'semantic' && token.path[1] === 'motion')
               return false;
             return true;
           },
