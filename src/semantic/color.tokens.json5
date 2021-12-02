@@ -4,6 +4,7 @@
       comment: "Telekom brand color design tokens",
       "Text-&-Icon": {
         Standard: {
+          comment: "Default text color with highest contrast.",
           value: {
             light: "{core.color.grey.200.value}",
             dark: "{core.color.grey.0.value}",
@@ -11,9 +12,18 @@
           type: "color",
         },
         Additional: {
+          comment: "Use in combination with standard text for additional text elements.",
           value: {
             light: "{core.color.grey.120.value}",
             dark: "{core.color.grey.80.value}",
+          },
+          type: "color",
+        },
+        Disabled: {
+          comment: "Only use for disabled text.",
+          value: {
+            light: "{core.color.grey.60.value}",
+            dark: "{core.color.grey.140.value}",
           },
           type: "color",
         },
@@ -204,6 +214,14 @@
           value: {
             light: "{core.color.grey.200.value}",
             dark: "{core.color.grey.0.value}",
+          },
+          type: "color",
+        },
+        Disabled: {
+          comment: "Use for disabled interactive elements in combination with the disabled text color",
+          value: {
+            light: "{core.color.grey.20.value}",
+            dark: "{core.color.grey.180.value}",
           },
           type: "color",
         },
