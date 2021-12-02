@@ -1,6 +1,6 @@
 const fs = require('fs-extra');
 const StyleDictionary = require('style-dictionary');
-const { PREFIX, OUTPUT_PATH } = require('./shared');
+const { PREFIX, OUTPUT_PATH, OUTPUT_BASE_FILENAME } = require('./shared');
 
 /*
   TODO
@@ -11,20 +11,25 @@ const cssTransformGroup = StyleDictionary.transformGroup.css;
 
 StyleDictionary.registerAction({
   name: 'bundle_css',
-  do: async function (dictionary, config) {
-    // TODO get these from `config`?
-    const COMMON_PATH = OUTPUT_PATH + 'css/';
+  do: async function (_, config) {
+    const { buildPath } = config;
     try {
-      const light = await fs.readFile(COMMON_PATH + 'tokens.css');
-      const dark = await fs.readFile(COMMON_PATH + 'tokens.dark.css');
-      await fs.writeFile(COMMON_PATH + 'tokens.all.css', light + '\n' + dark);
+      const light = await fs.readFile(
+        buildPath + OUTPUT_BASE_FILENAME + '.css'
+      );
+      const dark = await fs.readFile(
+        buildPath + OUTPUT_BASE_FILENAME + '.dark.css'
+      );
+      await fs.writeFile(
+        buildPath + OUTPUT_BASE_FILENAME + '.all.css',
+        light + '\n' + dark
+      );
     } catch (err) {
       // ..
     }
   },
   undo: async function () {
-    const COMMON_PATH = OUTPUT_PATH + 'css/';
-    await fs.rm(COMMON_PATH + 'tokens.all.css');
+    //
   },
 });
 
@@ -32,12 +37,12 @@ module.exports = {
   source: ['src/**/*.json5'],
   platforms: {
     css: {
-      transforms: [...cssTransformGroup, 'shadow/css'],
+      transforms: ['mode-light', ...cssTransformGroup, 'shadow/css'],
       prefix: PREFIX,
       buildPath: OUTPUT_PATH + 'css/',
       files: [
         {
-          destination: 'tokens.css',
+          destination: OUTPUT_BASE_FILENAME + '.css',
           format: 'css/variables',
           filter: (token) =>
             token.path[0] !== 'core' && token.type !== 'textStyle',
@@ -53,7 +58,7 @@ module.exports = {
       buildPath: OUTPUT_PATH + 'css/',
       files: [
         {
-          destination: 'tokens.dark.css',
+          destination: OUTPUT_BASE_FILENAME + '.dark.css',
           format: 'css/variables',
           filter: (token) =>
             token.path[0] !== 'core' &&
