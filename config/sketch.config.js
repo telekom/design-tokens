@@ -1,22 +1,12 @@
 const StyleDictionary = require('style-dictionary');
 const Color = require('tinycolor2');
-const { OUTPUT_PATH, figmaCase } = require('./shared');
-
-/*
-  TODO
-  - [ ] font names: match real filenames (explore sd assets)
-*/
-
-const fontFamilyMap = {
-  TeleNeoWeb: 'TeleNeo',
-};
-const fontWeightMap = {
-  200: 'Thin',
-  400: 'Regular',
-  500: 'Medium',
-  700: 'Bold',
-  800: 'ExtraBold',
-};
+const {
+  OUTPUT_PATH,
+  OUTPUT_BASE_FILENAME,
+  figmaCase,
+  fontFamilyMap,
+  fontWeightMap,
+} = require('./shared');
 
 const BLACK = {
   _class: 'color',
@@ -130,14 +120,10 @@ module.exports = {
       buildPath: OUTPUT_PATH + 'sketch/',
       files: [
         {
-          destination: 'tokens.light.json',
+          destination: OUTPUT_BASE_FILENAME + '.light.json',
           format: 'json/sketch-gen',
-          filter: (token) => {
-            return (
-              token.path[0] === 'semantic' &&
-              (token.path[1] === 'color' || token.path[1] === 'text-style')
-            );
-          },
+          filter: (token) =>
+            token.path[0] === 'color' || token.path[0] === 'text-style',
           options: {
             mode: 'light',
           },
@@ -149,14 +135,10 @@ module.exports = {
       buildPath: OUTPUT_PATH + 'sketch/',
       files: [
         {
-          destination: 'tokens.dark.json',
+          destination: OUTPUT_BASE_FILENAME + '.dark.json',
           format: 'json/sketch-gen',
-          filter: (token) => {
-            return (
-              token.path[0] === 'semantic' &&
-              (token.path[1] === 'color' || token.path[1] === 'text-style')
-            );
-          },
+          filter: (token) =>
+            token.path[0] === 'color' || token.path[0] === 'text-style',
           options: {
             mode: 'dark',
           },

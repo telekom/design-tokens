@@ -1,13 +1,26 @@
 const StyleDictionary = require('style-dictionary');
 const upperFirst = require('lodash/upperFirst');
+const camelCase = require('lodash/camelCase');
 
-exports.PREFIX = 'scl';
-exports.OUTPUT_PATH = 'build/';
+const PREFIX = process.env.PREFIX || 'scl';
+const OUTPUT_PATH = process.env.OUTPUT_PATH || 'build/';
+const OUTPUT_BASE_FILENAME =
+  process.env.OUTPUT_BASE_FILENAME || 'telekom-design-tokens';
 
-exports.FIGMA_KEY_LIGHT = 'Light';
-exports.FIGMA_KEY_DARK = 'Dark';
+const FIGMA_KEY_LIGHT = 'Light';
+const FIGMA_KEY_DARK = 'Dark';
 
-exports.figmaCase = figmaCase;
+// TODO font names: match real filenames (explore sd assets)
+const fontFamilyMap = {
+  TeleNeoWeb: 'TeleNeo',
+};
+const fontWeightMap = {
+  200: 'Thin',
+  400: 'Regular',
+  500: 'Medium',
+  700: 'Bold',
+  800: 'ExtraBold',
+};
 
 function figmaCase(str) {
   return str
@@ -92,3 +105,31 @@ StyleDictionary.registerTransform({
       : toCssValue(token.value);
   },
 });
+
+/**
+ * Camel case keys for text styles
+ */
+StyleDictionary.registerTransform({
+  type: 'value',
+  name: 'text-style/camel',
+  transitive: true,
+  matcher: (token) => token.path[0] === 'text-style',
+  transformer: function (token) {
+    const output = {};
+    for (const prop in token.value) {
+      output[camelCase(prop)] = token.value[prop];
+    }
+    return output;
+  },
+});
+
+module.exports = {
+  PREFIX,
+  OUTPUT_PATH,
+  OUTPUT_BASE_FILENAME,
+  FIGMA_KEY_LIGHT,
+  FIGMA_KEY_DARK,
+  figmaCase,
+  fontFamilyMap,
+  fontWeightMap,
+};

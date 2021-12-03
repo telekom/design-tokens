@@ -1,0 +1,18 @@
+{
+  "line-weight": {
+    standard: {
+      comment: "Used for ui elements like inputs, dividers, etc.",
+      value: "{core.line-weight.sm.value}",
+      type: "dimension",
+    },
+    highlight: {
+      comment: "E.g. use for active menu items.",
+      value: "{core.line-weight.md.value}",
+      type: "dimension",
+    },
+    bold: {
+      value: "{core.line-weight.lg.value}",
+      type: "dimension",
+    },
+  },
+}

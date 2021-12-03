@@ -15,6 +15,7 @@
             type: "dropShadow",
           },
         ],
+        type: "shadow",
       },
       "level-1": {
         value: [
