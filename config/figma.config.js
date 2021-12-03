@@ -1,7 +1,6 @@
 const fs = require('fs-extra');
 const deep = require('deep-get-set');
 const StyleDictionary = require('style-dictionary');
-
 const {
   OUTPUT_PATH,
   OUTPUT_BASE_FILENAME,
@@ -11,12 +10,23 @@ const {
   fontWeightMap,
 } = require('./shared');
 
-const figmaTransformGroup = ['attribute/cti', 'text-style/figma'];
+const TMP_NAME = 'tokens';
 
 /*
   TODO
   - [ ] use font name from token in text-style transform
 */
+
+const figmaTransformGroup = ['attribute/cti', 'text-style/figma'];
+
+const categoryTypeMap = {
+  'line-weight': 'borderWidth',
+  opacity: 'opacity',
+  radius: 'borderRadius',
+  shadow: 'boxShadow',
+  spacing: 'spacing',
+  textStyle: 'typography',
+};
 
 function formatJSON(allTokens, nameCaseFn = figmaCase) {
   const output = {};
@@ -28,15 +38,6 @@ function formatJSON(allTokens, nameCaseFn = figmaCase) {
   });
   return output;
 }
-
-const categoryTypeMap = {
-  'line-weight': 'borderWidth',
-  opacity: 'opacity',
-  radius: 'borderRadius',
-  shadow: 'boxShadow',
-  spacing: 'spacing',
-  textStyle: 'typography',
-};
 
 /**
  * Handle some special cases
@@ -119,12 +120,15 @@ StyleDictionary.registerAction({
   do: async function (_, config) {
     const { buildPath } = config;
     const modeless = JSON.parse(
-      await fs.readFile(buildPath + 'tokens.modeless.json')
+      await fs.readFile(buildPath + TMP_NAME + '.modeless.json')
     );
     const light = JSON.parse(
-      await fs.readFile(buildPath + 'tokens.light.json')
+      await fs.readFile(buildPath + TMP_NAME + '.light.json')
     );
-    const dark = JSON.parse(await fs.readFile(buildPath + 'tokens.dark.json'));
+    const dark = JSON.parse(
+      await fs.readFile(buildPath + TMP_NAME + '.dark.json')
+    );
+    // default
     await fs.writeFile(
       buildPath + OUTPUT_BASE_FILENAME + '.json',
       JSON.stringify(
@@ -137,36 +141,52 @@ StyleDictionary.registerAction({
         2
       )
     );
+    // light
     await fs.writeFile(
       buildPath + OUTPUT_BASE_FILENAME + '.light.json',
       JSON.stringify(
         {
           [FIGMA_KEY_LIGHT]: { ...light },
-          ...modeless,
+          Typography: { ...modeless['Typography'] },
+          'Text Style': { ...modeless['Text Style'] },
         },
         null,
         2
       )
     );
+    // dark
     await fs.writeFile(
       buildPath + OUTPUT_BASE_FILENAME + '.dark.json',
       JSON.stringify(
         {
           [FIGMA_KEY_DARK]: { ...dark },
-          ...modeless,
+          Typography: { ...modeless['Typography'] },
+          'Text Style': { ...modeless['Text Style'] },
         },
         null,
         2
       )
     );
-    await fs.remove(buildPath + 'tokens.modeless.json');
-    await fs.remove(buildPath + 'tokens.light.json');
-    await fs.remove(buildPath + 'tokens.dark.json');
+    // universal
+    await fs.writeFile(
+      buildPath + OUTPUT_BASE_FILENAME + '.universal.json',
+      JSON.stringify({
+        ...modeless,
+        Typography: undefined,
+        'Text Style': undefined,
+      }, null, 2)
+    );
+
+    await fs.remove(buildPath + TMP_NAME + '.modeless.json');
+    await fs.remove(buildPath + TMP_NAME + '.light.json');
+    await fs.remove(buildPath + TMP_NAME + '.dark.json');
   },
   undo: async function (_, config) {
     //
   },
 });
+
+const hasMode = (token) => token.path[0] === 'color' || token.path[0] === 'elevation';
 
 module.exports = {
   source: ['src/**/*.json5'],
@@ -176,15 +196,9 @@ module.exports = {
       buildPath: OUTPUT_PATH + 'figma/',
       files: [
         {
-          destination: 'tokens.modeless.json',
+          destination: TMP_NAME + '.modeless.json',
           format: 'json/figma',
-          filter: (token) => {
-            if (token.path[0] === 'core') return false;
-            if (token.path[0] === 'color') return false;
-            if (token.path[0] === 'elevation') return false;
-            if (token.path[0] === 'motion') return false;
-            return true;
-          },
+          filter: (token) => token.path[0] !== 'core' && token.path[0] !== 'motion' && !hasMode(token),
         },
       ],
     },
@@ -193,10 +207,9 @@ module.exports = {
       buildPath: OUTPUT_PATH + 'figma/',
       files: [
         {
-          destination: 'tokens.light.json',
+          destination: TMP_NAME + '.light.json',
           format: 'json/figma-mode',
-          filter: (token) =>
-            token.path[0] === 'color' || token.path[0] === 'elevation',
+          filter: hasMode,
         },
       ],
     },
@@ -205,10 +218,9 @@ module.exports = {
       buildPath: OUTPUT_PATH + 'figma/',
       files: [
         {
-          destination: 'tokens.dark.json',
+          destination: TMP_NAME + '.dark.json',
           format: 'json/figma-mode',
-          filter: (token) =>
-            token.path[0] === 'color' || token.path[0] === 'elevation',
+          filter: hasMode,
         },
       ],
       actions: ['bundle_figma'],
