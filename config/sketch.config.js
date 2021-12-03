@@ -1,5 +1,6 @@
 const StyleDictionary = require('style-dictionary');
 const Color = require('tinycolor2');
+const libraryAction = require('./sketch-library-action');
 const {
   OUTPUT_PATH,
   OUTPUT_BASE_FILENAME,
@@ -38,6 +39,11 @@ StyleDictionary.registerTransform({
   },
 });
 
+StyleDictionary.registerAction({
+  name: 'bundle_sketch_library',
+  ...libraryAction,
+});
+
 StyleDictionary.registerFormat({
   name: 'json/sketch-gen',
   formatter: function ({ dictionary, options }) {
@@ -59,7 +65,7 @@ function getTokenName(token) {
   return token.path.slice(2).map(figmaCase).join('/');
 }
 
-function getColorShape(options) {
+function getColorShape() {
   return (token) => {
     return {
       _class: 'swatch',
@@ -144,6 +150,7 @@ module.exports = {
           },
         },
       ],
+      actions: ['bundle_sketch_library'],
     },
   },
 };
