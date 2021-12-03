@@ -83,7 +83,7 @@ StyleDictionary.registerTransform({
     return {
       fontFamily: 'TeleNeo', // FIXME value['font-family'],
       fontWeight: fontWeightMap[value['font-weight']],
-      lineHeight: String(value['line-spacing']),
+      lineHeight: `${value['line-spacing'] * 100}%`,
       fontSize: value['font-size'].replace(/px$/, ''),
       letterSpacing: value['letter-spacing'] + '%',
       paragraphSpacing: '0',
