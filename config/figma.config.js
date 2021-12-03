@@ -170,7 +170,11 @@ StyleDictionary.registerAction({
     // universal
     await fs.writeFile(
       buildPath + OUTPUT_BASE_FILENAME + '.universal.json',
-      JSON.stringify({ ...modeless }, null, 2)
+      JSON.stringify({
+        ...modeless,
+        Typography: undefined,
+        'Text Style': undefined,
+      }, null, 2)
     );
 
     await fs.remove(buildPath + TMP_NAME + '.modeless.json');
