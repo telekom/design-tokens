@@ -62,7 +62,7 @@ StyleDictionary.registerFormat({
 });
 
 function getTokenName(token) {
-  return token.path.slice(2).map(figmaCase).join('/');
+  return token.path.slice(1).map(figmaCase).join('/');
 }
 
 function getColorShape() {
