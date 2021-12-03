@@ -1,21 +1,28 @@
 const fs = require('fs-extra');
 const deep = require('deep-get-set');
 const StyleDictionary = require('style-dictionary');
+
 const {
   OUTPUT_PATH,
+  OUTPUT_BASE_FILENAME,
   FIGMA_KEY_LIGHT,
   FIGMA_KEY_DARK,
   figmaCase,
+  fontWeightMap,
 } = require('./shared');
 
-const figmaTransformGroup = ['attribute/cti'];
+const figmaTransformGroup = ['attribute/cti', 'text-style/figma'];
+
+/*
+  TODO
+  - [ ] use font name from token in text-style transform
+*/
 
 function formatJSON(allTokens, nameCaseFn = figmaCase) {
   const output = {};
   deep.p = true;
   allTokens.forEach((token) => {
     const path = token.path.map(nameCaseFn);
-    if (path[0] === 'Semantic') path.shift(); // TODO remove after removing `semantic` key in source
     if (path[0] === 'Color' || path[0] === 'Elevation') path.shift();
     deep(output, path, getJSONValue(token));
   });
@@ -66,20 +73,25 @@ function getJSONValue(token) {
   };
 }
 
-// StyleDictionary.registerTransform({
-//   type: 'value',
-//   name: 'shadow/figma',
-//   // TODO remove `elevation` in path check?
-//   matcher: (token) =>
-//     token.original.type === 'shadow' || token.path.includes('elevation'),
-//   transformer: function (token) {
-//     const { value } = token.original;
-//     const transform = (x) => ({
-//       ...x,
-//     });
-//     return Array.isArray(value) ? value.map(transform) : transform(value);
-//   },
-// });
+StyleDictionary.registerTransform({
+  type: 'value',
+  name: 'text-style/figma',
+  transitive: true,
+  matcher: (token) => token.path[0] === 'text-style',
+  transformer: function (token) {
+    const { value } = token;
+    return {
+      fontFamily: 'TeleNeo', // FIXME value['font-family'],
+      fontWeight: fontWeightMap[value['font-weight']],
+      lineHeight: `${value['line-spacing'] * 100}%`,
+      fontSize: value['font-size'].replace(/px$/, ''),
+      letterSpacing: value['letter-spacing'] + '%',
+      paragraphSpacing: '0',
+      textDecoration: 'none',
+      textCase: 'none',
+    };
+  },
+});
 
 StyleDictionary.registerFormat({
   name: 'json/figma',
@@ -104,34 +116,55 @@ StyleDictionary.registerFormat({
 
 StyleDictionary.registerAction({
   name: 'bundle_figma',
-  do: async function (dictionary, config) {
-    // TODO get these from `config`?
-    const COMMON_PATH = OUTPUT_PATH + 'figma/';
+  do: async function (_, config) {
+    const { buildPath } = config;
     const modeless = JSON.parse(
-      await fs.readFile(COMMON_PATH + 'tokens.modeless.json')
+      await fs.readFile(buildPath + 'tokens.modeless.json')
     );
     const light = JSON.parse(
-      await fs.readFile(COMMON_PATH + 'tokens.light.json')
+      await fs.readFile(buildPath + 'tokens.light.json')
     );
-    const dark = JSON.parse(
-      await fs.readFile(COMMON_PATH + 'tokens.dark.json')
-    );
-    const output = {
-      [FIGMA_KEY_LIGHT]: { ...light },
-      [FIGMA_KEY_DARK]: { ...dark },
-      ...modeless,
-    };
+    const dark = JSON.parse(await fs.readFile(buildPath + 'tokens.dark.json'));
     await fs.writeFile(
-      COMMON_PATH + 'tokens.json',
-      JSON.stringify(output, null, 2)
+      buildPath + OUTPUT_BASE_FILENAME + '.json',
+      JSON.stringify(
+        {
+          [FIGMA_KEY_LIGHT]: { ...light },
+          [FIGMA_KEY_DARK]: { ...dark },
+          ...modeless,
+        },
+        null,
+        2
+      )
     );
-    await fs.remove(COMMON_PATH + 'tokens.modeless.json');
-    await fs.remove(COMMON_PATH + 'tokens.light.json');
-    await fs.remove(COMMON_PATH + 'tokens.dark.json');
+    await fs.writeFile(
+      buildPath + OUTPUT_BASE_FILENAME + '.light.json',
+      JSON.stringify(
+        {
+          [FIGMA_KEY_LIGHT]: { ...light },
+          ...modeless,
+        },
+        null,
+        2
+      )
+    );
+    await fs.writeFile(
+      buildPath + OUTPUT_BASE_FILENAME + '.dark.json',
+      JSON.stringify(
+        {
+          [FIGMA_KEY_DARK]: { ...dark },
+          ...modeless,
+        },
+        null,
+        2
+      )
+    );
+    await fs.remove(buildPath + 'tokens.modeless.json');
+    await fs.remove(buildPath + 'tokens.light.json');
+    await fs.remove(buildPath + 'tokens.dark.json');
   },
-  undo: async function () {
-    const COMMON_PATH = OUTPUT_PATH + 'json/';
-    await fs.rm(COMMON_PATH + 'tokens.json');
+  undo: async function (_, config) {
+    //
   },
 });
 
@@ -147,12 +180,9 @@ module.exports = {
           format: 'json/figma',
           filter: (token) => {
             if (token.path[0] === 'core') return false;
-            if (token.path[0] === 'semantic' && token.path[1] === 'color')
-              return false;
-            if (token.path[0] === 'semantic' && token.path[1] === 'elevation')
-              return false;
-            if (token.path[0] === 'semantic' && token.path[1] === 'motion')
-              return false;
+            if (token.path[0] === 'color') return false;
+            if (token.path[0] === 'elevation') return false;
+            if (token.path[0] === 'motion') return false;
             return true;
           },
         },
@@ -165,15 +195,8 @@ module.exports = {
         {
           destination: 'tokens.light.json',
           format: 'json/figma-mode',
-          filter: (token) => {
-            return (
-              token.path[0] === 'semantic' &&
-              (token.path[1] === 'color' || token.path[1] === 'elevation')
-            );
-          },
-          options: {
-            outputReferences: true,
-          },
+          filter: (token) =>
+            token.path[0] === 'color' || token.path[0] === 'elevation',
         },
       ],
     },
@@ -184,15 +207,8 @@ module.exports = {
         {
           destination: 'tokens.dark.json',
           format: 'json/figma-mode',
-          filter: (token) => {
-            return (
-              token.path[0] === 'semantic' &&
-              (token.path[1] === 'color' || token.path[1] === 'elevation')
-            );
-          },
-          options: {
-            outputReferences: true,
-          },
+          filter: (token) =>
+            token.path[0] === 'color' || token.path[0] === 'elevation',
         },
       ],
       actions: ['bundle_figma'],
