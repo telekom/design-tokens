@@ -170,11 +170,15 @@ StyleDictionary.registerAction({
     // universal
     await fs.writeFile(
       buildPath + OUTPUT_BASE_FILENAME + '.universal.json',
-      JSON.stringify({
-        ...modeless,
-        Typography: undefined,
-        'Text Style': undefined,
-      }, null, 2)
+      JSON.stringify(
+        {
+          ...modeless,
+          Typography: undefined,
+          'Text Style': undefined,
+        },
+        null,
+        2
+      )
     );
 
     await fs.remove(buildPath + TMP_NAME + '.modeless.json');
@@ -186,7 +190,8 @@ StyleDictionary.registerAction({
   },
 });
 
-const hasMode = (token) => token.path[0] === 'color' || token.path[0] === 'elevation';
+const hasMode = (token) =>
+  token.path[0] === 'color' || token.path[0] === 'elevation';
 
 module.exports = {
   source: ['src/**/*.json5'],
@@ -198,7 +203,10 @@ module.exports = {
         {
           destination: TMP_NAME + '.modeless.json',
           format: 'json/figma',
-          filter: (token) => token.path[0] !== 'core' && token.path[0] !== 'motion' && !hasMode(token),
+          filter: (token) =>
+            token.path[0] !== 'core' &&
+            token.path[0] !== 'motion' &&
+            !hasMode(token),
         },
       ],
     },

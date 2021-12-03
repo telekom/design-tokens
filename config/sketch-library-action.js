@@ -1,23 +1,24 @@
 const uuid = require('uuid-by-string');
 const fs = require('fs-extra');
 const { execSync } = require('child_process');
-const { OUTPUT_BASE_FILENAME, OUTPUT_PATH } = require('./shared');
+const { version } = require('../package.json');
+const { OUTPUT_BASE_FILENAME } = require('./shared');
 
-const SKETCH_FIXTURE_FILENAME = 'library.sketch'
-// const FIXTURE_PAGE_ID = '351F5B97-9A3C-4842-B95E-065998538D97';
+const SKETCH_FIXTURE_FILENAME = 'design-tokens.sketch';
+const FIXTURE_PAGE_ID = '351F5B97-9A3C-4842-B95E-065998538D97';
 
 module.exports = {
-  do: async function (_, config) {
+  do: function (_, config) {
     init();
     decompress();
-    // await updateLibrary(config, 'light');
-    // await updateLibrary(config, 'dark');
+    updateLibrary(config, 'light');
+    updateLibrary(config, 'dark');
     compress();
     cleanup();
   },
   undo: function () {
-    fs.rmdirSync('build/sketch/light/');
-    fs.rmdirSync('build/sketch/dark/');
+    fs.rmSync('build/sketch/light/', { recursive: true, force: true });
+    fs.rmSync('build/sketch/dark/', { recursive: true, force: true });
   },
 };
 
@@ -42,29 +43,40 @@ function decompress() {
 }
 
 function compress() {
-  execSync(
-    `zip -r ${OUTPUT_PATH}sketch/light/${OUTPUT_BASE_FILENAME}.sketch config/tmp/sketch-library-light/`
+  const root = process.cwd();
+  process.chdir('config/tmp/sketch-library-light');
+  execSync(`zip -r -X ${OUTPUT_BASE_FILENAME}.sketch *`);
+  process.chdir(root);
+  process.chdir('config/tmp/sketch-library-dark');
+  execSync(`zip -r -X ${OUTPUT_BASE_FILENAME}.sketch *`);
+  process.chdir(root);
+  fs.copyFileSync(
+    `config/tmp/sketch-library-light/${OUTPUT_BASE_FILENAME}.sketch`,
+    `build/sketch/light/${OUTPUT_BASE_FILENAME}.sketch`
   );
-  execSync(
-    `zip -r ${OUTPUT_PATH}sketch/dark/${OUTPUT_BASE_FILENAME}.sketch config/tmp/sketch-library-dark/`
+  fs.copyFileSync(
+    `config/tmp/sketch-library-dark/${OUTPUT_BASE_FILENAME}.sketch`,
+    `build/sketch/dark/${OUTPUT_BASE_FILENAME}.sketch`
   );
 }
 
-async function updateLibrary({ buildPath }, mode) {
+function updateLibrary({ buildPath }, mode) {
   const documentFilepath = `config/tmp/sketch-library-${mode}/document.json`;
-  // const mainPageFilepath = `config/tmp/sketch-library-${mode}/pages/${FIXTURE_PAGE_ID}.json`;
+  const mainPageFilepath = `config/tmp/sketch-library-${mode}/pages/${FIXTURE_PAGE_ID}.json`;
   const tokens = JSON.parse(
-    await fs.readFile(buildPath + OUTPUT_BASE_FILENAME + `.${mode}.json`)
+    fs.readFileSync(buildPath + OUTPUT_BASE_FILENAME + `.${mode}.json`)
   );
-  const document = JSON.parse(await fs.readFile(documentFilepath));
-  // const mainPage = JSON.parse(await fs.readFile(mainPageFilepath));
-  document.sharedSwatches.objects = [...tokens.textStyles.map(colorSwatch)];
-  document.layerTextStyles.objects = [...tokens.colors.map(textStyle)];
-  // mainPage.layers[0].layers[0].overrideValues[0].value = `Design Tokens (${mode})`;
-  // mainPage.layers[0].layers[0].overrideValues[1].value =
-  //   new Date().toUTCString();
-  await fs.writeFile(documentFilepath, JSON.stringify(document));
-  // await fs.writeFile(mainPageFilepath, JSON.stringify(mainPage));
+  const document = JSON.parse(fs.readFileSync(documentFilepath));
+  const mainPage = JSON.parse(fs.readFileSync(mainPageFilepath));
+  const now = new Date();
+  // Insert tokens as swatches and text styles into document.json
+  document.sharedSwatches.objects = tokens.colors.map(colorSwatch);
+  document.layerTextStyles.objects = tokens.textStyles.map(textStyle);
+  // Add build information to main page
+  mainPage.layers[0].layers[0].overrideValues[0].value = `Design Tokens (${mode})`;
+  mainPage.layers[0].layers[0].overrideValues[1].value = `v${version} (generated on ${now.toUTCString()})`;
+  fs.writeFileSync(documentFilepath, JSON.stringify(document));
+  fs.writeFileSync(mainPageFilepath, JSON.stringify(mainPage));
 }
 
 function colorSwatch(token) {
