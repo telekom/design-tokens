@@ -269,6 +269,82 @@
         ],
         type: "shadow",
       },
+      special: {
+        "app-bar": {
+          "top": {
+            flat: {
+              value: [
+                {
+                  x: 0,
+                  y: 1,
+                  blur: 0,
+                  spread: 0,
+                  color: "#0000001a",
+                  type: "dropShadow",
+                },
+              ],
+              type: "shadow",
+            },
+            subtle: {
+              value: [
+                {
+                  x: 0,
+                  y: 1,
+                  blur: 0,
+                  spread: 0,
+                  color: "#0000000d",
+                  type: "dropShadow",
+                },
+                {
+                  x: 0,
+                  y: 2,
+                  blur: 8,
+                  spread: 0,
+                  color: "#0000000d",
+                  type: "dropShadow",
+                },
+              ],
+              type: "shadow",
+            },
+          },
+          "bottom": {
+            flat: {
+              value: [
+                {
+                  x: 0,
+                  y: -1,
+                  blur: 0,
+                  spread: 0,
+                  color: "#0000001a",
+                  type: "dropShadow",
+                },
+              ],
+              type: "shadow",
+            },
+            subtle: {
+              value: [
+                {
+                  x: 0,
+                  y: -1,
+                  blur: 0,
+                  spread: 0,
+                  color: "#0000000d",
+                  type: "dropShadow",
+                },
+                {
+                  x: 0,
+                  y: -2,
+                  blur: 8,
+                  spread: 0,
+                  color: "#0000000d",
+                  type: "dropShadow",
+                },
+              ],
+              type: "shadow",
+            },
+          },
+        },
+      },
     },
   },
 }
