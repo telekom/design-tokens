@@ -9,11 +9,14 @@ const FIXTURE_PAGE_ID = '351F5B97-9A3C-4842-B95E-065998538D97';
 
 module.exports = {
   do: function (_, config) {
-    init();
-    decompress();
+    init('light');
+    init('dark');
+    decompress('light');
+    decompress('dark');
     updateLibrary(config, 'light');
     updateLibrary(config, 'dark');
-    compress();
+    compress('light');
+    compress('dark');
     cleanup();
   },
   undo: function () {
@@ -22,41 +25,29 @@ module.exports = {
   },
 };
 
-function init() {
-  fs.mkdirpSync('config/tmp/sketch-library-light/');
-  fs.mkdirpSync('config/tmp/sketch-library-dark/');
-  fs.mkdirpSync('build/sketch/light/');
-  fs.mkdirpSync('build/sketch/dark/');
+function init(mode) {
+  fs.mkdirpSync(`config/tmp/sketch-library-${mode}/`);
+  fs.mkdirpSync(`build/sketch/${mode}/`);
 }
 
 function cleanup() {
   fs.rmSync('config/tmp/', { recursive: true, force: true });
 }
 
-function decompress() {
+function decompress(mode) {
   execSync(
-    `unzip -o -d config/tmp/sketch-library-light/ config/fixtures/${SKETCH_FIXTURE_FILENAME}`
-  );
-  execSync(
-    `unzip -o -d config/tmp/sketch-library-dark/ config/fixtures/${SKETCH_FIXTURE_FILENAME}`
+    `unzip -o -d config/tmp/sketch-library-${mode}/ config/fixtures/${SKETCH_FIXTURE_FILENAME}`
   );
 }
 
-function compress() {
+function compress(mode) {
   const root = process.cwd();
-  process.chdir('config/tmp/sketch-library-light');
-  execSync(`zip -r -X ${OUTPUT_BASE_FILENAME}.sketch *`);
-  process.chdir(root);
-  process.chdir('config/tmp/sketch-library-dark');
+  process.chdir(`config/tmp/sketch-library-${mode}`);
   execSync(`zip -r -X ${OUTPUT_BASE_FILENAME}.sketch *`);
   process.chdir(root);
   fs.copyFileSync(
-    `config/tmp/sketch-library-light/${OUTPUT_BASE_FILENAME}.sketch`,
-    `build/sketch/light/${OUTPUT_BASE_FILENAME}.sketch`
-  );
-  fs.copyFileSync(
-    `config/tmp/sketch-library-dark/${OUTPUT_BASE_FILENAME}.sketch`,
-    `build/sketch/dark/${OUTPUT_BASE_FILENAME}.sketch`
+    `config/tmp/sketch-library-${mode}/${OUTPUT_BASE_FILENAME}.sketch`,
+    `build/sketch/${mode}/${OUTPUT_BASE_FILENAME}.sketch`
   );
 }
 
