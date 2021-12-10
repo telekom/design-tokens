@@ -10,6 +10,8 @@ const OUTPUT_BASE_FILENAME =
 const FIGMA_KEY_LIGHT = 'Light';
 const FIGMA_KEY_DARK = 'Dark';
 
+const ALWAYS_LOWERCASE = ['xs', 'sm', 'md', 'lg', 'xl', 'xxl']
+
 // TODO font names: match real filenames (explore sd assets)
 const fontFamilyMap = {
   TeleNeoWeb: 'TeleNeo',
@@ -22,15 +24,18 @@ const fontWeightMap = {
   800: 'ExtraBold',
 };
 
-function figmaCase(str) {
+function humanCase(str) {
+  if (ALWAYS_LOWERCASE.includes(str)) {
+    return str;
+  }
   return str
     .toLowerCase()
-    .replace('Ui', 'UI')
-    .replace('&-', '& ') // weird edge case
+    .replace('&-', 'and ') // weird edge case
     .replace('-', ' ')
     .split(/\s/)
     .map(upperFirst)
-    .join(' ');
+    .join(' ')
+    .replace('Ui', 'UI');
 }
 
 // Transforms
@@ -129,7 +134,7 @@ module.exports = {
   OUTPUT_BASE_FILENAME,
   FIGMA_KEY_LIGHT,
   FIGMA_KEY_DARK,
-  figmaCase,
+  humanCase,
   fontFamilyMap,
   fontWeightMap,
 };
