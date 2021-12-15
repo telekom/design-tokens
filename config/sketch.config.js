@@ -4,7 +4,7 @@ const libraryAction = require('./sketch-library-action');
 const {
   OUTPUT_PATH,
   OUTPUT_BASE_FILENAME,
-  figmaCase,
+  humanCase,
   fontFamilyMap,
   fontWeightMap,
 } = require('./shared');
@@ -62,7 +62,7 @@ StyleDictionary.registerFormat({
 });
 
 function getTokenName(token) {
-  return token.path.slice(1).map(figmaCase).join('/');
+  return token.path.slice(1).map(humanCase).join('/');
 }
 
 function getColorShape() {
