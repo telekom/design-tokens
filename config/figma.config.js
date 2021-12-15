@@ -6,7 +6,7 @@ const {
   OUTPUT_BASE_FILENAME,
   FIGMA_KEY_LIGHT,
   FIGMA_KEY_DARK,
-  figmaCase,
+  humanCase,
   fontWeightMap,
 } = require('./shared');
 
@@ -28,7 +28,7 @@ const categoryTypeMap = {
   textStyle: 'typography',
 };
 
-function formatJSON(allTokens, nameCaseFn = figmaCase) {
+function formatJSON(allTokens, nameCaseFn = humanCase) {
   const output = {};
   deep.p = true;
   allTokens.forEach((token) => {
