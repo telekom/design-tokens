@@ -7,7 +7,12 @@ const { PREFIX, OUTPUT_PATH, OUTPUT_BASE_FILENAME } = require('./shared');
   - [ ] text styles: split into separate variables, plus maybe add css classes?
 */
 
-const cssTransformGroup = StyleDictionary.transformGroup.css;
+const cssTransformGroup = StyleDictionary.transformGroup.css.filter(
+  (x) => x !== 'name/cti/kebab'
+);
+
+// Add custom `name` transform to handle `&` better
+cssTransformGroup.splice(1, 0, 'name/cti/kebab2');
 
 StyleDictionary.registerAction({
   name: 'bundle_css',
