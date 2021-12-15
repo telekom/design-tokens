@@ -1,8 +1,9 @@
 const StyleDictionary = require('style-dictionary');
 const upperFirst = require('lodash/upperFirst');
 const camelCase = require('lodash/camelCase');
+const kebabCase = require('lodash/kebabCase');
 
-const PREFIX = process.env.PREFIX || 'scl';
+const PREFIX = process.env.PREFIX || 'telekom';
 const OUTPUT_PATH = process.env.OUTPUT_PATH || 'build/';
 const OUTPUT_BASE_FILENAME =
   process.env.OUTPUT_BASE_FILENAME || 'telekom-design-tokens';
@@ -10,7 +11,7 @@ const OUTPUT_BASE_FILENAME =
 const FIGMA_KEY_LIGHT = 'Light';
 const FIGMA_KEY_DARK = 'Dark';
 
-const ALWAYS_LOWERCASE = ['xs', 'sm', 'md', 'lg', 'xl', 'xxl']
+const ALWAYS_LOWERCASE = ['xs', 'sm', 'md', 'lg', 'xl', 'xxl'];
 
 // TODO font names: match real filenames (explore sd assets)
 const fontFamilyMap = {
@@ -30,8 +31,8 @@ function humanCase(str) {
   }
   return str
     .toLowerCase()
-    .replace('&-', 'and ') // weird edge case
     .replace('-', ' ')
+    .replace('-icon', ' icon') // weird edge case
     .split(/\s/)
     .map(upperFirst)
     .join(' ')
@@ -39,6 +40,18 @@ function humanCase(str) {
 }
 
 // Transforms
+
+StyleDictionary.registerTransform({
+  name: 'name/cti/kebab2',
+  type: 'name',
+  transformer: function (token, options) {
+    const name = [options.prefix]
+      .concat(token.path)
+      .map((x) => x.replace('&', 'and'))
+      .join(' ');
+    return kebabCase(name);
+  },
+});
 
 /**
  * Use only `light` values from composite light/dark tokens
