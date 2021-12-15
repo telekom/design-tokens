@@ -14,7 +14,7 @@
       value: {
         "font-family": "{typography.font-family.sans.value}",
         "font-size": "{typography.font-size.small.value}",
-        "font-weight": "{typography.font-weight.regular.value}",
+        "font-weight": "{typography.font-weight.medium.value}",
         "line-spacing": "{typography.line-spacing.standard.value}",
         "letter-spacing": "{typography.letter-spacing.standard.value}",
       },
@@ -35,6 +35,16 @@
         "font-family": "{typography.font-family.sans.value}",
         "font-size": "{typography.font-size.body.value}",
         "font-weight": "{typography.font-weight.regular.value}",
+        "line-spacing": "{typography.line-spacing.standard.value}",
+        "letter-spacing": "{typography.letter-spacing.standard.value}",
+      },
+      type: "textStyle",
+    },
+    "body-bold": {
+      value: {
+        "font-family": "{typography.font-family.sans.value}",
+        "font-size": "{typography.font-size.body.value}",
+        "font-weight": "{typography.font-weight.bold.value}",
         "line-spacing": "{typography.line-spacing.standard.value}",
         "letter-spacing": "{typography.letter-spacing.standard.value}",
       },

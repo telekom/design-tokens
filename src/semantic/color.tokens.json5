@@ -79,6 +79,24 @@
           type: "color",
         },
       },
+      Inverted: {
+        Standard: {
+          comment: "Standard text color inverted to be used on high contrast colors like UI/Extra Strong",
+          value: {
+            light: "{core.color.grey.0.value}",
+            dark: "{core.color.grey.200.value}",
+          },
+          type: "color",
+        },
+        Additional: {
+          comment: "Additional text color inverted to be used on high contrast colors like UI/Extra Strong",
+          value: {
+            light: "{core.color.grey.80.value}",
+            dark: "{core.color.grey.120.value}",
+          },
+          type: "color",
+        },
+      },
       Functional: {
         Informational: {
           value: {
@@ -163,8 +181,16 @@
       "Surface-Subtle": {
         comment: "Use as the background of elements like cards, headers, bottom bars, etc.",
         value: {
-          light: "{core.color.grey.10.value}",
+          light: "{core.color.grey.0.value}",
           dark: "{core.color.grey.170.value}",
+        },
+        type: "color",
+      },
+      "Surface-Highlight": {
+        comment: "Use as the background of elements that should stand out highlighted sections, footer, etc.",
+        value: {
+          light: "{core.color.grey.200.value}",
+          dark: "{core.color.grey.160.value}",
         },
         type: "color",
       },
