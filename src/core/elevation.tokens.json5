@@ -271,7 +271,7 @@
       },
       special: {
         "app-bar": {
-          "top": {
+          top: {
             flat: {
               value: [
                 {
@@ -307,7 +307,7 @@
               type: "shadow",
             },
           },
-          "bottom": {
+          bottom: {
             flat: {
               value: [
                 {
