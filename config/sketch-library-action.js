@@ -7,6 +7,12 @@ const { OUTPUT_BASE_FILENAME } = require('./shared');
 const SKETCH_FIXTURE_FILENAME = 'design-tokens.sketch';
 const FIXTURE_PAGE_ID = '351F5B97-9A3C-4842-B95E-065998538D97';
 
+/*
+  TODO
+  - [ ] evaluate using https://www.npmjs.com/package/yazl instead of bash' zip
+        for cross-platform support
+*/
+
 module.exports = {
   do: function (_, config) {
     init('light');
