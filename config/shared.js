@@ -2,6 +2,7 @@ const StyleDictionary = require('style-dictionary');
 const upperFirst = require('lodash/upperFirst');
 const camelCase = require('lodash/camelCase');
 const kebabCase = require('lodash/kebabCase');
+const color = require('tinycolor2');
 
 const PREFIX = process.env.PREFIX || 'telekom';
 const OUTPUT_PATH = process.env.OUTPUT_PATH || 'build/';
@@ -105,6 +106,31 @@ StyleDictionary.registerTransform({
   name: 'color/css',
   matcher: (token) => token.original.type === 'color',
   transformer: StyleDictionary.transform['color/css'].transformer,
+});
+
+/**
+ * Built-in `color/css` transform with different matcher function
+ */
+StyleDictionary.registerTransform({
+  type: 'value',
+  name: 'color/alpha',
+  transitive: true,
+  matcher: (token) => token.original.type === 'color',
+  transformer: function (token) {
+    if (
+      token.value.hasOwnProperty('color') &&
+      typeof token.value.alpha === 'number'
+    ) {
+      // FIXME the value here is the reference :(
+      // and there's no access here to dictionary.getReference() to resolve?
+      const value = color(token.value.color);
+      console.log('color/alpha', token.value); // { color: '{core.color.grey.0.value}', alpha: 0.3 }
+      if (!value.isValid()) return token.value;
+      value.setAlpha(token.value.alpha);
+      return value.toHexString();
+    }
+    return token.value;
+  },
 });
 
 /**

@@ -5,8 +5,16 @@
       Standard: {
         comment: "Default text color with highest contrast.",
         value: {
-          light: "{core.color.grey.200.value}",
-          dark: "{core.color.grey.0.value}",
+          light: {
+            color: "{core.color.grey.200.value}",
+            // random value for testing
+            alpha: 0.5,
+          },
+          dark: {
+            color: "{core.color.grey.0.value}",
+            // random value for testing
+            alpha: 0.3,
+          },
         },
         type: "color",
       },

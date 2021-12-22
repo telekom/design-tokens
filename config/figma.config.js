@@ -17,7 +17,11 @@ const TMP_NAME = 'tokens';
   - [ ] use font name from token in text-style transform
 */
 
-const figmaTransformGroup = ['attribute/cti', 'text-style/figma'];
+const figmaTransformGroup = [
+  'attribute/cti',
+  'text-style/figma',
+  'color/alpha',
+];
 
 const categoryTypeMap = {
   'line-weight': 'borderWidth',
