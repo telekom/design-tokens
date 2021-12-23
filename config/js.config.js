@@ -11,6 +11,7 @@ const { OUTPUT_PATH, OUTPUT_BASE_FILENAME } = require('./shared');
 
 const jsTransformGroup = [
   ...StyleDictionary.transformGroup.js,
+  'color/alpha',
   'shadow/css',
   'text-style/camel',
 ];

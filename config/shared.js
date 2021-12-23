@@ -2,7 +2,7 @@ const StyleDictionary = require('style-dictionary');
 const upperFirst = require('lodash/upperFirst');
 const camelCase = require('lodash/camelCase');
 const kebabCase = require('lodash/kebabCase');
-const color = require('tinycolor2');
+const Color = require('tinycolor2');
 
 const PREFIX = process.env.PREFIX || 'telekom';
 const OUTPUT_PATH = process.env.OUTPUT_PATH || 'build/';
@@ -40,6 +40,10 @@ function humanCase(str) {
     .replace('Ui', 'UI');
 }
 
+function isColorAlphaComposite(token) {
+  return token.value.hasOwnProperty('color') && typeof token.value.alpha === 'number';
+}
+
 // Transforms
 
 StyleDictionary.registerTransform({
@@ -62,10 +66,10 @@ StyleDictionary.registerTransform({
   name: 'mode-light',
   transitive: true,
   transformer: function (token) {
-    if (token.original.value?.light != null) {
-      return token.original.value.light;
+    if (token.value?.light != null) {
+      return token.value.light;
     }
-    return token.original.value;
+    return token.value;
   },
 });
 
@@ -77,10 +81,10 @@ StyleDictionary.registerTransform({
   name: 'mode-dark',
   transitive: true,
   transformer: function (token) {
-    if (token.original.value?.dark != null) {
-      return token.original.value.dark;
+    if (token.value?.dark != null) {
+      return token.value.dark;
     }
-    return token.original.value;
+    return token.value;
   },
 });
 
@@ -109,29 +113,39 @@ StyleDictionary.registerTransform({
 });
 
 /**
- * Built-in `color/css` transform with different matcher function
+ * Handle composite colors with `alpha`
+ * e.g. { value: { color: "{core.color.black}", alpha: 0.5 }
  */
 StyleDictionary.registerTransform({
   type: 'value',
   name: 'color/alpha',
   transitive: true,
   matcher: (token) => token.original.type === 'color',
-  transformer: function (token) {
-    if (
-      token.value.hasOwnProperty('color') &&
-      typeof token.value.alpha === 'number'
-    ) {
-      // FIXME the value here is the reference :(
-      // and there's no access here to dictionary.getReference() to resolve?
-      const value = color(token.value.color);
-      console.log('color/alpha', token.value); // { color: '{core.color.grey.0.value}', alpha: 0.3 }
+  transformer: colorAlphaTransform(),
+});
+
+/**
+ * Handle composite colors with `alpha`, return hex8
+ */
+StyleDictionary.registerTransform({
+  type: 'value',
+  name: 'color/alpha-hex',
+  transitive: true,
+  matcher: (token) => token.original.type === 'color',
+  transformer: colorAlphaTransform('toHex8String'),
+});
+
+function colorAlphaTransform(outputMethod = 'toHslString') {
+  return function (token) {
+    if (isColorAlphaComposite(token)) {
+      const value = Color(token.value.color);
       if (!value.isValid()) return token.value;
       value.setAlpha(token.value.alpha);
-      return value.toHexString();
+      return value[outputMethod]();
     }
     return token.value;
-  },
-});
+  };
+}
 
 /**
  * Handle composite shadow tokens
@@ -174,6 +188,7 @@ module.exports = {
   FIGMA_KEY_LIGHT,
   FIGMA_KEY_DARK,
   humanCase,
+  isColorAlphaComposite,
   fontFamilyMap,
   fontWeightMap,
 };

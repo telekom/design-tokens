@@ -19,8 +19,8 @@ const TMP_NAME = 'tokens';
 
 const figmaTransformGroup = [
   'attribute/cti',
+  'color/alpha-hex',
   'text-style/figma',
-  'color/alpha',
 ];
 
 const categoryTypeMap = {
