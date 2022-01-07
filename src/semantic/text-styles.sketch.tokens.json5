@@ -1,6 +1,6 @@
 {
   "text-style": {
-    footnoteNew: {
+    footnote: {
       value: {
         "font-family": "{text-style.footnote.value.font-family}",
         "font-size": "{typography.font-size.footnote.value}",
