@@ -688,7 +688,11 @@
           value: "#177345",
           type: "color",
         },
-        "150": {
+        "tint": {
+          value: "#f5fffa",
+          type: "color",
+        },
+        "shade": {
           value: "#002613",
           type: "color",
         },
