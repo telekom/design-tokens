@@ -71,7 +71,6 @@ function getTokenName(token) {
 
 function getColorShape() {
   return (token) => {
-    console.log(token.path, token.value);
     return {
       _class: 'swatch',
       do_objectID: '',
