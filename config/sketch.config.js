@@ -5,6 +5,7 @@ const {
   OUTPUT_PATH,
   OUTPUT_BASE_FILENAME,
   humanCase,
+  isColorAlphaComposite,
   fontFamilyMap,
   fontWeightMap,
 } = require('./shared');
@@ -28,14 +29,17 @@ StyleDictionary.registerTransform({
   type: 'value',
   name: 'sketch/color2',
   matcher: (token) => token.path.includes('color'),
+  transitive: true,
   transformer: function (token) {
-    const color = Color(token.value).toRgb();
-    return {
-      red: (color.r / 255).toFixed(5),
-      green: (color.g / 255).toFixed(5),
-      blue: (color.b / 255).toFixed(5),
-      alpha: color.a,
-    };
+    let color = Color(token.value);
+    if (isColorAlphaComposite(token)) {
+      const value = Color(token.value.color);
+      if (value.isValid()) {
+        value.setAlpha(token.value.alpha);
+        color = value;
+      }
+    }
+    return color.toRgb();
   },
 });
 
@@ -67,13 +71,17 @@ function getTokenName(token) {
 
 function getColorShape() {
   return (token) => {
+    console.log(token.path, token.value);
     return {
       _class: 'swatch',
       do_objectID: '',
       name: getTokenName(token),
       value: {
         _class: 'color',
-        ...token.value,
+        red: (token.value.r / 255).toFixed(5),
+        green: (token.value.g / 255).toFixed(5),
+        blue: (token.value.b / 255).toFixed(5),
+        alpha: String(token.value.a),
       },
     };
   };

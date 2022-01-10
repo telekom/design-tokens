@@ -41,7 +41,9 @@ function humanCase(str) {
 }
 
 function isColorAlphaComposite(token) {
-  return token.value.hasOwnProperty('color') && typeof token.value.alpha === 'number';
+  return (
+    token.value.hasOwnProperty('color') && typeof token.value.alpha === 'number'
+  );
 }
 
 // Transforms
