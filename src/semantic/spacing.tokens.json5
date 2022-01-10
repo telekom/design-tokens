@@ -1,70 +1,96 @@
 {
   spacing: {
-    none: {
-      value: "{core.spacing.spacing-unit-x0.value}",
-      type: "dimension",
-    },
-    inner: {
-      comment: "Use for spacing within elements e.g. between text & icon",
-      xs: {
-        value: "{core.spacing.spacing-unit-x025.value}",
+    "unit": {
+      "x0": {
+        value: "{core.spacing.unit.x0}",
         type: "dimension",
       },
-      sm: {
-        value: "{core.spacing.spacing-unit-x05.value}",
+      "x025": {
+        value: "{core.spacing.unit.x025}",
         type: "dimension",
       },
-      md: {
-        value: "{core.spacing.spacing-unit-x1.value}",
+      "x05": {
+        value: "{core.spacing.unit.x05}",
         type: "dimension",
       },
-      lg: {
-        value: "{core.spacing.spacing-unit-x2.value}",
+      "x1": {
+        value: "{core.spacing.unit.x1}",
         type: "dimension",
       },
-    },
-    grouped: {
-      comment: "Use when grouping items e.g. fields in a form",
-      sm: {
-        value: "{core.spacing.spacing-unit-x3.value}",
+      "x2": {
+        value: "{core.spacing.unit.x2}",
         type: "dimension",
       },
-      md: {
-        value: "{core.spacing.spacing-unit-x4.value}",
+      "x3": {
+        value: "{core.spacing.unit.x3}",
         type: "dimension",
       },
-      lg: {
-        value: "{core.spacing.spacing-unit-x6.value}",
+      "x4": {
+        value: "{core.spacing.unit.x4}",
         type: "dimension",
       },
-    },
-    related: {
-      comment: "Use for related items e.g. Title and content below or button below intro text",
-      sm: {
-        value: "{core.spacing.spacing-unit-x8.value}",
+      "x5": {
+        value: "{core.spacing.unit.x5}",
         type: "dimension",
       },
-      md: {
-        value: "{core.spacing.spacing-unit-x10.value}",
+      "x6": {
+        value: "{core.spacing.unit.x6}",
         type: "dimension",
       },
-      lg: {
-        value: "{core.spacing.spacing-unit-x12.value}",
+      "x7": {
+        value: "{core.spacing.unit.x7}",
         type: "dimension",
       },
-    },
-    unrelated: {
-      comment: "Use for unrelated items e.g. between different sections on a page",
-      sm: {
-        value: "{core.spacing.spacing-unit-x16.value}",
+      "x8": {
+        value: "{core.spacing.unit.x8}",
         type: "dimension",
       },
-      md: {
-        value: "{core.spacing.spacing-unit-x18.value}",
+      "x9": {
+        value: "{core.spacing.unit.x9}",
         type: "dimension",
       },
-      lg: {
-        value: "{core.spacing.spacing-unit-x20.value}",
+      "x10": {
+        value: "{core.spacing.unit.x10}",
+        type: "dimension",
+      },
+      "x11": {
+        value: "{core.spacing.unit.x11}",
+        type: "dimension",
+      },
+      "x12": {
+        value: "{core.spacing.unit.x12}",
+        type: "dimension",
+      },
+      "x13": {
+        value: "{core.spacing.unit.x13}",
+        type: "dimension",
+      },
+      "x14": {
+        value: "{core.spacing.unit.x14}",
+        type: "dimension",
+      },
+      "x15": {
+        value: "{core.spacing.unit.x15}",
+        type: "dimension",
+      },
+      "x16": {
+        value: "{core.spacing.unit.x16}",
+        type: "dimension",
+      },
+      "x17": {
+        value: "{core.spacing.unit.x17}",
+        type: "dimension",
+      },
+      "x18": {
+        value: "{core.spacing.unit.x18}",
+        type: "dimension",
+      },
+      "x19": {
+        value: "{core.spacing.unit.x19}",
+        type: "dimension",
+      },
+      "x20": {
+        value: "{core.spacing.unit.x20}",
         type: "dimension",
       },
     },
