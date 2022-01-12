@@ -32,7 +32,7 @@ StyleDictionary.registerTransform({
   transitive: true,
   transformer: function (token) {
     let color = Color(token.value);
-    if (isColorAlphaComposite(token)) {
+    if (isColorAlphaComposite(token.value)) {
       const value = Color(token.value.color);
       if (value.isValid()) {
         value.setAlpha(token.value.alpha);
