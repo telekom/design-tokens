@@ -11,6 +11,8 @@
         type: "color",
       },
       magenta: {
+        // @TODO @lukasoppermann
+        comment: "turn into scale???",
         brand: {
           value: "#e20074",
           type: "color",
@@ -21,6 +23,14 @@
         },
         darker: {
           value: "#9E0051",
+          type: "color",
+        },
+        light: {
+          value: "#F2007D",
+          type: "color",
+        },
+        lighter: {
+          value: "#FF0083",
           type: "color",
         },
         tint: {
@@ -483,7 +493,15 @@
           type: "color",
         },
         "100": {
-          value: "#4d2600",
+          value: "#401F00",
+          type: "color",
+        },
+        shade: {
+          value: "#401F00",
+          type: "color",
+        },
+        tint: {
+          value: "#FFF9F2",
           type: "color",
         },
       },
@@ -529,7 +547,15 @@
           type: "color",
         },
         "100": {
-          value: "#301116",
+          value: "#331217",
+          type: "color",
+        },
+        shade: {
+          value: "#331217",
+          type: "color",
+        },
+        tint: {
+          value: "#fef6f8",
           type: "color",
         },
       },
@@ -538,56 +564,54 @@
           value: "#f4f8ff",
           type: "color",
         },
-
         "10": {
           value: "#c9dcfe",
           type: "color",
         },
-
         "20": {
           value: "#9ec0fd",
           type: "color",
         },
-
         "30": {
           value: "#75a3fa",
           type: "color",
         },
-
         "40": {
           value: "#4d87f6",
           type: "color",
         },
-
         "50": {
           value: "#256bf1",
           type: "color",
         },
-
         "60": {
           value: "#1154d9",
           type: "color",
         },
-
         "70": {
           value: "#1045ae",
           type: "color",
         },
-
         "80": {
           value: "#0e3584",
           type: "color",
         },
-
         "90": {
           value: "#0b255b",
           type: "color",
         },
-
         "100": {
           value: "#071533",
           type: "color",
         },
+        "shade": {
+          value: "#071533",
+          type: "color",
+        },
+        "tint": {
+          value: "#f4f8ff",
+          type: "color",
+        }
       },
       green: {
         "0": {
@@ -680,10 +704,14 @@
           value: "#177345",
           type: "color",
         },
-        "150": {
-          value: "#002613",
+        "shade": {
+          value: "#00331A",
           type: "color",
         },
+        "tint": {
+          value: "#f5fffa",
+          type: "color",
+        }
       },
     },
   },

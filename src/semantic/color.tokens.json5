@@ -42,14 +42,14 @@
         Standard: {
           value: {
             light: "{core.color.blue.60.value}",
-            dark: "{core.color.blue.50.value}",
+            dark: "{core.color.blue.40.value}",
           },
           type: "color",
         },
         Hovered: {
           value: {
             light: "{core.color.blue.70.value}",
-            dark: "{core.color.blue.40.value}",
+            dark: "{core.color.blue.30.value}",
           },
           type: "color",
         },
@@ -79,14 +79,14 @@
         Hovered: {
           value: {
             light: "{core.color.magenta.dark.value}",
-            dark: "{core.color.magenta.dark.value}",
+            dark: "{core.color.magenta.light.value}",
           },
           type: "color",
         },
         Pressed: {
           value: {
             light: "{core.color.magenta.darker.value}",
-            dark: "{core.color.magenta.darker.value}",
+            dark: "{core.color.magenta.lighter.value}",
           },
           type: "color",
         },
@@ -95,16 +95,22 @@
         Standard: {
           comment: "Standard text color inverted to be used on high contrast colors like UI/Extra Strong",
           value: {
-            light: "{core.color.grey.0.value}",
-            dark: "{core.color.grey.200.value}",
+          light: "{core.color.white}",
+          dark: "{core.color.black}",
           },
           type: "color",
         },
         Additional: {
           comment: "Additional text color inverted to be used on high contrast colors like UI/Extra Strong",
           value: {
-            light: "{core.color.grey.80.value}",
-            dark: "{core.color.grey.120.value}",
+            light: {
+              color: "{core.color.white}",
+              alpha: 0.65,
+            },
+            dark: {
+              color: "{core.color.black}",
+              alpha: 0.65,
+            },
           },
           type: "color",
         },
@@ -119,7 +125,7 @@
         },
         Success: {
           value: {
-            light: "{core.color.pine.80.value}",
+            light: "{core.color.pine.90.value}",
             dark: "{core.color.pine.60.value}",
           },
           type: "color",
@@ -127,7 +133,7 @@
         Danger: {
           value: {
             light: "{core.color.red.60.value}",
-            dark: "{core.color.red.50.value}",
+            dark: "{core.color.red.40.value}",
           },
           type: "color",
         },
@@ -200,7 +206,7 @@
         comment: "Use as the background of elements like cards, headers, bottom bars, etc.",
         value: {
           light: "{core.color.grey.0.value}",
-          dark: "{core.color.grey.170.value}",
+          dark: "{core.color.grey.180.value}",
         },
         type: "color",
       },
@@ -224,14 +230,14 @@
       Hovered: {
         value: {
           light: "{core.color.magenta.dark.value}",
-          dark: "{core.color.magenta.dark.value}",
+          dark: "{core.color.magenta.light.value}",
         },
         type: "color",
       },
       Pressed: {
         value: {
           light: "{core.color.magenta.darker.value}",
-          dark: "{core.color.magenta.darker.value}",
+          dark: "{core.color.magenta.lighter.value}",
         },
         type: "color",
       },
@@ -321,8 +327,8 @@
         },
         Subtle: {
           value: {
-            light: "{core.color.pine.0.value}",
-            dark: "{core.color.pine.150.value}",
+            light: "{core.color.pine.tint}",
+            dark: "{core.color.pine.shade}",
           },
           type: "color",
         },
@@ -351,8 +357,8 @@
         },
         Subtle: {
           value: {
-            light: "{core.color.blue.0.value}",
-            dark: "{core.color.blue.100.value}",
+            light: "{core.color.blue.tint}",
+            dark: "{core.color.blue.shade}",
           },
           type: "color",
         },
@@ -381,8 +387,8 @@
         },
         Subtle: {
           value: {
-            light: "{core.color.blue.0.value}",
-            dark: "{core.color.blue.100.value}",
+            light: "{core.color.blue.tint}",
+            dark: "{core.color.blue.shade}",
           },
           type: "color",
         },
@@ -411,8 +417,8 @@
         },
         Subtle: {
           value: {
-            light: "{core.color.orange.0.value}",
-            dark: "{core.color.orange.100.value}",
+            light: "{core.color.orange.tint}",
+            dark: "{core.color.orange.shade}",
           },
           type: "color",
         },
@@ -441,8 +447,8 @@
         },
         Subtle: {
           value: {
-            light: "{core.color.red.0.value}",
-            dark: "{core.color.red.100.value}",
+            light: "{core.color.red.tint}",
+            dark: "{core.color.red.shade}",
           },
           type: "color",
         },
