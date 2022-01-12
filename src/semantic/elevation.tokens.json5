@@ -90,12 +90,12 @@
       top: {
         flat: {
           comment: "Use for headers, app bar & menus on the top",
-          value: "{core.elevation.special.app-bar.top.flat.value}",
+          value: "{core.elevation.special.app-bar.top.subtle}",
           type: "shadow",
         },
         raised: {
           comment: "Use for headers, app bar & menus on the top",
-          value: "{core.elevation.special.app-bar.top.flat.value}",
+          value: "{core.elevation.special.app-bar.top.flat}",
           type: "shadow",
         },
       },
@@ -103,12 +103,12 @@
       bottom: {
         flat: {
           comment: "Use for app navigation and app bars on the bottom",
-          value: "{core.elevation.special.app-bar.bottom.flat.value}",
+          value: "{core.elevation.special.app-bar.bottom.subtle}",
           type: "shadow",
         },
         raised: {
           comment: "Use for app navigation and app bars on the bottom",
-          value: "{core.elevation.special.app-bar.bottom.flat.value}",
+          value: "{core.elevation.special.app-bar.bottom.flat}",
           type: "shadow",
         },
       },
