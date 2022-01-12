@@ -5,24 +5,36 @@
       Standard: {
         comment: "Default text color with highest contrast.",
         value: {
-          light: "{core.color.grey.200.value}",
-          dark: "{core.color.grey.0.value}",
+          light: "{core.color.black}",
+          dark: "{core.color.white}",
         },
         type: "color",
       },
       Additional: {
         comment: "Use in combination with standard text for additional text elements.",
         value: {
-          light: "{core.color.grey.120.value}",
-          dark: "{core.color.grey.80.value}",
+          light: {
+            color: "{core.color.black}",
+            alpha: 0.65,
+          },
+          dark: {
+            color: "{core.color.white}",
+            alpha: 0.65,
+          },
         },
         type: "color",
       },
       Disabled: {
         comment: "Only use for disabled text.",
         value: {
-          light: "{core.color.grey.60.value}",
-          dark: "{core.color.grey.140.value}",
+          light: {
+            color: "{core.color.black}",
+            alpha: 0.4,
+          },
+          dark: {
+            color: "{core.color.white}",
+            alpha: 0.3,
+          },
         },
         type: "color",
       },
@@ -129,16 +141,16 @@
         White: {
           comment: "This text color is white in all modes (light & dark)",
           value: {
-            light: "{core.color.white.value}",
-            dark: "{core.color.white.value}",
+            light: "{core.color.white}",
+            dark: "{core.color.white}",
           },
           type: "color",
         },
         Black: {
           comment: "This text color is black in all modes (light & dark)",
           value: {
-            light: "{core.color.black.100.value}",
-            dark: "{core.color.black.100.value}",
+            light: "{core.color.black}",
+            dark: "{core.color.black}",
           },
           type: "color",
         },
@@ -165,8 +177,14 @@
       Backdrop: {
         comment: "Use to overlay content below dialogs to separate dialog from content below",
         value: {
-          light: "{core.color.black.50.value}",
-          dark: "{core.color.black.70.value}",
+          light: {
+            color: "{core.color.black}",
+            alpha: 0.5,
+          },
+          dark: {
+            color: "{core.color.black}",
+            alpha: 0.65,
+          },
         },
         type: "color",
       },

@@ -6,47 +6,9 @@
         type: "color",
       },
       black: {
-        comment: "Black with increasing opacity from 10% to 100%",
-        "10": {
-          value: "#0000001a",
-          type: "color",
-        },
-        "20": {
-          value: "#00000033",
-          type: "color",
-        },
-        "30": {
-          value: "#0000004d",
-          type: "color",
-        },
-        "40": {
-          value: "#00000066",
-          type: "color",
-        },
-        "50": {
-          value: "#00000080",
-          type: "color",
-        },
-        "60": {
-          value: "#00000099",
-          type: "color",
-        },
-        "70": {
-          value: "#000000b3",
-          type: "color",
-        },
-        "80": {
-          value: "#000000cc",
-          type: "color",
-        },
-        "90": {
-          value: "#000000e6",
-          type: "color",
-        },
-        "100": {
-          value: "#000000",
-          type: "color",
-        },
+        comment: "Black to use for text with transparency",
+        value: "#000000",
+        type: "color",
       },
       magenta: {
         brand: {
