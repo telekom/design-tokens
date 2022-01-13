@@ -6,7 +6,6 @@
         type: "color",
       },
       black: {
-        comment: "Black to use for text with transparency",
         value: "#000000",
         type: "color",
       },
@@ -21,6 +20,14 @@
         },
         darker: {
           value: "#9E0051",
+          type: "color",
+        },
+        light: {
+          value: "#F2007D",
+          type: "color",
+        },
+        lighter: {
+          value: "#FF008",
           type: "color",
         },
         tint: {
