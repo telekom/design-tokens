@@ -402,52 +402,6 @@
           type: "color",
         },
       },
-      teal: {
-        "0": {
-          value: "#d7f6f4",
-          type: "color",
-        },
-        "10": {
-          value: "#d7f6f4",
-          type: "color",
-        },
-        "20": {
-          value: "#98e4e4",
-          type: "color",
-        },
-        "30": {
-          value: "#79d9db",
-          type: "color",
-        },
-        "40": {
-          value: "#5cccd0",
-          type: "color",
-        },
-        "50": {
-          value: "#3ebdc5",
-          type: "color",
-        },
-        "60": {
-          value: "#22adb9",
-          type: "color",
-        },
-        "70": {
-          value: "#129ca3",
-          type: "color",
-        },
-        "80": {
-          value: "#068788",
-          type: "color",
-        },
-        "90": {
-          value: "#006967",
-          type: "color",
-        },
-        "100": {
-          value: "#005651",
-          type: "color",
-        },
-      },
       orange: {
         comment: "Scale needs to be rebuild",
         "0": {
@@ -546,52 +500,42 @@
           value: "#f4f8ff",
           type: "color",
         },
-
         "10": {
           value: "#c9dcfe",
           type: "color",
         },
-
         "20": {
           value: "#9ec0fd",
           type: "color",
         },
-
         "30": {
           value: "#75a3fa",
           type: "color",
         },
-
         "40": {
           value: "#4d87f6",
           type: "color",
         },
-
         "50": {
           value: "#256bf1",
           type: "color",
         },
-
         "60": {
           value: "#1154d9",
           type: "color",
         },
-
         "70": {
           value: "#1045ae",
           type: "color",
         },
-
         "80": {
           value: "#0e3584",
           type: "color",
         },
-
         "90": {
           value: "#0b255b",
           type: "color",
         },
-
         "100": {
           value: "#071533",
           type: "color",
