@@ -403,49 +403,52 @@
         },
       },
       orange: {
-        comment: "Scale needs to be rebuild",
         "0": {
-          value: "#FFF9F2",
+          value: "#FFEEDD",
           type: "color",
         },
         "10": {
-          value: "#1AF0BD",
+          value: "#FFE3C9",
           type: "color",
         },
         "20": {
-          value: "#1AF0BD",
+          value: "#FFC998",
           type: "color",
         },
         "30": {
-          value: "#1AF0BD",
+          value: "#FFA556",
           type: "color",
         },
         "40": {
-          value: "#ffa348",
+          value: "#FF7F1F",
           type: "color",
         },
         "50": {
-          value: "#ff9124",
+          value: "#E26617",
           type: "color",
         },
         "60": {
-          value: "#ff7f00",
+          value: "#BB5313",
           type: "color",
         },
         "70": {
-          value: "#dc6d00",
+          value: "#9C4410",
           type: "color",
         },
         "80": {
-          value: "#1AF0BD",
+          value: "#7E360C",
           type: "color",
         },
         "90": {
-          value: "#1AF0BD",
+          value: "#60290A",
           type: "color",
         },
-        "100": {
-          value: "#4d2600",
+        "tint": {
+          value: "#FFF6F0",
+          type: "color",
+        },
+        "shade": {
+          value: "#331600",
           type: "color",
         },
       },
