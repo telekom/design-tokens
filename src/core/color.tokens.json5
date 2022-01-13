@@ -32,11 +32,11 @@
           type: "color",
         },
         tint: {
-          value: "#FEF2F8",
+          value: "#FFF0F8",
           type: "color",
         },
         shade: {
-          value: "#2D0017",
+          value: "#33001A",
           type: "color",
         },
       },
@@ -543,104 +543,54 @@
       },
       green: {
         "0": {
-          value: "#f0f7e0",
+          value: "#DAF8E8",
           type: "color",
         },
         "10": {
-          value: "#e0efc7",
+          value: "#C2F3DA",
           type: "color",
         },
         "20": {
-          value: "#cfe8af",
+          value: "#87E7B7",
           type: "color",
         },
         "30": {
-          value: "#bbdf98",
+          value: "#2CD580",
           type: "color",
         },
         "40": {
-          value: "#a4d681",
+          value: "#13BE68",
           type: "color",
         },
         "50": {
-          value: "#8dcd6a",
+          value: "#109F57",
           type: "color",
         },
         "60": {
-          value: "#73c354",
+          value: "#0D8347",
           type: "color",
         },
         "70": {
-          value: "#52b342",
+          value: "#0B6D3B",
           type: "color",
         },
         "80": {
-          value: "#32a032",
+          value: "#09572F",
           type: "color",
         },
         "90": {
-          value: "#248b31",
-          type: "color",
-        },
-        "100": {
-          value: "#187431",
-          type: "color",
-        },
-      },
-      pine: {
-        "0": {
-          value: "#f5fffa",
-          type: "color",
-        },
-        "10": {
-          value: "#daf7e8",
-          type: "color",
-        },
-        "20": {
-          value: "#c0efd8",
-          type: "color",
-        },
-        "30": {
-          value: "#92e0b9",
-          type: "color",
-        },
-        "40": {
-          value: "#6cd09e",
-          type: "color",
-        },
-        "50": {
-          value: "#50c188",
-          type: "color",
-        },
-        "60": {
-          value: "#3cb176",
-          type: "color",
-        },
-        "70": {
-          value: "#2da267",
-          type: "color",
-        },
-        "80": {
-          value: "#23925a",
-          type: "color",
-        },
-        "90": {
-          value: "#1c824f",
-          type: "color",
-        },
-        "100": {
-          value: "#177345",
+          value: "#074224",
           type: "color",
         },
         "tint": {
-          value: "#f5fffa",
+          value: "#F0FFF7",
           type: "color",
         },
         "shade": {
-          value: "#002613",
+          value: "#003319",
           type: "color",
         },
-      },
+      }
     },
   },
 }
