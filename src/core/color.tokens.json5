@@ -124,45 +124,53 @@
           type: "color",
         },
       },
-      rose: {
+      pink: {
         "0": {
-          value: "#f6e5eb",
+          value: "#F6E3EC",
           type: "color",
         },
         "100": {
-          value: "#eed1da",
+          value: "#F6E3EC",
           type: "color",
         },
         "200": {
-          value: "#e6bcc9",
+          value: "#EFCBDB",
           type: "color",
         },
         "300": {
-          value: "#dda8b8",
+          value: "#E5ABC5",
           type: "color",
         },
         "400": {
-          value: "#d495a6",
+          value: "#DC8FB2",
           type: "color",
         },
         "500": {
-          value: "#cb8293",
+          value: "#D06998",
           type: "color",
         },
         "600": {
-          value: "#c16f81",
+          value: "#C2417C",
           type: "color",
         },
         "700": {
-          value: "#a5566a",
+          value: "#A13667",
           type: "color",
         },
         "800": {
-          value: "#864054",
+          value: "#812C53",
           type: "color",
         },
         "900": {
-          value: "#652b3e",
+          value: "#63213F",
+          type: "color",
+        },
+        tint: {
+          value: "#FFF0F7",
+          type: "color",
+        },
+        shade: {
+          value: "#330017",
           type: "color",
         },
       },
