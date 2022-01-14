@@ -82,45 +82,53 @@
           type: "color",
         },
       },
-      clay: {
+      brown: {
         "0": {
-          value: "#f2e4df",
+          value: "#F7EFEA",
           type: "color",
         },
         "100": {
-          value: "#edd8ce",
+          value: "#F3E6DD",
           type: "color",
         },
         "200": {
-          value: "#e9cdbe",
+          value: "#E8D0BF",
           type: "color",
         },
         "300": {
-          value: "#e3c2af",
+          value: "#DAB499",
           type: "color",
         },
         "400": {
-          value: "#deb7a0",
+          value: "#C99D7D",
           type: "color",
         },
         "500": {
-          value: "#d9ad92",
+          value: "#A88369",
           type: "color",
         },
         "600": {
-          value: "#d2a483",
+          value: "#8A6C56",
           type: "color",
         },
         "700": {
-          value: "#bb8c6f",
+          value: "#725947",
           type: "color",
         },
         "800": {
-          value: "#a3765d",
+          value: "#5B4739",
           type: "color",
         },
         "900": {
-          value: "#87604e",
+          value: "#45362B",
+          type: "color",
+        },
+        "tint": {
+          value: "#FFF6F0",
+          type: "color",
+        },
+        "shade": {
+          value: "#331500",
           type: "color",
         },
       },
