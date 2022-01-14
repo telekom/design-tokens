@@ -41,29 +41,29 @@
       Link: {
         Standard: {
           value: {
-            light: "{core.color.blue.60.value}",
-            dark: "{core.color.blue.50.value}",
+            light: "{core.color.blue.600}",
+            dark: "{core.color.blue.500}",
           },
           type: "color",
         },
         Hovered: {
           value: {
-            light: "{core.color.blue.70.value}",
-            dark: "{core.color.blue.40.value}",
+            light: "{core.color.blue.700}",
+            dark: "{core.color.blue.400}",
           },
           type: "color",
         },
         Visited: {
           value: {
-            light: "{core.color.pigeon.80.value}",
-            dark: "{core.color.pigeon.60.value}",
+            light: "{core.color.violet.800}",
+            dark: "{core.color.violet.600}",
           },
           type: "color",
         },
         Active: {
           value: {
-            light: "{core.color.blue.90.value}",
-            dark: "{core.color.blue.30.value}",
+            light: "{core.color.blue.900}",
+            dark: "{core.color.blue.300}",
           },
           type: "color",
         },
@@ -71,22 +71,22 @@
       Primary: {
         Standard: {
           value: {
-            light: "{core.color.magenta.brand.value}",
-            dark: "{core.color.magenta.brand.value}",
+            light: "{core.color.magenta.brand}",
+            dark: "{core.color.magenta.brand}",
           },
           type: "color",
         },
         Hovered: {
           value: {
-            light: "{core.color.magenta.dark.value}",
-            dark: "{core.color.magenta.dark.value}",
+            light: "{core.color.magenta.dark}",
+            dark: "{core.color.magenta.light}",
           },
           type: "color",
         },
         Pressed: {
           value: {
-            light: "{core.color.magenta.darker.value}",
-            dark: "{core.color.magenta.darker.value}",
+            light: "{core.color.magenta.darker}",
+            dark: "{core.color.magenta.lighter}",
           },
           type: "color",
         },
@@ -95,16 +95,22 @@
         Standard: {
           comment: "Standard text color inverted to be used on high contrast colors like UI/Extra Strong",
           value: {
-            light: "{core.color.grey.0.value}",
-            dark: "{core.color.grey.200.value}",
+            light: "{core.color.white}",
+            dark: "{core.color.black}",
           },
           type: "color",
         },
         Additional: {
           comment: "Additional text color inverted to be used on high contrast colors like UI/Extra Strong",
           value: {
-            light: "{core.color.grey.80.value}",
-            dark: "{core.color.grey.120.value}",
+            light: {
+              color: "{core.color.white}",
+              alpha: 0.65,
+            },
+            dark: {
+              color: "{core.color.black}",
+              alpha: 0.65,
+            },
           },
           type: "color",
         },
@@ -112,29 +118,29 @@
       Functional: {
         Informational: {
           value: {
-            light: "{core.color.blue.70.value}",
-            dark: "{core.color.blue.50.value}",
+            light: "{core.color.blue.700}",
+            dark: "{core.color.blue.500}",
           },
           type: "color",
         },
         Success: {
           value: {
-            light: "{core.color.pine.80.value}",
-            dark: "{core.color.pine.60.value}",
+            light: "{core.color.green.800}",
+            dark: "{core.color.green.600}",
           },
           type: "color",
         },
         Danger: {
           value: {
-            light: "{core.color.red.60.value}",
-            dark: "{core.color.red.50.value}",
+            light: "{core.color.red.600}",
+            dark: "{core.color.red.500}",
           },
           type: "color",
         },
         Warning: {
           value: {
-            light: "{core.color.orange.60.value}",
-            dark: "{core.color.orange.50.value}",
+            light: "{core.color.orange.600}",
+            dark: "{core.color.orange.500}",
           },
           type: "color",
         },
@@ -161,16 +167,16 @@
       Canvas: {
         comment: "Used as the background for your product (app, website, etc.)",
         value: {
-          light: "{core.color.white.value}",
-          dark: "{core.color.grey.200.value}",
+          light: "{core.color.white}",
+          dark: "{core.color.grey.1200}",
         },
         type: "color",
       },
       "Canvas-Subtle": {
         comment: "Used as the background for your product (app, website, etc.)",
         value: {
-          light: "{core.color.grey.10.value}",
-          dark: "{core.color.grey.190.value}",
+          light: "{core.color.grey.100}",
+          dark: "{core.color.grey.1100}",
         },
         type: "color",
       },
@@ -191,24 +197,24 @@
       Surface: {
         comment: "Use as the background of elements like cards, headers, bottom bars, etc.",
         value: {
-          light: "{core.color.white.value}",
-          dark: "{core.color.grey.180.value}",
+          light: "{core.color.white}",
+          dark: "{core.color.grey.1000}",
         },
         type: "color",
       },
       "Surface-Subtle": {
         comment: "Use as the background of elements like cards, headers, bottom bars, etc.",
         value: {
-          light: "{core.color.grey.0.value}",
-          dark: "{core.color.grey.170.value}",
+          light: "{core.color.grey.0}",
+          dark: "{core.color.grey.900}",
         },
         type: "color",
       },
       "Surface-Highlight": {
         comment: "Use as the background of elements that should stand out highlighted sections, footer, etc.",
         value: {
-          light: "{core.color.grey.200.value}",
-          dark: "{core.color.grey.160.value}",
+          light: "{core.color.grey.200}",
+          dark: "{core.color.grey.800}",
         },
         type: "color",
       },
@@ -216,29 +222,29 @@
     Primary: {
       Standard: {
         value: {
-          light: "{core.color.magenta.brand.value}",
-          dark: "{core.color.magenta.brand.value}",
+          light: "{core.color.magenta.brand}",
+          dark: "{core.color.magenta.brand}",
         },
         type: "color",
       },
       Hovered: {
         value: {
-          light: "{core.color.magenta.dark.value}",
-          dark: "{core.color.magenta.dark.value}",
+          light: "{core.color.magenta.dark}",
+          dark: "{core.color.magenta.light}",
         },
         type: "color",
       },
       Pressed: {
         value: {
-          light: "{core.color.magenta.darker.value}",
-          dark: "{core.color.magenta.darker.value}",
+          light: "{core.color.magenta.darker}",
+          dark: "{core.color.magenta.lighter}",
         },
         type: "color",
       },
       Subtle: {
         value: {
-          light: "{core.color.magenta.tint.value}",
-          dark: "{core.color.magenta.shade.value}",
+          light: "{core.color.magenta.tint}",
+          dark: "{core.color.magenta.shade}",
         },
         type: "color",
       },
@@ -247,44 +253,44 @@
       comment: "UI colors are used to create UI elements like dividers, checkboxes, buttons, etc.",
       Subtle: {
         value: {
-          light: "{core.color.grey.20.value}",
-          dark: "{core.color.grey.180.value}",
+          light: "{core.color.grey.200}",
+          dark: "{core.color.grey.1000}",
         },
         type: "color",
       },
       Light: {
         value: {
-          light: "{core.color.grey.60.value}",
-          dark: "{core.color.grey.170.value}",
+          light: "{core.color.grey.600}",
+          dark: "{core.color.grey.900}",
         },
         type: "color",
       },
       Normal: {
         value: {
-          light: "{core.color.grey.100.value}",
-          dark: "{core.color.grey.160.value}",
+          light: "{core.color.grey.600}",
+          dark: "{core.color.grey.800}",
         },
         type: "color",
       },
       strong: {
         value: {
-          light: "{core.color.grey.140.value}",
-          dark: "{core.color.grey.140.value}",
+          light: "{core.color.grey.700}",
+          dark: "{core.color.grey.700}",
         },
         type: "color",
       },
       "extra-strong": {
         value: {
-          light: "{core.color.grey.200.value}",
-          dark: "{core.color.grey.0.value}",
+          light: "{core.color.grey.200}",
+          dark: "{core.color.grey.0}",
         },
         type: "color",
       },
       Disabled: {
         comment: "Use for disabled interactive elements in combination with the disabled text color",
         value: {
-          light: "{core.color.grey.20.value}",
-          dark: "{core.color.grey.180.value}",
+          light: "{core.color.grey.200}",
+          dark: "{core.color.grey.1000}",
         },
         type: "color",
       },
@@ -292,37 +298,37 @@
     Functional: {
       Focus: {
         value: {
-          light: "{core.color.blue.60.value}",
-          dark: "{core.color.blue.50.value}",
+          light: "{core.color.blue.600}",
+          dark: "{core.color.blue.500}",
         },
         type: "color",
       },
       Success: {
         Standard: {
           value: {
-            light: "{core.color.pine.60.value}",
-            dark: "{core.color.pine.100.value}",
+            light: "{core.color.green.600}",
+            dark: "{core.color.green.900}",
           },
           type: "color",
         },
         Hovered: {
           value: {
-            light: "{core.color.pine.80.value}",
-            dark: "{core.color.pine.80.value}",
+            light: "{core.color.green.800}",
+            dark: "{core.color.green.800}",
           },
           type: "color",
         },
         Pressed: {
           value: {
-            light: "{core.color.pine.100.value}",
-            dark: "{core.color.pine.60.value}",
+            light: "{core.color.green.900}",
+            dark: "{core.color.green.600}",
           },
           type: "color",
         },
         Subtle: {
           value: {
-            light: "{core.color.pine.0.value}",
-            dark: "{core.color.pine.150.value}",
+            light: "{core.color.green.tint}",
+            dark: "{core.color.green.shade}",
           },
           type: "color",
         },
@@ -330,29 +336,29 @@
       Interaction: {
         Standard: {
           value: {
-            light: "{core.color.blue.60.value}",
-            dark: "{core.color.blue.50.value}",
+            light: "{core.color.blue.600}",
+            dark: "{core.color.blue.500}",
           },
           type: "color",
         },
         Hovered: {
           value: {
-            light: "{core.color.blue.70.value}",
-            dark: "{core.color.blue.40.value}",
+            light: "{core.color.blue.700}",
+            dark: "{core.color.blue.400}",
           },
           type: "color",
         },
         Pressed: {
           value: {
-            light: "{core.color.blue.80.value}",
-            dark: "{core.color.blue.30.value}",
+            light: "{core.color.blue.800}",
+            dark: "{core.color.blue.300}",
           },
           type: "color",
         },
         Subtle: {
           value: {
-            light: "{core.color.blue.0.value}",
-            dark: "{core.color.blue.100.value}",
+            light: "{core.color.blue.tint}",
+            dark: "{core.color.blue.shade}",
           },
           type: "color",
         },
@@ -360,29 +366,29 @@
       Informational: {
         Standard: {
           value: {
-            light: "{core.color.blue.60.value}",
-            dark: "{core.color.blue.50.value}",
+            light: "{core.color.blue.600}",
+            dark: "{core.color.blue.500}",
           },
           type: "color",
         },
         Hovered: {
           value: {
-            light: "{core.color.blue.70.value}",
-            dark: "{core.color.blue.40.value}",
+            light: "{core.color.blue.700}",
+            dark: "{core.color.blue.400}",
           },
           type: "color",
         },
         Pressed: {
           value: {
-            light: "{core.color.blue.80.value}",
-            dark: "{core.color.blue.30.value}",
+            light: "{core.color.blue.800}",
+            dark: "{core.color.blue.300}",
           },
           type: "color",
         },
         Subtle: {
           value: {
-            light: "{core.color.blue.0.value}",
-            dark: "{core.color.blue.100.value}",
+            light: "{core.color.blue.tint}",
+            dark: "{core.color.blue.shade}",
           },
           type: "color",
         },
@@ -390,29 +396,29 @@
       Warning: {
         Standard: {
           value: {
-            light: "{core.color.orange.50.value}",
-            dark: "{core.color.orange.60.value}",
+            light: "{core.color.orange.500}",
+            dark: "{core.color.orange.600}",
           },
           type: "color",
         },
         Hovered: {
           value: {
-            light: "{core.color.orange.60.value}",
-            dark: "{core.color.orange.50.value}",
+            light: "{core.color.orange.600}",
+            dark: "{core.color.orange.500}",
           },
           type: "color",
         },
         Pressed: {
           value: {
-            light: "{core.color.orange.70.value}",
-            dark: "{core.color.orange.40.value}",
+            light: "{core.color.orange.700}",
+            dark: "{core.color.orange.400}",
           },
           type: "color",
         },
         Subtle: {
           value: {
-            light: "{core.color.orange.0.value}",
-            dark: "{core.color.orange.100.value}",
+            light: "{core.color.orange.tint}",
+            dark: "{core.color.orange.shade}",
           },
           type: "color",
         },
@@ -420,29 +426,29 @@
       Danger: {
         Standard: {
           value: {
-            light: "{core.color.red.50.value}",
-            dark: "{core.color.red.60.value}",
+            light: "{core.color.red.500}",
+            dark: "{core.color.red.600}",
           },
           type: "color",
         },
         Hovered: {
           value: {
-            light: "{core.color.red.60.value}",
-            dark: "{core.color.red.50.value}",
+            light: "{core.color.red.600}",
+            dark: "{core.color.red.500}",
           },
           type: "color",
         },
         Pressed: {
           value: {
-            light: "{core.color.red.70.value}",
-            dark: "{core.color.red.40.value}",
+            light: "{core.color.red.700}",
+            dark: "{core.color.red.400}",
           },
           type: "color",
         },
         Subtle: {
           value: {
-            light: "{core.color.red.0.value}",
-            dark: "{core.color.red.100.value}",
+            light: "{core.color.red.tint}",
+            dark: "{core.color.red.shade}",
           },
           type: "color",
         },
