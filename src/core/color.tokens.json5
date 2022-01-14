@@ -257,54 +257,62 @@
           value: "#3e3161",
           type: "color",
         },
-        "tint": {
+        tint: {
           value: "#F4F0FF",
           type: "color",
         },
-        "shade": {
+        shade: {
           value: "#0D0033",
           type: "color",
         },
       },
-      neptune: {
+      teal: {
         "0": {
-          value: "#deedec",
+          value: "#E2F4F6",
           type: "color",
         },
         "100": {
-          value: "#cde5e5",
+          value: "#D0EEF1",
           type: "color",
         },
         "200": {
-          value: "#bbdedd",
+          value: "#A6DEE4",
           type: "color",
         },
         "300": {
-          value: "#a9d5d5",
+          value: "#6DC9D3",
           type: "color",
         },
         "400": {
-          value: "#98cbcd",
+          value: "#37B6C2",
           type: "color",
         },
         "500": {
-          value: "#88c0c4",
+          value: "#1C99A5",
           type: "color",
         },
         "600": {
-          value: "#77b6bb",
+          value: "#177e88",
           type: "color",
         },
         "700": {
-          value: "#66a5a8",
+          value: "#136871",
           type: "color",
         },
         "800": {
-          value: "#579292",
+          value: "#0F535A",
           type: "color",
         },
         "900": {
-          value: "#4a7b7a",
+          value: "#0C3F45",
+          type: "color",
+        },
+        tint: {
+          value: "#F0FEFF",
+          type: "color",
+        },
+        shade: {
+          value: "#002F33",
           type: "color",
         },
       },
