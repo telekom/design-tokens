@@ -216,45 +216,53 @@
           type: "color",
         },
       },
-      pigeon: {
+      violet: {
         "0": {
-          value: "#e9ecf6",
+          value: "#F2F0F7",
           type: "color",
         },
         "100": {
-          value: "#d7dcef",
+          value: "#EAE6F2",
           type: "color",
         },
         "200": {
-          value: "#c5cce7",
+          value: "#D7D1E7",
           type: "color",
         },
         "300": {
-          value: "#b4bcde",
+          value: "#C0B7DA",
           type: "color",
         },
         "400": {
-          value: "#a3abd6",
+          value: "#AB9FCE",
           type: "color",
         },
         "500": {
-          value: "#929bcd",
+          value: "#9182BF",
           type: "color",
         },
         "600": {
-          value: "#828ac4",
+          value: "#7966B0",
           type: "color",
         },
         "700": {
-          value: "#6d6eb0",
+          value: "#65519F",
           type: "color",
         },
         "800": {
-          value: "#5f5a9b",
+          value: "#51417F",
           type: "color",
         },
         "900": {
-          value: "#534785",
+          value: "#3e3161",
+          type: "color",
+        },
+        "tint": {
+          value: "#F4F0FF",
+          type: "color",
+        },
+        "shade": {
+          value: "#0D0033",
           type: "color",
         },
       },
