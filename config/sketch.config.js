@@ -9,6 +9,7 @@ const {
   fontFamilyMap,
   fontWeightMap,
 } = require('./shared');
+const { get } = require('lodash');
 
 const BLACK = {
   _class: 'color',
@@ -57,9 +58,13 @@ StyleDictionary.registerFormat({
     const textStyleTokens = dictionary.allTokens
       .filter((token) => token.path.includes('text-style'))
       .map(getTextStyleShape(options));
+    const layerStyleTokens = dictionary.allTokens
+      .filter((token) => token.path.includes('elevation'))
+      .map(getLayerStyleShape(options))
     const output = {
       colors: colorTokens,
       textStyles: textStyleTokens,
+      layerStyles: layerStyleTokens,
     };
     return JSON.stringify(output, null, 2);
   },
@@ -125,6 +130,40 @@ function getTextStyleShape(options) {
   };
 }
 
+function getLayerStyleShape() {
+  return (token) => {
+    const elevations = token.value.map((elevation) => {
+      console.log(elevation)
+      return {
+          _class: 'shadow',
+          isEnabled: true,
+          blurRadius: elevation.blur,
+          offsetX: elevation.x,
+          offsetY: elevation.y,
+          spread: elevation.spread,
+          color: {
+            _class: 'color',
+            alpha: token.value.a,
+            blue: (token.value.b / 255).toFixed(5),
+            green: (token.value.g / 255).toFixed(5),
+            red: (token.value.r / 255).toFixed(5)
+          },
+          contextSettings: {
+            _class: 'graphicsContextSettings',
+            blendMode: 0,
+            opacity: 1
+          }
+        }
+    })
+    return {
+      name: getTokenName(token),
+      elevations: [
+        ...elevations
+      ]
+    }
+  }
+}
+
 module.exports = {
   source: ['src/**/*.json5'],
   platforms: {
@@ -136,7 +175,7 @@ module.exports = {
           destination: OUTPUT_BASE_FILENAME + '.light.json',
           format: 'json/sketch-gen',
           filter: (token) =>
-            token.path[0] === 'color' || token.path[0] === 'text-style',
+            token.path[0] === 'color' || token.path[0] === 'text-style' || token.path[0] === 'elevation',
           options: {
             mode: 'light',
           },
@@ -151,7 +190,7 @@ module.exports = {
           destination: OUTPUT_BASE_FILENAME + '.dark.json',
           format: 'json/sketch-gen',
           filter: (token) =>
-            token.path[0] === 'color' || token.path[0] === 'text-style',
+            token.path[0] === 'color' || token.path[0] === 'text-style' || token.path[0] === 'elevation',
           options: {
             mode: 'dark',
           },
