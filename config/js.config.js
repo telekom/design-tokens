@@ -24,10 +24,6 @@ StyleDictionary.registerFormat({
     deep.p = true;
     dictionary.allTokens
       .filter((token) => token.path[0] !== 'core')
-      .map((token) => ({
-        ...token,
-        path: token.path.slice(1),
-      }))
       .forEach((token) => {
         deep(tokens, token.path.map(camelCase), token.value);
       });
