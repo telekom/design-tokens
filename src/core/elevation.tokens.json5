@@ -11,7 +11,10 @@
             y: 0,
             blur: 0,
             spread: 0,
-            color: "{core.color.black}",
+            color: {
+              color: "{core.color.black}",
+              alpha: 1,
+            },
             type: "dropShadow",
           },
         ],
@@ -26,7 +29,7 @@
             spread: 0,
             color: {
               color: "{core.color.black}",
-              alpha: 0.1
+              alpha: 0.1,
             },
             type: "dropShadow",
           },
@@ -37,7 +40,7 @@
             spread: 0,
             color: {
               color: "{core.color.black}",
-              alpha: 0.1
+              alpha: 0.1,
             },
             type: "dropShadow",
           },
@@ -53,7 +56,7 @@
             spread: 0,
             color: {
               color: "{core.color.black}",
-              alpha: 0.1
+              alpha: 0.1,
             },
             type: "dropShadow",
           },
@@ -64,7 +67,7 @@
             spread: 0,
             color: {
               color: "{core.color.black}",
-              alpha: 0.1
+              alpha: 0.1,
             },
             type: "dropShadow",
           },
@@ -80,7 +83,7 @@
             spread: 0,
             color: {
               color: "{core.color.black}",
-              alpha: 0.1
+              alpha: 0.1,
             },
             type: "dropShadow",
           },
@@ -91,7 +94,7 @@
             spread: 0,
             color: {
               color: "{core.color.black}",
-              alpha: 0.1
+              alpha: 0.1,
             },
             type: "dropShadow",
           },
@@ -107,7 +110,7 @@
             spread: 0,
             color: {
               color: "{core.color.black}",
-              alpha: 0.1
+              alpha: 0.1,
             },
             type: "dropShadow",
           },
@@ -118,7 +121,7 @@
             spread: 0,
             color: {
               color: "{core.color.black}",
-              alpha: 0.1
+              alpha: 0.1,
             },
             type: "dropShadow",
           },
@@ -134,7 +137,7 @@
             spread: 0,
             color: {
               color: "{core.color.black}",
-              alpha: 0.1
+              alpha: 0.1,
             },
             type: "dropShadow",
           },
@@ -145,7 +148,7 @@
             spread: 0,
             color: {
               color: "{core.color.black}",
-              alpha: 0.1
+              alpha: 0.1,
             },
             type: "dropShadow",
           },
@@ -161,7 +164,7 @@
             spread: 0,
             color: {
               color: "{core.color.black}",
-              alpha: 0.1
+              alpha: 0.1,
             },
             type: "dropShadow",
           },
@@ -172,7 +175,7 @@
             spread: 0,
             color: {
               color: "{core.color.black}",
-              alpha: 0.1
+              alpha: 0.1,
             },
             type: "dropShadow",
           },
@@ -188,7 +191,7 @@
             spread: 0,
             color: {
               color: "{core.color.black}",
-              alpha: 0.1
+              alpha: 0.1,
             },
             type: "dropShadow",
           },
@@ -199,7 +202,7 @@
             spread: 0,
             color: {
               color: "{core.color.black}",
-              alpha: 0.1
+              alpha: 0.1,
             },
             type: "dropShadow",
           },
@@ -215,7 +218,7 @@
             spread: 0,
             color: {
               color: "{core.color.black}",
-              alpha: 0.1
+              alpha: 0.1,
             },
             type: "dropShadow",
           },
@@ -226,7 +229,7 @@
             spread: 0,
             color: {
               color: "{core.color.black}",
-              alpha: 0.1
+              alpha: 0.1,
             },
             type: "dropShadow",
           },
@@ -242,7 +245,7 @@
             spread: 0,
             color: {
               color: "{core.color.black}",
-              alpha: 0.1
+              alpha: 0.1,
             },
             type: "dropShadow",
           },
@@ -253,7 +256,7 @@
             spread: 0,
             color: {
               color: "{core.color.black}",
-              alpha: 0.1
+              alpha: 0.1,
             },
             type: "dropShadow",
           },
@@ -269,7 +272,7 @@
             spread: 0,
             color: {
               color: "{core.color.black}",
-              alpha: 0.1
+              alpha: 0.1,
             },
             type: "dropShadow",
           },
@@ -280,7 +283,7 @@
             spread: 0,
             color: {
               color: "{core.color.black}",
-              alpha: 0.1
+              alpha: 0.1,
             },
             type: "dropShadow",
           },
@@ -296,7 +299,7 @@
             spread: 0,
             color: {
               color: "{core.color.black}",
-              alpha: 0.1
+              alpha: 0.1,
             },
             type: "dropShadow",
           },
@@ -307,7 +310,7 @@
             spread: 0,
             color: {
               color: "{core.color.black}",
-              alpha: 0.1
+              alpha: 0.1,
             },
             type: "dropShadow",
           },
@@ -323,7 +326,7 @@
             spread: 0,
             color: {
               color: "{core.color.black}",
-              alpha: 0.1
+              alpha: 0.1,
             },
             type: "dropShadow",
           },
@@ -334,7 +337,7 @@
             spread: 0,
             color: {
               color: "{core.color.black}",
-              alpha: 0.1
+              alpha: 0.1,
             },
             type: "dropShadow",
           },
@@ -353,7 +356,7 @@
                   spread: 0,
                   color: {
                     color: "{core.color.black}",
-                    alpha: 0.1
+                    alpha: 0.1,
                   },
                   type: "dropShadow",
                 },
@@ -369,7 +372,7 @@
                   spread: 0,
                   color: {
                     color: "{core.color.black}",
-                    alpha: 0.05
+                    alpha: 0.05,
                   },
                   type: "dropShadow",
                 },
@@ -380,7 +383,7 @@
                   spread: 0,
                   color: {
                     color: "{core.color.black}",
-                    alpha: 0.05
+                    alpha: 0.05,
                   },
                   type: "dropShadow",
                 },
@@ -398,7 +401,7 @@
                   spread: 0,
                   color: {
                     color: "{core.color.black}",
-                    alpha: 0.1
+                    alpha: 0.1,
                   },
                   type: "dropShadow",
                 },
@@ -414,7 +417,7 @@
                   spread: 0,
                   color: {
                     color: "{core.color.black}",
-                    alpha: 0.05
+                    alpha: 0.05,
                   },
                   type: "dropShadow",
                 },
@@ -425,7 +428,7 @@
                   spread: 0,
                   color: {
                     color: "{core.color.black}",
-                    alpha: 0.05
+                    alpha: 0.05,
                   },
                   type: "dropShadow",
                 },

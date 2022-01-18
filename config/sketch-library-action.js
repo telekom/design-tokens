@@ -66,7 +66,7 @@ function updateLibrary({ buildPath }, mode) {
   const document = JSON.parse(fs.readFileSync(documentFilepath));
   const mainPage = JSON.parse(fs.readFileSync(mainPageFilepath));
   const now = new Date();
-  
+
   // Insert tokens as swatches and text styles into document.json
   document.sharedSwatches.objects = tokens.colors.map(colorSwatch);
   document.layerTextStyles.objects = tokens.textStyles.map(textStyle);
@@ -155,14 +155,14 @@ function layerStyle(token) {
         motionAngle: 0,
         radius: 10,
         saturation: 1,
-        type: 0
+        type: 0,
       },
       borderOptions: {
         _class: 'borderOptions',
         isEnabled: true,
         dashPattern: [],
         lineCapStyle: 0,
-        lineJoinStyle: 0
+        lineJoinStyle: 0,
       },
       borders: [],
       colorControls: {
@@ -171,18 +171,16 @@ function layerStyle(token) {
         brightness: 0,
         contrast: 1,
         hue: 0,
-        saturation: 1
+        saturation: 1,
       },
       contextSettings: {
         _class: 'graphicsContextSettings',
         blendMode: 0,
-        opacity: 1
+        opacity: 1,
       },
       fills: [],
       innerShadows: [],
-      shadows: [
-        ...token.elevations
-      ]
-    }
-  }
+      shadows: [...token.elevations],
+    },
+  };
 }

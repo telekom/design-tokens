@@ -9,7 +9,6 @@ const {
   fontFamilyMap,
   fontWeightMap,
 } = require('./shared');
-const { get } = require('lodash');
 
 const BLACK = {
   _class: 'color',
@@ -60,7 +59,7 @@ StyleDictionary.registerFormat({
       .map(getTextStyleShape(options));
     const layerStyleTokens = dictionary.allTokens
       .filter((token) => token.path.includes('elevation'))
-      .map(getLayerStyleShape(options))
+      .map(getLayerStyleShape(options));
     const output = {
       colors: colorTokens,
       textStyles: textStyleTokens,
@@ -133,35 +132,32 @@ function getTextStyleShape(options) {
 function getLayerStyleShape() {
   return (token) => {
     const elevations = token.value.map((elevation) => {
-      console.log(elevation)
       return {
-          _class: 'shadow',
-          isEnabled: true,
-          blurRadius: elevation.blur,
-          offsetX: elevation.x,
-          offsetY: elevation.y,
-          spread: elevation.spread,
-          color: {
-            _class: 'color',
-            alpha: token.value.a,
-            blue: (token.value.b / 255).toFixed(5),
-            green: (token.value.g / 255).toFixed(5),
-            red: (token.value.r / 255).toFixed(5)
-          },
-          contextSettings: {
-            _class: 'graphicsContextSettings',
-            blendMode: 0,
-            opacity: 1
-          }
-        }
-    })
+        _class: 'shadow',
+        isEnabled: true,
+        blurRadius: elevation.blur,
+        offsetX: elevation.x,
+        offsetY: elevation.y,
+        spread: elevation.spread,
+        color: {
+          _class: 'color',
+          alpha: String(elevation.color.color.a),
+          blue: (elevation.color.color.b / 255).toFixed(5),
+          green: (elevation.color.color.g / 255).toFixed(5),
+          red: (elevation.color.color.r / 255).toFixed(5),
+        },
+        contextSettings: {
+          _class: 'graphicsContextSettings',
+          blendMode: 0,
+          opacity: 1,
+        },
+      };
+    });
     return {
       name: getTokenName(token),
-      elevations: [
-        ...elevations
-      ]
-    }
-  }
+      elevations: [...elevations],
+    };
+  };
 }
 
 module.exports = {
@@ -175,7 +171,9 @@ module.exports = {
           destination: OUTPUT_BASE_FILENAME + '.light.json',
           format: 'json/sketch-gen',
           filter: (token) =>
-            token.path[0] === 'color' || token.path[0] === 'text-style' || token.path[0] === 'elevation',
+            token.path[0] === 'color' ||
+            token.path[0] === 'text-style' ||
+            token.path[0] === 'elevation',
           options: {
             mode: 'light',
           },
@@ -190,7 +188,9 @@ module.exports = {
           destination: OUTPUT_BASE_FILENAME + '.dark.json',
           format: 'json/sketch-gen',
           filter: (token) =>
-            token.path[0] === 'color' || token.path[0] === 'text-style' || token.path[0] === 'elevation',
+            token.path[0] === 'color' ||
+            token.path[0] === 'text-style' ||
+            token.path[0] === 'elevation',
           options: {
             mode: 'dark',
           },
