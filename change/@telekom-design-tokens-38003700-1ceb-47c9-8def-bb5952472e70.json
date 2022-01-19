@@ -1,7 +1,0 @@
-{
-  "type": "prerelease",
-  "comment": "First steps to handle version bumps and publishing",
-  "packageName": "@telekom/design-tokens",
-  "email": "ac@iconstorm.com",
-  "dependentChangeType": "patch"
-}
