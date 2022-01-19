@@ -66,9 +66,12 @@ function updateLibrary({ buildPath }, mode) {
   const document = JSON.parse(fs.readFileSync(documentFilepath));
   const mainPage = JSON.parse(fs.readFileSync(mainPageFilepath));
   const now = new Date();
+
   // Insert tokens as swatches and text styles into document.json
   document.sharedSwatches.objects = tokens.colors.map(colorSwatch);
   document.layerTextStyles.objects = tokens.textStyles.map(textStyle);
+  document.layerStyles.objects = tokens.layerStyles.map(layerStyle);
+
   // Add build information to main page
   mainPage.layers[0].layers[0].overrideValues[0].value = `Design Tokens (${mode})`;
   mainPage.layers[0].layers[0].overrideValues[1].value = `v${version} (generated on ${now.toUTCString()})`;
@@ -129,6 +132,55 @@ function textStyle(token) {
       innerShadows: [],
       shadows: [],
       textStyle: { ...token.textStyle },
+    },
+  };
+}
+
+function layerStyle(token) {
+  return {
+    _class: 'sharedStyle',
+    do_objectID: uuid(token.name, 5).toUpperCase(),
+    name: token.name,
+    value: {
+      _class: 'style',
+      do_objectID: uuid(token.name + ' style', 5).toUpperCase(),
+      endMarkerType: 0,
+      miterLimit: 10,
+      startMarkerType: 0,
+      windingRule: 1,
+      blur: {
+        _class: 'blur',
+        isEnabled: false,
+        center: '{0.5, 0.5}',
+        motionAngle: 0,
+        radius: 10,
+        saturation: 1,
+        type: 0,
+      },
+      borderOptions: {
+        _class: 'borderOptions',
+        isEnabled: true,
+        dashPattern: [],
+        lineCapStyle: 0,
+        lineJoinStyle: 0,
+      },
+      borders: [],
+      colorControls: {
+        _class: 'colorControls',
+        isEnabled: false,
+        brightness: 0,
+        contrast: 1,
+        hue: 0,
+        saturation: 1,
+      },
+      contextSettings: {
+        _class: 'graphicsContextSettings',
+        blendMode: 0,
+        opacity: 1,
+      },
+      fills: [],
+      innerShadows: [],
+      shadows: [...token.elevations],
     },
   };
 }
