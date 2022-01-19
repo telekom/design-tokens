@@ -1,13 +1,21 @@
 {
   "name": "@telekom/design-tokens",
-  "version": "1.0.0",
+  "version": "1.0.0-alpha.0",
   "description": "TODO: update below statement to fit design token's use case, but preserve the hint that it contains our corporate design",
-  "main": "index.js",
+  "main": "config/build.js",
+  "files": [
+    "build",
+    "dist",
+    "src"
+  ],
   "scripts": {
     "start": "npm run build",
     "prebuild": "rimraf build",
     "build": "node config/build.js",
     "prerelease": "PRERELEASE=1 npm run build",
+    "change": "beachball change",
+    "check": "beachball check",
+    "beachball:publish": "beachball publish",
     "format": "prettier --write \"src/**/*{json,json5}\" \"config/**/*.js\""
   },
   "repository": {
@@ -21,6 +29,7 @@
   },
   "homepage": "https://github.com/telekom/design-tokens#readme",
   "devDependencies": {
+    "beachball": "^2.21.0",
     "deep-get-set": "^1.1.1",
     "fs-extra": "^10.0.0",
     "lodash": "^4.17.21",
