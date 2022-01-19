@@ -56,7 +56,7 @@
         Visited: {
           value: {
             light: "{core.color.violet.800}",
-            dark: "{core.color.violet.600}",
+            dark: "{core.color.violet.400}",
           },
           type: "color",
         },
@@ -126,7 +126,7 @@
         Success: {
           value: {
             light: "{core.color.green.800}",
-            dark: "{core.color.green.600}",
+            dark: "{core.color.green.400}",
           },
           type: "color",
         },
@@ -213,7 +213,7 @@
       "Surface-Highlight": {
         comment: "Use as the background of elements that should stand out highlighted sections, footer, etc.",
         value: {
-          light: "{core.color.grey.200}",
+          light: "{core.color.grey.1200}",
           dark: "{core.color.grey.800}",
         },
         type: "color",
@@ -260,7 +260,7 @@
       },
       Light: {
         value: {
-          light: "{core.color.grey.600}",
+          light: "{core.color.grey.400}",
           dark: "{core.color.grey.900}",
         },
         type: "color",
@@ -274,14 +274,14 @@
       },
       strong: {
         value: {
-          light: "{core.color.grey.700}",
+          light: "{core.color.grey.800}",
           dark: "{core.color.grey.700}",
         },
         type: "color",
       },
       "extra-strong": {
         value: {
-          light: "{core.color.grey.200}",
+          light: "{core.color.grey.1200}",
           dark: "{core.color.grey.0}",
         },
         type: "color",
@@ -307,20 +307,20 @@
         Standard: {
           value: {
             light: "{core.color.green.600}",
-            dark: "{core.color.green.900}",
+            dark: "{core.color.green.800}",
           },
           type: "color",
         },
         Hovered: {
           value: {
-            light: "{core.color.green.800}",
-            dark: "{core.color.green.800}",
+            light: "{core.color.green.700}",
+            dark: "{core.color.green.700}",
           },
           type: "color",
         },
         Pressed: {
           value: {
-            light: "{core.color.green.900}",
+            light: "{core.color.green.800}",
             dark: "{core.color.green.600}",
           },
           type: "color",
@@ -337,21 +337,21 @@
         Standard: {
           value: {
             light: "{core.color.blue.600}",
-            dark: "{core.color.blue.500}",
+            dark: "{core.color.blue.700}",
           },
           type: "color",
         },
         Hovered: {
           value: {
             light: "{core.color.blue.700}",
-            dark: "{core.color.blue.400}",
+            dark: "{core.color.blue.600}",
           },
           type: "color",
         },
         Pressed: {
           value: {
             light: "{core.color.blue.800}",
-            dark: "{core.color.blue.300}",
+            dark: "{core.color.blue.500}",
           },
           type: "color",
         },
@@ -367,21 +367,21 @@
         Standard: {
           value: {
             light: "{core.color.blue.600}",
-            dark: "{core.color.blue.500}",
+            dark: "{core.color.blue.700}",
           },
           type: "color",
         },
         Hovered: {
           value: {
             light: "{core.color.blue.700}",
-            dark: "{core.color.blue.400}",
+            dark: "{core.color.blue.600}",
           },
           type: "color",
         },
         Pressed: {
           value: {
             light: "{core.color.blue.800}",
-            dark: "{core.color.blue.300}",
+            dark: "{core.color.blue.500}",
           },
           type: "color",
         },
@@ -396,22 +396,22 @@
       Warning: {
         Standard: {
           value: {
-            light: "{core.color.orange.500}",
-            dark: "{core.color.orange.600}",
-          },
-          type: "color",
-        },
-        Hovered: {
-          value: {
             light: "{core.color.orange.600}",
             dark: "{core.color.orange.500}",
           },
           type: "color",
         },
-        Pressed: {
+        Hovered: {
           value: {
             light: "{core.color.orange.700}",
             dark: "{core.color.orange.400}",
+          },
+          type: "color",
+        },
+        Pressed: {
+          value: {
+            light: "{core.color.orange.800}",
+            dark: "{core.color.orange.300}",
           },
           type: "color",
         },
@@ -426,22 +426,22 @@
       Danger: {
         Standard: {
           value: {
-            light: "{core.color.red.500}",
-            dark: "{core.color.red.600}",
+            light: "{core.color.red.600}",
+            dark: "{core.color.red.800}",
           },
           type: "color",
         },
         Hovered: {
           value: {
-            light: "{core.color.red.600}",
-            dark: "{core.color.red.500}",
+            light: "{core.color.red.700}",
+            dark: "{core.color.red.700}",
           },
           type: "color",
         },
         Pressed: {
           value: {
-            light: "{core.color.red.700}",
-            dark: "{core.color.red.400}",
+            light: "{core.color.red.800}",
+            dark: "{core.color.red.600}",
           },
           type: "color",
         },
