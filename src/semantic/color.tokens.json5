@@ -41,15 +41,15 @@
       Link: {
         Standard: {
           value: {
-            light: "{core.color.blue.600}",
-            dark: "{core.color.blue.500}",
+            light: "{core.color.blue.700}",
+            dark: "{core.color.blue.400}",
           },
           type: "color",
         },
         Hovered: {
           value: {
-            light: "{core.color.blue.700}",
-            dark: "{core.color.blue.400}",
+            light: "{core.color.blue.800}",
+            dark: "{core.color.blue.300}",
           },
           type: "color",
         },
@@ -63,7 +63,7 @@
         Active: {
           value: {
             light: "{core.color.blue.900}",
-            dark: "{core.color.blue.300}",
+            dark: "{core.color.blue.200}",
           },
           type: "color",
         },
@@ -230,14 +230,14 @@
       Hovered: {
         value: {
           light: "{core.color.magenta.dark}",
-          dark: "{core.color.magenta.light}",
+          dark: "{core.color.magenta.dark}",
         },
         type: "color",
       },
       Pressed: {
         value: {
           light: "{core.color.magenta.darker}",
-          dark: "{core.color.magenta.lighter}",
+          dark: "{core.color.magenta.darker}",
         },
         type: "color",
       },

@@ -20,15 +20,15 @@
           type: "color",
         },
         darker: {
-          value: "#A30054",
+          value: "#9E0051",
           type: "color",
         },
         light: {
-          value: "#F2007D",
+          value: "#E94097",
           type: "color",
         },
         lighter: {
-          value: "#FF008",
+          value: "#EC59A5",
           type: "color",
         },
         tint: {
@@ -495,6 +495,56 @@
         },
       },
       blue: {
+        "0": {
+          value: "#E7F2FF",
+          type: "color",
+        },
+        "100": {
+          value: "#D8EAFF",
+          type: "color",
+        },
+        "200": {
+          value: "#B6D7FF",
+          type: "color",
+        },
+        "300": {
+          value: "#89BFFF",
+          type: "color",
+        },
+        "400": {
+          value: "#60A9FF",
+          type: "color",
+        },
+        "500": {
+          value: "#268AFF",
+          type: "color",
+        },
+        "600": {
+          value: "#006CEC",
+          type: "color",
+        },
+        "700": {
+          value: "#005AC4",
+          type: "color",
+        },
+        "800": {
+          value: "#00489D",
+          type: "color",
+        },
+        "900": {
+          value: "#003778",
+          type: "color",
+        },
+        "tint": {
+          value: "#F0F7FF",
+          type: "color",
+        },
+        "shade": {
+          value: "#001733",
+          type: "color",
+        },
+      },
+      old_blue: {
         "0": {
           value: "#ECF0FF",
           type: "color",
