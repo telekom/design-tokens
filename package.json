@@ -15,7 +15,7 @@
     "build:dist": "DIST=1 npm run build",
     "change": "beachball change",
     "check": "beachball check",
-    "publish": "beachball publish -n ${NPM_TOKEN}",
+    "publish:beachball": "beachball publish -n ${NPM_TOKEN}",
     "prepublishOnly": "npm run build",
     "format": "prettier --write \"src/**/*{json,json5}\" \"config/**/*.js\""
   },
