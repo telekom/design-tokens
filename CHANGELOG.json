@@ -2,6 +2,21 @@
   "name": "@telekom/design-tokens",
   "entries": [
     {
+      "date": "Wed, 19 Jan 2022 17:54:08 GMT",
+      "tag": "@telekom/design-tokens_v1.0.0-alpha.1",
+      "version": "1.0.0-alpha.1",
+      "comments": {
+        "prerelease": [
+          {
+            "author": "ac@iconstorm.com",
+            "package": "@telekom/design-tokens",
+            "commit": "c89ee99aa4bf1f96cc2fbae3b37868a21a56a0b2",
+            "comment": "First steps to handle version bumps and publishing"
+          }
+        ]
+      }
+    },
+    {
       "date": "Wed, 19 Jan 2022 17:12:35 GMT",
       "tag": "@telekom/design-tokens_v1.0.0-alpha.0",
       "version": "1.0.0-alpha.0",
