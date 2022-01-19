@@ -1,0 +1,1188 @@
+{
+  "Text & Icon": {
+    "Standard": {
+      "value": "#000000",
+      "type": "color",
+      "description": "Default text color with highest contrast."
+    },
+    "Additional": {
+      "value": "#000000a6",
+      "type": "color",
+      "description": "Use in combination with standard text for additional text elements."
+    },
+    "Disabled": {
+      "value": "#00000066",
+      "type": "color",
+      "description": "Only use for disabled text."
+    },
+    "Link": {
+      "Standard": {
+        "value": "#1154d9",
+        "type": "color"
+      },
+      "Hovered": {
+        "value": "#1045ae",
+        "type": "color"
+      },
+      "Visited": {
+        "value": "#5f5a9b",
+        "type": "color"
+      },
+      "Active": {
+        "value": "#0b255b",
+        "type": "color"
+      }
+    },
+    "Primary": {
+      "Standard": {
+        "value": "#e20074",
+        "type": "color"
+      },
+      "Hovered": {
+        "value": "#C00063",
+        "type": "color"
+      },
+      "Pressed": {
+        "value": "#9E0051",
+        "type": "color"
+      }
+    },
+    "Inverted": {
+      "Standard": {
+        "value": "#fcfcfc",
+        "type": "color",
+        "description": "Standard text color inverted to be used on high contrast colors like UI/Extra Strong"
+      },
+      "Additional": {
+        "value": "#9f9ca0",
+        "type": "color",
+        "description": "Additional text color inverted to be used on high contrast colors like UI/Extra Strong"
+      }
+    },
+    "Functional": {
+      "Informational": {
+        "value": "#1045ae",
+        "type": "color"
+      },
+      "Success": {
+        "value": "#23925a",
+        "type": "color"
+      },
+      "Danger": {
+        "value": "#c02f4c",
+        "type": "color"
+      },
+      "Warning": {
+        "value": "#ff7f00",
+        "type": "color"
+      },
+      "White": {
+        "value": "#ffffff",
+        "type": "color",
+        "description": "This text color is white in all modes (light & dark)"
+      },
+      "Black": {
+        "value": "#000000",
+        "type": "color",
+        "description": "This text color is black in all modes (light & dark)"
+      }
+    }
+  },
+  "Background": {
+    "Canvas": {
+      "value": "#ffffff",
+      "type": "color",
+      "description": "Used as the background for your product (app, website, etc.)"
+    },
+    "Canvas Subtle": {
+      "value": "#f0f0f1",
+      "type": "color",
+      "description": "Used as the background for your product (app, website, etc.)"
+    },
+    "Backdrop": {
+      "value": "#00000080",
+      "type": "color",
+      "description": "Use to overlay content below dialogs to separate dialog from content below"
+    },
+    "Surface": {
+      "value": "#ffffff",
+      "type": "color",
+      "description": "Use as the background of elements like cards, headers, bottom bars, etc."
+    },
+    "Surface Subtle": {
+      "value": "#fcfcfc",
+      "type": "color",
+      "description": "Use as the background of elements like cards, headers, bottom bars, etc."
+    },
+    "Surface Highlight": {
+      "value": "#141414",
+      "type": "color",
+      "description": "Use as the background of elements that should stand out highlighted sections, footer, etc."
+    }
+  },
+  "Primary": {
+    "Standard": {
+      "value": "#e20074",
+      "type": "color"
+    },
+    "Hovered": {
+      "value": "#C00063",
+      "type": "color"
+    },
+    "Pressed": {
+      "value": "#9E0051",
+      "type": "color"
+    },
+    "Subtle": {
+      "value": "#FEF2F8",
+      "type": "color"
+    }
+  },
+  "UI": {
+    "Subtle": {
+      "value": "#e3e3e5",
+      "type": "color"
+    },
+    "Light": {
+      "value": "#b5b3b7",
+      "type": "color"
+    },
+    "Normal": {
+      "value": "#888588",
+      "type": "color"
+    },
+    "Strong": {
+      "value": "#5a5759",
+      "type": "color"
+    },
+    "Extra Strong": {
+      "value": "#141414",
+      "type": "color"
+    },
+    "Disabled": {
+      "value": "#e3e3e5",
+      "type": "color",
+      "description": "Use for disabled interactive elements in combination with the disabled text color"
+    }
+  },
+  "Functional": {
+    "Focus": {
+      "value": "#1154d9",
+      "type": "color"
+    },
+    "Success": {
+      "Standard": {
+        "value": "#3cb176",
+        "type": "color"
+      },
+      "Hovered": {
+        "value": "#23925a",
+        "type": "color"
+      },
+      "Pressed": {
+        "value": "#177345",
+        "type": "color"
+      },
+      "Subtle": {
+        "value": "#f5fffa",
+        "type": "color"
+      }
+    },
+    "Interaction": {
+      "Standard": {
+        "value": "#1154d9",
+        "type": "color"
+      },
+      "Hovered": {
+        "value": "#1045ae",
+        "type": "color"
+      },
+      "Pressed": {
+        "value": "#0e3584",
+        "type": "color"
+      },
+      "Subtle": {
+        "value": "#f4f8ff",
+        "type": "color"
+      }
+    },
+    "Informational": {
+      "Standard": {
+        "value": "#1154d9",
+        "type": "color"
+      },
+      "Hovered": {
+        "value": "#1045ae",
+        "type": "color"
+      },
+      "Pressed": {
+        "value": "#0e3584",
+        "type": "color"
+      },
+      "Subtle": {
+        "value": "#f4f8ff",
+        "type": "color"
+      }
+    },
+    "Warning": {
+      "Standard": {
+        "value": "#ff9124",
+        "type": "color"
+      },
+      "Hovered": {
+        "value": "#ff7f00",
+        "type": "color"
+      },
+      "Pressed": {
+        "value": "#dc6d00",
+        "type": "color"
+      },
+      "Subtle": {
+        "value": "#FFF9F2",
+        "type": "color"
+      }
+    },
+    "Danger": {
+      "Standard": {
+        "value": "#d64562",
+        "type": "color"
+      },
+      "Hovered": {
+        "value": "#c02f4c",
+        "type": "color"
+      },
+      "Pressed": {
+        "value": "#9a2a3f",
+        "type": "color"
+      },
+      "Subtle": {
+        "value": "#fef6f8",
+        "type": "color"
+      }
+    }
+  },
+  "Additional": {
+    "Clay": {
+      "0": {
+        "value": "#f2e4df",
+        "type": "color"
+      },
+      "10": {
+        "value": "#edd8ce",
+        "type": "color"
+      },
+      "20": {
+        "value": "#e9cdbe",
+        "type": "color"
+      },
+      "30": {
+        "value": "#e3c2af",
+        "type": "color"
+      },
+      "40": {
+        "value": "#deb7a0",
+        "type": "color"
+      },
+      "50": {
+        "value": "#d9ad92",
+        "type": "color"
+      },
+      "60": {
+        "value": "#d2a483",
+        "type": "color"
+      },
+      "70": {
+        "value": "#bb8c6f",
+        "type": "color"
+      },
+      "80": {
+        "value": "#a3765d",
+        "type": "color"
+      },
+      "90": {
+        "value": "#87604e",
+        "type": "color"
+      },
+      "100": {
+        "value": "#6a4d40",
+        "type": "color"
+      }
+    },
+    "Rose": {
+      "0": {
+        "value": "#f6e5eb",
+        "type": "color"
+      },
+      "10": {
+        "value": "#eed1da",
+        "type": "color"
+      },
+      "20": {
+        "value": "#e6bcc9",
+        "type": "color"
+      },
+      "30": {
+        "value": "#dda8b8",
+        "type": "color"
+      },
+      "40": {
+        "value": "#d495a6",
+        "type": "color"
+      },
+      "50": {
+        "value": "#cb8293",
+        "type": "color"
+      },
+      "60": {
+        "value": "#c16f81",
+        "type": "color"
+      },
+      "70": {
+        "value": "#a5566a",
+        "type": "color"
+      },
+      "80": {
+        "value": "#864054",
+        "type": "color"
+      },
+      "90": {
+        "value": "#652b3e",
+        "type": "color"
+      },
+      "100": {
+        "value": "#511f31",
+        "type": "color"
+      }
+    },
+    "Lilac": {
+      "0": {
+        "value": "#f7eff6",
+        "type": "color"
+      },
+      "10": {
+        "value": "#efe3ed",
+        "type": "color"
+      },
+      "20": {
+        "value": "#ead9e7",
+        "type": "color"
+      },
+      "30": {
+        "value": "#e4cce0",
+        "type": "color"
+      },
+      "40": {
+        "value": "#d5b4d5",
+        "type": "color"
+      },
+      "50": {
+        "value": "#c59bca",
+        "type": "color"
+      },
+      "60": {
+        "value": "#b682bd",
+        "type": "color"
+      },
+      "70": {
+        "value": "#9e6ba5",
+        "type": "color"
+      },
+      "80": {
+        "value": "#84558a",
+        "type": "color"
+      },
+      "90": {
+        "value": "#6a3e71",
+        "type": "color"
+      },
+      "100": {
+        "value": "#502857",
+        "type": "color"
+      }
+    },
+    "Pigeon": {
+      "0": {
+        "value": "#e9ecf6",
+        "type": "color"
+      },
+      "10": {
+        "value": "#d7dcef",
+        "type": "color"
+      },
+      "20": {
+        "value": "#c5cce7",
+        "type": "color"
+      },
+      "30": {
+        "value": "#b4bcde",
+        "type": "color"
+      },
+      "40": {
+        "value": "#a3abd6",
+        "type": "color"
+      },
+      "50": {
+        "value": "#929bcd",
+        "type": "color"
+      },
+      "60": {
+        "value": "#828ac4",
+        "type": "color"
+      },
+      "70": {
+        "value": "#6d6eb0",
+        "type": "color"
+      },
+      "80": {
+        "value": "#5f5a9b",
+        "type": "color"
+      },
+      "90": {
+        "value": "#534785",
+        "type": "color"
+      },
+      "100": {
+        "value": "#46366d",
+        "type": "color"
+      }
+    },
+    "Neptune": {
+      "0": {
+        "value": "#deedec",
+        "type": "color"
+      },
+      "10": {
+        "value": "#cde5e5",
+        "type": "color"
+      },
+      "20": {
+        "value": "#bbdedd",
+        "type": "color"
+      },
+      "30": {
+        "value": "#a9d5d5",
+        "type": "color"
+      },
+      "40": {
+        "value": "#98cbcd",
+        "type": "color"
+      },
+      "50": {
+        "value": "#88c0c4",
+        "type": "color"
+      },
+      "60": {
+        "value": "#77b6bb",
+        "type": "color"
+      },
+      "70": {
+        "value": "#66a5a8",
+        "type": "color"
+      },
+      "80": {
+        "value": "#579292",
+        "type": "color"
+      },
+      "90": {
+        "value": "#4a7b7a",
+        "type": "color"
+      },
+      "100": {
+        "value": "#3f6160",
+        "type": "color"
+      }
+    },
+    "Olive": {
+      "0": {
+        "value": "#ecf3e7",
+        "type": "color"
+      },
+      "10": {
+        "value": "#dce8d4",
+        "type": "color"
+      },
+      "20": {
+        "value": "#ccdec2",
+        "type": "color"
+      },
+      "30": {
+        "value": "#bbd3af",
+        "type": "color"
+      },
+      "40": {
+        "value": "#aac89d",
+        "type": "color"
+      },
+      "50": {
+        "value": "#99bd8b",
+        "type": "color"
+      },
+      "60": {
+        "value": "#88b179",
+        "type": "color"
+      },
+      "70": {
+        "value": "#709660",
+        "type": "color"
+      },
+      "80": {
+        "value": "#597949",
+        "type": "color"
+      },
+      "90": {
+        "value": "#425b33",
+        "type": "color"
+      },
+      "100": {
+        "value": "#314724",
+        "type": "color"
+      }
+    },
+    "Teal": {
+      "0": {
+        "value": "#d7f6f4",
+        "type": "color"
+      },
+      "10": {
+        "value": "#d7f6f4",
+        "type": "color"
+      },
+      "20": {
+        "value": "#98e4e4",
+        "type": "color"
+      },
+      "30": {
+        "value": "#79d9db",
+        "type": "color"
+      },
+      "40": {
+        "value": "#5cccd0",
+        "type": "color"
+      },
+      "50": {
+        "value": "#3ebdc5",
+        "type": "color"
+      },
+      "60": {
+        "value": "#22adb9",
+        "type": "color"
+      },
+      "70": {
+        "value": "#129ca3",
+        "type": "color"
+      },
+      "80": {
+        "value": "#068788",
+        "type": "color"
+      },
+      "90": {
+        "value": "#006967",
+        "type": "color"
+      },
+      "100": {
+        "value": "#005651",
+        "type": "color"
+      }
+    },
+    "Orange": {
+      "0": {
+        "value": "#fffcdf",
+        "type": "color"
+      },
+      "10": {
+        "value": "#fff4c6",
+        "type": "color"
+      },
+      "20": {
+        "value": "#ffe9ae",
+        "type": "color"
+      },
+      "30": {
+        "value": "#ffda97",
+        "type": "color"
+      },
+      "40": {
+        "value": "#ffc780",
+        "type": "color"
+      },
+      "50": {
+        "value": "#ffb26a",
+        "type": "color"
+      },
+      "60": {
+        "value": "#fc9a55",
+        "type": "color"
+      },
+      "70": {
+        "value": "#df6d3f",
+        "type": "color"
+      },
+      "80": {
+        "value": "#ae461c",
+        "type": "color"
+      },
+      "90": {
+        "value": "#973209",
+        "type": "color"
+      },
+      "100": {
+        "value": "#7d1f09",
+        "type": "color"
+      }
+    },
+    "Red": {
+      "0": {
+        "value": "#ffc5cb",
+        "type": "color"
+      },
+      "10": {
+        "value": "#ffaab6",
+        "type": "color"
+      },
+      "20": {
+        "value": "#fe94a5",
+        "type": "color"
+      },
+      "30": {
+        "value": "#f98093",
+        "type": "color"
+      },
+      "40": {
+        "value": "#f36a80",
+        "type": "color"
+      },
+      "50": {
+        "value": "#ef556e",
+        "type": "color"
+      },
+      "60": {
+        "value": "#ed425b",
+        "type": "color"
+      },
+      "70": {
+        "value": "#d82a48",
+        "type": "color"
+      },
+      "80": {
+        "value": "#c31c3b",
+        "type": "color"
+      },
+      "90": {
+        "value": "#ad0f31",
+        "type": "color"
+      },
+      "100": {
+        "value": "#990024",
+        "type": "color"
+      }
+    },
+    "Blue": {
+      "0": {
+        "value": "#d6f8ff",
+        "type": "color"
+      },
+      "10": {
+        "value": "#b5ebff",
+        "type": "color"
+      },
+      "20": {
+        "value": "#95daff",
+        "type": "color"
+      },
+      "30": {
+        "value": "#77c4ff",
+        "type": "color"
+      },
+      "40": {
+        "value": "#59aaff",
+        "type": "color"
+      },
+      "50": {
+        "value": "#3d8cff",
+        "type": "color"
+      },
+      "60": {
+        "value": "#216bff",
+        "type": "color"
+      },
+      "70": {
+        "value": "#0d39df",
+        "type": "color"
+      },
+      "80": {
+        "value": "#000bbf",
+        "type": "color"
+      },
+      "90": {
+        "value": "#03009f",
+        "type": "color"
+      },
+      "100": {
+        "value": "#140080",
+        "type": "color"
+      }
+    },
+    "Green": {
+      "0": {
+        "value": "#f0f7e0",
+        "type": "color"
+      },
+      "10": {
+        "value": "#e0efc7",
+        "type": "color"
+      },
+      "20": {
+        "value": "#cfe8af",
+        "type": "color"
+      },
+      "30": {
+        "value": "#bbdf98",
+        "type": "color"
+      },
+      "40": {
+        "value": "#a4d681",
+        "type": "color"
+      },
+      "50": {
+        "value": "#8dcd6a",
+        "type": "color"
+      },
+      "60": {
+        "value": "#73c354",
+        "type": "color"
+      },
+      "70": {
+        "value": "#52b342",
+        "type": "color"
+      },
+      "80": {
+        "value": "#32a032",
+        "type": "color"
+      },
+      "90": {
+        "value": "#248b31",
+        "type": "color"
+      },
+      "100": {
+        "value": "#187431",
+        "type": "color"
+      }
+    },
+    "Pine": {
+      "0": {
+        "value": "#f5fffa",
+        "type": "color"
+      },
+      "10": {
+        "value": "#daf7e8",
+        "type": "color"
+      },
+      "20": {
+        "value": "#c0efd8",
+        "type": "color"
+      },
+      "30": {
+        "value": "#92e0b9",
+        "type": "color"
+      },
+      "40": {
+        "value": "#6cd09e",
+        "type": "color"
+      },
+      "50": {
+        "value": "#50c188",
+        "type": "color"
+      },
+      "60": {
+        "value": "#3cb176",
+        "type": "color"
+      },
+      "70": {
+        "value": "#2da267",
+        "type": "color"
+      },
+      "80": {
+        "value": "#23925a",
+        "type": "color"
+      },
+      "90": {
+        "value": "#1c824f",
+        "type": "color"
+      },
+      "100": {
+        "value": "#177345",
+        "type": "color"
+      }
+    }
+  },
+  "Flat": {
+    "Standard": {
+      "value": [
+        {
+          "x": 0,
+          "y": 0,
+          "blur": 0,
+          "spread": 0,
+          "color": "#000000ff",
+          "type": "dropShadow"
+        }
+      ],
+      "type": "boxShadow",
+      "description": "Exclusivly for flat design elements"
+    },
+    "Hover": {
+      "value": [
+        {
+          "x": 0,
+          "y": 2,
+          "blur": 8,
+          "spread": 0,
+          "color": "#0000001a",
+          "type": "dropShadow"
+        },
+        {
+          "x": 0,
+          "y": 1,
+          "blur": 2,
+          "spread": 0,
+          "color": "#0000001a",
+          "type": "dropShadow"
+        }
+      ],
+      "type": "boxShadow",
+      "description": "Exclusivly for flat design elements"
+    },
+    "Pressed": {
+      "value": [
+        {
+          "x": 0,
+          "y": 0,
+          "blur": 0,
+          "spread": 0,
+          "color": "#000000ff",
+          "type": "dropShadow"
+        }
+      ],
+      "type": "boxShadow",
+      "description": "Exclusivly for flat design elements"
+    }
+  },
+  "Resting": {
+    "Standard": {
+      "value": [
+        {
+          "x": 0,
+          "y": 2,
+          "blur": 8,
+          "spread": 0,
+          "color": "#0000001a",
+          "type": "dropShadow"
+        },
+        {
+          "x": 0,
+          "y": 1,
+          "blur": 2,
+          "spread": 0,
+          "color": "#0000001a",
+          "type": "dropShadow"
+        }
+      ],
+      "type": "boxShadow",
+      "description": "Default for interactable elements like buttons, etc."
+    },
+    "Hover": {
+      "value": [
+        {
+          "x": 0,
+          "y": 6,
+          "blur": 24,
+          "spread": 0,
+          "color": "#0000001a",
+          "type": "dropShadow"
+        },
+        {
+          "x": 0,
+          "y": 3,
+          "blur": 6,
+          "spread": 0,
+          "color": "#0000001a",
+          "type": "dropShadow"
+        }
+      ],
+      "type": "boxShadow",
+      "description": "Default for interactable elements like buttons, etc."
+    },
+    "Pressed": {
+      "value": [
+        {
+          "x": 0,
+          "y": 0,
+          "blur": 0,
+          "spread": 0,
+          "color": "#000000ff",
+          "type": "dropShadow"
+        }
+      ],
+      "type": "boxShadow",
+      "description": "Default for interactable elements like buttons, etc."
+    }
+  },
+  "Raised": {
+    "Standard": {
+      "value": [
+        {
+          "x": 0,
+          "y": 8,
+          "blur": 32,
+          "spread": 0,
+          "color": "#0000001a",
+          "type": "dropShadow"
+        },
+        {
+          "x": 0,
+          "y": 4,
+          "blur": 8,
+          "spread": 0,
+          "color": "#0000001a",
+          "type": "dropShadow"
+        }
+      ],
+      "type": "boxShadow",
+      "description": "For bigger interactable elements like cards, etc."
+    },
+    "Hover": {
+      "value": [
+        {
+          "x": 0,
+          "y": 16,
+          "blur": 64,
+          "spread": 0,
+          "color": "#0000001a",
+          "type": "dropShadow"
+        },
+        {
+          "x": 0,
+          "y": 8,
+          "blur": 16,
+          "spread": 0,
+          "color": "#0000001a",
+          "type": "dropShadow"
+        }
+      ],
+      "type": "boxShadow",
+      "description": "For bigger interactable elements like cards, etc."
+    },
+    "Pressed": {
+      "value": [
+        {
+          "x": 0,
+          "y": 4,
+          "blur": 16,
+          "spread": 0,
+          "color": "#0000001a",
+          "type": "dropShadow"
+        },
+        {
+          "x": 0,
+          "y": 2,
+          "blur": 4,
+          "spread": 0,
+          "color": "#0000001a",
+          "type": "dropShadow"
+        }
+      ],
+      "type": "boxShadow",
+      "description": "For bigger interactable elements like cards, etc."
+    }
+  },
+  "Floating": {
+    "Standard": {
+      "value": [
+        {
+          "x": 0,
+          "y": 12,
+          "blur": 48,
+          "spread": 0,
+          "color": "#0000001a",
+          "type": "dropShadow"
+        },
+        {
+          "x": 0,
+          "y": 6,
+          "blur": 12,
+          "spread": 0,
+          "color": "#0000001a",
+          "type": "dropShadow"
+        }
+      ],
+      "type": "boxShadow",
+      "description": "For floating elements that mostly stay in a fixed position like a FAB."
+    },
+    "Hover": {
+      "value": [
+        {
+          "x": 0,
+          "y": 24,
+          "blur": 96,
+          "spread": 0,
+          "color": "#0000001a",
+          "type": "dropShadow"
+        },
+        {
+          "x": 0,
+          "y": 12,
+          "blur": 24,
+          "spread": 0,
+          "color": "#0000001a",
+          "type": "dropShadow"
+        }
+      ],
+      "type": "boxShadow",
+      "description": "For floating elements that mostly stay in a fixed position like a FAB."
+    },
+    "Pressed": {
+      "value": [
+        {
+          "x": 0,
+          "y": 8,
+          "blur": 32,
+          "spread": 0,
+          "color": "#0000001a",
+          "type": "dropShadow"
+        },
+        {
+          "x": 0,
+          "y": 4,
+          "blur": 8,
+          "spread": 0,
+          "color": "#0000001a",
+          "type": "dropShadow"
+        }
+      ],
+      "type": "boxShadow",
+      "description": "For floating elements that mostly stay in a fixed position like a FAB."
+    }
+  },
+  "Overlay": {
+    "value": [
+      {
+        "x": 0,
+        "y": 16,
+        "blur": 64,
+        "spread": 0,
+        "color": "#0000001a",
+        "type": "dropShadow"
+      },
+      {
+        "x": 0,
+        "y": 8,
+        "blur": 16,
+        "spread": 0,
+        "color": "#0000001a",
+        "type": "dropShadow"
+      }
+    ],
+    "type": "boxShadow",
+    "description": "For fixed elements that overlay the content e.g. sidebars or bottom sheets"
+  },
+  "Top": {
+    "value": [
+      {
+        "x": 0,
+        "y": 24,
+        "blur": 96,
+        "spread": 0,
+        "color": "#0000001a",
+        "type": "dropShadow"
+      },
+      {
+        "x": 0,
+        "y": 12,
+        "blur": 24,
+        "spread": 0,
+        "color": "#0000001a",
+        "type": "dropShadow"
+      }
+    ],
+    "type": "boxShadow",
+    "description": "Highest level e.g. for dialogs or modals"
+  },
+  "App Bar": {
+    "Top": {
+      "Flat": {
+        "value": [
+          {
+            "x": 0,
+            "y": 1,
+            "blur": 0,
+            "spread": 0,
+            "color": "#0000000d",
+            "type": "dropShadow"
+          },
+          {
+            "x": 0,
+            "y": 2,
+            "blur": 8,
+            "spread": 0,
+            "color": "#0000000d",
+            "type": "dropShadow"
+          }
+        ],
+        "type": "boxShadow",
+        "description": "Use for headers, app bar & menus on the top"
+      },
+      "Raised": {
+        "value": [
+          {
+            "x": 0,
+            "y": 1,
+            "blur": 0,
+            "spread": 0,
+            "color": "#0000001a",
+            "type": "dropShadow"
+          }
+        ],
+        "type": "boxShadow",
+        "description": "Use for headers, app bar & menus on the top"
+      }
+    },
+    "Bottom": {
+      "Flat": {
+        "value": [
+          {
+            "x": 0,
+            "y": -1,
+            "blur": 0,
+            "spread": 0,
+            "color": "#0000000d",
+            "type": "dropShadow"
+          },
+          {
+            "x": 0,
+            "y": -2,
+            "blur": 8,
+            "spread": 0,
+            "color": "#0000000d",
+            "type": "dropShadow"
+          }
+        ],
+        "type": "boxShadow",
+        "description": "Use for app navigation and app bars on the bottom"
+      },
+      "Raised": {
+        "value": [
+          {
+            "x": 0,
+            "y": -1,
+            "blur": 0,
+            "spread": 0,
+            "color": "#0000001a",
+            "type": "dropShadow"
+          }
+        ],
+        "type": "boxShadow",
+        "description": "Use for app navigation and app bars on the bottom"
+      }
+    }
+  }
+}
