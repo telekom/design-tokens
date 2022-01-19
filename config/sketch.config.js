@@ -132,7 +132,7 @@ function getTextStyleShape(options) {
 function getLayerStyleShape() {
   return (token) => {
     const elevations = token.value.map((elevation) => {
-      return {
+      let elevationShape = {
         _class: 'shadow',
         isEnabled: true,
         blurRadius: elevation.blur,
@@ -141,7 +141,7 @@ function getLayerStyleShape() {
         spread: elevation.spread,
         color: {
           _class: 'color',
-          alpha: String(elevation.color.color.a),
+          alpha: elevation.color.alpha,
           blue: (elevation.color.color.b / 255).toFixed(5),
           green: (elevation.color.color.g / 255).toFixed(5),
           red: (elevation.color.color.r / 255).toFixed(5),
@@ -152,6 +152,7 @@ function getLayerStyleShape() {
           opacity: 1,
         },
       };
+      return elevationShape;
     });
     return {
       name: getTokenName(token),
