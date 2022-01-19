@@ -1,7 +1,7 @@
 {
   "name": "@telekom/design-tokens",
   "version": "1.0.0-alpha.0",
-  "description": "TODO: update below statement to fit design token's use case, but preserve the hint that it contains our corporate design",
+  "description": "The source of truth for Telekom's corporate brand and design",
   "main": "config/build.js",
   "files": [
     "build",
@@ -12,7 +12,7 @@
     "start": "npm run build",
     "prebuild": "rimraf build",
     "build": "node config/build.js",
-    "prerelease": "PRERELEASE=1 npm run build",
+    "build:release": "PRERELEASE=1 npm run build",
     "change": "beachball change",
     "check": "beachball check",
     "beachball:publish": "beachball publish",
