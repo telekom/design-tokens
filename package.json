@@ -12,10 +12,11 @@
     "start": "npm run build",
     "prebuild": "rimraf build",
     "build": "node config/build.js",
-    "build:release": "PRERELEASE=1 npm run build",
+    "build:dist": "DIST=1 npm run build",
     "change": "beachball change",
     "check": "beachball check",
-    "beachball:publish": "beachball publish",
+    "publish": "beachball publish -n ${NPM_TOKEN}",
+    "prepublishOnly": "npm run build",
     "format": "prettier --write \"src/**/*{json,json5}\" \"config/**/*.js\""
   },
   "repository": {

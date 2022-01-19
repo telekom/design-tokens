@@ -12,7 +12,7 @@ const configs = [
 
 configs.forEach((config) => StyleDictionary.extend(config).buildAllPlatforms());
 
-if (process.env.PRERELEASE) {
+if (process.env.DIST) {
   updateDistFolder();
 }
 
