@@ -13,7 +13,7 @@
             spread: 0,
             color: {
               color: "{core.color.black}",
-              alpha: 1,
+              alpha: 0.1,
             },
             type: "dropShadow",
           },
