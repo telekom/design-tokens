@@ -41,29 +41,29 @@
       Link: {
         Standard: {
           value: {
-            light: "{core.color.blue.60.value}",
-            dark: "{core.color.blue.50.value}",
+            light: "{core.color.blue.700}",
+            dark: "{core.color.blue.400}",
           },
           type: "color",
         },
         Hovered: {
           value: {
-            light: "{core.color.blue.70.value}",
-            dark: "{core.color.blue.40.value}",
+            light: "{core.color.blue.800}",
+            dark: "{core.color.blue.300}",
           },
           type: "color",
         },
         Visited: {
           value: {
-            light: "{core.color.pigeon.80.value}",
-            dark: "{core.color.pigeon.60.value}",
+            light: "{core.color.violet.800}",
+            dark: "{core.color.violet.400}",
           },
           type: "color",
         },
         Active: {
           value: {
-            light: "{core.color.blue.90.value}",
-            dark: "{core.color.blue.30.value}",
+            light: "{core.color.blue.900}",
+            dark: "{core.color.blue.200}",
           },
           type: "color",
         },
@@ -71,22 +71,22 @@
       Primary: {
         Standard: {
           value: {
-            light: "{core.color.magenta.brand.value}",
-            dark: "{core.color.magenta.brand.value}",
+            light: "{core.color.magenta.brand}",
+            dark: "{core.color.magenta.brand}",
           },
           type: "color",
         },
         Hovered: {
           value: {
-            light: "{core.color.magenta.dark.value}",
-            dark: "{core.color.magenta.dark.value}",
+            light: "{core.color.magenta.dark}",
+            dark: "{core.color.magenta.light}",
           },
           type: "color",
         },
         Pressed: {
           value: {
-            light: "{core.color.magenta.darker.value}",
-            dark: "{core.color.magenta.darker.value}",
+            light: "{core.color.magenta.darker}",
+            dark: "{core.color.magenta.lighter}",
           },
           type: "color",
         },
@@ -95,16 +95,22 @@
         Standard: {
           comment: "Standard text color inverted to be used on high contrast colors like UI/Extra Strong",
           value: {
-            light: "{core.color.grey.0.value}",
-            dark: "{core.color.grey.200.value}",
+            light: "{core.color.white}",
+            dark: "{core.color.black}",
           },
           type: "color",
         },
         Additional: {
           comment: "Additional text color inverted to be used on high contrast colors like UI/Extra Strong",
           value: {
-            light: "{core.color.grey.80.value}",
-            dark: "{core.color.grey.120.value}",
+            light: {
+              color: "{core.color.white}",
+              alpha: 0.65,
+            },
+            dark: {
+              color: "{core.color.black}",
+              alpha: 0.65,
+            },
           },
           type: "color",
         },
@@ -112,29 +118,29 @@
       Functional: {
         Informational: {
           value: {
-            light: "{core.color.blue.70.value}",
-            dark: "{core.color.blue.50.value}",
+            light: "{core.color.blue.700}",
+            dark: "{core.color.blue.500}",
           },
           type: "color",
         },
         Success: {
           value: {
-            light: "{core.color.pine.80.value}",
-            dark: "{core.color.pine.60.value}",
+            light: "{core.color.green.800}",
+            dark: "{core.color.green.400}",
           },
           type: "color",
         },
         Danger: {
           value: {
-            light: "{core.color.red.60.value}",
-            dark: "{core.color.red.50.value}",
+            light: "{core.color.red.600}",
+            dark: "{core.color.red.500}",
           },
           type: "color",
         },
         Warning: {
           value: {
-            light: "{core.color.orange.60.value}",
-            dark: "{core.color.orange.50.value}",
+            light: "{core.color.orange.600}",
+            dark: "{core.color.orange.500}",
           },
           type: "color",
         },
@@ -161,16 +167,16 @@
       Canvas: {
         comment: "Used as the background for your product (app, website, etc.)",
         value: {
-          light: "{core.color.white.value}",
-          dark: "{core.color.grey.200.value}",
+          light: "{core.color.white}",
+          dark: "{core.color.grey.1200}",
         },
         type: "color",
       },
       "Canvas-Subtle": {
         comment: "Used as the background for your product (app, website, etc.)",
         value: {
-          light: "{core.color.grey.10.value}",
-          dark: "{core.color.grey.190.value}",
+          light: "{core.color.grey.100}",
+          dark: "{core.color.grey.1100}",
         },
         type: "color",
       },
@@ -191,24 +197,24 @@
       Surface: {
         comment: "Use as the background of elements like cards, headers, bottom bars, etc.",
         value: {
-          light: "{core.color.white.value}",
-          dark: "{core.color.grey.180.value}",
+          light: "{core.color.white}",
+          dark: "{core.color.grey.1000}",
         },
         type: "color",
       },
       "Surface-Subtle": {
         comment: "Use as the background of elements like cards, headers, bottom bars, etc.",
         value: {
-          light: "{core.color.grey.0.value}",
-          dark: "{core.color.grey.170.value}",
+          light: "{core.color.grey.0}",
+          dark: "{core.color.grey.900}",
         },
         type: "color",
       },
       "Surface-Highlight": {
         comment: "Use as the background of elements that should stand out highlighted sections, footer, etc.",
         value: {
-          light: "{core.color.grey.200.value}",
-          dark: "{core.color.grey.160.value}",
+          light: "{core.color.grey.1200}",
+          dark: "{core.color.grey.800}",
         },
         type: "color",
       },
@@ -216,29 +222,29 @@
     Primary: {
       Standard: {
         value: {
-          light: "{core.color.magenta.brand.value}",
-          dark: "{core.color.magenta.brand.value}",
+          light: "{core.color.magenta.brand}",
+          dark: "{core.color.magenta.brand}",
         },
         type: "color",
       },
       Hovered: {
         value: {
-          light: "{core.color.magenta.dark.value}",
-          dark: "{core.color.magenta.dark.value}",
+          light: "{core.color.magenta.dark}",
+          dark: "{core.color.magenta.dark}",
         },
         type: "color",
       },
       Pressed: {
         value: {
-          light: "{core.color.magenta.darker.value}",
-          dark: "{core.color.magenta.darker.value}",
+          light: "{core.color.magenta.darker}",
+          dark: "{core.color.magenta.darker}",
         },
         type: "color",
       },
       Subtle: {
         value: {
-          light: "{core.color.magenta.tint.value}",
-          dark: "{core.color.magenta.shade.value}",
+          light: "{core.color.magenta.tint}",
+          dark: "{core.color.magenta.shade}",
         },
         type: "color",
       },
@@ -247,44 +253,44 @@
       comment: "UI colors are used to create UI elements like dividers, checkboxes, buttons, etc.",
       Subtle: {
         value: {
-          light: "{core.color.grey.20.value}",
-          dark: "{core.color.grey.180.value}",
+          light: "{core.color.grey.200}",
+          dark: "{core.color.grey.1000}",
         },
         type: "color",
       },
       Light: {
         value: {
-          light: "{core.color.grey.60.value}",
-          dark: "{core.color.grey.170.value}",
+          light: "{core.color.grey.400}",
+          dark: "{core.color.grey.900}",
         },
         type: "color",
       },
       Normal: {
         value: {
-          light: "{core.color.grey.100.value}",
-          dark: "{core.color.grey.160.value}",
+          light: "{core.color.grey.600}",
+          dark: "{core.color.grey.800}",
         },
         type: "color",
       },
       strong: {
         value: {
-          light: "{core.color.grey.140.value}",
-          dark: "{core.color.grey.140.value}",
+          light: "{core.color.grey.800}",
+          dark: "{core.color.grey.700}",
         },
         type: "color",
       },
       "extra-strong": {
         value: {
-          light: "{core.color.grey.200.value}",
-          dark: "{core.color.grey.0.value}",
+          light: "{core.color.grey.1200}",
+          dark: "{core.color.grey.0}",
         },
         type: "color",
       },
       Disabled: {
         comment: "Use for disabled interactive elements in combination with the disabled text color",
         value: {
-          light: "{core.color.grey.20.value}",
-          dark: "{core.color.grey.180.value}",
+          light: "{core.color.grey.200}",
+          dark: "{core.color.grey.1000}",
         },
         type: "color",
       },
@@ -292,37 +298,37 @@
     Functional: {
       Focus: {
         value: {
-          light: "{core.color.blue.60.value}",
-          dark: "{core.color.blue.50.value}",
+          light: "{core.color.blue.600}",
+          dark: "{core.color.blue.500}",
         },
         type: "color",
       },
       Success: {
         Standard: {
           value: {
-            light: "{core.color.pine.60.value}",
-            dark: "{core.color.pine.100.value}",
+            light: "{core.color.green.600}",
+            dark: "{core.color.green.800}",
           },
           type: "color",
         },
         Hovered: {
           value: {
-            light: "{core.color.pine.80.value}",
-            dark: "{core.color.pine.80.value}",
+            light: "{core.color.green.700}",
+            dark: "{core.color.green.700}",
           },
           type: "color",
         },
         Pressed: {
           value: {
-            light: "{core.color.pine.100.value}",
-            dark: "{core.color.pine.60.value}",
+            light: "{core.color.green.800}",
+            dark: "{core.color.green.600}",
           },
           type: "color",
         },
         Subtle: {
           value: {
-            light: "{core.color.pine.0.value}",
-            dark: "{core.color.pine.150.value}",
+            light: "{core.color.green.tint}",
+            dark: "{core.color.green.shade}",
           },
           type: "color",
         },
@@ -330,29 +336,29 @@
       Interaction: {
         Standard: {
           value: {
-            light: "{core.color.blue.60.value}",
-            dark: "{core.color.blue.50.value}",
+            light: "{core.color.blue.600}",
+            dark: "{core.color.blue.700}",
           },
           type: "color",
         },
         Hovered: {
           value: {
-            light: "{core.color.blue.70.value}",
-            dark: "{core.color.blue.40.value}",
+            light: "{core.color.blue.700}",
+            dark: "{core.color.blue.600}",
           },
           type: "color",
         },
         Pressed: {
           value: {
-            light: "{core.color.blue.80.value}",
-            dark: "{core.color.blue.30.value}",
+            light: "{core.color.blue.800}",
+            dark: "{core.color.blue.500}",
           },
           type: "color",
         },
         Subtle: {
           value: {
-            light: "{core.color.blue.0.value}",
-            dark: "{core.color.blue.100.value}",
+            light: "{core.color.blue.tint}",
+            dark: "{core.color.blue.shade}",
           },
           type: "color",
         },
@@ -360,29 +366,29 @@
       Informational: {
         Standard: {
           value: {
-            light: "{core.color.blue.60.value}",
-            dark: "{core.color.blue.50.value}",
+            light: "{core.color.blue.600}",
+            dark: "{core.color.blue.700}",
           },
           type: "color",
         },
         Hovered: {
           value: {
-            light: "{core.color.blue.70.value}",
-            dark: "{core.color.blue.40.value}",
+            light: "{core.color.blue.700}",
+            dark: "{core.color.blue.600}",
           },
           type: "color",
         },
         Pressed: {
           value: {
-            light: "{core.color.blue.80.value}",
-            dark: "{core.color.blue.30.value}",
+            light: "{core.color.blue.800}",
+            dark: "{core.color.blue.500}",
           },
           type: "color",
         },
         Subtle: {
           value: {
-            light: "{core.color.blue.0.value}",
-            dark: "{core.color.blue.100.value}",
+            light: "{core.color.blue.tint}",
+            dark: "{core.color.blue.shade}",
           },
           type: "color",
         },
@@ -390,29 +396,29 @@
       Warning: {
         Standard: {
           value: {
-            light: "{core.color.orange.50.value}",
-            dark: "{core.color.orange.60.value}",
+            light: "{core.color.orange.600}",
+            dark: "{core.color.orange.500}",
           },
           type: "color",
         },
         Hovered: {
           value: {
-            light: "{core.color.orange.60.value}",
-            dark: "{core.color.orange.50.value}",
+            light: "{core.color.orange.700}",
+            dark: "{core.color.orange.400}",
           },
           type: "color",
         },
         Pressed: {
           value: {
-            light: "{core.color.orange.70.value}",
-            dark: "{core.color.orange.40.value}",
+            light: "{core.color.orange.800}",
+            dark: "{core.color.orange.300}",
           },
           type: "color",
         },
         Subtle: {
           value: {
-            light: "{core.color.orange.0.value}",
-            dark: "{core.color.orange.100.value}",
+            light: "{core.color.orange.tint}",
+            dark: "{core.color.orange.shade}",
           },
           type: "color",
         },
@@ -420,584 +426,532 @@
       Danger: {
         Standard: {
           value: {
-            light: "{core.color.red.50.value}",
-            dark: "{core.color.red.60.value}",
+            light: "{core.color.red.600}",
+            dark: "{core.color.red.800}",
           },
           type: "color",
         },
         Hovered: {
           value: {
-            light: "{core.color.red.60.value}",
-            dark: "{core.color.red.50.value}",
+            light: "{core.color.red.700}",
+            dark: "{core.color.red.700}",
           },
           type: "color",
         },
         Pressed: {
           value: {
-            light: "{core.color.red.70.value}",
-            dark: "{core.color.red.40.value}",
+            light: "{core.color.red.800}",
+            dark: "{core.color.red.600}",
           },
           type: "color",
         },
         Subtle: {
           value: {
-            light: "{core.color.red.0.value}",
-            dark: "{core.color.red.100.value}",
+            light: "{core.color.red.tint}",
+            dark: "{core.color.red.shade}",
           },
           type: "color",
         },
       },
     },
     Additional: {
-      clay: {
+      brown: {
         "0": {
-          value: "#f2e4df",
-          type: "color",
-        },
-        "10": {
-          value: "#edd8ce",
-          type: "color",
-        },
-        "20": {
-          value: "#e9cdbe",
-          type: "color",
-        },
-        "30": {
-          value: "#e3c2af",
-          type: "color",
-        },
-        "40": {
-          value: "#deb7a0",
-          type: "color",
-        },
-        "50": {
-          value: "#d9ad92",
-          type: "color",
-        },
-        "60": {
-          value: "#d2a483",
-          type: "color",
-        },
-        "70": {
-          value: "#bb8c6f",
-          type: "color",
-        },
-        "80": {
-          value: "#a3765d",
-          type: "color",
-        },
-        "90": {
-          value: "#87604e",
+          value: "{core.color.brown.0}",
           type: "color",
         },
         "100": {
-          value: "#6a4d40",
+          value: "{core.color.brown.100}",
+          type: "color",
+        },
+        "200": {
+          value: "{core.color.brown.200}",
+          type: "color",
+        },
+        "300": {
+          value: "{core.color.brown.300}",
+          type: "color",
+        },
+        "400": {
+          value: "{core.color.brown.400}",
+          type: "color",
+        },
+        "500": {
+          value: "{core.color.brown.500}",
+          type: "color",
+        },
+        "600": {
+          value: "{core.color.brown.600}",
+          type: "color",
+        },
+        "700": {
+          value: "{core.color.brown.700}",
+          type: "color",
+        },
+        "800": {
+          value: "{core.color.brown.800}",
+          type: "color",
+        },
+        "900": {
+          value: "{core.color.brown.900}",
+          type: "color",
+        },
+        tint: {
+          value: "{core.color.brown.tint}",
+          type: "color",
+        },
+        shade: {
+          value: "{core.color.brown.shade}",
           type: "color",
         },
       },
-      rose: {
+      pink: {
         "0": {
-          value: "#f6e5eb",
-          type: "color",
-        },
-        "10": {
-          value: "#eed1da",
-          type: "color",
-        },
-        "20": {
-          value: "#e6bcc9",
-          type: "color",
-        },
-        "30": {
-          value: "#dda8b8",
-          type: "color",
-        },
-        "40": {
-          value: "#d495a6",
-          type: "color",
-        },
-        "50": {
-          value: "#cb8293",
-          type: "color",
-        },
-        "60": {
-          value: "#c16f81",
-          type: "color",
-        },
-        "70": {
-          value: "#a5566a",
-          type: "color",
-        },
-        "80": {
-          value: "#864054",
-          type: "color",
-        },
-        "90": {
-          value: "#652b3e",
+          value: "{core.color.pink.0}",
           type: "color",
         },
         "100": {
-          value: "#511f31",
+          value: "{core.color.pink.100}",
+          type: "color",
+        },
+        "200": {
+          value: "{core.color.pink.200}",
+          type: "color",
+        },
+        "300": {
+          value: "{core.color.pink.300}",
+          type: "color",
+        },
+        "400": {
+          value: "{core.color.pink.400}",
+          type: "color",
+        },
+        "500": {
+          value: "{core.color.pink.500}",
+          type: "color",
+        },
+        "600": {
+          value: "{core.color.pink.600}",
+          type: "color",
+        },
+        "700": {
+          value: "{core.color.pink.700}",
+          type: "color",
+        },
+        "800": {
+          value: "{core.color.pink.800}",
+          type: "color",
+        },
+        "900": {
+          value: "{core.color.pink.900}",
+          type: "color",
+        },
+        tint: {
+          value: "{core.color.pink.tint}",
+          type: "color",
+        },
+        shade: {
+          value: "{core.color.pink.shade}",
           type: "color",
         },
       },
-      lilac: {
+      purple: {
         "0": {
-          value: "#f7eff6",
-          type: "color",
-        },
-        "10": {
-          value: "#efe3ed",
-          type: "color",
-        },
-        "20": {
-          value: "#ead9e7",
-          type: "color",
-        },
-        "30": {
-          value: "#e4cce0",
-          type: "color",
-        },
-        "40": {
-          value: "#d5b4d5",
-          type: "color",
-        },
-        "50": {
-          value: "#c59bca",
-          type: "color",
-        },
-        "60": {
-          value: "#b682bd",
-          type: "color",
-        },
-        "70": {
-          value: "#9e6ba5",
-          type: "color",
-        },
-        "80": {
-          value: "#84558a",
-          type: "color",
-        },
-        "90": {
-          value: "#6a3e71",
+          value: "{core.color.purple.0}",
           type: "color",
         },
         "100": {
-          value: "#502857",
+          value: "{core.color.purple.100}",
+          type: "color",
+        },
+        "200": {
+          value: "{core.color.purple.200}",
+          type: "color",
+        },
+        "300": {
+          value: "{core.color.purple.300}",
+          type: "color",
+        },
+        "400": {
+          value: "{core.color.purple.400}",
+          type: "color",
+        },
+        "500": {
+          value: "{core.color.purple.500}",
+          type: "color",
+        },
+        "600": {
+          value: "{core.color.purple.600}",
+          type: "color",
+        },
+        "700": {
+          value: "{core.color.purple.700}",
+          type: "color",
+        },
+        "800": {
+          value: "{core.color.purple.800}",
+          type: "color",
+        },
+        "900": {
+          value: "{core.color.purple.900}",
+          type: "color",
+        },
+        tint: {
+          value: "{core.color.purple.tint}",
+          type: "color",
+        },
+        shade: {
+          value: "{core.color.purple.shade}",
           type: "color",
         },
       },
-      pigeon: {
+      violet: {
         "0": {
-          value: "#e9ecf6",
-          type: "color",
-        },
-        "10": {
-          value: "#d7dcef",
-          type: "color",
-        },
-        "20": {
-          value: "#c5cce7",
-          type: "color",
-        },
-        "30": {
-          value: "#b4bcde",
-          type: "color",
-        },
-        "40": {
-          value: "#a3abd6",
-          type: "color",
-        },
-        "50": {
-          value: "#929bcd",
-          type: "color",
-        },
-        "60": {
-          value: "#828ac4",
-          type: "color",
-        },
-        "70": {
-          value: "#6d6eb0",
-          type: "color",
-        },
-        "80": {
-          value: "#5f5a9b",
-          type: "color",
-        },
-        "90": {
-          value: "#534785",
+          value: "{core.color.violet.0}",
           type: "color",
         },
         "100": {
-          value: "#46366d",
+          value: "{core.color.violet.100}",
           type: "color",
         },
-      },
-      neptune: {
-        "0": {
-          value: "#deedec",
+        "200": {
+          value: "{core.color.violet.200}",
           type: "color",
         },
-        "10": {
-          value: "#cde5e5",
+        "300": {
+          value: "{core.color.violet.300}",
           type: "color",
         },
-        "20": {
-          value: "#bbdedd",
+        "400": {
+          value: "{core.color.violet.400}",
           type: "color",
         },
-        "30": {
-          value: "#a9d5d5",
+        "500": {
+          value: "{core.color.violet.500}",
           type: "color",
         },
-        "40": {
-          value: "#98cbcd",
+        "600": {
+          value: "{core.color.violet.600}",
           type: "color",
         },
-        "50": {
-          value: "#88c0c4",
+        "700": {
+          value: "{core.color.violet.700}",
           type: "color",
         },
-        "60": {
-          value: "#77b6bb",
+        "800": {
+          value: "{core.color.violet.800}",
           type: "color",
         },
-        "70": {
-          value: "#66a5a8",
+        "900": {
+          value: "{core.color.violet.900}",
           type: "color",
         },
-        "80": {
-          value: "#579292",
+        tint: {
+          value: "{core.color.violet.tint}",
           type: "color",
         },
-        "90": {
-          value: "#4a7b7a",
-          type: "color",
-        },
-        "100": {
-          value: "#3f6160",
-          type: "color",
-        },
-      },
-      olive: {
-        "0": {
-          value: "#ecf3e7",
-          type: "color",
-        },
-        "10": {
-          value: "#dce8d4",
-          type: "color",
-        },
-        "20": {
-          value: "#ccdec2",
-          type: "color",
-        },
-        "30": {
-          value: "#bbd3af",
-          type: "color",
-        },
-        "40": {
-          value: "#aac89d",
-          type: "color",
-        },
-        "50": {
-          value: "#99bd8b",
-          type: "color",
-        },
-        "60": {
-          value: "#88b179",
-          type: "color",
-        },
-        "70": {
-          value: "#709660",
-          type: "color",
-        },
-        "80": {
-          value: "#597949",
-          type: "color",
-        },
-        "90": {
-          value: "#425b33",
-          type: "color",
-        },
-        "100": {
-          value: "#314724",
+        shade: {
+          value: "{core.color.violet.shade}",
           type: "color",
         },
       },
       teal: {
         "0": {
-          value: "#d7f6f4",
-          type: "color",
-        },
-        "10": {
-          value: "#d7f6f4",
-          type: "color",
-        },
-        "20": {
-          value: "#98e4e4",
-          type: "color",
-        },
-        "30": {
-          value: "#79d9db",
-          type: "color",
-        },
-        "40": {
-          value: "#5cccd0",
-          type: "color",
-        },
-        "50": {
-          value: "#3ebdc5",
-          type: "color",
-        },
-        "60": {
-          value: "#22adb9",
-          type: "color",
-        },
-        "70": {
-          value: "#129ca3",
-          type: "color",
-        },
-        "80": {
-          value: "#068788",
-          type: "color",
-        },
-        "90": {
-          value: "#006967",
+          value: "{core.color.teal.0}",
           type: "color",
         },
         "100": {
-          value: "#005651",
+          value: "{core.color.teal.100}",
+          type: "color",
+        },
+        "200": {
+          value: "{core.color.teal.200}",
+          type: "color",
+        },
+        "300": {
+          value: "{core.color.teal.300}",
+          type: "color",
+        },
+        "400": {
+          value: "{core.color.teal.400}",
+          type: "color",
+        },
+        "500": {
+          value: "{core.color.teal.500}",
+          type: "color",
+        },
+        "600": {
+          value: "{core.color.teal.600}",
+          type: "color",
+        },
+        "700": {
+          value: "{core.color.teal.700}",
+          type: "color",
+        },
+        "800": {
+          value: "{core.color.teal.800}",
+          type: "color",
+        },
+        "900": {
+          value: "{core.color.teal.900}",
+          type: "color",
+        },
+        tint: {
+          value: "{core.color.teal.tint}",
+          type: "color",
+        },
+        shade: {
+          value: "{core.color.teal.shade}",
+          type: "color",
+        },
+      },
+      olive: {
+        "0": {
+          value: "{core.color.olive.0}",
+          type: "color",
+        },
+        "100": {
+          value: "{core.color.olive.100}",
+          type: "color",
+        },
+        "200": {
+          value: "{core.color.olive.200}",
+          type: "color",
+        },
+        "300": {
+          value: "{core.color.olive.300}",
+          type: "color",
+        },
+        "400": {
+          value: "{core.color.olive.400}",
+          type: "color",
+        },
+        "500": {
+          value: "{core.color.olive.500}",
+          type: "color",
+        },
+        "600": {
+          value: "{core.color.olive.600}",
+          type: "color",
+        },
+        "700": {
+          value: "{core.color.olive.700}",
+          type: "color",
+        },
+        "800": {
+          value: "{core.color.olive.800}",
+          type: "color",
+        },
+        "900": {
+          value: "{core.color.olive.900}",
+          type: "color",
+        },
+        tint: {
+          value: "{core.color.olive.tint}",
+          type: "color",
+        },
+        shade: {
+          value: "{core.color.olive.shade}",
           type: "color",
         },
       },
       orange: {
         "0": {
-          value: "#fffcdf",
-          type: "color",
-        },
-        "10": {
-          value: "#fff4c6",
-          type: "color",
-        },
-        "20": {
-          value: "#ffe9ae",
-          type: "color",
-        },
-        "30": {
-          value: "#ffda97",
-          type: "color",
-        },
-        "40": {
-          value: "#ffc780",
-          type: "color",
-        },
-        "50": {
-          value: "#ffb26a",
-          type: "color",
-        },
-        "60": {
-          value: "#fc9a55",
-          type: "color",
-        },
-        "70": {
-          value: "#df6d3f",
-          type: "color",
-        },
-        "80": {
-          value: "#ae461c",
-          type: "color",
-        },
-        "90": {
-          value: "#973209",
+          value: "{core.color.orange.0}",
           type: "color",
         },
         "100": {
-          value: "#7d1f09",
+          value: "{core.color.orange.100}",
+          type: "color",
+        },
+        "200": {
+          value: "{core.color.orange.200}",
+          type: "color",
+        },
+        "300": {
+          value: "{core.color.orange.300}",
+          type: "color",
+        },
+        "400": {
+          value: "{core.color.orange.400}",
+          type: "color",
+        },
+        "500": {
+          value: "{core.color.orange.500}",
+          type: "color",
+        },
+        "600": {
+          value: "{core.color.orange.600}",
+          type: "color",
+        },
+        "700": {
+          value: "{core.color.orange.700}",
+          type: "color",
+        },
+        "800": {
+          value: "{core.color.orange.800}",
+          type: "color",
+        },
+        "900": {
+          value: "{core.color.orange.900}",
+          type: "color",
+        },
+        tint: {
+          value: "{core.color.orange.tint}",
+          type: "color",
+        },
+        shade: {
+          value: "{core.color.orange.shade}",
           type: "color",
         },
       },
       red: {
         "0": {
-          value: "#ffc5cb",
-          type: "color",
-        },
-        "10": {
-          value: "#ffaab6",
-          type: "color",
-        },
-        "20": {
-          value: "#fe94a5",
-          type: "color",
-        },
-        "30": {
-          value: "#f98093",
-          type: "color",
-        },
-        "40": {
-          value: "#f36a80",
-          type: "color",
-        },
-        "50": {
-          value: "#ef556e",
-          type: "color",
-        },
-        "60": {
-          value: "#ed425b",
-          type: "color",
-        },
-        "70": {
-          value: "#d82a48",
-          type: "color",
-        },
-        "80": {
-          value: "#c31c3b",
-          type: "color",
-        },
-        "90": {
-          value: "#ad0f31",
+          value: "{core.color.red.0}",
           type: "color",
         },
         "100": {
-          value: "#990024",
+          value: "{core.color.red.100}",
+          type: "color",
+        },
+        "200": {
+          value: "{core.color.red.200}",
+          type: "color",
+        },
+        "300": {
+          value: "{core.color.red.300}",
+          type: "color",
+        },
+        "400": {
+          value: "{core.color.red.400}",
+          type: "color",
+        },
+        "500": {
+          value: "{core.color.red.500}",
+          type: "color",
+        },
+        "600": {
+          value: "{core.color.red.600}",
+          type: "color",
+        },
+        "700": {
+          value: "{core.color.red.700}",
+          type: "color",
+        },
+        "800": {
+          value: "{core.color.red.800}",
+          type: "color",
+        },
+        "900": {
+          value: "{core.color.red.900}",
+          type: "color",
+        },
+        tint: {
+          value: "{core.color.red.tint}",
+          type: "color",
+        },
+        shade: {
+          value: "{core.color.red.shade}",
           type: "color",
         },
       },
       blue: {
         "0": {
-          value: "#d6f8ff",
-          type: "color",
-        },
-        "10": {
-          value: "#b5ebff",
-          type: "color",
-        },
-        "20": {
-          value: "#95daff",
-          type: "color",
-        },
-        "30": {
-          value: "#77c4ff",
-          type: "color",
-        },
-        "40": {
-          value: "#59aaff",
-          type: "color",
-        },
-        "50": {
-          value: "#3d8cff",
-          type: "color",
-        },
-        "60": {
-          value: "#216bff",
-          type: "color",
-        },
-        "70": {
-          value: "#0d39df",
-          type: "color",
-        },
-        "80": {
-          value: "#000bbf",
-          type: "color",
-        },
-        "90": {
-          value: "#03009f",
+          value: "{core.color.blue.0}",
           type: "color",
         },
         "100": {
-          value: "#140080",
+          value: "{core.color.blue.100}",
+          type: "color",
+        },
+        "200": {
+          value: "{core.color.blue.200}",
+          type: "color",
+        },
+        "300": {
+          value: "{core.color.blue.300}",
+          type: "color",
+        },
+        "400": {
+          value: "{core.color.blue.400}",
+          type: "color",
+        },
+        "500": {
+          value: "{core.color.blue.500}",
+          type: "color",
+        },
+        "600": {
+          value: "{core.color.blue.600}",
+          type: "color",
+        },
+        "700": {
+          value: "{core.color.blue.700}",
+          type: "color",
+        },
+        "800": {
+          value: "{core.color.blue.800}",
+          type: "color",
+        },
+        "900": {
+          value: "{core.color.blue.900}",
+          type: "color",
+        },
+        tint: {
+          value: "{core.color.blue.tint}",
+          type: "color",
+        },
+        shade: {
+          value: "{core.color.blue.shade}",
           type: "color",
         },
       },
       green: {
         "0": {
-          value: "#f0f7e0",
-          type: "color",
-        },
-        "10": {
-          value: "#e0efc7",
-          type: "color",
-        },
-        "20": {
-          value: "#cfe8af",
-          type: "color",
-        },
-        "30": {
-          value: "#bbdf98",
-          type: "color",
-        },
-        "40": {
-          value: "#a4d681",
-          type: "color",
-        },
-        "50": {
-          value: "#8dcd6a",
-          type: "color",
-        },
-        "60": {
-          value: "#73c354",
-          type: "color",
-        },
-        "70": {
-          value: "#52b342",
-          type: "color",
-        },
-        "80": {
-          value: "#32a032",
-          type: "color",
-        },
-        "90": {
-          value: "#248b31",
+          value: "{core.color.green.0}",
           type: "color",
         },
         "100": {
-          value: "#187431",
+          value: "{core.color.green.100}",
           type: "color",
         },
-      },
-      pine: {
-        "0": {
-          value: "#f5fffa",
+        "200": {
+          value: "{core.color.green.200}",
           type: "color",
         },
-        "10": {
-          value: "#daf7e8",
+        "300": {
+          value: "{core.color.green.300}",
           type: "color",
         },
-        "20": {
-          value: "#c0efd8",
+        "400": {
+          value: "{core.color.green.400}",
           type: "color",
         },
-        "30": {
-          value: "#92e0b9",
+        "500": {
+          value: "{core.color.green.500}",
           type: "color",
         },
-        "40": {
-          value: "#6cd09e",
+        "600": {
+          value: "{core.color.green.600}",
           type: "color",
         },
-        "50": {
-          value: "#50c188",
+        "700": {
+          value: "{core.color.green.700}",
           type: "color",
         },
-        "60": {
-          value: "#3cb176",
+        "800": {
+          value: "{core.color.green.800}",
           type: "color",
         },
-        "70": {
-          value: "#2da267",
+        "900": {
+          value: "{core.color.green.900}",
           type: "color",
         },
-        "80": {
-          value: "#23925a",
+        tint: {
+          value: "{core.color.green.tint}",
           type: "color",
         },
-        "90": {
-          value: "#1c824f",
-          type: "color",
-        },
-        "100": {
-          value: "#177345",
+        shade: {
+          value: "{core.color.green.shade}",
           type: "color",
         },
       },
