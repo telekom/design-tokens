@@ -1,18 +1,25 @@
 const fs = require('fs-extra');
 const StyleDictionary = require('style-dictionary');
-const { PREFIX, OUTPUT_PATH, OUTPUT_BASE_FILENAME } = require('./shared');
+const {} = require('./shared');
+
+const { PREFIX, OUTPUT_PATH, OUTPUT_BASE_FILENAME } = process.env;
+const WHITELABEL = process.env.WHITELABEL !== 'false';
 
 /*
   TODO
   - [ ] text styles: split into separate variables, plus maybe add css classes?
 */
 
-const cssTransformGroup = StyleDictionary.transformGroup.css.filter(
-  (x) => x !== 'name/cti/kebab'
-);
-
-// Add custom `name` transform to handle `&` better
-cssTransformGroup.splice(1, 0, 'name/cti/kebab2');
+// Use custom 'name/cti/kebab2' plus 'color/alpha'
+const cssTransformGroup = [
+  'attribute/cti',
+  'name/cti/kebab2',
+  'time/seconds',
+  'content/icon',
+  'size/rem',
+  'color/alpha',
+  'color/css',
+];
 
 StyleDictionary.registerAction({
   name: 'bundle_css',
@@ -39,7 +46,11 @@ StyleDictionary.registerAction({
 });
 
 module.exports = {
-  source: ['src/**/*.json5'],
+  include: ['src/core/**/*.json5'],
+  source: [
+    ...(WHITELABEL === false ? ['src/telekom/core/**.json5'] : []),
+    'src/semantic/**/*.json5',
+  ],
   platforms: {
     css: {
       transforms: ['mode-light', ...cssTransformGroup, 'shadow/css'],

@@ -2,13 +2,14 @@ const fs = require('fs-extra');
 const deep = require('deep-get-set');
 const StyleDictionary = require('style-dictionary');
 const {
-  OUTPUT_PATH,
-  OUTPUT_BASE_FILENAME,
   FIGMA_KEY_LIGHT,
   FIGMA_KEY_DARK,
   humanCase,
   fontWeightMap,
 } = require('./shared');
+
+const { OUTPUT_PATH, OUTPUT_BASE_FILENAME } = process.env;
+const WHITELABEL = process.env.WHITELABEL !== 'false';
 
 const TMP_NAME = 'tokens';
 
@@ -17,7 +18,11 @@ const TMP_NAME = 'tokens';
   - [ ] use font name from token in text-style transform
 */
 
-const figmaTransformGroup = ['attribute/cti', 'text-style/figma'];
+const figmaTransformGroup = [
+  'attribute/cti',
+  'color/alpha-hex',
+  'text-style/figma',
+];
 
 const categoryTypeMap = {
   'line-weight': 'borderWidth',
@@ -194,7 +199,11 @@ const hasMode = (token) =>
   token.path[0] === 'color' || token.path[0] === 'elevation';
 
 module.exports = {
-  source: ['src/**/*.json5'],
+  include: ['src/core/**/*.json5'],
+  source: [
+    ...(WHITELABEL === false ? ['src/telekom/core/**.json5'] : []),
+    'src/semantic/**/*.json5',
+  ],
   platforms: {
     figmaModeless: {
       transforms: [...figmaTransformGroup],

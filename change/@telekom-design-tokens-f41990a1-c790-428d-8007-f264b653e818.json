@@ -1,0 +1,7 @@
+{
+  "type": "prerelease",
+  "comment": "Introduce whitelabel/telekom builds, remove build folder in favor of a single dist",
+  "packageName": "@telekom/design-tokens",
+  "email": "ac@iconstorm.com",
+  "dependentChangeType": "patch"
+}
