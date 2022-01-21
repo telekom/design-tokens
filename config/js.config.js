@@ -2,15 +2,13 @@ const StyleDictionary = require('style-dictionary');
 const deep = require('deep-get-set');
 const prettier = require('prettier');
 const camelCase = require('lodash/camelCase');
-const { OUTPUT_PATH, OUTPUT_BASE_FILENAME } = require('./shared');
 
-/*
-  TODO
-  - [ ] text styles: camel case key
-*/
+const { OUTPUT_PATH, OUTPUT_BASE_FILENAME } = process.env;
+const WHITELABEL = process.env.WHITELABEL !== 'false';
 
 const jsTransformGroup = [
   ...StyleDictionary.transformGroup.js,
+  'color/alpha',
   'shadow/css',
   'text-style/camel',
 ];
@@ -23,10 +21,6 @@ StyleDictionary.registerFormat({
     deep.p = true;
     dictionary.allTokens
       .filter((token) => token.path[0] !== 'core')
-      .map((token) => ({
-        ...token,
-        path: token.path.slice(1),
-      }))
       .forEach((token) => {
         deep(tokens, token.path.map(camelCase), token.value);
       });
@@ -45,7 +39,11 @@ StyleDictionary.registerFormat({
 });
 
 module.exports = {
-  source: ['src/**/*.json5'],
+  include: ['src/core/**/*.json5'],
+  source: [
+    ...(WHITELABEL === false ? ['src/telekom/core/**.json5'] : []),
+    'src/semantic/**/*.json5',
+  ],
   platforms: {
     js: {
       transforms: ['mode-light', ...jsTransformGroup],
