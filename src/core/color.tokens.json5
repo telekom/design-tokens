@@ -9,39 +9,37 @@
         value: "#000000",
         type: "color",
       },
-      magenta: {
-        comment: "contrast with white is acceptable according to APCA for buttons, etc.",
-        brand: {
-          comment: "Defined by brand, can not be changed",
-          value: "#e20074",
+      brand: {
+        standard: {
+          value: "#5300FF",
           type: "color",
         },
         dark: {
-          comment: "Brand magenta with 15% black overlay",
-          value: "#C00063",
+          comment: "Brand with 15% black overlay",
+          value: "#4700D9",
           type: "color",
         },
         darker: {
-          comment: "Brand magenta with 30% black overlay",
-          value: "#9E0051",
+          comment: "Brand with 30% black overlay",
+          value: "#3A00B3",
           type: "color",
         },
         light: {
-          comment: "Brand magenta with 35% white overlay",
-          value: "#EC59A5",
+          comment: "Brand with 35% white overlay",
+          value: "#8F59FF",
           type: "color",
         },
         lighter: {
-          comment: "Brand magenta with 50% white overlay",
-          value: "#F080BA",
+          comment: "Brand with 50% white overlay",
+          value: "#A980FF",
           type: "color",
         },
         tint: {
-          value: "#FFF0F8",
+          value: "#F5F0FF",
           type: "color",
         },
         shade: {
-          value: "#33001A",
+          value: "#110033",
           type: "color",
         },
       },
