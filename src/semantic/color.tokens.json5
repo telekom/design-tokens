@@ -71,22 +71,22 @@
       Primary: {
         Standard: {
           value: {
-            light: "{core.color.magenta.brand}",
-            dark: "{core.color.magenta.brand}",
+            light: "{core.color.brand.standard}",
+            dark: "{core.color.brand.standard}",
           },
           type: "color",
         },
         Hovered: {
           value: {
-            light: "{core.color.magenta.dark}",
-            dark: "{core.color.magenta.light}",
+            light: "{core.color.brand.dark}",
+            dark: "{core.color.brand.light}",
           },
           type: "color",
         },
         Pressed: {
           value: {
-            light: "{core.color.magenta.darker}",
-            dark: "{core.color.magenta.lighter}",
+            light: "{core.color.brand.darker}",
+            dark: "{core.color.brand.lighter}",
           },
           type: "color",
         },
@@ -222,29 +222,29 @@
     Primary: {
       Standard: {
         value: {
-          light: "{core.color.magenta.brand}",
-          dark: "{core.color.magenta.brand}",
+          light: "{core.color.brand.standard}",
+          dark: "{core.color.brand.standard}",
         },
         type: "color",
       },
       Hovered: {
         value: {
-          light: "{core.color.magenta.dark}",
-          dark: "{core.color.magenta.dark}",
+          light: "{core.color.brand.dark}",
+          dark: "{core.color.brand.dark}",
         },
         type: "color",
       },
       Pressed: {
         value: {
-          light: "{core.color.magenta.darker}",
-          dark: "{core.color.magenta.darker}",
+          light: "{core.color.brand.darker}",
+          dark: "{core.color.brand.darker}",
         },
         type: "color",
       },
       Subtle: {
         value: {
-          light: "{core.color.magenta.tint}",
-          dark: "{core.color.magenta.shade}",
+          light: "{core.color.brand.tint}",
+          dark: "{core.color.brand.shade}",
         },
         type: "color",
       },
