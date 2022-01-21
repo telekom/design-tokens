@@ -138,11 +138,11 @@
           value: "#45362B",
           type: "color",
         },
-        "tint": {
+        tint: {
           value: "#FFF6F0",
           type: "color",
         },
-        "shade": {
+        shade: {
           value: "#331500",
           type: "color",
         },
@@ -388,11 +388,11 @@
           value: "#2C3E25",
           type: "color",
         },
-        "tint": {
+        tint: {
           value: "#F4FFF0",
           type: "color",
         },
-        "shade": {
+        shade: {
           value: "#0e3300",
           type: "color",
         },
@@ -488,11 +488,11 @@
           value: "#780214",
           type: "color",
         },
-        "tint": {
+        tint: {
           value: "#FFF0F2",
           type: "color",
         },
-        "shade": {
+        shade: {
           value: "#330008",
           type: "color",
         },
@@ -538,11 +538,11 @@
           value: "#003778",
           type: "color",
         },
-        "tint": {
+        tint: {
           value: "#F0F7FF",
           type: "color",
         },
-        "shade": {
+        shade: {
           value: "#001733",
           type: "color",
         },
@@ -588,11 +588,11 @@
           value: "#1D347A",
           type: "color",
         },
-        "tint": {
+        tint: {
           value: "#F0F4FF",
           type: "color",
         },
-        "shade": {
+        shade: {
           value: "#000D33",
           type: "color",
         },

@@ -1,6 +1,9 @@
 const fs = require('fs-extra');
 const StyleDictionary = require('style-dictionary');
-const { PREFIX, OUTPUT_PATH, OUTPUT_BASE_FILENAME } = require('./shared');
+const {} = require('./shared');
+
+const { PREFIX, OUTPUT_PATH, OUTPUT_BASE_FILENAME } = process.env;
+const WHITELABEL = process.env.WHITELABEL !== 'false';
 
 /*
   TODO
@@ -43,7 +46,11 @@ StyleDictionary.registerAction({
 });
 
 module.exports = {
-  source: ['src/**/*.json5'],
+  include: ['src/core/**/*.json5'],
+  source: [
+    ...(WHITELABEL === false ? ['src/telekom/core/**.json5'] : []),
+    'src/semantic/**/*.json5',
+  ],
   platforms: {
     css: {
       transforms: ['mode-light', ...cssTransformGroup, 'shadow/css'],
