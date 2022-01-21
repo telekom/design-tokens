@@ -2,13 +2,14 @@ const StyleDictionary = require('style-dictionary');
 const Color = require('tinycolor2');
 const libraryAction = require('./sketch-library-action');
 const {
-  OUTPUT_PATH,
-  OUTPUT_BASE_FILENAME,
   humanCase,
   isColorAlphaComposite,
   fontFamilyMap,
   fontWeightMap,
 } = require('./shared');
+
+const { OUTPUT_PATH, OUTPUT_BASE_FILENAME } = process.env;
+const WHITELABEL = process.env.WHITELABEL !== 'false';
 
 const BLACK = {
   _class: 'color',
@@ -162,7 +163,11 @@ function getLayerStyleShape() {
 }
 
 module.exports = {
-  source: ['src/**/*.json5'],
+  include: ['src/core/**/*.json5'],
+  source: [
+    ...(WHITELABEL === false ? ['src/telekom/core/**.json5'] : []),
+    'src/semantic/**/*.json5',
+  ],
   platforms: {
     sketchLight: {
       transforms: ['mode-light', 'sketch/color2'],

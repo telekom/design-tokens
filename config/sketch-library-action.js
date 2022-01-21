@@ -2,7 +2,8 @@ const uuid = require('uuid-by-string');
 const fs = require('fs-extra');
 const { execSync } = require('child_process');
 const { version } = require('../package.json');
-const { OUTPUT_BASE_FILENAME } = require('./shared');
+
+const { OUTPUT_PATH, OUTPUT_BASE_FILENAME } = process.env;
 
 const SKETCH_FIXTURE_FILENAME = 'design-tokens.sketch';
 const FIXTURE_PAGE_ID = '351F5B97-9A3C-4842-B95E-065998538D97';
@@ -26,14 +27,14 @@ module.exports = {
     cleanup();
   },
   undo: function () {
-    fs.rmSync('build/sketch/light/', { recursive: true, force: true });
-    fs.rmSync('build/sketch/dark/', { recursive: true, force: true });
+    fs.rmSync(OUTPUT_PATH + 'sketch/light/', { recursive: true, force: true });
+    fs.rmSync(OUTPUT_PATH + 'sketch/dark/', { recursive: true, force: true });
   },
 };
 
 function init(mode) {
   fs.mkdirpSync(`config/tmp/sketch-library-${mode}/`);
-  fs.mkdirpSync(`build/sketch/${mode}/`);
+  fs.mkdirpSync(`${OUTPUT_PATH}sketch/${mode}/`);
 }
 
 function cleanup() {
@@ -53,7 +54,7 @@ function compress(mode) {
   process.chdir(root);
   fs.copyFileSync(
     `config/tmp/sketch-library-${mode}/${OUTPUT_BASE_FILENAME}.sketch`,
-    `build/sketch/${mode}/${OUTPUT_BASE_FILENAME}.sketch`
+    `${OUTPUT_PATH}sketch/${mode}/${OUTPUT_BASE_FILENAME}.sketch`
   );
 }
 
