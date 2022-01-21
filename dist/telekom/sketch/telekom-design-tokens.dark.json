@@ -42,9 +42,9 @@
       "name": "Text & Icon/Link/Standard",
       "value": {
         "_class": "color",
-        "red": "0.14510",
-        "green": "0.41961",
-        "blue": "0.94510",
+        "red": "0.37647",
+        "green": "0.66275",
+        "blue": "1.00000",
         "alpha": "1"
       }
     },
@@ -54,9 +54,9 @@
       "name": "Text & Icon/Link/Hovered",
       "value": {
         "_class": "color",
-        "red": "0.30196",
-        "green": "0.52941",
-        "blue": "0.96471",
+        "red": "0.53725",
+        "green": "0.74902",
+        "blue": "1.00000",
         "alpha": "1"
       }
     },
@@ -66,9 +66,9 @@
       "name": "Text & Icon/Link/Visited",
       "value": {
         "_class": "color",
-        "red": "0.50980",
-        "green": "0.54118",
-        "blue": "0.76863",
+        "red": "0.67059",
+        "green": "0.62353",
+        "blue": "0.80784",
         "alpha": "1"
       }
     },
@@ -78,9 +78,9 @@
       "name": "Text & Icon/Link/Active",
       "value": {
         "_class": "color",
-        "red": "0.45882",
-        "green": "0.63922",
-        "blue": "0.98039",
+        "red": "0.71373",
+        "green": "0.84314",
+        "blue": "1.00000",
         "alpha": "1"
       }
     },
@@ -102,9 +102,9 @@
       "name": "Text & Icon/Primary/Hovered",
       "value": {
         "_class": "color",
-        "red": "0.75294",
-        "green": "0.00000",
-        "blue": "0.38824",
+        "red": "0.92549",
+        "green": "0.34902",
+        "blue": "0.64706",
         "alpha": "1"
       }
     },
@@ -114,9 +114,9 @@
       "name": "Text & Icon/Primary/Pressed",
       "value": {
         "_class": "color",
-        "red": "0.61961",
-        "green": "0.00000",
-        "blue": "0.31765",
+        "red": "0.94118",
+        "green": "0.50196",
+        "blue": "0.72941",
         "alpha": "1"
       }
     },
@@ -126,9 +126,9 @@
       "name": "Text & Icon/Inverted/Standard",
       "value": {
         "_class": "color",
-        "red": "0.07843",
-        "green": "0.07843",
-        "blue": "0.07843",
+        "red": "0.00000",
+        "green": "0.00000",
+        "blue": "0.00000",
         "alpha": "1"
       }
     },
@@ -138,10 +138,10 @@
       "name": "Text & Icon/Inverted/Additional",
       "value": {
         "_class": "color",
-        "red": "0.44314",
-        "green": "0.43137",
-        "blue": "0.44314",
-        "alpha": "1"
+        "red": "0.00000",
+        "green": "0.00000",
+        "blue": "0.00000",
+        "alpha": "0.65"
       }
     },
     {
@@ -150,9 +150,9 @@
       "name": "Text & Icon/Functional/Informational",
       "value": {
         "_class": "color",
-        "red": "0.14510",
-        "green": "0.41961",
-        "blue": "0.94510",
+        "red": "0.14902",
+        "green": "0.54118",
+        "blue": "1.00000",
         "alpha": "1"
       }
     },
@@ -162,9 +162,9 @@
       "name": "Text & Icon/Functional/Success",
       "value": {
         "_class": "color",
-        "red": "0.23529",
-        "green": "0.69412",
-        "blue": "0.46275",
+        "red": "0.07451",
+        "green": "0.74510",
+        "blue": "0.40784",
         "alpha": "1"
       }
     },
@@ -174,9 +174,9 @@
       "name": "Text & Icon/Functional/Danger",
       "value": {
         "_class": "color",
-        "red": "0.83922",
+        "red": "0.99608",
         "green": "0.27059",
-        "blue": "0.38431",
+        "blue": "0.26275",
         "alpha": "1"
       }
     },
@@ -186,9 +186,9 @@
       "name": "Text & Icon/Functional/Warning",
       "value": {
         "_class": "color",
-        "red": "1.00000",
-        "green": "0.56863",
-        "blue": "0.14118",
+        "red": "0.88627",
+        "green": "0.40000",
+        "blue": "0.09020",
         "alpha": "1"
       }
     },
@@ -222,9 +222,9 @@
       "name": "Background/Canvas",
       "value": {
         "_class": "color",
-        "red": "0.07843",
-        "green": "0.07843",
-        "blue": "0.07843",
+        "red": "0.01961",
+        "green": "0.01961",
+        "blue": "0.01961",
         "alpha": "1"
       }
     },
@@ -234,9 +234,9 @@
       "name": "Background/Canvas Subtle",
       "value": {
         "_class": "color",
-        "red": "0.12549",
-        "green": "0.12157",
-        "blue": "0.12549",
+        "red": "0.08627",
+        "green": "0.08627",
+        "blue": "0.09020",
         "alpha": "1"
       }
     },
@@ -258,9 +258,9 @@
       "name": "Background/Surface",
       "value": {
         "_class": "color",
-        "red": "0.17255",
-        "green": "0.16471",
-        "blue": "0.16863",
+        "red": "0.15294",
+        "green": "0.15294",
+        "blue": "0.16078",
         "alpha": "1"
       }
     },
@@ -270,9 +270,9 @@
       "name": "Background/Surface Subtle",
       "value": {
         "_class": "color",
-        "red": "0.21569",
-        "green": "0.21176",
-        "blue": "0.21176",
+        "red": "0.21961",
+        "green": "0.22353",
+        "blue": "0.23137",
         "alpha": "1"
       }
     },
@@ -282,9 +282,9 @@
       "name": "Background/Surface Highlight",
       "value": {
         "_class": "color",
-        "red": "0.26275",
-        "green": "0.25490",
-        "blue": "0.25882",
+        "red": "0.29020",
+        "green": "0.29412",
+        "blue": "0.30196",
         "alpha": "1"
       }
     },
@@ -330,9 +330,9 @@
       "name": "Primary/Subtle",
       "value": {
         "_class": "color",
-        "red": "0.17647",
+        "red": "0.20000",
         "green": "0.00000",
-        "blue": "0.09020",
+        "blue": "0.10196",
         "alpha": "1"
       }
     },
@@ -342,9 +342,9 @@
       "name": "UI/Subtle",
       "value": {
         "_class": "color",
-        "red": "0.17255",
-        "green": "0.16471",
-        "blue": "0.16863",
+        "red": "0.15294",
+        "green": "0.15294",
+        "blue": "0.16078",
         "alpha": "1"
       }
     },
@@ -354,9 +354,9 @@
       "name": "UI/Light",
       "value": {
         "_class": "color",
-        "red": "0.21569",
-        "green": "0.21176",
-        "blue": "0.21176",
+        "red": "0.21961",
+        "green": "0.22353",
+        "blue": "0.23137",
         "alpha": "1"
       }
     },
@@ -366,9 +366,9 @@
       "name": "UI/Normal",
       "value": {
         "_class": "color",
-        "red": "0.26275",
-        "green": "0.25490",
-        "blue": "0.25882",
+        "red": "0.29020",
+        "green": "0.29412",
+        "blue": "0.30196",
         "alpha": "1"
       }
     },
@@ -378,9 +378,9 @@
       "name": "UI/Strong",
       "value": {
         "_class": "color",
-        "red": "0.35294",
-        "green": "0.34118",
-        "blue": "0.34902",
+        "red": "0.36471",
+        "green": "0.37255",
+        "blue": "0.38039",
         "alpha": "1"
       }
     },
@@ -390,9 +390,9 @@
       "name": "UI/Extra Strong",
       "value": {
         "_class": "color",
-        "red": "0.98824",
-        "green": "0.98824",
-        "blue": "0.98824",
+        "red": "0.94118",
+        "green": "0.94510",
+        "blue": "0.94510",
         "alpha": "1"
       }
     },
@@ -402,9 +402,9 @@
       "name": "UI/Disabled",
       "value": {
         "_class": "color",
-        "red": "0.17255",
-        "green": "0.16471",
-        "blue": "0.16863",
+        "red": "0.15294",
+        "green": "0.15294",
+        "blue": "0.16078",
         "alpha": "1"
       }
     },
@@ -414,9 +414,9 @@
       "name": "Functional/Focus",
       "value": {
         "_class": "color",
-        "red": "0.14510",
-        "green": "0.41961",
-        "blue": "0.94510",
+        "red": "0.14902",
+        "green": "0.54118",
+        "blue": "1.00000",
         "alpha": "1"
       }
     },
@@ -426,9 +426,9 @@
       "name": "Functional/Success/Standard",
       "value": {
         "_class": "color",
-        "red": "0.09020",
-        "green": "0.45098",
-        "blue": "0.27059",
+        "red": "0.03529",
+        "green": "0.34118",
+        "blue": "0.18431",
         "alpha": "1"
       }
     },
@@ -438,9 +438,9 @@
       "name": "Functional/Success/Hovered",
       "value": {
         "_class": "color",
-        "red": "0.13725",
-        "green": "0.57255",
-        "blue": "0.35294",
+        "red": "0.04314",
+        "green": "0.42745",
+        "blue": "0.23137",
         "alpha": "1"
       }
     },
@@ -450,9 +450,9 @@
       "name": "Functional/Success/Pressed",
       "value": {
         "_class": "color",
-        "red": "0.23529",
-        "green": "0.69412",
-        "blue": "0.46275",
+        "red": "0.05098",
+        "green": "0.51373",
+        "blue": "0.27843",
         "alpha": "1"
       }
     },
@@ -463,8 +463,8 @@
       "value": {
         "_class": "color",
         "red": "0.00000",
-        "green": "0.14902",
-        "blue": "0.07451",
+        "green": "0.20000",
+        "blue": "0.09804",
         "alpha": "1"
       }
     },
@@ -474,9 +474,9 @@
       "name": "Functional/Interaction/Standard",
       "value": {
         "_class": "color",
-        "red": "0.14510",
-        "green": "0.41961",
-        "blue": "0.94510",
+        "red": "0.00000",
+        "green": "0.35294",
+        "blue": "0.76863",
         "alpha": "1"
       }
     },
@@ -486,9 +486,9 @@
       "name": "Functional/Interaction/Hovered",
       "value": {
         "_class": "color",
-        "red": "0.30196",
-        "green": "0.52941",
-        "blue": "0.96471",
+        "red": "0.00000",
+        "green": "0.42353",
+        "blue": "0.92549",
         "alpha": "1"
       }
     },
@@ -498,9 +498,9 @@
       "name": "Functional/Interaction/Pressed",
       "value": {
         "_class": "color",
-        "red": "0.45882",
-        "green": "0.63922",
-        "blue": "0.98039",
+        "red": "0.14902",
+        "green": "0.54118",
+        "blue": "1.00000",
         "alpha": "1"
       }
     },
@@ -510,8 +510,8 @@
       "name": "Functional/Interaction/Subtle",
       "value": {
         "_class": "color",
-        "red": "0.02745",
-        "green": "0.08235",
+        "red": "0.00000",
+        "green": "0.09020",
         "blue": "0.20000",
         "alpha": "1"
       }
@@ -522,9 +522,9 @@
       "name": "Functional/Informational/Standard",
       "value": {
         "_class": "color",
-        "red": "0.14510",
-        "green": "0.41961",
-        "blue": "0.94510",
+        "red": "0.00000",
+        "green": "0.35294",
+        "blue": "0.76863",
         "alpha": "1"
       }
     },
@@ -534,9 +534,9 @@
       "name": "Functional/Informational/Hovered",
       "value": {
         "_class": "color",
-        "red": "0.30196",
-        "green": "0.52941",
-        "blue": "0.96471",
+        "red": "0.00000",
+        "green": "0.42353",
+        "blue": "0.92549",
         "alpha": "1"
       }
     },
@@ -546,9 +546,9 @@
       "name": "Functional/Informational/Pressed",
       "value": {
         "_class": "color",
-        "red": "0.45882",
-        "green": "0.63922",
-        "blue": "0.98039",
+        "red": "0.14902",
+        "green": "0.54118",
+        "blue": "1.00000",
         "alpha": "1"
       }
     },
@@ -558,8 +558,8 @@
       "name": "Functional/Informational/Subtle",
       "value": {
         "_class": "color",
-        "red": "0.02745",
-        "green": "0.08235",
+        "red": "0.00000",
+        "green": "0.09020",
         "blue": "0.20000",
         "alpha": "1"
       }
@@ -570,9 +570,9 @@
       "name": "Functional/Warning/Standard",
       "value": {
         "_class": "color",
-        "red": "1.00000",
-        "green": "0.49804",
-        "blue": "0.00000",
+        "red": "0.88627",
+        "green": "0.40000",
+        "blue": "0.09020",
         "alpha": "1"
       }
     },
@@ -583,8 +583,8 @@
       "value": {
         "_class": "color",
         "red": "1.00000",
-        "green": "0.56863",
-        "blue": "0.14118",
+        "green": "0.49804",
+        "blue": "0.12157",
         "alpha": "1"
       }
     },
@@ -595,8 +595,8 @@
       "value": {
         "_class": "color",
         "red": "1.00000",
-        "green": "0.63922",
-        "blue": "0.28235",
+        "green": "0.64706",
+        "blue": "0.33725",
         "alpha": "1"
       }
     },
@@ -606,8 +606,8 @@
       "name": "Functional/Warning/Subtle",
       "value": {
         "_class": "color",
-        "red": "0.30196",
-        "green": "0.14902",
+        "red": "0.20000",
+        "green": "0.08627",
         "blue": "0.00000",
         "alpha": "1"
       }
@@ -618,9 +618,9 @@
       "name": "Functional/Danger/Standard",
       "value": {
         "_class": "color",
-        "red": "0.75294",
-        "green": "0.18431",
-        "blue": "0.29804",
+        "red": "0.61176",
+        "green": "0.00000",
+        "blue": "0.09412",
         "alpha": "1"
       }
     },
@@ -630,9 +630,9 @@
       "name": "Functional/Danger/Hovered",
       "value": {
         "_class": "color",
-        "red": "0.83922",
-        "green": "0.27059",
-        "blue": "0.38431",
+        "red": "0.75686",
+        "green": "0.00000",
+        "blue": "0.10980",
         "alpha": "1"
       }
     },
@@ -642,9 +642,9 @@
       "name": "Functional/Danger/Pressed",
       "value": {
         "_class": "color",
-        "red": "0.88235",
-        "green": "0.39608",
-        "blue": "0.50196",
+        "red": "0.90196",
+        "green": "0.00000",
+        "blue": "0.12941",
         "alpha": "1"
       }
     },
@@ -654,572 +654,32 @@
       "name": "Functional/Danger/Subtle",
       "value": {
         "_class": "color",
-        "red": "0.18824",
-        "green": "0.06667",
-        "blue": "0.08627",
+        "red": "0.20000",
+        "green": "0.00000",
+        "blue": "0.03137",
         "alpha": "1"
       }
     },
     {
       "_class": "swatch",
       "do_objectID": "",
-      "name": "Additional/Clay/0",
-      "value": {
-        "_class": "color",
-        "red": "0.94902",
-        "green": "0.89412",
-        "blue": "0.87451",
-        "alpha": "1"
-      }
-    },
-    {
-      "_class": "swatch",
-      "do_objectID": "",
-      "name": "Additional/Clay/10",
-      "value": {
-        "_class": "color",
-        "red": "0.92941",
-        "green": "0.84706",
-        "blue": "0.80784",
-        "alpha": "1"
-      }
-    },
-    {
-      "_class": "swatch",
-      "do_objectID": "",
-      "name": "Additional/Clay/20",
-      "value": {
-        "_class": "color",
-        "red": "0.91373",
-        "green": "0.80392",
-        "blue": "0.74510",
-        "alpha": "1"
-      }
-    },
-    {
-      "_class": "swatch",
-      "do_objectID": "",
-      "name": "Additional/Clay/30",
-      "value": {
-        "_class": "color",
-        "red": "0.89020",
-        "green": "0.76078",
-        "blue": "0.68627",
-        "alpha": "1"
-      }
-    },
-    {
-      "_class": "swatch",
-      "do_objectID": "",
-      "name": "Additional/Clay/40",
-      "value": {
-        "_class": "color",
-        "red": "0.87059",
-        "green": "0.71765",
-        "blue": "0.62745",
-        "alpha": "1"
-      }
-    },
-    {
-      "_class": "swatch",
-      "do_objectID": "",
-      "name": "Additional/Clay/50",
-      "value": {
-        "_class": "color",
-        "red": "0.85098",
-        "green": "0.67843",
-        "blue": "0.57255",
-        "alpha": "1"
-      }
-    },
-    {
-      "_class": "swatch",
-      "do_objectID": "",
-      "name": "Additional/Clay/60",
-      "value": {
-        "_class": "color",
-        "red": "0.82353",
-        "green": "0.64314",
-        "blue": "0.51373",
-        "alpha": "1"
-      }
-    },
-    {
-      "_class": "swatch",
-      "do_objectID": "",
-      "name": "Additional/Clay/70",
-      "value": {
-        "_class": "color",
-        "red": "0.73333",
-        "green": "0.54902",
-        "blue": "0.43529",
-        "alpha": "1"
-      }
-    },
-    {
-      "_class": "swatch",
-      "do_objectID": "",
-      "name": "Additional/Clay/80",
-      "value": {
-        "_class": "color",
-        "red": "0.63922",
-        "green": "0.46275",
-        "blue": "0.36471",
-        "alpha": "1"
-      }
-    },
-    {
-      "_class": "swatch",
-      "do_objectID": "",
-      "name": "Additional/Clay/90",
-      "value": {
-        "_class": "color",
-        "red": "0.52941",
-        "green": "0.37647",
-        "blue": "0.30588",
-        "alpha": "1"
-      }
-    },
-    {
-      "_class": "swatch",
-      "do_objectID": "",
-      "name": "Additional/Clay/100",
-      "value": {
-        "_class": "color",
-        "red": "0.41569",
-        "green": "0.30196",
-        "blue": "0.25098",
-        "alpha": "1"
-      }
-    },
-    {
-      "_class": "swatch",
-      "do_objectID": "",
-      "name": "Additional/Rose/0",
-      "value": {
-        "_class": "color",
-        "red": "0.96471",
-        "green": "0.89804",
-        "blue": "0.92157",
-        "alpha": "1"
-      }
-    },
-    {
-      "_class": "swatch",
-      "do_objectID": "",
-      "name": "Additional/Rose/10",
-      "value": {
-        "_class": "color",
-        "red": "0.93333",
-        "green": "0.81961",
-        "blue": "0.85490",
-        "alpha": "1"
-      }
-    },
-    {
-      "_class": "swatch",
-      "do_objectID": "",
-      "name": "Additional/Rose/20",
-      "value": {
-        "_class": "color",
-        "red": "0.90196",
-        "green": "0.73725",
-        "blue": "0.78824",
-        "alpha": "1"
-      }
-    },
-    {
-      "_class": "swatch",
-      "do_objectID": "",
-      "name": "Additional/Rose/30",
-      "value": {
-        "_class": "color",
-        "red": "0.86667",
-        "green": "0.65882",
-        "blue": "0.72157",
-        "alpha": "1"
-      }
-    },
-    {
-      "_class": "swatch",
-      "do_objectID": "",
-      "name": "Additional/Rose/40",
-      "value": {
-        "_class": "color",
-        "red": "0.83137",
-        "green": "0.58431",
-        "blue": "0.65098",
-        "alpha": "1"
-      }
-    },
-    {
-      "_class": "swatch",
-      "do_objectID": "",
-      "name": "Additional/Rose/50",
-      "value": {
-        "_class": "color",
-        "red": "0.79608",
-        "green": "0.50980",
-        "blue": "0.57647",
-        "alpha": "1"
-      }
-    },
-    {
-      "_class": "swatch",
-      "do_objectID": "",
-      "name": "Additional/Rose/60",
-      "value": {
-        "_class": "color",
-        "red": "0.75686",
-        "green": "0.43529",
-        "blue": "0.50588",
-        "alpha": "1"
-      }
-    },
-    {
-      "_class": "swatch",
-      "do_objectID": "",
-      "name": "Additional/Rose/70",
-      "value": {
-        "_class": "color",
-        "red": "0.64706",
-        "green": "0.33725",
-        "blue": "0.41569",
-        "alpha": "1"
-      }
-    },
-    {
-      "_class": "swatch",
-      "do_objectID": "",
-      "name": "Additional/Rose/80",
-      "value": {
-        "_class": "color",
-        "red": "0.52549",
-        "green": "0.25098",
-        "blue": "0.32941",
-        "alpha": "1"
-      }
-    },
-    {
-      "_class": "swatch",
-      "do_objectID": "",
-      "name": "Additional/Rose/90",
-      "value": {
-        "_class": "color",
-        "red": "0.39608",
-        "green": "0.16863",
-        "blue": "0.24314",
-        "alpha": "1"
-      }
-    },
-    {
-      "_class": "swatch",
-      "do_objectID": "",
-      "name": "Additional/Rose/100",
-      "value": {
-        "_class": "color",
-        "red": "0.31765",
-        "green": "0.12157",
-        "blue": "0.19216",
-        "alpha": "1"
-      }
-    },
-    {
-      "_class": "swatch",
-      "do_objectID": "",
-      "name": "Additional/Lilac/0",
+      "name": "Additional/Brown/0",
       "value": {
         "_class": "color",
         "red": "0.96863",
         "green": "0.93725",
-        "blue": "0.96471",
+        "blue": "0.91765",
         "alpha": "1"
       }
     },
     {
       "_class": "swatch",
       "do_objectID": "",
-      "name": "Additional/Lilac/10",
+      "name": "Additional/Brown/100",
       "value": {
         "_class": "color",
-        "red": "0.93725",
-        "green": "0.89020",
-        "blue": "0.92941",
-        "alpha": "1"
-      }
-    },
-    {
-      "_class": "swatch",
-      "do_objectID": "",
-      "name": "Additional/Lilac/20",
-      "value": {
-        "_class": "color",
-        "red": "0.91765",
-        "green": "0.85098",
-        "blue": "0.90588",
-        "alpha": "1"
-      }
-    },
-    {
-      "_class": "swatch",
-      "do_objectID": "",
-      "name": "Additional/Lilac/30",
-      "value": {
-        "_class": "color",
-        "red": "0.89412",
-        "green": "0.80000",
-        "blue": "0.87843",
-        "alpha": "1"
-      }
-    },
-    {
-      "_class": "swatch",
-      "do_objectID": "",
-      "name": "Additional/Lilac/40",
-      "value": {
-        "_class": "color",
-        "red": "0.83529",
-        "green": "0.70588",
-        "blue": "0.83529",
-        "alpha": "1"
-      }
-    },
-    {
-      "_class": "swatch",
-      "do_objectID": "",
-      "name": "Additional/Lilac/50",
-      "value": {
-        "_class": "color",
-        "red": "0.77255",
-        "green": "0.60784",
-        "blue": "0.79216",
-        "alpha": "1"
-      }
-    },
-    {
-      "_class": "swatch",
-      "do_objectID": "",
-      "name": "Additional/Lilac/60",
-      "value": {
-        "_class": "color",
-        "red": "0.71373",
-        "green": "0.50980",
-        "blue": "0.74118",
-        "alpha": "1"
-      }
-    },
-    {
-      "_class": "swatch",
-      "do_objectID": "",
-      "name": "Additional/Lilac/70",
-      "value": {
-        "_class": "color",
-        "red": "0.61961",
-        "green": "0.41961",
-        "blue": "0.64706",
-        "alpha": "1"
-      }
-    },
-    {
-      "_class": "swatch",
-      "do_objectID": "",
-      "name": "Additional/Lilac/80",
-      "value": {
-        "_class": "color",
-        "red": "0.51765",
-        "green": "0.33333",
-        "blue": "0.54118",
-        "alpha": "1"
-      }
-    },
-    {
-      "_class": "swatch",
-      "do_objectID": "",
-      "name": "Additional/Lilac/90",
-      "value": {
-        "_class": "color",
-        "red": "0.41569",
-        "green": "0.24314",
-        "blue": "0.44314",
-        "alpha": "1"
-      }
-    },
-    {
-      "_class": "swatch",
-      "do_objectID": "",
-      "name": "Additional/Lilac/100",
-      "value": {
-        "_class": "color",
-        "red": "0.31373",
-        "green": "0.15686",
-        "blue": "0.34118",
-        "alpha": "1"
-      }
-    },
-    {
-      "_class": "swatch",
-      "do_objectID": "",
-      "name": "Additional/Pigeon/0",
-      "value": {
-        "_class": "color",
-        "red": "0.91373",
-        "green": "0.92549",
-        "blue": "0.96471",
-        "alpha": "1"
-      }
-    },
-    {
-      "_class": "swatch",
-      "do_objectID": "",
-      "name": "Additional/Pigeon/10",
-      "value": {
-        "_class": "color",
-        "red": "0.84314",
-        "green": "0.86275",
-        "blue": "0.93725",
-        "alpha": "1"
-      }
-    },
-    {
-      "_class": "swatch",
-      "do_objectID": "",
-      "name": "Additional/Pigeon/20",
-      "value": {
-        "_class": "color",
-        "red": "0.77255",
-        "green": "0.80000",
-        "blue": "0.90588",
-        "alpha": "1"
-      }
-    },
-    {
-      "_class": "swatch",
-      "do_objectID": "",
-      "name": "Additional/Pigeon/30",
-      "value": {
-        "_class": "color",
-        "red": "0.70588",
-        "green": "0.73725",
-        "blue": "0.87059",
-        "alpha": "1"
-      }
-    },
-    {
-      "_class": "swatch",
-      "do_objectID": "",
-      "name": "Additional/Pigeon/40",
-      "value": {
-        "_class": "color",
-        "red": "0.63922",
-        "green": "0.67059",
-        "blue": "0.83922",
-        "alpha": "1"
-      }
-    },
-    {
-      "_class": "swatch",
-      "do_objectID": "",
-      "name": "Additional/Pigeon/50",
-      "value": {
-        "_class": "color",
-        "red": "0.57255",
-        "green": "0.60784",
-        "blue": "0.80392",
-        "alpha": "1"
-      }
-    },
-    {
-      "_class": "swatch",
-      "do_objectID": "",
-      "name": "Additional/Pigeon/60",
-      "value": {
-        "_class": "color",
-        "red": "0.50980",
-        "green": "0.54118",
-        "blue": "0.76863",
-        "alpha": "1"
-      }
-    },
-    {
-      "_class": "swatch",
-      "do_objectID": "",
-      "name": "Additional/Pigeon/70",
-      "value": {
-        "_class": "color",
-        "red": "0.42745",
-        "green": "0.43137",
-        "blue": "0.69020",
-        "alpha": "1"
-      }
-    },
-    {
-      "_class": "swatch",
-      "do_objectID": "",
-      "name": "Additional/Pigeon/80",
-      "value": {
-        "_class": "color",
-        "red": "0.37255",
-        "green": "0.35294",
-        "blue": "0.60784",
-        "alpha": "1"
-      }
-    },
-    {
-      "_class": "swatch",
-      "do_objectID": "",
-      "name": "Additional/Pigeon/90",
-      "value": {
-        "_class": "color",
-        "red": "0.32549",
-        "green": "0.27843",
-        "blue": "0.52157",
-        "alpha": "1"
-      }
-    },
-    {
-      "_class": "swatch",
-      "do_objectID": "",
-      "name": "Additional/Pigeon/100",
-      "value": {
-        "_class": "color",
-        "red": "0.27451",
-        "green": "0.21176",
-        "blue": "0.42745",
-        "alpha": "1"
-      }
-    },
-    {
-      "_class": "swatch",
-      "do_objectID": "",
-      "name": "Additional/Neptune/0",
-      "value": {
-        "_class": "color",
-        "red": "0.87059",
-        "green": "0.92941",
-        "blue": "0.92549",
-        "alpha": "1"
-      }
-    },
-    {
-      "_class": "swatch",
-      "do_objectID": "",
-      "name": "Additional/Neptune/10",
-      "value": {
-        "_class": "color",
-        "red": "0.80392",
-        "green": "0.89804",
-        "blue": "0.89804",
-        "alpha": "1"
-      }
-    },
-    {
-      "_class": "swatch",
-      "do_objectID": "",
-      "name": "Additional/Neptune/20",
-      "value": {
-        "_class": "color",
-        "red": "0.73333",
-        "green": "0.87059",
+        "red": "0.95294",
+        "green": "0.90196",
         "blue": "0.86667",
         "alpha": "1"
       }
@@ -1227,96 +687,696 @@
     {
       "_class": "swatch",
       "do_objectID": "",
-      "name": "Additional/Neptune/30",
+      "name": "Additional/Brown/200",
       "value": {
         "_class": "color",
-        "red": "0.66275",
-        "green": "0.83529",
-        "blue": "0.83529",
+        "red": "0.90980",
+        "green": "0.81569",
+        "blue": "0.74902",
         "alpha": "1"
       }
     },
     {
       "_class": "swatch",
       "do_objectID": "",
-      "name": "Additional/Neptune/40",
+      "name": "Additional/Brown/300",
       "value": {
         "_class": "color",
-        "red": "0.59608",
+        "red": "0.85490",
+        "green": "0.70588",
+        "blue": "0.60000",
+        "alpha": "1"
+      }
+    },
+    {
+      "_class": "swatch",
+      "do_objectID": "",
+      "name": "Additional/Brown/400",
+      "value": {
+        "_class": "color",
+        "red": "0.78824",
+        "green": "0.61569",
+        "blue": "0.49020",
+        "alpha": "1"
+      }
+    },
+    {
+      "_class": "swatch",
+      "do_objectID": "",
+      "name": "Additional/Brown/500",
+      "value": {
+        "_class": "color",
+        "red": "0.65882",
+        "green": "0.51373",
+        "blue": "0.41176",
+        "alpha": "1"
+      }
+    },
+    {
+      "_class": "swatch",
+      "do_objectID": "",
+      "name": "Additional/Brown/600",
+      "value": {
+        "_class": "color",
+        "red": "0.54118",
+        "green": "0.42353",
+        "blue": "0.33725",
+        "alpha": "1"
+      }
+    },
+    {
+      "_class": "swatch",
+      "do_objectID": "",
+      "name": "Additional/Brown/700",
+      "value": {
+        "_class": "color",
+        "red": "0.44706",
+        "green": "0.34902",
+        "blue": "0.27843",
+        "alpha": "1"
+      }
+    },
+    {
+      "_class": "swatch",
+      "do_objectID": "",
+      "name": "Additional/Brown/800",
+      "value": {
+        "_class": "color",
+        "red": "0.35686",
+        "green": "0.27843",
+        "blue": "0.22353",
+        "alpha": "1"
+      }
+    },
+    {
+      "_class": "swatch",
+      "do_objectID": "",
+      "name": "Additional/Brown/900",
+      "value": {
+        "_class": "color",
+        "red": "0.27059",
+        "green": "0.21176",
+        "blue": "0.16863",
+        "alpha": "1"
+      }
+    },
+    {
+      "_class": "swatch",
+      "do_objectID": "",
+      "name": "Additional/Brown/Tint",
+      "value": {
+        "_class": "color",
+        "red": "1.00000",
+        "green": "0.96471",
+        "blue": "0.94118",
+        "alpha": "1"
+      }
+    },
+    {
+      "_class": "swatch",
+      "do_objectID": "",
+      "name": "Additional/Brown/Shade",
+      "value": {
+        "_class": "color",
+        "red": "0.20000",
+        "green": "0.08235",
+        "blue": "0.00000",
+        "alpha": "1"
+      }
+    },
+    {
+      "_class": "swatch",
+      "do_objectID": "",
+      "name": "Additional/Pink/0",
+      "value": {
+        "_class": "color",
+        "red": "0.96471",
+        "green": "0.89020",
+        "blue": "0.92549",
+        "alpha": "1"
+      }
+    },
+    {
+      "_class": "swatch",
+      "do_objectID": "",
+      "name": "Additional/Pink/100",
+      "value": {
+        "_class": "color",
+        "red": "0.96471",
+        "green": "0.89020",
+        "blue": "0.92549",
+        "alpha": "1"
+      }
+    },
+    {
+      "_class": "swatch",
+      "do_objectID": "",
+      "name": "Additional/Pink/200",
+      "value": {
+        "_class": "color",
+        "red": "0.93725",
         "green": "0.79608",
-        "blue": "0.80392",
+        "blue": "0.85882",
         "alpha": "1"
       }
     },
     {
       "_class": "swatch",
       "do_objectID": "",
-      "name": "Additional/Neptune/50",
+      "name": "Additional/Pink/300",
       "value": {
         "_class": "color",
-        "red": "0.53333",
-        "green": "0.75294",
-        "blue": "0.76863",
+        "red": "0.89804",
+        "green": "0.67059",
+        "blue": "0.77255",
         "alpha": "1"
       }
     },
     {
       "_class": "swatch",
       "do_objectID": "",
-      "name": "Additional/Neptune/60",
+      "name": "Additional/Pink/400",
       "value": {
         "_class": "color",
-        "red": "0.46667",
+        "red": "0.86275",
+        "green": "0.56078",
+        "blue": "0.69804",
+        "alpha": "1"
+      }
+    },
+    {
+      "_class": "swatch",
+      "do_objectID": "",
+      "name": "Additional/Pink/500",
+      "value": {
+        "_class": "color",
+        "red": "0.81569",
+        "green": "0.41176",
+        "blue": "0.59608",
+        "alpha": "1"
+      }
+    },
+    {
+      "_class": "swatch",
+      "do_objectID": "",
+      "name": "Additional/Pink/600",
+      "value": {
+        "_class": "color",
+        "red": "0.76078",
+        "green": "0.25490",
+        "blue": "0.48627",
+        "alpha": "1"
+      }
+    },
+    {
+      "_class": "swatch",
+      "do_objectID": "",
+      "name": "Additional/Pink/700",
+      "value": {
+        "_class": "color",
+        "red": "0.63137",
+        "green": "0.21176",
+        "blue": "0.40392",
+        "alpha": "1"
+      }
+    },
+    {
+      "_class": "swatch",
+      "do_objectID": "",
+      "name": "Additional/Pink/800",
+      "value": {
+        "_class": "color",
+        "red": "0.50588",
+        "green": "0.17255",
+        "blue": "0.32549",
+        "alpha": "1"
+      }
+    },
+    {
+      "_class": "swatch",
+      "do_objectID": "",
+      "name": "Additional/Pink/900",
+      "value": {
+        "_class": "color",
+        "red": "0.38824",
+        "green": "0.12941",
+        "blue": "0.24706",
+        "alpha": "1"
+      }
+    },
+    {
+      "_class": "swatch",
+      "do_objectID": "",
+      "name": "Additional/Pink/Tint",
+      "value": {
+        "_class": "color",
+        "red": "1.00000",
+        "green": "0.94118",
+        "blue": "0.96863",
+        "alpha": "1"
+      }
+    },
+    {
+      "_class": "swatch",
+      "do_objectID": "",
+      "name": "Additional/Pink/Shade",
+      "value": {
+        "_class": "color",
+        "red": "0.20000",
+        "green": "0.00000",
+        "blue": "0.09020",
+        "alpha": "1"
+      }
+    },
+    {
+      "_class": "swatch",
+      "do_objectID": "",
+      "name": "Additional/Purple/0",
+      "value": {
+        "_class": "color",
+        "red": "0.96471",
+        "green": "0.93333",
+        "blue": "0.96863",
+        "alpha": "1"
+      }
+    },
+    {
+      "_class": "swatch",
+      "do_objectID": "",
+      "name": "Additional/Purple/100",
+      "value": {
+        "_class": "color",
+        "red": "0.94118",
+        "green": "0.89412",
+        "blue": "0.94902",
+        "alpha": "1"
+      }
+    },
+    {
+      "_class": "swatch",
+      "do_objectID": "",
+      "name": "Additional/Purple/200",
+      "value": {
+        "_class": "color",
+        "red": "0.89804",
+        "green": "0.80392",
+        "blue": "0.90588",
+        "alpha": "1"
+      }
+    },
+    {
+      "_class": "swatch",
+      "do_objectID": "",
+      "name": "Additional/Purple/300",
+      "value": {
+        "_class": "color",
+        "red": "0.83922",
+        "green": "0.68627",
+        "blue": "0.84706",
+        "alpha": "1"
+      }
+    },
+    {
+      "_class": "swatch",
+      "do_objectID": "",
+      "name": "Additional/Purple/400",
+      "value": {
+        "_class": "color",
+        "red": "0.79216",
+        "green": "0.58039",
+        "blue": "0.78824",
+        "alpha": "1"
+      }
+    },
+    {
+      "_class": "swatch",
+      "do_objectID": "",
+      "name": "Additional/Purple/500",
+      "value": {
+        "_class": "color",
+        "red": "0.73333",
+        "green": "0.44314",
+        "blue": "0.71765",
+        "alpha": "1"
+      }
+    },
+    {
+      "_class": "swatch",
+      "do_objectID": "",
+      "name": "Additional/Purple/600",
+      "value": {
+        "_class": "color",
+        "red": "0.67843",
+        "green": "0.30196",
+        "blue": "0.64314",
+        "alpha": "1"
+      }
+    },
+    {
+      "_class": "swatch",
+      "do_objectID": "",
+      "name": "Additional/Purple/700",
+      "value": {
+        "_class": "color",
+        "red": "0.61176",
+        "green": "0.19216",
+        "blue": "0.56078",
+        "alpha": "1"
+      }
+    },
+    {
+      "_class": "swatch",
+      "do_objectID": "",
+      "name": "Additional/Purple/800",
+      "value": {
+        "_class": "color",
+        "red": "0.49804",
+        "green": "0.14902",
+        "blue": "0.44314",
+        "alpha": "1"
+      }
+    },
+    {
+      "_class": "swatch",
+      "do_objectID": "",
+      "name": "Additional/Purple/900",
+      "value": {
+        "_class": "color",
+        "red": "0.38431",
+        "green": "0.11373",
+        "blue": "0.32941",
+        "alpha": "1"
+      }
+    },
+    {
+      "_class": "swatch",
+      "do_objectID": "",
+      "name": "Additional/Purple/Tint",
+      "value": {
+        "_class": "color",
+        "red": "1.00000",
+        "green": "0.94118",
+        "blue": "0.99216",
+        "alpha": "1"
+      }
+    },
+    {
+      "_class": "swatch",
+      "do_objectID": "",
+      "name": "Additional/Purple/Shade",
+      "value": {
+        "_class": "color",
+        "red": "0.20000",
+        "green": "0.00000",
+        "blue": "0.18039",
+        "alpha": "1"
+      }
+    },
+    {
+      "_class": "swatch",
+      "do_objectID": "",
+      "name": "Additional/Violet/0",
+      "value": {
+        "_class": "color",
+        "red": "0.94902",
+        "green": "0.94118",
+        "blue": "0.96863",
+        "alpha": "1"
+      }
+    },
+    {
+      "_class": "swatch",
+      "do_objectID": "",
+      "name": "Additional/Violet/100",
+      "value": {
+        "_class": "color",
+        "red": "0.91765",
+        "green": "0.90196",
+        "blue": "0.94902",
+        "alpha": "1"
+      }
+    },
+    {
+      "_class": "swatch",
+      "do_objectID": "",
+      "name": "Additional/Violet/200",
+      "value": {
+        "_class": "color",
+        "red": "0.84314",
+        "green": "0.81961",
+        "blue": "0.90588",
+        "alpha": "1"
+      }
+    },
+    {
+      "_class": "swatch",
+      "do_objectID": "",
+      "name": "Additional/Violet/300",
+      "value": {
+        "_class": "color",
+        "red": "0.75294",
+        "green": "0.71765",
+        "blue": "0.85490",
+        "alpha": "1"
+      }
+    },
+    {
+      "_class": "swatch",
+      "do_objectID": "",
+      "name": "Additional/Violet/400",
+      "value": {
+        "_class": "color",
+        "red": "0.67059",
+        "green": "0.62353",
+        "blue": "0.80784",
+        "alpha": "1"
+      }
+    },
+    {
+      "_class": "swatch",
+      "do_objectID": "",
+      "name": "Additional/Violet/500",
+      "value": {
+        "_class": "color",
+        "red": "0.56863",
+        "green": "0.50980",
+        "blue": "0.74902",
+        "alpha": "1"
+      }
+    },
+    {
+      "_class": "swatch",
+      "do_objectID": "",
+      "name": "Additional/Violet/600",
+      "value": {
+        "_class": "color",
+        "red": "0.47451",
+        "green": "0.40000",
+        "blue": "0.69020",
+        "alpha": "1"
+      }
+    },
+    {
+      "_class": "swatch",
+      "do_objectID": "",
+      "name": "Additional/Violet/700",
+      "value": {
+        "_class": "color",
+        "red": "0.39608",
+        "green": "0.31765",
+        "blue": "0.62353",
+        "alpha": "1"
+      }
+    },
+    {
+      "_class": "swatch",
+      "do_objectID": "",
+      "name": "Additional/Violet/800",
+      "value": {
+        "_class": "color",
+        "red": "0.31765",
+        "green": "0.25490",
+        "blue": "0.49804",
+        "alpha": "1"
+      }
+    },
+    {
+      "_class": "swatch",
+      "do_objectID": "",
+      "name": "Additional/Violet/900",
+      "value": {
+        "_class": "color",
+        "red": "0.24314",
+        "green": "0.19216",
+        "blue": "0.38039",
+        "alpha": "1"
+      }
+    },
+    {
+      "_class": "swatch",
+      "do_objectID": "",
+      "name": "Additional/Violet/Tint",
+      "value": {
+        "_class": "color",
+        "red": "0.95686",
+        "green": "0.94118",
+        "blue": "1.00000",
+        "alpha": "1"
+      }
+    },
+    {
+      "_class": "swatch",
+      "do_objectID": "",
+      "name": "Additional/Violet/Shade",
+      "value": {
+        "_class": "color",
+        "red": "0.05098",
+        "green": "0.00000",
+        "blue": "0.20000",
+        "alpha": "1"
+      }
+    },
+    {
+      "_class": "swatch",
+      "do_objectID": "",
+      "name": "Additional/Teal/0",
+      "value": {
+        "_class": "color",
+        "red": "0.88627",
+        "green": "0.95686",
+        "blue": "0.96471",
+        "alpha": "1"
+      }
+    },
+    {
+      "_class": "swatch",
+      "do_objectID": "",
+      "name": "Additional/Teal/100",
+      "value": {
+        "_class": "color",
+        "red": "0.81569",
+        "green": "0.93333",
+        "blue": "0.94510",
+        "alpha": "1"
+      }
+    },
+    {
+      "_class": "swatch",
+      "do_objectID": "",
+      "name": "Additional/Teal/200",
+      "value": {
+        "_class": "color",
+        "red": "0.65098",
+        "green": "0.87059",
+        "blue": "0.89412",
+        "alpha": "1"
+      }
+    },
+    {
+      "_class": "swatch",
+      "do_objectID": "",
+      "name": "Additional/Teal/300",
+      "value": {
+        "_class": "color",
+        "red": "0.42745",
+        "green": "0.78824",
+        "blue": "0.82745",
+        "alpha": "1"
+      }
+    },
+    {
+      "_class": "swatch",
+      "do_objectID": "",
+      "name": "Additional/Teal/400",
+      "value": {
+        "_class": "color",
+        "red": "0.21569",
         "green": "0.71373",
-        "blue": "0.73333",
+        "blue": "0.76078",
         "alpha": "1"
       }
     },
     {
       "_class": "swatch",
       "do_objectID": "",
-      "name": "Additional/Neptune/70",
+      "name": "Additional/Teal/500",
       "value": {
         "_class": "color",
-        "red": "0.40000",
-        "green": "0.64706",
-        "blue": "0.65882",
+        "red": "0.10980",
+        "green": "0.60000",
+        "blue": "0.64706",
         "alpha": "1"
       }
     },
     {
       "_class": "swatch",
       "do_objectID": "",
-      "name": "Additional/Neptune/80",
+      "name": "Additional/Teal/600",
       "value": {
         "_class": "color",
-        "red": "0.34118",
-        "green": "0.57255",
-        "blue": "0.57255",
+        "red": "0.09020",
+        "green": "0.49412",
+        "blue": "0.53333",
         "alpha": "1"
       }
     },
     {
       "_class": "swatch",
       "do_objectID": "",
-      "name": "Additional/Neptune/90",
+      "name": "Additional/Teal/700",
       "value": {
         "_class": "color",
-        "red": "0.29020",
-        "green": "0.48235",
-        "blue": "0.47843",
+        "red": "0.07451",
+        "green": "0.40784",
+        "blue": "0.44314",
         "alpha": "1"
       }
     },
     {
       "_class": "swatch",
       "do_objectID": "",
-      "name": "Additional/Neptune/100",
+      "name": "Additional/Teal/800",
       "value": {
         "_class": "color",
-        "red": "0.24706",
-        "green": "0.38039",
-        "blue": "0.37647",
+        "red": "0.05882",
+        "green": "0.32549",
+        "blue": "0.35294",
+        "alpha": "1"
+      }
+    },
+    {
+      "_class": "swatch",
+      "do_objectID": "",
+      "name": "Additional/Teal/900",
+      "value": {
+        "_class": "color",
+        "red": "0.04706",
+        "green": "0.24706",
+        "blue": "0.27059",
+        "alpha": "1"
+      }
+    },
+    {
+      "_class": "swatch",
+      "do_objectID": "",
+      "name": "Additional/Teal/Tint",
+      "value": {
+        "_class": "color",
+        "red": "0.94118",
+        "green": "0.99608",
+        "blue": "1.00000",
+        "alpha": "1"
+      }
+    },
+    {
+      "_class": "swatch",
+      "do_objectID": "",
+      "name": "Additional/Teal/Shade",
+      "value": {
+        "_class": "color",
+        "red": "0.00000",
+        "green": "0.18431",
+        "blue": "0.20000",
         "alpha": "1"
       }
     },
@@ -1328,115 +1388,7 @@
         "_class": "color",
         "red": "0.92549",
         "green": "0.95294",
-        "blue": "0.90588",
-        "alpha": "1"
-      }
-    },
-    {
-      "_class": "swatch",
-      "do_objectID": "",
-      "name": "Additional/Olive/10",
-      "value": {
-        "_class": "color",
-        "red": "0.86275",
-        "green": "0.90980",
-        "blue": "0.83137",
-        "alpha": "1"
-      }
-    },
-    {
-      "_class": "swatch",
-      "do_objectID": "",
-      "name": "Additional/Olive/20",
-      "value": {
-        "_class": "color",
-        "red": "0.80000",
-        "green": "0.87059",
-        "blue": "0.76078",
-        "alpha": "1"
-      }
-    },
-    {
-      "_class": "swatch",
-      "do_objectID": "",
-      "name": "Additional/Olive/30",
-      "value": {
-        "_class": "color",
-        "red": "0.73333",
-        "green": "0.82745",
-        "blue": "0.68627",
-        "alpha": "1"
-      }
-    },
-    {
-      "_class": "swatch",
-      "do_objectID": "",
-      "name": "Additional/Olive/40",
-      "value": {
-        "_class": "color",
-        "red": "0.66667",
-        "green": "0.78431",
-        "blue": "0.61569",
-        "alpha": "1"
-      }
-    },
-    {
-      "_class": "swatch",
-      "do_objectID": "",
-      "name": "Additional/Olive/50",
-      "value": {
-        "_class": "color",
-        "red": "0.60000",
-        "green": "0.74118",
-        "blue": "0.54510",
-        "alpha": "1"
-      }
-    },
-    {
-      "_class": "swatch",
-      "do_objectID": "",
-      "name": "Additional/Olive/60",
-      "value": {
-        "_class": "color",
-        "red": "0.53333",
-        "green": "0.69412",
-        "blue": "0.47451",
-        "alpha": "1"
-      }
-    },
-    {
-      "_class": "swatch",
-      "do_objectID": "",
-      "name": "Additional/Olive/70",
-      "value": {
-        "_class": "color",
-        "red": "0.43922",
-        "green": "0.58824",
-        "blue": "0.37647",
-        "alpha": "1"
-      }
-    },
-    {
-      "_class": "swatch",
-      "do_objectID": "",
-      "name": "Additional/Olive/80",
-      "value": {
-        "_class": "color",
-        "red": "0.34902",
-        "green": "0.47451",
-        "blue": "0.28627",
-        "alpha": "1"
-      }
-    },
-    {
-      "_class": "swatch",
-      "do_objectID": "",
-      "name": "Additional/Olive/90",
-      "value": {
-        "_class": "color",
-        "red": "0.25882",
-        "green": "0.35686",
-        "blue": "0.20000",
+        "blue": "0.91373",
         "alpha": "1"
       }
     },
@@ -1446,141 +1398,129 @@
       "name": "Additional/Olive/100",
       "value": {
         "_class": "color",
-        "red": "0.19216",
-        "green": "0.27843",
-        "blue": "0.14118",
+        "red": "0.87843",
+        "green": "0.92549",
+        "blue": "0.86275",
         "alpha": "1"
       }
     },
     {
       "_class": "swatch",
       "do_objectID": "",
-      "name": "Additional/Teal/0",
+      "name": "Additional/Olive/200",
       "value": {
         "_class": "color",
-        "red": "0.84314",
-        "green": "0.96471",
-        "blue": "0.95686",
+        "red": "0.77255",
+        "green": "0.85882",
+        "blue": "0.74118",
         "alpha": "1"
       }
     },
     {
       "_class": "swatch",
       "do_objectID": "",
-      "name": "Additional/Teal/10",
+      "name": "Additional/Olive/300",
       "value": {
         "_class": "color",
-        "red": "0.84314",
-        "green": "0.96471",
-        "blue": "0.95686",
+        "red": "0.63922",
+        "green": "0.77255",
+        "blue": "0.58824",
         "alpha": "1"
       }
     },
     {
       "_class": "swatch",
       "do_objectID": "",
-      "name": "Additional/Teal/20",
+      "name": "Additional/Olive/400",
       "value": {
         "_class": "color",
-        "red": "0.59608",
-        "green": "0.89412",
-        "blue": "0.89412",
+        "red": "0.51765",
+        "green": "0.69804",
+        "blue": "0.45490",
         "alpha": "1"
       }
     },
     {
       "_class": "swatch",
       "do_objectID": "",
-      "name": "Additional/Teal/30",
+      "name": "Additional/Olive/500",
       "value": {
         "_class": "color",
-        "red": "0.47451",
-        "green": "0.85098",
-        "blue": "0.85882",
+        "red": "0.41569",
+        "green": "0.58824",
+        "blue": "0.35686",
         "alpha": "1"
       }
     },
     {
       "_class": "swatch",
       "do_objectID": "",
-      "name": "Additional/Teal/40",
+      "name": "Additional/Olive/600",
       "value": {
         "_class": "color",
-        "red": "0.36078",
-        "green": "0.80000",
-        "blue": "0.81569",
+        "red": "0.34118",
+        "green": "0.48235",
+        "blue": "0.29020",
         "alpha": "1"
       }
     },
     {
       "_class": "swatch",
       "do_objectID": "",
-      "name": "Additional/Teal/50",
+      "name": "Additional/Olive/700",
       "value": {
         "_class": "color",
-        "red": "0.24314",
-        "green": "0.74118",
-        "blue": "0.77255",
+        "red": "0.28235",
+        "green": "0.40000",
+        "blue": "0.23922",
         "alpha": "1"
       }
     },
     {
       "_class": "swatch",
       "do_objectID": "",
-      "name": "Additional/Teal/60",
+      "name": "Additional/Olive/800",
       "value": {
         "_class": "color",
-        "red": "0.13333",
-        "green": "0.67843",
-        "blue": "0.72549",
+        "red": "0.22745",
+        "green": "0.32157",
+        "blue": "0.19216",
         "alpha": "1"
       }
     },
     {
       "_class": "swatch",
       "do_objectID": "",
-      "name": "Additional/Teal/70",
+      "name": "Additional/Olive/900",
       "value": {
         "_class": "color",
-        "red": "0.07059",
-        "green": "0.61176",
-        "blue": "0.63922",
+        "red": "0.17255",
+        "green": "0.24314",
+        "blue": "0.14510",
         "alpha": "1"
       }
     },
     {
       "_class": "swatch",
       "do_objectID": "",
-      "name": "Additional/Teal/80",
+      "name": "Additional/Olive/Tint",
       "value": {
         "_class": "color",
-        "red": "0.02353",
-        "green": "0.52941",
-        "blue": "0.53333",
+        "red": "0.95686",
+        "green": "1.00000",
+        "blue": "0.94118",
         "alpha": "1"
       }
     },
     {
       "_class": "swatch",
       "do_objectID": "",
-      "name": "Additional/Teal/90",
+      "name": "Additional/Olive/Shade",
       "value": {
         "_class": "color",
-        "red": "0.00000",
-        "green": "0.41176",
-        "blue": "0.40392",
-        "alpha": "1"
-      }
-    },
-    {
-      "_class": "swatch",
-      "do_objectID": "",
-      "name": "Additional/Teal/100",
-      "value": {
-        "_class": "color",
-        "red": "0.00000",
-        "green": "0.33725",
-        "blue": "0.31765",
+        "red": "0.05490",
+        "green": "0.20000",
+        "blue": "0.00000",
         "alpha": "1"
       }
     },
@@ -1591,116 +1531,8 @@
       "value": {
         "_class": "color",
         "red": "1.00000",
-        "green": "0.98824",
-        "blue": "0.87451",
-        "alpha": "1"
-      }
-    },
-    {
-      "_class": "swatch",
-      "do_objectID": "",
-      "name": "Additional/Orange/10",
-      "value": {
-        "_class": "color",
-        "red": "1.00000",
-        "green": "0.95686",
-        "blue": "0.77647",
-        "alpha": "1"
-      }
-    },
-    {
-      "_class": "swatch",
-      "do_objectID": "",
-      "name": "Additional/Orange/20",
-      "value": {
-        "_class": "color",
-        "red": "1.00000",
-        "green": "0.91373",
-        "blue": "0.68235",
-        "alpha": "1"
-      }
-    },
-    {
-      "_class": "swatch",
-      "do_objectID": "",
-      "name": "Additional/Orange/30",
-      "value": {
-        "_class": "color",
-        "red": "1.00000",
-        "green": "0.85490",
-        "blue": "0.59216",
-        "alpha": "1"
-      }
-    },
-    {
-      "_class": "swatch",
-      "do_objectID": "",
-      "name": "Additional/Orange/40",
-      "value": {
-        "_class": "color",
-        "red": "1.00000",
-        "green": "0.78039",
-        "blue": "0.50196",
-        "alpha": "1"
-      }
-    },
-    {
-      "_class": "swatch",
-      "do_objectID": "",
-      "name": "Additional/Orange/50",
-      "value": {
-        "_class": "color",
-        "red": "1.00000",
-        "green": "0.69804",
-        "blue": "0.41569",
-        "alpha": "1"
-      }
-    },
-    {
-      "_class": "swatch",
-      "do_objectID": "",
-      "name": "Additional/Orange/60",
-      "value": {
-        "_class": "color",
-        "red": "0.98824",
-        "green": "0.60392",
-        "blue": "0.33333",
-        "alpha": "1"
-      }
-    },
-    {
-      "_class": "swatch",
-      "do_objectID": "",
-      "name": "Additional/Orange/70",
-      "value": {
-        "_class": "color",
-        "red": "0.87451",
-        "green": "0.42745",
-        "blue": "0.24706",
-        "alpha": "1"
-      }
-    },
-    {
-      "_class": "swatch",
-      "do_objectID": "",
-      "name": "Additional/Orange/80",
-      "value": {
-        "_class": "color",
-        "red": "0.68235",
-        "green": "0.27451",
-        "blue": "0.10980",
-        "alpha": "1"
-      }
-    },
-    {
-      "_class": "swatch",
-      "do_objectID": "",
-      "name": "Additional/Orange/90",
-      "value": {
-        "_class": "color",
-        "red": "0.59216",
-        "green": "0.19608",
-        "blue": "0.03529",
+        "green": "0.93333",
+        "blue": "0.86667",
         "alpha": "1"
       }
     },
@@ -1710,9 +1542,129 @@
       "name": "Additional/Orange/100",
       "value": {
         "_class": "color",
-        "red": "0.49020",
-        "green": "0.12157",
-        "blue": "0.03529",
+        "red": "1.00000",
+        "green": "0.89020",
+        "blue": "0.78824",
+        "alpha": "1"
+      }
+    },
+    {
+      "_class": "swatch",
+      "do_objectID": "",
+      "name": "Additional/Orange/200",
+      "value": {
+        "_class": "color",
+        "red": "1.00000",
+        "green": "0.78824",
+        "blue": "0.59608",
+        "alpha": "1"
+      }
+    },
+    {
+      "_class": "swatch",
+      "do_objectID": "",
+      "name": "Additional/Orange/300",
+      "value": {
+        "_class": "color",
+        "red": "1.00000",
+        "green": "0.64706",
+        "blue": "0.33725",
+        "alpha": "1"
+      }
+    },
+    {
+      "_class": "swatch",
+      "do_objectID": "",
+      "name": "Additional/Orange/400",
+      "value": {
+        "_class": "color",
+        "red": "1.00000",
+        "green": "0.49804",
+        "blue": "0.12157",
+        "alpha": "1"
+      }
+    },
+    {
+      "_class": "swatch",
+      "do_objectID": "",
+      "name": "Additional/Orange/500",
+      "value": {
+        "_class": "color",
+        "red": "0.88627",
+        "green": "0.40000",
+        "blue": "0.09020",
+        "alpha": "1"
+      }
+    },
+    {
+      "_class": "swatch",
+      "do_objectID": "",
+      "name": "Additional/Orange/600",
+      "value": {
+        "_class": "color",
+        "red": "0.73333",
+        "green": "0.32549",
+        "blue": "0.07451",
+        "alpha": "1"
+      }
+    },
+    {
+      "_class": "swatch",
+      "do_objectID": "",
+      "name": "Additional/Orange/700",
+      "value": {
+        "_class": "color",
+        "red": "0.61176",
+        "green": "0.26667",
+        "blue": "0.06275",
+        "alpha": "1"
+      }
+    },
+    {
+      "_class": "swatch",
+      "do_objectID": "",
+      "name": "Additional/Orange/800",
+      "value": {
+        "_class": "color",
+        "red": "0.49412",
+        "green": "0.21176",
+        "blue": "0.04706",
+        "alpha": "1"
+      }
+    },
+    {
+      "_class": "swatch",
+      "do_objectID": "",
+      "name": "Additional/Orange/900",
+      "value": {
+        "_class": "color",
+        "red": "0.37647",
+        "green": "0.16078",
+        "blue": "0.03922",
+        "alpha": "1"
+      }
+    },
+    {
+      "_class": "swatch",
+      "do_objectID": "",
+      "name": "Additional/Orange/Tint",
+      "value": {
+        "_class": "color",
+        "red": "1.00000",
+        "green": "0.96471",
+        "blue": "0.94118",
+        "alpha": "1"
+      }
+    },
+    {
+      "_class": "swatch",
+      "do_objectID": "",
+      "name": "Additional/Orange/Shade",
+      "value": {
+        "_class": "color",
+        "red": "0.20000",
+        "green": "0.08627",
+        "blue": "0.00000",
         "alpha": "1"
       }
     },
@@ -1722,117 +1674,9 @@
       "name": "Additional/Red/0",
       "value": {
         "_class": "color",
-        "red": "1.00000",
-        "green": "0.77255",
-        "blue": "0.79608",
-        "alpha": "1"
-      }
-    },
-    {
-      "_class": "swatch",
-      "do_objectID": "",
-      "name": "Additional/Red/10",
-      "value": {
-        "_class": "color",
-        "red": "1.00000",
-        "green": "0.66667",
-        "blue": "0.71373",
-        "alpha": "1"
-      }
-    },
-    {
-      "_class": "swatch",
-      "do_objectID": "",
-      "name": "Additional/Red/20",
-      "value": {
-        "_class": "color",
         "red": "0.99608",
-        "green": "0.58039",
-        "blue": "0.64706",
-        "alpha": "1"
-      }
-    },
-    {
-      "_class": "swatch",
-      "do_objectID": "",
-      "name": "Additional/Red/30",
-      "value": {
-        "_class": "color",
-        "red": "0.97647",
-        "green": "0.50196",
-        "blue": "0.57647",
-        "alpha": "1"
-      }
-    },
-    {
-      "_class": "swatch",
-      "do_objectID": "",
-      "name": "Additional/Red/40",
-      "value": {
-        "_class": "color",
-        "red": "0.95294",
-        "green": "0.41569",
-        "blue": "0.50196",
-        "alpha": "1"
-      }
-    },
-    {
-      "_class": "swatch",
-      "do_objectID": "",
-      "name": "Additional/Red/50",
-      "value": {
-        "_class": "color",
-        "red": "0.93725",
-        "green": "0.33333",
-        "blue": "0.43137",
-        "alpha": "1"
-      }
-    },
-    {
-      "_class": "swatch",
-      "do_objectID": "",
-      "name": "Additional/Red/60",
-      "value": {
-        "_class": "color",
-        "red": "0.92941",
-        "green": "0.25882",
-        "blue": "0.35686",
-        "alpha": "1"
-      }
-    },
-    {
-      "_class": "swatch",
-      "do_objectID": "",
-      "name": "Additional/Red/70",
-      "value": {
-        "_class": "color",
-        "red": "0.84706",
-        "green": "0.16471",
-        "blue": "0.28235",
-        "alpha": "1"
-      }
-    },
-    {
-      "_class": "swatch",
-      "do_objectID": "",
-      "name": "Additional/Red/80",
-      "value": {
-        "_class": "color",
-        "red": "0.76471",
-        "green": "0.10980",
-        "blue": "0.23137",
-        "alpha": "1"
-      }
-    },
-    {
-      "_class": "swatch",
-      "do_objectID": "",
-      "name": "Additional/Red/90",
-      "value": {
-        "_class": "color",
-        "red": "0.67843",
-        "green": "0.05882",
-        "blue": "0.19216",
+        "green": "0.92941",
+        "blue": "0.92157",
         "alpha": "1"
       }
     },
@@ -1842,9 +1686,129 @@
       "name": "Additional/Red/100",
       "value": {
         "_class": "color",
-        "red": "0.60000",
+        "red": "0.99608",
+        "green": "0.88627",
+        "blue": "0.87451",
+        "alpha": "1"
+      }
+    },
+    {
+      "_class": "swatch",
+      "do_objectID": "",
+      "name": "Additional/Red/200",
+      "value": {
+        "_class": "color",
+        "red": "0.99608",
+        "green": "0.78431",
+        "blue": "0.76078",
+        "alpha": "1"
+      }
+    },
+    {
+      "_class": "swatch",
+      "do_objectID": "",
+      "name": "Additional/Red/300",
+      "value": {
+        "_class": "color",
+        "red": "0.99216",
+        "green": "0.64314",
+        "blue": "0.61569",
+        "alpha": "1"
+      }
+    },
+    {
+      "_class": "swatch",
+      "do_objectID": "",
+      "name": "Additional/Red/400",
+      "value": {
+        "_class": "color",
+        "red": "0.99216",
+        "green": "0.50588",
+        "blue": "0.47843",
+        "alpha": "1"
+      }
+    },
+    {
+      "_class": "swatch",
+      "do_objectID": "",
+      "name": "Additional/Red/500",
+      "value": {
+        "_class": "color",
+        "red": "0.99608",
+        "green": "0.27059",
+        "blue": "0.26275",
+        "alpha": "1"
+      }
+    },
+    {
+      "_class": "swatch",
+      "do_objectID": "",
+      "name": "Additional/Red/600",
+      "value": {
+        "_class": "color",
+        "red": "0.90196",
         "green": "0.00000",
-        "blue": "0.14118",
+        "blue": "0.12941",
+        "alpha": "1"
+      }
+    },
+    {
+      "_class": "swatch",
+      "do_objectID": "",
+      "name": "Additional/Red/700",
+      "value": {
+        "_class": "color",
+        "red": "0.75686",
+        "green": "0.00000",
+        "blue": "0.10980",
+        "alpha": "1"
+      }
+    },
+    {
+      "_class": "swatch",
+      "do_objectID": "",
+      "name": "Additional/Red/800",
+      "value": {
+        "_class": "color",
+        "red": "0.61176",
+        "green": "0.00000",
+        "blue": "0.09412",
+        "alpha": "1"
+      }
+    },
+    {
+      "_class": "swatch",
+      "do_objectID": "",
+      "name": "Additional/Red/900",
+      "value": {
+        "_class": "color",
+        "red": "0.47059",
+        "green": "0.00784",
+        "blue": "0.07843",
+        "alpha": "1"
+      }
+    },
+    {
+      "_class": "swatch",
+      "do_objectID": "",
+      "name": "Additional/Red/Tint",
+      "value": {
+        "_class": "color",
+        "red": "1.00000",
+        "green": "0.94118",
+        "blue": "0.94902",
+        "alpha": "1"
+      }
+    },
+    {
+      "_class": "swatch",
+      "do_objectID": "",
+      "name": "Additional/Red/Shade",
+      "value": {
+        "_class": "color",
+        "red": "0.20000",
+        "green": "0.00000",
+        "blue": "0.03137",
         "alpha": "1"
       }
     },
@@ -1854,117 +1818,9 @@
       "name": "Additional/Blue/0",
       "value": {
         "_class": "color",
-        "red": "0.83922",
-        "green": "0.97255",
+        "red": "0.90588",
+        "green": "0.94902",
         "blue": "1.00000",
-        "alpha": "1"
-      }
-    },
-    {
-      "_class": "swatch",
-      "do_objectID": "",
-      "name": "Additional/Blue/10",
-      "value": {
-        "_class": "color",
-        "red": "0.70980",
-        "green": "0.92157",
-        "blue": "1.00000",
-        "alpha": "1"
-      }
-    },
-    {
-      "_class": "swatch",
-      "do_objectID": "",
-      "name": "Additional/Blue/20",
-      "value": {
-        "_class": "color",
-        "red": "0.58431",
-        "green": "0.85490",
-        "blue": "1.00000",
-        "alpha": "1"
-      }
-    },
-    {
-      "_class": "swatch",
-      "do_objectID": "",
-      "name": "Additional/Blue/30",
-      "value": {
-        "_class": "color",
-        "red": "0.46667",
-        "green": "0.76863",
-        "blue": "1.00000",
-        "alpha": "1"
-      }
-    },
-    {
-      "_class": "swatch",
-      "do_objectID": "",
-      "name": "Additional/Blue/40",
-      "value": {
-        "_class": "color",
-        "red": "0.34902",
-        "green": "0.66667",
-        "blue": "1.00000",
-        "alpha": "1"
-      }
-    },
-    {
-      "_class": "swatch",
-      "do_objectID": "",
-      "name": "Additional/Blue/50",
-      "value": {
-        "_class": "color",
-        "red": "0.23922",
-        "green": "0.54902",
-        "blue": "1.00000",
-        "alpha": "1"
-      }
-    },
-    {
-      "_class": "swatch",
-      "do_objectID": "",
-      "name": "Additional/Blue/60",
-      "value": {
-        "_class": "color",
-        "red": "0.12941",
-        "green": "0.41961",
-        "blue": "1.00000",
-        "alpha": "1"
-      }
-    },
-    {
-      "_class": "swatch",
-      "do_objectID": "",
-      "name": "Additional/Blue/70",
-      "value": {
-        "_class": "color",
-        "red": "0.05098",
-        "green": "0.22353",
-        "blue": "0.87451",
-        "alpha": "1"
-      }
-    },
-    {
-      "_class": "swatch",
-      "do_objectID": "",
-      "name": "Additional/Blue/80",
-      "value": {
-        "_class": "color",
-        "red": "0.00000",
-        "green": "0.04314",
-        "blue": "0.74902",
-        "alpha": "1"
-      }
-    },
-    {
-      "_class": "swatch",
-      "do_objectID": "",
-      "name": "Additional/Blue/90",
-      "value": {
-        "_class": "color",
-        "red": "0.01176",
-        "green": "0.00000",
-        "blue": "0.62353",
         "alpha": "1"
       }
     },
@@ -1974,9 +1830,129 @@
       "name": "Additional/Blue/100",
       "value": {
         "_class": "color",
-        "red": "0.07843",
-        "green": "0.00000",
-        "blue": "0.50196",
+        "red": "0.84706",
+        "green": "0.91765",
+        "blue": "1.00000",
+        "alpha": "1"
+      }
+    },
+    {
+      "_class": "swatch",
+      "do_objectID": "",
+      "name": "Additional/Blue/200",
+      "value": {
+        "_class": "color",
+        "red": "0.71373",
+        "green": "0.84314",
+        "blue": "1.00000",
+        "alpha": "1"
+      }
+    },
+    {
+      "_class": "swatch",
+      "do_objectID": "",
+      "name": "Additional/Blue/300",
+      "value": {
+        "_class": "color",
+        "red": "0.53725",
+        "green": "0.74902",
+        "blue": "1.00000",
+        "alpha": "1"
+      }
+    },
+    {
+      "_class": "swatch",
+      "do_objectID": "",
+      "name": "Additional/Blue/400",
+      "value": {
+        "_class": "color",
+        "red": "0.37647",
+        "green": "0.66275",
+        "blue": "1.00000",
+        "alpha": "1"
+      }
+    },
+    {
+      "_class": "swatch",
+      "do_objectID": "",
+      "name": "Additional/Blue/500",
+      "value": {
+        "_class": "color",
+        "red": "0.14902",
+        "green": "0.54118",
+        "blue": "1.00000",
+        "alpha": "1"
+      }
+    },
+    {
+      "_class": "swatch",
+      "do_objectID": "",
+      "name": "Additional/Blue/600",
+      "value": {
+        "_class": "color",
+        "red": "0.00000",
+        "green": "0.42353",
+        "blue": "0.92549",
+        "alpha": "1"
+      }
+    },
+    {
+      "_class": "swatch",
+      "do_objectID": "",
+      "name": "Additional/Blue/700",
+      "value": {
+        "_class": "color",
+        "red": "0.00000",
+        "green": "0.35294",
+        "blue": "0.76863",
+        "alpha": "1"
+      }
+    },
+    {
+      "_class": "swatch",
+      "do_objectID": "",
+      "name": "Additional/Blue/800",
+      "value": {
+        "_class": "color",
+        "red": "0.00000",
+        "green": "0.28235",
+        "blue": "0.61569",
+        "alpha": "1"
+      }
+    },
+    {
+      "_class": "swatch",
+      "do_objectID": "",
+      "name": "Additional/Blue/900",
+      "value": {
+        "_class": "color",
+        "red": "0.00000",
+        "green": "0.21569",
+        "blue": "0.47059",
+        "alpha": "1"
+      }
+    },
+    {
+      "_class": "swatch",
+      "do_objectID": "",
+      "name": "Additional/Blue/Tint",
+      "value": {
+        "_class": "color",
+        "red": "0.94118",
+        "green": "0.96863",
+        "blue": "1.00000",
+        "alpha": "1"
+      }
+    },
+    {
+      "_class": "swatch",
+      "do_objectID": "",
+      "name": "Additional/Blue/Shade",
+      "value": {
+        "_class": "color",
+        "red": "0.00000",
+        "green": "0.09020",
+        "blue": "0.20000",
         "alpha": "1"
       }
     },
@@ -1986,117 +1962,9 @@
       "name": "Additional/Green/0",
       "value": {
         "_class": "color",
-        "red": "0.94118",
-        "green": "0.96863",
-        "blue": "0.87843",
-        "alpha": "1"
-      }
-    },
-    {
-      "_class": "swatch",
-      "do_objectID": "",
-      "name": "Additional/Green/10",
-      "value": {
-        "_class": "color",
-        "red": "0.87843",
-        "green": "0.93725",
-        "blue": "0.78039",
-        "alpha": "1"
-      }
-    },
-    {
-      "_class": "swatch",
-      "do_objectID": "",
-      "name": "Additional/Green/20",
-      "value": {
-        "_class": "color",
-        "red": "0.81176",
-        "green": "0.90980",
-        "blue": "0.68627",
-        "alpha": "1"
-      }
-    },
-    {
-      "_class": "swatch",
-      "do_objectID": "",
-      "name": "Additional/Green/30",
-      "value": {
-        "_class": "color",
-        "red": "0.73333",
-        "green": "0.87451",
-        "blue": "0.59608",
-        "alpha": "1"
-      }
-    },
-    {
-      "_class": "swatch",
-      "do_objectID": "",
-      "name": "Additional/Green/40",
-      "value": {
-        "_class": "color",
-        "red": "0.64314",
-        "green": "0.83922",
-        "blue": "0.50588",
-        "alpha": "1"
-      }
-    },
-    {
-      "_class": "swatch",
-      "do_objectID": "",
-      "name": "Additional/Green/50",
-      "value": {
-        "_class": "color",
-        "red": "0.55294",
-        "green": "0.80392",
-        "blue": "0.41569",
-        "alpha": "1"
-      }
-    },
-    {
-      "_class": "swatch",
-      "do_objectID": "",
-      "name": "Additional/Green/60",
-      "value": {
-        "_class": "color",
-        "red": "0.45098",
-        "green": "0.76471",
-        "blue": "0.32941",
-        "alpha": "1"
-      }
-    },
-    {
-      "_class": "swatch",
-      "do_objectID": "",
-      "name": "Additional/Green/70",
-      "value": {
-        "_class": "color",
-        "red": "0.32157",
-        "green": "0.70196",
-        "blue": "0.25882",
-        "alpha": "1"
-      }
-    },
-    {
-      "_class": "swatch",
-      "do_objectID": "",
-      "name": "Additional/Green/80",
-      "value": {
-        "_class": "color",
-        "red": "0.19608",
-        "green": "0.62745",
-        "blue": "0.19608",
-        "alpha": "1"
-      }
-    },
-    {
-      "_class": "swatch",
-      "do_objectID": "",
-      "name": "Additional/Green/90",
-      "value": {
-        "_class": "color",
-        "red": "0.14118",
-        "green": "0.54510",
-        "blue": "0.19216",
+        "red": "0.85490",
+        "green": "0.97255",
+        "blue": "0.90980",
         "alpha": "1"
       }
     },
@@ -2106,141 +1974,129 @@
       "name": "Additional/Green/100",
       "value": {
         "_class": "color",
-        "red": "0.09412",
-        "green": "0.45490",
-        "blue": "0.19216",
+        "red": "0.76078",
+        "green": "0.95294",
+        "blue": "0.85490",
         "alpha": "1"
       }
     },
     {
       "_class": "swatch",
       "do_objectID": "",
-      "name": "Additional/Pine/0",
+      "name": "Additional/Green/200",
       "value": {
         "_class": "color",
-        "red": "0.96078",
+        "red": "0.52941",
+        "green": "0.90588",
+        "blue": "0.71765",
+        "alpha": "1"
+      }
+    },
+    {
+      "_class": "swatch",
+      "do_objectID": "",
+      "name": "Additional/Green/300",
+      "value": {
+        "_class": "color",
+        "red": "0.17255",
+        "green": "0.83529",
+        "blue": "0.50196",
+        "alpha": "1"
+      }
+    },
+    {
+      "_class": "swatch",
+      "do_objectID": "",
+      "name": "Additional/Green/400",
+      "value": {
+        "_class": "color",
+        "red": "0.07451",
+        "green": "0.74510",
+        "blue": "0.40784",
+        "alpha": "1"
+      }
+    },
+    {
+      "_class": "swatch",
+      "do_objectID": "",
+      "name": "Additional/Green/500",
+      "value": {
+        "_class": "color",
+        "red": "0.06275",
+        "green": "0.62353",
+        "blue": "0.34118",
+        "alpha": "1"
+      }
+    },
+    {
+      "_class": "swatch",
+      "do_objectID": "",
+      "name": "Additional/Green/600",
+      "value": {
+        "_class": "color",
+        "red": "0.05098",
+        "green": "0.51373",
+        "blue": "0.27843",
+        "alpha": "1"
+      }
+    },
+    {
+      "_class": "swatch",
+      "do_objectID": "",
+      "name": "Additional/Green/700",
+      "value": {
+        "_class": "color",
+        "red": "0.04314",
+        "green": "0.42745",
+        "blue": "0.23137",
+        "alpha": "1"
+      }
+    },
+    {
+      "_class": "swatch",
+      "do_objectID": "",
+      "name": "Additional/Green/800",
+      "value": {
+        "_class": "color",
+        "red": "0.03529",
+        "green": "0.34118",
+        "blue": "0.18431",
+        "alpha": "1"
+      }
+    },
+    {
+      "_class": "swatch",
+      "do_objectID": "",
+      "name": "Additional/Green/900",
+      "value": {
+        "_class": "color",
+        "red": "0.02745",
+        "green": "0.25882",
+        "blue": "0.14118",
+        "alpha": "1"
+      }
+    },
+    {
+      "_class": "swatch",
+      "do_objectID": "",
+      "name": "Additional/Green/Tint",
+      "value": {
+        "_class": "color",
+        "red": "0.94118",
         "green": "1.00000",
-        "blue": "0.98039",
+        "blue": "0.96863",
         "alpha": "1"
       }
     },
     {
       "_class": "swatch",
       "do_objectID": "",
-      "name": "Additional/Pine/10",
+      "name": "Additional/Green/Shade",
       "value": {
         "_class": "color",
-        "red": "0.85490",
-        "green": "0.96863",
-        "blue": "0.90980",
-        "alpha": "1"
-      }
-    },
-    {
-      "_class": "swatch",
-      "do_objectID": "",
-      "name": "Additional/Pine/20",
-      "value": {
-        "_class": "color",
-        "red": "0.75294",
-        "green": "0.93725",
-        "blue": "0.84706",
-        "alpha": "1"
-      }
-    },
-    {
-      "_class": "swatch",
-      "do_objectID": "",
-      "name": "Additional/Pine/30",
-      "value": {
-        "_class": "color",
-        "red": "0.57255",
-        "green": "0.87843",
-        "blue": "0.72549",
-        "alpha": "1"
-      }
-    },
-    {
-      "_class": "swatch",
-      "do_objectID": "",
-      "name": "Additional/Pine/40",
-      "value": {
-        "_class": "color",
-        "red": "0.42353",
-        "green": "0.81569",
-        "blue": "0.61961",
-        "alpha": "1"
-      }
-    },
-    {
-      "_class": "swatch",
-      "do_objectID": "",
-      "name": "Additional/Pine/50",
-      "value": {
-        "_class": "color",
-        "red": "0.31373",
-        "green": "0.75686",
-        "blue": "0.53333",
-        "alpha": "1"
-      }
-    },
-    {
-      "_class": "swatch",
-      "do_objectID": "",
-      "name": "Additional/Pine/60",
-      "value": {
-        "_class": "color",
-        "red": "0.23529",
-        "green": "0.69412",
-        "blue": "0.46275",
-        "alpha": "1"
-      }
-    },
-    {
-      "_class": "swatch",
-      "do_objectID": "",
-      "name": "Additional/Pine/70",
-      "value": {
-        "_class": "color",
-        "red": "0.17647",
-        "green": "0.63529",
-        "blue": "0.40392",
-        "alpha": "1"
-      }
-    },
-    {
-      "_class": "swatch",
-      "do_objectID": "",
-      "name": "Additional/Pine/80",
-      "value": {
-        "_class": "color",
-        "red": "0.13725",
-        "green": "0.57255",
-        "blue": "0.35294",
-        "alpha": "1"
-      }
-    },
-    {
-      "_class": "swatch",
-      "do_objectID": "",
-      "name": "Additional/Pine/90",
-      "value": {
-        "_class": "color",
-        "red": "0.10980",
-        "green": "0.50980",
-        "blue": "0.30980",
-        "alpha": "1"
-      }
-    },
-    {
-      "_class": "swatch",
-      "do_objectID": "",
-      "name": "Additional/Pine/100",
-      "value": {
-        "_class": "color",
-        "red": "0.09020",
-        "green": "0.45098",
-        "blue": "0.27059",
+        "red": "0.00000",
+        "green": "0.20000",
+        "blue": "0.09804",
         "alpha": "1"
       }
     }
@@ -2680,7 +2536,7 @@
           "spread": 0,
           "color": {
             "_class": "color",
-            "alpha": 1,
+            "alpha": 0.1,
             "blue": "0.00000",
             "green": "0.00000",
             "red": "0.00000"
@@ -2750,7 +2606,7 @@
           "spread": 0,
           "color": {
             "_class": "color",
-            "alpha": 1,
+            "alpha": 0.1,
             "blue": "0.00000",
             "green": "0.00000",
             "red": "0.00000"
@@ -2865,7 +2721,7 @@
           "spread": 0,
           "color": {
             "_class": "color",
-            "alpha": 1,
+            "alpha": 0.1,
             "blue": "0.00000",
             "green": "0.00000",
             "red": "0.00000"

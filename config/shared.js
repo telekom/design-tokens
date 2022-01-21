@@ -5,10 +5,10 @@ const kebabCase = require('lodash/kebabCase');
 const cloneDeep = require('lodash/cloneDeep');
 const Color = require('tinycolor2');
 
-const PREFIX = process.env.PREFIX || 'telekom';
-const OUTPUT_PATH = process.env.OUTPUT_PATH || 'build/';
-const OUTPUT_BASE_FILENAME =
-  process.env.OUTPUT_BASE_FILENAME || 'telekom-design-tokens';
+setDefaultEnvValue('PREFIX', 'telekom');
+setDefaultEnvValue('OUTPUT_PATH', 'dist/');
+setDefaultEnvValue('OUTPUT_BASE_FILENAME', 'design-tokens');
+setDefaultEnvValue('WHITELABEL', true);
 
 const FIGMA_KEY_LIGHT = 'Light';
 const FIGMA_KEY_DARK = 'Dark';
@@ -26,6 +26,12 @@ const fontWeightMap = {
   700: 'Bold',
   800: 'ExtraBold',
 };
+
+function setDefaultEnvValue(key, value) {
+  if (typeof process.env[key] === 'undefined') {
+    process.env[key] = value;
+  }
+}
 
 function humanCase(str) {
   if (ALWAYS_LOWERCASE.includes(str)) {
@@ -229,9 +235,6 @@ StyleDictionary.registerTransform({
 });
 
 module.exports = {
-  PREFIX,
-  OUTPUT_PATH,
-  OUTPUT_BASE_FILENAME,
   FIGMA_KEY_LIGHT,
   FIGMA_KEY_DARK,
   humanCase,

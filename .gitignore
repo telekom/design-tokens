@@ -1,3 +1,8 @@
 node_modules
-build
 .DS_Store
+
+# make these available only for npm
+dist/css/
+dist/js/
+dist/telekom/css/
+dist/telekom/js/
