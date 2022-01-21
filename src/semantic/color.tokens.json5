@@ -1,17 +1,17 @@
 {
   color: {
-    comment: "Telekom brand color design tokens",
-    "Text-&-Icon": {
-      Standard: {
-        comment: "Default text color with highest contrast.",
+    comment: "telekom brand color design tokens",
+    "text-&-icon": {
+      standard: {
+        comment: "default text color with highest contrast.",
         value: {
           light: "{core.color.black}",
           dark: "{core.color.white}",
         },
         type: "color",
       },
-      Additional: {
-        comment: "Use in combination with standard text for additional text elements.",
+      additional: {
+        comment: "use in combination with standard text for additional text elements.",
         value: {
           light: {
             color: "{core.color.black}",
@@ -24,8 +24,8 @@
         },
         type: "color",
       },
-      Disabled: {
-        comment: "Only use for disabled text.",
+      disabled: {
+        comment: "only use for disabled text.",
         value: {
           light: {
             color: "{core.color.black}",
@@ -38,29 +38,29 @@
         },
         type: "color",
       },
-      Link: {
-        Standard: {
+      link: {
+        standard: {
           value: {
             light: "{core.color.blue.700}",
             dark: "{core.color.blue.400}",
           },
           type: "color",
         },
-        Hovered: {
+        hovered: {
           value: {
             light: "{core.color.blue.800}",
             dark: "{core.color.blue.300}",
           },
           type: "color",
         },
-        Visited: {
+        visited: {
           value: {
             light: "{core.color.violet.800}",
             dark: "{core.color.violet.400}",
           },
           type: "color",
         },
-        Active: {
+        active: {
           value: {
             light: "{core.color.blue.900}",
             dark: "{core.color.blue.200}",
@@ -68,22 +68,22 @@
           type: "color",
         },
       },
-      Primary: {
-        Standard: {
+      primary: {
+        standard: {
           value: {
             light: "{core.color.brand.standard}",
             dark: "{core.color.brand.standard}",
           },
           type: "color",
         },
-        Hovered: {
+        hovered: {
           value: {
             light: "{core.color.brand.dark}",
             dark: "{core.color.brand.light}",
           },
           type: "color",
         },
-        Pressed: {
+        pressed: {
           value: {
             light: "{core.color.brand.darker}",
             dark: "{core.color.brand.lighter}",
@@ -91,17 +91,17 @@
           type: "color",
         },
       },
-      Inverted: {
-        Standard: {
-          comment: "Standard text color inverted to be used on high contrast colors like UI/Extra Strong",
+      inverted: {
+        standard: {
+          comment: "standard text color inverted to be used on high contrast colors like ui/extra strong",
           value: {
             light: "{core.color.white}",
             dark: "{core.color.black}",
           },
           type: "color",
         },
-        Additional: {
-          comment: "Additional text color inverted to be used on high contrast colors like UI/Extra Strong",
+        additional: {
+          comment: "additional text color inverted to be used on high contrast colors like ui/extra strong",
           value: {
             light: {
               color: "{core.color.white}",
@@ -115,45 +115,45 @@
           type: "color",
         },
       },
-      Functional: {
-        Informational: {
+      functional: {
+        informational: {
           value: {
             light: "{core.color.blue.700}",
             dark: "{core.color.blue.500}",
           },
           type: "color",
         },
-        Success: {
+        success: {
           value: {
             light: "{core.color.green.800}",
             dark: "{core.color.green.400}",
           },
           type: "color",
         },
-        Danger: {
+        danger: {
           value: {
             light: "{core.color.red.600}",
             dark: "{core.color.red.500}",
           },
           type: "color",
         },
-        Warning: {
+        warning: {
           value: {
             light: "{core.color.orange.600}",
             dark: "{core.color.orange.500}",
           },
           type: "color",
         },
-        White: {
-          comment: "This text color is white in all modes (light & dark)",
+        white: {
+          comment: "this text color is white in all modes (light & dark)",
           value: {
             light: "{core.color.white}",
             dark: "{core.color.white}",
           },
           type: "color",
         },
-        Black: {
-          comment: "This text color is black in all modes (light & dark)",
+        black: {
+          comment: "this text color is black in all modes (light & dark)",
           value: {
             light: "{core.color.black}",
             dark: "{core.color.black}",
@@ -162,26 +162,26 @@
         },
       },
     },
-    Background: {
-      comment: "Background colors are used for page, app and component backgrounds",
-      Canvas: {
-        comment: "Used as the background for your product (app, website, etc.)",
+    background: {
+      comment: "background colors are used for page, app and component backgrounds",
+      canvas: {
+        comment: "used as the background for your product (app, website, etc.)",
         value: {
           light: "{core.color.white}",
           dark: "{core.color.grey.1200}",
         },
         type: "color",
       },
-      "Canvas-Subtle": {
-        comment: "Used as the background for your product (app, website, etc.)",
+      "canvas-subtle": {
+        comment: "used as the background for your product (app, website, etc.)",
         value: {
           light: "{core.color.grey.100}",
           dark: "{core.color.grey.1100}",
         },
         type: "color",
       },
-      Backdrop: {
-        comment: "Use to overlay content below dialogs to separate dialog from content below",
+      backdrop: {
+        comment: "use to overlay content below dialogs to separate dialog from content below",
         value: {
           light: {
             color: "{core.color.black}",
@@ -194,24 +194,24 @@
         },
         type: "color",
       },
-      Surface: {
-        comment: "Use as the background of elements like cards, headers, bottom bars, etc.",
+      surface: {
+        comment: "use as the background of elements like cards, headers, bottom bars, etc.",
         value: {
           light: "{core.color.white}",
           dark: "{core.color.grey.1000}",
         },
         type: "color",
       },
-      "Surface-Subtle": {
-        comment: "Use as the background of elements like cards, headers, bottom bars, etc.",
+      "surface-subtle": {
+        comment: "use as the background of elements like cards, headers, bottom bars, etc.",
         value: {
           light: "{core.color.grey.0}",
           dark: "{core.color.grey.900}",
         },
         type: "color",
       },
-      "Surface-Highlight": {
-        comment: "Use as the background of elements that should stand out highlighted sections, footer, etc.",
+      "surface-highlight": {
+        comment: "use as the background of elements that should stand out highlighted sections, footer, etc.",
         value: {
           light: "{core.color.grey.1200}",
           dark: "{core.color.grey.800}",
@@ -219,29 +219,29 @@
         type: "color",
       },
     },
-    Primary: {
-      Standard: {
+    primary: {
+      standard: {
         value: {
           light: "{core.color.brand.standard}",
           dark: "{core.color.brand.standard}",
         },
         type: "color",
       },
-      Hovered: {
+      hovered: {
         value: {
           light: "{core.color.brand.dark}",
           dark: "{core.color.brand.dark}",
         },
         type: "color",
       },
-      Pressed: {
+      pressed: {
         value: {
           light: "{core.color.brand.darker}",
           dark: "{core.color.brand.darker}",
         },
         type: "color",
       },
-      Subtle: {
+      subtle: {
         value: {
           light: "{core.color.brand.tint}",
           dark: "{core.color.brand.shade}",
@@ -249,23 +249,23 @@
         type: "color",
       },
     },
-    UI: {
-      comment: "UI colors are used to create UI elements like dividers, checkboxes, buttons, etc.",
-      Subtle: {
+    ui: {
+      comment: "ui colors are used to create ui elements like dividers, checkboxes, buttons, etc.",
+      subtle: {
         value: {
           light: "{core.color.grey.200}",
           dark: "{core.color.grey.1000}",
         },
         type: "color",
       },
-      Light: {
+      light: {
         value: {
           light: "{core.color.grey.400}",
           dark: "{core.color.grey.900}",
         },
         type: "color",
       },
-      Normal: {
+      normal: {
         value: {
           light: "{core.color.grey.600}",
           dark: "{core.color.grey.800}",
@@ -286,8 +286,8 @@
         },
         type: "color",
       },
-      Disabled: {
-        comment: "Use for disabled interactive elements in combination with the disabled text color",
+      disabled: {
+        comment: "use for disabled interactive elements in combination with the disabled text color",
         value: {
           light: "{core.color.grey.200}",
           dark: "{core.color.grey.1000}",
@@ -295,37 +295,37 @@
         type: "color",
       },
     },
-    Functional: {
-      Focus: {
+    functional: {
+      focus: {
         value: {
           light: "{core.color.blue.600}",
           dark: "{core.color.blue.500}",
         },
         type: "color",
       },
-      Success: {
-        Standard: {
+      success: {
+        standard: {
           value: {
             light: "{core.color.green.600}",
             dark: "{core.color.green.800}",
           },
           type: "color",
         },
-        Hovered: {
+        hovered: {
           value: {
             light: "{core.color.green.700}",
             dark: "{core.color.green.700}",
           },
           type: "color",
         },
-        Pressed: {
+        pressed: {
           value: {
             light: "{core.color.green.800}",
             dark: "{core.color.green.600}",
           },
           type: "color",
         },
-        Subtle: {
+        subtle: {
           value: {
             light: "{core.color.green.tint}",
             dark: "{core.color.green.shade}",
@@ -333,29 +333,29 @@
           type: "color",
         },
       },
-      Interaction: {
-        Standard: {
+      interaction: {
+        standard: {
           value: {
             light: "{core.color.blue.600}",
             dark: "{core.color.blue.700}",
           },
           type: "color",
         },
-        Hovered: {
+        hovered: {
           value: {
             light: "{core.color.blue.700}",
             dark: "{core.color.blue.600}",
           },
           type: "color",
         },
-        Pressed: {
+        pressed: {
           value: {
             light: "{core.color.blue.800}",
             dark: "{core.color.blue.500}",
           },
           type: "color",
         },
-        Subtle: {
+        subtle: {
           value: {
             light: "{core.color.blue.tint}",
             dark: "{core.color.blue.shade}",
@@ -363,29 +363,29 @@
           type: "color",
         },
       },
-      Informational: {
-        Standard: {
+      informational: {
+        standard: {
           value: {
             light: "{core.color.blue.600}",
             dark: "{core.color.blue.700}",
           },
           type: "color",
         },
-        Hovered: {
+        hovered: {
           value: {
             light: "{core.color.blue.700}",
             dark: "{core.color.blue.600}",
           },
           type: "color",
         },
-        Pressed: {
+        pressed: {
           value: {
             light: "{core.color.blue.800}",
             dark: "{core.color.blue.500}",
           },
           type: "color",
         },
-        Subtle: {
+        subtle: {
           value: {
             light: "{core.color.blue.tint}",
             dark: "{core.color.blue.shade}",
@@ -393,29 +393,29 @@
           type: "color",
         },
       },
-      Warning: {
-        Standard: {
+      warning: {
+        standard: {
           value: {
             light: "{core.color.orange.600}",
             dark: "{core.color.orange.500}",
           },
           type: "color",
         },
-        Hovered: {
+        hovered: {
           value: {
             light: "{core.color.orange.700}",
             dark: "{core.color.orange.400}",
           },
           type: "color",
         },
-        Pressed: {
+        pressed: {
           value: {
             light: "{core.color.orange.800}",
             dark: "{core.color.orange.300}",
           },
           type: "color",
         },
-        Subtle: {
+        subtle: {
           value: {
             light: "{core.color.orange.tint}",
             dark: "{core.color.orange.shade}",
@@ -423,29 +423,29 @@
           type: "color",
         },
       },
-      Danger: {
-        Standard: {
+      danger: {
+        standard: {
           value: {
             light: "{core.color.red.600}",
             dark: "{core.color.red.800}",
           },
           type: "color",
         },
-        Hovered: {
+        hovered: {
           value: {
             light: "{core.color.red.700}",
             dark: "{core.color.red.700}",
           },
           type: "color",
         },
-        Pressed: {
+        pressed: {
           value: {
             light: "{core.color.red.800}",
             dark: "{core.color.red.600}",
           },
           type: "color",
         },
-        Subtle: {
+        subtle: {
           value: {
             light: "{core.color.red.tint}",
             dark: "{core.color.red.shade}",
@@ -454,7 +454,7 @@
         },
       },
     },
-    Additional: {
+    additional: {
       brown: {
         "0": {
           value: "{core.color.brown.0}",
