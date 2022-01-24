@@ -78,10 +78,22 @@ function updateLibrary({ buildPath }, mode) {
   const mainPage = JSON.parse(fs.readFileSync(mainPageFilepath));
   const now = new Date();
 
+  checkIdsAreUnique([
+    ...tokens.colors,
+    ...tokens.textStyles,
+    ...tokens.layerStyles,
+  ]);
+
   // Insert tokens as swatches and text styles into document.json
-  document.sharedSwatches.objects = tokens.colors.map(colorSwatch).map(cleanUpIdKey);
-  document.layerTextStyles.objects = tokens.textStyles.map(textStyle).map(cleanUpIdKey);
-  document.layerStyles.objects = tokens.layerStyles.map(layerStyle).map(cleanUpIdKey);
+  document.sharedSwatches.objects = tokens.colors
+    .map(colorSwatch)
+    .map(cleanUpIdKey);
+  document.layerTextStyles.objects = tokens.textStyles
+    .map(textStyle)
+    .map(cleanUpIdKey);
+  document.layerStyles.objects = tokens.layerStyles
+    .map(layerStyle)
+    .map(cleanUpIdKey);
 
   // Add build information to main page
   mainPage.layers[0].layers[0].overrideValues[0].value = `Design Tokens (${mode})`;
@@ -90,9 +102,24 @@ function updateLibrary({ buildPath }, mode) {
   fs.writeFileSync(mainPageFilepath, JSON.stringify(mainPage));
 }
 
+/**
+ * Throws if a duplicate value coming from `extensions.telekom.sketch.uuid` is found.
+ * @param {array} tokens
+ */
+function checkIdsAreUnique(tokens) {
+  const idsOnly = tokens.map((x) => x.__uuid);
+  const set = new Set();
+  idsOnly.forEach((x) => {
+    if (set.has(x)) {
+      throw new Error(`Found duplicate uuid: ${x}`);
+    }
+    set.add(x);
+  });
+}
+
 function cleanUpIdKey(token) {
-  delete token.__uuid
-  return token
+  delete token.__uuid;
+  return token;
 }
 
 function colorSwatch(token) {
