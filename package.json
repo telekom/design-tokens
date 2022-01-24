@@ -17,7 +17,8 @@
     "check": "beachball check",
     "publish:beachball": "beachball publish -n ${NPM_TOKEN}",
     "prepublishOnly": "npm run build",
-    "format": "prettier --write \"src/**/*{json,json5}\" \"config/**/*.js\""
+    "format": "prettier --write \"src/**/*{json,json5}\" \"config/**/*.js\"",
+    "sketch-uuid": "uuid | awk '{print toupper($0)}'"
   },
   "repository": {
     "type": "git",
@@ -38,6 +39,7 @@
     "rimraf": "^3.0.2",
     "style-dictionary": "^3.1.1",
     "tinycolor2": "^1.4.2",
+    "uuid": "^8.3.2",
     "uuid-by-string": "^3.0.4"
   }
 }

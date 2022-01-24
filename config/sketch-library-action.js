@@ -79,9 +79,9 @@ function updateLibrary({ buildPath }, mode) {
   const now = new Date();
 
   // Insert tokens as swatches and text styles into document.json
-  document.sharedSwatches.objects = tokens.colors.map(colorSwatch);
-  document.layerTextStyles.objects = tokens.textStyles.map(textStyle);
-  document.layerStyles.objects = tokens.layerStyles.map(layerStyle);
+  document.sharedSwatches.objects = tokens.colors.map(colorSwatch).map(cleanUpIdKey);
+  document.layerTextStyles.objects = tokens.textStyles.map(textStyle).map(cleanUpIdKey);
+  document.layerStyles.objects = tokens.layerStyles.map(layerStyle).map(cleanUpIdKey);
 
   // Add build information to main page
   mainPage.layers[0].layers[0].overrideValues[0].value = `Design Tokens (${mode})`;
@@ -90,21 +90,27 @@ function updateLibrary({ buildPath }, mode) {
   fs.writeFileSync(mainPageFilepath, JSON.stringify(mainPage));
 }
 
+function cleanUpIdKey(token) {
+  delete token.__uuid
+  return token
+}
+
 function colorSwatch(token) {
   return {
     ...token,
-    do_objectID: uuid(token.name, 5).toUpperCase(),
+    do_objectID: token.__uuid,
   };
 }
 
 function textStyle(token) {
   return {
     _class: 'sharedStyle',
-    do_objectID: uuid(token.name, 5).toUpperCase(),
+    do_objectID: token.__uuid,
     name: token.name,
     value: {
       _class: 'style',
-      do_objectID: uuid(token.name + ' style', 5).toUpperCase(),
+      // Generate an extra uuid based on the parent UUID
+      do_objectID: uuid(token.__uuid, 5).toUpperCase(),
       endMarkerType: 0,
       miterLimit: 10,
       startMarkerType: 0,
@@ -150,11 +156,12 @@ function textStyle(token) {
 function layerStyle(token) {
   return {
     _class: 'sharedStyle',
-    do_objectID: uuid(token.name, 5).toUpperCase(),
+    do_objectID: token.__uuid,
     name: token.name,
     value: {
       _class: 'style',
-      do_objectID: uuid(token.name + ' style', 5).toUpperCase(),
+      // Generate an extra uuid based on the parent UUID
+      do_objectID: uuid(token.__uuid, 5).toUpperCase(),
       endMarkerType: 0,
       miterLimit: 10,
       startMarkerType: 0,
