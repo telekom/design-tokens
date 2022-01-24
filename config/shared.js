@@ -24,6 +24,7 @@ const FIGMA_KEY_LIGHT = 'Light';
 const FIGMA_KEY_DARK = 'Dark';
 
 const ALWAYS_LOWERCASE = ['xs', 'sm', 'md', 'lg', 'xl', 'xxl'];
+const spacingUnitRe = /x(\d+)$/g;
 
 // TODO font names: match real filenames (explore sd assets)
 const fontFamilyMap = {
@@ -44,7 +45,7 @@ function setDefaultEnvValue(key, value) {
 }
 
 function humanCase(str) {
-  if (ALWAYS_LOWERCASE.includes(str)) {
+  if (ALWAYS_LOWERCASE.includes(str) || str.match(spacingUnitRe) != null) {
     return str;
   }
   return str
