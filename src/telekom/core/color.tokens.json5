@@ -2,7 +2,7 @@
   core: {
     color: {
       brand: {
-        comment: "contrast with white is acceptable according to APCA for buttons, etc.",
+        comment: "Contrast with white is acceptable according to APCA for buttons, etc.",
         standard: {
           comment: "Defined by brand, can not be changed",
           value: "#e20074",
