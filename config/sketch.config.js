@@ -87,6 +87,7 @@ function getTokenName(token) {
 function getColorShape() {
   return (token) => {
     return {
+      __uuid: token.extensions?.telekom?.sketch?.uuid,
       _class: 'swatch',
       do_objectID: '',
       name: getTokenName(token),
@@ -113,6 +114,7 @@ function getTextStyleShape(options) {
       fontSize * parseFloat(token.value['line-spacing'])
     );
     return {
+      __uuid: token.extensions?.telekom?.sketch?.uuid,
       name: getTokenName(token),
       textStyle: {
         _class: 'textStyle',
@@ -143,7 +145,7 @@ function getTextStyleShape(options) {
 function getLayerStyleShape() {
   return (token) => {
     const elevations = token.value.map((elevation) => {
-      let elevationShape = {
+      return {
         _class: 'shadow',
         isEnabled: true,
         blurRadius: elevation.blur,
@@ -163,9 +165,9 @@ function getLayerStyleShape() {
           opacity: 1,
         },
       };
-      return elevationShape;
     });
     return {
+      __uuid: token.extensions?.telekom?.sketch?.uuid,
       name: getTokenName(token),
       elevations: [...elevations],
     };
