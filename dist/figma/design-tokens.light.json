@@ -4,17 +4,17 @@
       "Standard": {
         "value": "#000000",
         "type": "color",
-        "description": "default text color with highest contrast."
+        "description": "Default text color with highest contrast."
       },
       "Additional": {
         "value": "#000000a6",
         "type": "color",
-        "description": "use in combination with standard text for additional text elements."
+        "description": "Use in combination with standard text for additional text elements."
       },
       "Disabled": {
         "value": "#00000066",
         "type": "color",
-        "description": "only use for disabled text."
+        "description": "Only use for disabled text."
       },
       "Link": {
         "Standard": {
@@ -52,12 +52,12 @@
         "Standard": {
           "value": "#ffffff",
           "type": "color",
-          "description": "standard text color inverted to be used on high contrast colors like ui/extra strong"
+          "description": "Standard text color inverted to be used on high contrast colors like ui/extra strong"
         },
         "Additional": {
           "value": "#ffffffa6",
           "type": "color",
-          "description": "additional text color inverted to be used on high contrast colors like ui/extra strong"
+          "description": "Additional text color inverted to be used on high contrast colors like ui/extra strong"
         }
       },
       "Functional": {
@@ -80,12 +80,12 @@
         "White": {
           "value": "#ffffff",
           "type": "color",
-          "description": "this text color is white in all modes (light & dark)"
+          "description": "This text color is white in all modes (light & dark)"
         },
         "Black": {
           "value": "#000000",
           "type": "color",
-          "description": "this text color is black in all modes (light & dark)"
+          "description": "This text color is black in all modes (light & dark)"
         }
       }
     },
@@ -93,32 +93,32 @@
       "Canvas": {
         "value": "#ffffff",
         "type": "color",
-        "description": "used as the background for your product (app, website, etc.)"
+        "description": "Use as the background for your product (app, website, etc.)"
       },
       "Canvas Subtle": {
         "value": "#E7E8E9",
         "type": "color",
-        "description": "used as the background for your product (app, website, etc.)"
+        "description": "Use as the background for your product (app, website, etc.)"
       },
       "Backdrop": {
         "value": "#00000080",
         "type": "color",
-        "description": "use to overlay content below dialogs to separate dialog from content below"
+        "description": "Use to overlay content below dialogs to separate dialog from content below"
       },
       "Surface": {
         "value": "#ffffff",
         "type": "color",
-        "description": "use as the background of elements like cards, headers, bottom bars, etc."
+        "description": "Use as the background of elements like cards, headers, bottom bars, etc."
       },
       "Surface Subtle": {
         "value": "#F0F1F1",
         "type": "color",
-        "description": "use as the background of elements like cards, headers, bottom bars, etc."
+        "description": "Use as the background of elements like cards, headers, bottom bars, etc."
       },
       "Surface Highlight": {
         "value": "#050505",
         "type": "color",
-        "description": "use as the background of elements that should stand out highlighted sections, footer, etc."
+        "description": "Use as the background of elements that should stand out highlighted sections, footer, etc."
       }
     },
     "Primary": {
@@ -163,7 +163,7 @@
       "Disabled": {
         "value": "#D3D5D6",
         "type": "color",
-        "description": "use for disabled interactive elements in combination with the disabled text color"
+        "description": "Use for disabled interactive elements in combination with the disabled text color"
       }
     },
     "Functional": {
