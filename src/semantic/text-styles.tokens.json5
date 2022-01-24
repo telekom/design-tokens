@@ -9,6 +9,13 @@
         "letter-spacing": "{typography.letter-spacing.standard.value}",
       },
       type: "textStyle",
+      extensions: {
+        telekom: {
+          sketch: {
+            uuid: "DD449C5D-7DA4-4E32-8187-2448031BD53F",
+          },
+        },
+      },
     },
     small: {
       value: {
@@ -19,6 +26,13 @@
         "letter-spacing": "{typography.letter-spacing.standard.value}",
       },
       type: "textStyle",
+      extensions: {
+        telekom: {
+          sketch: {
+            uuid: "63B6E103-0BB8-419B-9A70-67A5D57213DF",
+          },
+        },
+      },
     },
     caption: {
       value: {
@@ -29,6 +43,13 @@
         "letter-spacing": "{typography.letter-spacing.standard.value}",
       },
       type: "textStyle",
+      extensions: {
+        telekom: {
+          sketch: {
+            uuid: "C9B0389E-50B8-443A-B57A-6437226F2E54",
+          },
+        },
+      },
     },
     body: {
       value: {
@@ -39,6 +60,13 @@
         "letter-spacing": "{typography.letter-spacing.standard.value}",
       },
       type: "textStyle",
+      extensions: {
+        telekom: {
+          sketch: {
+            uuid: "91ECDD79-EEA6-4D39-93CC-361015158FEF",
+          },
+        },
+      },
     },
     "body-bold": {
       value: {
@@ -49,6 +77,13 @@
         "letter-spacing": "{typography.letter-spacing.standard.value}",
       },
       type: "textStyle",
+      extensions: {
+        telekom: {
+          sketch: {
+            uuid: "130260DA-C045-4CE4-923B-0D5B7A6CCF01",
+          },
+        },
+      },
     },
     callout: {
       value: {
@@ -59,6 +94,13 @@
         "letter-spacing": "{typography.letter-spacing.standard.value}",
       },
       type: "textStyle",
+      extensions: {
+        telekom: {
+          sketch: {
+            uuid: "BE8186B1-3F4C-4A9B-916D-B1C059C45037",
+          },
+        },
+      },
     },
     "heading-6": {
       value: {
@@ -69,6 +111,13 @@
         "letter-spacing": "{typography.letter-spacing.standard.value}",
       },
       type: "textStyle",
+      extensions: {
+        telekom: {
+          sketch: {
+            uuid: "219C7C48-AB44-4A4C-8CF0-235965A88DFC",
+          },
+        },
+      },
     },
     "heading-5": {
       value: {
@@ -79,6 +128,13 @@
         "letter-spacing": "{typography.letter-spacing.standard.value}",
       },
       type: "textStyle",
+      extensions: {
+        telekom: {
+          sketch: {
+            uuid: "9D9544F0-E471-406A-83D2-60C41395F418",
+          },
+        },
+      },
     },
     "heading-4": {
       value: {
@@ -89,6 +145,13 @@
         "letter-spacing": "{typography.letter-spacing.standard.value}",
       },
       type: "textStyle",
+      extensions: {
+        telekom: {
+          sketch: {
+            uuid: "E311C2AB-93B6-44CE-BD95-BD3216BFA02F",
+          },
+        },
+      },
     },
     "heading-3": {
       value: {
@@ -99,6 +162,13 @@
         "letter-spacing": "{typography.letter-spacing.standard.value}",
       },
       type: "textStyle",
+      extensions: {
+        telekom: {
+          sketch: {
+            uuid: "7BCC0E57-52DF-441A-974A-2D9EC4CB3CEB",
+          },
+        },
+      },
     },
     "heading-2": {
       value: {
@@ -109,6 +179,13 @@
         "letter-spacing": "{typography.letter-spacing.standard.value}",
       },
       type: "textStyle",
+      extensions: {
+        telekom: {
+          sketch: {
+            uuid: "C496AE76-7493-4FA5-99F1-F17A3F63114C",
+          },
+        },
+      },
     },
     "heading-1": {
       value: {
@@ -119,6 +196,13 @@
         "letter-spacing": "{typography.letter-spacing.standard.value}",
       },
       type: "textStyle",
+      extensions: {
+        telekom: {
+          sketch: {
+            uuid: "D68030AA-0788-4944-9B55-6A67A7D90CE6",
+          },
+        },
+      },
     },
     "title-2": {
       value: {
@@ -129,6 +213,13 @@
         "letter-spacing": "{typography.letter-spacing.standard.value}",
       },
       type: "textStyle",
+      extensions: {
+        telekom: {
+          sketch: {
+            uuid: "FE1ECB0C-6279-4900-B93B-1E06A11E25D9",
+          },
+        },
+      },
     },
     "title-1": {
       value: {
@@ -139,6 +230,13 @@
         "letter-spacing": "{typography.letter-spacing.standard.value}",
       },
       type: "textStyle",
+      extensions: {
+        telekom: {
+          sketch: {
+            uuid: "95D8FC15-5804-4638-8590-80D8FD5F1B24",
+          },
+        },
+      },
     },
   },
 }

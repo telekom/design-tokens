@@ -7,16 +7,37 @@
         comment: "Exclusivly for flat design elements",
         value: "{core.elevation.level-0.value}",
         type: "shadow",
+        extensions: {
+          telekom: {
+            sketch: {
+              uuid: "AE3B9B43-0FCE-4920-AC51-E967DA59252B",
+            },
+          },
+        },
       },
       hover: {
         comment: "Exclusivly for flat design elements",
         value: "{core.elevation.level-1.value}",
         type: "shadow",
+        extensions: {
+          telekom: {
+            sketch: {
+              uuid: "BB561DF9-041F-421F-BE83-725077D90BD2",
+            },
+          },
+        },
       },
       pressed: {
         comment: "Exclusivly for flat design elements",
         value: "{core.elevation.level-0.value}",
         type: "shadow",
+        extensions: {
+          telekom: {
+            sketch: {
+              uuid: "0D8471AD-EC44-4462-8D3A-BDA4F2BF4529",
+            },
+          },
+        },
       },
     },
     // resting state
@@ -25,16 +46,37 @@
         comment: "Default for interactable elements like buttons, etc.",
         value: "{core.elevation.level-1.value}",
         type: "shadow",
+        extensions: {
+          telekom: {
+            sketch: {
+              uuid: "BB5F33A3-CACF-4104-802B-C194280E1775",
+            },
+          },
+        },
       },
       hover: {
         comment: "Default for interactable elements like buttons, etc.",
         value: "{core.elevation.level-3.value}",
         type: "shadow",
+        extensions: {
+          telekom: {
+            sketch: {
+              uuid: "5632523D-6F06-449B-91B0-1B4D6943BDF1",
+            },
+          },
+        },
       },
       pressed: {
         comment: "Default for interactable elements like buttons, etc.",
         value: "{core.elevation.level-0.value}",
         type: "shadow",
+        extensions: {
+          telekom: {
+            sketch: {
+              uuid: "9CD207ED-D881-4A77-9545-467B90822BD4",
+            },
+          },
+        },
       },
     },
     // raised state
@@ -43,16 +85,37 @@
         comment: "For bigger interactable elements like cards, etc.",
         value: "{core.elevation.level-4.value}",
         type: "shadow",
+        extensions: {
+          telekom: {
+            sketch: {
+              uuid: "913A5E04-9E52-4165-B310-2B563B5BB968",
+            },
+          },
+        },
       },
       hover: {
         comment: "For bigger interactable elements like cards, etc.",
         value: "{core.elevation.level-8.value}",
         type: "shadow",
+        extensions: {
+          telekom: {
+            sketch: {
+              uuid: "7CAA91DC-CEED-4D3B-8536-7F95260259A1",
+            },
+          },
+        },
       },
       pressed: {
         comment: "For bigger interactable elements like cards, etc.",
         value: "{core.elevation.level-2.value}",
         type: "shadow",
+        extensions: {
+          telekom: {
+            sketch: {
+              uuid: "C0569A16-ABD7-400A-AEF8-642D217FF889",
+            },
+          },
+        },
       },
     },
     // floating state
@@ -61,16 +124,37 @@
         comment: "For floating elements that mostly stay in a fixed position like a FAB.",
         value: "{core.elevation.level-6.value}",
         type: "shadow",
+        extensions: {
+          telekom: {
+            sketch: {
+              uuid: "AB0380DD-7EB4-4573-A380-2BC45D2121DF",
+            },
+          },
+        },
       },
       hover: {
         comment: "For floating elements that mostly stay in a fixed position like a FAB.",
         value: "{core.elevation.level-12.value}",
         type: "shadow",
+        extensions: {
+          telekom: {
+            sketch: {
+              uuid: "BE9F8B9E-5AF5-4A4E-B588-156AE678AD7F",
+            },
+          },
+        },
       },
       pressed: {
         comment: "For floating elements that mostly stay in a fixed position like a FAB.",
         value: "{core.elevation.level-4.value}",
         type: "shadow",
+        extensions: {
+          telekom: {
+            sketch: {
+              uuid: "5AD0E529-7DE6-469F-A4C8-2BEF8CBDD15D",
+            },
+          },
+        },
       },
     },
     // flying state
@@ -78,12 +162,26 @@
       comment: "For fixed elements that overlay the content e.g. sidebars or bottom sheets",
       value: "{core.elevation.level-8.value}",
       type: "shadow",
+      extensions: {
+        telekom: {
+          sketch: {
+            uuid: "99536275-AA5E-4B2E-9F28-1501967C1400",
+          },
+        },
+      },
     },
     // top state above all
     top: {
       comment: "Highest level e.g. for dialogs or modals",
       value: "{core.elevation.level-12.value}",
       type: "shadow",
+      extensions: {
+        telekom: {
+          sketch: {
+            uuid: "782645E7-8C5C-4159-B78D-D4ECDFE704AF",
+          },
+        },
+      },
     },
     // header, app bar top
     "app-bar": {
@@ -92,11 +190,25 @@
           comment: "Use for headers, app bar & menus on the top",
           value: "{core.elevation.special.app-bar.top.subtle}",
           type: "shadow",
+          extensions: {
+            telekom: {
+              sketch: {
+                uuid: "C51047FF-350D-4AA9-AC87-B966697C47F7",
+              },
+            },
+          },
         },
         raised: {
           comment: "Use for headers, app bar & menus on the top",
           value: "{core.elevation.special.app-bar.top.flat}",
           type: "shadow",
+          extensions: {
+            telekom: {
+              sketch: {
+                uuid: "AE644FBF-ACDF-4DCD-8128-E5A82452AFF1",
+              },
+            },
+          },
         },
       },
       // bottom bar, app bar bottom, bottom nav
@@ -105,11 +217,25 @@
           comment: "Use for app navigation and app bars on the bottom",
           value: "{core.elevation.special.app-bar.bottom.subtle}",
           type: "shadow",
+          extensions: {
+            telekom: {
+              sketch: {
+                uuid: "CB17ECC5-3F98-4034-9462-E51E230A8871",
+              },
+            },
+          },
         },
         raised: {
           comment: "Use for app navigation and app bars on the bottom",
           value: "{core.elevation.special.app-bar.bottom.flat}",
           type: "shadow",
+          extensions: {
+            telekom: {
+              sketch: {
+                uuid: "6660CE8D-2F96-4258-99C4-83FECDD049E0",
+              },
+            },
+          },
         },
       },
     },
