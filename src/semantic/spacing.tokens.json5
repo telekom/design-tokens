@@ -1,95 +1,95 @@
 {
   spacing: {
-    "unit": {
-      "x0": {
+    unit: {
+      x0: {
         value: "{core.spacing.unit.x0}",
         type: "dimension",
       },
-      "x025": {
+      x025: {
         value: "{core.spacing.unit.x025}",
         type: "dimension",
       },
-      "x05": {
+      x05: {
         value: "{core.spacing.unit.x05}",
         type: "dimension",
       },
-      "x1": {
+      x1: {
         value: "{core.spacing.unit.x1}",
         type: "dimension",
       },
-      "x2": {
+      x2: {
         value: "{core.spacing.unit.x2}",
         type: "dimension",
       },
-      "x3": {
+      x3: {
         value: "{core.spacing.unit.x3}",
         type: "dimension",
       },
-      "x4": {
+      x4: {
         value: "{core.spacing.unit.x4}",
         type: "dimension",
       },
-      "x5": {
+      x5: {
         value: "{core.spacing.unit.x5}",
         type: "dimension",
       },
-      "x6": {
+      x6: {
         value: "{core.spacing.unit.x6}",
         type: "dimension",
       },
-      "x7": {
+      x7: {
         value: "{core.spacing.unit.x7}",
         type: "dimension",
       },
-      "x8": {
+      x8: {
         value: "{core.spacing.unit.x8}",
         type: "dimension",
       },
-      "x9": {
+      x9: {
         value: "{core.spacing.unit.x9}",
         type: "dimension",
       },
-      "x10": {
+      x10: {
         value: "{core.spacing.unit.x10}",
         type: "dimension",
       },
-      "x11": {
+      x11: {
         value: "{core.spacing.unit.x11}",
         type: "dimension",
       },
-      "x12": {
+      x12: {
         value: "{core.spacing.unit.x12}",
         type: "dimension",
       },
-      "x13": {
+      x13: {
         value: "{core.spacing.unit.x13}",
         type: "dimension",
       },
-      "x14": {
+      x14: {
         value: "{core.spacing.unit.x14}",
         type: "dimension",
       },
-      "x15": {
+      x15: {
         value: "{core.spacing.unit.x15}",
         type: "dimension",
       },
-      "x16": {
+      x16: {
         value: "{core.spacing.unit.x16}",
         type: "dimension",
       },
-      "x17": {
+      x17: {
         value: "{core.spacing.unit.x17}",
         type: "dimension",
       },
-      "x18": {
+      x18: {
         value: "{core.spacing.unit.x18}",
         type: "dimension",
       },
-      "x19": {
+      x19: {
         value: "{core.spacing.unit.x19}",
         type: "dimension",
       },
-      "x20": {
+      x20: {
         value: "{core.spacing.unit.x20}",
         type: "dimension",
       },
