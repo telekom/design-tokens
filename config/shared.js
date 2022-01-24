@@ -2,7 +2,7 @@
  * Telekom Design Tokens https://github.com/telekom/design-tokens
  *
  * Copyright (c) 2021 Lukas Oppermann and contributors, Deutsche Telekom AG
- * 
+ *
  * This Source Code Form is subject to the terms of the Mozilla Public
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at https://mozilla.org/MPL/2.0/.
@@ -24,6 +24,7 @@ const FIGMA_KEY_LIGHT = 'Light';
 const FIGMA_KEY_DARK = 'Dark';
 
 const ALWAYS_LOWERCASE = ['xs', 'sm', 'md', 'lg', 'xl', 'xxl'];
+const spacingUnitRe = /x(\d+)$/g;
 
 // TODO font names: match real filenames (explore sd assets)
 const fontFamilyMap = {
@@ -44,7 +45,7 @@ function setDefaultEnvValue(key, value) {
 }
 
 function humanCase(str) {
-  if (ALWAYS_LOWERCASE.includes(str)) {
+  if (ALWAYS_LOWERCASE.includes(str) || str.match(spacingUnitRe) != null) {
     return str;
   }
   return str
