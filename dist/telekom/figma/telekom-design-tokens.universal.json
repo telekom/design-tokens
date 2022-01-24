@@ -69,66 +69,96 @@
     }
   },
   "Spacing": {
-    "None": {
-      "value": "0px",
-      "type": "spacing"
-    },
-    "Inner": {
-      "xs": {
+    "Unit": {
+      "X0": {
+        "value": "0px",
+        "type": "spacing"
+      },
+      "X025": {
         "value": "1px",
         "type": "spacing"
       },
-      "sm": {
+      "X05": {
         "value": "2px",
         "type": "spacing"
       },
-      "md": {
+      "X1": {
         "value": "4px",
         "type": "spacing"
       },
-      "lg": {
+      "X2": {
         "value": "8px",
         "type": "spacing"
-      }
-    },
-    "Grouped": {
-      "sm": {
+      },
+      "X3": {
         "value": "12px",
         "type": "spacing"
       },
-      "md": {
+      "X4": {
         "value": "16px",
         "type": "spacing"
       },
-      "lg": {
+      "X5": {
+        "value": "20px",
+        "type": "spacing"
+      },
+      "X6": {
         "value": "24px",
         "type": "spacing"
-      }
-    },
-    "Related": {
-      "sm": {
+      },
+      "X7": {
+        "value": "28px",
+        "type": "spacing"
+      },
+      "X8": {
         "value": "32px",
         "type": "spacing"
       },
-      "md": {
+      "X9": {
+        "value": "36px",
+        "type": "spacing"
+      },
+      "X10": {
         "value": "40px",
         "type": "spacing"
       },
-      "lg": {
+      "X11": {
+        "value": "44px",
+        "type": "spacing"
+      },
+      "X12": {
         "value": "48px",
         "type": "spacing"
-      }
-    },
-    "Unrelated": {
-      "sm": {
+      },
+      "X13": {
+        "value": "52px",
+        "type": "spacing"
+      },
+      "X14": {
+        "value": "56px",
+        "type": "spacing"
+      },
+      "X15": {
+        "value": "60px",
+        "type": "spacing"
+      },
+      "X16": {
         "value": "64px",
         "type": "spacing"
       },
-      "md": {
+      "X17": {
+        "value": "68px",
+        "type": "spacing"
+      },
+      "X18": {
         "value": "72px",
         "type": "spacing"
       },
-      "lg": {
+      "X19": {
+        "value": "76px",
+        "type": "spacing"
+      },
+      "X20": {
         "value": "80px",
         "type": "spacing"
       }
