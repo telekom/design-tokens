@@ -1,6 +1,9 @@
 # Telekom Design Tokens
 
-> ⚠️ This is alpha software. It will change. Use at your own risk!
+## ⚠️ This is alpha software. It may change. Use at your own risk!
+
+~
+
 
 Telekom Design Tokens is the source of truth for designing Telekom-branded digital products. By default, it's built to align with our corporate brand and design but allows for customization to fit your particular product.
 
