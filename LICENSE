@@ -1,6 +1,6 @@
-Although the source code for design tokens is free and available under the MPL 2.0 license, Deutsche Telekom fully reserves all rights to the Telekom brand. To prevent users from getting confused about the source of a digital product or experience, there are strict restrictions on using the Telekom brand and design, even when built into code that we provide. For any customization other than explicitly for the Telekom, you must replace the Deutsche Telekom default theme.
+Although the source code for Telekom Design Tokens is free and available under the MPL 2.0 license, Deutsche Telekom fully reserves all rights to the Telekom brand. To prevent users from getting confused about the source of a digital product or experience, there are strict restrictions on using the Telekom brand and design, even when built into code that we provide. For any customization other than explicitly for the Telekom, you must replace the Deutsche Telekom default theme.
 
-To use design tokens as open source software and customize it with a neutral theme, please follow the instructions for our open source version in README.md.
+To use Telekom Design Tokens as open source software and customize it with a neutral theme, please follow the instructions for our open source version in README.md.
 
 Mozilla Public License Version 2.0
 ==================================
