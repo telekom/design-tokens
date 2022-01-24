@@ -4,17 +4,17 @@
       "Standard": {
         "value": "#000000",
         "type": "color",
-        "description": "default text color with highest contrast."
+        "description": "Default text color with highest contrast."
       },
       "Additional": {
         "value": "#000000a6",
         "type": "color",
-        "description": "use in combination with standard text for additional text elements."
+        "description": "Use in combination with standard text for additional text elements."
       },
       "Disabled": {
         "value": "#00000066",
         "type": "color",
-        "description": "only use for disabled text."
+        "description": "Only use for disabled text."
       },
       "Link": {
         "Standard": {
@@ -52,12 +52,12 @@
         "Standard": {
           "value": "#ffffff",
           "type": "color",
-          "description": "standard text color inverted to be used on high contrast colors like ui/extra strong"
+          "description": "Standard text color inverted to be used on high contrast colors like ui/extra strong"
         },
         "Additional": {
           "value": "#ffffffa6",
           "type": "color",
-          "description": "additional text color inverted to be used on high contrast colors like ui/extra strong"
+          "description": "Additional text color inverted to be used on high contrast colors like ui/extra strong"
         }
       },
       "Functional": {
@@ -80,12 +80,12 @@
         "White": {
           "value": "#ffffff",
           "type": "color",
-          "description": "this text color is white in all modes (light & dark)"
+          "description": "This text color is white in all modes (light & dark)"
         },
         "Black": {
           "value": "#000000",
           "type": "color",
-          "description": "this text color is black in all modes (light & dark)"
+          "description": "This text color is black in all modes (light & dark)"
         }
       }
     },
@@ -93,32 +93,32 @@
       "Canvas": {
         "value": "#ffffff",
         "type": "color",
-        "description": "used as the background for your product (app, website, etc.)"
+        "description": "Use as the background for your product (app, website, etc.)"
       },
       "Canvas Subtle": {
         "value": "#E7E8E9",
         "type": "color",
-        "description": "used as the background for your product (app, website, etc.)"
+        "description": "Use as the background for your product (app, website, etc.)"
       },
       "Backdrop": {
         "value": "#00000080",
         "type": "color",
-        "description": "use to overlay content below dialogs to separate dialog from content below"
+        "description": "Use to overlay content below dialogs to separate dialog from content below"
       },
       "Surface": {
         "value": "#ffffff",
         "type": "color",
-        "description": "use as the background of elements like cards, headers, bottom bars, etc."
+        "description": "Use as the background of elements like cards, headers, bottom bars, etc."
       },
       "Surface Subtle": {
         "value": "#F0F1F1",
         "type": "color",
-        "description": "use as the background of elements like cards, headers, bottom bars, etc."
+        "description": "Use as the background of elements like cards, headers, bottom bars, etc."
       },
       "Surface Highlight": {
         "value": "#050505",
         "type": "color",
-        "description": "use as the background of elements that should stand out highlighted sections, footer, etc."
+        "description": "Use as the background of elements that should stand out highlighted sections, footer, etc."
       }
     },
     "Primary": {
@@ -163,7 +163,7 @@
       "Disabled": {
         "value": "#D3D5D6",
         "type": "color",
-        "description": "use for disabled interactive elements in combination with the disabled text color"
+        "description": "Use for disabled interactive elements in combination with the disabled text color"
       }
     },
     "Functional": {
@@ -1140,17 +1140,17 @@
       "Standard": {
         "value": "#ffffff",
         "type": "color",
-        "description": "default text color with highest contrast."
+        "description": "Default text color with highest contrast."
       },
       "Additional": {
         "value": "#ffffffa6",
         "type": "color",
-        "description": "use in combination with standard text for additional text elements."
+        "description": "Use in combination with standard text for additional text elements."
       },
       "Disabled": {
         "value": "#ffffff4d",
         "type": "color",
-        "description": "only use for disabled text."
+        "description": "Only use for disabled text."
       },
       "Link": {
         "Standard": {
@@ -1188,12 +1188,12 @@
         "Standard": {
           "value": "#000000",
           "type": "color",
-          "description": "standard text color inverted to be used on high contrast colors like ui/extra strong"
+          "description": "Standard text color inverted to be used on high contrast colors like ui/extra strong"
         },
         "Additional": {
           "value": "#000000a6",
           "type": "color",
-          "description": "additional text color inverted to be used on high contrast colors like ui/extra strong"
+          "description": "Additional text color inverted to be used on high contrast colors like ui/extra strong"
         }
       },
       "Functional": {
@@ -1216,12 +1216,12 @@
         "White": {
           "value": "#ffffff",
           "type": "color",
-          "description": "this text color is white in all modes (light & dark)"
+          "description": "This text color is white in all modes (light & dark)"
         },
         "Black": {
           "value": "#000000",
           "type": "color",
-          "description": "this text color is black in all modes (light & dark)"
+          "description": "This text color is black in all modes (light & dark)"
         }
       }
     },
@@ -1229,32 +1229,32 @@
       "Canvas": {
         "value": "#050505",
         "type": "color",
-        "description": "used as the background for your product (app, website, etc.)"
+        "description": "Use as the background for your product (app, website, etc.)"
       },
       "Canvas Subtle": {
         "value": "#161617",
         "type": "color",
-        "description": "used as the background for your product (app, website, etc.)"
+        "description": "Use as the background for your product (app, website, etc.)"
       },
       "Backdrop": {
         "value": "#000000a6",
         "type": "color",
-        "description": "use to overlay content below dialogs to separate dialog from content below"
+        "description": "Use to overlay content below dialogs to separate dialog from content below"
       },
       "Surface": {
         "value": "#272729",
         "type": "color",
-        "description": "use as the background of elements like cards, headers, bottom bars, etc."
+        "description": "Use as the background of elements like cards, headers, bottom bars, etc."
       },
       "Surface Subtle": {
         "value": "#38393B",
         "type": "color",
-        "description": "use as the background of elements like cards, headers, bottom bars, etc."
+        "description": "Use as the background of elements like cards, headers, bottom bars, etc."
       },
       "Surface Highlight": {
         "value": "#4A4B4D",
         "type": "color",
-        "description": "use as the background of elements that should stand out highlighted sections, footer, etc."
+        "description": "Use as the background of elements that should stand out highlighted sections, footer, etc."
       }
     },
     "Primary": {
@@ -1299,7 +1299,7 @@
       "Disabled": {
         "value": "#272729",
         "type": "color",
-        "description": "use for disabled interactive elements in combination with the disabled text color"
+        "description": "Use for disabled interactive elements in combination with the disabled text color"
       }
     },
     "Functional": {
@@ -2342,95 +2342,95 @@
   },
   "Spacing": {
     "Unit": {
-      "X0": {
+      "x0": {
         "value": "0px",
         "type": "spacing"
       },
-      "X025": {
+      "x025": {
         "value": "1px",
         "type": "spacing"
       },
-      "X05": {
+      "x05": {
         "value": "2px",
         "type": "spacing"
       },
-      "X1": {
+      "x1": {
         "value": "4px",
         "type": "spacing"
       },
-      "X2": {
+      "x2": {
         "value": "8px",
         "type": "spacing"
       },
-      "X3": {
+      "x3": {
         "value": "12px",
         "type": "spacing"
       },
-      "X4": {
+      "x4": {
         "value": "16px",
         "type": "spacing"
       },
-      "X5": {
+      "x5": {
         "value": "20px",
         "type": "spacing"
       },
-      "X6": {
+      "x6": {
         "value": "24px",
         "type": "spacing"
       },
-      "X7": {
+      "x7": {
         "value": "28px",
         "type": "spacing"
       },
-      "X8": {
+      "x8": {
         "value": "32px",
         "type": "spacing"
       },
-      "X9": {
+      "x9": {
         "value": "36px",
         "type": "spacing"
       },
-      "X10": {
+      "x10": {
         "value": "40px",
         "type": "spacing"
       },
-      "X11": {
+      "x11": {
         "value": "44px",
         "type": "spacing"
       },
-      "X12": {
+      "x12": {
         "value": "48px",
         "type": "spacing"
       },
-      "X13": {
+      "x13": {
         "value": "52px",
         "type": "spacing"
       },
-      "X14": {
+      "x14": {
         "value": "56px",
         "type": "spacing"
       },
-      "X15": {
+      "x15": {
         "value": "60px",
         "type": "spacing"
       },
-      "X16": {
+      "x16": {
         "value": "64px",
         "type": "spacing"
       },
-      "X17": {
+      "x17": {
         "value": "68px",
         "type": "spacing"
       },
-      "X18": {
+      "x18": {
         "value": "72px",
         "type": "spacing"
       },
-      "X19": {
+      "x19": {
         "value": "76px",
         "type": "spacing"
       },
-      "X20": {
+      "x20": {
         "value": "80px",
         "type": "spacing"
       }
