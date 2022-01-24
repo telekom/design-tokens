@@ -2,6 +2,33 @@
   "name": "@telekom/design-tokens",
   "entries": [
     {
+      "date": "Mon, 24 Jan 2022 10:45:42 GMT",
+      "tag": "@telekom/design-tokens_v1.0.0-alpha.2",
+      "version": "1.0.0-alpha.2",
+      "comments": {
+        "prerelease": [
+          {
+            "author": "ac@iconstorm.com",
+            "package": "@telekom/design-tokens",
+            "commit": "e1289d819c30465ad8b0c17ce31b8ae350ca237a",
+            "comment": "Make all src lowercase"
+          },
+          {
+            "author": "ac@iconstorm.com",
+            "package": "@telekom/design-tokens",
+            "commit": "e8af6eedced3563d6eefad338dcc0a4e233646e9",
+            "comment": "Introduce whitelabel/telekom builds, remove build folder in favor of a single dist"
+          },
+          {
+            "author": "ac@iconstorm.com",
+            "package": "@telekom/design-tokens",
+            "commit": "36a853a76978eb5aaeafca7e368bab30e22067db",
+            "comment": "Proper package name in LICENSE file"
+          }
+        ]
+      }
+    },
+    {
       "date": "Wed, 19 Jan 2022 17:54:08 GMT",
       "tag": "@telekom/design-tokens_v1.0.0-alpha.1",
       "version": "1.0.0-alpha.1",
