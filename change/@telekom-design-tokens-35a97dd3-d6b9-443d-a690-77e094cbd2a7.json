@@ -1,0 +1,7 @@
+{
+  "type": "prerelease",
+  "comment": "Proper package name in LICENSE file",
+  "packageName": "@telekom/design-tokens",
+  "email": "ac@iconstorm.com",
+  "dependentChangeType": "patch"
+}
