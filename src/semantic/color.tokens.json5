@@ -345,7 +345,7 @@
         comment: "Use as the background of elements like cards, headers, bottom bars, etc.",
         value: {
           light: "{core.color.white}",
-          dark: "{core.color.grey.1000}",
+          dark: "{core.color.grey.1100}",
         },
         type: "color",
         extensions: {
@@ -360,7 +360,7 @@
         comment: "Use as the background of elements like cards, headers, bottom bars, etc.",
         value: {
           light: "{core.color.grey.0}",
-          dark: "{core.color.grey.900}",
+          dark: "{core.color.grey.1000}",
         },
         type: "color",
         extensions: {
