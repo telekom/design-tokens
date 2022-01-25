@@ -360,7 +360,7 @@
         comment: "Use as the background of elements like cards, headers, bottom bars, etc.",
         value: {
           light: "{core.color.grey.0}",
-          dark: "{core.color.grey.1000}",
+          dark: "{core.color.grey.900}",
         },
         type: "color",
         extensions: {
@@ -375,7 +375,7 @@
         comment: "Use as the background of elements that should stand out highlighted sections, footer, etc.",
         value: {
           light: "{core.color.grey.1200}",
-          dark: "{core.color.grey.800}",
+          dark: "{core.color.grey.700}",
         },
         type: "color",
         extensions: {
