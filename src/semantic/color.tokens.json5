@@ -506,7 +506,7 @@
       strong: {
         value: {
           light: "{core.color.grey.800}",
-          dark: "{core.color.grey.700}",
+          dark: "{core.color.grey.500}",
         },
         type: "color",
         extensions: {
