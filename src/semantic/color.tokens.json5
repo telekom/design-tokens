@@ -492,7 +492,7 @@
       regular: {
         value: {
           light: "{core.color.grey.500}",
-          dark: "{core.color.grey.800}",
+          dark: "{core.color.grey.700}",
         },
         type: "color",
         extensions: {
