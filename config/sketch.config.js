@@ -10,6 +10,7 @@
 
 const StyleDictionary = require('style-dictionary');
 const Color = require('tinycolor2');
+const padStart = require('lodash/padStart');
 const libraryAction = require('./sketch-library-action');
 const {
   humanCase,
@@ -59,9 +60,74 @@ StyleDictionary.registerAction({
   ...libraryAction,
 });
 
+/**
+ * We use this to prepend a sorting prefix to names based on the order in the source.
+ * e.g. "Primary/Hovered" -> "03 Primary/02 Hovered"
+ *
+ * WARNING: logic here could almost certainly be improved/simplified
+ *
+ * Output should looks like this:
+ *
+ * const nameSortPrefixMap = {
+ *   color: { // category
+ *     '0': { // index position in token.path array
+ *       'text-&-icon': 1, // key in path -> sort position
+ *       background: 2,
+ *       primary: 3,
+ *       ui: 4,
+ *       functional: 5,
+ *       additional: 6
+ *     },
+ *     '1': {
+ *       'text-&-icon~standard': 1, // compound key
+ *       'text-&-icon~additional': 2,
+ *       'text-&-icon~disabled': 3,
+ *       'text-&-icon~link': 4,
+ *       'text-&-icon~primary': 5,
+ *       'text-&-icon~inverted': 6,
+ *       'text-&-icon~functional': 7,
+ *       'background~canvas': 1,
+ *       'background~canvas-subtle': 2,
+ *       ...
+ *     }
+ *   },
+ *   'text-style': {},
+ *   elevation: {},
+ * }
+ *
+ * @param {object} tokens
+ * @returns object
+ */
+function defineNameSortPrefixMap(tokens) {
+  const nameSortPrefixMap = {};
+  Object.keys(tokens).forEach((category) => {
+    nameSortPrefixMap[category] = walk({}, tokens[category]);
+  });
+  return nameSortPrefixMap;
+
+  function walk(target, source, level = -1, accumulatedPath = []) {
+    if (source.hasOwnProperty('value')) {
+      return;
+    }
+    const position = level + 1;
+    Object.keys(source).forEach((key, index) => {
+      const k = [...accumulatedPath, key].join('~');
+      target[position] = target[position] || {};
+      target[position][k] = index + 1;
+      walk(target, source[key], position, [...accumulatedPath, key]);
+    });
+    return target;
+  }
+}
+
 StyleDictionary.registerFormat({
   name: 'json/sketch-gen',
   formatter: function ({ dictionary, options }) {
+    options.nameSortPrefixMap = defineNameSortPrefixMap({
+      color: dictionary.tokens.color,
+      'text-style': dictionary.tokens['text-style'],
+      elevation: dictionary.tokens.elevation,
+    });
     const colorTokens = dictionary.allTokens
       .filter((token) => token.path.includes('color'))
       .map(getColorShape(options));
@@ -80,17 +146,26 @@ StyleDictionary.registerFormat({
   },
 });
 
-function getTokenName(token) {
-  return token.path.slice(1).map(humanCase).join('/');
+function getTokenName(token, nameSortPrefixMap) {
+  const categoryKey = token.path[0];
+  const prependSortPrefix = (key, i, arr) => {
+    if (nameSortPrefixMap[categoryKey][i] == null) {
+      return key;
+    }
+    const compoundKey = arr.slice(0, i + 1).join('~');
+    const num = nameSortPrefixMap[categoryKey][i][compoundKey];
+    return `${padStart(num, 2, '0')} ${key}`;
+  };
+  return token.path.slice(1).map(prependSortPrefix).map(humanCase).join('/');
 }
 
-function getColorShape() {
+function getColorShape({ nameSortPrefixMap }) {
   return (token) => {
     return {
       __uuid: token.extensions?.telekom?.sketch?.uuid,
       _class: 'swatch',
       do_objectID: '',
-      name: getTokenName(token),
+      name: getTokenName(token, nameSortPrefixMap),
       value: {
         _class: 'color',
         red: (token.value.r / 255).toFixed(5),
@@ -115,7 +190,7 @@ function getTextStyleShape(options) {
     );
     return {
       __uuid: token.extensions?.telekom?.sketch?.uuid,
-      name: getTokenName(token),
+      name: getTokenName(token, options.nameSortPrefixMap),
       textStyle: {
         _class: 'textStyle',
         encodedAttributes: {
@@ -142,7 +217,7 @@ function getTextStyleShape(options) {
   };
 }
 
-function getLayerStyleShape() {
+function getLayerStyleShape({ nameSortPrefixMap }) {
   return (token) => {
     const elevations = token.value.map((elevation) => {
       return {
@@ -168,7 +243,7 @@ function getLayerStyleShape() {
     });
     return {
       __uuid: token.extensions?.telekom?.sketch?.uuid,
-      name: getTokenName(token),
+      name: getTokenName(token, nameSortPrefixMap),
       elevations: [...elevations],
     };
   };
