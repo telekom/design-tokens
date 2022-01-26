@@ -4,5 +4,7 @@ node_modules
 # make these available only for npm
 dist/css/
 dist/js/
+dist/sketch/
 dist/telekom/css/
 dist/telekom/js/
+dist/telekom/sketch/
