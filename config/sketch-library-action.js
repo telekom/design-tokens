@@ -11,12 +11,17 @@
 const uuid = require('uuid-by-string');
 const fs = require('fs-extra');
 const { execSync } = require('child_process');
+const _ = require('lodash');
 const { version } = require('../package.json');
 
 const { OUTPUT_PATH, OUTPUT_BASE_FILENAME } = process.env;
 
 const SKETCH_FIXTURE_FILENAME = 'design-tokens.sketch';
 const FIXTURE_PAGE_ID = '351F5B97-9A3C-4842-B95E-065998538D97';
+
+const SPARKLE = 1 // TODO automate somehow
+
+_.templateSettings.interpolate = /{{([\s\S]+?)}}/g; // mustache delimiters
 
 /*
   TODO
@@ -26,14 +31,19 @@ const FIXTURE_PAGE_ID = '351F5B97-9A3C-4842-B95E-065998538D97';
 
 module.exports = {
   do: function (_, config) {
+    const render = compileFileTemplates();
+    const data = { sparkle: SPARKLE, version, pubDate: (new Date).toUTCString() }
     init('light');
     init('dark');
-    decompress('light');
-    decompress('dark');
+    decompressLibraryTemplate('light');
+    decompressLibraryTemplate('dark');
     updateLibrary(config, 'light');
     updateLibrary(config, 'dark');
-    compress('light');
-    compress('dark');
+    compressLibrary('light');
+    compressLibrary('dark');
+    addXmlFile(render.xml({ ...data, mode: 'light' }), 'light');
+    addXmlFile(render.xml({ ...data, mode: 'dark' }), 'dark');
+    addHtmlFile(render.html(data));
     cleanup();
   },
   undo: function () {
@@ -41,6 +51,23 @@ module.exports = {
     fs.rmSync(OUTPUT_PATH + 'sketch/dark/', { recursive: true, force: true });
   },
 };
+
+function compileFileTemplates() {
+  const xmlSource = fs.readFileSync(`config/fixtures/sketch/design-tokens.xml`, 'utf-8')
+  const htmlSource = fs.readFileSync(`config/fixtures/sketch/index.html`, 'utf-8')
+  return {
+    xml: _.template(xmlSource),
+    html: _.template(htmlSource)
+  }
+}
+
+function addXmlFile(data, mode) {
+  fs.writeFileSync(`${OUTPUT_PATH}sketch/${mode}/${OUTPUT_BASE_FILENAME}.xml`, data)
+}
+
+function addHtmlFile(data) {
+  fs.writeFileSync(`${OUTPUT_PATH}sketch/index.html`, data)
+}
 
 function init(mode) {
   fs.mkdirpSync(`config/tmp/sketch-library-${mode}/`);
@@ -51,13 +78,13 @@ function cleanup() {
   fs.rmSync('config/tmp/', { recursive: true, force: true });
 }
 
-function decompress(mode) {
+function decompressLibraryTemplate(mode) {
   execSync(
-    `unzip -o -d config/tmp/sketch-library-${mode}/ config/fixtures/${SKETCH_FIXTURE_FILENAME}`
+    `unzip -o -d config/tmp/sketch-library-${mode}/ config/fixtures/sketch/${SKETCH_FIXTURE_FILENAME}`
   );
 }
 
-function compress(mode) {
+function compressLibrary(mode) {
   const root = process.cwd();
   process.chdir(`config/tmp/sketch-library-${mode}`);
   execSync(`zip -r -X ${OUTPUT_BASE_FILENAME}.sketch *`);

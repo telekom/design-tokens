@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle">
+  <channel>
+    <title>Telekom Design Tokens</title>
+    <description>Telekom Design Tokens Sketch Library {{ version }}, build {{ sparkle }}</description>
+    <image>
+      <url></url>
+      <title>Telekom Design Tokens</title>
+    </image>
+    <generator>Sketch</generator>
+    <item>
+      <title>Telekom Design Tokens {{ version }}, build {{ sparkle }}</title>
+      <pubDate>{{ pubDate }}</pubDate>
+      <enclosure url="https://telekom.github.io/design-tokens/sketch/{{ mode }}/telekom-design-tokens.xml" type="application/octet-stream" sparkle:version="{{ sparkle }}"/>
+    </item>
+  </channel>
+</rss>
