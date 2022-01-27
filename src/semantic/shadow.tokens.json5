@@ -157,8 +157,7 @@
         },
       },
     },
-    // flying state
-    overlay: {
+    top: {
       comment: "For fixed elements that overlay the content e.g. sidebars or bottom sheets",
       value: "{core.shadow.level-8.value}",
       type: "shadow",
@@ -171,7 +170,7 @@
       },
     },
     // top state above all
-    top: {
+    overlay: {
       comment: "Highest level e.g. for dialogs or modals",
       value: "{core.shadow.level-12.value}",
       type: "shadow",
