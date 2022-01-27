@@ -4,11 +4,11 @@ name: Deploy GitHub Pages (Sketch library)
 
 # Controls when the action will run. 
 on:
-  # Triggers the workflow on push or pull request events but only for the gh-pages branch
+  # Triggers the workflow on push or pull request events but only for the deploy branch
   push:
-    branches: [ gh-pages ]
+    branches: [ deploy ]
   pull_request:
-    branches: [ gh-pages ]
+    branches: [ deploy ]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
