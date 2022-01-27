@@ -19,7 +19,7 @@ const { OUTPUT_PATH, OUTPUT_BASE_FILENAME } = process.env;
 const SKETCH_FIXTURE_FILENAME = 'design-tokens.sketch';
 const FIXTURE_PAGE_ID = '351F5B97-9A3C-4842-B95E-065998538D97';
 
-const SPARKLE = 1; // TODO automate somehow
+const SPARKLE = 2; // TODO automate somehow
 
 _.templateSettings.interpolate = /{{([\s\S]+?)}}/g; // mustache delimiters
 
