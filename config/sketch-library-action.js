@@ -16,7 +16,7 @@ const { version } = require('../package.json');
 
 const { OUTPUT_PATH, OUTPUT_BASE_FILENAME } = process.env;
 
-const SKETCH_FIXTURE_FILENAME = 'design-tokens.sketch';
+const SKETCH_FIXTURE_BASENAME = 'design-tokens';
 
 const SPARKLE = 2; // TODO automate somehow
 
@@ -92,7 +92,7 @@ function cleanup() {
 
 function decompressLibraryTemplate(mode) {
   execSync(
-    `unzip -o -d config/tmp/sketch-library-${mode}/ config/fixtures/sketch/${SKETCH_FIXTURE_FILENAME}`
+    `unzip -o -d config/tmp/sketch-library-${mode}/ config/fixtures/sketch/${SKETCH_FIXTURE_BASENAME}-${mode}.sketch`
   );
 }
 
