@@ -72,7 +72,8 @@ StyleDictionary.registerTransform({
       .concat(token.path)
       .map((x) => x.replace('&', 'and'))
       .join(' ');
-    return kebabCase(name);
+    const result = kebabCase(name);
+    return result.replace('-x-', '-x');
   },
 });
 
