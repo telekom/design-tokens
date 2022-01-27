@@ -17,7 +17,6 @@ const { version } = require('../package.json');
 const { OUTPUT_PATH, OUTPUT_BASE_FILENAME } = process.env;
 
 const SKETCH_FIXTURE_FILENAME = 'design-tokens.sketch';
-const FIXTURE_PAGE_ID = '351F5B97-9A3C-4842-B95E-065998538D97';
 
 const SPARKLE = 2; // TODO automate somehow
 
@@ -110,20 +109,15 @@ function compressLibrary(mode) {
 
 function updateLibrary({ buildPath }, mode) {
   const documentFilepath = `config/tmp/sketch-library-${mode}/document.json`;
-  const mainPageFilepath = `config/tmp/sketch-library-${mode}/pages/${FIXTURE_PAGE_ID}.json`;
   const tokens = JSON.parse(
     fs.readFileSync(buildPath + OUTPUT_BASE_FILENAME + `.${mode}.json`)
   );
   const document = JSON.parse(fs.readFileSync(documentFilepath));
-  const mainPage = JSON.parse(fs.readFileSync(mainPageFilepath));
-  const now = new Date();
-
   checkIdsAreUnique([
     ...tokens.colors,
     ...tokens.textStyles,
     ...tokens.layerStyles,
   ]);
-
   // Insert tokens as swatches and text styles into document.json
   document.sharedSwatches.objects = tokens.colors
     .map(colorSwatch)
@@ -134,12 +128,8 @@ function updateLibrary({ buildPath }, mode) {
   document.layerStyles.objects = tokens.layerStyles
     .map(layerStyle)
     .map(cleanUpIdKey);
-
-  // Add build information to main page
-  mainPage.layers[0].layers[0].overrideValues[0].value = `Design Tokens (${mode})`;
-  mainPage.layers[0].layers[0].overrideValues[1].value = `v${version} (generated on ${now.toUTCString()})`;
+  // Write document file
   fs.writeFileSync(documentFilepath, JSON.stringify(document));
-  fs.writeFileSync(mainPageFilepath, JSON.stringify(mainPage));
 }
 
 /**
