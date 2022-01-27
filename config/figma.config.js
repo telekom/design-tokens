@@ -48,7 +48,7 @@ function formatJSON(allTokens, nameCaseFn = humanCase) {
   deep.p = true;
   allTokens.forEach((token) => {
     const path = token.path.map(nameCaseFn);
-    if (path[0] === 'Color' || path[0] === 'Elevation') path.shift();
+    if (path[0] === 'Color' || path[0] === 'Shadow') path.shift();
     deep(output, path, getJSONValue(token));
   });
   return output;
@@ -123,7 +123,7 @@ StyleDictionary.registerFormat({
     const output = formatJSON(
       dictionary.allTokens.filter(
         (token) =>
-          token.path.includes('color') || token.path.includes('elevation')
+          token.path.includes('color') || token.path.includes('shadow')
       )
     );
     return JSON.stringify(output, null, 2);
@@ -206,7 +206,7 @@ StyleDictionary.registerAction({
 });
 
 const hasMode = (token) =>
-  token.path[0] === 'color' || token.path[0] === 'elevation';
+  token.path[0] === 'color' || token.path[0] === 'shadow';
 
 module.exports = {
   include: ['src/core/**/*.json5'],

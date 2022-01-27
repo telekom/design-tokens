@@ -92,7 +92,7 @@ StyleDictionary.registerAction({
  *     }
  *   },
  *   'text-style': {},
- *   elevation: {},
+ *   shadow: {},
  * }
  *
  * @param {object} tokens
@@ -126,7 +126,7 @@ StyleDictionary.registerFormat({
     options.nameSortPrefixMap = defineNameSortPrefixMap({
       color: dictionary.tokens.color,
       'text-style': dictionary.tokens['text-style'],
-      elevation: dictionary.tokens.elevation,
+      shadow: dictionary.tokens.shadow,
     });
     const colorTokens = dictionary.allTokens
       .filter((token) => token.path.includes('color'))
@@ -135,7 +135,7 @@ StyleDictionary.registerFormat({
       .filter((token) => token.path.includes('text-style'))
       .map(getTextStyleShape(options));
     const layerStyleTokens = dictionary.allTokens
-      .filter((token) => token.path.includes('elevation'))
+      .filter((token) => token.path.includes('shadow'))
       .map(getLayerStyleShape(options));
     const output = {
       colors: colorTokens,
@@ -219,20 +219,20 @@ function getTextStyleShape(options) {
 
 function getLayerStyleShape({ nameSortPrefixMap }) {
   return (token) => {
-    const elevations = token.value.map((elevation) => {
+    const shadows = token.value.map((shadow) => {
       return {
         _class: 'shadow',
         isEnabled: true,
-        blurRadius: elevation.blur,
-        offsetX: elevation.x,
-        offsetY: elevation.y,
-        spread: elevation.spread,
+        blurRadius: shadow.blur,
+        offsetX: shadow.x,
+        offsetY: shadow.y,
+        spread: shadow.spread,
         color: {
           _class: 'color',
-          alpha: elevation.color.alpha,
-          blue: (elevation.color.color.b / 255).toFixed(5),
-          green: (elevation.color.color.g / 255).toFixed(5),
-          red: (elevation.color.color.r / 255).toFixed(5),
+          alpha: shadow.color.alpha,
+          blue: (shadow.color.color.b / 255).toFixed(5),
+          green: (shadow.color.color.g / 255).toFixed(5),
+          red: (shadow.color.color.r / 255).toFixed(5),
         },
         contextSettings: {
           _class: 'graphicsContextSettings',
@@ -244,7 +244,7 @@ function getLayerStyleShape({ nameSortPrefixMap }) {
     return {
       __uuid: token.extensions?.telekom?.sketch?.uuid,
       name: getTokenName(token, nameSortPrefixMap),
-      elevations: [...elevations],
+      shadows: [...shadows],
     };
   };
 }
@@ -266,7 +266,7 @@ module.exports = {
           filter: (token) =>
             token.path[0] === 'color' ||
             token.path[0] === 'text-style' ||
-            token.path[0] === 'elevation',
+            token.path[0] === 'shadow',
           options: {
             mode: 'light',
           },
@@ -283,7 +283,7 @@ module.exports = {
           filter: (token) =>
             token.path[0] === 'color' ||
             token.path[0] === 'text-style' ||
-            token.path[0] === 'elevation',
+            token.path[0] === 'shadow',
           options: {
             mode: 'dark',
           },
