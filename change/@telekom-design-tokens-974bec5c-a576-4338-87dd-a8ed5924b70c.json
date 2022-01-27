@@ -1,0 +1,7 @@
+{
+  "type": "patch",
+  "comment": "Added shadow docs and switch top and overlay shadow",
+  "packageName": "@telekom/design-tokens",
+  "email": "oppermann.lukas@gmail.com",
+  "dependentChangeType": "patch"
+}
