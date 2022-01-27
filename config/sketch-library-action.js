@@ -17,9 +17,8 @@ const { version } = require('../package.json');
 const { OUTPUT_PATH, OUTPUT_BASE_FILENAME } = process.env;
 
 const SKETCH_FIXTURE_FILENAME = 'design-tokens.sketch';
-const FIXTURE_PAGE_ID = '351F5B97-9A3C-4842-B95E-065998538D97';
 
-const SPARKLE = 1 // TODO automate somehow
+const SPARKLE = 2; // TODO automate somehow
 
 _.templateSettings.interpolate = /{{([\s\S]+?)}}/g; // mustache delimiters
 
@@ -32,7 +31,11 @@ _.templateSettings.interpolate = /{{([\s\S]+?)}}/g; // mustache delimiters
 module.exports = {
   do: function (_, config) {
     const render = compileFileTemplates();
-    const data = { sparkle: SPARKLE, version, pubDate: (new Date).toUTCString() }
+    const data = {
+      sparkle: SPARKLE,
+      version,
+      pubDate: new Date().toUTCString(),
+    };
     init('light');
     init('dark');
     decompressLibraryTemplate('light');
@@ -53,20 +56,29 @@ module.exports = {
 };
 
 function compileFileTemplates() {
-  const xmlSource = fs.readFileSync(`config/fixtures/sketch/design-tokens.xml`, 'utf-8')
-  const htmlSource = fs.readFileSync(`config/fixtures/sketch/index.html`, 'utf-8')
+  const xmlSource = fs.readFileSync(
+    `config/fixtures/sketch/design-tokens.xml`,
+    'utf-8'
+  );
+  const htmlSource = fs.readFileSync(
+    `config/fixtures/sketch/index.html`,
+    'utf-8'
+  );
   return {
     xml: _.template(xmlSource),
-    html: _.template(htmlSource)
-  }
+    html: _.template(htmlSource),
+  };
 }
 
 function addXmlFile(data, mode) {
-  fs.writeFileSync(`${OUTPUT_PATH}sketch/${mode}/${OUTPUT_BASE_FILENAME}.xml`, data)
+  fs.writeFileSync(
+    `${OUTPUT_PATH}sketch/${mode}/${OUTPUT_BASE_FILENAME}.xml`,
+    data
+  );
 }
 
 function addHtmlFile(data) {
-  fs.writeFileSync(`${OUTPUT_PATH}sketch/index.html`, data)
+  fs.writeFileSync(`${OUTPUT_PATH}sketch/index.html`, data);
 }
 
 function init(mode) {
@@ -97,20 +109,15 @@ function compressLibrary(mode) {
 
 function updateLibrary({ buildPath }, mode) {
   const documentFilepath = `config/tmp/sketch-library-${mode}/document.json`;
-  const mainPageFilepath = `config/tmp/sketch-library-${mode}/pages/${FIXTURE_PAGE_ID}.json`;
   const tokens = JSON.parse(
     fs.readFileSync(buildPath + OUTPUT_BASE_FILENAME + `.${mode}.json`)
   );
   const document = JSON.parse(fs.readFileSync(documentFilepath));
-  const mainPage = JSON.parse(fs.readFileSync(mainPageFilepath));
-  const now = new Date();
-
   checkIdsAreUnique([
     ...tokens.colors,
     ...tokens.textStyles,
     ...tokens.layerStyles,
   ]);
-
   // Insert tokens as swatches and text styles into document.json
   document.sharedSwatches.objects = tokens.colors
     .map(colorSwatch)
@@ -121,12 +128,8 @@ function updateLibrary({ buildPath }, mode) {
   document.layerStyles.objects = tokens.layerStyles
     .map(layerStyle)
     .map(cleanUpIdKey);
-
-  // Add build information to main page
-  mainPage.layers[0].layers[0].overrideValues[0].value = `Design Tokens (${mode})`;
-  mainPage.layers[0].layers[0].overrideValues[1].value = `v${version} (generated on ${now.toUTCString()})`;
+  // Write document file
   fs.writeFileSync(documentFilepath, JSON.stringify(document));
-  fs.writeFileSync(mainPageFilepath, JSON.stringify(mainPage));
 }
 
 /**

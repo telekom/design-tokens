@@ -134,9 +134,15 @@ StyleDictionary.registerFormat({
     const textStyleTokens = dictionary.allTokens
       .filter((token) => token.path.includes('text-style'))
       .map(getTextStyleShape(options));
-    const layerStyleTokens = dictionary.allTokens
+    const shadowTokens = dictionary.allTokens
       .filter((token) => token.path.includes('shadow'))
-      .map(getLayerStyleShape(options));
+      .map(getShadowShape(options))
+      // Add "Shadow" top-level in name
+      .map((item) => {
+        item.name = `Shadow/${item.name}`;
+        return item;
+      });
+    const layerStyleTokens = [...shadowTokens];
     const output = {
       colors: colorTokens,
       textStyles: textStyleTokens,
@@ -217,7 +223,7 @@ function getTextStyleShape(options) {
   };
 }
 
-function getLayerStyleShape({ nameSortPrefixMap }) {
+function getShadowShape({ nameSortPrefixMap }) {
   return (token) => {
     const shadows = token.value.map((shadow) => {
       return {
