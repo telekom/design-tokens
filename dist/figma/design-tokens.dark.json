@@ -1016,7 +1016,7 @@
         "description": "For floating elements that mostly stay in a fixed position like a FAB."
       }
     },
-    "Overlay": {
+    "Top": {
       "value": [
         {
           "x": 0,
@@ -1038,7 +1038,7 @@
       "type": "boxShadow",
       "description": "For fixed elements that overlay the content e.g. sidebars or bottom sheets"
     },
-    "Top": {
+    "Overlay": {
       "value": [
         {
           "x": 0,
