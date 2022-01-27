@@ -1,11 +1,11 @@
 {
   // TODO:
   // this needs to be adjusted for dark & light mode
-  elevation: {
+  shadow: {
     flat: {
       standard: {
         comment: "Exclusivly for flat design elements",
-        value: "{core.elevation.level-0.value}",
+        value: "{core.shadow.level-0.value}",
         type: "shadow",
         extensions: {
           telekom: {
@@ -17,7 +17,7 @@
       },
       hover: {
         comment: "Exclusivly for flat design elements",
-        value: "{core.elevation.level-1.value}",
+        value: "{core.shadow.level-1.value}",
         type: "shadow",
         extensions: {
           telekom: {
@@ -29,7 +29,7 @@
       },
       pressed: {
         comment: "Exclusivly for flat design elements",
-        value: "{core.elevation.level-0.value}",
+        value: "{core.shadow.level-0.value}",
         type: "shadow",
         extensions: {
           telekom: {
@@ -44,7 +44,7 @@
     resting: {
       standard: {
         comment: "Default for interactable elements like buttons, etc.",
-        value: "{core.elevation.level-1.value}",
+        value: "{core.shadow.level-1.value}",
         type: "shadow",
         extensions: {
           telekom: {
@@ -56,7 +56,7 @@
       },
       hover: {
         comment: "Default for interactable elements like buttons, etc.",
-        value: "{core.elevation.level-3.value}",
+        value: "{core.shadow.level-3.value}",
         type: "shadow",
         extensions: {
           telekom: {
@@ -68,7 +68,7 @@
       },
       pressed: {
         comment: "Default for interactable elements like buttons, etc.",
-        value: "{core.elevation.level-0.value}",
+        value: "{core.shadow.level-0.value}",
         type: "shadow",
         extensions: {
           telekom: {
@@ -83,7 +83,7 @@
     raised: {
       standard: {
         comment: "For bigger interactable elements like cards, etc.",
-        value: "{core.elevation.level-4.value}",
+        value: "{core.shadow.level-4.value}",
         type: "shadow",
         extensions: {
           telekom: {
@@ -95,7 +95,7 @@
       },
       hover: {
         comment: "For bigger interactable elements like cards, etc.",
-        value: "{core.elevation.level-8.value}",
+        value: "{core.shadow.level-8.value}",
         type: "shadow",
         extensions: {
           telekom: {
@@ -107,7 +107,7 @@
       },
       pressed: {
         comment: "For bigger interactable elements like cards, etc.",
-        value: "{core.elevation.level-2.value}",
+        value: "{core.shadow.level-2.value}",
         type: "shadow",
         extensions: {
           telekom: {
@@ -122,7 +122,7 @@
     floating: {
       standard: {
         comment: "For floating elements that mostly stay in a fixed position like a FAB.",
-        value: "{core.elevation.level-6.value}",
+        value: "{core.shadow.level-6.value}",
         type: "shadow",
         extensions: {
           telekom: {
@@ -134,7 +134,7 @@
       },
       hover: {
         comment: "For floating elements that mostly stay in a fixed position like a FAB.",
-        value: "{core.elevation.level-12.value}",
+        value: "{core.shadow.level-12.value}",
         type: "shadow",
         extensions: {
           telekom: {
@@ -146,7 +146,7 @@
       },
       pressed: {
         comment: "For floating elements that mostly stay in a fixed position like a FAB.",
-        value: "{core.elevation.level-4.value}",
+        value: "{core.shadow.level-4.value}",
         type: "shadow",
         extensions: {
           telekom: {
@@ -160,7 +160,7 @@
     // flying state
     overlay: {
       comment: "For fixed elements that overlay the content e.g. sidebars or bottom sheets",
-      value: "{core.elevation.level-8.value}",
+      value: "{core.shadow.level-8.value}",
       type: "shadow",
       extensions: {
         telekom: {
@@ -173,7 +173,7 @@
     // top state above all
     top: {
       comment: "Highest level e.g. for dialogs or modals",
-      value: "{core.elevation.level-12.value}",
+      value: "{core.shadow.level-12.value}",
       type: "shadow",
       extensions: {
         telekom: {
@@ -188,7 +188,7 @@
       top: {
         flat: {
           comment: "Use for headers, app bar & menus on the top",
-          value: "{core.elevation.special.app-bar.top.subtle}",
+          value: "{core.shadow.special.app-bar.top.subtle}",
           type: "shadow",
           extensions: {
             telekom: {
@@ -200,7 +200,7 @@
         },
         raised: {
           comment: "Use for headers, app bar & menus on the top",
-          value: "{core.elevation.special.app-bar.top.flat}",
+          value: "{core.shadow.special.app-bar.top.flat}",
           type: "shadow",
           extensions: {
             telekom: {
@@ -215,7 +215,7 @@
       bottom: {
         flat: {
           comment: "Use for app navigation and app bars on the bottom",
-          value: "{core.elevation.special.app-bar.bottom.subtle}",
+          value: "{core.shadow.special.app-bar.bottom.subtle}",
           type: "shadow",
           extensions: {
             telekom: {
@@ -227,7 +227,7 @@
         },
         raised: {
           comment: "Use for app navigation and app bars on the bottom",
-          value: "{core.elevation.special.app-bar.bottom.flat}",
+          value: "{core.shadow.special.app-bar.bottom.flat}",
           type: "shadow",
           extensions: {
             telekom: {
