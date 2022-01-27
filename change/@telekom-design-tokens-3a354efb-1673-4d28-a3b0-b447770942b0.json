@@ -1,7 +1,0 @@
-{
-  "type": "prerelease",
-  "comment": "Add sort prefix to names in Sketch output",
-  "packageName": "@telekom/design-tokens",
-  "email": "ac@iconstorm.com",
-  "dependentChangeType": "patch"
-}

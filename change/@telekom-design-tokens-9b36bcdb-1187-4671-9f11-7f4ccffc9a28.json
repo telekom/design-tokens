@@ -1,7 +1,0 @@
-{
-  "type": "prerelease",
-  "comment": "Add Sketch UUIDs to source",
-  "packageName": "@telekom/design-tokens",
-  "email": "ac@iconstorm.com",
-  "dependentChangeType": "patch"
-}

@@ -2,6 +2,63 @@
   "name": "@telekom/design-tokens",
   "entries": [
     {
+      "date": "Thu, 27 Jan 2022 17:31:04 GMT",
+      "tag": "@telekom/design-tokens_v1.0.0-alpha.3",
+      "version": "1.0.0-alpha.3",
+      "comments": {
+        "prerelease": [
+          {
+            "author": "oppermann.lukas@gmail.com",
+            "package": "@telekom/design-tokens",
+            "commit": "22c4846274d629976575dc59b045d58f59ddd6e6",
+            "comment": "Added shadow docs and switch `top` and `overlay` shadow"
+          },
+          {
+            "author": "ac@iconstorm.com",
+            "package": "@telekom/design-tokens",
+            "commit": "f5f65c336abc3df1550fdcdae3006c43dfa49d29",
+            "comment": "Add light and dark library thumbnail for Sketch"
+          },
+          {
+            "author": "ac@iconstorm.com",
+            "package": "@telekom/design-tokens",
+            "commit": "2606ab1ceb997301b674ac1aa8a5a15fcbf5493c",
+            "comment": "Fix kebab for spacing tokens in CSS: x1 instead of x-1"
+          },
+          {
+            "author": "ac@iconstorm.com",
+            "package": "@telekom/design-tokens",
+            "commit": "bdeef80fabba1f12087bb68545e52659b1505935",
+            "comment": "Keep spacing units lowercase in Figma output"
+          },
+          {
+            "author": "ac@iconstorm.com",
+            "package": "@telekom/design-tokens",
+            "commit": "100539febbd2f7687eafcfd2095dc3431626f274",
+            "comment": "Add Sketch UUIDs to source"
+          },
+          {
+            "author": "ac@iconstorm.com",
+            "package": "@telekom/design-tokens",
+            "commit": "d8e9969fe7ab72e1c2155a7fa36e5e4f27ad3359",
+            "comment": "Add dupe check for Sketch UUIDs in source"
+          },
+          {
+            "author": "ac@iconstorm.com",
+            "package": "@telekom/design-tokens",
+            "commit": "e547cfbb03c4ea22f37634460a4ef36c8de03bad",
+            "comment": "Rename `elevation` to `shadow`"
+          },
+          {
+            "author": "ac@iconstorm.com",
+            "package": "@telekom/design-tokens",
+            "commit": "e00ad9a0452a38e51fc6b6d102474085de1d2e55",
+            "comment": "Add sort prefix to names in Sketch output"
+          }
+        ]
+      }
+    },
+    {
       "date": "Mon, 24 Jan 2022 10:45:42 GMT",
       "tag": "@telekom/design-tokens_v1.0.0-alpha.2",
       "version": "1.0.0-alpha.2",
