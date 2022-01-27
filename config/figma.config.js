@@ -122,8 +122,7 @@ StyleDictionary.registerFormat({
   formatter: function ({ dictionary }) {
     const output = formatJSON(
       dictionary.allTokens.filter(
-        (token) =>
-          token.path.includes('color') || token.path.includes('shadow')
+        (token) => token.path.includes('color') || token.path.includes('shadow')
       )
     );
     return JSON.stringify(output, null, 2);
