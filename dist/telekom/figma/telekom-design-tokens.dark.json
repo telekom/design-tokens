@@ -140,6 +140,10 @@
       }
     },
     "UI": {
+      "Base": {
+        "value": "#38393B",
+        "type": "color"
+      },
       "Subtle": {
         "value": "#272729",
         "type": "color"
@@ -148,12 +152,12 @@
         "value": "#38393B",
         "type": "color"
       },
-      "Normal": {
-        "value": "#4A4B4D",
+      "Regular": {
+        "value": "#5D5F61",
         "type": "color"
       },
       "Strong": {
-        "value": "#5D5F61",
+        "value": "#898B8F",
         "type": "color"
       },
       "Extra Strong": {

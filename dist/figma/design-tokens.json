@@ -140,16 +140,20 @@
       }
     },
     "UI": {
+      "Base": {
+        "value": "#ffffff",
+        "type": "color"
+      },
       "Subtle": {
         "value": "#D3D5D6",
         "type": "color"
       },
       "Light": {
-        "value": "#A3A6AA",
+        "value": "#BABCBF",
         "type": "color"
       },
-      "Normal": {
-        "value": "#707275",
+      "Regular": {
+        "value": "#898B8F",
         "type": "color"
       },
       "Strong": {
@@ -1276,6 +1280,10 @@
       }
     },
     "UI": {
+      "Base": {
+        "value": "#38393B",
+        "type": "color"
+      },
       "Subtle": {
         "value": "#272729",
         "type": "color"
@@ -1284,12 +1292,12 @@
         "value": "#38393B",
         "type": "color"
       },
-      "Normal": {
-        "value": "#4A4B4D",
+      "Regular": {
+        "value": "#5D5F61",
         "type": "color"
       },
       "Strong": {
-        "value": "#5D5F61",
+        "value": "#898B8F",
         "type": "color"
       },
       "Extra Strong": {
