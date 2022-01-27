@@ -1,7 +1,0 @@
-{
-  "type": "prerelease",
-  "comment": "Keep spacing units lowercase in Figma output",
-  "packageName": "@telekom/design-tokens",
-  "email": "ac@iconstorm.com",
-  "dependentChangeType": "patch"
-}

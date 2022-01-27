@@ -1,8 +1,23 @@
 # Change Log - @telekom/design-tokens
 
-This log was last generated on Mon, 24 Jan 2022 10:45:42 GMT and should not be manually modified.
+This log was last generated on Thu, 27 Jan 2022 17:31:04 GMT and should not be manually modified.
 
 <!-- Start content -->
+
+## 1.0.0-alpha.3
+
+Thu, 27 Jan 2022 17:31:04 GMT
+
+### Changes
+
+- Added shadow docs and switch `top` and `overlay` shadow (oppermann.lukas@gmail.com)
+- Add light and dark library thumbnail for Sketch (ac@iconstorm.com)
+- Fix kebab for spacing tokens in CSS: x1 instead of x-1 (ac@iconstorm.com)
+- Keep spacing units lowercase in Figma output (ac@iconstorm.com)
+- Add Sketch UUIDs to source (ac@iconstorm.com)
+- Add dupe check for Sketch UUIDs in source (ac@iconstorm.com)
+- Rename `elevation` to `shadow` (ac@iconstorm.com)
+- Add sort prefix to names in Sketch output (ac@iconstorm.com)
 
 ## 1.0.0-alpha.2
 

@@ -1,7 +1,0 @@
-{
-  "type": "prerelease",
-  "comment": "Rename `elevation` to `shadow`",
-  "packageName": "@telekom/design-tokens",
-  "email": "ac@iconstorm.com",
-  "dependentChangeType": "patch"
-}

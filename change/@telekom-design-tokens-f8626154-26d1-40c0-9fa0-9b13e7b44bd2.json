@@ -1,7 +1,0 @@
-{
-  "type": "prerelease",
-  "comment": "Fix kebab for spacing tokens in CSS: x1 instead of x-1",
-  "packageName": "@telekom/design-tokens",
-  "email": "ac@iconstorm.com",
-  "dependentChangeType": "patch"
-}

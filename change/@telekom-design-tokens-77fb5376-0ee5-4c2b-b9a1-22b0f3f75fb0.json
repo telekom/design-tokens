@@ -1,7 +1,0 @@
-{
-  "type": "prerelease",
-  "comment": "Add dupe check for Sketch UUIDs in source",
-  "packageName": "@telekom/design-tokens",
-  "email": "ac@iconstorm.com",
-  "dependentChangeType": "patch"
-}
