@@ -252,7 +252,7 @@ function layerStyle(token) {
       },
       fills: [],
       innerShadows: [],
-      shadows: [...token.elevations],
+      shadows: [...token.shadows],
     },
   };
 }

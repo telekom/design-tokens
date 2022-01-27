@@ -3,7 +3,7 @@
     // TODO:
     // - improve shadows visually
     // - implement dark & light mode for shadows
-    elevation: {
+    shadow: {
       "level-0": {
         value: [
           {
