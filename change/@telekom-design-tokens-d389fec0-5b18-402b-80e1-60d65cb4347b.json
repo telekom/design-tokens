@@ -1,0 +1,7 @@
+{
+  "type": "prerelease",
+  "comment": "Add light and dark preview images for Sketch library",
+  "packageName": "@telekom/design-tokens",
+  "email": "ac@iconstorm.com",
+  "dependentChangeType": "patch"
+}
