@@ -123,7 +123,7 @@
       value: {
         "font-family": "{typography.font-family.sans.value}",
         "font-size": "{typography.font-size.body.value}",
-        "font-weight": "{typography.font-weight.regular.value}",
+        "font-weight": "{typography.font-weight.medium.value}",
         "line-spacing": "{typography.line-spacing.none.value}",
         "letter-spacing": "{typography.letter-spacing.standard.value}",
       },
