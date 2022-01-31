@@ -429,21 +429,7 @@
             },
           },
         },
-      },
-      subtle: {
-        value: {
-          light: "{core.color.brand.tint}",
-          dark: "{core.color.brand.shade}",
-        },
-        type: "color",
-        extensions: {
-          telekom: {
-            sketch: {
-              uuid: "7FD51613-E83A-47AA-8A7D-DFF672B521AF",
-            },
-          },
-        },
-      },
+      }
     },
     ui: {
       comment: "UI colors are used to create ui elements like dividers, checkboxes, buttons, etc.",
