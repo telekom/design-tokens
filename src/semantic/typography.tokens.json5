@@ -79,6 +79,11 @@
       },
     },
     "line-spacing": {
+      "none": {
+        comment: "Use for single line in ui elements",
+        value: "{core.typography.line-spacing.none.value}",
+        type: "number",
+      },
       "extra-tight": {
         comment: "Use for large titles like H1 or H2",
         value: "{core.typography.line-spacing.xs.value}",

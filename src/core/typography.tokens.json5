@@ -101,6 +101,10 @@
         },
       },
       "line-spacing": {
+        none: {
+          value: 1,
+          type: "number",
+        },
         xs: {
           value: 1.15,
           type: "number",
