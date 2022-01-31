@@ -16,6 +16,11 @@ Lastly, by using semantic token names like `Text & Icon / Standard` or `Text & I
 
 Whenever a token needs to be updated all you have to do is pull in the latest changes from github or npm and your code will be updated automatically.
 ### Why should you use design tokens?
+For both designers and developers there are three important benefits of using out design tokens.
+
+1. Your designs and components will be accessible and you will have an easier time getting approval.
+2. Your product will be brand conform and stay within the telekom brand guidelines automatically.
+3. You can allow your users to choose between dark & light mode without additional work on your side.
 
 ### How are design tokens related to Scale, the telekom design system?
 Scale uses design tokens as a base to style all components. 
