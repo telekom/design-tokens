@@ -1,5 +1,6 @@
-node_modules
 .DS_Store
+.npmrc
+node_modules
 public
 
 # make these available only for npm
