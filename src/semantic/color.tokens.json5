@@ -433,6 +433,81 @@
     },
     ui: {
       comment: "UI colors are used to create ui elements like dividers, checkboxes, buttons, etc.",
+      standard: {
+        comment: "Use for disabled interactive elements in combination with the disabled text color",
+        value: {
+          light: "{core.color.grey.500}",
+          dark: "{core.color.grey.700}",
+        },
+        type: "color",
+        extensions: {
+          telekom: {
+            sketch: {
+              uuid: "D97C6487-0153-4A40-8FA3-0620ECD27D57",
+            },
+          },
+        },
+      },
+      hovered: {
+        comment: "Use for disabled interactive elements in combination with the disabled text color",
+        value: {
+          light: "{core.color.grey.800}",
+          dark: "{core.color.grey.500}",
+        },
+        type: "color",
+        extensions: {
+          telekom: {
+            sketch: {
+              uuid: "EFA2AD5F-DCC0-41D9-8203-AA9F8DF0424F",
+            },
+          },
+        },
+      },
+      pressed: {
+        comment: "Use for disabled interactive elements in combination with the disabled text color",
+        value: {
+          light: "{core.color.grey.1200}",
+          dark: "{core.color.grey.0}",
+        },
+        type: "color",
+        extensions: {
+          telekom: {
+            sketch: {
+              uuid: "4E9D2D7E-3DA9-4A98-BE75-BC12FC9F3767",
+            },
+          },
+        },
+      },
+      active: {
+        comment: "Use for disabled interactive elements in combination with the disabled text color",
+        value: {
+          light: "{core.color.grey.1200}",
+          dark: "{core.color.grey.0}",
+        },
+        type: "color",
+        extensions: {
+          telekom: {
+            sketch: {
+              uuid: "E2833C09-CA0B-4377-8441-1B5984A96DF0",
+            },
+          },
+        },
+      },
+      disabled: {
+        comment: "Use for disabled interactive elements in combination with the disabled text color",
+        value: {
+          light: "{core.color.grey.200}",
+          dark: "{core.color.grey.1000}",
+        },
+        type: "color",
+        extensions: {
+          telekom: {
+            sketch: {
+              uuid: "EE676D75-F367-4A83-A78B-CEEBEBAB9B13",
+            },
+          },
+        },
+      },
       base: {
         value: {
           light: "{core.color.white}",
@@ -513,81 +588,6 @@
           telekom: {
             sketch: {
               uuid: "8DB0D12D-BDE2-4B29-ADAD-E988FF753948",
-            },
-          },
-        },
-      },
-      standard: {
-        comment: "Use for disabled interactive elements in combination with the disabled text color",
-        value: {
-          light: "{core.color.grey.500}",
-          dark: "{core.color.grey.700}",
-        },
-        type: "color",
-        extensions: {
-          telekom: {
-            sketch: {
-              uuid: "D97C6487-0153-4A40-8FA3-0620ECD27D57",
-            },
-          },
-        },
-      },
-      hovered: {
-        comment: "Use for disabled interactive elements in combination with the disabled text color",
-        value: {
-          light: "{core.color.grey.800}",
-          dark: "{core.color.grey.500}",
-        },
-        type: "color",
-        extensions: {
-          telekom: {
-            sketch: {
-              uuid: "EFA2AD5F-DCC0-41D9-8203-AA9F8DF0424F",
-            },
-          },
-        },
-      },
-      pressed: {
-        comment: "Use for disabled interactive elements in combination with the disabled text color",
-        value: {
-          light: "{core.color.grey.1200}",
-          dark: "{core.color.grey.0}",
-        },
-        type: "color",
-        extensions: {
-          telekom: {
-            sketch: {
-              uuid: "4E9D2D7E-3DA9-4A98-BE75-BC12FC9F3767",
-            },
-          },
-        },
-      },
-      active: {
-        comment: "Use for disabled interactive elements in combination with the disabled text color",
-        value: {
-          light: "{core.color.grey.1200}",
-          dark: "{core.color.grey.0}",
-        },
-        type: "color",
-        extensions: {
-          telekom: {
-            sketch: {
-              uuid: "E2833C09-CA0B-4377-8441-1B5984A96DF0",
-            },
-          },
-        },
-      },
-      disabled: {
-        comment: "Use for disabled interactive elements in combination with the disabled text color",
-        value: {
-          light: "{core.color.grey.200}",
-          dark: "{core.color.grey.1000}",
-        },
-        type: "color",
-        extensions: {
-          telekom: {
-            sketch: {
-              uuid: "EE676D75-F367-4A83-A78B-CEEBEBAB9B13",
             },
           },
         },
