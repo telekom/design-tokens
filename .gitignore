@@ -7,6 +7,8 @@ public
 dist/css/
 dist/js/
 dist/sketch/
+dist/docs-json/
 dist/telekom/css/
 dist/telekom/js/
 dist/telekom/sketch/
+dist/telekom/docs-json/
