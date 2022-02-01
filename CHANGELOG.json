@@ -2,6 +2,27 @@
   "name": "@telekom/design-tokens",
   "entries": [
     {
+      "date": "Tue, 01 Feb 2022 13:04:17 GMT",
+      "tag": "@telekom/design-tokens_v1.0.0-alpha.4",
+      "version": "1.0.0-alpha.4",
+      "comments": {
+        "prerelease": [
+          {
+            "author": "oppermann.lukas@gmail.com",
+            "package": "@telekom/design-tokens",
+            "commit": "b45a65e0b3261e140002a4d8b028b7b9ea126a79",
+            "comment": "Added dark & light mode docs"
+          },
+          {
+            "author": "oppermann.lukas@gmail.com",
+            "package": "@telekom/design-tokens",
+            "commit": "835dc86c6146865e8c59d8824993a445603b93dd",
+            "comment": "Added section about design tokens, what they are and how they are used."
+          }
+        ]
+      }
+    },
+    {
       "date": "Thu, 27 Jan 2022 17:31:04 GMT",
       "tag": "@telekom/design-tokens_v1.0.0-alpha.3",
       "version": "1.0.0-alpha.3",

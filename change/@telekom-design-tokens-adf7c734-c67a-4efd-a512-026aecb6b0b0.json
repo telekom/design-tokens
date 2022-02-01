@@ -1,7 +1,0 @@
-{
-  "type": "prerelease",
-  "comment": "Added dark & light mode docs",
-  "packageName": "@telekom/design-tokens",
-  "email": "oppermann.lukas@gmail.com",
-  "dependentChangeType": "patch"
-}
