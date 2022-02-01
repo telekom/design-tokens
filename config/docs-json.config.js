@@ -66,7 +66,7 @@ module.exports = {
     'src/semantic/**/*.json5',
   ],
   platforms: {
-    css: {
+    docsJsonLight: {
       transforms: ['mode-light', ...cssTransformGroup, 'shadow/css'],
       prefix: PREFIX,
       buildPath: OUTPUT_PATH + 'docs-json/',
@@ -79,7 +79,7 @@ module.exports = {
         },
       ],
     },
-    cssDark: {
+    docsJsonDark: {
       transforms: ['mode-dark', ...cssTransformGroup, 'shadow/css'],
       prefix: PREFIX,
       buildPath: OUTPUT_PATH + 'docs-json/',
