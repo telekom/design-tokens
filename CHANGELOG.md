@@ -1,8 +1,17 @@
 # Change Log - @telekom/design-tokens
 
-This log was last generated on Thu, 27 Jan 2022 17:31:04 GMT and should not be manually modified.
+This log was last generated on Tue, 01 Feb 2022 13:04:17 GMT and should not be manually modified.
 
 <!-- Start content -->
+
+## 1.0.0-alpha.4
+
+Tue, 01 Feb 2022 13:04:17 GMT
+
+### Changes
+
+- Added dark & light mode docs (oppermann.lukas@gmail.com)
+- Added section about design tokens, what they are and how they are used. (oppermann.lukas@gmail.com)
 
 ## 1.0.0-alpha.3
 

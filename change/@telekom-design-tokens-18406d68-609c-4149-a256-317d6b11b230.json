@@ -1,7 +1,0 @@
-{
-  "type": "prerelease",
-  "comment": "Added section about design tokens, what they are and how they are used.",
-  "packageName": "@telekom/design-tokens",
-  "email": "oppermann.lukas@gmail.com",
-  "dependentChangeType": "patch"
-}
