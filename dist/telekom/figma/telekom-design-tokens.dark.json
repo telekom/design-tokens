@@ -133,10 +133,6 @@
       "Pressed": {
         "value": "#9E0051",
         "type": "color"
-      },
-      "Subtle": {
-        "value": "#33001A",
-        "type": "color"
       }
     },
     "UI": {
@@ -1062,7 +1058,7 @@
     },
     "App Bar": {
       "Top": {
-        "Flat": {
+        "Raised": {
           "value": [
             {
               "x": 0,
@@ -1084,7 +1080,7 @@
           "type": "boxShadow",
           "description": "Use for headers, app bar & menus on the top"
         },
-        "Raised": {
+        "Flat": {
           "value": [
             {
               "x": 0,
@@ -1101,28 +1097,6 @@
       },
       "Bottom": {
         "Flat": {
-          "value": [
-            {
-              "x": 0,
-              "y": -1,
-              "blur": 0,
-              "spread": 0,
-              "color": "#0000000d",
-              "type": "dropShadow"
-            },
-            {
-              "x": 0,
-              "y": -2,
-              "blur": 8,
-              "spread": 0,
-              "color": "#0000000d",
-              "type": "dropShadow"
-            }
-          ],
-          "type": "boxShadow",
-          "description": "Use for app navigation and app bars on the bottom"
-        },
-        "Raised": {
           "value": [
             {
               "x": 0,
@@ -1219,6 +1193,11 @@
       }
     },
     "Line Spacing": {
+      "None": {
+        "value": 1,
+        "type": "number",
+        "description": "Use for single line in ui elements"
+      },
       "Extra Tight": {
         "value": 1.15,
         "type": "number",
@@ -1274,10 +1253,36 @@
       },
       "type": "typography"
     },
+    "Small Bold": {
+      "value": {
+        "fontFamily": "TeleNeo",
+        "fontWeight": "Bold",
+        "lineHeight": "135%",
+        "fontSize": "12",
+        "letterSpacing": "0%",
+        "paragraphSpacing": "0",
+        "textDecoration": "none",
+        "textCase": "none"
+      },
+      "type": "typography"
+    },
     "Caption": {
       "value": {
         "fontFamily": "TeleNeo",
         "fontWeight": "Regular",
+        "lineHeight": "135%",
+        "fontSize": "14",
+        "letterSpacing": "0%",
+        "paragraphSpacing": "0",
+        "textDecoration": "none",
+        "textCase": "none"
+      },
+      "type": "typography"
+    },
+    "Caption Bold": {
+      "value": {
+        "fontFamily": "TeleNeo",
+        "fontWeight": "Bold",
         "lineHeight": "135%",
         "fontSize": "14",
         "letterSpacing": "0%",
@@ -1305,6 +1310,32 @@
         "fontFamily": "TeleNeo",
         "fontWeight": "Bold",
         "lineHeight": "135%",
+        "fontSize": "16",
+        "letterSpacing": "0%",
+        "paragraphSpacing": "0",
+        "textDecoration": "none",
+        "textCase": "none"
+      },
+      "type": "typography"
+    },
+    "UI": {
+      "value": {
+        "fontFamily": "TeleNeo",
+        "fontWeight": "Medium",
+        "lineHeight": "100%",
+        "fontSize": "16",
+        "letterSpacing": "0%",
+        "paragraphSpacing": "0",
+        "textDecoration": "none",
+        "textCase": "none"
+      },
+      "type": "typography"
+    },
+    "UI Bold": {
+      "value": {
+        "fontFamily": "TeleNeo",
+        "fontWeight": "Bold",
+        "lineHeight": "100%",
         "fontSize": "16",
         "letterSpacing": "0%",
         "paragraphSpacing": "0",
