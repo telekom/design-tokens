@@ -15,7 +15,7 @@
     "build:telekom": "OUTPUT_BASE_FILENAME=telekom-design-tokens OUTPUT_PATH=dist/telekom/ WHITELABEL=false node config/build.js",
     "change": "beachball change",
     "check": "beachball check",
-    "publish:beachball": "beachball publish -n ${NPM_TOKEN}",
+    "publish:beachball": "beachball publish",
     "prepublishOnly": "npm run build",
     "format": "prettier --write \"src/**/*{json,json5}\" \"config/**/*.js\"",
     "sketch-uuid": "uuid | awk '{print toupper($0)}'"
