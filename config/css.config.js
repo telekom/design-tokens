@@ -10,7 +10,6 @@
 
 const fs = require('fs-extra');
 const StyleDictionary = require('style-dictionary');
-const {} = require('./shared');
 
 const { PREFIX, OUTPUT_PATH, OUTPUT_BASE_FILENAME } = process.env;
 const WHITELABEL = process.env.WHITELABEL !== 'false';
