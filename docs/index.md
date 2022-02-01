@@ -1,9 +1,14 @@
 # Telekom Design Tokens
 
-## Introduction
-
 ### What are design tokens?
+Design tokens are a concept to bring consistancy and easy maintainability to product development. By tokenizing design choices like colors, typography, spacing or border radii it gets much easier to assure consistancy between design and implementation. Handing over designs to developers is less error-prone as developers can pick the right token from the predefined package. Lastly tokens can be updated globally and automatically change in all projects, e.g. when a color needs to be adjusted to improve accessibility.
 
+### How are design tokens implemented in practise at deutsche telekom?
+The source of truth are our [design token on github](https://github.com/telekom/design-tokens). These tokens are created in a JSON format and converted into formats that can be used in sketch, figma, css or javascript by a program called [style dictionary](https://github.com/amzn/style-dictionary).
+
+The Sketch & Figma library are created by using the respective outputs from style dictionary. As a developer you can pull the design tokens directly from github into you project. This assures that everybody at deutsche telekom works with the same design primatives and we create a consistant, high quality experience for our customers.
+
+The [Scale design system](https://github.com/telekom/scale) uses the design token package as well, so all components are using the same primatives you use.
 
 ### Who uses design tokens?
 **Designers** use tokens in their design tools in the form of styles. We convert the design tokens into color, text and shadow styles for sketch and figma. As a desinger you can work like you always did, using styles for your designs. However when there is an update to the tokens you just have to pull in the changes an everything will be updated automatically.
