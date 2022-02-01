@@ -1,0 +1,7 @@
+{
+  "type": "prerelease",
+  "comment": "Add new docs-json build output",
+  "packageName": "@telekom/design-tokens",
+  "email": "ac@iconstorm.com",
+  "dependentChangeType": "patch"
+}

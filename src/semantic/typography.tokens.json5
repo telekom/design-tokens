@@ -79,7 +79,7 @@
       },
     },
     "line-spacing": {
-      "none": {
+      none: {
         comment: "Use for single line in ui elements",
         value: "{core.typography.line-spacing.none.value}",
         type: "number",
