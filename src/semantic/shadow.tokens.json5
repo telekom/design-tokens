@@ -185,7 +185,7 @@
     // header, app bar top
     "app-bar": {
       top: {
-        flat: {
+        raised: {
           comment: "Use for headers, app bar & menus on the top",
           value: "{core.shadow.special.app-bar.top.subtle}",
           type: "shadow",
@@ -197,7 +197,7 @@
             },
           },
         },
-        raised: {
+        flat: {
           comment: "Use for headers, app bar & menus on the top",
           value: "{core.shadow.special.app-bar.top.flat}",
           type: "shadow",
@@ -224,7 +224,7 @@
             },
           },
         },
-        raised: {
+        flat: {
           comment: "Use for app navigation and app bars on the bottom",
           value: "{core.shadow.special.app-bar.bottom.flat}",
           type: "shadow",
