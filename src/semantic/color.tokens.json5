@@ -429,7 +429,7 @@
             },
           },
         },
-      }
+      },
     },
     ui: {
       comment: "UI colors are used to create ui elements like dividers, checkboxes, buttons, etc.",
