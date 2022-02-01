@@ -1,7 +1,0 @@
-{
-  "type": "prerelease",
-  "comment": "added ui colors: standard, hovered, pressed & active",
-  "packageName": "@telekom/design-tokens",
-  "email": "oppermann.lukas@gmail.com",
-  "dependentChangeType": "patch"
-}

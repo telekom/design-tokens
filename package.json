@@ -1,6 +1,6 @@
 {
   "name": "@telekom/design-tokens",
-  "version": "1.0.0-alpha.4",
+  "version": "1.0.0-alpha.5",
   "description": "The source of truth for Telekom's corporate brand and design",
   "files": [
     "build",

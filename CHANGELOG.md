@@ -1,8 +1,17 @@
 # Change Log - @telekom/design-tokens
 
-This log was last generated on Tue, 01 Feb 2022 13:04:17 GMT and should not be manually modified.
+This log was last generated on Tue, 01 Feb 2022 15:30:45 GMT and should not be manually modified.
 
 <!-- Start content -->
+
+## 1.0.0-alpha.5
+
+Tue, 01 Feb 2022 15:30:45 GMT
+
+### Changes
+
+- added ui colors: standard, hovered, pressed & active (oppermann.lukas@gmail.com)
+- Add new docs-json build output (ac@iconstorm.com)
 
 ## 1.0.0-alpha.4
 
