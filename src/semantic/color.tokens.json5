@@ -433,161 +433,209 @@
     },
     ui: {
       comment: "UI colors are used to create ui elements like dividers, checkboxes, buttons, etc.",
-      standard: {
-        comment: "Use for disabled interactive elements in combination with the disabled text color",
-        value: {
-          light: "{core.color.grey.500}",
-          dark: "{core.color.grey.700}",
+      border: {
+        standard: {
+          comment: "Use for disabled interactive elements in combination with the disabled text color",
+          value: {
+            light: "{core.color.grey.500}",
+            dark: "{core.color.grey.700}",
+          },
+          type: "color",
+          extensions: {
+            telekom: {
+              sketch: {
+                uuid: "D97C6487-0153-4A40-8FA3-0620ECD27D57",
+              },
+            },
+          },
         },
-        type: "color",
-        extensions: {
-          telekom: {
-            sketch: {
-              uuid: "D97C6487-0153-4A40-8FA3-0620ECD27D57",
+        hovered: {
+          comment: "Use for disabled interactive elements in combination with the disabled text color",
+          value: {
+            light: "{core.color.grey.800}",
+            dark: "{core.color.grey.500}",
+          },
+          type: "color",
+          extensions: {
+            telekom: {
+              sketch: {
+                uuid: "EFA2AD5F-DCC0-41D9-8203-AA9F8DF0424F",
+              },
+            },
+          },
+        },
+        pressed: {
+          comment: "Use for disabled interactive elements in combination with the disabled text color",
+          value: {
+            light: "{core.color.grey.1200}",
+            dark: "{core.color.grey.0}",
+          },
+          type: "color",
+          extensions: {
+            telekom: {
+              sketch: {
+                uuid: "4E9D2D7E-3DA9-4A98-BE75-BC12FC9F3767",
+              },
+            },
+          },
+        },
+        active: {
+          comment: "Use for disabled interactive elements in combination with the disabled text color",
+          value: {
+            light: "{core.color.grey.1200}",
+            dark: "{core.color.grey.0}",
+          },
+          type: "color",
+          extensions: {
+            telekom: {
+              sketch: {
+                uuid: "E2833C09-CA0B-4377-8441-1B5984A96DF0",
+              },
+            },
+          },
+        },
+        disabled: {
+          comment: "Use for disabled interactive elements in combination with the disabled text color",
+          value: {
+            light: "{core.color.grey.200}",
+            dark: "{core.color.grey.1000}",
+          },
+          type: "color",
+          extensions: {
+            telekom: {
+              sketch: {
+                uuid: "2639023F-5436-4C87-AEA9-41C0CDEEFDBC",
+              },
             },
           },
         },
       },
-      hovered: {
-        comment: "Use for disabled interactive elements in combination with the disabled text color",
-        value: {
-          light: "{core.color.grey.800}",
-          dark: "{core.color.grey.500}",
+      plate: {
+        hovered: {
+          comment: "Use for disabled interactive elements in combination with the disabled text color",
+          value: {
+            light: {
+              color: "{core.color.black}",
+              alpha: 0.07,
+            },
+            dark: {
+              color: "{core.color.white}",
+              alpha: 0.14,
+            },
+          },
+          type: "color",
+          extensions: {
+            telekom: {
+              sketch: {
+                uuid: "8FF3D3FD-DA69-4072-80EC-79FD24B566C4",
+              },
+            },
+          },
         },
-        type: "color",
-        extensions: {
-          telekom: {
-            sketch: {
-              uuid: "EFA2AD5F-DCC0-41D9-8203-AA9F8DF0424F",
+        pressed: {
+          comment: "Use for disabled interactive elements in combination with the disabled text color",
+          value: {
+            light: {
+              color: "{core.color.black}",
+              alpha: 0.21,
+            },
+            dark: {
+              color: "{core.color.white}",
+              alpha: 0.21,
+            },
+          },
+          type: "color",
+          extensions: {
+            telekom: {
+              sketch: {
+                uuid: "E91F8AAF-20D5-4D97-A2FE-D136EF21C19F",
+              },
             },
           },
         },
       },
-      pressed: {
-        comment: "Use for disabled interactive elements in combination with the disabled text color",
-        value: {
-          light: "{core.color.grey.1200}",
-          dark: "{core.color.grey.0}",
-        },
-        type: "color",
-        extensions: {
-          telekom: {
-            sketch: {
-              uuid: "4E9D2D7E-3DA9-4A98-BE75-BC12FC9F3767",
+      general: {
+        base: {
+          value: {
+            light: "{core.color.white}",
+            dark: "{core.color.grey.900}",
+          },
+          type: "color",
+          extensions: {
+            telekom: {
+              sketch: {
+                uuid: "C25CD92C-71DF-4D26-BC0D-79D5F5F04E7B",
+              },
             },
           },
         },
-      },
-      active: {
-        comment: "Use for disabled interactive elements in combination with the disabled text color",
-        value: {
-          light: "{core.color.grey.1200}",
-          dark: "{core.color.grey.0}",
-        },
-        type: "color",
-        extensions: {
-          telekom: {
-            sketch: {
-              uuid: "E2833C09-CA0B-4377-8441-1B5984A96DF0",
+        subtle: {
+          value: {
+            light: "{core.color.grey.100}",
+            dark: "{core.color.grey.1000}",
+          },
+          type: "color",
+          extensions: {
+            telekom: {
+              sketch: {
+                uuid: "A215F9A2-EB9F-40E9-A883-445ABA0CD28B",
+              },
             },
           },
         },
-      },
-      disabled: {
-        comment: "Use for disabled interactive elements in combination with the disabled text color",
-        value: {
-          light: "{core.color.grey.200}",
-          dark: "{core.color.grey.1000}",
-        },
-        type: "color",
-        extensions: {
-          telekom: {
-            sketch: {
-              uuid: "EE676D75-F367-4A83-A78B-CEEBEBAB9B13",
+        light: {
+          value: {
+            light: "{core.color.grey.300}",
+            dark: "{core.color.grey.900}",
+          },
+          type: "color",
+          extensions: {
+            telekom: {
+              sketch: {
+                uuid: "F5195C85-B7E7-4BE8-AE08-91A853CEF6F6",
+              },
             },
           },
         },
-      },
-      base: {
-        value: {
-          light: "{core.color.white}",
-          dark: "{core.color.grey.900}",
-        },
-        type: "color",
-        extensions: {
-          telekom: {
-            sketch: {
-              uuid: "C25CD92C-71DF-4D26-BC0D-79D5F5F04E7B",
+        regular: {
+          value: {
+            light: "{core.color.grey.500}",
+            dark: "{core.color.grey.700}",
+          },
+          type: "color",
+          extensions: {
+            telekom: {
+              sketch: {
+                uuid: "C1765454-BA74-4AB0-9D4C-2C3B6CE4C9CA",
+              },
             },
           },
         },
-      },
-      subtle: {
-        value: {
-          light: "{core.color.grey.100}",
-          dark: "{core.color.grey.1000}",
-        },
-        type: "color",
-        extensions: {
-          telekom: {
-            sketch: {
-              uuid: "A215F9A2-EB9F-40E9-A883-445ABA0CD28B",
+        strong: {
+          value: {
+            light: "{core.color.grey.800}",
+            dark: "{core.color.grey.500}",
+          },
+          type: "color",
+          extensions: {
+            telekom: {
+              sketch: {
+                uuid: "22F2E6E7-7BCE-4D9B-A5DA-8D1372FBBC4F",
+              },
             },
           },
         },
-      },
-      light: {
-        value: {
-          light: "{core.color.grey.300}",
-          dark: "{core.color.grey.900}",
-        },
-        type: "color",
-        extensions: {
-          telekom: {
-            sketch: {
-              uuid: "F5195C85-B7E7-4BE8-AE08-91A853CEF6F6",
-            },
+        "extra-strong": {
+          value: {
+            light: "{core.color.grey.1200}",
+            dark: "{core.color.grey.0}",
           },
-        },
-      },
-      regular: {
-        value: {
-          light: "{core.color.grey.500}",
-          dark: "{core.color.grey.700}",
-        },
-        type: "color",
-        extensions: {
-          telekom: {
-            sketch: {
-              uuid: "C1765454-BA74-4AB0-9D4C-2C3B6CE4C9CA",
-            },
-          },
-        },
-      },
-      strong: {
-        value: {
-          light: "{core.color.grey.800}",
-          dark: "{core.color.grey.500}",
-        },
-        type: "color",
-        extensions: {
-          telekom: {
-            sketch: {
-              uuid: "22F2E6E7-7BCE-4D9B-A5DA-8D1372FBBC4F",
-            },
-          },
-        },
-      },
-      "extra-strong": {
-        value: {
-          light: "{core.color.grey.1200}",
-          dark: "{core.color.grey.0}",
-        },
-        type: "color",
-        extensions: {
-          telekom: {
-            sketch: {
-              uuid: "8DB0D12D-BDE2-4B29-ADAD-E988FF753948",
+          type: "color",
+          extensions: {
+            telekom: {
+              sketch: {
+                uuid: "8DB0D12D-BDE2-4B29-ADAD-E988FF753948",
+              },
             },
           },
         },
@@ -785,7 +833,7 @@
       warning: {
         standard: {
           value: {
-            light: "{core.color.orange.600}",
+            light: "{core.color.orange.400}",
             dark: "{core.color.orange.500}",
           },
           type: "color",
@@ -799,7 +847,7 @@
         },
         hovered: {
           value: {
-            light: "{core.color.orange.700}",
+            light: "{core.color.orange.500}",
             dark: "{core.color.orange.400}",
           },
           type: "color",
@@ -813,7 +861,7 @@
         },
         pressed: {
           value: {
-            light: "{core.color.orange.800}",
+            light: "{core.color.orange.600}",
             dark: "{core.color.orange.300}",
           },
           type: "color",
