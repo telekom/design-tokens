@@ -437,8 +437,14 @@
         standard: {
           comment: "Use for disabled interactive elements in combination with the disabled text color",
           value: {
-            light: "{core.color.grey.500}",
-            dark: "{core.color.grey.700}",
+            light: {
+              color: "{core.color.black}",
+              alpha: 0.44,
+            },
+            dark: {
+              color: "{core.color.white}",
+              alpha: 0.36,
+            },
           },
           type: "color",
           extensions: {
@@ -452,8 +458,14 @@
         hovered: {
           comment: "Use for disabled interactive elements in combination with the disabled text color",
           value: {
-            light: "{core.color.grey.800}",
-            dark: "{core.color.grey.500}",
+            light: {
+              color: "{core.color.black}",
+              alpha: 0.71,
+            },
+            dark: {
+              color: "{core.color.white}",
+              alpha: 0.54,
+            },
           },
           type: "color",
           extensions: {
@@ -467,8 +479,14 @@
         pressed: {
           comment: "Use for disabled interactive elements in combination with the disabled text color",
           value: {
-            light: "{core.color.grey.1200}",
-            dark: "{core.color.grey.0}",
+            light: {
+              color: "{core.color.black}",
+              alpha: 0.71,
+            },
+            dark: {
+              color: "{core.color.white}",
+              alpha: 0.94,
+            },
           },
           type: "color",
           extensions: {
@@ -482,8 +500,14 @@
         active: {
           comment: "Use for disabled interactive elements in combination with the disabled text color",
           value: {
-            light: "{core.color.grey.1200}",
-            dark: "{core.color.grey.0}",
+            light: {
+              color: "{core.color.black}",
+              alpha: 0.71,
+            },
+            dark: {
+              color: "{core.color.white}",
+              alpha: 0.94,
+            },
           },
           type: "color",
           extensions: {
@@ -497,8 +521,14 @@
         disabled: {
           comment: "Use for disabled interactive elements in combination with the disabled text color",
           value: {
-            light: "{core.color.grey.200}",
-            dark: "{core.color.grey.1000}",
+            light: {
+              color: "{core.color.black}",
+              alpha: 0.07,
+            },
+            dark: {
+              color: "{core.color.white}",
+              alpha: 0.21,
+            },
           },
           type: "color",
           extensions: {
