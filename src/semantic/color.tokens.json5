@@ -785,7 +785,7 @@
       warning: {
         standard: {
           value: {
-            light: "{core.color.orange.600}",
+            light: "{core.color.orange.400}",
             dark: "{core.color.orange.500}",
           },
           type: "color",
@@ -799,7 +799,7 @@
         },
         hovered: {
           value: {
-            light: "{core.color.orange.700}",
+            light: "{core.color.orange.500}",
             dark: "{core.color.orange.400}",
           },
           type: "color",
@@ -813,7 +813,7 @@
         },
         pressed: {
           value: {
-            light: "{core.color.orange.800}",
+            light: "{core.color.orange.600}",
             dark: "{core.color.orange.300}",
           },
           type: "color",
