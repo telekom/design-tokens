@@ -669,6 +669,21 @@
             },
           },
         },
+        disabled: {
+          comment: "Use for disabled interactive elements in combination with the disabled text color",
+          value: {
+            light: "{core.color.grey.200}",
+            dark: "{core.color.grey.1000}",
+          },
+          type: "color",
+          extensions: {
+            telekom: {
+              sketch: {
+                uuid: "C9A9FF5D-D616-45CA-AC0E-128D4F51B841",
+              },
+            },
+          },
+        },
       },
     },
     functional: {
