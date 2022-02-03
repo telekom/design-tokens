@@ -523,7 +523,7 @@
           value: {
             light: {
               color: "{core.color.black}",
-              alpha: 0.07,
+              alpha: 0.14,
             },
             dark: {
               color: "{core.color.white}",
