@@ -302,6 +302,13 @@
             sketch: {
               uuid: "5CB2459A-D1E9-4D39-B233-5AC041B3E192",
             },
+            docs: {
+              contrast: [
+                "color.text-&-icon.standard",
+                "color.text-&-icon.additional",
+                "color.text-&-icon.disabled",
+              ],
+            },
           },
         },
       },
