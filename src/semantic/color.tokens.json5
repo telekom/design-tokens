@@ -307,6 +307,13 @@
                 "color.text-&-icon.standard",
                 "color.text-&-icon.additional",
                 "color.text-&-icon.disabled",
+                "color.text-&-icon.link.standard",
+                "color.text-&-icon.link.hovered",
+                "color.text-&-icon.link.visited",
+                "color.text-&-icon.link.active",
+                "color.text-&-icon.primary.standard",
+                "color.text-&-icon.primary.hovered",
+                "color.text-&-icon.primary.pressed",
               ],
             },
           },
@@ -323,6 +330,17 @@
           telekom: {
             sketch: {
               uuid: "E1A7813E-4219-4C1C-8041-7BBAC39B2F4A",
+            },
+            docs: {
+              contrast: [
+                "color.text-&-icon.standard",
+                "color.text-&-icon.additional",
+                "color.text-&-icon.disabled",
+                "color.text-&-icon.link.standard",
+                "color.text-&-icon.link.hovered",
+                "color.text-&-icon.link.visited",
+                "color.text-&-icon.link.active",
+              ],
             },
           },
         },
@@ -360,6 +378,20 @@
             sketch: {
               uuid: "8CC25E32-9F1A-418D-A51F-FC1E9FC949E4",
             },
+            docs: {
+              contrast: [
+                "color.text-&-icon.standard",
+                "color.text-&-icon.additional",
+                "color.text-&-icon.disabled",
+                "color.text-&-icon.link.standard",
+                "color.text-&-icon.link.hovered",
+                "color.text-&-icon.link.visited",
+                "color.text-&-icon.link.active",
+                "color.text-&-icon.primary.standard",
+                "color.text-&-icon.primary.hovered",
+                "color.text-&-icon.primary.pressed",
+              ],
+            },
           },
         },
       },
@@ -375,6 +407,17 @@
             sketch: {
               uuid: "7A18313C-223A-4329-A7B2-A30B03EA9FAE",
             },
+            docs: {
+              contrast: [
+                "color.text-&-icon.standard",
+                "color.text-&-icon.additional",
+                "color.text-&-icon.disabled",
+                "color.text-&-icon.link.standard",
+                "color.text-&-icon.link.hovered",
+                "color.text-&-icon.link.visited",
+                "color.text-&-icon.link.active",
+              ],
+            },
           },
         },
       },
@@ -389,6 +432,11 @@
           telekom: {
             sketch: {
               uuid: "91596F07-BBE9-45FC-A432-FEAC7D5CF544",
+            },
+            docs: {
+              contrast: [
+                "color.text-&-icon.functional.white",
+              ],
             },
           },
         },
@@ -406,6 +454,11 @@
             sketch: {
               uuid: "8C9AD0A7-1EEF-46D3-8B9A-15570E4A15E9",
             },
+            docs: {
+              contrast: [
+                "color.text-&-icon.functional.white",
+              ],
+            },
           },
         },
       },
@@ -420,6 +473,11 @@
             sketch: {
               uuid: "EF5EEF79-D7F6-40AC-9552-D48B9C57BB0F",
             },
+            docs: {
+              contrast: [
+                "color.text-&-icon.functional.white",
+              ],
+            },
           },
         },
       },
@@ -433,6 +491,11 @@
           telekom: {
             sketch: {
               uuid: "C4A617E1-8F6E-4158-84DE-4B764F02F0F7",
+            },
+            docs: {
+              contrast: [
+                "color.text-&-icon.functional.white",
+              ],
             },
           },
         },
