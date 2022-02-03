@@ -666,6 +666,12 @@
               sketch: {
                 uuid: "734DFCD6-3524-4A00-B68D-2A9017344769",
               },
+              docs: {
+              contrast: [
+                "color.text-&-icon.standard",
+                "color.text-&-icon.additional",
+              ],
+            },
             },
           },
         },
@@ -679,6 +685,12 @@
             telekom: {
               sketch: {
                 uuid: "DF0E39CC-9973-4933-9B49-26A54F0611D4",
+              },
+              docs: {
+                contrast: [
+                  "color.text-&-icon.standard",
+                  "color.text-&-icon.additional",
+                ],
               },
             },
           },
@@ -694,6 +706,12 @@
               sketch: {
                 uuid: "0F299A1C-BF09-4B15-8576-EAC89E8D99D2",
               },
+              docs: {
+                contrast: [
+                  "color.text-&-icon.standard",
+                  "color.text-&-icon.additional",
+                ],
+              },
             },
           },
         },
@@ -707,6 +725,11 @@
             telekom: {
               sketch: {
                 uuid: "F18E176F-AB2F-48D7-8378-E6F557059900",
+              },
+              docs: {
+                contrast: [
+                  "color.text-&-icon.standard",
+                ],
               },
             },
           },
@@ -722,6 +745,12 @@
               sketch: {
                 uuid: "13915817-6F97-47A2-B4A7-28942FFCA43B",
               },
+              docs: {
+                contrast: [
+                  "color.text-&-icon.inverted.standard",
+                  "color.text-&-icon.inverted.additional",
+                ],
+              },
             },
           },
         },
@@ -735,6 +764,12 @@
             telekom: {
               sketch: {
                 uuid: "133132DA-8CA9-4E1A-857B-35A637A7BFC4",
+              },
+              docs: {
+                contrast: [
+                  "color.text-&-icon.inverted.standard",
+                  "color.text-&-icon.inverted.additional",
+                ],
               },
             },
           },
