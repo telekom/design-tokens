@@ -136,12 +136,37 @@
       }
     },
     "UI": {
+      "Standard": {
+        "value": "#898B8F",
+        "type": "color",
+        "description": "Use for disabled interactive elements in combination with the disabled text color"
+      },
+      "Hovered": {
+        "value": "#4A4B4D",
+        "type": "color",
+        "description": "Use for disabled interactive elements in combination with the disabled text color"
+      },
+      "Pressed": {
+        "value": "#050505",
+        "type": "color",
+        "description": "Use for disabled interactive elements in combination with the disabled text color"
+      },
+      "Active": {
+        "value": "#050505",
+        "type": "color",
+        "description": "Use for disabled interactive elements in combination with the disabled text color"
+      },
+      "Disabled": {
+        "value": "#D3D5D6",
+        "type": "color",
+        "description": "Use for disabled interactive elements in combination with the disabled text color"
+      },
       "Base": {
         "value": "#ffffff",
         "type": "color"
       },
       "Subtle": {
-        "value": "#D3D5D6",
+        "value": "#E7E8E9",
         "type": "color"
       },
       "Light": {
@@ -159,11 +184,6 @@
       "Extra Strong": {
         "value": "#050505",
         "type": "color"
-      },
-      "Disabled": {
-        "value": "#D3D5D6",
-        "type": "color",
-        "description": "Use for disabled interactive elements in combination with the disabled text color"
       }
     },
     "Functional": {
@@ -227,15 +247,15 @@
       },
       "Warning": {
         "Standard": {
-          "value": "#BB5313",
+          "value": "#FF7F1F",
           "type": "color"
         },
         "Hovered": {
-          "value": "#9C4410",
+          "value": "#E26617",
           "type": "color"
         },
         "Pressed": {
-          "value": "#7E360C",
+          "value": "#BB5313",
           "type": "color"
         },
         "Subtle": {

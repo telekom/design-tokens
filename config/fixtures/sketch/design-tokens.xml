@@ -9,7 +9,7 @@
     </image>
     <generator>Sketch</generator>
     <item>
-      <title>Telekom Design Tokens {{ version }}, build {{ sparkle }}</title>
+      <title>Telekom Design Tokens</title>
       <pubDate>{{ pubDate }}</pubDate>
       <enclosure url="https://telekom.github.io/design-tokens/sketch/{{ mode }}/telekom-design-tokens.sketch" type="application/octet-stream" sparkle:version="{{ sparkle }}"/>
     </item>
