@@ -257,8 +257,14 @@
         additional: {
           comment: "This text color is dark in all modes (light & dark)",
           value: {
-            light: "{core.color.black}",
-            dark: "{core.color.black}",
+            light: {
+              color: "{core.color.black}",
+              alpha: 0.65,
+            },
+            dark: {
+              color: "{core.color.black}",
+              alpha: 0.65,
+            },
           },
           type: "color",
           extensions: {
