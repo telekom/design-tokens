@@ -49,12 +49,14 @@ StyleDictionary.registerFormat({
 function getDocsShape() {
   return (token) => {
     return {
+      pathString: token.path.join('.'),
       ...pick(token, ['path', 'value', 'comment']),
       category: humanCase(token.path[0]),
       section: humanCase(token.path[1]),
       name: humanCase(token.path.slice(1).map(humanCase).join(' / ')),
       cssVariableName: `--${token.name}`,
       jsPathName: token.path.map(camelCase).join('.'),
+      contrastChecks: token.extensions?.telekom?.docs?.contrast,
     };
   };
 }
