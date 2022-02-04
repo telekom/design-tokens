@@ -1,8 +1,17 @@
 # Change Log - @telekom/design-tokens
 
-This log was last generated on Tue, 01 Feb 2022 15:30:45 GMT and should not be manually modified.
+This log was last generated on Fri, 04 Feb 2022 14:46:10 GMT and should not be manually modified.
 
 <!-- Start content -->
+
+## 1.0.0-alpha.6
+
+Fri, 04 Feb 2022 14:46:10 GMT
+
+### Changes
+
+- Use docs.contrast extension to enable contrast checks in docs output (ac@iconstorm.com)
+- added ui/general, ui/border and ui/plate (oppermann.lukas@gmail.com)
 
 ## 1.0.0-alpha.5
 

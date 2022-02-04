@@ -1,7 +1,0 @@
-{
-  "type": "prerelease",
-  "comment": "Use docs.contrast extension to enable contrast checks in docs output",
-  "packageName": "@telekom/design-tokens",
-  "email": "ac@iconstorm.com",
-  "dependentChangeType": "patch"
-}
