@@ -199,6 +199,83 @@
           },
         },
       },
+      white: {
+        comment: "This text color is light in all modes (light & dark)",
+        standard: {
+          comment: "Light text to be used on backgrounds that are dark in all modes (light & dark)",
+          value: {
+            light: "{core.color.white}",
+            dark: "{core.color.white}",
+          },
+          type: "color",
+          extensions: {
+            telekom: {
+              sketch: {
+                uuid: "613A8C78-56D2-4765-8315-BD9D3D67B813",
+              },
+            },
+          },
+        },
+        additional: {
+          comment: "Semi-Light text to be used on backgrounds that are dark in all modes (light & dark)",
+          value: {
+            light: {
+              color: "{core.color.white}",
+              alpha: 0.65,
+            },
+            dark: {
+              color: "{core.color.white}",
+              alpha: 0.65,
+            },
+          },
+          type: "color",
+          extensions: {
+            telekom: {
+              sketch: {
+                uuid: "5246D73E-177B-4CB2-AF40-8DA352AAD4AA",
+              },
+            },
+          },
+        },
+      },
+      black: {
+        standard: {
+          comment: "This text color is dark in all modes (light & dark)",
+          value: {
+            light: "{core.color.black}",
+            dark: "{core.color.black}",
+          },
+          type: "color",
+          extensions: {
+            telekom: {
+              sketch: {
+                uuid: "1F2A1837-8B4E-4500-8D19-6FF2972F0296",
+              },
+            },
+          },
+        },
+        additional: {
+          comment: "This text color is dark in all modes (light & dark)",
+          value: {
+            light: {
+              color: "{core.color.black}",
+              alpha: 0.65,
+            },
+            dark: {
+              color: "{core.color.black}",
+              alpha: 0.65,
+            },
+          },
+          type: "color",
+          extensions: {
+            telekom: {
+              sketch: {
+                uuid: "96DB9D0E-6012-472A-A1B2-5FE799987A15",
+              },
+            },
+          },
+        },
+      },
       functional: {
         informational: {
           value: {
@@ -252,36 +329,6 @@
             telekom: {
               sketch: {
                 uuid: "389C61A4-1DD5-4B4A-885E-70F550C4436A",
-              },
-            },
-          },
-        },
-        white: {
-          comment: "This text color is white in all modes (light & dark)",
-          value: {
-            light: "{core.color.white}",
-            dark: "{core.color.white}",
-          },
-          type: "color",
-          extensions: {
-            telekom: {
-              sketch: {
-                uuid: "F9975228-41E0-4D65-9AC3-F1A164A1B08B",
-              },
-            },
-          },
-        },
-        black: {
-          comment: "This text color is black in all modes (light & dark)",
-          value: {
-            light: "{core.color.black}",
-            dark: "{core.color.black}",
-          },
-          type: "color",
-          extensions: {
-            telekom: {
-              sketch: {
-                uuid: "1F2A1837-8B4E-4500-8D19-6FF2972F0296",
               },
             },
           },
@@ -585,7 +632,7 @@
           value: {
             light: {
               color: "{core.color.black}",
-              alpha: 0.07,
+              alpha: 0.14,
             },
             dark: {
               color: "{core.color.white}",
@@ -760,6 +807,21 @@
                   "color.text-&-icon.inverted.standard",
                   "color.text-&-icon.inverted.additional",
                 ],
+              },
+            },
+          },
+        },
+        disabled: {
+          comment: "Use for disabled interactive elements in combination with the disabled text color",
+          value: {
+            light: "{core.color.grey.200}",
+            dark: "{core.color.grey.1000}",
+          },
+          type: "color",
+          extensions: {
+            telekom: {
+              sketch: {
+                uuid: "C9A9FF5D-D616-45CA-AC0E-128D4F51B841",
               },
             },
           },
