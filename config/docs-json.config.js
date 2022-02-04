@@ -56,7 +56,7 @@ function getDocsShape() {
       name: humanCase(token.path.slice(1).map(humanCase).join(' / ')),
       cssVariableName: `--${token.name}`,
       jsPathName: token.path.map(camelCase).join('.'),
-      contrastChecks: token.extensions?.telekom?.docs?.contrast
+      contrastChecks: token.extensions?.telekom?.docs?.contrast,
     };
   };
 }
