@@ -434,9 +434,7 @@
               uuid: "91596F07-BBE9-45FC-A432-FEAC7D5CF544",
             },
             docs: {
-              contrast: [
-                "color.text-&-icon.functional.white",
-              ],
+              contrast: ["color.text-&-icon.functional.white"],
             },
           },
         },
@@ -455,9 +453,7 @@
               uuid: "8C9AD0A7-1EEF-46D3-8B9A-15570E4A15E9",
             },
             docs: {
-              contrast: [
-                "color.text-&-icon.functional.white",
-              ],
+              contrast: ["color.text-&-icon.functional.white"],
             },
           },
         },
@@ -474,9 +470,7 @@
               uuid: "EF5EEF79-D7F6-40AC-9552-D48B9C57BB0F",
             },
             docs: {
-              contrast: [
-                "color.text-&-icon.functional.white",
-              ],
+              contrast: ["color.text-&-icon.functional.white"],
             },
           },
         },
@@ -493,9 +487,7 @@
               uuid: "C4A617E1-8F6E-4158-84DE-4B764F02F0F7",
             },
             docs: {
-              contrast: [
-                "color.text-&-icon.functional.white",
-              ],
+              contrast: ["color.text-&-icon.functional.white"],
             },
           },
         },
@@ -667,11 +659,11 @@
                 uuid: "734DFCD6-3524-4A00-B68D-2A9017344769",
               },
               docs: {
-              contrast: [
-                "color.text-&-icon.standard",
-                "color.text-&-icon.additional",
-              ],
-            },
+                contrast: [
+                  "color.text-&-icon.standard",
+                  "color.text-&-icon.additional",
+                ],
+              },
             },
           },
         },
@@ -727,9 +719,7 @@
                 uuid: "F18E176F-AB2F-48D7-8378-E6F557059900",
               },
               docs: {
-                contrast: [
-                  "color.text-&-icon.standard",
-                ],
+                contrast: ["color.text-&-icon.standard"],
               },
             },
           },
@@ -803,6 +793,9 @@
               sketch: {
                 uuid: "E843EE29-E54A-460A-9999-DD2370E5F1E1",
               },
+              docs: {
+                contrast: ["color.text-&-icon.functional.white"],
+              },
             },
           },
         },
@@ -816,6 +809,9 @@
             telekom: {
               sketch: {
                 uuid: "204DE41A-632B-4931-8ECF-F41A2A43EA42",
+              },
+              docs: {
+                contrast: ["color.text-&-icon.functional.white"],
               },
             },
           },
@@ -831,6 +827,9 @@
               sketch: {
                 uuid: "A4CC8926-A3E2-424C-8000-062CD0D70F6D",
               },
+              docs: {
+                contrast: ["color.text-&-icon.functional.white"],
+              },
             },
           },
         },
@@ -844,6 +843,12 @@
             telekom: {
               sketch: {
                 uuid: "92BB2316-B842-4412-8A7B-75E453785890",
+              },
+              docs: {
+                contrast: [
+                  "color.text-&-icon.standard",
+                  "color.text-&-icon.functional.success",
+                ],
               },
             },
           },
@@ -919,6 +924,9 @@
               sketch: {
                 uuid: "B90447D0-37CC-496A-BB07-D72E3D93A6A5",
               },
+              docs: {
+                contrast: ["color.text-&-icon.functional.white"],
+              },
             },
           },
         },
@@ -932,6 +940,9 @@
             telekom: {
               sketch: {
                 uuid: "A958A6FC-3495-42E4-9B9D-4EBFC6E465C6",
+              },
+              docs: {
+                contrast: ["color.text-&-icon.functional.white"],
               },
             },
           },
@@ -947,6 +958,9 @@
               sketch: {
                 uuid: "7F2431EC-423B-4F28-81F0-80BC9AB2080F",
               },
+              docs: {
+                contrast: ["color.text-&-icon.functional.white"],
+              },
             },
           },
         },
@@ -960,6 +974,12 @@
             telekom: {
               sketch: {
                 uuid: "A64C633C-563B-4870-B95F-8769FC5D2446",
+              },
+              docs: {
+                contrast: [
+                  "color.text-&-icon.standard",
+                  "color.text-&-icon.functional.informational",
+                ],
               },
             },
           },
@@ -977,6 +997,9 @@
               sketch: {
                 uuid: "5368D26B-95E8-4718-B248-EA438FF32C57",
               },
+              docs: {
+                contrast: ["color.text-&-icon.functional.black"],
+              },
             },
           },
         },
@@ -990,6 +1013,9 @@
             telekom: {
               sketch: {
                 uuid: "50E1D093-5D6D-44E6-A828-C4D80C2008F4",
+              },
+              docs: {
+                contrast: ["color.text-&-icon.functional.black"],
               },
             },
           },
@@ -1005,6 +1031,9 @@
               sketch: {
                 uuid: "7D05FD9C-4DBC-4887-9B9D-81A3F12D17C4",
               },
+              docs: {
+                contrast: ["color.text-&-icon.functional.black"],
+              },
             },
           },
         },
@@ -1018,6 +1047,12 @@
             telekom: {
               sketch: {
                 uuid: "FC0DAF26-7BAC-41EC-9A5B-36FEF46C44D3",
+              },
+              docs: {
+                contrast: [
+                  "color.text-&-icon.standard",
+                  "color.text-&-icon.functional.warning",
+                ],
               },
             },
           },
@@ -1035,6 +1070,9 @@
               sketch: {
                 uuid: "DBCD4789-63E4-4D62-B405-FBC44915D533",
               },
+              docs: {
+                contrast: ["color.text-&-icon.functional.white"],
+              },
             },
           },
         },
@@ -1048,6 +1086,9 @@
             telekom: {
               sketch: {
                 uuid: "08324842-34FA-4E59-AEC6-8914CA51ECC5",
+              },
+              docs: {
+                contrast: ["color.text-&-icon.functional.white"],
               },
             },
           },
@@ -1063,6 +1104,9 @@
               sketch: {
                 uuid: "9A1FB5E2-64A7-4596-AC7B-A00F14C12087",
               },
+              docs: {
+                contrast: ["color.text-&-icon.functional.white"],
+              },
             },
           },
         },
@@ -1076,6 +1120,12 @@
             telekom: {
               sketch: {
                 uuid: "DC9A392E-EF63-404A-A596-2D78789547D7",
+              },
+              docs: {
+                contrast: [
+                  "color.text-&-icon.standard",
+                  "color.text-&-icon.functional.danger",
+                ],
               },
             },
           },
