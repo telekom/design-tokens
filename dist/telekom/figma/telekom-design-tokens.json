@@ -60,6 +60,30 @@
           "description": "Additional text color inverted to be used on high contrast colors like ui/extra strong"
         }
       },
+      "White": {
+        "Standard": {
+          "value": "#ffffff",
+          "type": "color",
+          "description": "Light text to be used on backgrounds that are dark in all modes (light & dark)"
+        },
+        "Additional": {
+          "value": "#ffffffa6",
+          "type": "color",
+          "description": "Semi-Light text to be used on backgrounds that are dark in all modes (light & dark)"
+        }
+      },
+      "Black": {
+        "Standard": {
+          "value": "#000000",
+          "type": "color",
+          "description": "This text color is dark in all modes (light & dark)"
+        },
+        "Additional": {
+          "value": "#000000a6",
+          "type": "color",
+          "description": "This text color is dark in all modes (light & dark)"
+        }
+      },
       "Functional": {
         "Informational": {
           "value": "#005AC4",
@@ -76,16 +100,6 @@
         "Warning": {
           "value": "#BB5313",
           "type": "color"
-        },
-        "White": {
-          "value": "#ffffff",
-          "type": "color",
-          "description": "This text color is white in all modes (light & dark)"
-        },
-        "Black": {
-          "value": "#000000",
-          "type": "color",
-          "description": "This text color is black in all modes (light & dark)"
         }
       }
     },
@@ -158,7 +172,7 @@
           "description": "Use for disabled interactive elements in combination with the disabled text color"
         },
         "Disabled": {
-          "value": "#00000012",
+          "value": "#00000024",
           "type": "color",
           "description": "Use for disabled interactive elements in combination with the disabled text color"
         }
@@ -199,6 +213,11 @@
         "Extra Strong": {
           "value": "#050505",
           "type": "color"
+        },
+        "Disabled": {
+          "value": "#D3D5D6",
+          "type": "color",
+          "description": "Use for disabled interactive elements in combination with the disabled text color"
         }
       }
     },
@@ -1210,6 +1229,30 @@
           "description": "Additional text color inverted to be used on high contrast colors like ui/extra strong"
         }
       },
+      "White": {
+        "Standard": {
+          "value": "#ffffff",
+          "type": "color",
+          "description": "Light text to be used on backgrounds that are dark in all modes (light & dark)"
+        },
+        "Additional": {
+          "value": "#ffffffa6",
+          "type": "color",
+          "description": "Semi-Light text to be used on backgrounds that are dark in all modes (light & dark)"
+        }
+      },
+      "Black": {
+        "Standard": {
+          "value": "#000000",
+          "type": "color",
+          "description": "This text color is dark in all modes (light & dark)"
+        },
+        "Additional": {
+          "value": "#000000a6",
+          "type": "color",
+          "description": "This text color is dark in all modes (light & dark)"
+        }
+      },
       "Functional": {
         "Informational": {
           "value": "#268AFF",
@@ -1226,16 +1269,6 @@
         "Warning": {
           "value": "#E26617",
           "type": "color"
-        },
-        "White": {
-          "value": "#ffffff",
-          "type": "color",
-          "description": "This text color is white in all modes (light & dark)"
-        },
-        "Black": {
-          "value": "#000000",
-          "type": "color",
-          "description": "This text color is black in all modes (light & dark)"
         }
       }
     },
@@ -1349,6 +1382,11 @@
         "Extra Strong": {
           "value": "#F0F1F1",
           "type": "color"
+        },
+        "Disabled": {
+          "value": "#272729",
+          "type": "color",
+          "description": "Use for disabled interactive elements in combination with the disabled text color"
         }
       }
     },
