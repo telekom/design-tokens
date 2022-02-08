@@ -60,6 +60,30 @@
           "description": "Additional text color inverted to be used on high contrast colors like ui/extra strong"
         }
       },
+      "White": {
+        "Standard": {
+          "value": "#ffffff",
+          "type": "color",
+          "description": "Light text to be used on backgrounds that are dark in all modes (light & dark)"
+        },
+        "Additional": {
+          "value": "#ffffffa6",
+          "type": "color",
+          "description": "Semi-Light text to be used on backgrounds that are dark in all modes (light & dark)"
+        }
+      },
+      "Black": {
+        "Standard": {
+          "value": "#000000",
+          "type": "color",
+          "description": "This text color is dark in all modes (light & dark)"
+        },
+        "Additional": {
+          "value": "#000000a6",
+          "type": "color",
+          "description": "This text color is dark in all modes (light & dark)"
+        }
+      },
       "Functional": {
         "Informational": {
           "value": "#005AC4",
@@ -76,16 +100,6 @@
         "Warning": {
           "value": "#BB5313",
           "type": "color"
-        },
-        "White": {
-          "value": "#ffffff",
-          "type": "color",
-          "description": "This text color is white in all modes (light & dark)"
-        },
-        "Black": {
-          "value": "#000000",
-          "type": "color",
-          "description": "This text color is black in all modes (light & dark)"
         }
       }
     },
@@ -136,34 +150,77 @@
       }
     },
     "UI": {
-      "Base": {
-        "value": "#ffffff",
-        "type": "color"
+      "Border": {
+        "Standard": {
+          "value": "#00000070",
+          "type": "color"
+        },
+        "Hovered": {
+          "value": "#000000b5",
+          "type": "color"
+        },
+        "Pressed": {
+          "value": "#000000b5",
+          "type": "color"
+        },
+        "Active": {
+          "value": "#000000b5",
+          "type": "color"
+        },
+        "Disabled": {
+          "value": "#00000024",
+          "type": "color"
+        }
       },
-      "Subtle": {
-        "value": "#D3D5D6",
-        "type": "color"
+      "Fill": {
+        "Hovered": {
+          "value": "#00000012",
+          "type": "color"
+        },
+        "Pressed": {
+          "value": "#00000036",
+          "type": "color"
+        },
+        "Disabled": {
+          "value": "#D3D5D6",
+          "type": "color"
+        }
       },
-      "Light": {
-        "value": "#BABCBF",
-        "type": "color"
+      "Plate": {
+        "Hovered": {
+          "value": "#00000012",
+          "type": "color"
+        },
+        "Pressed": {
+          "value": "#00000036",
+          "type": "color"
+        }
       },
-      "Regular": {
-        "value": "#898B8F",
-        "type": "color"
-      },
-      "Strong": {
-        "value": "#4A4B4D",
-        "type": "color"
-      },
-      "Extra Strong": {
-        "value": "#050505",
-        "type": "color"
-      },
-      "Disabled": {
-        "value": "#D3D5D6",
-        "type": "color",
-        "description": "Use for disabled interactive elements in combination with the disabled text color"
+      "General": {
+        "Base": {
+          "value": "#ffffff",
+          "type": "color"
+        },
+        "Subtle": {
+          "value": "#E7E8E9",
+          "type": "color"
+        },
+        "Light": {
+          "value": "#BABCBF",
+          "type": "color"
+        },
+        "Regular": {
+          "value": "#898B8F",
+          "type": "color"
+        },
+        "Strong": {
+          "value": "#4A4B4D",
+          "type": "color"
+        },
+        "Extra Strong": {
+          "value": "#050505",
+          "type": "color"
+        }
       }
     },
     "Functional": {
@@ -227,15 +284,15 @@
       },
       "Warning": {
         "Standard": {
-          "value": "#BB5313",
+          "value": "#FF7F1F",
           "type": "color"
         },
         "Hovered": {
-          "value": "#9C4410",
+          "value": "#E26617",
           "type": "color"
         },
         "Pressed": {
-          "value": "#7E360C",
+          "value": "#BB5313",
           "type": "color"
         },
         "Subtle": {
@@ -1174,6 +1231,30 @@
           "description": "Additional text color inverted to be used on high contrast colors like ui/extra strong"
         }
       },
+      "White": {
+        "Standard": {
+          "value": "#ffffff",
+          "type": "color",
+          "description": "Light text to be used on backgrounds that are dark in all modes (light & dark)"
+        },
+        "Additional": {
+          "value": "#ffffffa6",
+          "type": "color",
+          "description": "Semi-Light text to be used on backgrounds that are dark in all modes (light & dark)"
+        }
+      },
+      "Black": {
+        "Standard": {
+          "value": "#000000",
+          "type": "color",
+          "description": "This text color is dark in all modes (light & dark)"
+        },
+        "Additional": {
+          "value": "#000000a6",
+          "type": "color",
+          "description": "This text color is dark in all modes (light & dark)"
+        }
+      },
       "Functional": {
         "Informational": {
           "value": "#268AFF",
@@ -1190,16 +1271,6 @@
         "Warning": {
           "value": "#E26617",
           "type": "color"
-        },
-        "White": {
-          "value": "#ffffff",
-          "type": "color",
-          "description": "This text color is white in all modes (light & dark)"
-        },
-        "Black": {
-          "value": "#000000",
-          "type": "color",
-          "description": "This text color is black in all modes (light & dark)"
         }
       }
     },
@@ -1250,34 +1321,77 @@
       }
     },
     "UI": {
-      "Base": {
-        "value": "#38393B",
-        "type": "color"
+      "Border": {
+        "Standard": {
+          "value": "#ffffff5c",
+          "type": "color"
+        },
+        "Hovered": {
+          "value": "#ffffff8a",
+          "type": "color"
+        },
+        "Pressed": {
+          "value": "#fffffff0",
+          "type": "color"
+        },
+        "Active": {
+          "value": "#fffffff0",
+          "type": "color"
+        },
+        "Disabled": {
+          "value": "#ffffff36",
+          "type": "color"
+        }
       },
-      "Subtle": {
-        "value": "#272729",
-        "type": "color"
+      "Fill": {
+        "Hovered": {
+          "value": "#ffffff24",
+          "type": "color"
+        },
+        "Pressed": {
+          "value": "#ffffff36",
+          "type": "color"
+        },
+        "Disabled": {
+          "value": "#272729",
+          "type": "color"
+        }
       },
-      "Light": {
-        "value": "#38393B",
-        "type": "color"
+      "Plate": {
+        "Hovered": {
+          "value": "#ffffff24",
+          "type": "color"
+        },
+        "Pressed": {
+          "value": "#ffffff36",
+          "type": "color"
+        }
       },
-      "Regular": {
-        "value": "#5D5F61",
-        "type": "color"
-      },
-      "Strong": {
-        "value": "#898B8F",
-        "type": "color"
-      },
-      "Extra Strong": {
-        "value": "#F0F1F1",
-        "type": "color"
-      },
-      "Disabled": {
-        "value": "#272729",
-        "type": "color",
-        "description": "Use for disabled interactive elements in combination with the disabled text color"
+      "General": {
+        "Base": {
+          "value": "#38393B",
+          "type": "color"
+        },
+        "Subtle": {
+          "value": "#272729",
+          "type": "color"
+        },
+        "Light": {
+          "value": "#38393B",
+          "type": "color"
+        },
+        "Regular": {
+          "value": "#5D5F61",
+          "type": "color"
+        },
+        "Strong": {
+          "value": "#898B8F",
+          "type": "color"
+        },
+        "Extra Strong": {
+          "value": "#F0F1F1",
+          "type": "color"
+        }
       }
     },
     "Functional": {
