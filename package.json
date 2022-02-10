@@ -41,5 +41,8 @@
     "tinycolor2": "^1.4.2",
     "uuid": "^8.3.2",
     "uuid-by-string": "^3.0.4"
+  },
+  "dependencies": {
+    "wcag-contrast": "^3.0.0"
   }
 }
