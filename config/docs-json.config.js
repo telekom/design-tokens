@@ -74,17 +74,17 @@ function getLevel(ratio) {
 }
 
 function getContrastCheck(value, path, allTokens) {
-  const currentToken = allTokens.find((el) => isEqual(el.path,path.split('.')));
+  const currentToken = allTokens.find((token) =>
+    isEqual(token.path, path.split('.'))
+  );
   let contrastRatio;
   if (!currentToken) {
-    throw Error(`Couldn't find token in contrast check for ${path}`)
+    throw new Error(`Couldn't find token in contrast check for ${path}`);
   }
-  if (currentToken.value) {
-    const baseValue = tinycolor(value).toHexString();
-    const currentTokenValue = tinycolor(currentToken.value).toHexString();
-    contrastRatio = hex(baseValue, currentTokenValue);
-  } 
-  const formattedName = humanCase(currentToken.path.slice(1).map(humanCase).join(' / '))
+  const baseValue = tinycolor(value).toHexString();
+  const currentTokenValue = tinycolor(currentToken.value).toHexString();
+  contrastRatio = hex(baseValue, currentTokenValue);
+  const formattedName = humanCase(currentToken.path.slice(1).join(' / '));
   return {
     path: path,
     name: formattedName,
