@@ -1,0 +1,7 @@
+{
+  "type": "prerelease",
+  "comment": "Fix wrong contrast check refs",
+  "packageName": "@telekom/design-tokens",
+  "email": "ac@iconstorm.com",
+  "dependentChangeType": "patch"
+}
