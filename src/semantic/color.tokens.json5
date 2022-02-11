@@ -795,8 +795,8 @@
         comment: "",
         standard: {
           value: {
-            light: "core.color.grey.500",
-            dark: "core.color.grey.500",
+            light: "{core.color.grey.500}",
+            dark: "{core.color.grey.500}",
           },
           type: "color",
           extensions: {
@@ -809,8 +809,8 @@
         },
         hovered: {
           value: {
-            light: "core.color.grey.800",
-            dark: "core.color.grey.800",
+            light: "{core.color.grey.800}",
+            dark: "{core.color.grey.800}",
           },
           type: "color",
           extensions: {
@@ -823,8 +823,8 @@
         },
         pressed: {
           value: {
-            light: "core.color.grey.1200",
-            dark: "core.color.grey.1200",
+            light: "{core.color.grey.1200}",
+            dark: "{core.color.grey.1200}",
           },
           type: "color",
           extensions: {
@@ -837,8 +837,8 @@
         },
         disabled: {
           value: {
-            light: "core.color.grey.200",
-            dark: "core.color.grey.100",
+            light: "{core.color.grey.200}",
+            dark: "{core.color.grey.100}",
           },
           type: "color",
           extensions: {
