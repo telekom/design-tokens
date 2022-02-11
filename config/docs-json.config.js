@@ -11,6 +11,7 @@ const StyleDictionary = require('style-dictionary');
 const hex = require('wcag-contrast').hex;
 const tinycolor = require('tinycolor2');
 const pick = require('lodash/pick');
+const isEqual = require('lodash/isEqual');
 const camelCase = require('lodash/camelCase');
 const { humanCase } = require('./shared');
 
@@ -73,16 +74,17 @@ function getLevel(ratio) {
 }
 
 function getContrastCheck(value, path, allTokens) {
-  const format = path.replaceAll('.', '-').replace('&', 'and');
-  const withPrefix = 'telekom-' + format;
-  const currentToken = allTokens.find((el) => el.name === withPrefix);
+  const currentToken = allTokens.find((el) => isEqual(el.path,path.split('.')));
   let contrastRatio;
-  if (currentToken && currentToken.value) {
-    const firstHexValue = tinycolor(value).toHexString();
-    const secondHexValue = tinycolor(currentToken.value).toHexString();
-    contrastRatio = hex(firstHexValue, secondHexValue);
+  if (!currentToken) {
+    throw Error(`Couldn't find token in contrast check for ${path}`)
   }
-  const formattedName = path.split('.').slice(1).map(humanCase).join(' / ');
+  if (currentToken.value) {
+    const baseValue = tinycolor(value).toHexString();
+    const currentTokenValue = tinycolor(currentToken.value).toHexString();
+    contrastRatio = hex(baseValue, currentTokenValue);
+  } 
+  const formattedName = humanCase(currentToken.path.slice(1).map(humanCase).join(' / '))
   return {
     path: path,
     name: formattedName,
