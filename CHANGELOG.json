@@ -2,6 +2,27 @@
   "name": "@telekom/design-tokens",
   "entries": [
     {
+      "date": "Fri, 04 Feb 2022 14:46:10 GMT",
+      "tag": "@telekom/design-tokens_v1.0.0-alpha.6",
+      "version": "1.0.0-alpha.6",
+      "comments": {
+        "prerelease": [
+          {
+            "author": "ac@iconstorm.com",
+            "package": "@telekom/design-tokens",
+            "commit": "52104eda7751e7de76790dae04b8ecbe424088c3",
+            "comment": "Use docs.contrast extension to enable contrast checks in docs output"
+          },
+          {
+            "author": "oppermann.lukas@gmail.com",
+            "package": "@telekom/design-tokens",
+            "commit": "454a3bc9f1af32a8df9fd5d5ebc1272f95139e1d",
+            "comment": "added ui/general, ui/border and ui/plate"
+          }
+        ]
+      }
+    },
+    {
       "date": "Tue, 01 Feb 2022 15:30:45 GMT",
       "tag": "@telekom/design-tokens_v1.0.0-alpha.5",
       "version": "1.0.0-alpha.5",
