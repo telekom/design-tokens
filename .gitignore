@@ -1,14 +1,6 @@
 .DS_Store
 .npmrc
 node_modules
-public
 
-# make these available only for npm
-dist/css/
-dist/js/
-dist/sketch/
-dist/docs-json/
-dist/telekom/css/
-dist/telekom/js/
-dist/telekom/sketch/
-dist/telekom/docs-json/
+public
+dist
