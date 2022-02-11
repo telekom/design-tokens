@@ -1,0 +1,7 @@
+{
+  "type": "prerelease",
+  "comment": "Rename ui.plate to ui.fill, add extra ui.plate, move ui.general.disabled to ui.fill",
+  "packageName": "@telekom/design-tokens",
+  "email": "ac@iconstorm.com",
+  "dependentChangeType": "patch"
+}

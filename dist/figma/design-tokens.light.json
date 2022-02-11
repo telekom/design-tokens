@@ -150,43 +150,90 @@
       }
     },
     "UI": {
-      "Border": {
-        "Standard": {
-          "value": "#00000070",
-          "type": "color",
-          "description": "Use for disabled interactive elements in combination with the disabled text color"
+      "Outlined": {
+        "Border": {
+          "Standard": {
+            "value": "#00000070",
+            "type": "color"
+          },
+          "Hovered": {
+            "value": "#000000b5",
+            "type": "color"
+          },
+          "Pressed": {
+            "value": "#000000b5",
+            "type": "color"
+          },
+          "Active": {
+            "value": "#000000b5",
+            "type": "color"
+          },
+          "Disabled": {
+            "value": "#00000024",
+            "type": "color"
+          }
         },
-        "Hovered": {
-          "value": "#000000b5",
-          "type": "color",
-          "description": "Use for disabled interactive elements in combination with the disabled text color"
-        },
-        "Pressed": {
-          "value": "#000000b5",
-          "type": "color",
-          "description": "Use for disabled interactive elements in combination with the disabled text color"
-        },
-        "Active": {
-          "value": "#000000b5",
-          "type": "color",
-          "description": "Use for disabled interactive elements in combination with the disabled text color"
-        },
-        "Disabled": {
-          "value": "#00000024",
-          "type": "color",
-          "description": "Use for disabled interactive elements in combination with the disabled text color"
+        "Fill": {
+          "Standard": {
+            "value": "#00000000",
+            "type": "color"
+          },
+          "Hovered": {
+            "value": "#00000012",
+            "type": "color"
+          },
+          "Pressed": {
+            "value": "#00000036",
+            "type": "color"
+          },
+          "Active": {
+            "value": "#00000036",
+            "type": "color"
+          },
+          "Disabled": {
+            "value": "#00000000",
+            "type": "color"
+          }
         }
       },
-      "Plate": {
+      "Ghost": {
         "Hovered": {
           "value": "#00000012",
-          "type": "color",
-          "description": "Use for disabled interactive elements in combination with the disabled text color"
+          "type": "color"
+        },
+        "Hovered Inverted": {
+          "value": "#ffffff24",
+          "type": "color"
         },
         "Pressed": {
           "value": "#00000036",
-          "type": "color",
-          "description": "Use for disabled interactive elements in combination with the disabled text color"
+          "type": "color"
+        },
+        "Pressed Inverted": {
+          "value": "#ffffff36",
+          "type": "color"
+        },
+        "Active": {
+          "value": "#00000036",
+          "type": "color"
+        }
+      },
+      "Solid": {
+        "Standard": {
+          "value": "#898B8F",
+          "type": "color"
+        },
+        "Hovered": {
+          "value": "#4A4B4D",
+          "type": "color"
+        },
+        "Pressed": {
+          "value": "#050505",
+          "type": "color"
+        },
+        "Disabled": {
+          "value": "#D3D5D6",
+          "type": "color"
         }
       },
       "General": {
@@ -213,11 +260,6 @@
         "Extra Strong": {
           "value": "#050505",
           "type": "color"
-        },
-        "Disabled": {
-          "value": "#D3D5D6",
-          "type": "color",
-          "description": "Use for disabled interactive elements in combination with the disabled text color"
         }
       }
     },
