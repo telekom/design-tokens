@@ -3,7 +3,6 @@
   "version": "1.0.0-alpha.6",
   "description": "The source of truth for Telekom's corporate brand and design",
   "files": [
-    "build",
     "dist",
     "src"
   ],
