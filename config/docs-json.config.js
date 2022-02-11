@@ -8,6 +8,8 @@
  * file, You can obtain one at https://mozilla.org/MPL/2.0/.
  */
 const StyleDictionary = require('style-dictionary');
+const hex = require('wcag-contrast').hex;
+const tinycolor = require('tinycolor2');
 const pick = require('lodash/pick');
 const camelCase = require('lodash/camelCase');
 const { humanCase } = require('./shared');
@@ -30,7 +32,7 @@ StyleDictionary.registerFormat({
   name: 'json/docs',
   formatter: function ({ dictionary }) {
     const output = {
-      tokens: dictionary.allTokens.map(getDocsShape()),
+      tokens: dictionary.allTokens.map(getDocsShape(dictionary.allTokens)),
     };
     return JSON.stringify(output, null, 2);
   },
@@ -46,7 +48,50 @@ StyleDictionary.registerFormat({
  *   comment: '...'
  * },
  */
-function getDocsShape() {
+
+var levels = {
+  fail: {
+    range: [0, 3],
+  },
+  'aa-large': {
+    range: [3, 4.5],
+  },
+  aa: {
+    range: [4.5, 7],
+  },
+  aaa: {
+    range: [7, 22],
+  },
+};
+
+function getLevel(ratio) {
+  for (const [key, value] of Object.entries(levels)) {
+    if (ratio > value.range[0] && ratio < value.range[1]) {
+      return key;
+    }
+  }
+}
+
+function getContrastCheck(value, path, allTokens) {
+  const format = path.replaceAll('.', '-').replace('&', 'and');
+  const withPrefix = 'telekom-' + format;
+  const currentToken = allTokens.find((el) => el.name === withPrefix);
+  let contrastRatio;
+  if (currentToken && currentToken.value) {
+    const firstHexValue = tinycolor(value).toHexString();
+    const secondHexValue = tinycolor(currentToken.value).toHexString();
+    contrastRatio = hex(firstHexValue, secondHexValue);
+  }
+  const formattedName = path.split('.').slice(1).map(humanCase).join(' / ');
+  return {
+    path: path,
+    name: formattedName,
+    ratio: contrastRatio,
+    level: getLevel(contrastRatio),
+  };
+}
+
+function getDocsShape(allTokens) {
   return (token) => {
     return {
       pathString: token.path.join('.'),
@@ -56,7 +101,9 @@ function getDocsShape() {
       name: humanCase(token.path.slice(1).map(humanCase).join(' / ')),
       cssVariableName: `--${token.name}`,
       jsPathName: token.path.map(camelCase).join('.'),
-      contrastChecks: token.extensions?.telekom?.docs?.contrast,
+      contrastChecks: token.extensions?.telekom?.docs?.contrast.map((path) =>
+        getContrastCheck(token.value, path, allTokens)
+      ),
     };
   };
 }
