@@ -1,6 +1,6 @@
 {
   "name": "@telekom/design-tokens",
-  "version": "1.0.0-alpha.5",
+  "version": "1.0.0-alpha.6",
   "description": "The source of truth for Telekom's corporate brand and design",
   "files": [
     "build",
@@ -41,5 +41,8 @@
     "tinycolor2": "^1.4.2",
     "uuid": "^8.3.2",
     "uuid-by-string": "^3.0.4"
+  },
+  "dependencies": {
+    "wcag-contrast": "^3.0.0"
   }
 }
