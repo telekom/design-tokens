@@ -150,49 +150,89 @@
       }
     },
     "UI": {
-      "Border": {
-        "Standard": {
-          "value": "#00000070",
-          "type": "color"
+      "Outlined": {
+        "Border": {
+          "Standard": {
+            "value": "#00000070",
+            "type": "color"
+          },
+          "Hovered": {
+            "value": "#000000b5",
+            "type": "color"
+          },
+          "Pressed": {
+            "value": "#000000b5",
+            "type": "color"
+          },
+          "Active": {
+            "value": "#000000b5",
+            "type": "color"
+          },
+          "Disabled": {
+            "value": "#00000024",
+            "type": "color"
+          }
         },
-        "Hovered": {
-          "value": "#000000b5",
-          "type": "color"
-        },
-        "Pressed": {
-          "value": "#000000b5",
-          "type": "color"
-        },
-        "Active": {
-          "value": "#000000b5",
-          "type": "color"
-        },
-        "Disabled": {
-          "value": "#00000024",
-          "type": "color"
+        "Fill": {
+          "Standard": {
+            "value": "#00000000",
+            "type": "color"
+          },
+          "Hovered": {
+            "value": "#00000012",
+            "type": "color"
+          },
+          "Pressed": {
+            "value": "#00000036",
+            "type": "color"
+          },
+          "Active": {
+            "value": "#00000036",
+            "type": "color"
+          },
+          "Disabled": {
+            "value": "#00000000",
+            "type": "color"
+          }
         }
       },
-      "Fill": {
+      "Ghost": {
         "Hovered": {
           "value": "#00000012",
           "type": "color"
         },
+        "Hovered Inverted": {
+          "value": "#ffffff24",
+          "type": "color"
+        },
         "Pressed": {
           "value": "#00000036",
+          "type": "color"
+        },
+        "Pressed Inverted": {
+          "value": "#ffffff36",
+          "type": "color"
+        },
+        "Active": {
+          "value": "#00000036",
+          "type": "color"
+        }
+      },
+      "Solid": {
+        "Standard": {
+          "value": "#898B8F",
+          "type": "color"
+        },
+        "Hovered": {
+          "value": "#4A4B4D",
+          "type": "color"
+        },
+        "Pressed": {
+          "value": "#050505",
           "type": "color"
         },
         "Disabled": {
           "value": "#D3D5D6",
-          "type": "color"
-        }
-      },
-      "Plate": {
-        "Hovered": {
-          "value": "#00000012",
-          "type": "color"
-        },
-        "Pressed": {
-          "value": "#00000036",
           "type": "color"
         }
       },

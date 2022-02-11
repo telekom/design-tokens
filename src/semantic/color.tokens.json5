@@ -479,169 +479,217 @@
       },
     },
     ui: {
-      comment: "UI colors are used to create ui elements like dividers, checkboxes, buttons, etc.",
-      border: {
-        comment: "Basic border (TODO)",
-        standard: {
-          value: {
-            light: {
-              color: "{core.color.black}",
-              alpha: 0.44,
+      comment: "Used to create UI elements like dividers, checkboxes, buttons, etc.",
+      outlined: {
+        border: {
+          comment: "",
+          standard: {
+            value: {
+              light: {
+                color: "{core.color.black}",
+                alpha: 0.44,
+              },
+              dark: {
+                color: "{core.color.white}",
+                alpha: 0.36,
+              },
             },
-            dark: {
-              color: "{core.color.white}",
-              alpha: 0.36,
+            type: "color",
+            extensions: {
+              telekom: {
+                sketch: {
+                  uuid: "79CF74ED-CA2E-4111-BC7D-A15623B35827",
+                },
+              },
             },
           },
-          type: "color",
-          extensions: {
-            telekom: {
-              sketch: {
-                uuid: "79CF74ED-CA2E-4111-BC7D-A15623B35827",
+          hovered: {
+            value: {
+              light: {
+                color: "{core.color.black}",
+                alpha: 0.71,
+              },
+              dark: {
+                color: "{core.color.white}",
+                alpha: 0.54,
+              },
+            },
+            type: "color",
+            extensions: {
+              telekom: {
+                sketch: {
+                  uuid: "B8F2E4B1-B900-44BC-9987-71D7E71ABC7D",
+                },
+              },
+            },
+          },
+          pressed: {
+            value: {
+              light: {
+                color: "{core.color.black}",
+                alpha: 0.71,
+              },
+              dark: {
+                color: "{core.color.white}",
+                alpha: 0.94,
+              },
+            },
+            type: "color",
+            extensions: {
+              telekom: {
+                sketch: {
+                  uuid: "D9CA0496-2BDF-40DD-8A0A-FA6609F7A2E1",
+                },
+              },
+            },
+          },
+          active: {
+            value: {
+              light: {
+                color: "{core.color.black}",
+                alpha: 0.71,
+              },
+              dark: {
+                color: "{core.color.white}",
+                alpha: 0.94,
+              },
+            },
+            type: "color",
+            extensions: {
+              telekom: {
+                sketch: {
+                  uuid: "FAB40B48-92BB-44BE-AA8D-3EAF75BE1AFC",
+                },
+              },
+            },
+          },
+          disabled: {
+            value: {
+              light: {
+                color: "{core.color.black}",
+                alpha: 0.14,
+              },
+              dark: {
+                color: "{core.color.white}",
+                alpha: 0.21,
+              },
+            },
+            type: "color",
+            extensions: {
+              telekom: {
+                sketch: {
+                  uuid: "7E49AF0B-4751-4928-BD38-70657A553127",
+                },
               },
             },
           },
         },
-        hovered: {
-          value: {
-            light: {
-              color: "{core.color.black}",
-              alpha: 0.71,
+        fill: {
+          comment: "",
+          standard: {
+            value: {
+              light: {
+                color: "{core.color.black}",
+                alpha: 0,
+              },
+              dark: {
+                color: "{core.color.white}",
+                alpha: 0,
+              },
             },
-            dark: {
-              color: "{core.color.white}",
-              alpha: 0.54,
-            },
-          },
-          type: "color",
-          extensions: {
-            telekom: {
-              sketch: {
-                uuid: "B8F2E4B1-B900-44BC-9987-71D7E71ABC7D",
+            type: "color",
+            extensions: {
+              telekom: {
+                sketch: {
+                  uuid: "543EDBAF-FB33-49C0-BBB2-A9497468B26A",
+                },
               },
             },
           },
-        },
-        pressed: {
-          value: {
-            light: {
-              color: "{core.color.black}",
-              alpha: 0.71,
+          hovered: {
+            value: {
+              light: {
+                color: "{core.color.black}",
+                alpha: 0.07,
+              },
+              dark: {
+                color: "{core.color.white}",
+                alpha: 0.14,
+              },
             },
-            dark: {
-              color: "{core.color.white}",
-              alpha: 0.94,
-            },
-          },
-          type: "color",
-          extensions: {
-            telekom: {
-              sketch: {
-                uuid: "D9CA0496-2BDF-40DD-8A0A-FA6609F7A2E1",
+            type: "color",
+            extensions: {
+              telekom: {
+                sketch: {
+                  uuid: "8FF3D3FD-DA69-4072-80EC-79FD24B566C4",
+                },
               },
             },
           },
-        },
-        active: {
-          value: {
-            light: {
-              color: "{core.color.black}",
-              alpha: 0.71,
+          pressed: {
+            value: {
+              light: {
+                color: "{core.color.black}",
+                alpha: 0.21,
+              },
+              dark: {
+                color: "{core.color.white}",
+                alpha: 0.21,
+              },
             },
-            dark: {
-              color: "{core.color.white}",
-              alpha: 0.94,
-            },
-          },
-          type: "color",
-          extensions: {
-            telekom: {
-              sketch: {
-                uuid: "FAB40B48-92BB-44BE-AA8D-3EAF75BE1AFC",
+            type: "color",
+            extensions: {
+              telekom: {
+                sketch: {
+                  uuid: "E91F8AAF-20D5-4D97-A2FE-D136EF21C19F",
+                },
               },
             },
           },
-        },
-        disabled: {
-          value: {
-            light: {
-              color: "{core.color.black}",
-              alpha: 0.14,
+          active: {
+            value: {
+              light: {
+                color: "{core.color.black}",
+                alpha: 0.21,
+              },
+              dark: {
+                color: "{core.color.white}",
+                alpha: 0.21,
+              },
             },
-            dark: {
-              color: "{core.color.white}",
-              alpha: 0.21,
+            type: "color",
+            extensions: {
+              telekom: {
+                sketch: {
+                  uuid: "",
+                },
+              },
             },
           },
-          type: "color",
-          extensions: {
-            telekom: {
-              sketch: {
-                uuid: "7E49AF0B-4751-4928-BD38-70657A553127",
+          disabled: {
+            value: {
+              light: {
+                color: "{core.color.black}",
+                alpha: 0,
+              },
+              dark: {
+                color: "{core.color.white}",
+                alpha: 0,
+              },
+            },
+            type: "color",
+            extensions: {
+              telekom: {
+                sketch: {
+                  uuid: "C9A9FF5D-D616-45CA-AC0E-128D4F51B841",
+                },
               },
             },
           },
         },
       },
-      fill: {
-        comment: "Basic fill (TODO)",
-        hovered: {
-          value: {
-            light: {
-              color: "{core.color.black}",
-              alpha: 0.07,
-            },
-            dark: {
-              color: "{core.color.white}",
-              alpha: 0.14,
-            },
-          },
-          type: "color",
-          extensions: {
-            telekom: {
-              sketch: {
-                uuid: "8FF3D3FD-DA69-4072-80EC-79FD24B566C4",
-              },
-            },
-          },
-        },
-        pressed: {
-          value: {
-            light: {
-              color: "{core.color.black}",
-              alpha: 0.21,
-            },
-            dark: {
-              color: "{core.color.white}",
-              alpha: 0.21,
-            },
-          },
-          type: "color",
-          extensions: {
-            telekom: {
-              sketch: {
-                uuid: "E91F8AAF-20D5-4D97-A2FE-D136EF21C19F",
-              },
-            },
-          },
-        },
-        disabled: {
-          value: {
-            light: "{core.color.grey.200}",
-            dark: "{core.color.grey.1000}",
-          },
-          type: "color",
-          extensions: {
-            telekom: {
-              sketch: {
-                uuid: "C9A9FF5D-D616-45CA-AC0E-128D4F51B841",
-              },
-            },
-          },
-        },
-      },
-      plate: {
-        comment: "Plate is an element that lays in the background and gets visible when interacting with its main components",
+      ghost: {
+        comment: "",
         hovered: {
           value: {
             light: {
@@ -662,6 +710,26 @@
             },
           },
         },
+        "hovered-inverted": {
+          value: {
+            light: {
+              color: "{core.color.white}",
+              alpha: 0.14,
+            },
+            dark: {
+              color: "{core.color.black}",
+              alpha: 0.07,
+            },
+          },
+          type: "color",
+          extensions: {
+            telekom: {
+              sketch: {
+                uuid: "181006DC-7077-4C57-8D3A-BA2258D5452C",
+              },
+            },
+          },
+        },
         pressed: {
           value: {
             light: {
@@ -670,7 +738,7 @@
             },
             dark: {
               color: "{core.color.white}",
-              alpha: 0.21,
+              alpha: 0.27,
             },
           },
           type: "color",
@@ -682,8 +750,108 @@
             },
           },
         },
+        "pressed-inverted": {
+          value: {
+            light: {
+              color: "{core.color.white}",
+              alpha: 0.21,
+            },
+            dark: {
+              color: "{core.color.black}",
+              alpha: 0.21,
+            },
+          },
+          type: "color",
+          extensions: {
+            telekom: {
+              sketch: {
+                uuid: "8633E9B7-0D78-4C6E-A0A3-910A3FA805F6",
+              },
+            },
+          },
+        },
+        active: {
+          value: {
+            light: {
+              color: "{core.color.black}",
+              alpha: 0.21,
+            },
+            dark: {
+              color: "{core.color.white}",
+              alpha: 0.27,
+            },
+          },
+          type: "color",
+          extensions: {
+            telekom: {
+              sketch: {
+                uuid: "20AD8C15-D4F6-476B-B0EA-F621F4D8458C",
+              },
+            },
+          },
+        },
+      },
+      solid: {
+        comment: "",
+        standard: {
+          value: {
+            light: "{core.color.grey.500}",
+            dark: "{core.color.grey.500}",
+          },
+          type: "color",
+          extensions: {
+            telekom: {
+              sketch: {
+                uuid: "EEE9D462-3241-4F0E-9B8D-CAC47B65C087",
+              },
+            },
+          },
+        },
+        hovered: {
+          value: {
+            light: "{core.color.grey.800}",
+            dark: "{core.color.grey.800}",
+          },
+          type: "color",
+          extensions: {
+            telekom: {
+              sketch: {
+                uuid: "3AC9BB2E-C6FC-4A10-9E36-2A52D1DC177C",
+              },
+            },
+          },
+        },
+        pressed: {
+          value: {
+            light: "{core.color.grey.1200}",
+            dark: "{core.color.grey.1200}",
+          },
+          type: "color",
+          extensions: {
+            telekom: {
+              sketch: {
+                uuid: "856AD418-DB9E-4BA6-8D70-2BEFC5CBAA19",
+              },
+            },
+          },
+        },
+        disabled: {
+          value: {
+            light: "{core.color.grey.200}",
+            dark: "{core.color.grey.100}",
+          },
+          type: "color",
+          extensions: {
+            telekom: {
+              sketch: {
+                uuid: "29DE4350-F4F5-4341-9491-E2AA8142E1D4",
+              },
+            },
+          },
+        },
       },
       general: {
+        comment: "",
         base: {
           value: {
             light: "{core.color.white}",
