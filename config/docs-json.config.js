@@ -9,6 +9,7 @@
  */
 const StyleDictionary = require('style-dictionary');
 const hex = require('wcag-contrast').hex
+const tinycolor = require('tinycolor2');
 const pick = require('lodash/pick');
 const camelCase = require('lodash/camelCase');
 const { humanCase } = require('./shared');
@@ -51,19 +52,15 @@ StyleDictionary.registerFormat({
  var levels = {
 	"fail": {
 		range: [0, 3],
-		color: "hsl(0, 100%, 40%)"
 	},
 	"aa-large": {
 		range: [3, 4.5],
-		color: "hsl(40, 100%, 45%)"
 	},
 	"aa": {
 		range: [4.5, 7],
-		color: "hsl(80, 60%, 45%)"
 	},
 	"aaa": {
 		range: [7, 22],
-		color: "hsl(95, 60%, 41%)"
 	}
 };
 
@@ -75,17 +72,20 @@ function getLevel(ratio) {
   }  
 }
 
-function getContrastCheck(value, element, allTokens) {
-  const format = element.replaceAll('.', '-').replace('&', 'and')
+function getContrastCheck(value, path, allTokens) {
+  const format = path.replaceAll('.', '-').replace('&', 'and')
   const withPrefix = 'telekom-' + format
   const currentToken = allTokens.find(el => el.name === withPrefix)
   let contrastRatio;
   if (currentToken && currentToken.value) {
-    contrastRatio = hex(value, currentToken.value)
+    const firstHexValue = tinycolor(value).toHexString()
+    const secondHexValue = tinycolor(currentToken.value).toHexString()
+    contrastRatio = hex(firstHexValue, secondHexValue)
   }
+  const formattedName = path.split('.').slice(1).map(humanCase).join(' / ')
   return {
-    "path": element,
-    "name": humanCase(element),
+    "path": path,
+    "name": formattedName,
     "ratio": contrastRatio,
     "level": getLevel(contrastRatio)
   }
@@ -102,7 +102,7 @@ function getDocsShape(allTokens) {
       name: humanCase(token.path.slice(1).map(humanCase).join(' / ')),
       cssVariableName: `--${token.name}`,
       jsPathName: token.path.map(camelCase).join('.'),
-      contrastChecks: token.extensions?.telekom?.docs?.contrast.map(el => getContrastCheck(token.value, el, allTokens))
+      contrastChecks: token.extensions?.telekom?.docs?.contrast.map(path => getContrastCheck(token.value, path, allTokens))
     };
   };
 }
