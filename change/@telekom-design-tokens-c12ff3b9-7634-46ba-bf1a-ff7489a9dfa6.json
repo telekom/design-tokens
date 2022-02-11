@@ -1,0 +1,7 @@
+{
+  "type": "prerelease",
+  "comment": "Restructure UI tokens (outlined/border, outlined/fill, ghost, solid, general)",
+  "packageName": "@telekom/design-tokens",
+  "email": "ac@iconstorm.com",
+  "dependentChangeType": "patch"
+}
