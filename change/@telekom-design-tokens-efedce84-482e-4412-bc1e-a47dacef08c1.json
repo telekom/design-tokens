@@ -1,7 +1,0 @@
-{
-  "type": "prerelease",
-  "comment": "Rename color/ui/general to color/ui/additional",
-  "packageName": "@telekom/design-tokens",
-  "email": "ac@iconstorm.com",
-  "dependentChangeType": "patch"
-}

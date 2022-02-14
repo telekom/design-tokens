@@ -2,6 +2,39 @@
   "name": "@telekom/design-tokens",
   "entries": [
     {
+      "date": "Mon, 14 Feb 2022 11:18:09 GMT",
+      "tag": "@telekom/design-tokens_v1.0.0-alpha.7",
+      "version": "1.0.0-alpha.7",
+      "comments": {
+        "prerelease": [
+          {
+            "author": "ac@iconstorm.com",
+            "package": "@telekom/design-tokens",
+            "commit": "2f2132ab1aa913729851537650267adcb5258eae",
+            "comment": "Rename color/ui/general to color/ui/additional"
+          },
+          {
+            "author": "ac@iconstorm.com",
+            "package": "@telekom/design-tokens",
+            "commit": "df1467354f36b4b5701661e3c2feef92fa9ec6bb",
+            "comment": "Fix wrong contrast check refs"
+          },
+          {
+            "author": "ac@iconstorm.com",
+            "package": "@telekom/design-tokens",
+            "commit": "8a611de89ae20c7d3c3cccff87f2ae7097d54c53",
+            "comment": "Rename ui.plate to ui.fill, add extra ui.plate, move ui.general.disabled to ui.fill"
+          },
+          {
+            "author": "ac@iconstorm.com",
+            "package": "@telekom/design-tokens",
+            "commit": "99a3947d5338f6570b50b063322252ab5fade11d",
+            "comment": "Restructure UI tokens (outlined/border, outlined/fill, ghost, solid, general)"
+          }
+        ]
+      }
+    },
+    {
       "date": "Fri, 04 Feb 2022 14:46:10 GMT",
       "tag": "@telekom/design-tokens_v1.0.0-alpha.6",
       "version": "1.0.0-alpha.6",

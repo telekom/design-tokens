@@ -1,8 +1,19 @@
 # Change Log - @telekom/design-tokens
 
-This log was last generated on Fri, 04 Feb 2022 14:46:10 GMT and should not be manually modified.
+This log was last generated on Mon, 14 Feb 2022 11:18:09 GMT and should not be manually modified.
 
 <!-- Start content -->
+
+## 1.0.0-alpha.7
+
+Mon, 14 Feb 2022 11:18:09 GMT
+
+### Changes
+
+- Rename color/ui/general to color/ui/additional (ac@iconstorm.com)
+- Fix wrong contrast check refs (ac@iconstorm.com)
+- Rename ui.plate to ui.fill, add extra ui.plate, move ui.general.disabled to ui.fill (ac@iconstorm.com)
+- Restructure UI tokens (outlined/border, outlined/fill, ghost, solid, general) (ac@iconstorm.com)
 
 ## 1.0.0-alpha.6
 
