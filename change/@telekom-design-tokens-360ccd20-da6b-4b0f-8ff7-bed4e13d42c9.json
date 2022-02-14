@@ -1,7 +1,0 @@
-{
-  "type": "prerelease",
-  "comment": "Move wcag-contrast to devDeps",
-  "packageName": "@telekom/design-tokens",
-  "email": "ac@iconstorm.com",
-  "dependentChangeType": "patch"
-}
