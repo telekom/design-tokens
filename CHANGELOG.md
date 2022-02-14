@@ -1,8 +1,16 @@
 # Change Log - @telekom/design-tokens
 
-This log was last generated on Mon, 14 Feb 2022 11:18:09 GMT and should not be manually modified.
+This log was last generated on Mon, 14 Feb 2022 11:23:17 GMT and should not be manually modified.
 
 <!-- Start content -->
+
+## 1.0.0-alpha.8
+
+Mon, 14 Feb 2022 11:23:17 GMT
+
+### Changes
+
+- Move wcag-contrast to devDeps (ac@iconstorm.com)
 
 ## 1.0.0-alpha.7
 
