@@ -651,7 +651,7 @@
           standard: {
             value: {
               light: {
-                color: "{core.color.black}",
+                color: "{core.color.white}",
                 alpha: 0,
               },
               dark: {
@@ -731,7 +731,7 @@
           disabled: {
             value: {
               light: {
-                color: "{core.color.black}",
+                color: "{core.color.white}",
                 alpha: 0,
               },
               dark: {
@@ -912,7 +912,7 @@
           },
         },
       },
-      general: {
+      additional: {
         comment: "",
         base: {
           value: {
