@@ -18,7 +18,7 @@ const { OUTPUT_PATH, OUTPUT_BASE_FILENAME } = process.env;
 
 const SKETCH_FIXTURE_BASENAME = 'design-tokens';
 
-const SPARKLE = 19; // TODO automate somehow
+const SPARKLE = 20; // TODO automate somehow
 
 _.templateSettings.interpolate = /{{([\s\S]+?)}}/g; // mustache delimiters
 
