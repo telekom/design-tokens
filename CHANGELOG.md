@@ -1,8 +1,16 @@
 # Change Log - @telekom/design-tokens
 
-This log was last generated on Mon, 14 Feb 2022 11:23:17 GMT and should not be manually modified.
+This log was last generated on Thu, 17 Feb 2022 14:39:01 GMT and should not be manually modified.
 
 <!-- Start content -->
+
+## 1.0.0-alpha.9
+
+Thu, 17 Feb 2022 14:39:01 GMT
+
+### Changes
+
+- Fix value for ui/solid/disabled.dark (grey.100 -> grey.900) (ac@iconstorm.com)
 
 ## 1.0.0-alpha.8
 
