@@ -1,7 +1,0 @@
-{
-  "type": "prerelease",
-  "comment": "Fix value for ui/solid/disabled.dark (grey.100 -> grey.900)",
-  "packageName": "@telekom/design-tokens",
-  "email": "ac@iconstorm.com",
-  "dependentChangeType": "patch"
-}
