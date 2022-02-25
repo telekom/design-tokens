@@ -12,7 +12,7 @@
         extensions: {
           telekom: {
             sketch: {
-              uuid: "2280DEB8-46C5-4A6D-979C-05EC142945FB",
+              uuid: "490fee2e-40f5-4341-9d23-0b99b8cc533d",
             },
           },
         },
@@ -33,7 +33,7 @@
         extensions: {
           telekom: {
             sketch: {
-              uuid: "6EE76BF2-46C5-4D23-A31D-C628492595A1",
+              uuid: "fb10e82d-f095-4d43-82ff-22ef8cbea7fa",
             },
           },
         },
@@ -54,7 +54,7 @@
         extensions: {
           telekom: {
             sketch: {
-              uuid: "29BD80BE-F937-41AA-A72D-C5F406208BD9",
+              uuid: "5dd2f46f-a035-4fbe-94e7-f59f44a944a6",
             },
           },
         },
@@ -69,7 +69,7 @@
           extensions: {
             telekom: {
               sketch: {
-                uuid: "4B8AD269-4A2E-409B-AC6A-CC5714D290F5",
+                uuid: "c36b0903-2b5c-40cd-a98b-5b4fa16336d9",
               },
             },
           },
@@ -83,7 +83,7 @@
           extensions: {
             telekom: {
               sketch: {
-                uuid: "6072CE79-86D3-4D48-AC64-D92E6CDDDFFC",
+                uuid: "9d55a56e-ffef-499a-9fc0-88ae8743059a",
               },
             },
           },
@@ -97,7 +97,7 @@
           extensions: {
             telekom: {
               sketch: {
-                uuid: "D2B7B43C-DAED-445B-A6B0-1F4F65E38EEE",
+                uuid: "1fe5cc61-6388-4fbc-bd8f-128b65cac9d4",
               },
             },
           },
@@ -111,7 +111,7 @@
           extensions: {
             telekom: {
               sketch: {
-                uuid: "D5D63175-0A00-42D5-BD86-223ED9EDF14C",
+                uuid: "4f95d3a7-9001-401f-9dfb-0e1db8b83362",
               },
             },
           },
@@ -127,7 +127,7 @@
           extensions: {
             telekom: {
               sketch: {
-                uuid: "C88EC685-9A7F-45AA-A5B4-5CF8A6D3B70A",
+                uuid: "0c3cc007-8ae6-43a4-847d-edba2cd3612c",
               },
             },
           },
@@ -141,7 +141,7 @@
           extensions: {
             telekom: {
               sketch: {
-                uuid: "1543AA6A-B000-4267-822E-6541B81B66AE",
+                uuid: "e1536366-bc18-4c23-92b4-3f575537d29d",
               },
             },
           },
@@ -155,7 +155,7 @@
           extensions: {
             telekom: {
               sketch: {
-                uuid: "96613075-AEEF-4272-AE15-012CC85248C8",
+                uuid: "78294714-f89c-4602-98f4-388fe7d978e7",
               },
             },
           },
@@ -211,7 +211,7 @@
           extensions: {
             telekom: {
               sketch: {
-                uuid: "613A8C78-56D2-4765-8315-BD9D3D67B813",
+                uuid: "4ab6a51d-37de-4f97-83a1-2fc1ae58088f",
               },
             },
           },
@@ -249,7 +249,7 @@
           extensions: {
             telekom: {
               sketch: {
-                uuid: "1F2A1837-8B4E-4500-8D19-6FF2972F0296",
+                uuid: "30527e43-938c-4a9e-8fb1-64f90192d483",
               },
             },
           },
@@ -286,7 +286,7 @@
           extensions: {
             telekom: {
               sketch: {
-                uuid: "98DEC3BE-2EB5-4878-BE85-C6AA5B1BA6BC",
+                uuid: "88bd46e1-03a6-48c0-9a91-83a5b59c12c6",
               },
             },
           },
@@ -300,7 +300,7 @@
           extensions: {
             telekom: {
               sketch: {
-                uuid: "DA8E6656-B156-40BE-AF70-E9D3D028BD57",
+                uuid: "bce2d347-b4a7-418b-bf68-8cd71aac383e",
               },
             },
           },
@@ -314,7 +314,7 @@
           extensions: {
             telekom: {
               sketch: {
-                uuid: "C68EDDCD-554A-4CD3-8B17-41D5CF3E7078",
+                uuid: "d0afb71d-852f-4ff2-b3fa-e9ffbd1e9875",
               },
             },
           },
@@ -347,7 +347,7 @@
         extensions: {
           telekom: {
             sketch: {
-              uuid: "5CB2459A-D1E9-4D39-B233-5AC041B3E192",
+              uuid: "21e9e92a-699d-4493-b2c5-37ef1f7298e4",
             },
             docs: {
               contrast: [
@@ -376,7 +376,7 @@
         extensions: {
           telekom: {
             sketch: {
-              uuid: "E1A7813E-4219-4C1C-8041-7BBAC39B2F4A",
+              uuid: "6a6f7ef4-9457-48dc-abcb-c528453050f2",
             },
             docs: {
               contrast: [
@@ -408,7 +408,7 @@
         extensions: {
           telekom: {
             sketch: {
-              uuid: "489D8A5C-A047-419F-9E34-539299C92AD5",
+              uuid: "1a8a7a7d-eb33-4cea-81c5-96d8bbb8959c",
             },
           },
         },
@@ -864,7 +864,7 @@
           extensions: {
             telekom: {
               sketch: {
-                uuid: "EEE9D462-3241-4F0E-9B8D-CAC47B65C087",
+                uuid: "fd4ee003-9fc9-4139-8e19-a27c81c8ff28",
               },
             },
           },
@@ -906,7 +906,7 @@
           extensions: {
             telekom: {
               sketch: {
-                uuid: "29DE4350-F4F5-4341-9491-E2AA8142E1D4",
+                uuid: "6cbe35fb-cd62-4964-9737-6c25720acf30",
               },
             },
           },
@@ -1043,7 +1043,7 @@
         extensions: {
           telekom: {
             sketch: {
-              uuid: "4A27A93C-0638-41D1-B87A-311D96D7D5AF",
+              uuid: "273d0b72-625b-43a0-8705-666f84d384b3",
             },
           },
         },
@@ -1058,7 +1058,7 @@
           extensions: {
             telekom: {
               sketch: {
-                uuid: "E843EE29-E54A-460A-9999-DD2370E5F1E1",
+                uuid: "bb8b0e06-b158-486a-b7fb-c654c09e581e",
               },
               docs: {
                 contrast: ["color.text-&-icon.white.standard"],
@@ -1335,7 +1335,7 @@
           extensions: {
             telekom: {
               sketch: {
-                uuid: "DBCD4789-63E4-4D62-B405-FBC44915D533",
+                uuid: "c9d60166-646a-46ca-8295-26184a9f7fcc",
               },
               docs: {
                 contrast: ["color.text-&-icon.white.standard"],
@@ -1407,7 +1407,7 @@
           extensions: {
             telekom: {
               sketch: {
-                uuid: "C7B3C6BB-4B2E-4468-AD40-5DC9E308F57C",
+                uuid: "8cc0293d-d5af-4f03-9a3e-39854f44cfd5",
               },
             },
           },
@@ -1418,7 +1418,7 @@
           extensions: {
             telekom: {
               sketch: {
-                uuid: "2918F1C7-CC43-48FB-9981-32EE508A1D39",
+                uuid: "da8242e6-1fef-4991-8070-1a28ff653471",
               },
             },
           },
@@ -1429,7 +1429,7 @@
           extensions: {
             telekom: {
               sketch: {
-                uuid: "FB7DA5A5-A12D-4634-9770-E18853AB3016",
+                uuid: "40f1484b-df53-4552-a8cb-5edf49f4917d",
               },
             },
           },
@@ -1440,7 +1440,7 @@
           extensions: {
             telekom: {
               sketch: {
-                uuid: "E37C51D7-05AF-4D95-AEB2-061927A8FED6",
+                uuid: "04d02152-50dc-4215-85ad-03f2c70c1d27",
               },
             },
           },
@@ -1451,7 +1451,7 @@
           extensions: {
             telekom: {
               sketch: {
-                uuid: "3E2D576E-7BB2-4388-9F43-7777182C1AEE",
+                uuid: "0c573402-e2fd-476a-b2d5-3d8969487078",
               },
             },
           },
@@ -1462,7 +1462,7 @@
           extensions: {
             telekom: {
               sketch: {
-                uuid: "C46321BB-C0AD-4836-B6E5-EDCD4F83EE7F",
+                uuid: "bc0a421c-76de-4e1f-92e5-ec26fd137b3d",
               },
             },
           },
@@ -1473,7 +1473,7 @@
           extensions: {
             telekom: {
               sketch: {
-                uuid: "A77F9C69-171E-4CD8-BB29-204FA75F4EB0",
+                uuid: "2c2e3743-ad2e-4042-863d-159d77b7be23",
               },
             },
           },
@@ -1484,7 +1484,7 @@
           extensions: {
             telekom: {
               sketch: {
-                uuid: "597E89AC-DB2F-4364-BB0E-2CCC6BDC51A7",
+                uuid: "5c63aa9c-4c9c-4230-8d17-1613799154ec",
               },
             },
           },
@@ -1495,7 +1495,7 @@
           extensions: {
             telekom: {
               sketch: {
-                uuid: "FC0C6F44-3C37-46A5-A3D3-5122B65A01D2",
+                uuid: "c9048f2d-e2b7-44e7-81ce-2f09059244d1",
               },
             },
           },
@@ -1506,7 +1506,7 @@
           extensions: {
             telekom: {
               sketch: {
-                uuid: "8A21B0CA-7940-493C-8F6F-0B077C7EAF39",
+                uuid: "c3230be9-c6af-4fa5-8ff6-252169610a49",
               },
             },
           },
@@ -1541,7 +1541,7 @@
           extensions: {
             telekom: {
               sketch: {
-                uuid: "7402791F-5F67-481C-983C-EF7C1E179743",
+                uuid: "1bac47a3-3778-4853-bd92-cc00b010c12c",
               },
             },
           },
@@ -1552,7 +1552,7 @@
           extensions: {
             telekom: {
               sketch: {
-                uuid: "23CBF603-36DC-4BD5-962B-2D591F9CB885",
+                uuid: "340f1c22-dbbc-4467-b4a8-cc5003e6fd9f",
               },
             },
           },
@@ -1563,7 +1563,7 @@
           extensions: {
             telekom: {
               sketch: {
-                uuid: "9B203B96-5238-4806-8943-543F5E4217D8",
+                uuid: "f989814d-1fe5-40bf-af18-0384320114dc",
               },
             },
           },
@@ -1574,7 +1574,7 @@
           extensions: {
             telekom: {
               sketch: {
-                uuid: "A41E5F66-7CD0-4304-A87B-F3587D22B6FE",
+                uuid: "fb4accdb-e4a8-454a-be8e-53800d156526",
               },
             },
           },
@@ -1585,7 +1585,7 @@
           extensions: {
             telekom: {
               sketch: {
-                uuid: "78B7C579-394F-447C-8A61-038272D07D4B",
+                uuid: "a1826992-1f16-430f-a23d-94df89d2ece7",
               },
             },
           },
@@ -1596,7 +1596,7 @@
           extensions: {
             telekom: {
               sketch: {
-                uuid: "DA1D439F-1944-4CEF-BACA-2B38763B0AFB",
+                uuid: "d1d4e348-4a4f-41cc-b270-35cf266fb390",
               },
             },
           },
@@ -1607,7 +1607,7 @@
           extensions: {
             telekom: {
               sketch: {
-                uuid: "3810637E-618A-481C-8B86-1335927C163D",
+                uuid: "243aaa54-9a38-440c-b6e3-af1a9b651fea",
               },
             },
           },
@@ -1618,7 +1618,7 @@
           extensions: {
             telekom: {
               sketch: {
-                uuid: "F7E00882-3F54-4522-8DD2-BAC3F24D1A17",
+                uuid: "2fe93fa5-5038-46f6-9bb6-611bc53b9fe3",
               },
             },
           },
@@ -1629,7 +1629,7 @@
           extensions: {
             telekom: {
               sketch: {
-                uuid: "9C017EA5-46DC-4E10-85D3-29E81329EC2E",
+                uuid: "aa6495cf-d492-4c2a-8658-921bec129809",
               },
             },
           },
@@ -1640,7 +1640,7 @@
           extensions: {
             telekom: {
               sketch: {
-                uuid: "836C4C30-8248-419E-AD3D-B0E759868B97",
+                uuid: "7154405b-1651-41ef-aa27-52cd79a103c0",
               },
             },
           },
@@ -1675,7 +1675,7 @@
           extensions: {
             telekom: {
               sketch: {
-                uuid: "CB04961F-4DEE-422F-AD36-C17CD1D6CF4C",
+                uuid: "bb1258aa-b05a-41bb-b742-0c4eb71986e4",
               },
             },
           },
@@ -1686,7 +1686,7 @@
           extensions: {
             telekom: {
               sketch: {
-                uuid: "43871A80-CC2F-41DA-BC57-2EA964E41C0D",
+                uuid: "9cb6b92f-7dd4-478b-8972-7256ee6ced78",
               },
             },
           },
@@ -1697,7 +1697,7 @@
           extensions: {
             telekom: {
               sketch: {
-                uuid: "8851C76C-0B93-4196-9F95-CE43F768FA7E",
+                uuid: "d1652be4-4efb-478f-9ed6-0b761d860f87",
               },
             },
           },
@@ -1708,7 +1708,7 @@
           extensions: {
             telekom: {
               sketch: {
-                uuid: "F205C9BB-533E-4BF0-934F-36457A584EB9",
+                uuid: "afebba26-26ca-4bba-bd7d-7f6df45e7fc0",
               },
             },
           },
@@ -1719,7 +1719,7 @@
           extensions: {
             telekom: {
               sketch: {
-                uuid: "47F3522A-7BA4-4F9A-8007-6059F5DB9D46",
+                uuid: "4f45fcdd-d5b6-4212-8eeb-36807eb3a218",
               },
             },
           },
@@ -1730,7 +1730,7 @@
           extensions: {
             telekom: {
               sketch: {
-                uuid: "9C34140E-3009-49BD-B68F-52B0BC627A14",
+                uuid: "d57a3882-f75e-4c72-b65a-bc91035d11c7",
               },
             },
           },
@@ -1741,7 +1741,7 @@
           extensions: {
             telekom: {
               sketch: {
-                uuid: "A210E8DA-110F-433A-96BE-18E2F1259BE2",
+                uuid: "245c17bd-41ff-410d-b532-0cea51d17bfa",
               },
             },
           },
@@ -1752,7 +1752,7 @@
           extensions: {
             telekom: {
               sketch: {
-                uuid: "F1A53B1F-2A31-4DC4-91F2-11E9307C4083",
+                uuid: "20719811-b665-432a-9512-97ca06a229d7",
               },
             },
           },
@@ -1763,7 +1763,7 @@
           extensions: {
             telekom: {
               sketch: {
-                uuid: "AF4581AC-EF9B-4512-9878-D8477303D6FC",
+                uuid: "d117354b-39ad-4493-916e-cd958408bd9c",
               },
             },
           },
@@ -1774,7 +1774,7 @@
           extensions: {
             telekom: {
               sketch: {
-                uuid: "30B83F94-AB10-468D-951E-812C4A16DAC9",
+                uuid: "4e9b45f6-d256-4863-b073-c98ebc8d51ef",
               },
             },
           },
@@ -1809,7 +1809,7 @@
           extensions: {
             telekom: {
               sketch: {
-                uuid: "5186B9F3-B021-4145-878D-96006F7D56E5",
+                uuid: "23644991-2162-4588-8b9a-5197ae3ddf42",
               },
             },
           },
@@ -1820,7 +1820,7 @@
           extensions: {
             telekom: {
               sketch: {
-                uuid: "34BB5FA9-AC5D-4943-826A-FDE03F60CE48",
+                uuid: "d8aec0f4-b94c-44d4-8357-62337b8826a6",
               },
             },
           },
@@ -1831,7 +1831,7 @@
           extensions: {
             telekom: {
               sketch: {
-                uuid: "076606AF-13D9-493D-927C-45F4DE5CB96A",
+                uuid: "0192b8b3-87a5-4f3d-a8ff-1b6c7b25c57b",
               },
             },
           },
@@ -1842,7 +1842,7 @@
           extensions: {
             telekom: {
               sketch: {
-                uuid: "8961FC6A-D0AF-4FDE-A379-5797E44337F5",
+                uuid: "52e6f5dc-ca6c-46cc-8f55-bcffa37a1f13",
               },
             },
           },
@@ -1853,7 +1853,7 @@
           extensions: {
             telekom: {
               sketch: {
-                uuid: "C9F7B486-09BC-4D06-BD5D-7C7453BCBA60",
+                uuid: "42142f0a-3d6a-4848-a585-bda2b40ae743",
               },
             },
           },
@@ -1864,7 +1864,7 @@
           extensions: {
             telekom: {
               sketch: {
-                uuid: "762C6FF4-C8DD-4AF8-85D2-FD7065A24C1C",
+                uuid: "74b4c946-22f2-4574-8666-cddca8072c79",
               },
             },
           },
@@ -1875,7 +1875,7 @@
           extensions: {
             telekom: {
               sketch: {
-                uuid: "D39DE0AD-AD81-4BCD-AA9F-38DC1A6FBC05",
+                uuid: "453f1b26-29ac-44f5-9168-edc42bd8eceb",
               },
             },
           },
@@ -1886,7 +1886,7 @@
           extensions: {
             telekom: {
               sketch: {
-                uuid: "88722208-E4C5-4C8D-9547-C5D58ADCC51D",
+                uuid: "cbd0fa96-6492-407c-98e0-c7976bf9e477",
               },
             },
           },
@@ -1897,7 +1897,7 @@
           extensions: {
             telekom: {
               sketch: {
-                uuid: "7DB8F050-85A1-4294-9A36-D0FFA1F668A7",
+                uuid: "423b4389-7c54-4787-81a0-d979ba9acd73",
               },
             },
           },
@@ -1908,7 +1908,7 @@
           extensions: {
             telekom: {
               sketch: {
-                uuid: "82D4668D-9796-4017-A75E-5CB843307BD8",
+                uuid: "18074bfb-2a0e-489e-8b70-4c3f5efa330a",
               },
             },
           },
@@ -1943,7 +1943,7 @@
           extensions: {
             telekom: {
               sketch: {
-                uuid: "5A07515B-10C5-40E0-9F6E-4373CDF4986C",
+                uuid: "63e84e16-2b0c-4c4c-9bf3-8f2a093e4545",
               },
             },
           },
@@ -1954,7 +1954,7 @@
           extensions: {
             telekom: {
               sketch: {
-                uuid: "F20BF1F1-42B7-46A9-9248-075F7E86ABCD",
+                uuid: "408f1f42-ceb1-41bb-8790-15f3f651c730",
               },
             },
           },
@@ -1965,7 +1965,7 @@
           extensions: {
             telekom: {
               sketch: {
-                uuid: "BDF4376A-6949-48B7-84D3-C0EA93174910",
+                uuid: "75c9f94b-7755-4d5c-a375-180e27be5dfe",
               },
             },
           },
@@ -1976,7 +1976,7 @@
           extensions: {
             telekom: {
               sketch: {
-                uuid: "5512A7B8-DB43-4146-B476-54FE2C140E83",
+                uuid: "2fbd8e05-0769-40bb-afa5-8f5dde157741",
               },
             },
           },
@@ -1987,7 +1987,7 @@
           extensions: {
             telekom: {
               sketch: {
-                uuid: "0BA85D30-71E4-4CD2-B377-A2146FE7A9FD",
+                uuid: "798335df-efdb-43f6-a85a-be7f2ee6ed78",
               },
             },
           },
@@ -1998,7 +1998,7 @@
           extensions: {
             telekom: {
               sketch: {
-                uuid: "F10333B7-C5F9-4225-BDCD-BA461C67317E",
+                uuid: "6e227cc2-b361-4a99-b7e0-b5abdae0a6ae",
               },
             },
           },
@@ -2009,7 +2009,7 @@
           extensions: {
             telekom: {
               sketch: {
-                uuid: "2DE86E80-AD8A-414F-B293-56C19D0B7421",
+                uuid: "ab8703c8-f9e0-4b82-b5a9-2df190401ea4",
               },
             },
           },
@@ -2020,7 +2020,7 @@
           extensions: {
             telekom: {
               sketch: {
-                uuid: "215002D7-B6E0-4D2E-BB61-325305865EF7",
+                uuid: "6598d7a0-0b7f-4bdf-9358-22fa37955d7a",
               },
             },
           },
@@ -2031,7 +2031,7 @@
           extensions: {
             telekom: {
               sketch: {
-                uuid: "B9479B3F-2A7E-4E76-9DE1-1E9EC1D22207",
+                uuid: "a153480f-3637-4b23-a479-4004b467af5b",
               },
             },
           },
@@ -2042,7 +2042,7 @@
           extensions: {
             telekom: {
               sketch: {
-                uuid: "EDAD1AF4-3962-4408-B3A5-0902BD334A9F",
+                uuid: "e4cea5ce-ed93-47e4-8891-a30948e44fef",
               },
             },
           },
@@ -2077,7 +2077,7 @@
           extensions: {
             telekom: {
               sketch: {
-                uuid: "C5DE5EDA-4DD3-4946-86EB-E8022441703E",
+                uuid: "d3500782-cf8d-49dc-8ddf-de424a851f49",
               },
             },
           },
@@ -2088,7 +2088,7 @@
           extensions: {
             telekom: {
               sketch: {
-                uuid: "106248C9-523B-4D7E-B811-0B906D66D625",
+                uuid: "c4ca187e-48b2-445d-98b3-4de13672ec96",
               },
             },
           },
@@ -2099,7 +2099,7 @@
           extensions: {
             telekom: {
               sketch: {
-                uuid: "C5D21317-EA62-4E42-A76F-CD599F1160A9",
+                uuid: "e975b2de-4dc2-4159-b3b2-9f563a4dd135",
               },
             },
           },
@@ -2110,7 +2110,7 @@
           extensions: {
             telekom: {
               sketch: {
-                uuid: "DD1C45E9-365E-45E6-B435-4BA09752CBB3",
+                uuid: "f20fd99b-8652-4e41-92d0-c5d9ddabbdab",
               },
             },
           },
@@ -2121,7 +2121,7 @@
           extensions: {
             telekom: {
               sketch: {
-                uuid: "390EE837-D500-4D7F-AE87-1072405AFF4B",
+                uuid: "610d0d0b-ee38-407c-b198-4438eabe4e02",
               },
             },
           },
@@ -2132,7 +2132,7 @@
           extensions: {
             telekom: {
               sketch: {
-                uuid: "E2DB6769-B728-4B9F-8836-134CBB1A1DAD",
+                uuid: "13d55a31-719b-472d-ae4a-9e3fac706ba8",
               },
             },
           },
@@ -2143,7 +2143,7 @@
           extensions: {
             telekom: {
               sketch: {
-                uuid: "A5EFF3EB-60BF-47EE-A0AD-B96BCF641128",
+                uuid: "ae5d0116-9b66-473c-819e-41488d9f558d",
               },
             },
           },
@@ -2154,7 +2154,7 @@
           extensions: {
             telekom: {
               sketch: {
-                uuid: "1C041624-D8CF-4B0F-85FF-661D55FB9F5F",
+                uuid: "30796e87-4fe4-4408-9cd9-c30e7a89592f",
               },
             },
           },
@@ -2165,7 +2165,7 @@
           extensions: {
             telekom: {
               sketch: {
-                uuid: "987FB659-0222-4C71-803E-4B04F0B4BACD",
+                uuid: "3471faf2-583d-429a-beef-5c9da06c73ae",
               },
             },
           },
@@ -2176,7 +2176,7 @@
           extensions: {
             telekom: {
               sketch: {
-                uuid: "0DEB9E89-D3EC-4D56-952F-49B00CDC4D1A",
+                uuid: "f082d35d-afbe-4bba-9275-d4aa14e5f302",
               },
             },
           },
