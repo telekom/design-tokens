@@ -45,57 +45,97 @@
       },
       grey: {
         "0": {
-          value: "#F0F1F1",
+          value: "#FFFFFF",
           type: "color",
         },
         "100": {
-          value: "#E7E8E9",
+          value: "#fbfbfb",
           type: "color",
         },
         "200": {
-          value: "#D3D5D6",
+          value: "#f7f7f8",
           type: "color",
         },
         "300": {
-          value: "#BABCBF",
+          value: "#efeff0",
           type: "color",
         },
         "400": {
-          value: "#A3A6AA",
+          value: "#e7e7e9",
           type: "color",
         },
         "500": {
-          value: "#898B8F",
+          value: "#dfdfe1",
           type: "color",
         },
         "600": {
-          value: "#707275",
+          value: "#d0d0d2",
           type: "color",
         },
         "700": {
-          value: "#5D5F61",
+          value: "#c0c0c3",
           type: "color",
         },
         "800": {
-          value: "#4A4B4D",
+          value: "#b1b1b4",
           type: "color",
         },
         "900": {
-          value: "#38393B",
+          value: "#a2a2a5",
           type: "color",
         },
         "1000": {
-          value: "#272729",
+          value: "#929296",
           type: "color",
         },
         "1100": {
-          value: "#161617",
+          value: "#838387",
           type: "color",
         },
         "1200": {
-          value: "#050505",
+          value: "#747478",
           type: "color",
         },
+        "1300": {
+          value: "#656569",
+          type: "color",
+        },
+        "1400": {
+          value: "#57575a",
+          type: "color",
+        },
+        "1500": {
+          value: "#48484b",
+          type: "color",
+        },
+        "1600": {
+          value: "#39393c",
+          type: "color",
+        },
+        "1700": {
+          value: "#2b2b2d",
+          type: "color",
+        }, 
+        "1800": {
+          value: "#242426",
+          type: "color",
+        },
+        "1900": {
+          value: "#1c1c1e",
+          type: "color",
+        },
+        "2000": {
+          value: "#151517",
+          type: "color",
+        }, 
+        "2100": {
+          value: "#0e0e0f",
+          type: "color",
+        },   
+        "2200": {
+          value: "#000000",
+          type: "color",
+        },                                                                         
       },
       brown: {
         "0": {
