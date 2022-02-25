@@ -2,6 +2,21 @@
   "name": "@telekom/design-tokens",
   "entries": [
     {
+      "date": "Fri, 25 Feb 2022 14:18:54 GMT",
+      "tag": "@telekom/design-tokens_v1.0.0-alpha.10",
+      "version": "1.0.0-alpha.10",
+      "comments": {
+        "prerelease": [
+          {
+            "author": "ac@iconstorm.com",
+            "package": "@telekom/design-tokens",
+            "commit": "20330b545b55006b6e7e86c2935d45cceb3f41d6",
+            "comment": "Extend grey scale, update values for background, ui/solid, ui/additional"
+          }
+        ]
+      }
+    },
+    {
       "date": "Thu, 17 Feb 2022 14:39:01 GMT",
       "tag": "@telekom/design-tokens_v1.0.0-alpha.9",
       "version": "1.0.0-alpha.9",

@@ -1,7 +1,0 @@
-{
-  "type": "prerelease",
-  "comment": "Extend grey scale, update values for background, ui/solid, ui/additional",
-  "packageName": "@telekom/design-tokens",
-  "email": "ac@iconstorm.com",
-  "dependentChangeType": "patch"
-}
