@@ -340,8 +340,8 @@
       canvas: {
         comment: "Use as the background for your product (app, website, etc.)",
         value: {
-          light: "{core.color.white}",
-          dark: "{core.color.grey.1200}",
+          light: "{core.color.grey.0}",
+          dark: "{core.color.grey.2200}",
         },
         type: "color",
         extensions: {
@@ -370,7 +370,7 @@
         comment: "Use as the background for your product (app, website, etc.)",
         value: {
           light: "{core.color.grey.100}",
-          dark: "{core.color.grey.1100}",
+          dark: "{core.color.grey.2100}",
         },
         type: "color",
         extensions: {
@@ -416,8 +416,8 @@
       surface: {
         comment: "Use as the background of elements like cards, headers, bottom bars, etc.",
         value: {
-          light: "{core.color.white}",
-          dark: "{core.color.grey.1000}",
+          light: "{core.color.grey.0}",
+          dark: "{core.color.grey.1900}",
         },
         type: "color",
         extensions: {
@@ -445,8 +445,8 @@
       "surface-subtle": {
         comment: "Use as the background of elements like cards, headers, bottom bars, etc.",
         value: {
-          light: "{core.color.grey.0}",
-          dark: "{core.color.grey.900}",
+          light: "{core.color.grey.200}",
+          dark: "{core.color.grey.1800}",
         },
         type: "color",
         extensions: {
@@ -471,8 +471,8 @@
       "surface-highlight": {
         comment: "Use as the background of elements that should stand out highlighted sections, footer, etc.",
         value: {
-          light: "{core.color.grey.1200}",
-          dark: "{core.color.grey.800}",
+          light: "{core.color.grey.1800}",
+          dark: "{core.color.grey.1500}",
         },
         type: "color",
         extensions: {
@@ -552,8 +552,8 @@
                 alpha: 0.44,
               },
               dark: {
-                color: "{core.color.white}",
-                alpha: 0.36,
+                color: "{core.color.grey.0}",
+                alpha: 0.40,
               },
             },
             type: "color",
@@ -572,7 +572,7 @@
                 alpha: 0.71,
               },
               dark: {
-                color: "{core.color.white}",
+                color: "{core.color.grey.0}",
                 alpha: 0.54,
               },
             },
@@ -592,7 +592,7 @@
                 alpha: 0.71,
               },
               dark: {
-                color: "{core.color.white}",
+                color: "{core.color.grey.0}",
                 alpha: 0.94,
               },
             },
@@ -612,7 +612,7 @@
                 alpha: 0.71,
               },
               dark: {
-                color: "{core.color.white}",
+                color: "{core.color.grey.0}",
                 alpha: 0.94,
               },
             },
@@ -632,7 +632,7 @@
                 alpha: 0.14,
               },
               dark: {
-                color: "{core.color.white}",
+                color: "{core.color.grey.0}",
                 alpha: 0.21,
               },
             },
@@ -857,8 +857,8 @@
         comment: "",
         standard: {
           value: {
-            light: "{core.color.grey.500}",
-            dark: "{core.color.grey.500}",
+            light: "{core.color.grey.1000}",
+            dark: "{core.color.grey.1300}",
           },
           type: "color",
           extensions: {
@@ -871,8 +871,8 @@
         },
         hovered: {
           value: {
-            light: "{core.color.grey.800}",
-            dark: "{core.color.grey.800}",
+            light: "{core.color.grey.1200}",
+            dark: "{core.color.grey.1600}",
           },
           type: "color",
           extensions: {
@@ -885,8 +885,8 @@
         },
         pressed: {
           value: {
-            light: "{core.color.grey.1200}",
-            dark: "{core.color.grey.1200}",
+            light: "{core.color.grey.1800}",
+            dark: "{core.color.grey.1900}",
           },
           type: "color",
           extensions: {
@@ -899,8 +899,8 @@
         },
         disabled: {
           value: {
-            light: "{core.color.grey.200}",
-            dark: "{core.color.grey.900}",
+            light: "{core.color.grey.600}",
+            dark: "{core.color.grey.1600}",
           },
           type: "color",
           extensions: {
@@ -916,8 +916,8 @@
         comment: "",
         base: {
           value: {
-            light: "{core.color.white}",
-            dark: "{core.color.grey.900}",
+            light: "{core.color.grey.0}",
+            dark: "{core.color.grey.1100}",
           },
           type: "color",
           extensions: {
@@ -936,8 +936,8 @@
         },
         subtle: {
           value: {
-            light: "{core.color.grey.100}",
-            dark: "{core.color.grey.1000}",
+            light: "{core.color.grey.200}",
+            dark: "{core.color.grey.1900}",
           },
           type: "color",
           extensions: {
@@ -956,8 +956,8 @@
         },
         light: {
           value: {
-            light: "{core.color.grey.300}",
-            dark: "{core.color.grey.900}",
+            light: "{core.color.grey.400}",
+            dark: "{core.color.grey.1600}",
           },
           type: "color",
           extensions: {
@@ -976,8 +976,8 @@
         },
         regular: {
           value: {
-            light: "{core.color.grey.500}",
-            dark: "{core.color.grey.700}",
+            light: "{core.color.grey.1000}",
+            dark: "{core.color.grey.1300}",
           },
           type: "color",
           extensions: {
@@ -993,8 +993,8 @@
         },
         strong: {
           value: {
-            light: "{core.color.grey.800}",
-            dark: "{core.color.grey.500}",
+            light: "{core.color.grey.1200}",
+            dark: "{core.color.grey.1000}",
           },
           type: "color",
           extensions: {
@@ -1013,8 +1013,8 @@
         },
         "extra-strong": {
           value: {
-            light: "{core.color.grey.1200}",
-            dark: "{core.color.grey.0}",
+            light: "{core.color.grey.1800}",
+            dark: "{core.color.grey.300}",
           },
           type: "color",
           extensions: {
@@ -1329,7 +1329,7 @@
         standard: {
           value: {
             light: "{core.color.red.600}",
-            dark: "{core.color.red.800}",
+            dark: "{core.color.red.700}",
           },
           type: "color",
           extensions: {
@@ -1346,7 +1346,7 @@
         hovered: {
           value: {
             light: "{core.color.red.700}",
-            dark: "{core.color.red.700}",
+            dark: "{core.color.red.600}",
           },
           type: "color",
           extensions: {
@@ -1363,7 +1363,7 @@
         pressed: {
           value: {
             light: "{core.color.red.800}",
-            dark: "{core.color.red.600}",
+            dark: "{core.color.red.500}",
           },
           type: "color",
           extensions: {
