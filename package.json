@@ -12,7 +12,7 @@
     "build": "npm run build:whitelabel && npm run build:telekom",
     "build:whitelabel": "node config/build.js",
     "build:telekom": "OUTPUT_BASE_FILENAME=telekom-design-tokens OUTPUT_PATH=dist/telekom/ WHITELABEL=false node config/build.js",
-    "change": "beachball change",
+    "change": "beachball change --branch main",
     "check": "beachball check",
     "publish:beachball": "beachball publish",
     "prepublishOnly": "npm run build",
