@@ -2,6 +2,27 @@
   "name": "@telekom/design-tokens",
   "entries": [
     {
+      "date": "Tue, 01 Mar 2022 08:24:56 GMT",
+      "tag": "@telekom/design-tokens_v1.0.0-alpha.11",
+      "version": "1.0.0-alpha.11",
+      "comments": {
+        "prerelease": [
+          {
+            "author": "ac@iconstorm.com",
+            "package": "@telekom/design-tokens",
+            "commit": "f1833c1bc13020295b9d8f801426f685ed1ae6c0",
+            "comment": "Update Sketch uuids for Text Styles to match legacy library"
+          },
+          {
+            "author": "felix.weber@iconstorm.de",
+            "package": "@telekom/design-tokens",
+            "commit": "0171f48096075b6a40c4c50d93a171de67f21dd0",
+            "comment": "Remove orange, red, blue, green from additional colors"
+          }
+        ]
+      }
+    },
+    {
       "date": "Fri, 25 Feb 2022 14:18:54 GMT",
       "tag": "@telekom/design-tokens_v1.0.0-alpha.10",
       "version": "1.0.0-alpha.10",
