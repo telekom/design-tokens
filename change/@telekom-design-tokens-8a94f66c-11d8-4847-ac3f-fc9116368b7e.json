@@ -1,7 +1,0 @@
-{
-  "type": "prerelease",
-  "comment": "Update Sketch uuids for Text Styles to match legacy library",
-  "packageName": "@telekom/design-tokens",
-  "email": "ac@iconstorm.com",
-  "dependentChangeType": "patch"
-}
