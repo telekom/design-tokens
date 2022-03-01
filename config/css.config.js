@@ -10,6 +10,7 @@
 
 const fs = require('fs-extra');
 const StyleDictionary = require('style-dictionary');
+const pick = require('lodash/pick');
 
 const { PREFIX, OUTPUT_PATH, OUTPUT_BASE_FILENAME } = process.env;
 const WHITELABEL = process.env.WHITELABEL !== 'false';
@@ -34,25 +35,45 @@ StyleDictionary.registerAction({
   name: 'bundle_css',
   do: async function (_, config) {
     const { buildPath } = config;
-    try {
-      const light = await fs.readFile(
-        buildPath + OUTPUT_BASE_FILENAME + '.css'
-      );
-      const dark = await fs.readFile(
-        buildPath + OUTPUT_BASE_FILENAME + '.dark.css'
-      );
-      await fs.writeFile(
-        buildPath + OUTPUT_BASE_FILENAME + '.all.css',
-        light + '\n' + dark
-      );
-    } catch (err) {
-      // ..
-    }
+    const light = JSON.parse(
+      fs.readFileSync(buildPath + OUTPUT_BASE_FILENAME + '.light.json')
+    );
+    const darkOnly = JSON.parse(
+      fs.readFileSync(buildPath + OUTPUT_BASE_FILENAME + '.dark.json')
+    );
+    const lightOnly = pick(light, Object.keys(darkOnly));
+    const data = `:root {
+${printVariables(light)}
+}
+
+[data-mode="dark"] {
+${printVariables(darkOnly)}
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+${printVariables(darkOnly, '    ')}
+  }
+
+  [data-mode="light"] {
+${printVariables(lightOnly, '    ')}
+  }
+}`;
+    await fs.writeFile(buildPath + OUTPUT_BASE_FILENAME + '.all.css', data);
   },
   undo: async function () {
     //
   },
 });
+
+function printVariables(json, indentation = '  ') {
+  return Object.keys(json)
+    .map((key) => {
+      const value = json[key];
+      return `${indentation}--${key}: ${value};`;
+    })
+    .join('\n');
+}
 
 module.exports = {
   include: ['src/core/**/*.json5'],
@@ -61,37 +82,31 @@ module.exports = {
     'src/semantic/**/*.json5',
   ],
   platforms: {
-    css: {
+    cssLightData: {
       transforms: ['mode-light', ...cssTransformGroup, 'shadow/css'],
       prefix: PREFIX,
       buildPath: OUTPUT_PATH + 'css/',
       files: [
         {
-          destination: OUTPUT_BASE_FILENAME + '.css',
-          format: 'css/variables',
+          destination: OUTPUT_BASE_FILENAME + '.light.json',
+          format: 'json/flat',
           filter: (token) =>
             token.path[0] !== 'core' && token.type !== 'textStyle',
-          options: {
-            selector: ':root, [data-mode="light"]',
-          },
         },
       ],
     },
-    cssDark: {
+    cssDarkOnlyData: {
       transforms: ['mode-dark', ...cssTransformGroup, 'shadow/css'],
       prefix: PREFIX,
       buildPath: OUTPUT_PATH + 'css/',
       files: [
         {
-          destination: OUTPUT_BASE_FILENAME + '.dark.css',
-          format: 'css/variables',
+          destination: OUTPUT_BASE_FILENAME + '.dark.json',
+          format: 'json/flat',
           filter: (token) =>
             token.path[0] !== 'core' &&
             token.original.value?.dark != null &&
             token.type !== 'textStyle',
-          options: {
-            selector: '[data-mode="dark"]',
-          },
         },
       ],
       actions: ['bundle_css'],
