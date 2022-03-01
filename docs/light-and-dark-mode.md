@@ -43,9 +43,13 @@ Now all your desings should be updated the use the other mode.
 tbd
 
 ## For Developers
-Dark mode is included in Scale from version `3.0.0-rc.1`. It leverages CSS variables to allow changing modes. By default, the mode will be set to match the operating system preferences, via the `prefers-color-scheme` media query.
+Dark mode is included in Scale from version `3.0.0-rc.1`. It leverages CSS variables to allow changing modes.
 
-Alternatively, modes can be set via the `data-mode` attribute. The value must be either `light` or `dark`. It's recommended to do this in the `body`, e.g. `<body data-mode="light">`, though it's possible to also switch only a specific part of the page. Setting the `data-mode` attribute will override the system preferences.
+By default, the mode will be set to match the operating system preferences, via the `prefers-color-scheme` media query.
+
+Alternatively, modes can be set via the `data-mode` attribute. The value must be either `light` or `dark`. It's recommended to do this in the `body`, e.g. `<body data-mode="light">`, though it's possible to also switch only a specific part of the page. 
+
+Setting the `data-mode` attribute will override the system preferences.
 
 ### Adding a switch
 
@@ -60,6 +64,10 @@ element.addEventListener('click', function switchMode() {
 })
 ```
 
-### Dark mode only
+### Disabling automatic switching
 
-For dark-only apps, setting the `data-mode` attribute to `dark` should be enough, e.g. `<body data-mode="dark">`.
+If you want your app to be in either light or dark mode regardless of the user's system preferences, set the `data-mode` attribute to the desired mode:
+
+```html
+<body data-mode="light">
+```
