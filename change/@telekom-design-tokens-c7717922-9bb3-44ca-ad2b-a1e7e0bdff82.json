@@ -1,7 +1,0 @@
-{
-  "type": "prerelease",
-  "comment": "Remove orange, red, blue, green from additional colors",
-  "packageName": "@telekom/design-tokens",
-  "email": "felix.weber@iconstorm.de",
-  "dependentChangeType": "patch"
-}
