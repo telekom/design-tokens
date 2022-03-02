@@ -64,6 +64,13 @@ element.addEventListener('click', function switchMode() {
 })
 ```
 
+In JavaScript, you can check and monitor the system preference via the [`window.matchMedia`](https://developer.mozilla.org/en-US/docs/Web/API/Window/matchMedia) method.
+
+```js
+const mq = window.matchMedia('(prefers-color-scheme: dark)')
+const isDark = mq.matches
+```
+
 ### Disabling automatic switching
 
 If you want your app to be in either light or dark mode regardless of the user's system preferences, set the `data-mode` attribute to the desired mode:
