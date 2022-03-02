@@ -54,7 +54,7 @@ var levels = {
   FAIL: {
     range: [0, 3],
   },
-  'AA-large': {
+  'AA+': {
     range: [3, 4.5],
   },
   AA: {
