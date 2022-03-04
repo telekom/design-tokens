@@ -1,0 +1,7 @@
+{
+  "type": "prerelease",
+  "comment": "Update Sketch uuids for Colors to match legacy library",
+  "packageName": "@telekom/design-tokens",
+  "email": "felix.weber@iconstorm.de",
+  "dependentChangeType": "patch"
+}
