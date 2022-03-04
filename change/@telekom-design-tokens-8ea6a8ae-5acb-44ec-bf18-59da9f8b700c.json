@@ -1,0 +1,7 @@
+{
+  "type": "prerelease",
+  "comment": "Use uppercase for contrast check levels in docs-json output",
+  "packageName": "@telekom/design-tokens",
+  "email": "felix.weber@iconstorm.de",
+  "dependentChangeType": "patch"
+}
