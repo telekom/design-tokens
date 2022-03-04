@@ -2,6 +2,21 @@
   "name": "@telekom/design-tokens",
   "entries": [
     {
+      "date": "Fri, 04 Mar 2022 10:29:24 GMT",
+      "tag": "@telekom/design-tokens_v1.0.0-alpha.12",
+      "version": "1.0.0-alpha.12",
+      "comments": {
+        "prerelease": [
+          {
+            "author": "felix.weber@iconstorm.de",
+            "package": "@telekom/design-tokens",
+            "commit": "edb1d92a28701c9fe2d1798871ab3a3a20a577c2",
+            "comment": "Update Sketch uuids for Colors to match legacy library"
+          }
+        ]
+      }
+    },
+    {
       "date": "Tue, 01 Mar 2022 08:24:56 GMT",
       "tag": "@telekom/design-tokens_v1.0.0-alpha.11",
       "version": "1.0.0-alpha.11",
