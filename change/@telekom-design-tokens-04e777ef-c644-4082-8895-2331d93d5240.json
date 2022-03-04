@@ -1,7 +1,0 @@
-{
-  "type": "prerelease",
-  "comment": "Restructure CSS output file to include prefers-color-scheme media query",
-  "packageName": "@telekom/design-tokens",
-  "email": "ac@iconstorm.com",
-  "dependentChangeType": "patch"
-}

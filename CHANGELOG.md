@@ -1,8 +1,17 @@
 # Change Log - @telekom/design-tokens
 
-This log was last generated on Fri, 04 Mar 2022 10:29:24 GMT and should not be manually modified.
+This log was last generated on Fri, 04 Mar 2022 10:32:54 GMT and should not be manually modified.
 
 <!-- Start content -->
+
+## 1.0.0-alpha.13
+
+Fri, 04 Mar 2022 10:32:54 GMT
+
+### Changes
+
+- Use uppercase for contrast check levels in docs-json output (felix.weber@iconstorm.de)
+- Restructure CSS output file to include prefers-color-scheme media query (ac@iconstorm.com)
 
 ## 1.0.0-alpha.12
 
