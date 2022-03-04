@@ -553,7 +553,7 @@
               },
               dark: {
                 color: "{core.color.grey.0}",
-                alpha: 0.40,
+                alpha: 0.4,
               },
             },
             type: "color",
