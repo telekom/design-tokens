@@ -2,6 +2,27 @@
   "name": "@telekom/design-tokens",
   "entries": [
     {
+      "date": "Fri, 04 Mar 2022 10:32:54 GMT",
+      "tag": "@telekom/design-tokens_v1.0.0-alpha.13",
+      "version": "1.0.0-alpha.13",
+      "comments": {
+        "prerelease": [
+          {
+            "author": "felix.weber@iconstorm.de",
+            "package": "@telekom/design-tokens",
+            "commit": "0930182c196c304be5c3843a4a3dd865e60615f1",
+            "comment": "Use uppercase for contrast check levels in docs-json output"
+          },
+          {
+            "author": "ac@iconstorm.com",
+            "package": "@telekom/design-tokens",
+            "commit": "6250baf47e07383f52d79c7d359d0b28a366ae6d",
+            "comment": "Restructure CSS output file to include prefers-color-scheme media query"
+          }
+        ]
+      }
+    },
+    {
       "date": "Fri, 04 Mar 2022 10:29:24 GMT",
       "tag": "@telekom/design-tokens_v1.0.0-alpha.12",
       "version": "1.0.0-alpha.12",
