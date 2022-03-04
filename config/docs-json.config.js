@@ -51,16 +51,16 @@ StyleDictionary.registerFormat({
  */
 
 var levels = {
-  fail: {
+  FAIL: {
     range: [0, 3],
   },
-  'aa-large': {
+  'AA+': {
     range: [3, 4.5],
   },
-  aa: {
+  AA: {
     range: [4.5, 7],
   },
-  aaa: {
+  AAA: {
     range: [7, 22],
   },
 };
