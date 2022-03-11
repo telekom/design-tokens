@@ -1,8 +1,16 @@
 # Change Log - @telekom/design-tokens
 
-This log was last generated on Fri, 04 Mar 2022 10:32:54 GMT and should not be manually modified.
+This log was last generated on Fri, 11 Mar 2022 12:31:29 GMT and should not be manually modified.
 
 <!-- Start content -->
+
+## 1.0.0-alpha.14
+
+Fri, 11 Mar 2022 12:31:29 GMT
+
+### Changes
+
+- Update functional color scales, and semantic text-&-icon/link, text-&-icon/functional, functional/… (ac@iconstorm.com)
 
 ## 1.0.0-alpha.13
 

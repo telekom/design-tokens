@@ -1,7 +1,0 @@
-{
-  "type": "prerelease",
-  "comment": "Update functional color scales, and semantic text-&-icon/link, text-&-icon/functional, functional/…",
-  "packageName": "@telekom/design-tokens",
-  "email": "ac@iconstorm.com",
-  "dependentChangeType": "patch"
-}
