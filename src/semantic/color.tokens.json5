@@ -62,8 +62,8 @@
       link: {
         standard: {
           value: {
-            light: "{core.color.blue.700}",
-            dark: "{core.color.blue.400}",
+            light: "{core.color.blue.600}",
+            dark: "{core.color.blue.300}",
           },
           type: "color",
           extensions: {
@@ -76,8 +76,8 @@
         },
         hovered: {
           value: {
-            light: "{core.color.blue.800}",
-            dark: "{core.color.blue.300}",
+            light: "{core.color.blue.700}",
+            dark: "{core.color.blue.200}",
           },
           type: "color",
           extensions: {
@@ -91,7 +91,7 @@
         visited: {
           value: {
             light: "{core.color.violet.800}",
-            dark: "{core.color.violet.400}",
+            dark: "{core.color.violet.500}",
           },
           type: "color",
           extensions: {
@@ -104,8 +104,8 @@
         },
         active: {
           value: {
-            light: "{core.color.blue.900}",
-            dark: "{core.color.blue.200}",
+            light: "{core.color.blue.800}",
+            dark: "{core.color.blue.100}",
           },
           type: "color",
           extensions: {
@@ -279,8 +279,8 @@
       functional: {
         informational: {
           value: {
-            light: "{core.color.blue.700}",
-            dark: "{core.color.blue.500}",
+            light: "{core.color.blue.600}",
+            dark: "{core.color.blue.300}",
           },
           type: "color",
           extensions: {
@@ -293,8 +293,8 @@
         },
         success: {
           value: {
-            light: "{core.color.green.800}",
-            dark: "{core.color.green.400}",
+            light: "{core.color.green.900}",
+            dark: "{core.color.green.600}",
           },
           type: "color",
           extensions: {
@@ -308,7 +308,7 @@
         danger: {
           value: {
             light: "{core.color.red.600}",
-            dark: "{core.color.red.500}",
+            dark: "{core.color.red.300}",
           },
           type: "color",
           extensions: {
@@ -321,8 +321,8 @@
         },
         warning: {
           value: {
-            light: "{core.color.orange.600}",
-            dark: "{core.color.orange.500}",
+            light: "{core.color.orange.800}",
+            dark: "{core.color.orange.600}",
           },
           type: "color",
           extensions: {
@@ -1052,7 +1052,7 @@
         standard: {
           value: {
             light: "{core.color.green.600}",
-            dark: "{core.color.green.800}",
+            dark: "{core.color.green.600}",
           },
           type: "color",
           extensions: {
@@ -1069,7 +1069,7 @@
         hovered: {
           value: {
             light: "{core.color.green.700}",
-            dark: "{core.color.green.700}",
+            dark: "{core.color.green.500}",
           },
           type: "color",
           extensions: {
@@ -1086,7 +1086,7 @@
         pressed: {
           value: {
             light: "{core.color.green.800}",
-            dark: "{core.color.green.600}",
+            dark: "{core.color.green.400}",
           },
           type: "color",
           extensions: {
@@ -1102,8 +1102,8 @@
         },
         subtle: {
           value: {
-            light: "{core.color.green.tint}",
-            dark: "{core.color.green.shade}",
+            light: "{core.color.green.shade}",
+            dark: "{core.color.green.tint}",
           },
           type: "color",
           extensions: {
@@ -1125,7 +1125,7 @@
         standard: {
           value: {
             light: "{core.color.blue.600}",
-            dark: "{core.color.blue.700}",
+            dark: "{core.color.blue.600}",
           },
           type: "color",
           extensions: {
@@ -1139,7 +1139,7 @@
         hovered: {
           value: {
             light: "{core.color.blue.700}",
-            dark: "{core.color.blue.600}",
+            dark: "{core.color.blue.500}",
           },
           type: "color",
           extensions: {
@@ -1153,7 +1153,7 @@
         pressed: {
           value: {
             light: "{core.color.blue.800}",
-            dark: "{core.color.blue.500}",
+            dark: "{core.color.blue.400}",
           },
           type: "color",
           extensions: {
@@ -1166,8 +1166,8 @@
         },
         subtle: {
           value: {
-            light: "{core.color.blue.tint}",
-            dark: "{core.color.blue.shade}",
+            light: "{core.color.blue.shade}",
+            dark: "{core.color.blue.tint}",
           },
           type: "color",
           extensions: {
@@ -1183,7 +1183,7 @@
         standard: {
           value: {
             light: "{core.color.blue.600}",
-            dark: "{core.color.blue.700}",
+            dark: "{core.color.blue.600}",
           },
           type: "color",
           extensions: {
@@ -1200,7 +1200,7 @@
         hovered: {
           value: {
             light: "{core.color.blue.700}",
-            dark: "{core.color.blue.600}",
+            dark: "{core.color.blue.500}",
           },
           type: "color",
           extensions: {
@@ -1217,7 +1217,7 @@
         pressed: {
           value: {
             light: "{core.color.blue.800}",
-            dark: "{core.color.blue.500}",
+            dark: "{core.color.blue.400}",
           },
           type: "color",
           extensions: {
@@ -1233,8 +1233,8 @@
         },
         subtle: {
           value: {
-            light: "{core.color.blue.tint}",
-            dark: "{core.color.blue.shade}",
+            light: "{core.color.blue.shade}",
+            dark: "{core.color.blue.tint}",
           },
           type: "color",
           extensions: {
@@ -1255,8 +1255,8 @@
       warning: {
         standard: {
           value: {
-            light: "{core.color.orange.400}",
-            dark: "{core.color.orange.500}",
+            light: "{core.color.orange.600}",
+            dark: "{core.color.orange.600}",
           },
           type: "color",
           extensions: {
@@ -1272,8 +1272,8 @@
         },
         hovered: {
           value: {
-            light: "{core.color.orange.500}",
-            dark: "{core.color.orange.400}",
+            light: "{core.color.orange.700}",
+            dark: "{core.color.orange.500}",
           },
           type: "color",
           extensions: {
@@ -1289,8 +1289,8 @@
         },
         pressed: {
           value: {
-            light: "{core.color.orange.600}",
-            dark: "{core.color.orange.300}",
+            light: "{core.color.orange.800}",
+            dark: "{core.color.orange.400}",
           },
           type: "color",
           extensions: {
@@ -1306,8 +1306,8 @@
         },
         subtle: {
           value: {
-            light: "{core.color.orange.tint}",
-            dark: "{core.color.orange.shade}",
+            light: "{core.color.orange.shade}",
+            dark: "{core.color.orange.tint}",
           },
           type: "color",
           extensions: {
@@ -1329,7 +1329,7 @@
         standard: {
           value: {
             light: "{core.color.red.600}",
-            dark: "{core.color.red.700}",
+            dark: "{core.color.red.600}",
           },
           type: "color",
           extensions: {
@@ -1346,7 +1346,7 @@
         hovered: {
           value: {
             light: "{core.color.red.700}",
-            dark: "{core.color.red.600}",
+            dark: "{core.color.red.500}",
           },
           type: "color",
           extensions: {
@@ -1363,7 +1363,7 @@
         pressed: {
           value: {
             light: "{core.color.red.800}",
-            dark: "{core.color.red.500}",
+            dark: "{core.color.red.400}",
           },
           type: "color",
           extensions: {
@@ -1379,8 +1379,8 @@
         },
         subtle: {
           value: {
-            light: "{core.color.red.tint}",
-            dark: "{core.color.red.shade}",
+            light: "{core.color.red.shade}",
+            dark: "{core.color.red.tint}",
           },
           type: "color",
           extensions: {
