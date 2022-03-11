@@ -535,7 +535,7 @@
         "1000": {
           value: "#4c0000",
           type: "color",
-        },        
+        },
         tint: {
           value: "#2B0305",
           type: "color",
@@ -589,7 +589,7 @@
         "1000": {
           value: "#0022c9",
           type: "color",
-        },        
+        },
         tint: {
           value: "#060D2E",
           type: "color",
@@ -693,7 +693,7 @@
         "1000": {
           value: "#007148",
           type: "color",
-        },        
+        },
         tint: {
           value: "#002214",
           type: "color",
