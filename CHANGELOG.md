@@ -1,8 +1,16 @@
 # Change Log - @telekom/design-tokens
 
-This log was last generated on Fri, 11 Mar 2022 12:31:29 GMT and should not be manually modified.
+This log was last generated on Tue, 15 Mar 2022 17:12:54 GMT and should not be manually modified.
 
 <!-- Start content -->
+
+## 1.0.0-alpha.15
+
+Tue, 15 Mar 2022 17:12:54 GMT
+
+### Changes
+
+- Fix value for ui/additional/base (grey.1100 -> grey.0) (felix.weber@iconstorm.de)
 
 ## 1.0.0-alpha.14
 
