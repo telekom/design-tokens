@@ -917,7 +917,7 @@
         base: {
           value: {
             light: "{core.color.grey.0}",
-            dark: "{core.color.grey.1100}",
+            dark: "{core.color.grey.0}",
           },
           type: "color",
           extensions: {
