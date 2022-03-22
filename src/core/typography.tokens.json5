@@ -105,8 +105,12 @@
           value: 1,
           type: "number",
         },
-        xs: {
+        xxs: {
           value: 1.15,
+          type: "number",
+        },
+        xs: {
+          value: 1.2,
           type: "number",
         },
         sm: {
@@ -118,6 +122,10 @@
           type: "number",
         },
         lg: {
+          value: 1.4,
+          type: "number",
+        },
+        xl: {
           value: 1.5,
           type: "number",
         },

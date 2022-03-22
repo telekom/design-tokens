@@ -2,11 +2,11 @@
   "text-style": {
     footnote: {
       value: {
-        "font-family": "{typography.font-family.sans.value}",
-        "font-size": "{typography.font-size.footnote.value}",
-        "font-weight": "{typography.font-weight.regular.value}",
-        "line-spacing": "{typography.line-spacing.tight.value}",
-        "letter-spacing": "{typography.letter-spacing.standard.value}",
+        "font-family": "{typography.font-family.sans}",
+        "font-size": "{typography.font-size.footnote}",
+        "font-weight": "{typography.font-weight.regular}",
+        "line-spacing": "{core.typography.line-spacing.xs}",
+        "letter-spacing": "{typography.letter-spacing.standard}",
       },
       type: "textStyle",
       extensions: {
@@ -19,11 +19,11 @@
     },
     small: {
       value: {
-        "font-family": "{typography.font-family.sans.value}",
-        "font-size": "{typography.font-size.small.value}",
-        "font-weight": "{typography.font-weight.medium.value}",
-        "line-spacing": "{typography.line-spacing.standard.value}",
-        "letter-spacing": "{typography.letter-spacing.standard.value}",
+        "font-family": "{typography.font-family.sans}",
+        "font-size": "{typography.font-size.small}",
+        "font-weight": "{typography.font-weight.medium}",
+        "line-spacing": "{core.typography.line-spacing.md}",
+        "letter-spacing": "{typography.letter-spacing.standard}",
       },
       type: "textStyle",
       extensions: {
@@ -36,11 +36,11 @@
     },
     "small-bold": {
       value: {
-        "font-family": "{typography.font-family.sans.value}",
-        "font-size": "{typography.font-size.small.value}",
-        "font-weight": "{typography.font-weight.bold.value}",
-        "line-spacing": "{typography.line-spacing.standard.value}",
-        "letter-spacing": "{typography.letter-spacing.standard.value}",
+        "font-family": "{typography.font-family.sans}",
+        "font-size": "{typography.font-size.small}",
+        "font-weight": "{typography.font-weight.bold}",
+        "line-spacing": "{core.typography.line-spacing.md}",
+        "letter-spacing": "{typography.letter-spacing.standard}",
       },
       type: "textStyle",
       extensions: {
@@ -53,11 +53,11 @@
     },
     caption: {
       value: {
-        "font-family": "{typography.font-family.sans.value}",
-        "font-size": "{typography.font-size.caption.value}",
-        "font-weight": "{typography.font-weight.regular.value}",
-        "line-spacing": "{typography.line-spacing.standard.value}",
-        "letter-spacing": "{typography.letter-spacing.standard.value}",
+        "font-family": "{typography.font-family.sans}",
+        "font-size": "{typography.font-size.caption}",
+        "font-weight": "{typography.font-weight.regular}",
+        "line-spacing": "{typography.line-spacing.standard}",
+        "letter-spacing": "{typography.letter-spacing.standard}",
       },
       type: "textStyle",
       extensions: {
@@ -70,11 +70,11 @@
     },
     "caption-bold": {
       value: {
-        "font-family": "{typography.font-family.sans.value}",
-        "font-size": "{typography.font-size.caption.value}",
-        "font-weight": "{typography.font-weight.bold.value}",
-        "line-spacing": "{typography.line-spacing.standard.value}",
-        "letter-spacing": "{typography.letter-spacing.standard.value}",
+        "font-family": "{typography.font-family.sans}",
+        "font-size": "{typography.font-size.caption}",
+        "font-weight": "{typography.font-weight.bold}",
+        "line-spacing": "{typography.line-spacing.standard}",
+        "letter-spacing": "{typography.letter-spacing.standard}",
       },
       type: "textStyle",
       extensions: {
@@ -87,11 +87,11 @@
     },
     body: {
       value: {
-        "font-family": "{typography.font-family.sans.value}",
-        "font-size": "{typography.font-size.body.value}",
-        "font-weight": "{typography.font-weight.regular.value}",
-        "line-spacing": "{typography.line-spacing.standard.value}",
-        "letter-spacing": "{typography.letter-spacing.standard.value}",
+        "font-family": "{typography.font-family.sans}",
+        "font-size": "{typography.font-size.body}",
+        "font-weight": "{typography.font-weight.regular}",
+        "line-spacing": "{typography.line-spacing.standard}",
+        "letter-spacing": "{typography.letter-spacing.standard}",
       },
       type: "textStyle",
       extensions: {
@@ -104,11 +104,11 @@
     },
     "body-bold": {
       value: {
-        "font-family": "{typography.font-family.sans.value}",
-        "font-size": "{typography.font-size.body.value}",
-        "font-weight": "{typography.font-weight.bold.value}",
-        "line-spacing": "{typography.line-spacing.standard.value}",
-        "letter-spacing": "{typography.letter-spacing.standard.value}",
+        "font-family": "{typography.font-family.sans}",
+        "font-size": "{typography.font-size.body}",
+        "font-weight": "{typography.font-weight.bold}",
+        "line-spacing": "{typography.line-spacing.standard}",
+        "letter-spacing": "{typography.letter-spacing.standard}",
       },
       type: "textStyle",
       extensions: {
@@ -121,11 +121,11 @@
     },
     ui: {
       value: {
-        "font-family": "{typography.font-family.sans.value}",
-        "font-size": "{typography.font-size.body.value}",
-        "font-weight": "{typography.font-weight.medium.value}",
-        "line-spacing": "{typography.line-spacing.none.value}",
-        "letter-spacing": "{typography.letter-spacing.standard.value}",
+        "font-family": "{typography.font-family.sans}",
+        "font-size": "{typography.font-size.body}",
+        "font-weight": "{typography.font-weight.medium}",
+        "line-spacing": "{typography.line-spacing.none}",
+        "letter-spacing": "{typography.letter-spacing.standard}",
       },
       type: "textStyle",
       extensions: {
@@ -138,11 +138,11 @@
     },
     "ui-bold": {
       value: {
-        "font-family": "{typography.font-family.sans.value}",
-        "font-size": "{typography.font-size.body.value}",
-        "font-weight": "{typography.font-weight.bold.value}",
-        "line-spacing": "{typography.line-spacing.none.value}",
-        "letter-spacing": "{typography.letter-spacing.standard.value}",
+        "font-family": "{typography.font-family.sans}",
+        "font-size": "{typography.font-size.body}",
+        "font-weight": "{typography.font-weight.bold}",
+        "line-spacing": "{typography.line-spacing.none}",
+        "letter-spacing": "{typography.letter-spacing.standard}",
       },
       type: "textStyle",
       extensions: {
@@ -153,13 +153,13 @@
         },
       },
     },
-    callout: {
+    "lead-text": {
       value: {
-        "font-family": "{typography.font-family.sans.value}",
-        "font-size": "{typography.font-size.callout.value}",
-        "font-weight": "{typography.font-weight.regular.value}",
-        "line-spacing": "{typography.line-spacing.standard.value}",
-        "letter-spacing": "{typography.letter-spacing.standard.value}",
+        "font-family": "{typography.font-family.sans}",
+        "font-size": "{typography.font-size.callout}",
+        "font-weight": "{typography.font-weight.regular}",
+        "line-spacing": "{typography.line-spacing.standard}",
+        "letter-spacing": "{typography.letter-spacing.standard}",
       },
       type: "textStyle",
       extensions: {
@@ -172,11 +172,11 @@
     },
     "heading-6": {
       value: {
-        "font-family": "{typography.font-family.sans.value}",
-        "font-size": "{typography.font-size.body.value}",
-        "font-weight": "{typography.font-weight.bold.value}",
-        "line-spacing": "{typography.line-spacing.standard.value}",
-        "letter-spacing": "{typography.letter-spacing.standard.value}",
+        "font-family": "{typography.font-family.sans}",
+        "font-size": "{typography.font-size.body}",
+        "font-weight": "{typography.font-weight.bold}",
+        "line-spacing": "{typography.line-spacing.standard}",
+        "letter-spacing": "{typography.letter-spacing.standard}",
       },
       type: "textStyle",
       extensions: {
@@ -189,11 +189,11 @@
     },
     "heading-5": {
       value: {
-        "font-family": "{typography.font-family.sans.value}",
-        "font-size": "{typography.font-size.callout.value}",
-        "font-weight": "{typography.font-weight.extra-bold.value}",
-        "line-spacing": "{typography.line-spacing.standard.value}",
-        "letter-spacing": "{typography.letter-spacing.standard.value}",
+        "font-family": "{typography.font-family.sans}",
+        "font-size": "{typography.font-size.callout}",
+        "font-weight": "{typography.font-weight.extra-bold}",
+        "line-spacing": "{typography.line-spacing.standard}",
+        "letter-spacing": "{typography.letter-spacing.standard}",
       },
       type: "textStyle",
       extensions: {
@@ -206,11 +206,11 @@
     },
     "heading-4": {
       value: {
-        "font-family": "{typography.font-family.sans.value}",
-        "font-size": "{typography.font-size.headline-3.value}",
-        "font-weight": "{typography.font-weight.extra-bold.value}",
-        "line-spacing": "{typography.line-spacing.standard.value}",
-        "letter-spacing": "{typography.letter-spacing.standard.value}",
+        "font-family": "{typography.font-family.sans}",
+        "font-size": "{typography.font-size.headline-3}",
+        "font-weight": "{typography.font-weight.extra-bold}",
+        "line-spacing": "{core.typography.line-spacing.md}",
+        "letter-spacing": "{typography.letter-spacing.standard}",
       },
       type: "textStyle",
       extensions: {
@@ -223,11 +223,11 @@
     },
     "heading-3": {
       value: {
-        "font-family": "{typography.font-family.sans.value}",
-        "font-size": "{typography.font-size.headline-2.value}",
-        "font-weight": "{typography.font-weight.extra-bold.value}",
-        "line-spacing": "{typography.line-spacing.standard.value}",
-        "letter-spacing": "{typography.letter-spacing.standard.value}",
+        "font-family": "{typography.font-family.sans}",
+        "font-size": "{typography.font-size.headline-2}",
+        "font-weight": "{typography.font-weight.extra-bold}",
+        "line-spacing": "{typography.line-spacing.tight}",
+        "letter-spacing": "{typography.letter-spacing.standard}",
       },
       type: "textStyle",
       extensions: {
@@ -240,11 +240,11 @@
     },
     "heading-2": {
       value: {
-        "font-family": "{typography.font-family.sans.value}",
-        "font-size": "{typography.font-size.headline-1.value}",
-        "font-weight": "{typography.font-weight.extra-bold.value}",
-        "line-spacing": "{typography.line-spacing.tight.value}",
-        "letter-spacing": "{typography.letter-spacing.standard.value}",
+        "font-family": "{typography.font-family.sans}",
+        "font-size": "{typography.font-size.headline-1}",
+        "font-weight": "{typography.font-weight.extra-bold}",
+        "line-spacing": "{typography.line-spacing.extra-tight}",
+        "letter-spacing": "{typography.letter-spacing.standard}",
       },
       type: "textStyle",
       extensions: {
@@ -257,11 +257,11 @@
     },
     "heading-1": {
       value: {
-        "font-family": "{typography.font-family.sans.value}",
-        "font-size": "{typography.font-size.title-3.value}",
-        "font-weight": "{typography.font-weight.extra-bold.value}",
-        "line-spacing": "{typography.line-spacing.extra-tight.value}",
-        "letter-spacing": "{typography.letter-spacing.standard.value}",
+        "font-family": "{typography.font-family.sans}",
+        "font-size": "{typography.font-size.title-3}",
+        "font-weight": "{typography.font-weight.extra-bold}",
+        "line-spacing": "{core.typography.line-spacing.xs}",
+        "letter-spacing": "{typography.letter-spacing.standard}",
       },
       type: "textStyle",
       extensions: {
@@ -274,11 +274,11 @@
     },
     "title-2": {
       value: {
-        "font-family": "{typography.font-family.sans.value}",
-        "font-size": "{typography.font-size.title-2.value}",
-        "font-weight": "{typography.font-weight.extra-bold.value}",
-        "line-spacing": "{typography.line-spacing.extra-tight.value}",
-        "letter-spacing": "{typography.letter-spacing.standard.value}",
+        "font-family": "{typography.font-family.sans}",
+        "font-size": "{typography.font-size.title-2}",
+        "font-weight": "{typography.font-weight.extra-bold}",
+        "line-spacing": "{typography.line-spacing.extra-tight}",
+        "letter-spacing": "{typography.letter-spacing.standard}",
       },
       type: "textStyle",
       extensions: {
@@ -291,11 +291,11 @@
     },
     "title-1": {
       value: {
-        "font-family": "{typography.font-family.sans.value}",
-        "font-size": "{typography.font-size.title-1.value}",
-        "font-weight": "{typography.font-weight.extra-bold.value}",
-        "line-spacing": "{typography.line-spacing.extra-tight.value}",
-        "letter-spacing": "{typography.letter-spacing.standard.value}",
+        "font-family": "{typography.font-family.sans}",
+        "font-size": "{typography.font-size.title-1}",
+        "font-weight": "{typography.font-weight.extra-bold}",
+        "line-spacing": "{typography.line-spacing.extra-tight}",
+        "letter-spacing": "{typography.letter-spacing.standard}",
       },
       type: "textStyle",
       extensions: {
