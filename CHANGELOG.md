@@ -1,8 +1,16 @@
 # Change Log - @telekom/design-tokens
 
-This log was last generated on Tue, 15 Mar 2022 17:12:54 GMT and should not be manually modified.
+This log was last generated on Wed, 23 Mar 2022 17:32:40 GMT and should not be manually modified.
 
 <!-- Start content -->
+
+## 1.0.0-alpha.16
+
+Wed, 23 Mar 2022 17:32:40 GMT
+
+### Changes
+
+- Rename text-style/callout to text-style/lead-text, update values for typography/line-spacing (ac@iconstorm.com)
 
 ## 1.0.0-alpha.15
 
