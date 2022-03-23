@@ -81,33 +81,33 @@
     "line-spacing": {
       none: {
         comment: "Use for single line in ui elements",
-        value: "{core.typography.line-spacing.none.value}",
+        value: "{core.typography.line-spacing.none}",
         type: "number",
       },
       "extra-tight": {
         comment: "Use for large titles like H1 or H2",
-        value: "{core.typography.line-spacing.xs.value}",
+        value: "{core.typography.line-spacing.xxs}",
         type: "number",
       },
       tight: {
         comment: "Use for large headlines like H3, etc.",
-        value: "{core.typography.line-spacing.sm.value}",
+        value: "{core.typography.line-spacing.sm}",
         type: "number",
       },
       standard: {
         comment: "Use for most text elements like normal copy, etc.",
-        value: "{core.typography.line-spacing.md.value}",
+        value: "{core.typography.line-spacing.lg}",
         type: "number",
       },
       loose: {
         comment: "Use for multi line text passages with long lines.",
-        value: "{core.typography.line-spacing.lg.value}",
+        value: "{core.typography.line-spacing.xl}",
         type: "number",
       },
     },
     "letter-spacing": {
       standard: {
-        value: "{core.typography.letter-spacing.none.value}",
+        value: "{core.typography.letter-spacing.none}",
         type: "number",
       },
     },
