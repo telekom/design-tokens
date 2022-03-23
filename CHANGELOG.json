@@ -2,6 +2,21 @@
   "name": "@telekom/design-tokens",
   "entries": [
     {
+      "date": "Wed, 23 Mar 2022 17:32:40 GMT",
+      "tag": "@telekom/design-tokens_v1.0.0-alpha.16",
+      "version": "1.0.0-alpha.16",
+      "comments": {
+        "prerelease": [
+          {
+            "author": "ac@iconstorm.com",
+            "package": "@telekom/design-tokens",
+            "commit": "f04d2f9f7153de09cbf957b76bbc09f757b23b48",
+            "comment": "Rename text-style/callout to text-style/lead-text, update values for typography/line-spacing"
+          }
+        ]
+      }
+    },
+    {
       "date": "Tue, 15 Mar 2022 17:12:54 GMT",
       "tag": "@telekom/design-tokens_v1.0.0-alpha.15",
       "version": "1.0.0-alpha.15",
