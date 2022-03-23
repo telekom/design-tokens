@@ -1,0 +1,7 @@
+{
+  "type": "prerelease",
+  "comment": "Rename text-style/callout to text-style/lead-text, update values for typography/line-spacing",
+  "packageName": "@telekom/design-tokens",
+  "email": "ac@iconstorm.com",
+  "dependentChangeType": "patch"
+}
