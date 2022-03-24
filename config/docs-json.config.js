@@ -95,6 +95,23 @@ function getContrastCheck(value, path, allTokens) {
 
 function getDocsShape(allTokens) {
   return (token) => {
+    if (token.type === 'textStyle') {
+      // TODO this could be a custom transform
+      return {
+        pathString: token.path.join('.'),
+        ...pick(token, ['path', 'comment']),
+        value: {
+          fontFamily: token.value['font-family'],
+          fontSize: token.value['font-size'],
+          fontWeight: token.value['font-weight'],
+          lineSpacing: token.value['line-spacing'],
+          letterSpacing: token.value['letter-spacing'],
+        },
+        category: humanCase(token.path[0]),
+        section: humanCase(token.path[1]),
+        name: humanCase(token.path.slice(1).map(humanCase).join(' / ')),
+      };
+    }
     return {
       pathString: token.path.join('.'),
       ...pick(token, ['path', 'value', 'comment']),
@@ -125,8 +142,7 @@ module.exports = {
         {
           destination: OUTPUT_BASE_FILENAME + '.light.json',
           format: 'json/docs',
-          filter: (token) =>
-            token.path[0] !== 'core' && token.type !== 'textStyle',
+          filter: (token) => token.path[0] !== 'core',
         },
       ],
     },
@@ -138,10 +154,7 @@ module.exports = {
         {
           destination: OUTPUT_BASE_FILENAME + '.dark.json',
           format: 'json/docs',
-          filter: (token) =>
-            token.path[0] !== 'core' &&
-            token.original.value?.dark != null &&
-            token.type !== 'textStyle',
+          filter: (token) => token.path[0] !== 'core',
         },
       ],
     },
