@@ -1,8 +1,16 @@
 # Change Log - @telekom/design-tokens
 
-This log was last generated on Wed, 23 Mar 2022 17:32:40 GMT and should not be manually modified.
+This log was last generated on Thu, 24 Mar 2022 13:02:01 GMT and should not be manually modified.
 
 <!-- Start content -->
+
+## 1.0.0-alpha.17
+
+Thu, 24 Mar 2022 13:02:01 GMT
+
+### Changes
+
+- add text styles to output docs.json (felix.weber@iconstorm.de)
 
 ## 1.0.0-alpha.16
 
