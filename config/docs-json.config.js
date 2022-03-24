@@ -96,6 +96,7 @@ function getContrastCheck(value, path, allTokens) {
 function getDocsShape(allTokens) {
   return (token) => {
     if (token.type === 'textStyle') {
+      // TODO this could be a custom transform
       return {
         pathString: token.path.join('.'),
         ...pick(token, ['path', 'comment']),
