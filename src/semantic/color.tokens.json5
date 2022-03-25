@@ -62,7 +62,7 @@
       link: {
         standard: {
           value: {
-            light: "{core.color.blue.600}",
+            light: "{core.color.blue.500}",
             dark: "{core.color.blue.300}",
           },
           type: "color",
@@ -104,7 +104,7 @@
         },
         active: {
           value: {
-            light: "{core.color.blue.800}",
+            light: "{core.color.blue.1000}",
             dark: "{core.color.blue.100}",
           },
           type: "color",
@@ -872,7 +872,7 @@
         hovered: {
           value: {
             light: "{core.color.grey.1200}",
-            dark: "{core.color.grey.1600}",
+            dark: "{core.color.grey.1000}",
           },
           type: "color",
           extensions: {
@@ -886,7 +886,7 @@
         pressed: {
           value: {
             light: "{core.color.grey.1800}",
-            dark: "{core.color.grey.1900}",
+            dark: "{core.color.grey.300}",
           },
           type: "color",
           extensions: {
