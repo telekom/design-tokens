@@ -1,8 +1,16 @@
 # Change Log - @telekom/design-tokens
 
-This log was last generated on Thu, 24 Mar 2022 13:02:01 GMT and should not be manually modified.
+This log was last generated on Fri, 25 Mar 2022 13:06:56 GMT and should not be manually modified.
 
 <!-- Start content -->
+
+## 1.0.0-alpha.18
+
+Fri, 25 Mar 2022 13:06:56 GMT
+
+### Changes
+
+- update text-&-icon-link and ui-solid tokens (felix.weber@iconstorm.de)
 
 ## 1.0.0-alpha.17
 
