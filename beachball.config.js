@@ -4,5 +4,5 @@ module.exports = {
   prereleasePrefix: 'alpha',
   publish: true,
   push: true,
-  tag: 'alpha'
+  tag: 'latest'
 }
