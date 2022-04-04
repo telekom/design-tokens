@@ -595,7 +595,7 @@
           type: "color",
         },
         shade: {
-          value: "#F4F6FE",
+          value: "#08113A",
           type: "color",
         },
       },
