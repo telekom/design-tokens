@@ -591,11 +591,11 @@
           type: "color",
         },
         tint: {
-          value: "#060D2E",
+          value: "#08113A",
           type: "color",
         },
         shade: {
-          value: "#08113A",
+          value: "#F4F6FE",
           type: "color",
         },
       },
