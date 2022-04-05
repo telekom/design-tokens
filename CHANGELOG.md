@@ -1,8 +1,17 @@
 # Change Log - @telekom/design-tokens
 
-This log was last generated on Fri, 25 Mar 2022 13:06:56 GMT and should not be manually modified.
+This log was last generated on Tue, 05 Apr 2022 07:25:44 GMT and should not be manually modified.
 
 <!-- Start content -->
+
+## 1.0.0-alpha.19
+
+Tue, 05 Apr 2022 07:25:44 GMT
+
+### Changes
+
+- fix blue shade core value (felix.weber@iconstorm.de)
+- Use _latest_ npm dist tag (ac@iconstorm.com)
 
 ## 1.0.0-alpha.18
 

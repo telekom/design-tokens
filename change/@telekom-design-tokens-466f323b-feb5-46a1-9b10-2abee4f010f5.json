@@ -1,7 +1,0 @@
-{
-  "type": "prerelease",
-  "comment": "Use _latest_ npm dist tag",
-  "packageName": "@telekom/design-tokens",
-  "email": "ac@iconstorm.com",
-  "dependentChangeType": "patch"
-}
