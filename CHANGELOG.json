@@ -2,6 +2,21 @@
   "name": "@telekom/design-tokens",
   "entries": [
     {
+      "date": "Tue, 05 Apr 2022 08:59:03 GMT",
+      "tag": "@telekom/design-tokens_v1.0.0-alpha.20",
+      "version": "1.0.0-alpha.20",
+      "comments": {
+        "prerelease": [
+          {
+            "author": "felix.weber@iconstorm.de",
+            "package": "@telekom/design-tokens",
+            "commit": "a2117db994372a7f87886ea6b2f8ff524f660b6e",
+            "comment": "revert blue shade value, update blue tint value"
+          }
+        ]
+      }
+    },
+    {
       "date": "Tue, 05 Apr 2022 07:25:44 GMT",
       "tag": "@telekom/design-tokens_v1.0.0-alpha.19",
       "version": "1.0.0-alpha.19",
