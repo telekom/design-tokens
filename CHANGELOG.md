@@ -1,8 +1,16 @@
 # Change Log - @telekom/design-tokens
 
-This log was last generated on Tue, 05 Apr 2022 08:59:03 GMT and should not be manually modified.
+This log was last generated on Wed, 06 Apr 2022 13:29:26 GMT and should not be manually modified.
 
 <!-- Start content -->
+
+## 1.0.0-alpha.21
+
+Wed, 06 Apr 2022 13:29:26 GMT
+
+### Changes
+
+- Add text-style tokens in CSS (ac@iconstorm.com)
 
 ## 1.0.0-alpha.20
 
