@@ -1,0 +1,7 @@
+{
+  "type": "prerelease",
+  "comment": "Add text-style tokens in CSS",
+  "packageName": "@telekom/design-tokens",
+  "email": "ac@iconstorm.com",
+  "dependentChangeType": "patch"
+}
