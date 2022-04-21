@@ -18,6 +18,7 @@ const configs = [
   require('./figma.config'),
   require('./sketch.config'),
   require('./docs-json.config'),
+  require('./tailwindcss-preset.config'),
 ];
 
 configs.forEach((config) => StyleDictionary.extend(config).buildAllPlatforms());
