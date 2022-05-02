@@ -24,6 +24,23 @@ const tailwindcssPresetTransformGroup = [
 ];
 
 /**
+ * Custom plugin to convert `text-style` design token to the `font` css shorthand property
+ * as there is no mapping provided by the core plugins.
+ */
+const fontPlugin = `
+  plugin(function ({ matchUtilities, theme }) {
+    matchUtilities(
+      {
+        'text-style': (value) => ({
+          font: value,
+        }),
+      },
+      { values: theme('textStyle') }
+    );
+  })
+`;
+
+/**
  * Custom formatter for Tailwindcss config preset
  */
 StyleDictionary.registerFormat({
@@ -32,17 +49,27 @@ StyleDictionary.registerFormat({
     const tokens = {};
     const header = StyleDictionary.formatHelpers.fileHeader({ file });
     deep.p = true;
+
     dictionary.allTokens
       .filter((token) => token.path[0] !== 'core')
-      // Filter out text-style as there is no clear mapping to tailwindcss config key
-      // that would be supported by core plugins
-      .filter((token) => token.path[0] !== 'text-style')
+
       .map(remapConfigKeys)
       .forEach((token) => {
         deep(tokens, token.configKeys, `var(--${token.name})`);
       });
-    const rawSource = `${header} 
-      module.exports = ${JSON.stringify({ theme: tokens }, null, 2)}`;
+
+    const rawSource = `
+      ${header}
+      const plugin = require('tailwindcss/plugin');
+      module.exports = 
+        {
+          theme: ${JSON.stringify(tokens)},
+          plugins: [
+            ${fontPlugin},
+          ],
+        };
+    `;
+
     return prettier.format(rawSource, {
       parser: 'babel',
       singleQuote: true,
@@ -93,7 +120,7 @@ StyleDictionary.registerFileHeader({
       ...defaultMessage,
       ``,
       `You can find info about usage here:`,
-      `  - https://github.com/mato-a/design-tokens#how-to-use-the-tailwindcss-preset`,
+      `  - https://github.com/telekom/design-tokens#how-to-use-the-tailwindcss-preset`,
       `  - https://tailwindcss.com/docs/presets`,
     ];
   },
