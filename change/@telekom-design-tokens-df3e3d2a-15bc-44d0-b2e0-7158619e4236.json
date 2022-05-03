@@ -1,0 +1,7 @@
+{
+  "type": "patch",
+  "comment": "Fix motion value",
+  "packageName": "@telekom/design-tokens",
+  "email": "maomao.meyer-zhang@telekom.de",
+  "dependentChangeType": "patch"
+}
