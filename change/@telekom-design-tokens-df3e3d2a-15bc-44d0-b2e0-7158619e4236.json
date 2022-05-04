@@ -1,7 +1,0 @@
-{
-  "type": "prerelease",
-  "comment": "Fix motion values for CSS output",
-  "packageName": "@telekom/design-tokens",
-  "email": "maomao.meyer-zhang@telekom.de",
-  "dependentChangeType": "patch"
-}

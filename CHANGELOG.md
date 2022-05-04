@@ -1,8 +1,16 @@
 # Change Log - @telekom/design-tokens
 
-This log was last generated on Wed, 06 Apr 2022 13:29:26 GMT and should not be manually modified.
+This log was last generated on Wed, 04 May 2022 12:24:14 GMT and should not be manually modified.
 
 <!-- Start content -->
+
+## 1.0.0-alpha.22
+
+Wed, 04 May 2022 12:24:14 GMT
+
+### Changes
+
+- Fix motion values for CSS output (maomao.meyer-zhang@telekom.de)
 
 ## 1.0.0-alpha.21
 
