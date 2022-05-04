@@ -60,7 +60,9 @@ StyleDictionary.registerFormat({
 
     const rawSource = `
       ${header}
+      
       const plugin = require('tailwindcss/plugin');
+
       module.exports = 
         {
           theme: ${JSON.stringify(tokens)},
@@ -87,7 +89,74 @@ const mappings = [
   { original: ['motion', 'duration'], tailwindcss: ['transitionDuration'] },
   { original: ['motion', 'easing'], tailwindcss: ['transitionTimingFunction'] },
   { original: ['radius'], tailwindcss: ['borderRadius'] },
-  { original: ['shadow'], tailwindcss: ['boxShadow'] },
+  {
+    original: ['shadow', 'flat', 'standard'],
+    tailwindcss: ['boxShadow', 'flatStandard'],
+  },
+  {
+    original: ['shadow', 'flat', 'hover'],
+    tailwindcss: ['boxShadow', 'flatHover'],
+  },
+  {
+    original: ['shadow', 'flat', 'pressed'],
+    tailwindcss: ['boxShadow', 'flatPressed'],
+  },
+  {
+    original: ['shadow', 'resting', 'standard'],
+    tailwindcss: ['boxShadow', 'restingStandard'],
+  },
+  {
+    original: ['shadow', 'resting', 'hover'],
+    tailwindcss: ['boxShadow', 'restingHover'],
+  },
+  {
+    original: ['shadow', 'resting', 'pressed'],
+    tailwindcss: ['boxShadow', 'restingPressed'],
+  },
+  {
+    original: ['shadow', 'raised', 'standard'],
+    tailwindcss: ['boxShadow', 'raisedStandard'],
+  },
+  {
+    original: ['shadow', 'raised', 'hover'],
+    tailwindcss: ['boxShadow', 'raisedHover'],
+  },
+  {
+    original: ['shadow', 'raised', 'pressed'],
+    tailwindcss: ['boxShadow', 'raisedPressed'],
+  },
+  {
+    original: ['shadow', 'floating', 'standard'],
+    tailwindcss: ['boxShadow', 'floatingStandard'],
+  },
+  {
+    original: ['shadow', 'floating', 'hover'],
+    tailwindcss: ['boxShadow', 'floatingHover'],
+  },
+  {
+    original: ['shadow', 'floating', 'pressed'],
+    tailwindcss: ['boxShadow', 'floatingPressed'],
+  },
+  {
+    original: ['shadow', 'top'],
+    tailwindcss: ['boxShadow', 'top'],
+  },
+  {
+    original: ['shadow', 'overlay'],
+    tailwindcss: ['boxShadow', 'overlay'],
+  },
+  {
+    original: ['shadow', 'appBar', 'top', 'raised'],
+    tailwindcss: ['boxShadow', 'appBarTopRaised'],
+  },
+  {
+    original: ['shadow', 'appBar', 'top', 'flat'],
+    tailwindcss: ['boxShadow', 'appBarTopFlat'],
+  },
+  {
+    original: ['shadow', 'appBar', 'bottom', 'flat'],
+    tailwindcss: ['boxShadow', 'appBarBottomFlat'],
+  },
   { original: ['spacing', 'unit'], tailwindcss: ['spacing'] },
   { original: ['typography', 'fontSize'], tailwindcss: ['fontSize'] },
   { original: ['typography', 'fontFamily'], tailwindcss: ['fontFamily'] },
