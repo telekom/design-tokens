@@ -24,7 +24,8 @@ const cssTransformGroup = [
   'size/rem',
   'color/alpha',
   'color/css',
-  'text-style/css'
+  'text-style/css',
+  'cubic-bezier/css',
 ];
 
 StyleDictionary.registerAction({
@@ -86,8 +87,7 @@ module.exports = {
         {
           destination: OUTPUT_BASE_FILENAME + '.light.json',
           format: 'json/flat',
-          filter: (token) =>
-            token.path[0] !== 'core',
+          filter: (token) => token.path[0] !== 'core',
         },
       ],
     },
@@ -100,8 +100,7 @@ module.exports = {
           destination: OUTPUT_BASE_FILENAME + '.dark.json',
           format: 'json/flat',
           filter: (token) =>
-            token.path[0] !== 'core' &&
-            token.original.value?.dark != null,
+            token.path[0] !== 'core' && token.original.value?.dark != null,
         },
       ],
       actions: ['bundle_css'],
