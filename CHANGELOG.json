@@ -2,6 +2,21 @@
   "name": "@telekom/design-tokens",
   "entries": [
     {
+      "date": "Wed, 04 May 2022 12:24:14 GMT",
+      "tag": "@telekom/design-tokens_v1.0.0-alpha.22",
+      "version": "1.0.0-alpha.22",
+      "comments": {
+        "prerelease": [
+          {
+            "author": "maomao.meyer-zhang@telekom.de",
+            "package": "@telekom/design-tokens",
+            "commit": "5beada51ff79477d1158f1758e569cd516ca2c06",
+            "comment": "Fix motion values for CSS output"
+          }
+        ]
+      }
+    },
+    {
       "date": "Wed, 06 Apr 2022 13:29:26 GMT",
       "tag": "@telekom/design-tokens_v1.0.0-alpha.21",
       "version": "1.0.0-alpha.21",
