@@ -2070,9 +2070,9 @@
           },
         },
       },
-      olive: {
+      yellow: {
         "0": {
-          value: "{core.color.olive.0}",
+          value: "{core.color.yellow.0}",
           type: "color",
           extensions: {
             telekom: {
@@ -2083,7 +2083,7 @@
           },
         },
         "100": {
-          value: "{core.color.olive.100}",
+          value: "{core.color.yellow.100}",
           type: "color",
           extensions: {
             telekom: {
@@ -2094,7 +2094,7 @@
           },
         },
         "200": {
-          value: "{core.color.olive.200}",
+          value: "{core.color.yellow.200}",
           type: "color",
           extensions: {
             telekom: {
@@ -2105,7 +2105,7 @@
           },
         },
         "300": {
-          value: "{core.color.olive.300}",
+          value: "{core.color.yellow.300}",
           type: "color",
           extensions: {
             telekom: {
@@ -2116,7 +2116,7 @@
           },
         },
         "400": {
-          value: "{core.color.olive.400}",
+          value: "{core.color.yellow.400}",
           type: "color",
           extensions: {
             telekom: {
@@ -2127,7 +2127,7 @@
           },
         },
         "500": {
-          value: "{core.color.olive.500}",
+          value: "{core.color.yellow.500}",
           type: "color",
           extensions: {
             telekom: {
@@ -2138,7 +2138,7 @@
           },
         },
         "600": {
-          value: "{core.color.olive.600}",
+          value: "{core.color.yellow.600}",
           type: "color",
           extensions: {
             telekom: {
@@ -2149,7 +2149,7 @@
           },
         },
         "700": {
-          value: "{core.color.olive.700}",
+          value: "{core.color.yellow.700}",
           type: "color",
           extensions: {
             telekom: {
@@ -2160,7 +2160,7 @@
           },
         },
         "800": {
-          value: "{core.color.olive.800}",
+          value: "{core.color.yellow.800}",
           type: "color",
           extensions: {
             telekom: {
@@ -2171,7 +2171,7 @@
           },
         },
         "900": {
-          value: "{core.color.olive.900}",
+          value: "{core.color.yellow.900}",
           type: "color",
           extensions: {
             telekom: {
@@ -2182,7 +2182,7 @@
           },
         },
         tint: {
-          value: "{core.color.olive.tint}",
+          value: "{core.color.yellow.tint}",
           type: "color",
           extensions: {
             telekom: {
@@ -2193,7 +2193,7 @@
           },
         },
         shade: {
-          value: "{core.color.olive.shade}",
+          value: "{core.color.yellow.shade}",
           type: "color",
           extensions: {
             telekom: {

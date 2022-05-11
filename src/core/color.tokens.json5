@@ -703,6 +703,56 @@
           type: "color",
         },
       },
+      yellow: {
+        "0": {
+          value: "#fffde6",
+          type: "color",
+        },
+        "100": {
+          value: "#fcf3b4",
+          type: "color",
+        },
+        "200": {
+          value: "#f9e785",
+          type: "color",
+        },
+        "300": {
+          value: "#f7d95d",
+          type: "color",
+        },
+        "400": {
+          value: "#f4ca3e",
+          type: "color",
+        },
+        "500": {
+          value: "#f1bb27",
+          type: "color",
+        },
+        "600": {
+          value: "#eeac17",
+          type: "color",
+        },
+        "700": {
+          value: "#eb9e0b",
+          type: "color",
+        },
+        "800": {
+          value: "#e89204",
+          type: "color",
+        },
+        "900": {
+          value: "#e68600",
+          type: "color",
+        },
+        tint: {
+          value: "#FDF7E8",
+          type: "color",
+        },
+        shade: {
+          value: "#302205",
+          type: "color",
+        },
+      },
     },
   },
 }
