@@ -1,0 +1,7 @@
+{
+  "type": "minor",
+  "comment": "Update value for functional-success-standard from white to black",
+  "packageName": "@telekom/design-tokens",
+  "email": "felix.weber@iconstorm.de",
+  "dependentChangeType": "patch"
+}
