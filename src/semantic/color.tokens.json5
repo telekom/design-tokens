@@ -1078,7 +1078,7 @@
                 uuid: "204DE41A-632B-4931-8ECF-F41A2A43EA42",
               },
               docs: {
-                contrast: ["color.text-&-icon.white.standard"],
+                contrast: ["color.text-&-icon.black.standard"],
               },
             },
           },
@@ -1095,7 +1095,7 @@
                 uuid: "A4CC8926-A3E2-424C-8000-062CD0D70F6D",
               },
               docs: {
-                contrast: ["color.text-&-icon.white.standard"],
+                contrast: ["color.text-&-icon.black.standard"],
               },
             },
           },
