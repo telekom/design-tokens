@@ -1,18 +1,8 @@
 # Change Log - @telekom/design-tokens
 
-This log was last generated on Tue, 17 May 2022 15:01:50 GMT and should not be manually modified.
+This log was last generated on Wed, 04 May 2022 12:24:14 GMT and should not be manually modified.
 
 <!-- Start content -->
-
-## 1.0.0
-
-Tue, 17 May 2022 15:01:50 GMT
-
-### Minor changes
-
-- Update light text-warning-color semantic token orange.800 to orange.900 (felix.weber@iconstorm.de)
-- Update value for functional-success-standard from white to black (felix.weber@iconstorm.de)
-- Rename AA+ to AA_LARGE for clarity (felix.weber@iconstorm.de)
 
 ## 1.0.0-alpha.22
 
