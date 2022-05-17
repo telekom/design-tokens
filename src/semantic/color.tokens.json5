@@ -1061,7 +1061,7 @@
                 uuid: "bb8b0e06-b158-486a-b7fb-c654c09e581e",
               },
               docs: {
-                contrast: ["color.text-&-icon.white.standard"],
+                contrast: ["color.text-&-icon.black.standard"],
               },
             },
           },
