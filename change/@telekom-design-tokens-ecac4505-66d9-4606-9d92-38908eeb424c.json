@@ -1,5 +1,5 @@
 {
-  "type": "minor",
+  "type": "prerelease",
   "comment": "Update light text-warning-color semantic token orange.800 to orange.900",
   "packageName": "@telekom/design-tokens",
   "email": "felix.weber@iconstorm.de",

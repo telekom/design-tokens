@@ -1,5 +1,5 @@
 {
-  "type": "minor",
+  "type": "prerelease",
   "comment": "Rename AA+ to AA_LARGE for clarity",
   "packageName": "@telekom/design-tokens",
   "email": "felix.weber@iconstorm.de",
