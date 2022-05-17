@@ -900,7 +900,7 @@
         disabled: {
           value: {
             light: "{core.color.grey.600}",
-            dark: "{core.color.grey.1600}",
+            dark: "{core.color.grey.1700}",
           },
           type: "color",
           extensions: {
