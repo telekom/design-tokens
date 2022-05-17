@@ -2,6 +2,33 @@
   "name": "@telekom/design-tokens",
   "entries": [
     {
+      "date": "Tue, 17 May 2022 16:15:54 GMT",
+      "tag": "@telekom/design-tokens_v1.0.0-alpha.23",
+      "version": "1.0.0-alpha.23",
+      "comments": {
+        "prerelease": [
+          {
+            "author": "felix.weber@iconstorm.de",
+            "package": "@telekom/design-tokens",
+            "commit": "96a82c86aa0ef23b92636a8e1c4b407dbf4f9bdd",
+            "comment": "Rename AA+ to AA_LARGE for clarity"
+          },
+          {
+            "author": "felix.weber@iconstorm.de",
+            "package": "@telekom/design-tokens",
+            "commit": "b68d88edd4b1777a036661eb3cc193e1eb4716a1",
+            "comment": "Update value for functional-success-standard from white to black"
+          },
+          {
+            "author": "felix.weber@iconstorm.de",
+            "package": "@telekom/design-tokens",
+            "commit": "edc0eb55d9d57731299293b5b2738af9a5d76fd7",
+            "comment": "Update light text-warning-color semantic token orange.800 to orange.900"
+          }
+        ]
+      }
+    },
+    {
       "date": "Wed, 04 May 2022 12:24:14 GMT",
       "tag": "@telekom/design-tokens_v1.0.0-alpha.22",
       "version": "1.0.0-alpha.22",
