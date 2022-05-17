@@ -321,7 +321,7 @@
         },
         warning: {
           value: {
-            light: "{core.color.orange.800}",
+            light: "{core.color.orange.900}",
             dark: "{core.color.orange.600}",
           },
           type: "color",
