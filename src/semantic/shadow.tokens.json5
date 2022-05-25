@@ -135,7 +135,7 @@
       },
       // bottom bar, app bar bottom, bottom nav
       bottom: {
-        flat: {
+        raised: {
           comment: "Use for app navigation and app bars on the bottom",
           value: "{core.shadow.special.app-bar.bottom.subtle}",
           type: "shadow",
