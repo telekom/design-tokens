@@ -1,0 +1,7 @@
+{
+  "type": "prerelease",
+  "comment": "fix: rename wrongly duplicated named shadow from flat -> raised for app bottom shadow",
+  "packageName": "@telekom/design-tokens",
+  "email": "oppermann.lukas@gmail.com",
+  "dependentChangeType": "patch"
+}
