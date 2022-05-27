@@ -18,7 +18,7 @@
     "prepublishOnly": "npm run build",
     "format": "prettier --write \"src/**/*{json,json5}\" \"config/**/*.js\"",
     "sketch-uuid": "uuid | awk '{print toupper($0)}'",
-    "uuid-copy": "uuid | awk '{print toupper($0)}' | tr -d '\n' | pbcopy"
+    "uuid-copy": "uuid | tr -d '\\n' | pbcopy"
   },
   "repository": {
     "type": "git",
