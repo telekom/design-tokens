@@ -1,0 +1,7 @@
+{
+  "type": "prerelease",
+  "comment": "added a new uuid command that copies to clipboard",
+  "packageName": "@telekom/design-tokens",
+  "email": "oppermann.lukas@gmail.com",
+  "dependentChangeType": "patch"
+}
