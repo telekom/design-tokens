@@ -1,0 +1,7 @@
+{
+  "type": "prerelease",
+  "comment": "make surface and surface subtle dark one step darker to have better contrast with functional text colors",
+  "packageName": "@telekom/design-tokens",
+  "email": "oppermann.lukas@gmail.com",
+  "dependentChangeType": "patch"
+}
