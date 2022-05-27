@@ -1121,64 +1121,6 @@
           },
         },
       },
-      interaction: {
-        standard: {
-          value: {
-            light: "{core.color.blue.600}",
-            dark: "{core.color.blue.600}",
-          },
-          type: "color",
-          extensions: {
-            telekom: {
-              sketch: {
-                uuid: "7B4E3ABC-6ABB-4ED7-8AC7-261B30EDD70D",
-              },
-            },
-          },
-        },
-        hovered: {
-          value: {
-            light: "{core.color.blue.700}",
-            dark: "{core.color.blue.500}",
-          },
-          type: "color",
-          extensions: {
-            telekom: {
-              sketch: {
-                uuid: "C19793E9-DF3A-4B57-AC73-326BAD1229B8",
-              },
-            },
-          },
-        },
-        pressed: {
-          value: {
-            light: "{core.color.blue.800}",
-            dark: "{core.color.blue.400}",
-          },
-          type: "color",
-          extensions: {
-            telekom: {
-              sketch: {
-                uuid: "7ED10420-90E0-4497-B5F9-380E2A033CB2",
-              },
-            },
-          },
-        },
-        subtle: {
-          value: {
-            light: "{core.color.blue.shade}",
-            dark: "{core.color.blue.tint}",
-          },
-          type: "color",
-          extensions: {
-            telekom: {
-              sketch: {
-                uuid: "C22E033C-CFFB-4EFF-A449-EAB2712182CE",
-              },
-            },
-          },
-        },
-      },
       informational: {
         standard: {
           value: {
