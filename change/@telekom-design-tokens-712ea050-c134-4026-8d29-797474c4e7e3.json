@@ -1,0 +1,7 @@
+{
+  "type": "prerelease",
+  "comment": "remove colors that are not allowed by brand+",
+  "packageName": "@telekom/design-tokens",
+  "email": "oppermann.lukas@gmail.com",
+  "dependentChangeType": "patch"
+}
