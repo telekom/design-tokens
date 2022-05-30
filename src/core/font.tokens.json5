@@ -1,0 +1,14 @@
+{
+	core: {
+		asset: {
+			font: {
+				teleneo: {
+					name: { value: "TeleNeoWeb" },
+					eot: { value: "src/telekom/fonts/TeleNeoWeb-Regular.eot" },
+					woff: { value: "src/telekom/fonts/TeleNeoWeb-Regular.woff" },
+					woff2: { value: "src/telekom/fonts/TeleNeoWeb-Regular.woff2" }
+				}
+			}
+		}
+	}
+}

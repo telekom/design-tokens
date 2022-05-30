@@ -14,10 +14,12 @@ require('./shared'); // register common transforms
 
 const configs = [
   require('./css.config'),
+  require('./fonts.config'),
   require('./js.config'),
   require('./figma.config'),
   require('./sketch.config'),
   require('./docs-json.config'),
+
 ];
 
 configs.forEach((config) => StyleDictionary.extend(config).buildAllPlatforms());

@@ -1,0 +1,58 @@
+{
+    asset: {
+        font: {
+            TeleneoWeb: {
+                "800": {
+                    normal: {
+                        value: "fonts/TeleNeoWeb-ExtraBold",
+                        formats: ["eot", "woff", "woff2"]
+                    },
+                    italic: {
+                        value: "fonts/TeleNeoWeb-ExtraBoldItalic",
+                        formats: ["eot", "woff", "woff2"]
+                    }                    
+                },    
+                "700": {
+                    normal: {
+                        value: "fonts/TeleNeoWeb-Bold",
+                        formats: ["eot", "woff", "woff2"]
+                    },
+                    italic: {
+                        value: "fonts/TeleNeoWeb-BoldItalic",
+                        formats: ["eot", "woff", "woff2"]
+                    }                    
+                },   
+                "500": {
+                    normal: {
+                        value: "fonts/TeleNeoWeb-Medium",
+                        formats: ["eot", "woff", "woff2"]
+                    },
+                    italic: {
+                        value: "fonts/TeleNeoWeb-MediumItalic",
+                        formats: ["eot", "woff", "woff2"]
+                    }                    
+                },                                                      
+                "400": {
+                    normal: {
+                        value: "fonts/TeleNeoWeb-Regular",
+                        formats: ["eot", "woff", "woff2"]
+                    },
+                    italic: {
+                        value: "fonts/TeleNeoWeb-RegularItalic",
+                        formats: ["eot", "woff", "woff2"]
+                    }                    
+                },
+                "200": {
+                    normal: {
+                        value: "fonts/TeleNeoWeb-Thin",
+                        formats: ["eot", "woff", "woff2"]
+                    },
+                    italic: {
+                        value: "fonts/TeleNeoWeb-ThinItalic",
+                        formats: ["eot", "woff", "woff2"]
+                    }                    
+                },                                
+            }
+        }
+    }
+}
