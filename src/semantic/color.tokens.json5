@@ -349,6 +349,20 @@
             },
           },
         },
+        violet: {
+          value: {
+            light: "{core.color.violet.600}",
+            dark: "{core.color.violet.200}",
+          },
+          type: "color",
+          extensions: {
+            telekom: {
+              sketch: {
+                uuid: "9ac44587-8295-4ddc-8d18-3c7d1cddbcfb",
+              },
+            },
+          },
+        },
         "informational": {
           value: {
             light: "{core.color.blue.500}",
@@ -359,6 +373,20 @@
             telekom: {
               sketch: {
                 uuid: "175eb758-0af7-4f9e-8719-1c9898ae8dd2",
+              },
+            },
+          },
+        },
+        cyan: {
+          value: {
+            light: "#00738A", // custom because 900 is to light
+            dark: "{core.color.cyan.400}",
+          },
+          type: "color",
+          extensions: {
+            telekom: {
+              sketch: {
+                uuid: "84c0c50d-a9b0-49ff-a1e9-f3f3a9584552",
               },
             },
           },
@@ -377,6 +405,20 @@
             },
           },
         },
+        yellow: {
+          value: {
+            light: "#AC5600", // custom because 900 is to light
+            dark: "{core.color.yellow.500}",
+          },
+          type: "color",
+          extensions: {
+            telekom: {
+              sketch: {
+                uuid: "c3f68c16-6902-46b4-a422-87c1e1ca099f",
+              },
+            },
+          },
+        },
         "warning": {
           value: {
             light: "{core.color.orange.900}",
@@ -391,7 +433,49 @@
             },
           },
         },
-      }
+        teal: {
+          value: {
+            light: "#177364", // custom because 900 is to light
+            dark: "{core.color.teal.400}",
+          },
+          type: "color",
+          extensions: {
+            telekom: {
+              sketch: {
+                uuid: "8ebe9d1c-c8a5-41c1-961d-108563f50c66",
+              },
+            },
+          },
+        },
+        olive: {
+          value: {
+            light: "#557317", // custom because 900 is to light
+            dark: "{core.color.olive.400}",
+          },
+          type: "color",
+          extensions: {
+            telekom: {
+              sketch: {
+                uuid: "b5eb6035-f512-4883-a874-c629d95bdb8b",
+              },
+            },
+          },
+        },
+        brown: {
+          value: {
+            light: "{core.color.brown.800}",
+            dark: "{core.color.brown.300}",
+          },
+          type: "color",
+          extensions: {
+            telekom: {
+              sketch: {
+                uuid: "4a440ed2-1e26-4998-a6da-543f79875b1f",
+              },
+            },
+          },
+        },
+      },
     },
     background: {
       comment: "Background colors are used for page, app and component backgrounds",
@@ -781,7 +865,7 @@
             extensions: {
               telekom: {
                 sketch: {
-                  uuid: "",
+                  uuid: "fe842881-5cba-4147-89fd-018f1abd197f",
                 },
               },
             },
@@ -1511,24 +1595,16 @@
             },
           },
         },
-        tint: {
-          value: "{core.color.brown.tint}",
+        subtle: {
+          value: {
+            light: "{core.color.brown.tint}",
+            dark: "{core.color.brown.shade}",
+          },
           type: "color",
           extensions: {
             telekom: {
               sketch: {
                 uuid: "F240C6DF-8BDC-4FF0-9580-1C0C89D11B17",
-              },
-            },
-          },
-        },
-        shade: {
-          value: "{core.color.brown.shade}",
-          type: "color",
-          extensions: {
-            telekom: {
-              sketch: {
-                uuid: "78E69442-AF55-4020-82D7-303B8DA9AB15",
               },
             },
           },
@@ -1645,24 +1721,16 @@
             },
           },
         },
-        tint: {
-          value: "{core.color.violet.tint}",
+        subtle: {
+          value: {
+            light: "{core.color.violet.tint}",
+            dark: "{core.color.violet.shade}",
+          },
           type: "color",
           extensions: {
             telekom: {
               sketch: {
                 uuid: "1E92894B-1EDD-4E7A-8870-D75E0882E70A",
-              },
-            },
-          },
-        },
-        shade: {
-          value: "{core.color.violet.shade}",
-          type: "color",
-          extensions: {
-            telekom: {
-              sketch: {
-                uuid: "69A465F7-57C0-4C02-A5B9-D5681C98C4C7",
               },
             },
           },
@@ -1779,24 +1847,16 @@
             },
           },
         },
-        tint: {
-          value: "{core.color.teal.tint}",
+        subtle: {
+          value: {
+            light: "{core.color.teal.tint}",
+            dark: "{core.color.teal.shade}",
+          },
           type: "color",
           extensions: {
             telekom: {
               sketch: {
                 uuid: "CCFEB63C-8D51-49F8-8C0B-5722D3B25980",
-              },
-            },
-          },
-        },
-        shade: {
-          value: "{core.color.teal.shade}",
-          type: "color",
-          extensions: {
-            telekom: {
-              sketch: {
-                uuid: "E16A8713-64FA-4EB3-AC0E-A848F675B471",
               },
             },
           },
@@ -1913,8 +1973,11 @@
             },
           },
         },
-        tint: {
-          value: "{core.color.olive.tint}",
+        subtle: {
+          value: {
+            light: "{core.color.olive.tint}",
+            dark: "{core.color.olive.shade}",
+          },
           type: "color",
           extensions: {
             telekom: {
@@ -1924,13 +1987,758 @@
             },
           },
         },
-        shade: {
-          value: "{core.color.olive.shade}",
+      },
+      yellow: {
+        "0": {
+          value: "{core.color.yellow.0}",
           type: "color",
           extensions: {
             telekom: {
               sketch: {
-                uuid: "44BA7B72-B3AF-4B92-A47A-96E392BB1F91",
+                uuid: "8db984f9-3776-4aef-8ca4-b0c35542eac9",
+              },
+            },
+          },
+        },
+        "100": {
+          value: "{core.color.yellow.100}",
+          type: "color",
+          extensions: {
+            telekom: {
+              sketch: {
+                uuid: "0b057c16-1366-4ee4-9850-4cf4d0f5785f",
+              },
+            },
+          },
+        },
+        "200": {
+          value: "{core.color.yellow.200}",
+          type: "color",
+          extensions: {
+            telekom: {
+              sketch: {
+                uuid: "d3ba9bb9-f18e-4103-82cb-825ae169e98b",
+              },
+            },
+          },
+        },
+        "300": {
+          value: "{core.color.yellow.300}",
+          type: "color",
+          extensions: {
+            telekom: {
+              sketch: {
+                uuid: "69962488-8243-4c2c-8c0a-273ed8479b22",
+              },
+            },
+          },
+        },
+        "400": {
+          value: "{core.color.yellow.400}",
+          type: "color",
+          extensions: {
+            telekom: {
+              sketch: {
+                uuid: "74a95ac3-6e4a-48cb-b052-4fc162e933a6",
+              },
+            },
+          },
+        },
+        "500": {
+          value: "{core.color.yellow.500}",
+          type: "color",
+          extensions: {
+            telekom: {
+              sketch: {
+                uuid: "a262b814-9bb5-479e-85a9-9239056b21ab",
+              },
+            },
+          },
+        },
+        "600": {
+          value: "{core.color.yellow.600}",
+          type: "color",
+          extensions: {
+            telekom: {
+              sketch: {
+                uuid: "1ea671eb-7b49-4534-8484-4ae358044778",
+              },
+            },
+          },
+        },
+        "700": {
+          value: "{core.color.yellow.700}",
+          type: "color",
+          extensions: {
+            telekom: {
+              sketch: {
+                uuid: "c017b69f-8be4-4ec7-bc90-205c548f4303",
+              },
+            },
+          },
+        },
+        "800": {
+          value: "{core.color.yellow.800}",
+          type: "color",
+          extensions: {
+            telekom: {
+              sketch: {
+                uuid: "7c6de2a0-80ec-4592-826d-9270973ef6f9",
+              },
+            },
+          },
+        },
+        "900": {
+          value: "{core.color.yellow.900}",
+          type: "color",
+          extensions: {
+            telekom: {
+              sketch: {
+                uuid: "ce4c7b10-45c6-4d5e-8bfd-f0e4dba24c48",
+              },
+            },
+          },
+        },
+        subtle: {
+          value: {
+            light: "{core.color.yellow.tint}",
+            dark: "{core.color.yellow.shade}",
+          },
+          type: "color",
+          extensions: {
+            telekom: {
+              sketch: {
+                uuid: "c06f8a00-b283-4f2f-9d01-03cfc180f233",
+              },
+            },
+          },
+        },
+      },
+      orange: {
+        "0": {
+          value: "{core.color.orange.0}",
+          type: "color",
+          extensions: {
+            telekom: {
+              sketch: {
+                uuid: "ce1b5d03-da0b-4e36-b68f-bcbcbde7ca16",
+              },
+            },
+          },
+        },
+        "100": {
+          value: "{core.color.orange.100}",
+          type: "color",
+          extensions: {
+            telekom: {
+              sketch: {
+                uuid: "0c41c0d1-8959-4620-add9-092c734b2e09",
+              },
+            },
+          },
+        },
+        "200": {
+          value: "{core.color.orange.200}",
+          type: "color",
+          extensions: {
+            telekom: {
+              sketch: {
+                uuid: "6686cf67-3066-4122-a4be-93a5ba5e0827",
+              },
+            },
+          },
+        },
+        "300": {
+          value: "{core.color.orange.300}",
+          type: "color",
+          extensions: {
+            telekom: {
+              sketch: {
+                uuid: "3c805a57-7bee-4d85-8bd1-a705d64c903b",
+              },
+            },
+          },
+        },
+        "400": {
+          value: "{core.color.orange.400}",
+          type: "color",
+          extensions: {
+            telekom: {
+              sketch: {
+                uuid: "00f2d2a6-543d-451d-99dc-08afaa7c55b8",
+              },
+            },
+          },
+        },
+        "500": {
+          value: "{core.color.orange.500}",
+          type: "color",
+          extensions: {
+            telekom: {
+              sketch: {
+                uuid: "1dea495e-da73-47f7-bb20-9a74d7eb9f51",
+              },
+            },
+          },
+        },
+        "600": {
+          value: "{core.color.orange.600}",
+          type: "color",
+          extensions: {
+            telekom: {
+              sketch: {
+                uuid: "c94b37f3-31eb-4588-9a7f-c6c5e4d724d4",
+              },
+            },
+          },
+        },
+        "700": {
+          value: "{core.color.orange.700}",
+          type: "color",
+          extensions: {
+            telekom: {
+              sketch: {
+                uuid: "634f011e-7e70-48cb-8e3b-3bcce0c57da8",
+              },
+            },
+          },
+        },
+        "800": {
+          value: "{core.color.orange.800}",
+          type: "color",
+          extensions: {
+            telekom: {
+              sketch: {
+                uuid: "43174208-ebe4-46e1-9325-91f1a51d21db",
+              },
+            },
+          },
+        },
+        "900": {
+          value: "{core.color.orange.900}",
+          type: "color",
+          extensions: {
+            telekom: {
+              sketch: {
+                uuid: "f4dcae4b-f6f7-41c2-a4d7-5f6ee3bef0ca",
+              },
+            },
+          },
+        },
+        subtle: {
+          value: {
+            light: "{core.color.orange.tint}",
+            dark: "{core.color.orange.shade}",
+          },
+          type: "color",
+          extensions: {
+            telekom: {
+              sketch: {
+                uuid: "374b4ec0-9a7a-4a9f-97ba-b4dfc4132e65",
+              },
+            },
+          },
+        },
+      },
+      red: {
+        "0": {
+          value: "{core.color.red.0}",
+          type: "color",
+          extensions: {
+            telekom: {
+              sketch: {
+                uuid: "91591e31-f7b6-4378-8448-fde925cb0dab",
+              },
+            },
+          },
+        },
+        "100": {
+          value: "{core.color.red.100}",
+          type: "color",
+          extensions: {
+            telekom: {
+              sketch: {
+                uuid: "d8b53876-fd88-40b1-9704-fe82e8110889",
+              },
+            },
+          },
+        },
+        "200": {
+          value: "{core.color.red.200}",
+          type: "color",
+          extensions: {
+            telekom: {
+              sketch: {
+                uuid: "32c05c0f-afce-4de2-bff6-fa472390fefa",
+              },
+            },
+          },
+        },
+        "300": {
+          value: "{core.color.red.300}",
+          type: "color",
+          extensions: {
+            telekom: {
+              sketch: {
+                uuid: "5a4b7f78-804a-4845-aadd-22537a95d3c7",
+              },
+            },
+          },
+        },
+        "400": {
+          value: "{core.color.red.400}",
+          type: "color",
+          extensions: {
+            telekom: {
+              sketch: {
+                uuid: "7fbfa94f-52d4-4e64-a103-722b98565e29",
+              },
+            },
+          },
+        },
+        "500": {
+          value: "{core.color.red.500}",
+          type: "color",
+          extensions: {
+            telekom: {
+              sketch: {
+                uuid: "e3ac1bcc-d86b-4d59-a806-2b4aa04aa784",
+              },
+            },
+          },
+        },
+        "600": {
+          value: "{core.color.red.600}",
+          type: "color",
+          extensions: {
+            telekom: {
+              sketch: {
+                uuid: "9e9472cb-b121-4588-afde-c9d7390f20a7",
+              },
+            },
+          },
+        },
+        "700": {
+          value: "{core.color.red.700}",
+          type: "color",
+          extensions: {
+            telekom: {
+              sketch: {
+                uuid: "e1db838a-e4e2-4019-a21d-006091d560a2",
+              },
+            },
+          },
+        },
+        "800": {
+          value: "{core.color.red.800}",
+          type: "color",
+          extensions: {
+            telekom: {
+              sketch: {
+                uuid: "07abad53-fe0c-4ce8-84e4-70c994d5f759",
+              },
+            },
+          },
+        },
+        "900": {
+          value: "{core.color.red.900}",
+          type: "color",
+          extensions: {
+            telekom: {
+              sketch: {
+                uuid: "1ff81883-3246-48bd-91a8-d2a32a05af0b",
+              },
+            },
+          },
+        },
+        subtle: {
+          value: {
+            light: "{core.color.red.tint}",
+            dark: "{core.color.red.shade}",
+          },
+          type: "color",
+          extensions: {
+            telekom: {
+              sketch: {
+                uuid: "36866f19-fcbc-4381-8006-360e3a56454c",
+              },
+            },
+          },
+        },
+      },
+      green: {
+        "0": {
+          value: "{core.color.green.0}",
+          type: "color",
+          extensions: {
+            telekom: {
+              sketch: {
+                uuid: "601f9467-9f48-4656-a03f-71da7c9851f3",
+              },
+            },
+          },
+        },
+        "100": {
+          value: "{core.color.green.100}",
+          type: "color",
+          extensions: {
+            telekom: {
+              sketch: {
+                uuid: "a8c2b2a6-842f-4805-9039-889a66c923f6",
+              },
+            },
+          },
+        },
+        "200": {
+          value: "{core.color.green.200}",
+          type: "color",
+          extensions: {
+            telekom: {
+              sketch: {
+                uuid: "c16203bb-ca57-4aea-a678-ae9b5f650994",
+              },
+            },
+          },
+        },
+        "300": {
+          value: "{core.color.green.300}",
+          type: "color",
+          extensions: {
+            telekom: {
+              sketch: {
+                uuid: "d446ad85-0152-4582-afd4-7de8fec589f5",
+              },
+            },
+          },
+        },
+        "400": {
+          value: "{core.color.green.400}",
+          type: "color",
+          extensions: {
+            telekom: {
+              sketch: {
+                uuid: "2ce90da8-6762-4b7c-b4a2-8fc1d8778310",
+              },
+            },
+          },
+        },
+        "500": {
+          value: "{core.color.green.500}",
+          type: "color",
+          extensions: {
+            telekom: {
+              sketch: {
+                uuid: "4ac189d1-5b9f-4674-bf13-2a11ee4fcae3",
+              },
+            },
+          },
+        },
+        "600": {
+          value: "{core.color.green.600}",
+          type: "color",
+          extensions: {
+            telekom: {
+              sketch: {
+                uuid: "101332c8-60ed-4405-9816-3bff1534fe62",
+              },
+            },
+          },
+        },
+        "700": {
+          value: "{core.color.green.700}",
+          type: "color",
+          extensions: {
+            telekom: {
+              sketch: {
+                uuid: "eb358233-b6e5-43aa-94cd-15414f374131",
+              },
+            },
+          },
+        },
+        "800": {
+          value: "{core.color.green.800}",
+          type: "color",
+          extensions: {
+            telekom: {
+              sketch: {
+                uuid: "1a54cb58-f0c7-417f-ac0c-7c84a07f442d",
+              },
+            },
+          },
+        },
+        "900": {
+          value: "{core.color.green.900}",
+          type: "color",
+          extensions: {
+            telekom: {
+              sketch: {
+                uuid: "99be1f76-9853-476f-8ec0-eac5d065859e",
+              },
+            },
+          },
+        },
+        subtle: {
+          value: {
+            light: "{core.color.green.tint}",
+            dark: "{core.color.green.shade}",
+          },
+          type: "color",
+          extensions: {
+            telekom: {
+              sketch: {
+                uuid: "3a62ee76-8b80-4670-8e40-9be415ee0063",
+              },
+            },
+          },
+        },
+      },
+      blue: {
+        "0": {
+          value: "{core.color.blue.0}",
+          type: "color",
+          extensions: {
+            telekom: {
+              sketch: {
+                uuid: "aea8fb25-10ad-40f5-bcad-fe2b49c108dc",
+              },
+            },
+          },
+        },
+        "100": {
+          value: "{core.color.blue.100}",
+          type: "color",
+          extensions: {
+            telekom: {
+              sketch: {
+                uuid: "6eb80ae0-c06d-4996-a765-a61ab9af23e9",
+              },
+            },
+          },
+        },
+        "200": {
+          value: "{core.color.blue.200}",
+          type: "color",
+          extensions: {
+            telekom: {
+              sketch: {
+                uuid: "35741dd8-9bdd-4363-aa6e-dde16958f3fa",
+              },
+            },
+          },
+        },
+        "300": {
+          value: "{core.color.blue.300}",
+          type: "color",
+          extensions: {
+            telekom: {
+              sketch: {
+                uuid: "337d862f-f049-4a94-afe2-af17d53d3bdb",
+              },
+            },
+          },
+        },
+        "400": {
+          value: "{core.color.blue.400}",
+          type: "color",
+          extensions: {
+            telekom: {
+              sketch: {
+                uuid: "7f0fc12e-6998-42a7-aba5-a78f79ae15c9",
+              },
+            },
+          },
+        },
+        "500": {
+          value: "{core.color.blue.500}",
+          type: "color",
+          extensions: {
+            telekom: {
+              sketch: {
+                uuid: "cc0a7e82-ebde-407a-ad34-76296ee190d8",
+              },
+            },
+          },
+        },
+        "600": {
+          value: "{core.color.blue.600}",
+          type: "color",
+          extensions: {
+            telekom: {
+              sketch: {
+                uuid: "61c28aea-fdc3-41e5-8c7b-8e441a87be17",
+              },
+            },
+          },
+        },
+        "700": {
+          value: "{core.color.blue.700}",
+          type: "color",
+          extensions: {
+            telekom: {
+              sketch: {
+                uuid: "d9ab936f-0a46-4339-ab2b-7ae70adeee3c",
+              },
+            },
+          },
+        },
+        "800": {
+          value: "{core.color.blue.800}",
+          type: "color",
+          extensions: {
+            telekom: {
+              sketch: {
+                uuid: "72bdba4e-5787-498b-a692-7d7486c57174",
+              },
+            },
+          },
+        },
+        "900": {
+          value: "{core.color.blue.900}",
+          type: "color",
+          extensions: {
+            telekom: {
+              sketch: {
+                uuid: "4e337e1a-9e22-44f7-81c0-c92ed9a1a3bd",
+              },
+            },
+          },
+        },
+        subtle: {
+          value: {
+            light: "{core.color.blue.tint}",
+            dark: "{core.color.blue.shade}",
+          },
+          type: "color",
+          extensions: {
+            telekom: {
+              sketch: {
+                uuid: "e0249c7f-c6c2-45ac-962d-44fa223606e8",
+              },
+            },
+          },
+        },
+      },
+      cyan: {
+        "0": {
+          value: "{core.color.cyan.0}",
+          type: "color",
+          extensions: {
+            telekom: {
+              sketch: {
+                uuid: "dee4f20a-cf7b-4398-998f-20d89df2c227",
+              },
+            },
+          },
+        },
+        "100": {
+          value: "{core.color.cyan.100}",
+          type: "color",
+          extensions: {
+            telekom: {
+              sketch: {
+                uuid: "c6631195-e324-4d43-a629-7a91ac623a86",
+              },
+            },
+          },
+        },
+        "200": {
+          value: "{core.color.cyan.200}",
+          type: "color",
+          extensions: {
+            telekom: {
+              sketch: {
+                uuid: "5e21d484-d603-4b09-81ef-2462c4222d28",
+              },
+            },
+          },
+        },
+        "300": {
+          value: "{core.color.cyan.300}",
+          type: "color",
+          extensions: {
+            telekom: {
+              sketch: {
+                uuid: "f348b596-c755-41b7-adb9-2db0c7ef77f1",
+              },
+            },
+          },
+        },
+        "400": {
+          value: "{core.color.cyan.400}",
+          type: "color",
+          extensions: {
+            telekom: {
+              sketch: {
+                uuid: "1219eda0-28c5-489e-ad66-78a61f686c7b",
+              },
+            },
+          },
+        },
+        "500": {
+          value: "{core.color.cyan.500}",
+          type: "color",
+          extensions: {
+            telekom: {
+              sketch: {
+                uuid: "54f57fc6-00b2-4ce1-bb1d-cf49a36a844e",
+              },
+            },
+          },
+        },
+        "600": {
+          value: "{core.color.cyan.600}",
+          type: "color",
+          extensions: {
+            telekom: {
+              sketch: {
+                uuid: "9fed1cf6-9e80-42d2-92b1-6b3dcb1731b6",
+              },
+            },
+          },
+        },
+        "700": {
+          value: "{core.color.cyan.700}",
+          type: "color",
+          extensions: {
+            telekom: {
+              sketch: {
+                uuid: "bc24c6bd-b5ec-4ca8-88fa-3d72e7a2b481",
+              },
+            },
+          },
+        },
+        "800": {
+          value: "{core.color.cyan.800}",
+          type: "color",
+          extensions: {
+            telekom: {
+              sketch: {
+                uuid: "8383f26e-c83d-4478-a359-258bef9f41e2",
+              },
+            },
+          },
+        },
+        "900": {
+          value: "{core.color.cyan.900}",
+          type: "color",
+          extensions: {
+            telekom: {
+              sketch: {
+                uuid: "0a08a943-348d-48aa-8a58-db6c43ed9bcd",
+              },
+            },
+          },
+        },
+        subtle: {
+          value: {
+            light: "{core.color.cyan.tint}",
+            dark: "{core.color.cyan.shade}",
+          },
+          type: "color",
+          extensions: {
+            telekom: {
+              sketch: {
+                uuid: "ab706bc3-f580-4cfa-a273-453e1503d251",
               },
             },
           },
