@@ -51,7 +51,15 @@
                         value: "fonts/TeleNeoWeb-ThinItalic",
                         formats: ["eot", "woff", "woff2"]
                     }                    
-                },                                
+                }, 
+                variable: {
+                    normal: {
+                        value: "fonts/TeleNeoVariable-Upright.woff2",
+                        formats: ["woff2-variations"],
+                        weightRange: "200 800",
+                        fontStretch: "75% 125%",
+                    },                   
+                },                                               
             }
         }
     }

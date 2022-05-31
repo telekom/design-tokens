@@ -7,7 +7,19 @@ const fs = require('fs-extra');
 // as named attributes.
 
 StyleDictionary.registerTransform({
-  name: 'attribute/font',
+  name: 'attribute/static-font',
+  type: 'attribute',
+  transformer: prop => ({
+    category: prop.path[0],
+    type: prop.path[1],
+    family: prop.path[2],
+    weight: prop.path[3],
+    style: prop.path[4]
+  })
+});
+
+StyleDictionary.registerTransform({
+  name: 'attribute/variable-font',
   type: 'attribute',
   transformer: prop => ({
     category: prop.path[0],
@@ -20,13 +32,14 @@ StyleDictionary.registerTransform({
 
 // Register a custom format to generate @font-face rules.
 StyleDictionary.registerFormat({
-  name: 'font-face',
+  name: 'static-font-face',
   formatter: ({ dictionary: { allTokens }, options }) => {
     const fontPathPrefix = options.fontPathPrefix || '../';
     console.log('in font transform', allTokens)
     // https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/src
     const formatsMap = {
       'woff2': 'woff2',
+      'woff2-variations': 'woff2-variations',
       'woff': 'woff',
       'ttf': 'truetype',
       'otf': 'opentype',
@@ -62,6 +75,47 @@ StyleDictionary.registerFormat({
   }
 });
 
+// Register a custom format to generate @font-face rules.
+StyleDictionary.registerFormat({
+  name: 'variable-font-face',
+  formatter: ({ dictionary: { allTokens }, options }) => {
+    const fontPathPrefix = options.fontPathPrefix || '../';
+    console.log('in font transform', allTokens)
+    // https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/src
+    const formatsMap = {
+      'woff2-variations': 'woff2-variations',
+    };
+
+    return allTokens.reduce((fontList, prop) => {
+      const {
+        attributes: { family, style, weight },
+        formats,
+        value: path,
+        weightRange,
+        fontStretch
+      } = prop;
+      if (weight === "variable") {
+        const urls = formats
+        .map(extension => `url("${fontPathPrefix}${path}.woff2") format("${formatsMap[extension]}")`);
+
+        const fontCss = [
+          '@font-face {',
+          `\n\tfont-family: "${family}";`,
+          `\n\tfont-style: ${style};`,
+          `\n\tfont-weight: ${weightRange};`,
+          `\n\tfont-stretch: ${fontStretch};`,
+          `\n\tsrc: ${urls.join(',\n\t\t\t ')};`,
+          '\n\tfont-display: fallback;',
+          '\n}\n'
+        ].join('');
+
+        fontList.push(fontCss);
+      }
+      return fontList;
+    }, []).join('\n');
+  }
+});
+
 StyleDictionary.registerAction({
   name: 'copyFonts',
   do: function(dictionary, config) {
@@ -77,14 +131,14 @@ source: [
     'src/semantic/font.tokens.json5',
   ],
   platforms: {
-    cssFonts: {
-      transforms: ['attribute/font'],
+    staticFonts: {
+      transforms: ['attribute/static-font'],
       prefix: PREFIX,
       buildPath: OUTPUT_PATH + 'css/',
       files: [
         {
-          destination: OUTPUT_BASE_FILENAME + '.fonts.css',
-          format: 'font-face',
+          destination: OUTPUT_BASE_FILENAME + '.static-fonts.css',
+          format: 'static-font-face',
           filter: {
             attributes: {
               category: 'asset',
@@ -94,6 +148,24 @@ source: [
         }
       ],
       actions: ['copyFonts']      
-    }
+    },
+    variableFonts: {
+      transforms: ['attribute/variable-font'],
+      prefix: PREFIX,
+      buildPath: OUTPUT_PATH + 'css/',
+      files: [
+        {
+          destination: OUTPUT_BASE_FILENAME + '.variable-fonts.css',
+          format: 'variable-font-face',
+          filter: {
+            attributes: {
+              category: 'asset',
+              type: 'font'
+            }
+          },
+        }
+      ],
+      actions: ['copyFonts']      
+    }    
   }
 }
