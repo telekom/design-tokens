@@ -2115,6 +2115,7 @@
         },
       },
       orange: {
+        comment: "Some shades from this color are used as functional warning colors. When using orange for other purposes make sure the user does not confuse warning states and other elements.",
         "0": {
           value: "{core.color.orange.0}",
           type: "color",
@@ -2241,6 +2242,7 @@
         },
       },
       red: {
+        comment: "Some shades from this color are used as functional danger colors. When using red for other purposes make sure the user does not confuse danger/error states and other elements.",
         "0": {
           value: "{core.color.red.0}",
           type: "color",
@@ -2367,6 +2369,7 @@
         },
       },
       green: {
+        comment: "Some shades from this color are used as functional success colors. When using green for other purposes make sure the user does not confuse success states and other elements.",
         "0": {
           value: "{core.color.green.0}",
           type: "color",
@@ -2493,6 +2496,7 @@
         },
       },
       blue: {
+        comment: "Some shades from this color are used as functional informational colors. When using blue for other purposes make sure the user does not confuse informational states or interative elements and other elements.",
         "0": {
           value: "{core.color.blue.0}",
           type: "color",
