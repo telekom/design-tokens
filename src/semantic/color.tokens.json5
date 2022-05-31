@@ -334,8 +334,8 @@
           },
         },
       },
-      "on-additional": {
-        "green-subtle": {
+      "on-subtle": {
+        "success": {
           value: {
             light: "{core.color.green.900}",
             dark: "{core.color.green.300}",
@@ -349,7 +349,7 @@
             },
           },
         },
-        "blue-subtle": {
+        "informational": {
           value: {
             light: "{core.color.blue.500}",
             dark: "{core.color.blue.200}",
@@ -363,7 +363,7 @@
             },
           },
         },
-        "red-subtle": {
+        "danger": {
           value: {
             light: "{core.color.red.700}",
             dark: "{core.color.red.200}",
@@ -377,7 +377,7 @@
             },
           },
         },
-        "orange-subtle": {
+        "warning": {
           value: {
             light: "{core.color.orange.900}",
             dark: "{core.color.orange.300}",
