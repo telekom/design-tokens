@@ -1,0 +1,7 @@
+{
+  "type": "prerelease",
+  "comment": "typo fix & change order of colors to have nice color gradient effect",
+  "packageName": "@telekom/design-tokens",
+  "email": "oppermann.lukas@gmail.com",
+  "dependentChangeType": "patch"
+}
