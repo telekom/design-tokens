@@ -539,7 +539,7 @@
       },
       blue: {
         "0": {
-          value: "##d9e2ff",
+          value: "#d9e2ff",
           type: "color",
         },
         "100": {
