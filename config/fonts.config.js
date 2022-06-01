@@ -3,11 +3,8 @@ const { PREFIX, OUTPUT_PATH, OUTPUT_BASE_FILENAME } = process.env;
 const WHITELABEL = process.env.WHITELABEL !== 'false';
 const fs = require('fs-extra');
 
-// Register an "attribute" transform to codify the font's details
-// as named attributes.
-
 StyleDictionary.registerTransform({
-  name: 'attribute/static-font',
+  name: 'attribute/font',
   type: 'attribute',
   transformer: prop => ({
     category: prop.path[0],
@@ -18,24 +15,10 @@ StyleDictionary.registerTransform({
   })
 });
 
-StyleDictionary.registerTransform({
-  name: 'attribute/variable-font',
-  type: 'attribute',
-  transformer: prop => ({
-    category: prop.path[0],
-    type: prop.path[1],
-    family: prop.path[2],
-    weight: prop.path[3],
-    style: prop.path[4]
-  })
-});
-
-// Register a custom format to generate @font-face rules.
 StyleDictionary.registerFormat({
   name: 'static-font-face',
   formatter: ({ dictionary: { allTokens }, options }) => {
     const fontPathPrefix = options.fontPathPrefix || '../';
-    console.log('in font transform', allTokens)
     // https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/src
     const formatsMap = {
       'woff2': 'woff2',
@@ -46,8 +29,6 @@ StyleDictionary.registerFormat({
       'svg': 'svg',
       'eot': 'embedded-opentype'
     };
-    console.log('IN FONTS CONFIG',PREFIX, OUTPUT_BASE_FILENAME, OUTPUT_PATH)
-
     return allTokens.reduce((fontList, prop) => {
       const {
         attributes: { family, weight, style },
@@ -75,12 +56,10 @@ StyleDictionary.registerFormat({
   }
 });
 
-// Register a custom format to generate @font-face rules.
 StyleDictionary.registerFormat({
   name: 'variable-font-face',
   formatter: ({ dictionary: { allTokens }, options }) => {
     const fontPathPrefix = options.fontPathPrefix || '../';
-    console.log('in font transform', allTokens)
     // https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/src
     const formatsMap = {
       'woff2-variations': 'woff2-variations',
@@ -118,21 +97,19 @@ StyleDictionary.registerFormat({
 
 StyleDictionary.registerAction({
   name: 'copyFonts',
-  do: function(dictionary, config) {
-    console.log('Copying assets directory', config.buildPath);
+  do: function() {
     fs.copySync('./src/telekom/fonts', OUTPUT_PATH + 'fonts');
   }
 });
 
 module.exports = {
-//   source: ['tokens.json'],
 source: [
     ...(WHITELABEL === false ? ['src/telekom/core/font.tokens.json5'] : []),
     'src/semantic/font.tokens.json5',
   ],
   platforms: {
     staticFonts: {
-      transforms: ['attribute/static-font'],
+      transforms: ['attribute/font'],
       prefix: PREFIX,
       buildPath: OUTPUT_PATH + 'css/',
       files: [
@@ -150,7 +127,7 @@ source: [
       actions: ['copyFonts']      
     },
     variableFonts: {
-      transforms: ['attribute/variable-font'],
+      transforms: ['attribute/font'],
       prefix: PREFIX,
       buildPath: OUTPUT_PATH + 'css/',
       files: [
