@@ -105,5 +105,10 @@ module.exports = {
       ],
       actions: ['bundle_css'],
     },
+    "assets/copy": {
+      transformGroup: "assets",
+      buildPath: "dist/",
+      actions : ["copy_assets"]
+    }
   },
 };

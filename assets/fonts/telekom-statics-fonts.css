@@ -1,0 +1,99 @@
+@font-face {
+	font-family: "TeleNeoWeb";
+	font-style: normal;
+	font-weight: 200;
+	src: url("./telekom/fonts/TeleNeoWeb-Thin.eot") format("embedded-opentype"),
+			 url("./telekom/fonts/TeleNeoWeb-Thin.woff") format("woff"),
+			 url("./telekom/fonts/TeleNeoWeb-Thin.woff2") format("woff2");
+	font-display: fallback;
+}
+
+@font-face {
+	font-family: "TeleNeoWeb";
+	font-style: italic;
+	font-weight: 200;
+	src: url("./telekom/fonts/TeleNeoWeb-ThinItalic.eot") format("embedded-opentype"),
+			 url("./telekom/fonts/TeleNeoWeb-ThinItalic.woff") format("woff"),
+			 url("./telekom/fonts/TeleNeoWeb-ThinItalic.woff2") format("woff2");
+	font-display: fallback;
+}
+
+@font-face {
+	font-family: "TeleNeoWeb";
+	font-style: normal;
+	font-weight: 400;
+	src: url("./telekom/fonts/TeleNeoWeb-Regular.eot") format("embedded-opentype"),
+			 url("./telekom/fonts/TeleNeoWeb-Regular.woff") format("woff"),
+			 url("./telekom/fonts/TeleNeoWeb-Regular.woff2") format("woff2");
+	font-display: fallback;
+}
+
+@font-face {
+	font-family: "TeleNeoWeb";
+	font-style: italic;
+	font-weight: 400;
+	src: url("./telekom/fonts/TeleNeoWeb-RegularItalic.eot") format("embedded-opentype"),
+			 url("./telekom/fonts/TeleNeoWeb-RegularItalic.woff") format("woff"),
+			 url("./telekom/fonts/TeleNeoWeb-RegularItalic.woff2") format("woff2");
+	font-display: fallback;
+}
+
+@font-face {
+	font-family: "TeleNeoWeb";
+	font-style: normal;
+	font-weight: 500;
+	src: url("./telekom/fonts/TeleNeoWeb-Medium.eot") format("embedded-opentype"),
+			 url("./telekom/fonts/TeleNeoWeb-Medium.woff") format("woff"),
+			 url("./telekom/fonts/TeleNeoWeb-Medium.woff2") format("woff2");
+	font-display: fallback;
+}
+
+@font-face {
+	font-family: "TeleNeoWeb";
+	font-style: italic;
+	font-weight: 500;
+	src: url("./telekom/fonts/TeleNeoWeb-MediumItalic.eot") format("embedded-opentype"),
+			 url("./telekom/fonts/TeleNeoWeb-MediumItalic.woff") format("woff"),
+			 url("./telekom/fonts/TeleNeoWeb-MediumItalic.woff2") format("woff2");
+	font-display: fallback;
+}
+
+@font-face {
+	font-family: "TeleNeoWeb";
+	font-style: normal;
+	font-weight: 700;
+	src: url("./telekom/fonts/TeleNeoWeb-Bold.eot") format("embedded-opentype"),
+			 url("./telekom/fonts/TeleNeoWeb-Bold.woff") format("woff"),
+			 url("./telekom/fonts/TeleNeoWeb-Bold.woff2") format("woff2");
+	font-display: fallback;
+}
+
+@font-face {
+	font-family: "TeleNeoWeb";
+	font-style: italic;
+	font-weight: 700;
+	src: url("./telekom/fonts/TeleNeoWeb-BoldItalic.eot") format("embedded-opentype"),
+			 url("./telekom/fonts/TeleNeoWeb-BoldItalic.woff") format("woff"),
+			 url("./telekom/fonts/TeleNeoWeb-BoldItalic.woff2") format("woff2");
+	font-display: fallback;
+}
+
+@font-face {
+	font-family: "TeleNeoWeb";
+	font-style: normal;
+	font-weight: 800;
+	src: url("./telekom/fonts/TeleNeoWeb-ExtraBold.eot") format("embedded-opentype"),
+			 url("./telekom/fonts/TeleNeoWeb-ExtraBold.woff") format("woff"),
+			 url("./telekom/fonts/TeleNeoWeb-ExtraBold.woff2") format("woff2");
+	font-display: fallback;
+}
+
+@font-face {
+	font-family: "TeleNeoWeb";
+	font-style: italic;
+	font-weight: 800;
+	src: url("./telekom/fonts/TeleNeoWeb-ExtraBoldItalic.eot") format("embedded-opentype"),
+			 url("./telekom/fonts/TeleNeoWeb-ExtraBoldItalic.woff") format("woff"),
+			 url("./telekom/fonts/TeleNeoWeb-ExtraBoldItalic.woff2") format("woff2");
+	font-display: fallback;
+}
