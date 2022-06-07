@@ -1,7 +1,0 @@
-{
-  "type": "prerelease",
-  "comment": "added yellow and cyan + updated violet, teal, brown and olive",
-  "packageName": "@telekom/design-tokens",
-  "email": "oppermann.lukas@gmail.com",
-  "dependentChangeType": "patch"
-}

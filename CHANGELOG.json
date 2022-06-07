@@ -2,6 +2,75 @@
   "name": "@telekom/design-tokens",
   "entries": [
     {
+      "date": "Tue, 07 Jun 2022 14:58:54 GMT",
+      "tag": "@telekom/design-tokens_v1.0.0-alpha.24",
+      "version": "1.0.0-alpha.24",
+      "comments": {
+        "prerelease": [
+          {
+            "author": "oppermann.lukas@gmail.com",
+            "package": "@telekom/design-tokens",
+            "commit": "06b701c3ea2622b3e3fb18e5c87c8c8c041aec90",
+            "comment": "typo fix & change order of colors to have nice color gradient effect"
+          },
+          {
+            "author": "oppermann.lukas@gmail.com",
+            "package": "@telekom/design-tokens",
+            "commit": "09117444afb9f3715169659d0a9e9c852189be9a",
+            "comment": "removing interaction color"
+          },
+          {
+            "author": "oppermann.lukas@gmail.com",
+            "package": "@telekom/design-tokens",
+            "commit": "48feb5ae5cc3d5c20384149bd2405a9dd367b963",
+            "comment": "remove colors that are not allowed by brand+"
+          },
+          {
+            "author": "oppermann.lukas@gmail.com",
+            "package": "@telekom/design-tokens",
+            "commit": "5d6e0e7244ef160ab7e465d21741c1a2c66ca4ae",
+            "comment": "removed the resting and flat shadows"
+          },
+          {
+            "author": "oppermann.lukas@gmail.com",
+            "package": "@telekom/design-tokens",
+            "commit": "c4f48ffaa72f4669ecaf4dc351ecf1772a68dc79",
+            "comment": "added new green, red and orange + functional tokens"
+          },
+          {
+            "author": "oppermann.lukas@gmail.com",
+            "package": "@telekom/design-tokens",
+            "commit": "c46477e5e7d601c772ba6b602110a982c2ea9c13",
+            "comment": "added yellow and cyan + updated violet, teal, brown and olive"
+          },
+          {
+            "author": "oppermann.lukas@gmail.com",
+            "package": "@telekom/design-tokens",
+            "commit": "c73193160218945e22557ec5d7e8ee7606f0c0b9",
+            "comment": "updating dark/solid/disabled from 1600->1700 to be different between light & disabled"
+          },
+          {
+            "author": "oppermann.lukas@gmail.com",
+            "package": "@telekom/design-tokens",
+            "commit": "6151a2cb22428a65c0e5fe3bf977deaa16b72c98",
+            "comment": "added a new uuid command that copies to clipboard"
+          },
+          {
+            "author": "oppermann.lukas@gmail.com",
+            "package": "@telekom/design-tokens",
+            "commit": "e2d8353a675ef1f7956946d147975f7bb571724f",
+            "comment": "fix: rename wrongly duplicated named shadow from flat -> raised for app bottom shadow"
+          },
+          {
+            "author": "oppermann.lukas@gmail.com",
+            "package": "@telekom/design-tokens",
+            "commit": "92760ac8168349b04a21152c820d36edf9254296",
+            "comment": "remove old_blue, pink and purple, as they are not allowed by brand"
+          }
+        ]
+      }
+    },
+    {
       "date": "Tue, 17 May 2022 16:15:54 GMT",
       "tag": "@telekom/design-tokens_v1.0.0-alpha.23",
       "version": "1.0.0-alpha.23",

@@ -1,7 +1,0 @@
-{
-  "type": "prerelease",
-  "comment": "updating dark/solid/disabled from 1600->1700 to be different between light & disabled",
-  "packageName": "@telekom/design-tokens",
-  "email": "oppermann.lukas@gmail.com",
-  "dependentChangeType": "patch"
-}

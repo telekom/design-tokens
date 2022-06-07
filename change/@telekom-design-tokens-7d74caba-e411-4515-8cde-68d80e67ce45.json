@@ -1,7 +1,0 @@
-{
-  "type": "prerelease",
-  "comment": "added new green, red and orange + functional tokens",
-  "packageName": "@telekom/design-tokens",
-  "email": "oppermann.lukas@gmail.com",
-  "dependentChangeType": "patch"
-}
