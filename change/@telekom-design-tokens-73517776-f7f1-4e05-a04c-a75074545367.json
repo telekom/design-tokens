@@ -1,7 +1,0 @@
-{
-  "type": "prerelease",
-  "comment": "removed the resting and flat shadows",
-  "packageName": "@telekom/design-tokens",
-  "email": "oppermann.lukas@gmail.com",
-  "dependentChangeType": "patch"
-}
