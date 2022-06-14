@@ -1312,7 +1312,7 @@
               docs: {
                 contrast: [
                   "color.text-&-icon.standard",
-                  "color.text-&-icon.functional.informational",
+                  "color.text-&-icon.on-subtle.informational",
                 ],
               },
             },
@@ -1385,7 +1385,7 @@
               docs: {
                 contrast: [
                   "color.text-&-icon.standard",
-                  "color.text-&-icon.functional.success",
+                  "color.text-&-icon.on-subtle.success",
                 ],
               },
             },
@@ -1458,7 +1458,7 @@
               docs: {
                 contrast: [
                   "color.text-&-icon.standard",
-                  "color.text-&-icon.functional.danger",
+                  "color.text-&-icon.on-subtle.danger",
                 ],
               },
             },
@@ -1531,7 +1531,7 @@
               docs: {
                 contrast: [
                   "color.text-&-icon.standard",
-                  "color.text-&-icon.functional.warning",
+                  "color.text-&-icon.on-subtle.warning",
                 ],
               },
             },
