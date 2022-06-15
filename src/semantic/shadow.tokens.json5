@@ -2,83 +2,6 @@
   // TODO:
   // this needs to be adjusted for dark & light mode
   shadow: {
-    flat: {
-      standard: {
-        comment: "Exclusivly for flat design elements",
-        value: "{core.shadow.level-0.value}",
-        type: "shadow",
-        extensions: {
-          telekom: {
-            sketch: {
-              uuid: "AE3B9B43-0FCE-4920-AC51-E967DA59252B",
-            },
-          },
-        },
-      },
-      hover: {
-        comment: "Exclusivly for flat design elements",
-        value: "{core.shadow.level-1.value}",
-        type: "shadow",
-        extensions: {
-          telekom: {
-            sketch: {
-              uuid: "BB561DF9-041F-421F-BE83-725077D90BD2",
-            },
-          },
-        },
-      },
-      pressed: {
-        comment: "Exclusivly for flat design elements",
-        value: "{core.shadow.level-0.value}",
-        type: "shadow",
-        extensions: {
-          telekom: {
-            sketch: {
-              uuid: "0D8471AD-EC44-4462-8D3A-BDA4F2BF4529",
-            },
-          },
-        },
-      },
-    },
-    // resting state
-    resting: {
-      standard: {
-        comment: "Default for interactable elements like buttons, etc.",
-        value: "{core.shadow.level-1.value}",
-        type: "shadow",
-        extensions: {
-          telekom: {
-            sketch: {
-              uuid: "BB5F33A3-CACF-4104-802B-C194280E1775",
-            },
-          },
-        },
-      },
-      hover: {
-        comment: "Default for interactable elements like buttons, etc.",
-        value: "{core.shadow.level-3.value}",
-        type: "shadow",
-        extensions: {
-          telekom: {
-            sketch: {
-              uuid: "5632523D-6F06-449B-91B0-1B4D6943BDF1",
-            },
-          },
-        },
-      },
-      pressed: {
-        comment: "Default for interactable elements like buttons, etc.",
-        value: "{core.shadow.level-0.value}",
-        type: "shadow",
-        extensions: {
-          telekom: {
-            sketch: {
-              uuid: "9CD207ED-D881-4A77-9545-467B90822BD4",
-            },
-          },
-        },
-      },
-    },
     // raised state
     raised: {
       standard: {
@@ -212,7 +135,7 @@
       },
       // bottom bar, app bar bottom, bottom nav
       bottom: {
-        flat: {
+        raised: {
           comment: "Use for app navigation and app bars on the bottom",
           value: "{core.shadow.special.app-bar.bottom.subtle}",
           type: "shadow",

@@ -1,6 +1,6 @@
 {
   "name": "@telekom/design-tokens",
-  "version": "1.0.0-alpha.22",
+  "version": "1.0.0-alpha.24",
   "description": "The source of truth for Telekom's corporate brand and design",
   "files": [
     "dist",
@@ -17,7 +17,8 @@
     "publish:beachball": "beachball publish",
     "prepublishOnly": "npm run build",
     "format": "prettier --write \"src/**/*{json,json5}\" \"config/**/*.js\"",
-    "sketch-uuid": "uuid | awk '{print toupper($0)}'"
+    "sketch-uuid": "uuid | awk '{print toupper($0)}'",
+    "uuid-copy": "uuid | tr -d '\\n' | pbcopy"
   },
   "repository": {
     "type": "git",
