@@ -70,6 +70,7 @@ module.exports = {
     // Telekom version
     require('@telekom/design-tokens/dist/telekom/tailwindcss-preset/design-tokens.config.js'),
   ],
+  // ...
 };
 ```
 
