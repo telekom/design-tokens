@@ -736,7 +736,7 @@
             },
           },
         },
-      },
+      }
     },
     ui: {
       comment: "Used to create UI elements like dividers, checkboxes, buttons, etc.",
@@ -1542,6 +1542,7 @@
     additional: {
       violet: {
         "0": {
+          comment: "tags: additional, violet",
           value: "{core.color.violet.0}",
           type: "color",
           extensions: {
@@ -1553,6 +1554,7 @@
           },
         },
         "100": {
+          comment: "tags: additional, violet",
           value: "{core.color.violet.100}",
           type: "color",
           extensions: {
@@ -1564,6 +1566,7 @@
           },
         },
         "200": {
+          comment: "tags: additional, violet",
           value: "{core.color.violet.200}",
           type: "color",
           extensions: {
@@ -1575,6 +1578,7 @@
           },
         },
         "300": {
+          comment: "tags: additional, violet",
           value: "{core.color.violet.300}",
           type: "color",
           extensions: {
@@ -1586,6 +1590,7 @@
           },
         },
         "400": {
+          comment: "tags: additional, violet",
           value: "{core.color.violet.400}",
           type: "color",
           extensions: {
@@ -1597,6 +1602,7 @@
           },
         },
         "500": {
+          comment: "tags: additional, violet",
           value: "{core.color.violet.500}",
           type: "color",
           extensions: {
@@ -1608,6 +1614,7 @@
           },
         },
         "600": {
+          comment: "tags: additional, violet",
           value: "{core.color.violet.600}",
           type: "color",
           extensions: {
@@ -1619,6 +1626,7 @@
           },
         },
         "700": {
+          comment: "tags: additional, violet",
           value: "{core.color.violet.700}",
           type: "color",
           extensions: {
@@ -1630,6 +1638,7 @@
           },
         },
         "800": {
+          comment: "tags: additional, violet",
           value: "{core.color.violet.800}",
           type: "color",
           extensions: {
@@ -1641,6 +1650,7 @@
           },
         },
         "900": {
+          comment: "tags: additional, violet",
           value: "{core.color.violet.900}",
           type: "color",
           extensions: {
@@ -1652,6 +1662,7 @@
           },
         },
         subtle: {
+          comment: "tags: violet, additional",
           value: {
             light: "{core.color.violet.tint}",
             dark: "{core.color.violet.shade}",
@@ -1669,6 +1680,7 @@
       blue: {
         comment: "Some shades from this color are used as functional informational colors. When using blue for other purposes make sure the user does not confuse informational states or interative elements and other elements.",
         "0": {
+          comment: "tags: additional, blue",
           value: "{core.color.blue.0}",
           type: "color",
           extensions: {
@@ -1680,6 +1692,7 @@
           },
         },
         "100": {
+          comment: "tags: additional, blue",
           value: "{core.color.blue.100}",
           type: "color",
           extensions: {
@@ -1691,6 +1704,7 @@
           },
         },
         "200": {
+          comment: "tags: additional, blue",
           value: "{core.color.blue.200}",
           type: "color",
           extensions: {
@@ -1702,6 +1716,7 @@
           },
         },
         "300": {
+          comment: "tags: additional, blue",
           value: "{core.color.blue.300}",
           type: "color",
           extensions: {
@@ -1713,6 +1728,7 @@
           },
         },
         "400": {
+          comment: "tags: additional, blue",
           value: "{core.color.blue.400}",
           type: "color",
           extensions: {
@@ -1724,6 +1740,7 @@
           },
         },
         "500": {
+          comment: "tags: additional, blue",
           value: "{core.color.blue.500}",
           type: "color",
           extensions: {
@@ -1735,6 +1752,7 @@
           },
         },
         "600": {
+          comment: "tags: additional, blue",
           value: "{core.color.blue.600}",
           type: "color",
           extensions: {
@@ -1746,6 +1764,7 @@
           },
         },
         "700": {
+          comment: "tags: additional, blue",
           value: "{core.color.blue.700}",
           type: "color",
           extensions: {
@@ -1757,6 +1776,7 @@
           },
         },
         "800": {
+          comment: "tags: additional, blue",
           value: "{core.color.blue.800}",
           type: "color",
           extensions: {
@@ -1768,6 +1788,7 @@
           },
         },
         "900": {
+          comment: "tags: additional, blue",
           value: "{core.color.blue.900}",
           type: "color",
           extensions: {
@@ -1779,6 +1800,7 @@
           },
         },
         subtle: {
+          comment: "tags: additional, subtle, blue",
           value: {
             light: "{core.color.blue.tint}",
             dark: "{core.color.blue.shade}",
@@ -1795,6 +1817,7 @@
       },
       cyan: {
         "0": {
+          comment: "tags: additional, cyan",
           value: "{core.color.cyan.0}",
           type: "color",
           extensions: {
@@ -1806,6 +1829,7 @@
           },
         },
         "100": {
+          comment: "tags: additional, cyan",
           value: "{core.color.cyan.100}",
           type: "color",
           extensions: {
@@ -1817,6 +1841,7 @@
           },
         },
         "200": {
+          comment: "tags: additional, cyan",
           value: "{core.color.cyan.200}",
           type: "color",
           extensions: {
@@ -1828,6 +1853,7 @@
           },
         },
         "300": {
+          comment: "tags: additional, cyan",
           value: "{core.color.cyan.300}",
           type: "color",
           extensions: {
@@ -1839,6 +1865,7 @@
           },
         },
         "400": {
+          comment: "tags: additional, cyan",
           value: "{core.color.cyan.400}",
           type: "color",
           extensions: {
@@ -1850,6 +1877,7 @@
           },
         },
         "500": {
+          comment: "tags: additional, cyan",
           value: "{core.color.cyan.500}",
           type: "color",
           extensions: {
@@ -1861,6 +1889,7 @@
           },
         },
         "600": {
+          comment: "tags: additional, cyan",
           value: "{core.color.cyan.600}",
           type: "color",
           extensions: {
@@ -1872,6 +1901,7 @@
           },
         },
         "700": {
+          comment: "tags: additional, cyan",
           value: "{core.color.cyan.700}",
           type: "color",
           extensions: {
@@ -1883,6 +1913,7 @@
           },
         },
         "800": {
+          comment: "tags: additional, cyan",
           value: "{core.color.cyan.800}",
           type: "color",
           extensions: {
@@ -1894,6 +1925,7 @@
           },
         },
         "900": {
+          comment: "tags: additional, cyan",
           value: "{core.color.cyan.900}",
           type: "color",
           extensions: {
@@ -1905,6 +1937,7 @@
           },
         },
         subtle: {
+          comment: "tags: additional, subtle, cyan",
           value: {
             light: "{core.color.cyan.tint}",
             dark: "{core.color.cyan.shade}",
@@ -1921,6 +1954,7 @@
       },
       teal: {
         "0": {
+          comment: "tags: additional, teal",
           value: "{core.color.teal.0}",
           type: "color",
           extensions: {
@@ -1932,6 +1966,7 @@
           },
         },
         "100": {
+          comment: "tags: additional, teal",
           value: "{core.color.teal.100}",
           type: "color",
           extensions: {
@@ -1943,6 +1978,7 @@
           },
         },
         "200": {
+          comment: "tags: additional, teal",
           value: "{core.color.teal.200}",
           type: "color",
           extensions: {
@@ -1954,6 +1990,7 @@
           },
         },
         "300": {
+          comment: "tags: additional, teal",
           value: "{core.color.teal.300}",
           type: "color",
           extensions: {
@@ -1965,6 +2002,7 @@
           },
         },
         "400": {
+          comment: "tags: additional, teal",
           value: "{core.color.teal.400}",
           type: "color",
           extensions: {
@@ -1976,6 +2014,7 @@
           },
         },
         "500": {
+          comment: "tags: additional, teal",
           value: "{core.color.teal.500}",
           type: "color",
           extensions: {
@@ -1987,6 +2026,7 @@
           },
         },
         "600": {
+          comment: "tags: additional, teal",
           value: "{core.color.teal.600}",
           type: "color",
           extensions: {
@@ -1998,6 +2038,7 @@
           },
         },
         "700": {
+          comment: "tags: additional, teal",
           value: "{core.color.teal.700}",
           type: "color",
           extensions: {
@@ -2009,6 +2050,7 @@
           },
         },
         "800": {
+          comment: "tags: additional, teal",
           value: "{core.color.teal.800}",
           type: "color",
           extensions: {
@@ -2020,6 +2062,7 @@
           },
         },
         "900": {
+          comment: "tags: additional, teal",
           value: "{core.color.teal.900}",
           type: "color",
           extensions: {
@@ -2031,6 +2074,7 @@
           },
         },
         subtle: {
+          comment: "tags: additional, subtle, teal",
           value: {
             light: "{core.color.teal.tint}",
             dark: "{core.color.teal.shade}",
@@ -2047,6 +2091,7 @@
       },
       green: {
         "0": {
+          comment: "tags: additional, green",
           value: "{core.color.green.0}",
           type: "color",
           extensions: {
@@ -2058,6 +2103,7 @@
           },
         },
         "100": {
+          comment: "tags: additional, green",
           value: "{core.color.green.100}",
           type: "color",
           extensions: {
@@ -2069,6 +2115,7 @@
           },
         },
         "200": {
+          comment: "tags: additional, green",
           value: "{core.color.green.200}",
           type: "color",
           extensions: {
@@ -2080,6 +2127,7 @@
           },
         },
         "300": {
+          comment: "tags: additional, green",
           value: "{core.color.green.300}",
           type: "color",
           extensions: {
@@ -2091,6 +2139,7 @@
           },
         },
         "400": {
+          comment: "tags: additional, green",
           value: "{core.color.green.400}",
           type: "color",
           extensions: {
@@ -2102,6 +2151,7 @@
           },
         },
         "500": {
+          comment: "tags: additional, green",
           value: "{core.color.green.500}",
           type: "color",
           extensions: {
@@ -2113,6 +2163,7 @@
           },
         },
         "600": {
+          comment: "tags: additional, green",
           value: "{core.color.green.600}",
           type: "color",
           extensions: {
@@ -2124,6 +2175,7 @@
           },
         },
         "700": {
+          comment: "tags: additional, green",
           value: "{core.color.green.700}",
           type: "color",
           extensions: {
@@ -2135,6 +2187,7 @@
           },
         },
         "800": {
+          comment: "tags: additional, green",
           value: "{core.color.green.800}",
           type: "color",
           extensions: {
@@ -2146,6 +2199,7 @@
           },
         },
         "900": {
+          comment: "tags: additional, green",
           value: "{core.color.green.900}",
           type: "color",
           extensions: {
@@ -2157,6 +2211,7 @@
           },
         },
         subtle: {
+          comment: "tags: green, subtle, additional",
           value: {
             light: "{core.color.green.tint}",
             dark: "{core.color.green.shade}",
@@ -2173,6 +2228,7 @@
       },
       olive: {
         "0": {
+          comment: "tags: additional, olive",
           value: "{core.color.olive.0}",
           type: "color",
           extensions: {
@@ -2184,6 +2240,7 @@
           },
         },
         "100": {
+          comment: "tags: additional, olive",
           value: "{core.color.olive.100}",
           type: "color",
           extensions: {
@@ -2195,6 +2252,7 @@
           },
         },
         "200": {
+          comment: "tags: additional, olive",
           value: "{core.color.olive.200}",
           type: "color",
           extensions: {
@@ -2206,6 +2264,7 @@
           },
         },
         "300": {
+          comment: "tags: additional, olive",
           value: "{core.color.olive.300}",
           type: "color",
           extensions: {
@@ -2217,6 +2276,7 @@
           },
         },
         "400": {
+          comment: "tags: additional, olive",
           value: "{core.color.olive.400}",
           type: "color",
           extensions: {
@@ -2228,6 +2288,7 @@
           },
         },
         "500": {
+          comment: "tags: additional, olive",
           value: "{core.color.olive.500}",
           type: "color",
           extensions: {
@@ -2239,6 +2300,7 @@
           },
         },
         "600": {
+          comment: "tags: additional, olive",
           value: "{core.color.olive.600}",
           type: "color",
           extensions: {
@@ -2250,6 +2312,7 @@
           },
         },
         "700": {
+          comment: "tags: additional, olive",
           value: "{core.color.olive.700}",
           type: "color",
           extensions: {
@@ -2261,6 +2324,7 @@
           },
         },
         "800": {
+          comment: "tags: additional, olive",
           value: "{core.color.olive.800}",
           type: "color",
           extensions: {
@@ -2272,6 +2336,7 @@
           },
         },
         "900": {
+          comment: "tags: additional, olive",
           value: "{core.color.olive.900}",
           type: "color",
           extensions: {
@@ -2283,6 +2348,7 @@
           },
         },
         subtle: {
+          comment: "tags: additional, subtle, olive",
           value: {
             light: "{core.color.olive.tint}",
             dark: "{core.color.olive.shade}",
@@ -2299,6 +2365,7 @@
       },
       brown: {
         "0": {
+          comment: "tags: additional, brown",
           value: "{core.color.brown.0}",
           type: "color",
           extensions: {
@@ -2310,6 +2377,7 @@
           },
         },
         "100": {
+          comment: "tags: additional, brown",
           value: "{core.color.brown.100}",
           type: "color",
           extensions: {
@@ -2321,6 +2389,7 @@
           },
         },
         "200": {
+          comment: "tags: additional, brown",
           value: "{core.color.brown.200}",
           type: "color",
           extensions: {
@@ -2332,6 +2401,7 @@
           },
         },
         "300": {
+          comment: "tags: additional, brown",
           value: "{core.color.brown.300}",
           type: "color",
           extensions: {
@@ -2343,6 +2413,7 @@
           },
         },
         "400": {
+          comment: "tags: additional, brown",
           value: "{core.color.brown.400}",
           type: "color",
           extensions: {
@@ -2354,6 +2425,7 @@
           },
         },
         "500": {
+          comment: "tags: additional, brown",
           value: "{core.color.brown.500}",
           type: "color",
           extensions: {
@@ -2365,6 +2437,7 @@
           },
         },
         "600": {
+          comment: "tags: additional, brown",
           value: "{core.color.brown.600}",
           type: "color",
           extensions: {
@@ -2376,6 +2449,7 @@
           },
         },
         "700": {
+          comment: "tags: additional, brown",
           value: "{core.color.brown.700}",
           type: "color",
           extensions: {
@@ -2387,6 +2461,7 @@
           },
         },
         "800": {
+          comment: "tags: additional, brown",
           value: "{core.color.brown.800}",
           type: "color",
           extensions: {
@@ -2398,6 +2473,7 @@
           },
         },
         "900": {
+          comment: "tags: additional, brown",
           value: "{core.color.brown.900}",
           type: "color",
           extensions: {
@@ -2409,6 +2485,7 @@
           },
         },
         subtle: {
+          comment: "tags: additional, subtle, brown",
           value: {
             light: "{core.color.brown.tint}",
             dark: "{core.color.brown.shade}",
@@ -2425,6 +2502,7 @@
       },
       yellow: {
         "0": {
+          comment: "tags: additional, yellow",
           value: "{core.color.yellow.0}",
           type: "color",
           extensions: {
@@ -2436,6 +2514,7 @@
           },
         },
         "100": {
+          comment: "tags: additional, yellow",
           value: "{core.color.yellow.100}",
           type: "color",
           extensions: {
@@ -2447,6 +2526,7 @@
           },
         },
         "200": {
+          comment: "tags: additional, yellow",
           value: "{core.color.yellow.200}",
           type: "color",
           extensions: {
@@ -2458,6 +2538,7 @@
           },
         },
         "300": {
+          comment: "tags: additional, yellow",
           value: "{core.color.yellow.300}",
           type: "color",
           extensions: {
@@ -2469,6 +2550,7 @@
           },
         },
         "400": {
+          comment: "tags: additional, yellow",
           value: "{core.color.yellow.400}",
           type: "color",
           extensions: {
@@ -2480,6 +2562,7 @@
           },
         },
         "500": {
+          comment: "tags: additional, yellow",
           value: "{core.color.yellow.500}",
           type: "color",
           extensions: {
@@ -2491,6 +2574,7 @@
           },
         },
         "600": {
+          comment: "tags: additional, yellow",
           value: "{core.color.yellow.600}",
           type: "color",
           extensions: {
@@ -2502,6 +2586,7 @@
           },
         },
         "700": {
+          comment: "tags: additional, yellow",
           value: "{core.color.yellow.700}",
           type: "color",
           extensions: {
@@ -2513,6 +2598,7 @@
           },
         },
         "800": {
+          comment: "tags: additional, yellow",
           value: "{core.color.yellow.800}",
           type: "color",
           extensions: {
@@ -2524,6 +2610,7 @@
           },
         },
         "900": {
+          comment: "tags: additional, yellow",
           value: "{core.color.yellow.900}",
           type: "color",
           extensions: {
@@ -2535,6 +2622,7 @@
           },
         },
         subtle: {
+          comment: "tags: additional, subtle, yellow",
           value: {
             light: "{core.color.yellow.tint}",
             dark: "{core.color.yellow.shade}",
@@ -2552,6 +2640,7 @@
       orange: {
         comment: "Some shades from this color are used as functional warning colors. When using orange for other purposes make sure the user does not confuse warning states and other elements.",
         "0": {
+          comment: "tags: additional, orange",
           value: "{core.color.orange.0}",
           type: "color",
           extensions: {
@@ -2563,6 +2652,7 @@
           },
         },
         "100": {
+          comment: "tags: additional, orange",
           value: "{core.color.orange.100}",
           type: "color",
           extensions: {
@@ -2574,6 +2664,7 @@
           },
         },
         "200": {
+          comment: "tags: additional, orange",
           value: "{core.color.orange.200}",
           type: "color",
           extensions: {
@@ -2585,6 +2676,7 @@
           },
         },
         "300": {
+          comment: "tags: additional, orange",
           value: "{core.color.orange.300}",
           type: "color",
           extensions: {
@@ -2596,6 +2688,7 @@
           },
         },
         "400": {
+          comment: "tags: additional, orange",
           value: "{core.color.orange.400}",
           type: "color",
           extensions: {
@@ -2607,6 +2700,7 @@
           },
         },
         "500": {
+          comment: "tags: additional, orange",
           value: "{core.color.orange.500}",
           type: "color",
           extensions: {
@@ -2618,6 +2712,7 @@
           },
         },
         "600": {
+          comment: "tags: additional, orange",
           value: "{core.color.orange.600}",
           type: "color",
           extensions: {
@@ -2629,6 +2724,7 @@
           },
         },
         "700": {
+          comment: "tags: additional, orange",
           value: "{core.color.orange.700}",
           type: "color",
           extensions: {
@@ -2640,6 +2736,7 @@
           },
         },
         "800": {
+          comment: "tags: additional, orange",
           value: "{core.color.orange.800}",
           type: "color",
           extensions: {
@@ -2651,6 +2748,7 @@
           },
         },
         "900": {
+          comment: "tags: additional, orange",
           value: "{core.color.orange.900}",
           type: "color",
           extensions: {
@@ -2662,6 +2760,7 @@
           },
         },
         subtle: {
+          comment: "tags: additional, subtle, orange",
           value: {
             light: "{core.color.orange.tint}",
             dark: "{core.color.orange.shade}",
@@ -2679,6 +2778,7 @@
       red: {
         comment: "Some shades from this color are used as functional danger colors. When using red for other purposes make sure the user does not confuse danger/error states and other elements.",
         "0": {
+          comment: "tags: additional, red",
           value: "{core.color.red.0}",
           type: "color",
           extensions: {
@@ -2690,6 +2790,7 @@
           },
         },
         "100": {
+          comment: "tags: additional, red",
           value: "{core.color.red.100}",
           type: "color",
           extensions: {
@@ -2701,6 +2802,7 @@
           },
         },
         "200": {
+          comment: "tags: additional, red",
           value: "{core.color.red.200}",
           type: "color",
           extensions: {
@@ -2712,6 +2814,7 @@
           },
         },
         "300": {
+          comment: "tags: additional, red",
           value: "{core.color.red.300}",
           type: "color",
           extensions: {
@@ -2723,6 +2826,7 @@
           },
         },
         "400": {
+          comment: "tags: additional, red",
           value: "{core.color.red.400}",
           type: "color",
           extensions: {
@@ -2734,6 +2838,7 @@
           },
         },
         "500": {
+          comment: "tags: additional, red",
           value: "{core.color.red.500}",
           type: "color",
           extensions: {
@@ -2745,6 +2850,7 @@
           },
         },
         "600": {
+          comment: "tags: additional, red",
           value: "{core.color.red.600}",
           type: "color",
           extensions: {
@@ -2756,6 +2862,7 @@
           },
         },
         "700": {
+          comment: "tags: additional, red",
           value: "{core.color.red.700}",
           type: "color",
           extensions: {
@@ -2767,6 +2874,7 @@
           },
         },
         "800": {
+          comment: "tags: additional, red",
           value: "{core.color.red.800}",
           type: "color",
           extensions: {
@@ -2778,6 +2886,7 @@
           },
         },
         "900": {
+          comment: "tags: additional, red",
           value: "{core.color.red.900}",
           type: "color",
           extensions: {
@@ -2789,6 +2898,7 @@
           },
         },
         subtle: {
+          comment: "tags: additional, subtle, red",
           value: {
             light: "{core.color.red.tint}",
             dark: "{core.color.red.shade}",
