@@ -11,7 +11,7 @@
 const StyleDictionary = require('style-dictionary');
 const deep = require('deep-get-set');
 const prettier = require('prettier');
-const camelCase = require('lodash/camelCase');
+const kebabCase = require('lodash/kebabCase');
 const { map } = require('lodash');
 
 const { PREFIX, OUTPUT_PATH, OUTPUT_BASE_FILENAME } = process.env;
@@ -22,23 +22,6 @@ const tailwindcssPresetTransformGroup = [
   'attribute/cti',
   'name/cti/kebab2',
 ];
-
-/**
- * Custom plugin to convert `text-style` design token to the `font` css shorthand property
- * as there is no mapping provided by the core plugins.
- */
-const fontPlugin = `
-  plugin(function ({ matchUtilities, theme }) {
-    matchUtilities(
-      {
-        'text-style': (value) => ({
-          font: value,
-        }),
-      },
-      { values: theme('textStyle') }
-    );
-  })
-`;
 
 /**
  * Custom formatter for Tailwindcss config preset
@@ -54,6 +37,7 @@ StyleDictionary.registerFormat({
       .filter((token) => token.path[0] !== 'core')
 
       .map(remapConfigKeys)
+      .map(patchSpacingKeys)
       .forEach((token) => {
         deep(tokens, token.configKeys, `var(--${token.name})`);
       });
@@ -67,8 +51,39 @@ StyleDictionary.registerFormat({
         {
           theme: ${JSON.stringify(tokens)},
           plugins: [
-            ${fontPlugin},
+            /**
+             * Custom plugin to convert \`shadow\` design token to the \`boxShadow\` css shorthand property
+             * and to avoid functionality of core tailwindcss plugins (\`boxShadow\` and \`boxShadowColor\`).
+             */
+             plugin(function ({ matchUtilities, theme }) {
+              matchUtilities(
+                {
+                  shadow: (value) => ({
+                    boxShadow: value,
+                  }),
+                },
+                { values: theme('shadow') }
+              );
+            }),
+            /**
+             * Custom plugin to convert \`text-style\` design token to the \`font\` css shorthand property
+             * as there is no mapping provided by the core plugins.
+             */
+            plugin(function ({ matchUtilities, theme }) {
+              matchUtilities(
+                {
+                  'text-style': (value) => ({
+                    font: value,
+                  }),
+                },
+                { values: theme('textStyle') }
+              );
+            }),
           ],
+          corePlugins: {
+            boxShadow: false,
+            boxShadowColor: false,
+          },
         };
     `;
 
@@ -84,85 +99,93 @@ StyleDictionary.registerFormat({
  * to the generated Tailwindcss config key names
  */
 const mappings = [
+  { original: ['color', 'text-icon'], tailwindcss: ['colors', 'icon'] },
   { original: ['color'], tailwindcss: ['colors'] },
-  { original: ['lineWeight'], tailwindcss: ['borderWidth'] },
+  { original: ['line-weight'], tailwindcss: ['borderWidth'] },
   { original: ['motion', 'duration'], tailwindcss: ['transitionDuration'] },
   { original: ['motion', 'easing'], tailwindcss: ['transitionTimingFunction'] },
   { original: ['radius'], tailwindcss: ['borderRadius'] },
+  { original: ['spacing', 'unit'], tailwindcss: ['spacing'] },
+  { original: ['typography', 'font-size'], tailwindcss: ['fontSize'] },
+  { original: ['typography', 'font-family'], tailwindcss: ['fontFamily'] },
+  { original: ['typography', 'font-weight'], tailwindcss: ['fontWeight'] },
+  { original: ['typography', 'line-spacing'], tailwindcss: ['lineHeight'] },
+  { original: ['typography', 'letter-spacing'], tailwindcss: ['letterSpacing'] },
+  { original: ['text-style'], tailwindcss: ['textStyle'] },
+
+  // flatten and kebab-case shadows
   {
     original: ['shadow', 'flat', 'standard'],
-    tailwindcss: ['boxShadow', 'flatStandard'],
+    tailwindcss: ['shadow', 'flat-standard'],
   },
   {
     original: ['shadow', 'flat', 'hover'],
-    tailwindcss: ['boxShadow', 'flatHover'],
+    tailwindcss: ['shadow', 'flat-hover'],
   },
   {
     original: ['shadow', 'flat', 'pressed'],
-    tailwindcss: ['boxShadow', 'flatPressed'],
+    tailwindcss: ['shadow', 'flat-pressed'],
   },
   {
     original: ['shadow', 'resting', 'standard'],
-    tailwindcss: ['boxShadow', 'restingStandard'],
+    tailwindcss: ['shadow', 'resting-standard'],
   },
   {
     original: ['shadow', 'resting', 'hover'],
-    tailwindcss: ['boxShadow', 'restingHover'],
+    tailwindcss: ['shadow', 'resting-hover'],
   },
   {
     original: ['shadow', 'resting', 'pressed'],
-    tailwindcss: ['boxShadow', 'restingPressed'],
+    tailwindcss: ['shadow', 'resting-pressed'],
   },
   {
     original: ['shadow', 'raised', 'standard'],
-    tailwindcss: ['boxShadow', 'raisedStandard'],
+    tailwindcss: ['shadow', 'raised-standard'],
   },
   {
     original: ['shadow', 'raised', 'hover'],
-    tailwindcss: ['boxShadow', 'raisedHover'],
+    tailwindcss: ['shadow', 'raised-hover'],
   },
   {
     original: ['shadow', 'raised', 'pressed'],
-    tailwindcss: ['boxShadow', 'raisedPressed'],
+    tailwindcss: ['shadow', 'raised-pressed'],
   },
   {
     original: ['shadow', 'floating', 'standard'],
-    tailwindcss: ['boxShadow', 'floatingStandard'],
+    tailwindcss: ['shadow', 'floating-standard'],
   },
   {
     original: ['shadow', 'floating', 'hover'],
-    tailwindcss: ['boxShadow', 'floatingHover'],
+    tailwindcss: ['shadow', 'floating-hover'],
   },
   {
     original: ['shadow', 'floating', 'pressed'],
-    tailwindcss: ['boxShadow', 'floatingPressed'],
+    tailwindcss: ['shadow', 'floating-pressed'],
   },
   {
     original: ['shadow', 'top'],
-    tailwindcss: ['boxShadow', 'top'],
+    tailwindcss: ['shadow', 'top'],
   },
   {
     original: ['shadow', 'overlay'],
-    tailwindcss: ['boxShadow', 'overlay'],
+    tailwindcss: ['shadow', 'overlay'],
   },
   {
-    original: ['shadow', 'appBar', 'top', 'raised'],
-    tailwindcss: ['boxShadow', 'appBarTopRaised'],
+    original: ['shadow', 'app-bar', 'top', 'raised'],
+    tailwindcss: ['shadow', 'app-bar-top-raised'],
   },
   {
-    original: ['shadow', 'appBar', 'top', 'flat'],
-    tailwindcss: ['boxShadow', 'appBarTopFlat'],
+    original: ['shadow', 'app-bar', 'top', 'flat'],
+    tailwindcss: ['shadow', 'app-bar-top-flat'],
   },
   {
-    original: ['shadow', 'appBar', 'bottom', 'flat'],
-    tailwindcss: ['boxShadow', 'appBarBottomFlat'],
+    original: ['shadow', 'app-bar', 'bottom', 'raised'],
+    tailwindcss: ['shadow', 'app-bar-bottom-raised'],
   },
-  { original: ['spacing', 'unit'], tailwindcss: ['spacing'] },
-  { original: ['typography', 'fontSize'], tailwindcss: ['fontSize'] },
-  { original: ['typography', 'fontFamily'], tailwindcss: ['fontFamily'] },
-  { original: ['typography', 'fontWeight'], tailwindcss: ['fontWeight'] },
-  { original: ['typography', 'lineSpacing'], tailwindcss: ['lineHeight'] },
-  { original: ['typography', 'letterSpacing'], tailwindcss: ['letterSpacing'] },
+  {
+    original: ['shadow', 'app-bar', 'bottom', 'flat'],
+    tailwindcss: ['shadow', 'app-bar-bottom-flat'],
+  },
 ];
 
 /**
@@ -170,11 +193,23 @@ const mappings = [
  * to config key names that are used by core Tailwindcss plugins
  */
 function remapConfigKeys(token) {
-  token.configKeys = token.path.map(camelCase);
+  token.configKeys = token.path.map(kebabCase);
   for (const { original, tailwindcss } of mappings) {
     if (token.configKeys.join().startsWith(original.join())) {
       token.configKeys.splice(0, original.length, ...tailwindcss);
     }
+  }
+
+  return token;
+}
+
+/**
+ * Helper function to patch spacing keys (remove `x-` prefix)
+ * Example: `x-1` -> `1`
+ */
+function patchSpacingKeys(token) {
+  if (token.path[0] === 'spacing') {
+    token.configKeys[1] = token.configKeys[1].substring(2);
   }
   return token;
 }
