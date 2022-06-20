@@ -97,3 +97,7 @@
 			 url("./TeleNeoWeb/TeleNeoWeb-ExtraBoldItalic.woff2") format("woff2");
 	font-display: fallback;
 }
+
+:root {
+	font-family: 'TeleNeoWeb', sans-serif;
+}
