@@ -1,5 +1,5 @@
 {
-  "type": "minor",
+  "type": "prerelease",
   "comment": "functional contrast replace standard with on-subtle ",
   "packageName": "@telekom/design-tokens",
   "email": "felix.weber@iconstorm.de",
