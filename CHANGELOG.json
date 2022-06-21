@@ -2,6 +2,27 @@
   "name": "@telekom/design-tokens",
   "entries": [
     {
+      "date": "Tue, 21 Jun 2022 15:05:19 GMT",
+      "tag": "@telekom/design-tokens_v1.0.0-alpha.25",
+      "version": "1.0.0-alpha.25",
+      "comments": {
+        "prerelease": [
+          {
+            "author": "felix.weber@iconstorm.de",
+            "package": "@telekom/design-tokens",
+            "commit": "35e710dedfe1cf7e15b33b4f9a6b3bdbf5ac48d8",
+            "comment": "functional contrast replace standard with on-subtle "
+          },
+          {
+            "author": "oppermann.lukas@gmail.com",
+            "package": "@telekom/design-tokens",
+            "commit": "463bdc259dbdc63e3aa2c3b9c6d643b0177c9e28",
+            "comment": "added tags to colors"
+          }
+        ]
+      }
+    },
+    {
       "date": "Tue, 07 Jun 2022 14:58:54 GMT",
       "tag": "@telekom/design-tokens_v1.0.0-alpha.24",
       "version": "1.0.0-alpha.24",
