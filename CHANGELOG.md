@@ -1,8 +1,17 @@
 # Change Log - @telekom/design-tokens
 
-This log was last generated on Tue, 07 Jun 2022 14:58:54 GMT and should not be manually modified.
+This log was last generated on Tue, 21 Jun 2022 15:05:19 GMT and should not be manually modified.
 
 <!-- Start content -->
+
+## 1.0.0-alpha.25
+
+Tue, 21 Jun 2022 15:05:19 GMT
+
+### Changes
+
+- functional contrast replace standard with on-subtle  (felix.weber@iconstorm.de)
+- added tags to colors (oppermann.lukas@gmail.com)
 
 ## 1.0.0-alpha.24
 
