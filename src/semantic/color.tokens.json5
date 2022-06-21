@@ -1311,7 +1311,6 @@
               },
               docs: {
                 contrast: [
-                  "color.text-&-icon.standard",
                   "color.text-&-icon.on-subtle.informational",
                 ],
               },
@@ -1384,7 +1383,6 @@
               },
               docs: {
                 contrast: [
-                  "color.text-&-icon.standard",
                   "color.text-&-icon.on-subtle.success",
                 ],
               },
@@ -1457,7 +1455,6 @@
               },
               docs: {
                 contrast: [
-                  "color.text-&-icon.standard",
                   "color.text-&-icon.on-subtle.danger",
                 ],
               },
@@ -1530,7 +1527,6 @@
               },
               docs: {
                 contrast: [
-                  "color.text-&-icon.standard",
                   "color.text-&-icon.on-subtle.warning",
                 ],
               },
