@@ -35,7 +35,6 @@ StyleDictionary.registerFormat({
 
     dictionary.allTokens
       .filter((token) => token.path[0] !== 'core')
-
       .map(remapConfigKeys)
       .map(patchSpacingKeys)
       .forEach((token) => {
@@ -47,24 +46,26 @@ StyleDictionary.registerFormat({
       
       const plugin = require('tailwindcss/plugin');
 
+      /**
+       * Flatten shadow keys similarly to 
+       * \`flattenColorPalette\` utility function used by color core plugins
+       */
+      const flattenShadows = (shadows) =>
+        Object.assign(
+          {},
+          ...Object.entries(shadows ?? {}).flatMap(([shadow, values]) =>
+            typeof values == 'object'
+              ? Object.entries(flattenShadows(values)).map(([name, value]) => ({
+                  [shadow + '-' + name]: value,
+                }))
+              : [{ [shadow]: values }]
+          )
+        )
+
       module.exports = 
         {
           theme: ${JSON.stringify(tokens)},
           plugins: [
-            /**
-             * Custom plugin to convert \`shadow\` design token to the \`boxShadow\` css shorthand property
-             * and to avoid functionality of core tailwindcss plugins (\`boxShadow\` and \`boxShadowColor\`).
-             */
-             plugin(function ({ matchUtilities, theme }) {
-              matchUtilities(
-                {
-                  shadow: (value) => ({
-                    boxShadow: value,
-                  }),
-                },
-                { values: theme('shadow') }
-              );
-            }),
             /**
              * Custom plugin to convert \`text-style\` design token to the \`font\` css shorthand property
              * as there is no mapping provided by the core plugins.
@@ -77,6 +78,20 @@ StyleDictionary.registerFormat({
                   }),
                 },
                 { values: theme('textStyle') }
+              );
+            }),
+            /**
+             * Custom plugin to convert \`shadow\` design token to the \`boxShadow\` css shorthand property
+             * and to avoid functionality of core tailwindcss plugins (\`boxShadow\` and \`boxShadowColor\`).
+             */
+             plugin(function ({ matchUtilities, theme }) {
+              matchUtilities(
+                {
+                  shadow: (value) => ({
+                    boxShadow: value,
+                  }),
+                },
+                { values: flattenShadows(theme('shadow')) }
               );
             }),
           ],
@@ -112,80 +127,6 @@ const mappings = [
   { original: ['typography', 'line-spacing'], tailwindcss: ['lineHeight'] },
   { original: ['typography', 'letter-spacing'], tailwindcss: ['letterSpacing'] },
   { original: ['text-style'], tailwindcss: ['textStyle'] },
-
-  // flatten and kebab-case shadows
-  {
-    original: ['shadow', 'flat', 'standard'],
-    tailwindcss: ['shadow', 'flat-standard'],
-  },
-  {
-    original: ['shadow', 'flat', 'hover'],
-    tailwindcss: ['shadow', 'flat-hover'],
-  },
-  {
-    original: ['shadow', 'flat', 'pressed'],
-    tailwindcss: ['shadow', 'flat-pressed'],
-  },
-  {
-    original: ['shadow', 'resting', 'standard'],
-    tailwindcss: ['shadow', 'resting-standard'],
-  },
-  {
-    original: ['shadow', 'resting', 'hover'],
-    tailwindcss: ['shadow', 'resting-hover'],
-  },
-  {
-    original: ['shadow', 'resting', 'pressed'],
-    tailwindcss: ['shadow', 'resting-pressed'],
-  },
-  {
-    original: ['shadow', 'raised', 'standard'],
-    tailwindcss: ['shadow', 'raised-standard'],
-  },
-  {
-    original: ['shadow', 'raised', 'hover'],
-    tailwindcss: ['shadow', 'raised-hover'],
-  },
-  {
-    original: ['shadow', 'raised', 'pressed'],
-    tailwindcss: ['shadow', 'raised-pressed'],
-  },
-  {
-    original: ['shadow', 'floating', 'standard'],
-    tailwindcss: ['shadow', 'floating-standard'],
-  },
-  {
-    original: ['shadow', 'floating', 'hover'],
-    tailwindcss: ['shadow', 'floating-hover'],
-  },
-  {
-    original: ['shadow', 'floating', 'pressed'],
-    tailwindcss: ['shadow', 'floating-pressed'],
-  },
-  {
-    original: ['shadow', 'top'],
-    tailwindcss: ['shadow', 'top'],
-  },
-  {
-    original: ['shadow', 'overlay'],
-    tailwindcss: ['shadow', 'overlay'],
-  },
-  {
-    original: ['shadow', 'app-bar', 'top', 'raised'],
-    tailwindcss: ['shadow', 'app-bar-top-raised'],
-  },
-  {
-    original: ['shadow', 'app-bar', 'top', 'flat'],
-    tailwindcss: ['shadow', 'app-bar-top-flat'],
-  },
-  {
-    original: ['shadow', 'app-bar', 'bottom', 'raised'],
-    tailwindcss: ['shadow', 'app-bar-bottom-raised'],
-  },
-  {
-    original: ['shadow', 'app-bar', 'bottom', 'flat'],
-    tailwindcss: ['shadow', 'app-bar-bottom-flat'],
-  },
 ];
 
 /**
