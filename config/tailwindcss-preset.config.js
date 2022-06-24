@@ -113,7 +113,7 @@ StyleDictionary.registerFormat({
  * to the generated Tailwind CSS config key names
  */
 const mappings = [
-  { original: ['color', 'text-icon'], tailwindcss: ['colors', 'icon'] },
+  { original: ['color', 'text-icon'], tailwindcss: ['colors', 'text-&-icon'] },
   { original: ['color'], tailwindcss: ['colors'] },
   { original: ['line-weight'], tailwindcss: ['borderWidth'] },
   { original: ['motion', 'duration'], tailwindcss: ['transitionDuration'] },
