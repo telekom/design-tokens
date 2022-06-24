@@ -36,6 +36,7 @@ StyleDictionary.registerFormat({
       .filter((token) => token.path[0] !== 'core')
       .map(remapConfigKeys)
       .map(patchSpacingKeys)
+      .map(patchStandardToDefault)
       .forEach((token) => {
         deep(tokens, token.configKeys, `var(--${token.name})`);
       });
@@ -55,7 +56,7 @@ StyleDictionary.registerFormat({
           ...Object.entries(shadows ?? {}).flatMap(([shadow, values]) =>
             typeof values == 'object'
               ? Object.entries(flattenShadows(values)).map(([name, value]) => ({
-                  [shadow + '-' + name]: value,
+                  [shadow + (name === 'DEFAULT' ? '' : '-' + name)]: value,
                 }))
               : [{ [shadow]: values }]
           )
@@ -149,6 +150,16 @@ function remapConfigKeys(token) {
 function patchSpacingKeys(token) {
   if (token.path[0] === 'spacing') {
     token.configKeys[1] = token.configKeys[1].substring(2);
+  }
+  return token;
+}
+
+/**
+ * Helper function to patch `standard` keys to `DEFAULT`
+ */
+ function patchStandardToDefault(token) {
+  if (token.path.at(-1) === 'standard') {
+    token.configKeys[token.configKeys.length - 1] = 'DEFAULT';
   }
   return token;
 }
