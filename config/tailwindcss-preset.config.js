@@ -12,7 +12,6 @@ const StyleDictionary = require('style-dictionary');
 const deep = require('deep-get-set');
 const prettier = require('prettier');
 const kebabCase = require('lodash/kebabCase');
-const { map } = require('lodash');
 
 const { PREFIX, OUTPUT_PATH, OUTPUT_BASE_FILENAME } = process.env;
 const WHITELABEL = process.env.WHITELABEL !== 'false';
@@ -24,7 +23,7 @@ const tailwindcssPresetTransformGroup = [
 ];
 
 /**
- * Custom formatter for Tailwindcss config preset
+ * Custom formatter for Tailwind CSS config preset
  */
 StyleDictionary.registerFormat({
   name: 'tailwindcss/preset',
@@ -48,7 +47,7 @@ StyleDictionary.registerFormat({
 
       /**
        * Flatten shadow keys similarly to 
-       * \`flattenColorPalette\` utility function used by color core plugins
+       * \`flattenColorPalette\` utility function used by core color plugins
        */
       const flattenShadows = (shadows) =>
         Object.assign(
@@ -82,7 +81,7 @@ StyleDictionary.registerFormat({
             }),
             /**
              * Custom plugin to convert \`shadow\` design token to the \`boxShadow\` css shorthand property
-             * and to avoid functionality of core tailwindcss plugins (\`boxShadow\` and \`boxShadowColor\`).
+             * and to avoid functionality of core Tailwind CSS plugins (\`boxShadow\` and \`boxShadowColor\`).
              */
              plugin(function ({ matchUtilities, theme }) {
               matchUtilities(
@@ -111,7 +110,7 @@ StyleDictionary.registerFormat({
 
 /**
  * Configuration of mappings of the start of the original paths
- * to the generated Tailwindcss config key names
+ * to the generated Tailwind CSS config key names
  */
 const mappings = [
   { original: ['color', 'text-icon'], tailwindcss: ['colors', 'icon'] },
@@ -131,7 +130,7 @@ const mappings = [
 
 /**
  * Helper function to remap token path from original names
- * to config key names that are used by core Tailwindcss plugins
+ * to config key names that are used by core Tailwind CSS plugins
  */
 function remapConfigKeys(token) {
   token.configKeys = token.path.map(kebabCase);
@@ -140,7 +139,6 @@ function remapConfigKeys(token) {
       token.configKeys.splice(0, original.length, ...tailwindcss);
     }
   }
-
   return token;
 }
 
@@ -156,7 +154,7 @@ function patchSpacingKeys(token) {
 }
 
 /**
- * Custom file header for Tailwindcss which adds some useful info
+ * Custom file header for Tailwind CSS which adds some useful info
  */
 StyleDictionary.registerFileHeader({
   name: 'tailwindcss/preset-header',
