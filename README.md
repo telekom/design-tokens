@@ -55,6 +55,27 @@ Import or use files inside the `dist/telekom` folder, e.g.:
 @import url('@telekom/design-tokens/dist/telekom/css/telekom-design-tokens.all.css');
 ```
 
+## How to use the Tailwindcss preset
+
+Setup with NPM as described above: `npm i -D @telekom/design-tokens`
+
+Configure `tailwindcss.config.js` with the appropriate preset depending on whether you want to use
+Open source or Telekom version:
+
+```js
+module.exports = {
+  presets: [
+    // Open source version
+    require('@telekom/design-tokens/dist/tailwindcss-preset/design-tokens.config.js'),
+    // Telekom version
+    require('@telekom/design-tokens/dist/telekom/tailwindcss-preset/design-tokens.config.js'),
+  ],
+  // ...
+};
+```
+
+More info: https://tailwindcss.com/docs/presets
+
 # Contributing
 
 ## Code of conduct
