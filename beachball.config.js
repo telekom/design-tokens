@@ -1,7 +1,7 @@
 module.exports = {
   access: 'public',
   branch: 'origin/main',
-  prereleasePrefix: 'alpha',
+  prereleasePrefix: 'beta',
   publish: true,
   push: true,
   tag: 'latest'
