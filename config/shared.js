@@ -20,9 +20,6 @@ setDefaultEnvValue('OUTPUT_PATH', 'dist/');
 setDefaultEnvValue('OUTPUT_BASE_FILENAME', 'design-tokens');
 setDefaultEnvValue('WHITELABEL', true);
 
-const FIGMA_KEY_LIGHT = 'Light';
-const FIGMA_KEY_DARK = 'Dark';
-
 const ALWAYS_LOWERCASE = ['xs', 'sm', 'md', 'lg', 'xl', 'xxl'];
 const spacingUnitRe = /x(\d+)$/g;
 
@@ -283,8 +280,6 @@ StyleDictionary.registerTransform({
 });
 
 module.exports = {
-  FIGMA_KEY_LIGHT,
-  FIGMA_KEY_DARK,
   humanCase,
   isColorAlphaComposite,
   fontFamilyMap,

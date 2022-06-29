@@ -11,17 +11,14 @@
 const fs = require('fs-extra');
 const deep = require('deep-get-set');
 const StyleDictionary = require('style-dictionary');
-const {
-  FIGMA_KEY_LIGHT,
-  FIGMA_KEY_DARK,
-  humanCase,
-  fontWeightMap,
-} = require('./shared');
+const { humanCase, fontWeightMap } = require('./shared');
 
 const { OUTPUT_PATH, OUTPUT_BASE_FILENAME } = process.env;
 const WHITELABEL = process.env.WHITELABEL !== 'false';
 
 const TMP_NAME = 'tokens';
+const FIGMA_KEY_LIGHT = 'Light';
+const FIGMA_KEY_DARK = 'Dark';
 
 /*
   TODO
@@ -142,53 +139,50 @@ StyleDictionary.registerAction({
     const dark = JSON.parse(
       await fs.readFile(buildPath + TMP_NAME + '.dark.json')
     );
-    // default
+    // All modes
     await fs.writeFile(
-      buildPath + OUTPUT_BASE_FILENAME + '.json',
+      buildPath + OUTPUT_BASE_FILENAME + '.all.json',
       JSON.stringify(
         {
-          [FIGMA_KEY_LIGHT]: { ...light },
-          [FIGMA_KEY_DARK]: { ...dark },
-          ...modeless,
+          Theme: {
+            [FIGMA_KEY_LIGHT]: { ...light },
+            [FIGMA_KEY_DARK]: { ...dark },
+          },
+          Universal: {
+            ...modeless,
+          },
         },
         null,
         2
       )
     );
-    // light
+    // Light
     await fs.writeFile(
       buildPath + OUTPUT_BASE_FILENAME + '.light.json',
       JSON.stringify(
         {
-          [FIGMA_KEY_LIGHT]: { ...light },
-          Typography: { ...modeless['Typography'] },
-          'Text Style': { ...modeless['Text Style'] },
+          Theme: {
+            [FIGMA_KEY_LIGHT]: { ...light },
+          },
+          Universal: {
+            ...modeless,
+          },
         },
         null,
         2
       )
     );
-    // dark
+    // Dark
     await fs.writeFile(
       buildPath + OUTPUT_BASE_FILENAME + '.dark.json',
       JSON.stringify(
         {
-          [FIGMA_KEY_DARK]: { ...dark },
-          Typography: { ...modeless['Typography'] },
-          'Text Style': { ...modeless['Text Style'] },
-        },
-        null,
-        2
-      )
-    );
-    // universal
-    await fs.writeFile(
-      buildPath + OUTPUT_BASE_FILENAME + '.universal.json',
-      JSON.stringify(
-        {
-          ...modeless,
-          Typography: undefined,
-          'Text Style': undefined,
+          Theme: {
+            [FIGMA_KEY_DARK]: { ...dark },
+          },
+          Universal: {
+            ...modeless,
+          },
         },
         null,
         2
