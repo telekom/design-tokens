@@ -736,7 +736,7 @@
             },
           },
         },
-      }
+      },
     },
     ui: {
       comment: "Used to create UI elements like dividers, checkboxes, buttons, etc.",
@@ -1310,9 +1310,7 @@
                 uuid: "A64C633C-563B-4870-B95F-8769FC5D2446",
               },
               docs: {
-                contrast: [
-                  "color.text-&-icon.on-subtle.informational",
-                ],
+                contrast: ["color.text-&-icon.on-subtle.informational"],
               },
             },
           },
@@ -1382,9 +1380,7 @@
                 uuid: "92BB2316-B842-4412-8A7B-75E453785890",
               },
               docs: {
-                contrast: [
-                  "color.text-&-icon.on-subtle.success",
-                ],
+                contrast: ["color.text-&-icon.on-subtle.success"],
               },
             },
           },
@@ -1454,9 +1450,7 @@
                 uuid: "DC9A392E-EF63-404A-A596-2D78789547D7",
               },
               docs: {
-                contrast: [
-                  "color.text-&-icon.on-subtle.danger",
-                ],
+                contrast: ["color.text-&-icon.on-subtle.danger"],
               },
             },
           },
@@ -1526,9 +1520,7 @@
                 uuid: "FC0DAF26-7BAC-41EC-9A5B-36FEF46C44D3",
               },
               docs: {
-                contrast: [
-                  "color.text-&-icon.on-subtle.warning",
-                ],
+                contrast: ["color.text-&-icon.on-subtle.warning"],
               },
             },
           },
