@@ -125,7 +125,10 @@ const mappings = [
   { original: ['typography', 'font-family'], tailwindcss: ['fontFamily'] },
   { original: ['typography', 'font-weight'], tailwindcss: ['fontWeight'] },
   { original: ['typography', 'line-spacing'], tailwindcss: ['lineHeight'] },
-  { original: ['typography', 'letter-spacing'], tailwindcss: ['letterSpacing'] },
+  {
+    original: ['typography', 'letter-spacing'],
+    tailwindcss: ['letterSpacing'],
+  },
   { original: ['text-style'], tailwindcss: ['textStyle'] },
 ];
 
@@ -157,7 +160,7 @@ function patchSpacingKeys(token) {
 /**
  * Helper function to patch `standard` keys to `DEFAULT`
  */
- function patchStandardToDefault(token) {
+function patchStandardToDefault(token) {
   if (token.path.at(-1) === 'standard') {
     token.configKeys[token.configKeys.length - 1] = 'DEFAULT';
   }
