@@ -1,7 +1,0 @@
-{
-  "type": "prerelease",
-  "comment": "Put Tailwind CSS docs in separate file",
-  "packageName": "@telekom/design-tokens",
-  "email": "ac@iconstorm.com",
-  "dependentChangeType": "patch"
-}
