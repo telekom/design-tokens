@@ -1,13 +1,9 @@
 # Telekom Design Tokens
 
-## ⚠️ This is alpha software. It may change. Use at your own risk!
-
-~
-
-
 Telekom Design Tokens is the source of truth for designing Telekom-branded digital products. By default, it's built to align with our corporate brand and design but allows for customization to fit your particular product.
 
-![Design Tokens badge](https://img.shields.io/badge/telekom-design--tokens-e20074.svg) [![License: MPL-2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)](./LICENSE) ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/telekom/design-tokens.svg?style=flat-square) ![GitHub repo size](https://img.shields.io/github/repo-size/telekom/design-tokens.svg?style=flat-square)
+![Design Tokens badge](https://img.shields.io/badge/telekom-design--tokens-e20074.svg) [![License: MPL-2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)](./LICENSE) ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/telekom/design-tokens.svg?style=flat-square) ![GitHub repo size](https://img.shields.io/github/repo-size/telekom/design-tokens.svg?style=flat-square) ![GitHub package.json version
+](https://img.shields.io/github/package-json/v/telekom/design-tokens)
 
 # Customizing Telekom Design Tokens for open source software
 
