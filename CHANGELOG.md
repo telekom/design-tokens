@@ -1,8 +1,19 @@
 # Change Log - @telekom/design-tokens
 
-This log was last generated on Tue, 21 Jun 2022 15:05:19 GMT and should not be manually modified.
+This log was last generated on Thu, 30 Jun 2022 07:40:44 GMT and should not be manually modified.
 
 <!-- Start content -->
+
+## 1.0.0-beta.0
+
+Thu, 30 Jun 2022 07:40:44 GMT
+
+### Changes
+
+- Refactor JSON shape for Figma output (ac@iconstorm.com)
+- Put Tailwind CSS docs in separate file (ac@iconstorm.com)
+- Add new output for a Tailwind CSS preset (matej.amrich@t-systems.com)
+- From alpha to beta, update README (ac@iconstorm.com)
 
 ## 1.0.0-alpha.25
 

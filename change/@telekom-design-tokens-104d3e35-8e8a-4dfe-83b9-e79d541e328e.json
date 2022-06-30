@@ -1,7 +1,0 @@
-{
-  "type": "prerelease",
-  "comment": "From alpha to beta, update README",
-  "packageName": "@telekom/design-tokens",
-  "email": "ac@iconstorm.com",
-  "dependentChangeType": "patch"
-}

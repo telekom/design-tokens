@@ -1,7 +1,0 @@
-{
-  "type": "prerelease",
-  "comment": "Add new output for a Tailwind CSS preset",
-  "packageName": "@telekom/design-tokens",
-  "email": "matej.amrich@t-systems.com",
-  "dependentChangeType": "patch"
-}

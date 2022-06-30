@@ -2,6 +2,39 @@
   "name": "@telekom/design-tokens",
   "entries": [
     {
+      "date": "Thu, 30 Jun 2022 07:40:44 GMT",
+      "tag": "@telekom/design-tokens_v1.0.0-beta.0",
+      "version": "1.0.0-beta.0",
+      "comments": {
+        "prerelease": [
+          {
+            "author": "ac@iconstorm.com",
+            "package": "@telekom/design-tokens",
+            "commit": "f95d2cfffa5b6b258cb0074723eda9690eba60bc",
+            "comment": "Refactor JSON shape for Figma output"
+          },
+          {
+            "author": "ac@iconstorm.com",
+            "package": "@telekom/design-tokens",
+            "commit": "4426cd0f8d5268a3839c4dafe1adebf0f536aa4b",
+            "comment": "Put Tailwind CSS docs in separate file"
+          },
+          {
+            "author": "matej.amrich@t-systems.com",
+            "package": "@telekom/design-tokens",
+            "commit": "9b5794d440babc5c42e0297f3975eeb5117c91b0",
+            "comment": "Add new output for a Tailwind CSS preset"
+          },
+          {
+            "author": "ac@iconstorm.com",
+            "package": "@telekom/design-tokens",
+            "commit": "3693e01082af1330d24c5f45d11c2bafd6275995",
+            "comment": "From alpha to beta, update README"
+          }
+        ]
+      }
+    },
+    {
       "date": "Tue, 21 Jun 2022 15:05:19 GMT",
       "tag": "@telekom/design-tokens_v1.0.0-alpha.25",
       "version": "1.0.0-alpha.25",
