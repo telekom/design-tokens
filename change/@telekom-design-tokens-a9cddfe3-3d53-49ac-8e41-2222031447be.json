@@ -1,6 +1,6 @@
 {
   "type": "prerelease",
-  "comment": "Update UI color structure (https://github.com/telekom/design-tokens/pull/192#issuecomment-1177466192)",
+  "comment": "Update UI color [structure](https://github.com/telekom/design-tokens/pull/192#issuecomment-1177466192)",
   "packageName": "@telekom/design-tokens",
   "email": "oppermann.lukas@gmail.com",
   "dependentChangeType": "patch"
