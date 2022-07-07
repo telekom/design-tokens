@@ -872,7 +872,7 @@
         },
       },
       border: {
-        comment: "",
+        comment: "Border tokens for outlined elements as well as filled elements with borders",
         standard: {
           value: {
             light: {
@@ -914,6 +914,7 @@
           },
         },
         pressed: {
+          comment: "Use this token for borders in pressed or active state",
           value: {
             light: {
               color: "{core.color.black}",
@@ -957,6 +958,7 @@
       "state-fill": {
         comment: "State fills are used for elements without a solid background like ghost buttons or outlined elements e.g. inputs, secondary buttons, etc.",
         standard: {
+          comment: "For outlined and ghost elements: The standard fill is invisible / 0% opacity",
           value: {
             light: {
               color: "{core.color.black}",
@@ -977,6 +979,7 @@
           },
         },
         hovered: {
+          comment: "For outlined and ghost elements: When hovered a light, transparent fill is applied",
           value: {
             light: {
               color: "{core.color.black}",
@@ -997,6 +1000,7 @@
           },
         },
         pressed: {
+          comment: "For outlined and ghost elements: When pressed or active a medium transparent fill is applied",
           value: {
             light: {
               color: "{core.color.black}",
@@ -1017,6 +1021,7 @@
           },
         },
         "hovered-inverted": {
+          comment: "For outlined and ghost elements: When hovered a light, transparent fill is applied",
           value: {
             light: {
               color: "{core.color.white}",
@@ -1037,6 +1042,7 @@
           },
         },
         "pressed-inverted": {
+          comment: "For outlined and ghost elements: When pressed or active a medium transparent fill is applied",
           value: {
             light: {
               color: "{core.color.white}",
