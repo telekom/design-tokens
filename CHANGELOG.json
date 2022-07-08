@@ -2,6 +2,27 @@
   "name": "@telekom/design-tokens",
   "entries": [
     {
+      "date": "Fri, 08 Jul 2022 09:09:46 GMT",
+      "tag": "@telekom/design-tokens_v1.0.0-beta.1",
+      "version": "1.0.0-beta.1",
+      "comments": {
+        "prerelease": [
+          {
+            "author": "oppermann.lukas@gmail.com",
+            "package": "@telekom/design-tokens",
+            "commit": "8e95389d436222a5a356f600df767855c588bc84",
+            "comment": "Update UI color [structure](https://github.com/telekom/design-tokens/pull/192#issuecomment-1177466192)"
+          },
+          {
+            "author": "oppermann.lukas@gmail.com",
+            "package": "@telekom/design-tokens",
+            "commit": "2f9cb6909fa486e4c3e50f9770b7764c5e00b981",
+            "comment": "adding some comments"
+          }
+        ]
+      }
+    },
+    {
       "date": "Thu, 30 Jun 2022 07:40:44 GMT",
       "tag": "@telekom/design-tokens_v1.0.0-beta.0",
       "version": "1.0.0-beta.0",

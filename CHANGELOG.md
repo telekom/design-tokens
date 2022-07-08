@@ -1,8 +1,17 @@
 # Change Log - @telekom/design-tokens
 
-This log was last generated on Thu, 30 Jun 2022 07:40:44 GMT and should not be manually modified.
+This log was last generated on Fri, 08 Jul 2022 09:09:46 GMT and should not be manually modified.
 
 <!-- Start content -->
+
+## 1.0.0-beta.1
+
+Fri, 08 Jul 2022 09:09:46 GMT
+
+### Changes
+
+- Update UI color [structure](https://github.com/telekom/design-tokens/pull/192#issuecomment-1177466192) (oppermann.lukas@gmail.com)
+- adding some comments (oppermann.lukas@gmail.com)
 
 ## 1.0.0-beta.0
 
