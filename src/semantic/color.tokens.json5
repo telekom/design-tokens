@@ -749,7 +749,7 @@
         extensions: {
           telekom: {
             sketch: {
-              uuid: "",
+              uuid: "7CCCD530-14DC-4B0A-8341-825B1FA95B2F",
             },
             docs: {
               contrast: [],
@@ -883,7 +883,7 @@
         extensions: {
           telekom: {
             sketch: {
-              uuid: "",
+              uuid: "EEA246F3-773C-4849-80F5-6B49A3957269",
             },
             docs: {
               contrast: [],
