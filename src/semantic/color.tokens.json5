@@ -743,19 +743,16 @@
       base: {
         value: {
           light: "{core.color.grey.0}",
-          dark: "{core.color.grey.0}",
+          dark: "{core.color.grey.2100}",
         },
         type: "color",
         extensions: {
           telekom: {
             sketch: {
-              uuid: "734DFCD6-3524-4A00-B68D-2A9017344769",
+              uuid: "7CCCD530-14DC-4B0A-8341-825B1FA95B2F",
             },
             docs: {
-              contrast: [
-                "color.text-&-icon.standard",
-                "color.text-&-icon.additional",
-              ],
+              contrast: [],
             },
           },
         },
@@ -857,6 +854,40 @@
           },
         },
       },
+      white: {
+        value: {
+          light: "{core.color.grey.0}",
+          dark: "{core.color.grey.0}",
+        },
+        type: "color",
+        extensions: {
+          telekom: {
+            sketch: {
+              uuid: "734DFCD6-3524-4A00-B68D-2A9017344769",
+            },
+            docs: {
+              contrast: [],
+            },
+          },
+        },
+      },
+      black: {
+        value: {
+          light: "{core.color.grey.2200}",
+          dark: "{core.color.grey.2200}",
+        },
+        type: "color",
+        extensions: {
+          telekom: {
+            sketch: {
+              uuid: "EEA246F3-773C-4849-80F5-6B49A3957269",
+            },
+            docs: {
+              contrast: [],
+            },
+          },
+        },
+      },      
       disabled: {
         value: {
           light: "{core.color.grey.600}",
