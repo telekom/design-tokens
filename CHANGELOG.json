@@ -2,6 +2,21 @@
   "name": "@telekom/design-tokens",
   "entries": [
     {
+      "date": "Thu, 18 Aug 2022 14:24:24 GMT",
+      "tag": "@telekom/design-tokens_v1.0.0-beta.2",
+      "version": "1.0.0-beta.2",
+      "comments": {
+        "prerelease": [
+          {
+            "author": "felix.weber@iconstorm.de",
+            "package": "@telekom/design-tokens",
+            "commit": "82297afe6e6777a535d030203062c5f224459c39",
+            "comment": "rename and replace color-ui tokens for improved dark mode support"
+          }
+        ]
+      }
+    },
+    {
       "date": "Fri, 08 Jul 2022 09:09:46 GMT",
       "tag": "@telekom/design-tokens_v1.0.0-beta.1",
       "version": "1.0.0-beta.1",
