@@ -1,0 +1,7 @@
+{
+  "type": "prerelease",
+  "comment": "rename and replace color-ui tokens for improved dark mode support",
+  "packageName": "@telekom/design-tokens",
+  "email": "felix.weber@iconstorm.de",
+  "dependentChangeType": "patch"
+}
