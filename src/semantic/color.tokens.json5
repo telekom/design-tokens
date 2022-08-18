@@ -866,10 +866,7 @@
               uuid: "734DFCD6-3524-4A00-B68D-2A9017344769",
             },
             docs: {
-              contrast: [
-                "color.text-&-icon.standard",
-                "color.text-&-icon.additional",
-              ],
+              contrast: [],
             },
           },
         },
