@@ -501,9 +501,9 @@
       "name": "02 Background/05 Surface Subtle",
       "value": {
         "_class": "color",
-        "red": "0.96863",
-        "green": "0.96863",
-        "blue": "0.97255",
+        "red": "0.93725",
+        "green": "0.93725",
+        "blue": "0.94118",
         "alpha": "1"
       }
     },
@@ -579,9 +579,9 @@
       "name": "04 UI/02 Subtle",
       "value": {
         "_class": "color",
-        "red": "0.96863",
-        "green": "0.96863",
-        "blue": "0.97255",
+        "red": "0.93725",
+        "green": "0.93725",
+        "blue": "0.94118",
         "alpha": "1"
       }
     },
@@ -592,9 +592,9 @@
       "name": "04 UI/03 Faint",
       "value": {
         "_class": "color",
-        "red": "0.90588",
-        "green": "0.90588",
-        "blue": "0.91373",
+        "red": "0.87451",
+        "green": "0.87451",
+        "blue": "0.88235",
         "alpha": "1"
       }
     },
