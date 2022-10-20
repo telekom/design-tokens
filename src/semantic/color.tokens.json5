@@ -643,7 +643,7 @@
       "surface-subtle": {
         comment: "Use as the background of elements like cards, headers, bottom bars, etc.",
         value: {
-          light: "{core.color.grey.200}",
+          light: "{core.color.grey.300}",
           dark: "{core.color.grey.1800}",
         },
         type: "color",
@@ -759,7 +759,7 @@
       },
       subtle: {
         value: {
-          light: "{core.color.grey.200}",
+          light: "{core.color.grey.300}",
           dark: "{core.color.grey.1900}",
         },
         type: "color",
@@ -779,7 +779,7 @@
       },
       faint: {
         value: {
-          light: "{core.color.grey.400}",
+          light: "{core.color.grey.500}",
           dark: "{core.color.grey.1600}",
         },
         type: "color",
