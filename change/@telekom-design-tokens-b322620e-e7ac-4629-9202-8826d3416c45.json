@@ -1,7 +1,0 @@
-{
-  "type": "prerelease",
-  "comment": "update background/surface-subtle, ui/surface-subtle, ui/faint for improved contrast (a11y)",
-  "packageName": "@telekom/design-tokens",
-  "email": "felix.weber@iconstorm.de",
-  "dependentChangeType": "patch"
-}

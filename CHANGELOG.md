@@ -1,8 +1,16 @@
 # Change Log - @telekom/design-tokens
 
-This log was last generated on Thu, 18 Aug 2022 14:24:24 GMT and should not be manually modified.
+This log was last generated on Thu, 20 Oct 2022 08:51:20 GMT and should not be manually modified.
 
 <!-- Start content -->
+
+## 1.0.0-beta.3
+
+Thu, 20 Oct 2022 08:51:20 GMT
+
+### Changes
+
+- update background/surface-subtle, ui/surface-subtle, ui/faint for improved contrast (a11y) (felix.weber@iconstorm.de)
 
 ## 1.0.0-beta.2
 
