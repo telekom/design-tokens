@@ -2,6 +2,21 @@
   "name": "@telekom/design-tokens",
   "entries": [
     {
+      "date": "Thu, 20 Oct 2022 08:51:20 GMT",
+      "tag": "@telekom/design-tokens_v1.0.0-beta.3",
+      "version": "1.0.0-beta.3",
+      "comments": {
+        "prerelease": [
+          {
+            "author": "felix.weber@iconstorm.de",
+            "package": "@telekom/design-tokens",
+            "commit": "305f2ace525ea714100ba4fbda227d93af9cd9a8",
+            "comment": "update background/surface-subtle, ui/surface-subtle, ui/faint for improved contrast (a11y)"
+          }
+        ]
+      }
+    },
+    {
       "date": "Thu, 18 Aug 2022 14:24:24 GMT",
       "tag": "@telekom/design-tokens_v1.0.0-beta.2",
       "version": "1.0.0-beta.2",
