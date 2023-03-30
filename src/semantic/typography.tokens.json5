@@ -1,7 +1,7 @@
 {
   typography: {
     "font-size": {
-      footnote: {
+      badge: {
         value: "{core.typography.font-scale.1.value}",
         type: "dimension",
       },
