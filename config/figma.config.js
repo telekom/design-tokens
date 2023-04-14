@@ -139,18 +139,26 @@ StyleDictionary.registerAction({
     const dark = JSON.parse(
       await fs.readFile(buildPath + TMP_NAME + '.dark.json')
     );
-    // All modes
+    // Everything
     await fs.writeFile(
       buildPath + OUTPUT_BASE_FILENAME + '.all.json',
       JSON.stringify(
         {
-          Theme: {
-            [FIGMA_KEY_LIGHT]: { ...light },
-            [FIGMA_KEY_DARK]: { ...dark },
-          },
           Universal: {
             ...modeless,
           },
+          [FIGMA_KEY_LIGHT]: { ...light },
+          [FIGMA_KEY_DARK]: { ...dark },
+          Component: {}, // TODO
+          '$themes': [],
+          '$metadata': {
+            tokenSetOrder: [
+              'Universal',
+              FIGMA_KEY_LIGHT,
+              FIGMA_KEY_DARK,
+              'Component',
+            ]
+          }
         },
         null,
         2
@@ -161,12 +169,7 @@ StyleDictionary.registerAction({
       buildPath + OUTPUT_BASE_FILENAME + '.light.json',
       JSON.stringify(
         {
-          Theme: {
-            [FIGMA_KEY_LIGHT]: { ...light },
-          },
-          Universal: {
-            ...modeless,
-          },
+          [FIGMA_KEY_LIGHT]: { ...light },
         },
         null,
         2
@@ -177,12 +180,7 @@ StyleDictionary.registerAction({
       buildPath + OUTPUT_BASE_FILENAME + '.dark.json',
       JSON.stringify(
         {
-          Theme: {
-            [FIGMA_KEY_DARK]: { ...dark },
-          },
-          Universal: {
-            ...modeless,
-          },
+          [FIGMA_KEY_DARK]: { ...dark },
         },
         null,
         2
@@ -206,6 +204,7 @@ module.exports = {
   source: [
     ...(WHITELABEL === false ? ['src/telekom/core/**.json5'] : []),
     'src/semantic/**/*.json5',
+    'src/component/**/*.json5',
   ],
   platforms: {
     figmaModeless: {
@@ -218,6 +217,7 @@ module.exports = {
           filter: (token) =>
             token.path[0] !== 'core' &&
             token.path[0] !== 'motion' &&
+            token.path[0] !== 'component' &&
             !hasMode(token),
         },
       ],
