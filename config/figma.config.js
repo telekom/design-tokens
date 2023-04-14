@@ -22,6 +22,10 @@ const FIGMA_KEY_DARK = 'Dark';
 
 /*
   TODO
+  - [x] keep correct alias in values (but also transform non-alias values)
+  - [ ] remove "motion" tokens from component tokens
+  - [ ] fix "font" and "number" types in Tokens Studio
+
   - [ ] use font name from token in text-style transform
 */
 
@@ -55,6 +59,7 @@ function formatJSON(allTokens, nameCaseFn = humanCase) {
  * Handle some special cases
  */
 function getJSONValue(token) {
+  const re = /%([\s\S]+?)%/g
   const attributes = {
     type: token.type,
   };
@@ -81,7 +86,9 @@ function getJSONValue(token) {
   }
 
   return {
-    value: token.value,
+    value: typeof token.value === 'string' && token.value.charAt(0) === '%'
+      ? token.value.replace(re, (_, p1) => `{${p1}}`)
+      : token.value,
     ...attributes,
   };
 }
@@ -103,6 +110,27 @@ StyleDictionary.registerTransform({
       textDecoration: 'none',
       textCase: 'none',
     };
+  },
+});
+
+/**
+ * Make alias usable for Figma
+ * e.g. %color.ui.faint% -> "%UI.Faint%"
+ */
+StyleDictionary.registerTransform({
+  type: 'value',
+  name: 'keep-alias/figma',
+  transitive: true,
+  transformer: function (token) {
+    const re = /%([\s\S]+?)%/g
+    if (re.test(token.value)) {
+      return token.value.replace(re, (_, p1) => {
+        const path = p1.split('.').map(humanCase);
+        if (path[0] === 'Color' || path[0] === 'Shadow') path.shift();
+        return `%${path.join('.')}%`;
+      })
+    }
+    return token.value
   },
 });
 
@@ -133,6 +161,9 @@ StyleDictionary.registerAction({
     const modeless = JSON.parse(
       await fs.readFile(buildPath + TMP_NAME + '.modeless.json')
     );
+    const component = JSON.parse(
+      await fs.readFile(buildPath + TMP_NAME + '.component.json')
+    );
     const light = JSON.parse(
       await fs.readFile(buildPath + TMP_NAME + '.light.json')
     );
@@ -149,7 +180,7 @@ StyleDictionary.registerAction({
           },
           [FIGMA_KEY_LIGHT]: { ...light },
           [FIGMA_KEY_DARK]: { ...dark },
-          Component: {}, // TODO
+          ...component,
           '$themes': [],
           '$metadata': {
             tokenSetOrder: [
@@ -188,6 +219,7 @@ StyleDictionary.registerAction({
     );
 
     await fs.remove(buildPath + TMP_NAME + '.modeless.json');
+    await fs.remove(buildPath + TMP_NAME + '.component.json');
     await fs.remove(buildPath + TMP_NAME + '.light.json');
     await fs.remove(buildPath + TMP_NAME + '.dark.json');
   },
@@ -219,6 +251,17 @@ module.exports = {
             token.path[0] !== 'motion' &&
             token.path[0] !== 'component' &&
             !hasMode(token),
+        },
+      ],
+    },
+    figmaComponents: {
+      transforms: ['keep-alias/figma', ...figmaTransformGroup],
+      buildPath: OUTPUT_PATH + 'figma/',
+      files: [
+        {
+          destination: TMP_NAME + '.component.json',
+          format: 'json/figma',
+          filter: (token) => token.path[0] === 'component',
         },
       ],
     },

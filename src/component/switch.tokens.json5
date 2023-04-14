@@ -13,22 +13,22 @@
       shared: {
         motion: {
           duration: {
-            value: "{motion.duration.immediate.value}",
+            value: "%motion.duration.immediate%",
             type: "time",
           },
           easing: {
-            value: "{motion.easing.standard.value}",
+            value: "%motion.easing.standard%",
             type: "cubic-bezier",
           },
         },
         size: {
           height: {
-            value: "{spacing.unit.x8.value}",
+            value: "%spacing.unit.x8%",
             type: "dimension",
           },
         },
         radius: {
-          value: "{radius.circle.value}",
+          value: "%radius.circle%",
           type: "dimension",
         },
       },
@@ -36,36 +36,36 @@
         color: {
           background: {
             default: {
-              value: "{color.ui.faint.value}",
+              value: "%color.ui.faint%",
               type: "color",
             },
             hovered: {
-              value: "{color.ui.state-fill.hovered.value}",
+              value: "%color.ui.state-fill.hovered%",
               type: "color",
             },
             pressed: {
-              value: "{color.ui.state-fill.pressed.value}",
+              value: "%color.ui.state-fill.pressed%",
               type: "color",
             },
             disabled: {
-              value: "{color.ui.disabled.value}",
+              value: "%color.ui.disabled%",
               type: "color",
             },
             checked: {
               default: {
-                value: "{color.primary.standard.value}",
+                value: "%color.primary.standard%",
                 type: "color",
               },
               hovered: {
-                value: "{color.primary.hovered.value}",
+                value: "%color.primary.hovered%",
                 type: "color",
               },
               pressed: {
-                value: "{color.primary.pressed.value}",
+                value: "%color.primary.pressed%",
                 type: "color",
               },
               disabled: {
-                value: "{color.ui.disabled.value}",
+                value: "%color.ui.disabled%",
                 type: "color",
               },
             },
@@ -75,17 +75,17 @@
       // called "io-text" in code
       "toggle-label": {
         "text-style": {
-          value: "{text-style.small-bold.value}",
+          value: "%text-style.small-bold%",
           type: "textStyle",
         },
         color: {
           text: {
             default: {
-              value: "{color.text-&-icon.standard.value}",
+              value: "%color.text-&-icon.standard%",
               type: "color",
             },
             checked: {
-              value: "{color.text-&-icon.white.standard.value}",
+              value: "%color.text-&-icon.white.standard%",
               type: "color",
             },
           },
@@ -94,19 +94,19 @@
       thumb: {
         spacing: {
           offset: {
-            value: "{spacing.unit.x05.value}",
+            value: "%spacing.unit.x05%",
             type: "dimension",
-            description: "The offset of the thumb from the edge of the toggle.",
+            comment: "The offset of the thumb from the edge of the toggle.",
           },
         },
         color: {
           background: {
             default: {
-              value: "{color.ui.white.value}",
+              value: "%color.ui.white%",
               type: "color",
             },
             disabled: {
-              value: "{color.ui.faint.value}",
+              value: "%color.ui.faint%",
               type: "color",
             },
           },
@@ -155,19 +155,19 @@
         },
         "line-weight": {
           border: {
-            value: "{line-weight.standard.value}",
+            value: "%line-weight.standard%",
             type: "dimension",
           },
         },
       },
       label: {
         "text-style": {
-          value: "{text-style.ui.value}",
+          value: "%text-style.ui%",
           type: "textStyle",
         },
         spacing: {
           "inline-start": {
-            value: "{spacing.unit.x2.value}",
+            value: "%spacing.unit.x2%",
             type: "dimension",
           },
         },
