@@ -1,0 +1,177 @@
+// QUESTIONS:
+// - do we namespace "global" tokens -> "shared", "common"?
+// - is the category position OK?
+// - "size" or "sizing" — do we need it apart from "spacing"?
+// - start using "default" for default state exclusively, instead of "standard"?
+// - CSS: do we need the "component" prefix in the token name in the output?
+// TODO:
+// - keep aliases in output! (both in Figma and CSS)
+
+{
+  component: {
+    switch: {
+      shared: {
+        motion: {
+          duration: {
+            value: "{motion.duration.immediate.value}",
+            type: "time",
+          },
+          easing: {
+            value: "{motion.easing.standard.value}",
+            type: "cubic-bezier",
+          },
+        },
+        size: {
+          height: {
+            value: "{spacing.unit.x8.value}",
+            type: "dimension",
+          },
+        },
+        radius: {
+          value: "{radius.circle.value}",
+          type: "dimension",
+        },
+      },
+      toggle: {
+        color: {
+          background: {
+            default: {
+              value: "{color.ui.faint.value}",
+              type: "color",
+            },
+            hovered: {
+              value: "{color.ui.state-fill.hovered.value}",
+              type: "color",
+            },
+            pressed: {
+              value: "{color.ui.state-fill.pressed.value}",
+              type: "color",
+            },
+            disabled: {
+              value: "{color.ui.disabled.value}",
+              type: "color",
+            },
+            checked: {
+              default: {
+                value: "{color.primary.standard.value}",
+                type: "color",
+              },
+              hovered: {
+                value: "{color.primary.hovered.value}",
+                type: "color",
+              },
+              pressed: {
+                value: "{color.primary.pressed.value}",
+                type: "color",
+              },
+              disabled: {
+                value: "{color.ui.disabled.value}",
+                type: "color",
+              },
+            },
+          },
+        },
+      },
+      // called "io-text" in code
+      "toggle-label": {
+        "text-style": {
+          value: "{text-style.small-bold.value}",
+          type: "textStyle",
+        },
+        color: {
+          text: {
+            default: {
+              value: "{color.text-&-icon.standard.value}",
+              type: "color",
+            },
+            checked: {
+              value: "{color.text-&-icon.white.standard.value}",
+              type: "color",
+            },
+          },
+        },
+      },
+      thumb: {
+        spacing: {
+          offset: {
+            value: "{spacing.unit.x05.value}",
+            type: "dimension",
+            description: "The offset of the thumb from the edge of the toggle.",
+          },
+        },
+        color: {
+          background: {
+            default: {
+              value: "{color.ui.white.value}",
+              type: "color",
+            },
+            disabled: {
+              value: "{color.ui.faint.value}",
+              type: "color",
+            },
+          },
+          border: {
+            value: "#0000000A",
+            type: "color",
+          },
+        },
+        shadow: {
+          value: [
+            {
+              x: 0,
+              y: 0,
+              blur: 2,
+              spread: 0,
+              color: {
+                color: "{core.color.black}",
+                alpha: 0.24,
+              },
+              type: "dropShadow",
+            },
+            {
+              x: 0,
+              y: 2,
+              blur: 4,
+              spread: 0,
+              color: {
+                color: "{core.color.black}",
+                alpha: 0.24,
+              },
+              type: "dropShadow",
+            },
+            {
+              x: 0,
+              y: 4,
+              blur: 12,
+              spread: 0,
+              color: {
+                color: "{core.color.black}",
+                alpha: 0.26,
+              },
+              type: "dropShadow",
+            },
+          ],
+          type: "shadow",
+        },
+        "line-weight": {
+          border: {
+            value: "{line-weight.standard.value}",
+            type: "dimension",
+          },
+        },
+      },
+      label: {
+        "text-style": {
+          value: "{text-style.ui.value}",
+          type: "textStyle",
+        },
+        spacing: {
+          "inline-start": {
+            value: "{spacing.unit.x2.value}",
+            type: "dimension",
+          },
+        },
+      },
+    },
+  },
+}
