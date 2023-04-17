@@ -1,0 +1,6 @@
+{
+  "type": "prerelease",
+  "packageName": "@telekom/design-tokens",
+  "email": "ac@iconstorm.com",
+  "dependentChangeType": "patch"
+}
