@@ -21,11 +21,7 @@ const FIGMA_KEY_LIGHT = 'Light';
 const FIGMA_KEY_DARK = 'Dark';
 
 /*
-  TODO
-  - [x] keep correct alias in values (but also transform non-alias values)
-  - [ ] remove "motion" tokens from component tokens
-  - [ ] fix "font" and "number" types in Tokens Studio
-
+  TODO:
   - [ ] use font name from token in text-style transform
 */
 
@@ -42,6 +38,7 @@ const categoryTypeMap = {
   shadow: 'boxShadow',
   spacing: 'spacing',
   textStyle: 'typography',
+  font: 'typography',
 };
 
 function formatJSON(allTokens, nameCaseFn = humanCase) {
@@ -49,7 +46,8 @@ function formatJSON(allTokens, nameCaseFn = humanCase) {
   deep.p = true;
   allTokens.forEach((token) => {
     const path = token.path.map(nameCaseFn);
-    if (path[0] === 'Color' || path[0] === 'Shadow') path.shift();
+    if (path.includes('Motion')) return;
+    if (path[0] === 'Color' || path[0] === 'Shadow' || path[0] === 'Typography') path.shift();
     deep(output, path, getJSONValue(token));
   });
   return output;
@@ -69,6 +67,12 @@ function getJSONValue(token) {
   if (token.type === 'textStyle') {
     attributes.type = categoryTypeMap['textStyle'];
   }
+  if (token.type === 'font') {
+    attributes.type = categoryTypeMap['font'];
+  }
+  if (token.type === 'number' && token.path.includes('typography')) {
+    attributes.type = categoryTypeMap['font'];
+  }
   if (token.type === 'shadow') {
     attributes.type = categoryTypeMap['shadow'];
   }
@@ -85,6 +89,8 @@ function getJSONValue(token) {
     attributes.type = categoryTypeMap['spacing'];
   }
 
+  // Here we handle aliases using curly braces: %UI.Faint% -> "{UI.Faint}"
+  // (%color.ui.faint% -> "%UI.Faint%" is handled in the keep-alias/figma transform below)
   return {
     value: typeof token.value === 'string' && token.value.charAt(0) === '%'
       ? token.value.replace(re, (_, p1) => `{${p1}}`)
