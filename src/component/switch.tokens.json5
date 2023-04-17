@@ -1,11 +1,9 @@
 // QUESTIONS:
 // - do we namespace "global" tokens -> "shared", "common"?
-// - is the category position OK?
+// - is the "category" position OK?
 // - "size" or "sizing" — do we need it apart from "spacing"?
 // - start using "default" for default state exclusively, instead of "standard"?
 // - CSS: do we need the "component" prefix in the token name in the output?
-// TODO:
-// - keep aliases in output! (both in Figma and CSS)
 
 {
   component: {
