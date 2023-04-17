@@ -1,4 +1,5 @@
 {
+  "comment": "Adapt Figma output for latest Tokens Studio (former Figma Tokens), first attempt at component tokens (Switch)",
   "type": "prerelease",
   "packageName": "@telekom/design-tokens",
   "email": "ac@iconstorm.com",
