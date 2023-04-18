@@ -2,6 +2,21 @@
   "name": "@telekom/design-tokens",
   "entries": [
     {
+      "date": "Tue, 18 Apr 2023 14:52:21 GMT",
+      "tag": "@telekom/design-tokens_v1.0.0-beta.4",
+      "version": "1.0.0-beta.4",
+      "comments": {
+        "prerelease": [
+          {
+            "author": "ac@iconstorm.com",
+            "package": "@telekom/design-tokens",
+            "commit": "bd868f5a31f82c0c50fe2cf25eb119e3cd1db957",
+            "comment": "Rename typography/font-size/footnote to /badge"
+          }
+        ]
+      }
+    },
+    {
       "date": "Thu, 20 Oct 2022 08:51:20 GMT",
       "tag": "@telekom/design-tokens_v1.0.0-beta.3",
       "version": "1.0.0-beta.3",

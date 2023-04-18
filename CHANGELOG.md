@@ -1,8 +1,16 @@
 # Change Log - @telekom/design-tokens
 
-This log was last generated on Thu, 20 Oct 2022 08:51:20 GMT and should not be manually modified.
+This log was last generated on Tue, 18 Apr 2023 14:52:21 GMT and should not be manually modified.
 
 <!-- Start content -->
+
+## 1.0.0-beta.4
+
+Tue, 18 Apr 2023 14:52:21 GMT
+
+### Changes
+
+- Rename typography/font-size/footnote to /badge (ac@iconstorm.com)
 
 ## 1.0.0-beta.3
 

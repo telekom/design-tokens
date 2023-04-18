@@ -1,7 +1,0 @@
-{
-  "type": "prerelease",
-  "comment": "Rename typography/font-size/footnote to /badge",
-  "packageName": "@telekom/design-tokens",
-  "email": "ac@iconstorm.com",
-  "dependentChangeType": "patch"
-}
