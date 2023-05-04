@@ -3,8 +3,6 @@ name: Deploy to GitHub Pages (Sketch library)
 on:
   push:
     branches: [deploy]
-  release:
-    types: [published]
   workflow_dispatch:
 
 jobs:
