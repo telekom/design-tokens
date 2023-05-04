@@ -807,8 +807,22 @@
     },
     "Functional": {
       "Focus": {
-        "value": "#2238df",
-        "type": "color"
+        "Standard": {
+          "value": "#2238df",
+          "type": "color"
+        },
+        "Inverted": {
+          "value": "#7d94f9",
+          "type": "color"
+        },
+        "On Dark Background": {
+          "value": "#7d94f9",
+          "type": "color"
+        },
+        "On Light Background": {
+          "value": "#2238df",
+          "type": "color"
+        }
       },
       "Informational": {
         "Standard": {
@@ -2008,8 +2022,22 @@
     },
     "Functional": {
       "Focus": {
-        "value": "#7d94f9",
-        "type": "color"
+        "Standard": {
+          "value": "#7d94f9",
+          "type": "color"
+        },
+        "Inverted": {
+          "value": "#2238df",
+          "type": "color"
+        },
+        "On Dark Background": {
+          "value": "#7d94f9",
+          "type": "color"
+        },
+        "On Light Background": {
+          "value": "#2238df",
+          "type": "color"
+        }
       },
       "Informational": {
         "Standard": {
