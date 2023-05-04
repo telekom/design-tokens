@@ -1,0 +1,7 @@
+{
+  "type": "prerelease",
+  "comment": "Improve functional/focus colors",
+  "packageName": "@telekom/design-tokens",
+  "email": "ac@iconstorm.com",
+  "dependentChangeType": "patch"
+}
