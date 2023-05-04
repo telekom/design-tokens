@@ -25,10 +25,10 @@ jobs:
         with:
           paths: CHANGELOG.md
       - name: Get package version
-        if: steps.changed-front.outputs.changed == 'true'
+        if: steps.changed-changelog.outputs.changed == 'true'
         uses: nyaa8/package-version@v1
       - name: Commit
-        if: github.event_name == 'workflow_dispatch' || steps.changed-front.outputs.changed == 'true'
+        if: github.event_name == 'workflow_dispatch' || steps.changed-changelog.outputs.changed == 'true'
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: Output build (${{ env.PACKAGE_VERSION }})
