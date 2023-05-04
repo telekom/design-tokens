@@ -15,6 +15,7 @@ const kebabCase = require('lodash/kebabCase');
 const cloneDeep = require('lodash/cloneDeep');
 const Color = require('tinycolor2');
 
+setDefaultEnvValue('CONFIG', 'css,js,figma,sketch,docs-json,tailwindcss-preset')
 setDefaultEnvValue('PREFIX', 'telekom');
 setDefaultEnvValue('OUTPUT_PATH', 'dist/');
 setDefaultEnvValue('OUTPUT_BASE_FILENAME', 'design-tokens');

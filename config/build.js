@@ -10,15 +10,11 @@
 
 const StyleDictionary = require('style-dictionary');
 
-require('./shared'); // register common transforms
+// Register common transforms
+require('./shared'); 
 
-const configs = [
-  require('./css.config'),
-  require('./js.config'),
-  require('./figma.config'),
-  require('./sketch.config'),
-  require('./docs-json.config'),
-  require('./tailwindcss-preset.config'),
-];
+// e.g. `css` -> `require('./css.config')`
+const configs = process.env.CONFIG.split(',').map(name => require(`./${name}.config`));
 
+// Build all configs
 configs.forEach((config) => StyleDictionary.extend(config).buildAllPlatforms());
