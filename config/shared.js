@@ -48,7 +48,7 @@ function humanCase(str) {
   }
   return str
     .toLowerCase()
-    .replace('-', ' ')
+    .replaceAll('-', ' ')
     .replace('-icon', ' icon') // weird edge case
     .split(/\s/)
     .map(upperFirst)
