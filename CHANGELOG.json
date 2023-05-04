@@ -2,6 +2,27 @@
   "name": "@telekom/design-tokens",
   "entries": [
     {
+      "date": "Thu, 04 May 2023 11:50:46 GMT",
+      "tag": "@telekom/design-tokens_v1.0.0-beta.5",
+      "version": "1.0.0-beta.5",
+      "comments": {
+        "prerelease": [
+          {
+            "author": "ac@iconstorm.com",
+            "package": "@telekom/design-tokens",
+            "commit": "57798742a31c053233e47bd69693678b5d59a228",
+            "comment": "Add workflow for building tracked output"
+          },
+          {
+            "author": "ac@iconstorm.com",
+            "package": "@telekom/design-tokens",
+            "commit": "f4fc2efecdcc6ab26b9ae3a3e2bbb6df4ac0f838",
+            "comment": "Adapt Figma output to latest Tokens Studio"
+          }
+        ]
+      }
+    },
+    {
       "date": "Tue, 18 Apr 2023 14:52:21 GMT",
       "tag": "@telekom/design-tokens_v1.0.0-beta.4",
       "version": "1.0.0-beta.4",
