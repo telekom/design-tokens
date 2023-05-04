@@ -1,0 +1,7 @@
+{
+  "type": "prerelease",
+  "comment": "Add workflow for building tracked output",
+  "packageName": "@telekom/design-tokens",
+  "email": "ac@iconstorm.com",
+  "dependentChangeType": "patch"
+}
