@@ -20,6 +20,6 @@ jobs:
           npm ci
           npm run build:output
       - name: Commit
-        uses: uses: stefanzweifel/git-auto-commit-action@v4
+        uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: Output built (${{ github.event.release.tag_name }})
