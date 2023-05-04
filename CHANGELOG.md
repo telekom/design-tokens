@@ -1,8 +1,16 @@
 # Change Log - @telekom/design-tokens
 
-This log was last generated on Thu, 04 May 2023 11:50:46 GMT and should not be manually modified.
+This log was last generated on Thu, 04 May 2023 12:30:20 GMT and should not be manually modified.
 
 <!-- Start content -->
+
+## 1.0.0-beta.6
+
+Thu, 04 May 2023 12:30:20 GMT
+
+### Changes
+
+- Improve functional/focus colors (ac@iconstorm.com)
 
 ## 1.0.0-beta.5
 
