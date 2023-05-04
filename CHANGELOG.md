@@ -1,8 +1,17 @@
 # Change Log - @telekom/design-tokens
 
-This log was last generated on Tue, 18 Apr 2023 14:52:21 GMT and should not be manually modified.
+This log was last generated on Thu, 04 May 2023 11:50:46 GMT and should not be manually modified.
 
 <!-- Start content -->
+
+## 1.0.0-beta.5
+
+Thu, 04 May 2023 11:50:46 GMT
+
+### Changes
+
+- Add workflow for building tracked output (ac@iconstorm.com)
+- Adapt Figma output to latest Tokens Studio (ac@iconstorm.com)
 
 ## 1.0.0-beta.4
 
