@@ -1,0 +1,7 @@
+{
+  "type": "prerelease",
+  "comment": "Adapt Figma output to latest Tokens Studio",
+  "packageName": "@telekom/design-tokens",
+  "email": "ac@iconstorm.com",
+  "dependentChangeType": "patch"
+}
