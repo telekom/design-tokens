@@ -887,7 +887,7 @@
             },
           },
         },
-      },      
+      },
       disabled: {
         value: {
           light: "{core.color.grey.600}",
@@ -1111,7 +1111,7 @@
             },
           },
         },
-        "inverted": {
+        inverted: {
           value: {
             light: "{core.color.blue.200}",
             dark: "{core.color.blue.500}",
@@ -1120,7 +1120,7 @@
           extensions: {
             telekom: {
               sketch: {
-                uuid: "ED7708B4-8453-468B-AB50-73D7E8061219"
+                uuid: "ED7708B4-8453-468B-AB50-73D7E8061219",
               },
             },
           },

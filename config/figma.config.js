@@ -47,7 +47,8 @@ function formatJSON(allTokens, nameCaseFn = humanCase) {
   allTokens.forEach((token) => {
     const path = token.path.map(nameCaseFn);
     if (path.includes('Motion')) return;
-    if (path[0] === 'Color' || path[0] === 'Shadow' || path[0] === 'Typography') path.shift();
+    if (path[0] === 'Color' || path[0] === 'Shadow' || path[0] === 'Typography')
+      path.shift();
     deep(output, path, getJSONValue(token));
   });
   return output;
@@ -157,14 +158,10 @@ StyleDictionary.registerAction({
           },
           [FIGMA_KEY_LIGHT]: { ...light },
           [FIGMA_KEY_DARK]: { ...dark },
-          '$themes': [],
-          '$metadata': {
-            tokenSetOrder: [
-              'Global',
-              FIGMA_KEY_LIGHT,
-              FIGMA_KEY_DARK,
-            ]
-          }
+          $themes: [],
+          $metadata: {
+            tokenSetOrder: ['Global', FIGMA_KEY_LIGHT, FIGMA_KEY_DARK],
+          },
         },
         null,
         2
