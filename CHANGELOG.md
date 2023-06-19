@@ -1,8 +1,16 @@
 # Change Log - @telekom/design-tokens
 
-This log was last generated on Thu, 04 May 2023 12:30:20 GMT and should not be manually modified.
+This log was last generated on Mon, 19 Jun 2023 10:39:06 GMT and should not be manually modified.
 
 <!-- Start content -->
+
+## 1.0.0-beta.7
+
+Mon, 19 Jun 2023 10:39:06 GMT
+
+### Changes
+
+- Add ultra font weight (ac@iconstorm.com)
 
 ## 1.0.0-beta.6
 
