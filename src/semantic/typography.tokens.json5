@@ -77,6 +77,10 @@
         value: "{core.typography.font-weight.extra-bold.value}",
         type: "number",
       },
+      "ultra": {
+        value: "{core.typography.font-weight.ultra.value}",
+        type: "number",
+      },
     },
     "line-spacing": {
       none: {
