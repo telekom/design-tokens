@@ -2,6 +2,21 @@
   "name": "@telekom/design-tokens",
   "entries": [
     {
+      "date": "Mon, 19 Jun 2023 10:39:06 GMT",
+      "tag": "@telekom/design-tokens_v1.0.0-beta.7",
+      "version": "1.0.0-beta.7",
+      "comments": {
+        "prerelease": [
+          {
+            "author": "ac@iconstorm.com",
+            "package": "@telekom/design-tokens",
+            "commit": "66592eecfdc6f4c3a3b02995eebfa6ded310d1d7",
+            "comment": "Add ultra font weight"
+          }
+        ]
+      }
+    },
+    {
       "date": "Thu, 04 May 2023 12:30:20 GMT",
       "tag": "@telekom/design-tokens_v1.0.0-beta.6",
       "version": "1.0.0-beta.6",
