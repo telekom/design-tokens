@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle">
   <channel>
     <title>Telekom Design Tokens</title>
-    <description>Telekom Design Tokens Sketch Library 1.0.0-beta.3, build 34</description>
+    <description>Telekom Design Tokens Sketch Library 1.0.0-beta.6, build 35</description>
     <image>
       <url></url>
       <title>Telekom Design Tokens</title>
@@ -10,8 +10,8 @@
     <generator>Sketch</generator>
     <item>
       <title>Telekom Design Tokens</title>
-      <pubDate>Thu, 20 Oct 2022 10:58:04 GMT</pubDate>
-      <enclosure url="https://telekom.github.io/design-tokens/sketch/light/telekom-design-tokens.sketch" type="application/octet-stream" sparkle:version="34"/>
+      <pubDate>Mon, 19 Jun 2023 10:39:05 GMT</pubDate>
+      <enclosure url="https://telekom.github.io/design-tokens/sketch/light/telekom-design-tokens.sketch" type="application/octet-stream" sparkle:version="35"/>
     </item>
   </channel>
 </rss>

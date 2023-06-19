@@ -797,7 +797,46 @@
       "__uuid": "273d0b72-625b-43a0-8705-666f84d384b3",
       "_class": "swatch",
       "do_objectID": "",
-      "name": "05 Functional/01 Focus",
+      "name": "05 Functional/01 Focus/01 Standard",
+      "value": {
+        "_class": "color",
+        "red": "0.13333",
+        "green": "0.21961",
+        "blue": "0.87451",
+        "alpha": "1"
+      }
+    },
+    {
+      "__uuid": "ED7708B4-8453-468B-AB50-73D7E8061219",
+      "_class": "swatch",
+      "do_objectID": "",
+      "name": "05 Functional/01 Focus/02 Inverted",
+      "value": {
+        "_class": "color",
+        "red": "0.49020",
+        "green": "0.58039",
+        "blue": "0.97647",
+        "alpha": "1"
+      }
+    },
+    {
+      "__uuid": "CA8F92E9-EBFE-4A72-B076-29CE6D1BE8C7",
+      "_class": "swatch",
+      "do_objectID": "",
+      "name": "05 Functional/01 Focus/03 On Dark Background",
+      "value": {
+        "_class": "color",
+        "red": "0.49020",
+        "green": "0.58039",
+        "blue": "0.97647",
+        "alpha": "1"
+      }
+    },
+    {
+      "__uuid": "5d91067e-2a28-44b9-86f5-f18af20b0660",
+      "_class": "swatch",
+      "do_objectID": "",
+      "name": "05 Functional/01 Focus/04 On Light Background",
       "value": {
         "_class": "color",
         "red": "0.13333",
@@ -2448,7 +2487,7 @@
   "textStyles": [
     {
       "__uuid": "DD449C5D-7DA4-4E32-8187-2448031BD53F",
-      "name": "01 Footnote",
+      "name": "01 Badge",
       "textStyle": {
         "_class": "textStyle",
         "encodedAttributes": {
