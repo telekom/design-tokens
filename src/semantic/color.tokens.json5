@@ -1097,15 +1097,53 @@
     },
     functional: {
       focus: {
-        value: {
-          light: "{core.color.blue.500}",
-          dark: "{core.color.blue.200}",
+        standard: {
+          value: {
+            light: "{core.color.blue.500}",
+            dark: "{core.color.blue.200}",
+          },
+          type: "color",
+          extensions: {
+            telekom: {
+              sketch: {
+                uuid: "273d0b72-625b-43a0-8705-666f84d384b3",
+              },
+            },
+          },
         },
-        type: "color",
-        extensions: {
-          telekom: {
-            sketch: {
-              uuid: "273d0b72-625b-43a0-8705-666f84d384b3",
+        "inverted": {
+          value: {
+            light: "{core.color.blue.200}",
+            dark: "{core.color.blue.500}",
+          },
+          type: "color",
+          extensions: {
+            telekom: {
+              sketch: {
+                uuid: "ED7708B4-8453-468B-AB50-73D7E8061219"
+              },
+            },
+          },
+        },
+        "on-dark-background": {
+          value: "{core.color.blue.200}",
+          type: "color",
+          extensions: {
+            telekom: {
+              sketch: {
+                uuid: "CA8F92E9-EBFE-4A72-B076-29CE6D1BE8C7",
+              },
+            },
+          },
+        },
+        "on-light-background": {
+          value: "{core.color.blue.500}",
+          type: "color",
+          extensions: {
+            telekom: {
+              sketch: {
+                uuid: "5d91067e-2a28-44b9-86f5-f18af20b0660",
+              },
             },
           },
         },

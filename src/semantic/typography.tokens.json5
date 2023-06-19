@@ -1,7 +1,7 @@
 {
   typography: {
     "font-size": {
-      footnote: {
+      badge: {
         value: "{core.typography.font-scale.1.value}",
         type: "dimension",
       },
@@ -75,6 +75,10 @@
       },
       "extra-bold": {
         value: "{core.typography.font-weight.extra-bold.value}",
+        type: "number",
+      },
+      "ultra": {
+        value: "{core.typography.font-weight.ultra.value}",
         type: "number",
       },
     },

@@ -1,9 +1,9 @@
 {
   "text-style": {
-    footnote: {
+    badge: {
       value: {
         "font-family": "{typography.font-family.sans}",
-        "font-size": "{typography.font-size.footnote}",
+        "font-size": "{typography.font-size.badge}",
         "font-weight": "{typography.font-weight.regular}",
         "line-spacing": "{core.typography.line-spacing.xs}",
         "letter-spacing": "{typography.letter-spacing.standard}",

@@ -1,8 +1,33 @@
 # Change Log - @telekom/design-tokens
 
-This log was last generated on Thu, 20 Oct 2022 08:51:20 GMT and should not be manually modified.
+This log was last generated on Thu, 04 May 2023 12:30:20 GMT and should not be manually modified.
 
 <!-- Start content -->
+
+## 1.0.0-beta.6
+
+Thu, 04 May 2023 12:30:20 GMT
+
+### Changes
+
+- Improve functional/focus colors (ac@iconstorm.com)
+
+## 1.0.0-beta.5
+
+Thu, 04 May 2023 11:50:46 GMT
+
+### Changes
+
+- Add workflow for building tracked output (ac@iconstorm.com)
+- Adapt Figma output to latest Tokens Studio (ac@iconstorm.com)
+
+## 1.0.0-beta.4
+
+Tue, 18 Apr 2023 14:52:21 GMT
+
+### Changes
+
+- Rename typography/font-size/footnote to /badge (ac@iconstorm.com)
 
 ## 1.0.0-beta.3
 

@@ -21,7 +21,7 @@ const FIGMA_KEY_LIGHT = 'Light';
 const FIGMA_KEY_DARK = 'Dark';
 
 /*
-  TODO
+  TODO:
   - [ ] use font name from token in text-style transform
 */
 
@@ -38,6 +38,7 @@ const categoryTypeMap = {
   shadow: 'boxShadow',
   spacing: 'spacing',
   textStyle: 'typography',
+  font: 'typography',
 };
 
 function formatJSON(allTokens, nameCaseFn = humanCase) {
@@ -45,7 +46,8 @@ function formatJSON(allTokens, nameCaseFn = humanCase) {
   deep.p = true;
   allTokens.forEach((token) => {
     const path = token.path.map(nameCaseFn);
-    if (path[0] === 'Color' || path[0] === 'Shadow') path.shift();
+    if (path.includes('Motion')) return;
+    if (path[0] === 'Color' || path[0] === 'Shadow' || path[0] === 'Typography') path.shift();
     deep(output, path, getJSONValue(token));
   });
   return output;
@@ -63,6 +65,12 @@ function getJSONValue(token) {
   }
   if (token.type === 'textStyle') {
     attributes.type = categoryTypeMap['textStyle'];
+  }
+  if (token.type === 'font') {
+    attributes.type = categoryTypeMap['font'];
+  }
+  if (token.type === 'number' && token.path.includes('typography')) {
+    attributes.type = categoryTypeMap['font'];
   }
   if (token.type === 'shadow') {
     attributes.type = categoryTypeMap['shadow'];
@@ -139,18 +147,24 @@ StyleDictionary.registerAction({
     const dark = JSON.parse(
       await fs.readFile(buildPath + TMP_NAME + '.dark.json')
     );
-    // All modes
+    // Everything
     await fs.writeFile(
       buildPath + OUTPUT_BASE_FILENAME + '.all.json',
       JSON.stringify(
         {
-          Theme: {
-            [FIGMA_KEY_LIGHT]: { ...light },
-            [FIGMA_KEY_DARK]: { ...dark },
-          },
-          Universal: {
+          Global: {
             ...modeless,
           },
+          [FIGMA_KEY_LIGHT]: { ...light },
+          [FIGMA_KEY_DARK]: { ...dark },
+          '$themes': [],
+          '$metadata': {
+            tokenSetOrder: [
+              'Global',
+              FIGMA_KEY_LIGHT,
+              FIGMA_KEY_DARK,
+            ]
+          }
         },
         null,
         2
@@ -161,12 +175,7 @@ StyleDictionary.registerAction({
       buildPath + OUTPUT_BASE_FILENAME + '.light.json',
       JSON.stringify(
         {
-          Theme: {
-            [FIGMA_KEY_LIGHT]: { ...light },
-          },
-          Universal: {
-            ...modeless,
-          },
+          ...light,
         },
         null,
         2
@@ -177,12 +186,7 @@ StyleDictionary.registerAction({
       buildPath + OUTPUT_BASE_FILENAME + '.dark.json',
       JSON.stringify(
         {
-          Theme: {
-            [FIGMA_KEY_DARK]: { ...dark },
-          },
-          Universal: {
-            ...modeless,
-          },
+          ...dark,
         },
         null,
         2

@@ -32,6 +32,10 @@
           value: 800,
           type: "number",
         },
+        "ultra": {
+          value: 900,
+          type: "number",
+        },
       },
       "font-scale": {
         comment: "Font scale is based on a formular: stepX = fontScale[x - 1] + (parseInt((x - 2) / 4) + 1) * 2; fontScale.push(stepX), where fontScale[0] = 10",

@@ -1,0 +1,2954 @@
+{
+  "Global": {
+    "Line Weight": {
+      "Standard": {
+        "value": "1px",
+        "type": "borderWidth",
+        "description": "Used for ui elements like inputs, dividers, etc."
+      },
+      "Highlight": {
+        "value": "2px",
+        "type": "borderWidth",
+        "description": "E.g. use for active menu items."
+      },
+      "Bold": {
+        "value": "4px",
+        "type": "borderWidth"
+      }
+    },
+    "Opacity": {
+      "Invisible": {
+        "value": 0,
+        "type": "opacity"
+      },
+      "Transparent": {
+        "value": 0.35,
+        "type": "opacity"
+      },
+      "Semi Transparent": {
+        "value": 0.5,
+        "type": "opacity"
+      },
+      "Translucent": {
+        "value": 0.75,
+        "type": "opacity"
+      },
+      "Semi Translucent": {
+        "value": 0.85,
+        "type": "opacity"
+      },
+      "Solid": {
+        "value": 1,
+        "type": "opacity"
+      }
+    },
+    "Radius": {
+      "Small": {
+        "value": "4px",
+        "type": "borderRadius",
+        "description": "Used for small elements like checkboxes, etc."
+      },
+      "Standard": {
+        "value": "8px",
+        "type": "borderRadius",
+        "description": "Used for our main ui elements like buttons, etc."
+      },
+      "Large": {
+        "value": "12px",
+        "type": "borderRadius",
+        "description": "Used mainly for containers like cards or dialogs"
+      },
+      "Pill": {
+        "value": "999px",
+        "type": "borderRadius",
+        "description": "Used for pill-shaped ui elements"
+      },
+      "Circle": {
+        "value": "50%",
+        "type": "borderRadius",
+        "description": "Used for ui elements like radio buttons or things like avatars"
+      }
+    },
+    "Spacing": {
+      "Unit": {
+        "x0": {
+          "value": "0px",
+          "type": "spacing"
+        },
+        "x025": {
+          "value": "1px",
+          "type": "spacing"
+        },
+        "x05": {
+          "value": "2px",
+          "type": "spacing"
+        },
+        "x1": {
+          "value": "4px",
+          "type": "spacing"
+        },
+        "x2": {
+          "value": "8px",
+          "type": "spacing"
+        },
+        "x3": {
+          "value": "12px",
+          "type": "spacing"
+        },
+        "x4": {
+          "value": "16px",
+          "type": "spacing"
+        },
+        "x5": {
+          "value": "20px",
+          "type": "spacing"
+        },
+        "x6": {
+          "value": "24px",
+          "type": "spacing"
+        },
+        "x7": {
+          "value": "28px",
+          "type": "spacing"
+        },
+        "x8": {
+          "value": "32px",
+          "type": "spacing"
+        },
+        "x9": {
+          "value": "36px",
+          "type": "spacing"
+        },
+        "x10": {
+          "value": "40px",
+          "type": "spacing"
+        },
+        "x11": {
+          "value": "44px",
+          "type": "spacing"
+        },
+        "x12": {
+          "value": "48px",
+          "type": "spacing"
+        },
+        "x13": {
+          "value": "52px",
+          "type": "spacing"
+        },
+        "x14": {
+          "value": "56px",
+          "type": "spacing"
+        },
+        "x15": {
+          "value": "60px",
+          "type": "spacing"
+        },
+        "x16": {
+          "value": "64px",
+          "type": "spacing"
+        },
+        "x17": {
+          "value": "68px",
+          "type": "spacing"
+        },
+        "x18": {
+          "value": "72px",
+          "type": "spacing"
+        },
+        "x19": {
+          "value": "76px",
+          "type": "spacing"
+        },
+        "x20": {
+          "value": "80px",
+          "type": "spacing"
+        }
+      }
+    },
+    "Text Style": {
+      "Badge": {
+        "value": {
+          "fontFamily": "TeleNeo",
+          "fontWeight": "Regular",
+          "lineHeight": "120%",
+          "fontSize": "10",
+          "letterSpacing": "0%",
+          "paragraphSpacing": "0",
+          "textDecoration": "none",
+          "textCase": "none"
+        },
+        "type": "typography"
+      },
+      "Small": {
+        "value": {
+          "fontFamily": "TeleNeo",
+          "fontWeight": "Medium",
+          "lineHeight": "135%",
+          "fontSize": "12",
+          "letterSpacing": "0%",
+          "paragraphSpacing": "0",
+          "textDecoration": "none",
+          "textCase": "none"
+        },
+        "type": "typography"
+      },
+      "Small Bold": {
+        "value": {
+          "fontFamily": "TeleNeo",
+          "fontWeight": "Bold",
+          "lineHeight": "135%",
+          "fontSize": "12",
+          "letterSpacing": "0%",
+          "paragraphSpacing": "0",
+          "textDecoration": "none",
+          "textCase": "none"
+        },
+        "type": "typography"
+      },
+      "Caption": {
+        "value": {
+          "fontFamily": "TeleNeo",
+          "fontWeight": "Regular",
+          "lineHeight": "140%",
+          "fontSize": "14",
+          "letterSpacing": "0%",
+          "paragraphSpacing": "0",
+          "textDecoration": "none",
+          "textCase": "none"
+        },
+        "type": "typography"
+      },
+      "Caption Bold": {
+        "value": {
+          "fontFamily": "TeleNeo",
+          "fontWeight": "Bold",
+          "lineHeight": "140%",
+          "fontSize": "14",
+          "letterSpacing": "0%",
+          "paragraphSpacing": "0",
+          "textDecoration": "none",
+          "textCase": "none"
+        },
+        "type": "typography"
+      },
+      "Body": {
+        "value": {
+          "fontFamily": "TeleNeo",
+          "fontWeight": "Regular",
+          "lineHeight": "140%",
+          "fontSize": "16",
+          "letterSpacing": "0%",
+          "paragraphSpacing": "0",
+          "textDecoration": "none",
+          "textCase": "none"
+        },
+        "type": "typography"
+      },
+      "Body Bold": {
+        "value": {
+          "fontFamily": "TeleNeo",
+          "fontWeight": "Bold",
+          "lineHeight": "140%",
+          "fontSize": "16",
+          "letterSpacing": "0%",
+          "paragraphSpacing": "0",
+          "textDecoration": "none",
+          "textCase": "none"
+        },
+        "type": "typography"
+      },
+      "UI": {
+        "value": {
+          "fontFamily": "TeleNeo",
+          "fontWeight": "Medium",
+          "lineHeight": "100%",
+          "fontSize": "16",
+          "letterSpacing": "0%",
+          "paragraphSpacing": "0",
+          "textDecoration": "none",
+          "textCase": "none"
+        },
+        "type": "typography"
+      },
+      "UI Bold": {
+        "value": {
+          "fontFamily": "TeleNeo",
+          "fontWeight": "Bold",
+          "lineHeight": "100%",
+          "fontSize": "16",
+          "letterSpacing": "0%",
+          "paragraphSpacing": "0",
+          "textDecoration": "none",
+          "textCase": "none"
+        },
+        "type": "typography"
+      },
+      "Lead Text": {
+        "value": {
+          "fontFamily": "TeleNeo",
+          "fontWeight": "Regular",
+          "lineHeight": "140%",
+          "fontSize": "20",
+          "letterSpacing": "0%",
+          "paragraphSpacing": "0",
+          "textDecoration": "none",
+          "textCase": "none"
+        },
+        "type": "typography"
+      },
+      "Heading 6": {
+        "value": {
+          "fontFamily": "TeleNeo",
+          "fontWeight": "Bold",
+          "lineHeight": "140%",
+          "fontSize": "16",
+          "letterSpacing": "0%",
+          "paragraphSpacing": "0",
+          "textDecoration": "none",
+          "textCase": "none"
+        },
+        "type": "typography"
+      },
+      "Heading 5": {
+        "value": {
+          "fontFamily": "TeleNeo",
+          "fontWeight": "ExtraBold",
+          "lineHeight": "140%",
+          "fontSize": "20",
+          "letterSpacing": "0%",
+          "paragraphSpacing": "0",
+          "textDecoration": "none",
+          "textCase": "none"
+        },
+        "type": "typography"
+      },
+      "Heading 4": {
+        "value": {
+          "fontFamily": "TeleNeo",
+          "fontWeight": "ExtraBold",
+          "lineHeight": "135%",
+          "fontSize": "24",
+          "letterSpacing": "0%",
+          "paragraphSpacing": "0",
+          "textDecoration": "none",
+          "textCase": "none"
+        },
+        "type": "typography"
+      },
+      "Heading 3": {
+        "value": {
+          "fontFamily": "TeleNeo",
+          "fontWeight": "ExtraBold",
+          "lineHeight": "125%",
+          "fontSize": "32",
+          "letterSpacing": "0%",
+          "paragraphSpacing": "0",
+          "textDecoration": "none",
+          "textCase": "none"
+        },
+        "type": "typography"
+      },
+      "Heading 2": {
+        "value": {
+          "fontFamily": "TeleNeo",
+          "fontWeight": "ExtraBold",
+          "lineHeight": "114.99999999999999%",
+          "fontSize": "42",
+          "letterSpacing": "0%",
+          "paragraphSpacing": "0",
+          "textDecoration": "none",
+          "textCase": "none"
+        },
+        "type": "typography"
+      },
+      "Heading 1": {
+        "value": {
+          "fontFamily": "TeleNeo",
+          "fontWeight": "ExtraBold",
+          "lineHeight": "120%",
+          "fontSize": "54",
+          "letterSpacing": "0%",
+          "paragraphSpacing": "0",
+          "textDecoration": "none",
+          "textCase": "none"
+        },
+        "type": "typography"
+      },
+      "Title 2": {
+        "value": {
+          "fontFamily": "TeleNeo",
+          "fontWeight": "ExtraBold",
+          "lineHeight": "114.99999999999999%",
+          "fontSize": "68",
+          "letterSpacing": "0%",
+          "paragraphSpacing": "0",
+          "textDecoration": "none",
+          "textCase": "none"
+        },
+        "type": "typography"
+      },
+      "Title 1": {
+        "value": {
+          "fontFamily": "TeleNeo",
+          "fontWeight": "ExtraBold",
+          "lineHeight": "114.99999999999999%",
+          "fontSize": "76",
+          "letterSpacing": "0%",
+          "paragraphSpacing": "0",
+          "textDecoration": "none",
+          "textCase": "none"
+        },
+        "type": "typography"
+      }
+    },
+    "Font Size": {
+      "Badge": {
+        "value": "10px",
+        "type": "dimension"
+      },
+      "Small": {
+        "value": "12px",
+        "type": "dimension"
+      },
+      "Caption": {
+        "value": "14px",
+        "type": "dimension"
+      },
+      "Body": {
+        "value": "16px",
+        "type": "dimension"
+      },
+      "Callout": {
+        "value": "20px",
+        "type": "dimension"
+      },
+      "Headline 3": {
+        "value": "24px",
+        "type": "dimension"
+      },
+      "Headline 2": {
+        "value": "32px",
+        "type": "dimension"
+      },
+      "Headline 1": {
+        "value": "42px",
+        "type": "dimension"
+      },
+      "Title 3": {
+        "value": "54px",
+        "type": "dimension"
+      },
+      "Title 2": {
+        "value": "68px",
+        "type": "dimension"
+      },
+      "Title 1": {
+        "value": "76px",
+        "type": "dimension"
+      }
+    },
+    "Font Family": {
+      "Sans": {
+        "value": "TeleNeoWeb, sans-serif",
+        "type": "typography"
+      },
+      "Mono": {
+        "value": "monospace",
+        "type": "typography"
+      }
+    },
+    "Font Weight": {
+      "Thin": {
+        "value": 200,
+        "type": "typography"
+      },
+      "Regular": {
+        "value": 400,
+        "type": "typography"
+      },
+      "Medium": {
+        "value": 500,
+        "type": "typography"
+      },
+      "Bold": {
+        "value": 700,
+        "type": "typography"
+      },
+      "Extra Bold": {
+        "value": 800,
+        "type": "typography"
+      }
+    },
+    "Line Spacing": {
+      "None": {
+        "value": 1,
+        "type": "typography",
+        "description": "Use for single line in ui elements"
+      },
+      "Extra Tight": {
+        "value": 1.15,
+        "type": "typography",
+        "description": "Use for large titles like H1 or H2"
+      },
+      "Tight": {
+        "value": 1.25,
+        "type": "typography",
+        "description": "Use for large headlines like H3, etc."
+      },
+      "Standard": {
+        "value": 1.4,
+        "type": "typography",
+        "description": "Use for most text elements like normal copy, etc."
+      },
+      "Loose": {
+        "value": 1.5,
+        "type": "typography",
+        "description": "Use for multi line text passages with long lines."
+      }
+    },
+    "Letter Spacing": {
+      "Standard": {
+        "value": 0,
+        "type": "typography"
+      }
+    }
+  },
+  "Light": {
+    "Text & Icon": {
+      "Standard": {
+        "value": "#000000",
+        "type": "color",
+        "description": "Default text color with highest contrast."
+      },
+      "Additional": {
+        "value": "#000000a6",
+        "type": "color",
+        "description": "Use in combination with standard text for additional text elements."
+      },
+      "Disabled": {
+        "value": "#00000066",
+        "type": "color",
+        "description": "Only use for disabled text."
+      },
+      "Link": {
+        "Standard": {
+          "value": "#2238df",
+          "type": "color"
+        },
+        "Hovered": {
+          "value": "#0819bd",
+          "type": "color"
+        },
+        "Visited": {
+          "value": "#6c3bdb",
+          "type": "color"
+        },
+        "Active": {
+          "value": "#000d99",
+          "type": "color"
+        }
+      },
+      "Primary": {
+        "Standard": {
+          "value": "#e20074",
+          "type": "color"
+        },
+        "Hovered": {
+          "value": "#C00063",
+          "type": "color"
+        },
+        "Pressed": {
+          "value": "#9E0051",
+          "type": "color"
+        }
+      },
+      "Inverted": {
+        "Standard": {
+          "value": "#ffffff",
+          "type": "color",
+          "description": "Standard text color inverted to be used on high contrast colors like ui/extra strong"
+        },
+        "Additional": {
+          "value": "#ffffffa6",
+          "type": "color",
+          "description": "Additional text color inverted to be used on high contrast colors like ui/extra strong"
+        }
+      },
+      "White": {
+        "Standard": {
+          "value": "#ffffff",
+          "type": "color",
+          "description": "Light text to be used on backgrounds that are dark in all modes (light & dark)"
+        },
+        "Additional": {
+          "value": "#ffffffa6",
+          "type": "color",
+          "description": "Semi-Light text to be used on backgrounds that are dark in all modes (light & dark)"
+        }
+      },
+      "Black": {
+        "Standard": {
+          "value": "#000000",
+          "type": "color",
+          "description": "This text color is dark in all modes (light & dark)"
+        },
+        "Additional": {
+          "value": "#000000a6",
+          "type": "color",
+          "description": "This text color is dark in all modes (light & dark)"
+        }
+      },
+      "Functional": {
+        "Informational": {
+          "value": "#2238df",
+          "type": "color"
+        },
+        "Success": {
+          "value": "#008653",
+          "type": "color"
+        },
+        "Danger": {
+          "value": "#d91308",
+          "type": "color"
+        },
+        "Warning": {
+          "value": "#b63d00",
+          "type": "color"
+        }
+      },
+      "On Subtle": {
+        "Informational": {
+          "value": "#2238df",
+          "type": "color"
+        },
+        "Success": {
+          "value": "#00774b",
+          "type": "color"
+        },
+        "Danger": {
+          "value": "#c30a03",
+          "type": "color"
+        },
+        "Warning": {
+          "value": "#b63d00",
+          "type": "color"
+        },
+        "Violet": {
+          "value": "#6c3bdb",
+          "type": "color"
+        },
+        "Blue": {
+          "value": "#2238df",
+          "type": "color"
+        },
+        "Cyan": {
+          "value": "#00738A",
+          "type": "color"
+        },
+        "Teal": {
+          "value": "#177364",
+          "type": "color"
+        },
+        "Green": {
+          "value": "#00774b",
+          "type": "color"
+        },
+        "Olive": {
+          "value": "#557317",
+          "type": "color"
+        },
+        "Brown": {
+          "value": "#82581c",
+          "type": "color"
+        },
+        "Yellow": {
+          "value": "#AC5600",
+          "type": "color"
+        },
+        "Orange": {
+          "value": "#b63d00",
+          "type": "color"
+        },
+        "Red": {
+          "value": "#c30a03",
+          "type": "color"
+        }
+      }
+    },
+    "Background": {
+      "Canvas": {
+        "value": "#FFFFFF",
+        "type": "color",
+        "description": "Use as the background for your product (app, website, etc.)"
+      },
+      "Canvas Subtle": {
+        "value": "#fbfbfb",
+        "type": "color",
+        "description": "Use as the background for your product (app, website, etc.)"
+      },
+      "Backdrop": {
+        "value": "#00000080",
+        "type": "color",
+        "description": "Use to overlay content below dialogs to separate dialog from content below"
+      },
+      "Surface": {
+        "value": "#FFFFFF",
+        "type": "color",
+        "description": "Use as the background of elements like cards, headers, bottom bars, etc."
+      },
+      "Surface Subtle": {
+        "value": "#efeff0",
+        "type": "color",
+        "description": "Use as the background of elements like cards, headers, bottom bars, etc."
+      },
+      "Surface Highlight": {
+        "value": "#242426",
+        "type": "color",
+        "description": "Use as the background of elements that should stand out highlighted sections, footer, etc."
+      }
+    },
+    "Primary": {
+      "Standard": {
+        "value": "#e20074",
+        "type": "color"
+      },
+      "Hovered": {
+        "value": "#C00063",
+        "type": "color"
+      },
+      "Pressed": {
+        "value": "#9E0051",
+        "type": "color"
+      }
+    },
+    "UI": {
+      "Base": {
+        "value": "#FFFFFF",
+        "type": "color"
+      },
+      "Subtle": {
+        "value": "#efeff0",
+        "type": "color"
+      },
+      "Faint": {
+        "value": "#dfdfe1",
+        "type": "color"
+      },
+      "Regular": {
+        "value": "#929296",
+        "type": "color"
+      },
+      "Strong": {
+        "value": "#747478",
+        "type": "color"
+      },
+      "Extra Strong": {
+        "value": "#242426",
+        "type": "color"
+      },
+      "White": {
+        "value": "#FFFFFF",
+        "type": "color"
+      },
+      "Black": {
+        "value": "#000000",
+        "type": "color"
+      },
+      "Disabled": {
+        "value": "#d0d0d2",
+        "type": "color"
+      },
+      "Border": {
+        "Standard": {
+          "value": "#00000070",
+          "type": "color"
+        },
+        "Hovered": {
+          "value": "#000000b5",
+          "type": "color"
+        },
+        "Pressed": {
+          "value": "#000000b5",
+          "type": "color",
+          "description": "Use this token for borders in pressed or active state"
+        },
+        "Disabled": {
+          "value": "#00000024",
+          "type": "color"
+        }
+      },
+      "State Fill": {
+        "Standard": {
+          "value": "#00000000",
+          "type": "color",
+          "description": "For outlined and ghost elements: The standard fill is invisible / 0% opacity"
+        },
+        "Hovered": {
+          "value": "#00000012",
+          "type": "color",
+          "description": "For outlined and ghost elements: When hovered a light, transparent fill is applied"
+        },
+        "Pressed": {
+          "value": "#00000036",
+          "type": "color",
+          "description": "For outlined and ghost elements: When pressed or active a medium transparent fill is applied"
+        },
+        "Hovered Inverted": {
+          "value": "#ffffff24",
+          "type": "color",
+          "description": "For outlined and ghost elements: When hovered a light, transparent fill is applied"
+        },
+        "Pressed Inverted": {
+          "value": "#ffffff36",
+          "type": "color",
+          "description": "For outlined and ghost elements: When pressed or active a medium transparent fill is applied"
+        }
+      }
+    },
+    "Functional": {
+      "Focus": {
+        "Standard": {
+          "value": "#2238df",
+          "type": "color"
+        },
+        "Inverted": {
+          "value": "#7d94f9",
+          "type": "color"
+        },
+        "On Dark Background": {
+          "value": "#7d94f9",
+          "type": "color"
+        },
+        "On Light Background": {
+          "value": "#2238df",
+          "type": "color"
+        }
+      },
+      "Informational": {
+        "Standard": {
+          "value": "#2238df",
+          "type": "color"
+        },
+        "Hovered": {
+          "value": "#1326cf",
+          "type": "color"
+        },
+        "Pressed": {
+          "value": "#0819bd",
+          "type": "color"
+        },
+        "Subtle": {
+          "value": "#D3D7F9",
+          "type": "color"
+        }
+      },
+      "Success": {
+        "Standard": {
+          "value": "#00b367",
+          "type": "color"
+        },
+        "Hovered": {
+          "value": "#00a461",
+          "type": "color"
+        },
+        "Pressed": {
+          "value": "#00955a",
+          "type": "color"
+        },
+        "Subtle": {
+          "value": "#CCF0E1",
+          "type": "color"
+        }
+      },
+      "Danger": {
+        "Standard": {
+          "value": "#e82010",
+          "type": "color"
+        },
+        "Hovered": {
+          "value": "#d91308",
+          "type": "color"
+        },
+        "Pressed": {
+          "value": "#c30a03",
+          "type": "color"
+        },
+        "Subtle": {
+          "value": "#FAD2CF",
+          "type": "color"
+        }
+      },
+      "Warning": {
+        "Standard": {
+          "value": "#f97012",
+          "type": "color"
+        },
+        "Hovered": {
+          "value": "#f46409",
+          "type": "color"
+        },
+        "Pressed": {
+          "value": "#e65703",
+          "type": "color"
+        },
+        "Subtle": {
+          "value": "#FEE2D0",
+          "type": "color"
+        }
+      }
+    },
+    "Additional": {
+      "Violet": {
+        "0": {
+          "value": "#e2d9ff",
+          "type": "color",
+          "description": "tags: additional, violet"
+        },
+        "100": {
+          "value": "#c8b5fd",
+          "type": "color",
+          "description": "tags: additional, violet"
+        },
+        "200": {
+          "value": "#af93fb",
+          "type": "color",
+          "description": "tags: additional, violet"
+        },
+        "300": {
+          "value": "#9a75f8",
+          "type": "color",
+          "description": "tags: additional, violet"
+        },
+        "400": {
+          "value": "#885df2",
+          "type": "color",
+          "description": "tags: additional, violet"
+        },
+        "500": {
+          "value": "#794ae9",
+          "type": "color",
+          "description": "tags: additional, violet"
+        },
+        "600": {
+          "value": "#6c3bdb",
+          "type": "color",
+          "description": "tags: additional, violet"
+        },
+        "700": {
+          "value": "#5e2ec6",
+          "type": "color",
+          "description": "tags: additional, violet"
+        },
+        "800": {
+          "value": "#5024ab",
+          "type": "color",
+          "description": "tags: additional, violet"
+        },
+        "900": {
+          "value": "#411c8c",
+          "type": "color",
+          "description": "tags: additional, violet"
+        },
+        "Subtle": {
+          "value": "#E4DBFB",
+          "type": "color",
+          "description": "tags: violet, additional"
+        }
+      },
+      "Blue": {
+        "0": {
+          "value": "#d9e2ff",
+          "type": "color",
+          "description": "tags: additional, blue"
+        },
+        "100": {
+          "value": "#aabcfd",
+          "type": "color",
+          "description": "tags: additional, blue"
+        },
+        "200": {
+          "value": "#7d94f9",
+          "type": "color",
+          "description": "tags: additional, blue"
+        },
+        "300": {
+          "value": "#576ff3",
+          "type": "color",
+          "description": "tags: additional, blue"
+        },
+        "400": {
+          "value": "#3950ea",
+          "type": "color",
+          "description": "tags: additional, blue"
+        },
+        "500": {
+          "value": "#2238df",
+          "type": "color",
+          "description": "tags: additional, blue"
+        },
+        "600": {
+          "value": "#1326cf",
+          "type": "color",
+          "description": "tags: additional, blue"
+        },
+        "700": {
+          "value": "#0819bd",
+          "type": "color",
+          "description": "tags: additional, blue"
+        },
+        "800": {
+          "value": "#0311ab",
+          "type": "color",
+          "description": "tags: additional, blue"
+        },
+        "900": {
+          "value": "#000d99",
+          "type": "color",
+          "description": "tags: additional, blue"
+        },
+        "Subtle": {
+          "value": "#D3D7F9",
+          "type": "color",
+          "description": "tags: additional, subtle, blue"
+        }
+      },
+      "Cyan": {
+        "0": {
+          "value": "#d9fcff",
+          "type": "color",
+          "description": "tags: additional, cyan"
+        },
+        "100": {
+          "value": "#a4ecf4",
+          "type": "color",
+          "description": "tags: additional, cyan"
+        },
+        "200": {
+          "value": "#75dbe8",
+          "type": "color",
+          "description": "tags: additional, cyan"
+        },
+        "300": {
+          "value": "#4fcadd",
+          "type": "color",
+          "description": "tags: additional, cyan"
+        },
+        "400": {
+          "value": "#33bbd2",
+          "type": "color",
+          "description": "tags: additional, cyan"
+        },
+        "500": {
+          "value": "#1eadc6",
+          "type": "color",
+          "description": "tags: additional, cyan"
+        },
+        "600": {
+          "value": "#11a0bb",
+          "type": "color",
+          "description": "tags: additional, cyan"
+        },
+        "700": {
+          "value": "#0894b0",
+          "type": "color",
+          "description": "tags: additional, cyan"
+        },
+        "800": {
+          "value": "#038aa4",
+          "type": "color",
+          "description": "tags: additional, cyan"
+        },
+        "900": {
+          "value": "#008099",
+          "type": "color",
+          "description": "tags: additional, cyan"
+        },
+        "Subtle": {
+          "value": "#D2EFF4",
+          "type": "color",
+          "description": "tags: additional, subtle, cyan"
+        }
+      },
+      "Teal": {
+        "0": {
+          "value": "#d9fff2",
+          "type": "color",
+          "description": "tags: additional, teal"
+        },
+        "100": {
+          "value": "#acf1dc",
+          "type": "color",
+          "description": "tags: additional, teal"
+        },
+        "200": {
+          "value": "#85e3ca",
+          "type": "color",
+          "description": "tags: additional, teal"
+        },
+        "300": {
+          "value": "#65d5ba",
+          "type": "color",
+          "description": "tags: additional, teal"
+        },
+        "400": {
+          "value": "#4cc6ac",
+          "type": "color",
+          "description": "tags: additional, teal"
+        },
+        "500": {
+          "value": "#3ab89f",
+          "type": "color",
+          "description": "tags: additional, teal"
+        },
+        "600": {
+          "value": "#2eaa93",
+          "type": "color",
+          "description": "tags: additional, teal"
+        },
+        "700": {
+          "value": "#259c87",
+          "type": "color",
+          "description": "tags: additional, teal"
+        },
+        "800": {
+          "value": "#1e8e7b",
+          "type": "color",
+          "description": "tags: additional, teal"
+        },
+        "900": {
+          "value": "#19806f",
+          "type": "color",
+          "description": "tags: additional, teal"
+        },
+        "Subtle": {
+          "value": "#D8F1EC",
+          "type": "color",
+          "description": "tags: additional, subtle, teal"
+        }
+      },
+      "Green": {
+        "0": {
+          "value": "#dbffed",
+          "type": "color",
+          "description": "tags: additional, green"
+        },
+        "100": {
+          "value": "#8ff0c1",
+          "type": "color",
+          "description": "tags: additional, green"
+        },
+        "200": {
+          "value": "#4ee19c",
+          "type": "color",
+          "description": "tags: additional, green"
+        },
+        "300": {
+          "value": "#1bd27f",
+          "type": "color",
+          "description": "tags: additional, green"
+        },
+        "400": {
+          "value": "#00c26d",
+          "type": "color",
+          "description": "tags: additional, green"
+        },
+        "500": {
+          "value": "#00b367",
+          "type": "color",
+          "description": "tags: additional, green"
+        },
+        "600": {
+          "value": "#00a461",
+          "type": "color",
+          "description": "tags: additional, green"
+        },
+        "700": {
+          "value": "#00955a",
+          "type": "color",
+          "description": "tags: additional, green"
+        },
+        "800": {
+          "value": "#008653",
+          "type": "color",
+          "description": "tags: additional, green"
+        },
+        "900": {
+          "value": "#00774b",
+          "type": "color",
+          "description": "tags: additional, green"
+        },
+        "Subtle": {
+          "value": "#CCF0E1",
+          "type": "color",
+          "description": "tags: green, subtle, additional"
+        }
+      },
+      "Olive": {
+        "0": {
+          "value": "#f2ffd9",
+          "type": "color",
+          "description": "tags: additional, olive"
+        },
+        "100": {
+          "value": "#daf1ac",
+          "type": "color",
+          "description": "tags: additional, olive"
+        },
+        "200": {
+          "value": "#c3e385",
+          "type": "color",
+          "description": "tags: additional, olive"
+        },
+        "300": {
+          "value": "#afd565",
+          "type": "color",
+          "description": "tags: additional, olive"
+        },
+        "400": {
+          "value": "#9ec64c",
+          "type": "color",
+          "description": "tags: additional, olive"
+        },
+        "500": {
+          "value": "#8eb83a",
+          "type": "color",
+          "description": "tags: additional, olive"
+        },
+        "600": {
+          "value": "#81aa2e",
+          "type": "color",
+          "description": "tags: additional, olive"
+        },
+        "700": {
+          "value": "#749c25",
+          "type": "color",
+          "description": "tags: additional, olive"
+        },
+        "800": {
+          "value": "#688e1e",
+          "type": "color",
+          "description": "tags: additional, olive"
+        },
+        "900": {
+          "value": "#5e8019",
+          "type": "color",
+          "description": "tags: additional, olive"
+        },
+        "Subtle": {
+          "value": "#E8F1D8",
+          "type": "color",
+          "description": "tags: additional, subtle, olive"
+        }
+      },
+      "Brown": {
+        "0": {
+          "value": "#ffefd9",
+          "type": "color",
+          "description": "tags: additional, brown"
+        },
+        "100": {
+          "value": "#efd3ab",
+          "type": "color",
+          "description": "tags: additional, brown"
+        },
+        "200": {
+          "value": "#e0b983",
+          "type": "color",
+          "description": "tags: additional, brown"
+        },
+        "300": {
+          "value": "#d0a363",
+          "type": "color",
+          "description": "tags: additional, brown"
+        },
+        "400": {
+          "value": "#c18f4a",
+          "type": "color",
+          "description": "tags: additional, brown"
+        },
+        "500": {
+          "value": "#b17f38",
+          "type": "color",
+          "description": "tags: additional, brown"
+        },
+        "600": {
+          "value": "#a2702b",
+          "type": "color",
+          "description": "tags: additional, brown"
+        },
+        "700": {
+          "value": "#926322",
+          "type": "color",
+          "description": "tags: additional, brown"
+        },
+        "800": {
+          "value": "#82581c",
+          "type": "color",
+          "description": "tags: additional, brown"
+        },
+        "900": {
+          "value": "#734d17",
+          "type": "color",
+          "description": "tags: additional, brown"
+        },
+        "Subtle": {
+          "value": "#EFE5D7",
+          "type": "color",
+          "description": "tags: additional, subtle, brown"
+        }
+      },
+      "Yellow": {
+        "0": {
+          "value": "#fffcd9",
+          "type": "color",
+          "description": "tags: additional, yellow"
+        },
+        "100": {
+          "value": "#fcf1aa",
+          "type": "color",
+          "description": "tags: additional, yellow"
+        },
+        "200": {
+          "value": "#f9e47e",
+          "type": "color",
+          "description": "tags: additional, yellow"
+        },
+        "300": {
+          "value": "#f7d358",
+          "type": "color",
+          "description": "tags: additional, yellow"
+        },
+        "400": {
+          "value": "#f4c23b",
+          "type": "color",
+          "description": "tags: additional, yellow"
+        },
+        "500": {
+          "value": "#f1b125",
+          "type": "color",
+          "description": "tags: additional, yellow"
+        },
+        "600": {
+          "value": "#eea015",
+          "type": "color",
+          "description": "tags: additional, yellow"
+        },
+        "700": {
+          "value": "#eb900b",
+          "type": "color",
+          "description": "tags: additional, yellow"
+        },
+        "800": {
+          "value": "#e88104",
+          "type": "color",
+          "description": "tags: additional, yellow"
+        },
+        "900": {
+          "value": "#e67300",
+          "type": "color",
+          "description": "tags: additional, yellow"
+        },
+        "Subtle": {
+          "value": "#FCEFD3",
+          "type": "color",
+          "description": "tags: additional, subtle, yellow"
+        }
+      },
+      "Orange": {
+        "0": {
+          "value": "#ffe6cc",
+          "type": "color",
+          "description": "tags: additional, orange"
+        },
+        "100": {
+          "value": "#ffc48e",
+          "type": "color",
+          "description": "tags: additional, orange"
+        },
+        "200": {
+          "value": "#fea75b",
+          "type": "color",
+          "description": "tags: additional, orange"
+        },
+        "300": {
+          "value": "#fd9038",
+          "type": "color",
+          "description": "tags: additional, orange"
+        },
+        "400": {
+          "value": "#fc7e21",
+          "type": "color",
+          "description": "tags: additional, orange"
+        },
+        "500": {
+          "value": "#f97012",
+          "type": "color",
+          "description": "tags: additional, orange"
+        },
+        "600": {
+          "value": "#f46409",
+          "type": "color",
+          "description": "tags: additional, orange"
+        },
+        "700": {
+          "value": "#e65703",
+          "type": "color",
+          "description": "tags: additional, orange"
+        },
+        "800": {
+          "value": "#cd4901",
+          "type": "color",
+          "description": "tags: additional, orange"
+        },
+        "900": {
+          "value": "#b63d00",
+          "type": "color",
+          "description": "tags: additional, orange"
+        },
+        "Subtle": {
+          "value": "#FEE2D0",
+          "type": "color",
+          "description": "tags: additional, subtle, orange"
+        }
+      },
+      "Red": {
+        "0": {
+          "value": "#ffcabf",
+          "type": "color",
+          "description": "tags: additional, red"
+        },
+        "100": {
+          "value": "#fd9684",
+          "type": "color",
+          "description": "tags: additional, red"
+        },
+        "200": {
+          "value": "#fb6a55",
+          "type": "color",
+          "description": "tags: additional, red"
+        },
+        "300": {
+          "value": "#f84934",
+          "type": "color",
+          "description": "tags: additional, red"
+        },
+        "400": {
+          "value": "#f2321e",
+          "type": "color",
+          "description": "tags: additional, red"
+        },
+        "500": {
+          "value": "#e82010",
+          "type": "color",
+          "description": "tags: additional, red"
+        },
+        "600": {
+          "value": "#d91308",
+          "type": "color",
+          "description": "tags: additional, red"
+        },
+        "700": {
+          "value": "#c30a03",
+          "type": "color",
+          "description": "tags: additional, red"
+        },
+        "800": {
+          "value": "#a70401",
+          "type": "color",
+          "description": "tags: additional, red"
+        },
+        "900": {
+          "value": "#870000",
+          "type": "color",
+          "description": "tags: additional, red"
+        },
+        "Subtle": {
+          "value": "#FAD2CF",
+          "type": "color",
+          "description": "tags: additional, subtle, red"
+        }
+      }
+    },
+    "Raised": {
+      "Standard": {
+        "value": [
+          {
+            "x": 0,
+            "y": 8,
+            "blur": 32,
+            "spread": 0,
+            "color": "#0000001a",
+            "type": "dropShadow"
+          },
+          {
+            "x": 0,
+            "y": 4,
+            "blur": 8,
+            "spread": 0,
+            "color": "#0000001a",
+            "type": "dropShadow"
+          }
+        ],
+        "type": "boxShadow",
+        "description": "For bigger interactable elements like cards, etc."
+      },
+      "Hover": {
+        "value": [
+          {
+            "x": 0,
+            "y": 16,
+            "blur": 64,
+            "spread": 0,
+            "color": "#0000001a",
+            "type": "dropShadow"
+          },
+          {
+            "x": 0,
+            "y": 8,
+            "blur": 16,
+            "spread": 0,
+            "color": "#0000001a",
+            "type": "dropShadow"
+          }
+        ],
+        "type": "boxShadow",
+        "description": "For bigger interactable elements like cards, etc."
+      },
+      "Pressed": {
+        "value": [
+          {
+            "x": 0,
+            "y": 4,
+            "blur": 16,
+            "spread": 0,
+            "color": "#0000001a",
+            "type": "dropShadow"
+          },
+          {
+            "x": 0,
+            "y": 2,
+            "blur": 4,
+            "spread": 0,
+            "color": "#0000001a",
+            "type": "dropShadow"
+          }
+        ],
+        "type": "boxShadow",
+        "description": "For bigger interactable elements like cards, etc."
+      }
+    },
+    "Floating": {
+      "Standard": {
+        "value": [
+          {
+            "x": 0,
+            "y": 12,
+            "blur": 48,
+            "spread": 0,
+            "color": "#0000001a",
+            "type": "dropShadow"
+          },
+          {
+            "x": 0,
+            "y": 6,
+            "blur": 12,
+            "spread": 0,
+            "color": "#0000001a",
+            "type": "dropShadow"
+          }
+        ],
+        "type": "boxShadow",
+        "description": "For floating elements that mostly stay in a fixed position like a FAB."
+      },
+      "Hover": {
+        "value": [
+          {
+            "x": 0,
+            "y": 24,
+            "blur": 96,
+            "spread": 0,
+            "color": "#0000001a",
+            "type": "dropShadow"
+          },
+          {
+            "x": 0,
+            "y": 12,
+            "blur": 24,
+            "spread": 0,
+            "color": "#0000001a",
+            "type": "dropShadow"
+          }
+        ],
+        "type": "boxShadow",
+        "description": "For floating elements that mostly stay in a fixed position like a FAB."
+      },
+      "Pressed": {
+        "value": [
+          {
+            "x": 0,
+            "y": 8,
+            "blur": 32,
+            "spread": 0,
+            "color": "#0000001a",
+            "type": "dropShadow"
+          },
+          {
+            "x": 0,
+            "y": 4,
+            "blur": 8,
+            "spread": 0,
+            "color": "#0000001a",
+            "type": "dropShadow"
+          }
+        ],
+        "type": "boxShadow",
+        "description": "For floating elements that mostly stay in a fixed position like a FAB."
+      }
+    },
+    "Top": {
+      "value": [
+        {
+          "x": 0,
+          "y": 16,
+          "blur": 64,
+          "spread": 0,
+          "color": "#0000001a",
+          "type": "dropShadow"
+        },
+        {
+          "x": 0,
+          "y": 8,
+          "blur": 16,
+          "spread": 0,
+          "color": "#0000001a",
+          "type": "dropShadow"
+        }
+      ],
+      "type": "boxShadow",
+      "description": "For fixed elements that overlay the content e.g. sidebars or bottom sheets"
+    },
+    "Overlay": {
+      "value": [
+        {
+          "x": 0,
+          "y": 24,
+          "blur": 96,
+          "spread": 0,
+          "color": "#0000001a",
+          "type": "dropShadow"
+        },
+        {
+          "x": 0,
+          "y": 12,
+          "blur": 24,
+          "spread": 0,
+          "color": "#0000001a",
+          "type": "dropShadow"
+        }
+      ],
+      "type": "boxShadow",
+      "description": "Highest level e.g. for dialogs or modals"
+    },
+    "App Bar": {
+      "Top": {
+        "Raised": {
+          "value": [
+            {
+              "x": 0,
+              "y": 1,
+              "blur": 0,
+              "spread": 0,
+              "color": "#0000000d",
+              "type": "dropShadow"
+            },
+            {
+              "x": 0,
+              "y": 2,
+              "blur": 8,
+              "spread": 0,
+              "color": "#0000000d",
+              "type": "dropShadow"
+            }
+          ],
+          "type": "boxShadow",
+          "description": "Use for headers, app bar & menus on the top"
+        },
+        "Flat": {
+          "value": [
+            {
+              "x": 0,
+              "y": 1,
+              "blur": 0,
+              "spread": 0,
+              "color": "#0000001a",
+              "type": "dropShadow"
+            }
+          ],
+          "type": "boxShadow",
+          "description": "Use for headers, app bar & menus on the top"
+        }
+      },
+      "Bottom": {
+        "Raised": {
+          "value": [
+            {
+              "x": 0,
+              "y": -1,
+              "blur": 0,
+              "spread": 0,
+              "color": "#0000000d",
+              "type": "dropShadow"
+            },
+            {
+              "x": 0,
+              "y": -2,
+              "blur": 8,
+              "spread": 0,
+              "color": "#0000000d",
+              "type": "dropShadow"
+            }
+          ],
+          "type": "boxShadow",
+          "description": "Use for app navigation and app bars on the bottom"
+        },
+        "Flat": {
+          "value": [
+            {
+              "x": 0,
+              "y": -1,
+              "blur": 0,
+              "spread": 0,
+              "color": "#0000001a",
+              "type": "dropShadow"
+            }
+          ],
+          "type": "boxShadow",
+          "description": "Use for app navigation and app bars on the bottom"
+        }
+      }
+    }
+  },
+  "Dark": {
+    "Text & Icon": {
+      "Standard": {
+        "value": "#ffffff",
+        "type": "color",
+        "description": "Default text color with highest contrast."
+      },
+      "Additional": {
+        "value": "#ffffffa6",
+        "type": "color",
+        "description": "Use in combination with standard text for additional text elements."
+      },
+      "Disabled": {
+        "value": "#ffffff4d",
+        "type": "color",
+        "description": "Only use for disabled text."
+      },
+      "Link": {
+        "Standard": {
+          "value": "#7d94f9",
+          "type": "color"
+        },
+        "Hovered": {
+          "value": "#aabcfd",
+          "type": "color"
+        },
+        "Visited": {
+          "value": "#9a75f8",
+          "type": "color"
+        },
+        "Active": {
+          "value": "#d9e2ff",
+          "type": "color"
+        }
+      },
+      "Primary": {
+        "Standard": {
+          "value": "#e20074",
+          "type": "color"
+        },
+        "Hovered": {
+          "value": "#EC59A5",
+          "type": "color"
+        },
+        "Pressed": {
+          "value": "#F080BA",
+          "type": "color"
+        }
+      },
+      "Inverted": {
+        "Standard": {
+          "value": "#000000",
+          "type": "color",
+          "description": "Standard text color inverted to be used on high contrast colors like ui/extra strong"
+        },
+        "Additional": {
+          "value": "#000000a6",
+          "type": "color",
+          "description": "Additional text color inverted to be used on high contrast colors like ui/extra strong"
+        }
+      },
+      "White": {
+        "Standard": {
+          "value": "#ffffff",
+          "type": "color",
+          "description": "Light text to be used on backgrounds that are dark in all modes (light & dark)"
+        },
+        "Additional": {
+          "value": "#ffffffa6",
+          "type": "color",
+          "description": "Semi-Light text to be used on backgrounds that are dark in all modes (light & dark)"
+        }
+      },
+      "Black": {
+        "Standard": {
+          "value": "#000000",
+          "type": "color",
+          "description": "This text color is dark in all modes (light & dark)"
+        },
+        "Additional": {
+          "value": "#000000a6",
+          "type": "color",
+          "description": "This text color is dark in all modes (light & dark)"
+        }
+      },
+      "Functional": {
+        "Informational": {
+          "value": "#7d94f9",
+          "type": "color"
+        },
+        "Success": {
+          "value": "#00b367",
+          "type": "color"
+        },
+        "Danger": {
+          "value": "#f84934",
+          "type": "color"
+        },
+        "Warning": {
+          "value": "#f97012",
+          "type": "color"
+        }
+      },
+      "On Subtle": {
+        "Informational": {
+          "value": "#7d94f9",
+          "type": "color"
+        },
+        "Success": {
+          "value": "#1bd27f",
+          "type": "color"
+        },
+        "Danger": {
+          "value": "#fb6a55",
+          "type": "color"
+        },
+        "Warning": {
+          "value": "#fd9038",
+          "type": "color"
+        },
+        "Violet": {
+          "value": "#af93fb",
+          "type": "color"
+        },
+        "Blue": {
+          "value": "#7d94f9",
+          "type": "color"
+        },
+        "Cyan": {
+          "value": "#33bbd2",
+          "type": "color"
+        },
+        "Teal": {
+          "value": "#4cc6ac",
+          "type": "color"
+        },
+        "Green": {
+          "value": "#1bd27f",
+          "type": "color"
+        },
+        "Olive": {
+          "value": "#9ec64c",
+          "type": "color"
+        },
+        "Brown": {
+          "value": "#d0a363",
+          "type": "color"
+        },
+        "Yellow": {
+          "value": "#f1b125",
+          "type": "color"
+        },
+        "Orange": {
+          "value": "#fd9038",
+          "type": "color"
+        },
+        "Red": {
+          "value": "#fb6a55",
+          "type": "color"
+        }
+      }
+    },
+    "Background": {
+      "Canvas": {
+        "value": "#000000",
+        "type": "color",
+        "description": "Use as the background for your product (app, website, etc.)"
+      },
+      "Canvas Subtle": {
+        "value": "#0e0e0f",
+        "type": "color",
+        "description": "Use as the background for your product (app, website, etc.)"
+      },
+      "Backdrop": {
+        "value": "#000000a6",
+        "type": "color",
+        "description": "Use to overlay content below dialogs to separate dialog from content below"
+      },
+      "Surface": {
+        "value": "#1c1c1e",
+        "type": "color",
+        "description": "Use as the background of elements like cards, headers, bottom bars, etc."
+      },
+      "Surface Subtle": {
+        "value": "#242426",
+        "type": "color",
+        "description": "Use as the background of elements like cards, headers, bottom bars, etc."
+      },
+      "Surface Highlight": {
+        "value": "#48484b",
+        "type": "color",
+        "description": "Use as the background of elements that should stand out highlighted sections, footer, etc."
+      }
+    },
+    "Primary": {
+      "Standard": {
+        "value": "#e20074",
+        "type": "color"
+      },
+      "Hovered": {
+        "value": "#C00063",
+        "type": "color"
+      },
+      "Pressed": {
+        "value": "#9E0051",
+        "type": "color"
+      }
+    },
+    "UI": {
+      "Base": {
+        "value": "#0e0e0f",
+        "type": "color"
+      },
+      "Subtle": {
+        "value": "#1c1c1e",
+        "type": "color"
+      },
+      "Faint": {
+        "value": "#39393c",
+        "type": "color"
+      },
+      "Regular": {
+        "value": "#656569",
+        "type": "color"
+      },
+      "Strong": {
+        "value": "#929296",
+        "type": "color"
+      },
+      "Extra Strong": {
+        "value": "#efeff0",
+        "type": "color"
+      },
+      "White": {
+        "value": "#FFFFFF",
+        "type": "color"
+      },
+      "Black": {
+        "value": "#000000",
+        "type": "color"
+      },
+      "Disabled": {
+        "value": "#2b2b2d",
+        "type": "color"
+      },
+      "Border": {
+        "Standard": {
+          "value": "#ffffff66",
+          "type": "color"
+        },
+        "Hovered": {
+          "value": "#ffffff8a",
+          "type": "color"
+        },
+        "Pressed": {
+          "value": "#fffffff0",
+          "type": "color",
+          "description": "Use this token for borders in pressed or active state"
+        },
+        "Disabled": {
+          "value": "#ffffff36",
+          "type": "color"
+        }
+      },
+      "State Fill": {
+        "Standard": {
+          "value": "#ffffff00",
+          "type": "color",
+          "description": "For outlined and ghost elements: The standard fill is invisible / 0% opacity"
+        },
+        "Hovered": {
+          "value": "#ffffff24",
+          "type": "color",
+          "description": "For outlined and ghost elements: When hovered a light, transparent fill is applied"
+        },
+        "Pressed": {
+          "value": "#ffffff45",
+          "type": "color",
+          "description": "For outlined and ghost elements: When pressed or active a medium transparent fill is applied"
+        },
+        "Hovered Inverted": {
+          "value": "#00000012",
+          "type": "color",
+          "description": "For outlined and ghost elements: When hovered a light, transparent fill is applied"
+        },
+        "Pressed Inverted": {
+          "value": "#00000036",
+          "type": "color",
+          "description": "For outlined and ghost elements: When pressed or active a medium transparent fill is applied"
+        }
+      }
+    },
+    "Functional": {
+      "Focus": {
+        "Standard": {
+          "value": "#7d94f9",
+          "type": "color"
+        },
+        "Inverted": {
+          "value": "#2238df",
+          "type": "color"
+        },
+        "On Dark Background": {
+          "value": "#7d94f9",
+          "type": "color"
+        },
+        "On Light Background": {
+          "value": "#2238df",
+          "type": "color"
+        }
+      },
+      "Informational": {
+        "Standard": {
+          "value": "#2238df",
+          "type": "color"
+        },
+        "Hovered": {
+          "value": "#3950ea",
+          "type": "color"
+        },
+        "Pressed": {
+          "value": "#576ff3",
+          "type": "color"
+        },
+        "Subtle": {
+          "value": "#131F7B",
+          "type": "color"
+        }
+      },
+      "Success": {
+        "Standard": {
+          "value": "#00b367",
+          "type": "color"
+        },
+        "Hovered": {
+          "value": "#00c26d",
+          "type": "color"
+        },
+        "Pressed": {
+          "value": "#1bd27f",
+          "type": "color"
+        },
+        "Subtle": {
+          "value": "#004829",
+          "type": "color"
+        }
+      },
+      "Danger": {
+        "Standard": {
+          "value": "#e82010",
+          "type": "color"
+        },
+        "Hovered": {
+          "value": "#f2321e",
+          "type": "color"
+        },
+        "Pressed": {
+          "value": "#f84934",
+          "type": "color"
+        },
+        "Subtle": {
+          "value": "#5D0D06",
+          "type": "color"
+        }
+      },
+      "Warning": {
+        "Standard": {
+          "value": "#f97012",
+          "type": "color"
+        },
+        "Hovered": {
+          "value": "#fd9038",
+          "type": "color"
+        },
+        "Pressed": {
+          "value": "#fd9038",
+          "type": "color"
+        },
+        "Subtle": {
+          "value": "#642D07",
+          "type": "color"
+        }
+      }
+    },
+    "Additional": {
+      "Violet": {
+        "0": {
+          "value": "#e2d9ff",
+          "type": "color",
+          "description": "tags: additional, violet"
+        },
+        "100": {
+          "value": "#c8b5fd",
+          "type": "color",
+          "description": "tags: additional, violet"
+        },
+        "200": {
+          "value": "#af93fb",
+          "type": "color",
+          "description": "tags: additional, violet"
+        },
+        "300": {
+          "value": "#9a75f8",
+          "type": "color",
+          "description": "tags: additional, violet"
+        },
+        "400": {
+          "value": "#885df2",
+          "type": "color",
+          "description": "tags: additional, violet"
+        },
+        "500": {
+          "value": "#794ae9",
+          "type": "color",
+          "description": "tags: additional, violet"
+        },
+        "600": {
+          "value": "#6c3bdb",
+          "type": "color",
+          "description": "tags: additional, violet"
+        },
+        "700": {
+          "value": "#5e2ec6",
+          "type": "color",
+          "description": "tags: additional, violet"
+        },
+        "800": {
+          "value": "#5024ab",
+          "type": "color",
+          "description": "tags: additional, violet"
+        },
+        "900": {
+          "value": "#411c8c",
+          "type": "color",
+          "description": "tags: additional, violet"
+        },
+        "Subtle": {
+          "value": "#301E5D",
+          "type": "color",
+          "description": "tags: violet, additional"
+        }
+      },
+      "Blue": {
+        "0": {
+          "value": "#d9e2ff",
+          "type": "color",
+          "description": "tags: additional, blue"
+        },
+        "100": {
+          "value": "#aabcfd",
+          "type": "color",
+          "description": "tags: additional, blue"
+        },
+        "200": {
+          "value": "#7d94f9",
+          "type": "color",
+          "description": "tags: additional, blue"
+        },
+        "300": {
+          "value": "#576ff3",
+          "type": "color",
+          "description": "tags: additional, blue"
+        },
+        "400": {
+          "value": "#3950ea",
+          "type": "color",
+          "description": "tags: additional, blue"
+        },
+        "500": {
+          "value": "#2238df",
+          "type": "color",
+          "description": "tags: additional, blue"
+        },
+        "600": {
+          "value": "#1326cf",
+          "type": "color",
+          "description": "tags: additional, blue"
+        },
+        "700": {
+          "value": "#0819bd",
+          "type": "color",
+          "description": "tags: additional, blue"
+        },
+        "800": {
+          "value": "#0311ab",
+          "type": "color",
+          "description": "tags: additional, blue"
+        },
+        "900": {
+          "value": "#000d99",
+          "type": "color",
+          "description": "tags: additional, blue"
+        },
+        "Subtle": {
+          "value": "#131F7B",
+          "type": "color",
+          "description": "tags: additional, subtle, blue"
+        }
+      },
+      "Cyan": {
+        "0": {
+          "value": "#d9fcff",
+          "type": "color",
+          "description": "tags: additional, cyan"
+        },
+        "100": {
+          "value": "#a4ecf4",
+          "type": "color",
+          "description": "tags: additional, cyan"
+        },
+        "200": {
+          "value": "#75dbe8",
+          "type": "color",
+          "description": "tags: additional, cyan"
+        },
+        "300": {
+          "value": "#4fcadd",
+          "type": "color",
+          "description": "tags: additional, cyan"
+        },
+        "400": {
+          "value": "#33bbd2",
+          "type": "color",
+          "description": "tags: additional, cyan"
+        },
+        "500": {
+          "value": "#1eadc6",
+          "type": "color",
+          "description": "tags: additional, cyan"
+        },
+        "600": {
+          "value": "#11a0bb",
+          "type": "color",
+          "description": "tags: additional, cyan"
+        },
+        "700": {
+          "value": "#0894b0",
+          "type": "color",
+          "description": "tags: additional, cyan"
+        },
+        "800": {
+          "value": "#038aa4",
+          "type": "color",
+          "description": "tags: additional, cyan"
+        },
+        "900": {
+          "value": "#008099",
+          "type": "color",
+          "description": "tags: additional, cyan"
+        },
+        "Subtle": {
+          "value": "#0C454F",
+          "type": "color",
+          "description": "tags: additional, subtle, cyan"
+        }
+      },
+      "Teal": {
+        "0": {
+          "value": "#d9fff2",
+          "type": "color",
+          "description": "tags: additional, teal"
+        },
+        "100": {
+          "value": "#acf1dc",
+          "type": "color",
+          "description": "tags: additional, teal"
+        },
+        "200": {
+          "value": "#85e3ca",
+          "type": "color",
+          "description": "tags: additional, teal"
+        },
+        "300": {
+          "value": "#65d5ba",
+          "type": "color",
+          "description": "tags: additional, teal"
+        },
+        "400": {
+          "value": "#4cc6ac",
+          "type": "color",
+          "description": "tags: additional, teal"
+        },
+        "500": {
+          "value": "#3ab89f",
+          "type": "color",
+          "description": "tags: additional, teal"
+        },
+        "600": {
+          "value": "#2eaa93",
+          "type": "color",
+          "description": "tags: additional, teal"
+        },
+        "700": {
+          "value": "#259c87",
+          "type": "color",
+          "description": "tags: additional, teal"
+        },
+        "800": {
+          "value": "#1e8e7b",
+          "type": "color",
+          "description": "tags: additional, teal"
+        },
+        "900": {
+          "value": "#19806f",
+          "type": "color",
+          "description": "tags: additional, teal"
+        },
+        "Subtle": {
+          "value": "#174A40",
+          "type": "color",
+          "description": "tags: additional, subtle, teal"
+        }
+      },
+      "Green": {
+        "0": {
+          "value": "#dbffed",
+          "type": "color",
+          "description": "tags: additional, green"
+        },
+        "100": {
+          "value": "#8ff0c1",
+          "type": "color",
+          "description": "tags: additional, green"
+        },
+        "200": {
+          "value": "#4ee19c",
+          "type": "color",
+          "description": "tags: additional, green"
+        },
+        "300": {
+          "value": "#1bd27f",
+          "type": "color",
+          "description": "tags: additional, green"
+        },
+        "400": {
+          "value": "#00c26d",
+          "type": "color",
+          "description": "tags: additional, green"
+        },
+        "500": {
+          "value": "#00b367",
+          "type": "color",
+          "description": "tags: additional, green"
+        },
+        "600": {
+          "value": "#00a461",
+          "type": "color",
+          "description": "tags: additional, green"
+        },
+        "700": {
+          "value": "#00955a",
+          "type": "color",
+          "description": "tags: additional, green"
+        },
+        "800": {
+          "value": "#008653",
+          "type": "color",
+          "description": "tags: additional, green"
+        },
+        "900": {
+          "value": "#00774b",
+          "type": "color",
+          "description": "tags: additional, green"
+        },
+        "Subtle": {
+          "value": "#004829",
+          "type": "color",
+          "description": "tags: green, subtle, additional"
+        }
+      },
+      "Olive": {
+        "0": {
+          "value": "#f2ffd9",
+          "type": "color",
+          "description": "tags: additional, olive"
+        },
+        "100": {
+          "value": "#daf1ac",
+          "type": "color",
+          "description": "tags: additional, olive"
+        },
+        "200": {
+          "value": "#c3e385",
+          "type": "color",
+          "description": "tags: additional, olive"
+        },
+        "300": {
+          "value": "#afd565",
+          "type": "color",
+          "description": "tags: additional, olive"
+        },
+        "400": {
+          "value": "#9ec64c",
+          "type": "color",
+          "description": "tags: additional, olive"
+        },
+        "500": {
+          "value": "#8eb83a",
+          "type": "color",
+          "description": "tags: additional, olive"
+        },
+        "600": {
+          "value": "#81aa2e",
+          "type": "color",
+          "description": "tags: additional, olive"
+        },
+        "700": {
+          "value": "#749c25",
+          "type": "color",
+          "description": "tags: additional, olive"
+        },
+        "800": {
+          "value": "#688e1e",
+          "type": "color",
+          "description": "tags: additional, olive"
+        },
+        "900": {
+          "value": "#5e8019",
+          "type": "color",
+          "description": "tags: additional, olive"
+        },
+        "Subtle": {
+          "value": "#394A17",
+          "type": "color",
+          "description": "tags: additional, subtle, olive"
+        }
+      },
+      "Brown": {
+        "0": {
+          "value": "#ffefd9",
+          "type": "color",
+          "description": "tags: additional, brown"
+        },
+        "100": {
+          "value": "#efd3ab",
+          "type": "color",
+          "description": "tags: additional, brown"
+        },
+        "200": {
+          "value": "#e0b983",
+          "type": "color",
+          "description": "tags: additional, brown"
+        },
+        "300": {
+          "value": "#d0a363",
+          "type": "color",
+          "description": "tags: additional, brown"
+        },
+        "400": {
+          "value": "#c18f4a",
+          "type": "color",
+          "description": "tags: additional, brown"
+        },
+        "500": {
+          "value": "#b17f38",
+          "type": "color",
+          "description": "tags: additional, brown"
+        },
+        "600": {
+          "value": "#a2702b",
+          "type": "color",
+          "description": "tags: additional, brown"
+        },
+        "700": {
+          "value": "#926322",
+          "type": "color",
+          "description": "tags: additional, brown"
+        },
+        "800": {
+          "value": "#82581c",
+          "type": "color",
+          "description": "tags: additional, brown"
+        },
+        "900": {
+          "value": "#734d17",
+          "type": "color",
+          "description": "tags: additional, brown"
+        },
+        "Subtle": {
+          "value": "#473316",
+          "type": "color",
+          "description": "tags: additional, subtle, brown"
+        }
+      },
+      "Yellow": {
+        "0": {
+          "value": "#fffcd9",
+          "type": "color",
+          "description": "tags: additional, yellow"
+        },
+        "100": {
+          "value": "#fcf1aa",
+          "type": "color",
+          "description": "tags: additional, yellow"
+        },
+        "200": {
+          "value": "#f9e47e",
+          "type": "color",
+          "description": "tags: additional, yellow"
+        },
+        "300": {
+          "value": "#f7d358",
+          "type": "color",
+          "description": "tags: additional, yellow"
+        },
+        "400": {
+          "value": "#f4c23b",
+          "type": "color",
+          "description": "tags: additional, yellow"
+        },
+        "500": {
+          "value": "#f1b125",
+          "type": "color",
+          "description": "tags: additional, yellow"
+        },
+        "600": {
+          "value": "#eea015",
+          "type": "color",
+          "description": "tags: additional, yellow"
+        },
+        "700": {
+          "value": "#eb900b",
+          "type": "color",
+          "description": "tags: additional, yellow"
+        },
+        "800": {
+          "value": "#e88104",
+          "type": "color",
+          "description": "tags: additional, yellow"
+        },
+        "900": {
+          "value": "#e67300",
+          "type": "color",
+          "description": "tags: additional, yellow"
+        },
+        "Subtle": {
+          "value": "#60470F",
+          "type": "color",
+          "description": "tags: additional, subtle, yellow"
+        }
+      },
+      "Orange": {
+        "0": {
+          "value": "#ffe6cc",
+          "type": "color",
+          "description": "tags: additional, orange"
+        },
+        "100": {
+          "value": "#ffc48e",
+          "type": "color",
+          "description": "tags: additional, orange"
+        },
+        "200": {
+          "value": "#fea75b",
+          "type": "color",
+          "description": "tags: additional, orange"
+        },
+        "300": {
+          "value": "#fd9038",
+          "type": "color",
+          "description": "tags: additional, orange"
+        },
+        "400": {
+          "value": "#fc7e21",
+          "type": "color",
+          "description": "tags: additional, orange"
+        },
+        "500": {
+          "value": "#f97012",
+          "type": "color",
+          "description": "tags: additional, orange"
+        },
+        "600": {
+          "value": "#f46409",
+          "type": "color",
+          "description": "tags: additional, orange"
+        },
+        "700": {
+          "value": "#e65703",
+          "type": "color",
+          "description": "tags: additional, orange"
+        },
+        "800": {
+          "value": "#cd4901",
+          "type": "color",
+          "description": "tags: additional, orange"
+        },
+        "900": {
+          "value": "#b63d00",
+          "type": "color",
+          "description": "tags: additional, orange"
+        },
+        "Subtle": {
+          "value": "#642D07",
+          "type": "color",
+          "description": "tags: additional, subtle, orange"
+        }
+      },
+      "Red": {
+        "0": {
+          "value": "#ffcabf",
+          "type": "color",
+          "description": "tags: additional, red"
+        },
+        "100": {
+          "value": "#fd9684",
+          "type": "color",
+          "description": "tags: additional, red"
+        },
+        "200": {
+          "value": "#fb6a55",
+          "type": "color",
+          "description": "tags: additional, red"
+        },
+        "300": {
+          "value": "#f84934",
+          "type": "color",
+          "description": "tags: additional, red"
+        },
+        "400": {
+          "value": "#f2321e",
+          "type": "color",
+          "description": "tags: additional, red"
+        },
+        "500": {
+          "value": "#e82010",
+          "type": "color",
+          "description": "tags: additional, red"
+        },
+        "600": {
+          "value": "#d91308",
+          "type": "color",
+          "description": "tags: additional, red"
+        },
+        "700": {
+          "value": "#c30a03",
+          "type": "color",
+          "description": "tags: additional, red"
+        },
+        "800": {
+          "value": "#a70401",
+          "type": "color",
+          "description": "tags: additional, red"
+        },
+        "900": {
+          "value": "#870000",
+          "type": "color",
+          "description": "tags: additional, red"
+        },
+        "Subtle": {
+          "value": "#5D0D06",
+          "type": "color",
+          "description": "tags: additional, subtle, red"
+        }
+      }
+    },
+    "Raised": {
+      "Standard": {
+        "value": [
+          {
+            "x": 0,
+            "y": 8,
+            "blur": 32,
+            "spread": 0,
+            "color": "#0000001a",
+            "type": "dropShadow"
+          },
+          {
+            "x": 0,
+            "y": 4,
+            "blur": 8,
+            "spread": 0,
+            "color": "#0000001a",
+            "type": "dropShadow"
+          }
+        ],
+        "type": "boxShadow",
+        "description": "For bigger interactable elements like cards, etc."
+      },
+      "Hover": {
+        "value": [
+          {
+            "x": 0,
+            "y": 16,
+            "blur": 64,
+            "spread": 0,
+            "color": "#0000001a",
+            "type": "dropShadow"
+          },
+          {
+            "x": 0,
+            "y": 8,
+            "blur": 16,
+            "spread": 0,
+            "color": "#0000001a",
+            "type": "dropShadow"
+          }
+        ],
+        "type": "boxShadow",
+        "description": "For bigger interactable elements like cards, etc."
+      },
+      "Pressed": {
+        "value": [
+          {
+            "x": 0,
+            "y": 4,
+            "blur": 16,
+            "spread": 0,
+            "color": "#0000001a",
+            "type": "dropShadow"
+          },
+          {
+            "x": 0,
+            "y": 2,
+            "blur": 4,
+            "spread": 0,
+            "color": "#0000001a",
+            "type": "dropShadow"
+          }
+        ],
+        "type": "boxShadow",
+        "description": "For bigger interactable elements like cards, etc."
+      }
+    },
+    "Floating": {
+      "Standard": {
+        "value": [
+          {
+            "x": 0,
+            "y": 12,
+            "blur": 48,
+            "spread": 0,
+            "color": "#0000001a",
+            "type": "dropShadow"
+          },
+          {
+            "x": 0,
+            "y": 6,
+            "blur": 12,
+            "spread": 0,
+            "color": "#0000001a",
+            "type": "dropShadow"
+          }
+        ],
+        "type": "boxShadow",
+        "description": "For floating elements that mostly stay in a fixed position like a FAB."
+      },
+      "Hover": {
+        "value": [
+          {
+            "x": 0,
+            "y": 24,
+            "blur": 96,
+            "spread": 0,
+            "color": "#0000001a",
+            "type": "dropShadow"
+          },
+          {
+            "x": 0,
+            "y": 12,
+            "blur": 24,
+            "spread": 0,
+            "color": "#0000001a",
+            "type": "dropShadow"
+          }
+        ],
+        "type": "boxShadow",
+        "description": "For floating elements that mostly stay in a fixed position like a FAB."
+      },
+      "Pressed": {
+        "value": [
+          {
+            "x": 0,
+            "y": 8,
+            "blur": 32,
+            "spread": 0,
+            "color": "#0000001a",
+            "type": "dropShadow"
+          },
+          {
+            "x": 0,
+            "y": 4,
+            "blur": 8,
+            "spread": 0,
+            "color": "#0000001a",
+            "type": "dropShadow"
+          }
+        ],
+        "type": "boxShadow",
+        "description": "For floating elements that mostly stay in a fixed position like a FAB."
+      }
+    },
+    "Top": {
+      "value": [
+        {
+          "x": 0,
+          "y": 16,
+          "blur": 64,
+          "spread": 0,
+          "color": "#0000001a",
+          "type": "dropShadow"
+        },
+        {
+          "x": 0,
+          "y": 8,
+          "blur": 16,
+          "spread": 0,
+          "color": "#0000001a",
+          "type": "dropShadow"
+        }
+      ],
+      "type": "boxShadow",
+      "description": "For fixed elements that overlay the content e.g. sidebars or bottom sheets"
+    },
+    "Overlay": {
+      "value": [
+        {
+          "x": 0,
+          "y": 24,
+          "blur": 96,
+          "spread": 0,
+          "color": "#0000001a",
+          "type": "dropShadow"
+        },
+        {
+          "x": 0,
+          "y": 12,
+          "blur": 24,
+          "spread": 0,
+          "color": "#0000001a",
+          "type": "dropShadow"
+        }
+      ],
+      "type": "boxShadow",
+      "description": "Highest level e.g. for dialogs or modals"
+    },
+    "App Bar": {
+      "Top": {
+        "Raised": {
+          "value": [
+            {
+              "x": 0,
+              "y": 1,
+              "blur": 0,
+              "spread": 0,
+              "color": "#0000000d",
+              "type": "dropShadow"
+            },
+            {
+              "x": 0,
+              "y": 2,
+              "blur": 8,
+              "spread": 0,
+              "color": "#0000000d",
+              "type": "dropShadow"
+            }
+          ],
+          "type": "boxShadow",
+          "description": "Use for headers, app bar & menus on the top"
+        },
+        "Flat": {
+          "value": [
+            {
+              "x": 0,
+              "y": 1,
+              "blur": 0,
+              "spread": 0,
+              "color": "#0000001a",
+              "type": "dropShadow"
+            }
+          ],
+          "type": "boxShadow",
+          "description": "Use for headers, app bar & menus on the top"
+        }
+      },
+      "Bottom": {
+        "Raised": {
+          "value": [
+            {
+              "x": 0,
+              "y": -1,
+              "blur": 0,
+              "spread": 0,
+              "color": "#0000000d",
+              "type": "dropShadow"
+            },
+            {
+              "x": 0,
+              "y": -2,
+              "blur": 8,
+              "spread": 0,
+              "color": "#0000000d",
+              "type": "dropShadow"
+            }
+          ],
+          "type": "boxShadow",
+          "description": "Use for app navigation and app bars on the bottom"
+        },
+        "Flat": {
+          "value": [
+            {
+              "x": 0,
+              "y": -1,
+              "blur": 0,
+              "spread": 0,
+              "color": "#0000001a",
+              "type": "dropShadow"
+            }
+          ],
+          "type": "boxShadow",
+          "description": "Use for app navigation and app bars on the bottom"
+        }
+      }
+    }
+  },
+  "$themes": [],
+  "$metadata": {
+    "tokenSetOrder": [
+      "Global",
+      "Light",
+      "Dark"
+    ]
+  }
+}
