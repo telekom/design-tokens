@@ -23,6 +23,13 @@ const FIGMA_KEY_DARK = 'Dark';
 /*
   TODO:
   - [ ] use font name from token in text-style transform
+
+  types expected by Tokens Studio:
+  Typography / Font Size -> fontSizes
+  Typography / Font Family -> fontFamilies
+  Typography / Font Weight -> fontWeights
+  Typography / Line Spacing -> lineHeights
+  Typography / Letter Spacing -> letterSpacing
 */
 
 const figmaTransformGroup = [
@@ -38,7 +45,7 @@ const categoryTypeMap = {
   shadow: 'boxShadow',
   spacing: 'spacing',
   textStyle: 'typography',
-  font: 'typography',
+  font: 'fontFamilies',
 };
 
 function formatJSON(allTokens, nameCaseFn = humanCase) {
@@ -60,31 +67,38 @@ function getJSONValue(token) {
   const attributes = {
     type: token.type,
   };
+  // Set description
   if (token.comment) {
     attributes.description = token.comment;
   }
-  if (token.type === 'textStyle') {
+  // Set type
+  if (token.attributes.category === 'typography') {
+    if (token.attributes.type === 'font-size') {
+      attributes.type = 'fontSizes';
+    }
+    if (token.attributes.type === 'font-family') {
+      attributes.type = 'fontFamilies';
+    }
+    if (token.attributes.type === 'font-weight') {
+      attributes.type = 'fontWeights';
+    }
+    if (token.attributes.type === 'line-spacing') {
+      attributes.type = 'lineHeights';
+    }
+    if (token.attributes.type === 'letter-spacing') {
+      attributes.type = 'letterSpacing';
+    }
+  } else if (token.type === 'textStyle') {
     attributes.type = categoryTypeMap['textStyle'];
-  }
-  if (token.type === 'font') {
-    attributes.type = categoryTypeMap['font'];
-  }
-  if (token.type === 'number' && token.path.includes('typography')) {
-    attributes.type = categoryTypeMap['font'];
-  }
-  if (token.type === 'shadow') {
+  } else if (token.type === 'shadow') {
     attributes.type = categoryTypeMap['shadow'];
-  }
-  if (token.path.includes('line-weight')) {
+  } else if (token.path.includes('line-weight')) {
     attributes.type = categoryTypeMap['line-weight'];
-  }
-  if (token.path.includes('opacity')) {
+  } else if (token.path.includes('opacity')) {
     attributes.type = categoryTypeMap['opacity'];
-  }
-  if (token.path.includes('radius')) {
+  } else if (token.path.includes('radius')) {
     attributes.type = categoryTypeMap['radius'];
-  }
-  if (token.path.includes('spacing')) {
+  } else if (token.path.includes('spacing')) {
     attributes.type = categoryTypeMap['spacing'];
   }
 
