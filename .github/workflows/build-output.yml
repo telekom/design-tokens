@@ -19,16 +19,8 @@ jobs:
         run: |
           npm ci
           npm run build:output
-      - name: Check
-        uses: marceloprado/has-changed-path@v1.0.1
-        id: changed-changelog
-        with:
-          paths: CHANGELOG.md
-      - name: Get package version
-        if: steps.changed-changelog.outputs.changed == 'true'
-        uses: nyaa8/package-version@v1
+      # build always :shrug: (ideally it should build only after a release is made)
       - name: Commit
-        if: github.event_name == 'workflow_dispatch' || steps.changed-changelog.outputs.changed == 'true'
-        uses: stefanzweifel/git-auto-commit-action@v4
+        uses: nyaa8/package-version@v1
         with:
           commit_message: Output build (${{ env.PACKAGE_VERSION }})
