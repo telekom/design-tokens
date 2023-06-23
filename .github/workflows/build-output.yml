@@ -21,6 +21,6 @@ jobs:
           npm run build:output
       # build always :shrug: (ideally it should build only after a release is made)
       - name: Commit
-        uses: nyaa8/package-version@v1
+        uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          commit_message: Output build (${{ env.PACKAGE_VERSION }})
+          commit_message: Output build
