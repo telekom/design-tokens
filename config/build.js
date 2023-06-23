@@ -11,10 +11,12 @@
 const StyleDictionary = require('style-dictionary');
 
 // Register common transforms
-require('./shared'); 
+require('./shared');
 
 // e.g. `css` -> `require('./css.config')`
-const configs = process.env.CONFIG.split(',').map(name => require(`./${name}.config`));
+const configs = process.env.CONFIG.split(',').map((name) =>
+  require(`./${name}.config`)
+);
 
 // Build all configs
 configs.forEach((config) => StyleDictionary.extend(config).buildAllPlatforms());
