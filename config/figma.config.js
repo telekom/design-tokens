@@ -48,15 +48,21 @@ const categoryTypeMap = {
   font: 'fontFamilies',
 };
 
-function formatJSON(allTokens, nameCaseFn = humanCase) {
+function formatJSON(allTokens, { dictionary, mode }) {
   const output = {};
   deep.p = true;
   allTokens.forEach((token) => {
-    const path = token.path.map(nameCaseFn);
+    const path = token.path.map(humanCase);
     if (path.includes('Motion')) return;
-    if (path[0] === 'Color' || path[0] === 'Shadow' || path[0] === 'Typography')
+    if (
+      path[0] === 'Color' ||
+      path[0] === 'Shadow' ||
+      path[0] === 'Typography' ||
+      path[0] === 'Core'
+    ) {
       path.shift();
-    deep(output, path, getJSONValue(token));
+    }
+    deep(output, path, getJSONValue(token, { dictionary, mode }));
   });
   return output;
 }
@@ -64,7 +70,8 @@ function formatJSON(allTokens, nameCaseFn = humanCase) {
 /**
  * Handle some special cases
  */
-function getJSONValue(token) {
+function getJSONValue(token, { dictionary, mode }) {
+  let value = token.value; // cloning would be nice (structuredClone is not supported in Node 16?)
   const attributes = {
     type: token.type,
   };
@@ -73,25 +80,25 @@ function getJSONValue(token) {
     attributes.description = token.comment;
   }
   // Set type
-  if (token.attributes.category === 'typography') {
-    if (token.attributes.type === 'font-size') {
+  if (token.path.includes('typography')) {
+    if (token.path.includes('font-size')) {
       attributes.type = 'fontSizes';
     }
-    if (token.attributes.type === 'font-family') {
+    if (token.path.includes('font-family')) {
       attributes.type = 'fontFamilies';
     }
-    if (token.attributes.type === 'font-weight') {
+    if (token.path.includes('font-weight')) {
       attributes.type = 'fontWeights';
     }
-    if (token.attributes.type === 'line-spacing') {
+    if (token.path.includes('line-spacing')) {
       attributes.type = 'lineHeights';
     }
-    if (token.attributes.type === 'letter-spacing') {
+    if (token.path.includes('letter-spacing')) {
       attributes.type = 'letterSpacing';
     }
-  } else if (token.type === 'textStyle') {
+  } else if (token.path.includes('textStyle')) {
     attributes.type = categoryTypeMap['textStyle'];
-  } else if (token.type === 'shadow') {
+  } else if (token.path.includes('shadow')) {
     attributes.type = categoryTypeMap['shadow'];
   } else if (token.path.includes('line-weight')) {
     attributes.type = categoryTypeMap['line-weight'];
@@ -103,8 +110,22 @@ function getJSONValue(token) {
     attributes.type = categoryTypeMap['spacing'];
   }
 
+  // Set value to reference when used e.g. `{Core.Color.Black}`
+  // (mode is important!)
+  if (dictionary.usesReference(token.original.value)) {
+    const refs = dictionary.getReferences(token.original.value);
+    if (refs.length > 0) {
+      let ref = refs[0];
+      if (typeof mode !== 'undefined' && refs.length === 2) {
+        ref = mode === 'light' ? refs[0] : refs[1];
+      }
+      const path = ref.path.map(humanCase);
+      value = `{${path.join('.')}}`;
+    }
+  }
+
   return {
-    value: token.value,
+    value,
     ...attributes,
   };
 }
@@ -132,18 +153,19 @@ StyleDictionary.registerTransform({
 StyleDictionary.registerFormat({
   name: 'json/figma',
   formatter: function ({ dictionary }) {
-    const output = formatJSON(dictionary.allTokens);
+    const output = formatJSON(dictionary.allTokens, { dictionary });
     return JSON.stringify(output, null, 2);
   },
 });
 
 StyleDictionary.registerFormat({
   name: 'json/figma-mode',
-  formatter: function ({ dictionary }) {
+  formatter: function ({ dictionary, options }) {
     const output = formatJSON(
       dictionary.allTokens.filter(
         (token) => token.path.includes('color') || token.path.includes('shadow')
-      )
+      ),
+      { dictionary, mode: options.mode }
     );
     return JSON.stringify(output, null, 2);
   },
@@ -153,6 +175,9 @@ StyleDictionary.registerAction({
   name: 'bundle_figma',
   do: async function (_, config) {
     const { buildPath } = config;
+    const core = JSON.parse(
+      await fs.readFile(buildPath + TMP_NAME + '.core.json')
+    );
     const modeless = JSON.parse(
       await fs.readFile(buildPath + TMP_NAME + '.modeless.json')
     );
@@ -167,6 +192,9 @@ StyleDictionary.registerAction({
       buildPath + OUTPUT_BASE_FILENAME + '.all.json',
       JSON.stringify(
         {
+          Core: {
+            ...core,
+          },
           Global: {
             ...modeless,
           },
@@ -204,6 +232,7 @@ StyleDictionary.registerAction({
       )
     );
 
+    await fs.remove(buildPath + TMP_NAME + '.core.json');
     await fs.remove(buildPath + TMP_NAME + '.modeless.json');
     await fs.remove(buildPath + TMP_NAME + '.light.json');
     await fs.remove(buildPath + TMP_NAME + '.dark.json');
@@ -223,6 +252,17 @@ module.exports = {
     'src/semantic/**/*.json5',
   ],
   platforms: {
+    figmaCore: {
+      transforms: [...figmaTransformGroup],
+      buildPath: OUTPUT_PATH + 'figma/',
+      files: [
+        {
+          destination: TMP_NAME + '.core.json',
+          format: 'json/figma',
+          filter: (token) => token.path[0] === 'core',
+        },
+      ],
+    },
     figmaModeless: {
       transforms: [...figmaTransformGroup],
       buildPath: OUTPUT_PATH + 'figma/',
@@ -245,6 +285,9 @@ module.exports = {
           destination: TMP_NAME + '.light.json',
           format: 'json/figma-mode',
           filter: hasMode,
+          options: {
+            mode: 'light',
+          },
         },
       ],
     },
@@ -256,6 +299,9 @@ module.exports = {
           destination: TMP_NAME + '.dark.json',
           format: 'json/figma-mode',
           filter: hasMode,
+          options: {
+            mode: 'dark',
+          },
         },
       ],
       actions: ['bundle_figma'],
