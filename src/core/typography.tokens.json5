@@ -32,7 +32,7 @@
           value: 800,
           type: "number",
         },
-        "ultra": {
+        ultra: {
           value: 900,
           type: "number",
         },
