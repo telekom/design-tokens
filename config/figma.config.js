@@ -11,7 +11,7 @@
 const fs = require('fs-extra');
 const deep = require('deep-get-set');
 const StyleDictionary = require('style-dictionary');
-const { humanCase, fontWeightMap } = require('./shared');
+const { humanCase, fontWeightMap, isColorAlphaComposite } = require('./shared');
 
 const { OUTPUT_PATH, OUTPUT_BASE_FILENAME } = process.env;
 const WHITELABEL = process.env.WHITELABEL !== 'false';
@@ -19,6 +19,11 @@ const WHITELABEL = process.env.WHITELABEL !== 'false';
 const TMP_NAME = 'tokens';
 const FIGMA_KEY_LIGHT = 'Light';
 const FIGMA_KEY_DARK = 'Dark';
+
+const shouldHaveMode = (token) =>
+  token.path[0] === 'color' || token.path[0] === 'shadow';
+
+const hasMode = (token) => token.original.value?.light != null;
 
 /*
   TODO:
@@ -96,7 +101,7 @@ function formatJSON(allTokens, { dictionary, mode }) {
   allTokens.forEach((token) => {
     const path = token.path.map(humanCase);
     if (path.includes('Motion')) return;
-    // Keep Core in path to avoid collisions with same name tokens
+    // Keep `Core` in path to avoid collisions with same name tokens
     const keepCoreInPathToAvoidCollisionsWithSameNameTokens =
       path[0] === 'Core' && path[1] !== 'Spacing' && path[1] !== 'Radius';
     if (
@@ -113,10 +118,14 @@ function formatJSON(allTokens, { dictionary, mode }) {
 }
 
 /**
- * Handle some special cases
+ * Get the proper value for each token, including:
+ * - renaming the `comment` key to `description`
+ * - renaming types to meet Tokens Studio requirements
+ * - keep references as values, when appropriate
+ * - handle references using `alpha` (leveraging Tokens Studio color modifier)
  */
 function getJSONValue(token, { dictionary, mode }) {
-  let value = token.value; // cloning would be nice (structuredClone is not supported in Node 16?)
+  let value = token.value; // cloning would be nice (`structuredClone` is not supported in Node 16?)
   const attributes = {
     type: token.type,
   };
@@ -155,17 +164,31 @@ function getJSONValue(token, { dictionary, mode }) {
     attributes.type = categoryTypeMap['spacing'];
   }
 
-  // Set value to reference when used e.g. `{Core.Color.Black}`
+  // Keep reference when appropriate e.g. `{Core.Color.Black}`
   // (mode is important!)
   if (dictionary.usesReference(token.original.value)) {
-    const refs = dictionary.getReferences(token.original.value);
+    let refs = hasMode(token)
+      ? [
+          ...dictionary.getReferences(token.original.value.light),
+          ...dictionary.getReferences(token.original.value.dark),
+        ]
+      : dictionary.getReferences(token.original.value);
+    // TODO FIXME shadow-type core tokens result in refs.length === 0
     if (refs.length > 0) {
       let ref = refs[0];
       if (typeof mode !== 'undefined' && refs.length === 2) {
         ref = mode === 'light' ? refs[0] : refs[1];
       }
+      // Handle `alpha` colors -> Tokens Studio color modifier Pro feature
+      if (hasMode(token) && isColorAlphaComposite(token.original.value[mode])) {
+        deep(attributes, ['$extensions', 'studio.tokens', 'modify'], {
+          type: 'alpha',
+          value: token.original.value[mode].alpha?.toString(),
+          space: 'hsl',
+        });
+      }
       const path = ref.path.map(humanCase);
-      // Keep Core in path to avoid collisions with same name tokens
+      // Keep `Core` in path to avoid collisions with same name tokens
       if (path[1] !== 'Spacing' && path[1] !== 'Radius') {
         path.shift();
       }
@@ -291,9 +314,6 @@ StyleDictionary.registerAction({
   },
 });
 
-const hasMode = (token) =>
-  token.path[0] === 'color' || token.path[0] === 'shadow';
-
 module.exports = {
   include: ['src/core/**/*.json5'],
   source: [
@@ -322,7 +342,7 @@ module.exports = {
           filter: (token) =>
             token.path[0] !== 'core' &&
             token.path[0] !== 'motion' &&
-            !hasMode(token),
+            !shouldHaveMode(token),
         },
       ],
     },
@@ -333,7 +353,7 @@ module.exports = {
         {
           destination: TMP_NAME + '.light.json',
           format: 'json/figma-mode',
-          filter: hasMode,
+          filter: shouldHaveMode,
           options: {
             mode: 'light',
           },
@@ -347,7 +367,7 @@ module.exports = {
         {
           destination: TMP_NAME + '.dark.json',
           format: 'json/figma-mode',
-          filter: hasMode,
+          filter: shouldHaveMode,
           options: {
             mode: 'dark',
           },
