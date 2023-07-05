@@ -48,6 +48,48 @@ const categoryTypeMap = {
   font: 'fontFamilies',
 };
 
+const THEMES = [
+  {
+    id: '0efe74c81045c31912f3f25ceccbb79a4021d482',
+    name: 'Telekom',
+    $figmaStyleReferences: {},
+    selectedTokenSets: {
+      Core: 'enabled',
+    },
+    group: 'Core',
+  },
+  {
+    id: '7a9907de042ac3a05850bed823405e364006587c',
+    name: 'Values',
+    $figmaStyleReferences: {},
+    selectedTokenSets: {
+      Core: 'source',
+      Global: 'enabled',
+    },
+    group: 'Global',
+  },
+  {
+    id: 'e84d59b7aab9a411698c3781401bf695dc2d2952',
+    name: 'Light',
+    $figmaStyleReferences: {},
+    selectedTokenSets: {
+      Core: 'source',
+      Light: 'enabled',
+    },
+    group: 'Color',
+  },
+  {
+    id: 'e3dd70729694cefd558242ba5e81517f4bc0d626',
+    name: 'Dark',
+    $figmaStyleReferences: {},
+    selectedTokenSets: {
+      Core: 'source',
+      Dark: 'enabled',
+    },
+    group: 'Color',
+  },
+];
+
 function formatJSON(allTokens, { dictionary, mode }) {
   const output = {};
   deep.p = true;
@@ -200,9 +242,9 @@ StyleDictionary.registerAction({
           },
           [FIGMA_KEY_LIGHT]: { ...light },
           [FIGMA_KEY_DARK]: { ...dark },
-          $themes: [],
+          $themes: THEMES,
           $metadata: {
-            tokenSetOrder: ['Global', FIGMA_KEY_LIGHT, FIGMA_KEY_DARK],
+            tokenSetOrder: ['Core', 'Global', FIGMA_KEY_LIGHT, FIGMA_KEY_DARK],
           },
         },
         null,
