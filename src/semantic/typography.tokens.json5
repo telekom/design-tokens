@@ -77,7 +77,7 @@
         value: "{core.typography.font-weight.extra-bold.value}",
         type: "number",
       },
-      "ultra": {
+      ultra: {
         value: "{core.typography.font-weight.ultra.value}",
         type: "number",
       },
