@@ -1,1524 +1,848 @@
 {
-  "Global": {
-    "Line Weight": {
-      "Standard": {
-        "value": "1px",
-        "type": "borderWidth",
-        "description": "Used for ui elements like inputs, dividers, etc."
+  "Core": {
+    "Color": {
+      "White": {
+        "value": "#ffffff",
+        "type": "color"
       },
-      "Highlight": {
-        "value": "2px",
-        "type": "borderWidth",
-        "description": "E.g. use for active menu items."
-      },
-      "Bold": {
-        "value": "4px",
-        "type": "borderWidth"
-      }
-    },
-    "Opacity": {
-      "Invisible": {
-        "value": 0,
-        "type": "opacity"
-      },
-      "Transparent": {
-        "value": 0.35,
-        "type": "opacity"
-      },
-      "Semi Transparent": {
-        "value": 0.5,
-        "type": "opacity"
-      },
-      "Translucent": {
-        "value": 0.75,
-        "type": "opacity"
-      },
-      "Semi Translucent": {
-        "value": 0.85,
-        "type": "opacity"
-      },
-      "Solid": {
-        "value": 1,
-        "type": "opacity"
-      }
-    },
-    "Radius": {
-      "Small": {
-        "value": "4px",
-        "type": "borderRadius",
-        "description": "Used for small elements like checkboxes, etc."
-      },
-      "Standard": {
-        "value": "8px",
-        "type": "borderRadius",
-        "description": "Used for our main ui elements like buttons, etc."
-      },
-      "Large": {
-        "value": "12px",
-        "type": "borderRadius",
-        "description": "Used mainly for containers like cards or dialogs"
-      },
-      "Pill": {
-        "value": "999px",
-        "type": "borderRadius",
-        "description": "Used for pill-shaped ui elements"
-      },
-      "Circle": {
-        "value": "50%",
-        "type": "borderRadius",
-        "description": "Used for ui elements like radio buttons or things like avatars"
-      }
-    },
-    "Spacing": {
-      "Unit": {
-        "x0": {
-          "value": "0px",
-          "type": "spacing"
-        },
-        "x025": {
-          "value": "1px",
-          "type": "spacing"
-        },
-        "x05": {
-          "value": "2px",
-          "type": "spacing"
-        },
-        "x1": {
-          "value": "4px",
-          "type": "spacing"
-        },
-        "x2": {
-          "value": "8px",
-          "type": "spacing"
-        },
-        "x3": {
-          "value": "12px",
-          "type": "spacing"
-        },
-        "x4": {
-          "value": "16px",
-          "type": "spacing"
-        },
-        "x5": {
-          "value": "20px",
-          "type": "spacing"
-        },
-        "x6": {
-          "value": "24px",
-          "type": "spacing"
-        },
-        "x7": {
-          "value": "28px",
-          "type": "spacing"
-        },
-        "x8": {
-          "value": "32px",
-          "type": "spacing"
-        },
-        "x9": {
-          "value": "36px",
-          "type": "spacing"
-        },
-        "x10": {
-          "value": "40px",
-          "type": "spacing"
-        },
-        "x11": {
-          "value": "44px",
-          "type": "spacing"
-        },
-        "x12": {
-          "value": "48px",
-          "type": "spacing"
-        },
-        "x13": {
-          "value": "52px",
-          "type": "spacing"
-        },
-        "x14": {
-          "value": "56px",
-          "type": "spacing"
-        },
-        "x15": {
-          "value": "60px",
-          "type": "spacing"
-        },
-        "x16": {
-          "value": "64px",
-          "type": "spacing"
-        },
-        "x17": {
-          "value": "68px",
-          "type": "spacing"
-        },
-        "x18": {
-          "value": "72px",
-          "type": "spacing"
-        },
-        "x19": {
-          "value": "76px",
-          "type": "spacing"
-        },
-        "x20": {
-          "value": "80px",
-          "type": "spacing"
-        }
-      }
-    },
-    "Text Style": {
-      "Badge": {
-        "value": {
-          "fontFamily": "TeleNeo",
-          "fontWeight": "Regular",
-          "lineHeight": "120%",
-          "fontSize": "10",
-          "letterSpacing": "0%",
-          "paragraphSpacing": "0",
-          "textDecoration": "none",
-          "textCase": "none"
-        },
-        "type": "typography"
-      },
-      "Small": {
-        "value": {
-          "fontFamily": "TeleNeo",
-          "fontWeight": "Medium",
-          "lineHeight": "135%",
-          "fontSize": "12",
-          "letterSpacing": "0%",
-          "paragraphSpacing": "0",
-          "textDecoration": "none",
-          "textCase": "none"
-        },
-        "type": "typography"
-      },
-      "Small Bold": {
-        "value": {
-          "fontFamily": "TeleNeo",
-          "fontWeight": "Bold",
-          "lineHeight": "135%",
-          "fontSize": "12",
-          "letterSpacing": "0%",
-          "paragraphSpacing": "0",
-          "textDecoration": "none",
-          "textCase": "none"
-        },
-        "type": "typography"
-      },
-      "Caption": {
-        "value": {
-          "fontFamily": "TeleNeo",
-          "fontWeight": "Regular",
-          "lineHeight": "140%",
-          "fontSize": "14",
-          "letterSpacing": "0%",
-          "paragraphSpacing": "0",
-          "textDecoration": "none",
-          "textCase": "none"
-        },
-        "type": "typography"
-      },
-      "Caption Bold": {
-        "value": {
-          "fontFamily": "TeleNeo",
-          "fontWeight": "Bold",
-          "lineHeight": "140%",
-          "fontSize": "14",
-          "letterSpacing": "0%",
-          "paragraphSpacing": "0",
-          "textDecoration": "none",
-          "textCase": "none"
-        },
-        "type": "typography"
-      },
-      "Body": {
-        "value": {
-          "fontFamily": "TeleNeo",
-          "fontWeight": "Regular",
-          "lineHeight": "140%",
-          "fontSize": "16",
-          "letterSpacing": "0%",
-          "paragraphSpacing": "0",
-          "textDecoration": "none",
-          "textCase": "none"
-        },
-        "type": "typography"
-      },
-      "Body Bold": {
-        "value": {
-          "fontFamily": "TeleNeo",
-          "fontWeight": "Bold",
-          "lineHeight": "140%",
-          "fontSize": "16",
-          "letterSpacing": "0%",
-          "paragraphSpacing": "0",
-          "textDecoration": "none",
-          "textCase": "none"
-        },
-        "type": "typography"
-      },
-      "UI": {
-        "value": {
-          "fontFamily": "TeleNeo",
-          "fontWeight": "Medium",
-          "lineHeight": "100%",
-          "fontSize": "16",
-          "letterSpacing": "0%",
-          "paragraphSpacing": "0",
-          "textDecoration": "none",
-          "textCase": "none"
-        },
-        "type": "typography"
-      },
-      "UI Bold": {
-        "value": {
-          "fontFamily": "TeleNeo",
-          "fontWeight": "Bold",
-          "lineHeight": "100%",
-          "fontSize": "16",
-          "letterSpacing": "0%",
-          "paragraphSpacing": "0",
-          "textDecoration": "none",
-          "textCase": "none"
-        },
-        "type": "typography"
-      },
-      "Lead Text": {
-        "value": {
-          "fontFamily": "TeleNeo",
-          "fontWeight": "Regular",
-          "lineHeight": "140%",
-          "fontSize": "20",
-          "letterSpacing": "0%",
-          "paragraphSpacing": "0",
-          "textDecoration": "none",
-          "textCase": "none"
-        },
-        "type": "typography"
-      },
-      "Heading 6": {
-        "value": {
-          "fontFamily": "TeleNeo",
-          "fontWeight": "Bold",
-          "lineHeight": "140%",
-          "fontSize": "16",
-          "letterSpacing": "0%",
-          "paragraphSpacing": "0",
-          "textDecoration": "none",
-          "textCase": "none"
-        },
-        "type": "typography"
-      },
-      "Heading 5": {
-        "value": {
-          "fontFamily": "TeleNeo",
-          "fontWeight": "ExtraBold",
-          "lineHeight": "140%",
-          "fontSize": "20",
-          "letterSpacing": "0%",
-          "paragraphSpacing": "0",
-          "textDecoration": "none",
-          "textCase": "none"
-        },
-        "type": "typography"
-      },
-      "Heading 4": {
-        "value": {
-          "fontFamily": "TeleNeo",
-          "fontWeight": "ExtraBold",
-          "lineHeight": "135%",
-          "fontSize": "24",
-          "letterSpacing": "0%",
-          "paragraphSpacing": "0",
-          "textDecoration": "none",
-          "textCase": "none"
-        },
-        "type": "typography"
-      },
-      "Heading 3": {
-        "value": {
-          "fontFamily": "TeleNeo",
-          "fontWeight": "ExtraBold",
-          "lineHeight": "125%",
-          "fontSize": "32",
-          "letterSpacing": "0%",
-          "paragraphSpacing": "0",
-          "textDecoration": "none",
-          "textCase": "none"
-        },
-        "type": "typography"
-      },
-      "Heading 2": {
-        "value": {
-          "fontFamily": "TeleNeo",
-          "fontWeight": "ExtraBold",
-          "lineHeight": "114.99999999999999%",
-          "fontSize": "42",
-          "letterSpacing": "0%",
-          "paragraphSpacing": "0",
-          "textDecoration": "none",
-          "textCase": "none"
-        },
-        "type": "typography"
-      },
-      "Heading 1": {
-        "value": {
-          "fontFamily": "TeleNeo",
-          "fontWeight": "ExtraBold",
-          "lineHeight": "120%",
-          "fontSize": "54",
-          "letterSpacing": "0%",
-          "paragraphSpacing": "0",
-          "textDecoration": "none",
-          "textCase": "none"
-        },
-        "type": "typography"
-      },
-      "Title 2": {
-        "value": {
-          "fontFamily": "TeleNeo",
-          "fontWeight": "ExtraBold",
-          "lineHeight": "114.99999999999999%",
-          "fontSize": "68",
-          "letterSpacing": "0%",
-          "paragraphSpacing": "0",
-          "textDecoration": "none",
-          "textCase": "none"
-        },
-        "type": "typography"
-      },
-      "Title 1": {
-        "value": {
-          "fontFamily": "TeleNeo",
-          "fontWeight": "ExtraBold",
-          "lineHeight": "114.99999999999999%",
-          "fontSize": "76",
-          "letterSpacing": "0%",
-          "paragraphSpacing": "0",
-          "textDecoration": "none",
-          "textCase": "none"
-        },
-        "type": "typography"
-      }
-    },
-    "Font Size": {
-      "Badge": {
-        "value": "10px",
-        "type": "fontSizes"
-      },
-      "Small": {
-        "value": "12px",
-        "type": "fontSizes"
-      },
-      "Caption": {
-        "value": "14px",
-        "type": "fontSizes"
-      },
-      "Body": {
-        "value": "16px",
-        "type": "fontSizes"
-      },
-      "Callout": {
-        "value": "20px",
-        "type": "fontSizes"
-      },
-      "Headline 3": {
-        "value": "24px",
-        "type": "fontSizes"
-      },
-      "Headline 2": {
-        "value": "32px",
-        "type": "fontSizes"
-      },
-      "Headline 1": {
-        "value": "42px",
-        "type": "fontSizes"
-      },
-      "Title 3": {
-        "value": "54px",
-        "type": "fontSizes"
-      },
-      "Title 2": {
-        "value": "68px",
-        "type": "fontSizes"
-      },
-      "Title 1": {
-        "value": "76px",
-        "type": "fontSizes"
-      }
-    },
-    "Font Family": {
-      "Sans": {
-        "value": "TeleNeoWeb, sans-serif",
-        "type": "fontFamilies"
-      },
-      "Mono": {
-        "value": "monospace",
-        "type": "fontFamilies"
-      }
-    },
-    "Font Weight": {
-      "Thin": {
-        "value": 200,
-        "type": "fontWeights"
-      },
-      "Regular": {
-        "value": 400,
-        "type": "fontWeights"
-      },
-      "Medium": {
-        "value": 500,
-        "type": "fontWeights"
-      },
-      "Bold": {
-        "value": 700,
-        "type": "fontWeights"
-      },
-      "Extra Bold": {
-        "value": 800,
-        "type": "fontWeights"
-      },
-      "Ultra": {
-        "value": 900,
-        "type": "fontWeights"
-      }
-    },
-    "Line Spacing": {
-      "None": {
-        "value": 1,
-        "type": "lineHeights",
-        "description": "Use for single line in ui elements"
-      },
-      "Extra Tight": {
-        "value": 1.15,
-        "type": "lineHeights",
-        "description": "Use for large titles like H1 or H2"
-      },
-      "Tight": {
-        "value": 1.25,
-        "type": "lineHeights",
-        "description": "Use for large headlines like H3, etc."
-      },
-      "Standard": {
-        "value": 1.4,
-        "type": "lineHeights",
-        "description": "Use for most text elements like normal copy, etc."
-      },
-      "Loose": {
-        "value": 1.5,
-        "type": "lineHeights",
-        "description": "Use for multi line text passages with long lines."
-      }
-    },
-    "Letter Spacing": {
-      "Standard": {
-        "value": 0,
-        "type": "letterSpacing"
-      }
-    }
-  },
-  "Light": {
-    "Text & Icon": {
-      "Standard": {
+      "Black": {
         "value": "#000000",
-        "type": "color",
-        "description": "Default text color with highest contrast."
+        "type": "color"
       },
-      "Additional": {
-        "value": "#000000a6",
-        "type": "color",
-        "description": "Use in combination with standard text for additional text elements."
-      },
-      "Disabled": {
-        "value": "#00000066",
-        "type": "color",
-        "description": "Only use for disabled text."
-      },
-      "Link": {
-        "Standard": {
-          "value": "#2238df",
-          "type": "color"
-        },
-        "Hovered": {
-          "value": "#0819bd",
-          "type": "color"
-        },
-        "Visited": {
-          "value": "#6c3bdb",
-          "type": "color"
-        },
-        "Active": {
-          "value": "#000d99",
-          "type": "color"
-        }
-      },
-      "Primary": {
+      "Brand": {
         "Standard": {
           "value": "#e20074",
-          "type": "color"
+          "type": "color",
+          "description": "Defined by brand, can not be changed"
         },
-        "Hovered": {
+        "Dark": {
           "value": "#C00063",
-          "type": "color"
+          "type": "color",
+          "description": "Brand magenta with 15% black overlay"
         },
-        "Pressed": {
+        "Darker": {
           "value": "#9E0051",
+          "type": "color",
+          "description": "Brand magenta with 30% black overlay"
+        },
+        "Light": {
+          "value": "#EC59A5",
+          "type": "color",
+          "description": "Brand magenta with 35% white overlay"
+        },
+        "Lighter": {
+          "value": "#F080BA",
+          "type": "color",
+          "description": "Brand magenta with 50% white overlay"
+        },
+        "Tint": {
+          "value": "#FFF0F8",
+          "type": "color"
+        },
+        "Shade": {
+          "value": "#33001A",
           "type": "color"
         }
       },
-      "Inverted": {
-        "Standard": {
-          "value": "#ffffff",
-          "type": "color",
-          "description": "Standard text color inverted to be used on high contrast colors like ui/extra strong"
+      "Grey": {
+        "0": {
+          "value": "#FFFFFF",
+          "type": "color"
         },
-        "Additional": {
-          "value": "#ffffffa6",
-          "type": "color",
-          "description": "Additional text color inverted to be used on high contrast colors like ui/extra strong"
-        }
-      },
-      "White": {
-        "Standard": {
-          "value": "#ffffff",
-          "type": "color",
-          "description": "Light text to be used on backgrounds that are dark in all modes (light & dark)"
+        "100": {
+          "value": "#fbfbfb",
+          "type": "color"
         },
-        "Additional": {
-          "value": "#ffffffa6",
-          "type": "color",
-          "description": "Semi-Light text to be used on backgrounds that are dark in all modes (light & dark)"
-        }
-      },
-      "Black": {
-        "Standard": {
+        "200": {
+          "value": "#f7f7f8",
+          "type": "color"
+        },
+        "300": {
+          "value": "#efeff0",
+          "type": "color"
+        },
+        "400": {
+          "value": "#e7e7e9",
+          "type": "color"
+        },
+        "500": {
+          "value": "#dfdfe1",
+          "type": "color"
+        },
+        "600": {
+          "value": "#d0d0d2",
+          "type": "color"
+        },
+        "700": {
+          "value": "#c0c0c3",
+          "type": "color"
+        },
+        "800": {
+          "value": "#b1b1b4",
+          "type": "color"
+        },
+        "900": {
+          "value": "#a2a2a5",
+          "type": "color"
+        },
+        "1000": {
+          "value": "#929296",
+          "type": "color"
+        },
+        "1100": {
+          "value": "#838387",
+          "type": "color"
+        },
+        "1200": {
+          "value": "#747478",
+          "type": "color"
+        },
+        "1300": {
+          "value": "#656569",
+          "type": "color"
+        },
+        "1400": {
+          "value": "#57575a",
+          "type": "color"
+        },
+        "1500": {
+          "value": "#48484b",
+          "type": "color"
+        },
+        "1600": {
+          "value": "#39393c",
+          "type": "color"
+        },
+        "1700": {
+          "value": "#2b2b2d",
+          "type": "color"
+        },
+        "1800": {
+          "value": "#242426",
+          "type": "color"
+        },
+        "1900": {
+          "value": "#1c1c1e",
+          "type": "color"
+        },
+        "2000": {
+          "value": "#151517",
+          "type": "color"
+        },
+        "2100": {
+          "value": "#0e0e0f",
+          "type": "color"
+        },
+        "2200": {
           "value": "#000000",
-          "type": "color",
-          "description": "This text color is dark in all modes (light & dark)"
-        },
-        "Additional": {
-          "value": "#000000a6",
-          "type": "color",
-          "description": "This text color is dark in all modes (light & dark)"
-        }
-      },
-      "Functional": {
-        "Informational": {
-          "value": "#2238df",
           "type": "color"
-        },
-        "Success": {
-          "value": "#008653",
-          "type": "color"
-        },
-        "Danger": {
-          "value": "#d91308",
-          "type": "color"
-        },
-        "Warning": {
-          "value": "#b63d00",
-          "type": "color"
-        }
-      },
-      "On Subtle": {
-        "Informational": {
-          "value": "#2238df",
-          "type": "color"
-        },
-        "Success": {
-          "value": "#00774b",
-          "type": "color"
-        },
-        "Danger": {
-          "value": "#c30a03",
-          "type": "color"
-        },
-        "Warning": {
-          "value": "#b63d00",
-          "type": "color"
-        },
-        "Violet": {
-          "value": "#6c3bdb",
-          "type": "color"
-        },
-        "Blue": {
-          "value": "#2238df",
-          "type": "color"
-        },
-        "Cyan": {
-          "value": "#00738A",
-          "type": "color"
-        },
-        "Teal": {
-          "value": "#177364",
-          "type": "color"
-        },
-        "Green": {
-          "value": "#00774b",
-          "type": "color"
-        },
-        "Olive": {
-          "value": "#557317",
-          "type": "color"
-        },
-        "Brown": {
-          "value": "#82581c",
-          "type": "color"
-        },
-        "Yellow": {
-          "value": "#AC5600",
-          "type": "color"
-        },
-        "Orange": {
-          "value": "#b63d00",
-          "type": "color"
-        },
-        "Red": {
-          "value": "#c30a03",
-          "type": "color"
-        }
-      }
-    },
-    "Background": {
-      "Canvas": {
-        "value": "#FFFFFF",
-        "type": "color",
-        "description": "Use as the background for your product (app, website, etc.)"
-      },
-      "Canvas Subtle": {
-        "value": "#fbfbfb",
-        "type": "color",
-        "description": "Use as the background for your product (app, website, etc.)"
-      },
-      "Backdrop": {
-        "value": "#00000080",
-        "type": "color",
-        "description": "Use to overlay content below dialogs to separate dialog from content below"
-      },
-      "Surface": {
-        "value": "#FFFFFF",
-        "type": "color",
-        "description": "Use as the background of elements like cards, headers, bottom bars, etc."
-      },
-      "Surface Subtle": {
-        "value": "#efeff0",
-        "type": "color",
-        "description": "Use as the background of elements like cards, headers, bottom bars, etc."
-      },
-      "Surface Highlight": {
-        "value": "#242426",
-        "type": "color",
-        "description": "Use as the background of elements that should stand out highlighted sections, footer, etc."
-      }
-    },
-    "Primary": {
-      "Standard": {
-        "value": "#e20074",
-        "type": "color"
-      },
-      "Hovered": {
-        "value": "#C00063",
-        "type": "color"
-      },
-      "Pressed": {
-        "value": "#9E0051",
-        "type": "color"
-      }
-    },
-    "UI": {
-      "Base": {
-        "value": "#FFFFFF",
-        "type": "color"
-      },
-      "Subtle": {
-        "value": "#efeff0",
-        "type": "color"
-      },
-      "Faint": {
-        "value": "#dfdfe1",
-        "type": "color"
-      },
-      "Regular": {
-        "value": "#929296",
-        "type": "color"
-      },
-      "Strong": {
-        "value": "#747478",
-        "type": "color"
-      },
-      "Extra Strong": {
-        "value": "#242426",
-        "type": "color"
-      },
-      "White": {
-        "value": "#FFFFFF",
-        "type": "color"
-      },
-      "Black": {
-        "value": "#000000",
-        "type": "color"
-      },
-      "Disabled": {
-        "value": "#d0d0d2",
-        "type": "color"
-      },
-      "Border": {
-        "Standard": {
-          "value": "#00000070",
-          "type": "color"
-        },
-        "Hovered": {
-          "value": "#000000b5",
-          "type": "color"
-        },
-        "Pressed": {
-          "value": "#000000b5",
-          "type": "color",
-          "description": "Use this token for borders in pressed or active state"
-        },
-        "Disabled": {
-          "value": "#00000024",
-          "type": "color"
-        }
-      },
-      "State Fill": {
-        "Standard": {
-          "value": "#00000000",
-          "type": "color",
-          "description": "For outlined and ghost elements: The standard fill is invisible / 0% opacity"
-        },
-        "Hovered": {
-          "value": "#00000012",
-          "type": "color",
-          "description": "For outlined and ghost elements: When hovered a light, transparent fill is applied"
-        },
-        "Pressed": {
-          "value": "#00000036",
-          "type": "color",
-          "description": "For outlined and ghost elements: When pressed or active a medium transparent fill is applied"
-        },
-        "Hovered Inverted": {
-          "value": "#ffffff24",
-          "type": "color",
-          "description": "For outlined and ghost elements: When hovered a light, transparent fill is applied"
-        },
-        "Pressed Inverted": {
-          "value": "#ffffff36",
-          "type": "color",
-          "description": "For outlined and ghost elements: When pressed or active a medium transparent fill is applied"
-        }
-      }
-    },
-    "Functional": {
-      "Focus": {
-        "Standard": {
-          "value": "#2238df",
-          "type": "color"
-        },
-        "Inverted": {
-          "value": "#7d94f9",
-          "type": "color"
-        },
-        "On Dark Background": {
-          "value": "#7d94f9",
-          "type": "color"
-        },
-        "On Light Background": {
-          "value": "#2238df",
-          "type": "color"
-        }
-      },
-      "Informational": {
-        "Standard": {
-          "value": "#2238df",
-          "type": "color"
-        },
-        "Hovered": {
-          "value": "#1326cf",
-          "type": "color"
-        },
-        "Pressed": {
-          "value": "#0819bd",
-          "type": "color"
-        },
-        "Subtle": {
-          "value": "#D3D7F9",
-          "type": "color"
-        }
-      },
-      "Success": {
-        "Standard": {
-          "value": "#00b367",
-          "type": "color"
-        },
-        "Hovered": {
-          "value": "#00a461",
-          "type": "color"
-        },
-        "Pressed": {
-          "value": "#00955a",
-          "type": "color"
-        },
-        "Subtle": {
-          "value": "#CCF0E1",
-          "type": "color"
-        }
-      },
-      "Danger": {
-        "Standard": {
-          "value": "#e82010",
-          "type": "color"
-        },
-        "Hovered": {
-          "value": "#d91308",
-          "type": "color"
-        },
-        "Pressed": {
-          "value": "#c30a03",
-          "type": "color"
-        },
-        "Subtle": {
-          "value": "#FAD2CF",
-          "type": "color"
-        }
-      },
-      "Warning": {
-        "Standard": {
-          "value": "#f97012",
-          "type": "color"
-        },
-        "Hovered": {
-          "value": "#f46409",
-          "type": "color"
-        },
-        "Pressed": {
-          "value": "#e65703",
-          "type": "color"
-        },
-        "Subtle": {
-          "value": "#FEE2D0",
-          "type": "color"
-        }
-      }
-    },
-    "Additional": {
-      "Violet": {
-        "0": {
-          "value": "#e2d9ff",
-          "type": "color",
-          "description": "tags: additional, violet"
-        },
-        "100": {
-          "value": "#c8b5fd",
-          "type": "color",
-          "description": "tags: additional, violet"
-        },
-        "200": {
-          "value": "#af93fb",
-          "type": "color",
-          "description": "tags: additional, violet"
-        },
-        "300": {
-          "value": "#9a75f8",
-          "type": "color",
-          "description": "tags: additional, violet"
-        },
-        "400": {
-          "value": "#885df2",
-          "type": "color",
-          "description": "tags: additional, violet"
-        },
-        "500": {
-          "value": "#794ae9",
-          "type": "color",
-          "description": "tags: additional, violet"
-        },
-        "600": {
-          "value": "#6c3bdb",
-          "type": "color",
-          "description": "tags: additional, violet"
-        },
-        "700": {
-          "value": "#5e2ec6",
-          "type": "color",
-          "description": "tags: additional, violet"
-        },
-        "800": {
-          "value": "#5024ab",
-          "type": "color",
-          "description": "tags: additional, violet"
-        },
-        "900": {
-          "value": "#411c8c",
-          "type": "color",
-          "description": "tags: additional, violet"
-        },
-        "Subtle": {
-          "value": "#E4DBFB",
-          "type": "color",
-          "description": "tags: violet, additional"
-        }
-      },
-      "Blue": {
-        "0": {
-          "value": "#d9e2ff",
-          "type": "color",
-          "description": "tags: additional, blue"
-        },
-        "100": {
-          "value": "#aabcfd",
-          "type": "color",
-          "description": "tags: additional, blue"
-        },
-        "200": {
-          "value": "#7d94f9",
-          "type": "color",
-          "description": "tags: additional, blue"
-        },
-        "300": {
-          "value": "#576ff3",
-          "type": "color",
-          "description": "tags: additional, blue"
-        },
-        "400": {
-          "value": "#3950ea",
-          "type": "color",
-          "description": "tags: additional, blue"
-        },
-        "500": {
-          "value": "#2238df",
-          "type": "color",
-          "description": "tags: additional, blue"
-        },
-        "600": {
-          "value": "#1326cf",
-          "type": "color",
-          "description": "tags: additional, blue"
-        },
-        "700": {
-          "value": "#0819bd",
-          "type": "color",
-          "description": "tags: additional, blue"
-        },
-        "800": {
-          "value": "#0311ab",
-          "type": "color",
-          "description": "tags: additional, blue"
-        },
-        "900": {
-          "value": "#000d99",
-          "type": "color",
-          "description": "tags: additional, blue"
-        },
-        "Subtle": {
-          "value": "#D3D7F9",
-          "type": "color",
-          "description": "tags: additional, subtle, blue"
-        }
-      },
-      "Cyan": {
-        "0": {
-          "value": "#d9fcff",
-          "type": "color",
-          "description": "tags: additional, cyan"
-        },
-        "100": {
-          "value": "#a4ecf4",
-          "type": "color",
-          "description": "tags: additional, cyan"
-        },
-        "200": {
-          "value": "#75dbe8",
-          "type": "color",
-          "description": "tags: additional, cyan"
-        },
-        "300": {
-          "value": "#4fcadd",
-          "type": "color",
-          "description": "tags: additional, cyan"
-        },
-        "400": {
-          "value": "#33bbd2",
-          "type": "color",
-          "description": "tags: additional, cyan"
-        },
-        "500": {
-          "value": "#1eadc6",
-          "type": "color",
-          "description": "tags: additional, cyan"
-        },
-        "600": {
-          "value": "#11a0bb",
-          "type": "color",
-          "description": "tags: additional, cyan"
-        },
-        "700": {
-          "value": "#0894b0",
-          "type": "color",
-          "description": "tags: additional, cyan"
-        },
-        "800": {
-          "value": "#038aa4",
-          "type": "color",
-          "description": "tags: additional, cyan"
-        },
-        "900": {
-          "value": "#008099",
-          "type": "color",
-          "description": "tags: additional, cyan"
-        },
-        "Subtle": {
-          "value": "#D2EFF4",
-          "type": "color",
-          "description": "tags: additional, subtle, cyan"
-        }
-      },
-      "Teal": {
-        "0": {
-          "value": "#d9fff2",
-          "type": "color",
-          "description": "tags: additional, teal"
-        },
-        "100": {
-          "value": "#acf1dc",
-          "type": "color",
-          "description": "tags: additional, teal"
-        },
-        "200": {
-          "value": "#85e3ca",
-          "type": "color",
-          "description": "tags: additional, teal"
-        },
-        "300": {
-          "value": "#65d5ba",
-          "type": "color",
-          "description": "tags: additional, teal"
-        },
-        "400": {
-          "value": "#4cc6ac",
-          "type": "color",
-          "description": "tags: additional, teal"
-        },
-        "500": {
-          "value": "#3ab89f",
-          "type": "color",
-          "description": "tags: additional, teal"
-        },
-        "600": {
-          "value": "#2eaa93",
-          "type": "color",
-          "description": "tags: additional, teal"
-        },
-        "700": {
-          "value": "#259c87",
-          "type": "color",
-          "description": "tags: additional, teal"
-        },
-        "800": {
-          "value": "#1e8e7b",
-          "type": "color",
-          "description": "tags: additional, teal"
-        },
-        "900": {
-          "value": "#19806f",
-          "type": "color",
-          "description": "tags: additional, teal"
-        },
-        "Subtle": {
-          "value": "#D8F1EC",
-          "type": "color",
-          "description": "tags: additional, subtle, teal"
-        }
-      },
-      "Green": {
-        "0": {
-          "value": "#dbffed",
-          "type": "color",
-          "description": "tags: additional, green"
-        },
-        "100": {
-          "value": "#8ff0c1",
-          "type": "color",
-          "description": "tags: additional, green"
-        },
-        "200": {
-          "value": "#4ee19c",
-          "type": "color",
-          "description": "tags: additional, green"
-        },
-        "300": {
-          "value": "#1bd27f",
-          "type": "color",
-          "description": "tags: additional, green"
-        },
-        "400": {
-          "value": "#00c26d",
-          "type": "color",
-          "description": "tags: additional, green"
-        },
-        "500": {
-          "value": "#00b367",
-          "type": "color",
-          "description": "tags: additional, green"
-        },
-        "600": {
-          "value": "#00a461",
-          "type": "color",
-          "description": "tags: additional, green"
-        },
-        "700": {
-          "value": "#00955a",
-          "type": "color",
-          "description": "tags: additional, green"
-        },
-        "800": {
-          "value": "#008653",
-          "type": "color",
-          "description": "tags: additional, green"
-        },
-        "900": {
-          "value": "#00774b",
-          "type": "color",
-          "description": "tags: additional, green"
-        },
-        "Subtle": {
-          "value": "#CCF0E1",
-          "type": "color",
-          "description": "tags: green, subtle, additional"
-        }
-      },
-      "Olive": {
-        "0": {
-          "value": "#f2ffd9",
-          "type": "color",
-          "description": "tags: additional, olive"
-        },
-        "100": {
-          "value": "#daf1ac",
-          "type": "color",
-          "description": "tags: additional, olive"
-        },
-        "200": {
-          "value": "#c3e385",
-          "type": "color",
-          "description": "tags: additional, olive"
-        },
-        "300": {
-          "value": "#afd565",
-          "type": "color",
-          "description": "tags: additional, olive"
-        },
-        "400": {
-          "value": "#9ec64c",
-          "type": "color",
-          "description": "tags: additional, olive"
-        },
-        "500": {
-          "value": "#8eb83a",
-          "type": "color",
-          "description": "tags: additional, olive"
-        },
-        "600": {
-          "value": "#81aa2e",
-          "type": "color",
-          "description": "tags: additional, olive"
-        },
-        "700": {
-          "value": "#749c25",
-          "type": "color",
-          "description": "tags: additional, olive"
-        },
-        "800": {
-          "value": "#688e1e",
-          "type": "color",
-          "description": "tags: additional, olive"
-        },
-        "900": {
-          "value": "#5e8019",
-          "type": "color",
-          "description": "tags: additional, olive"
-        },
-        "Subtle": {
-          "value": "#E8F1D8",
-          "type": "color",
-          "description": "tags: additional, subtle, olive"
         }
       },
       "Brown": {
         "0": {
           "value": "#ffefd9",
-          "type": "color",
-          "description": "tags: additional, brown"
+          "type": "color"
         },
         "100": {
           "value": "#efd3ab",
-          "type": "color",
-          "description": "tags: additional, brown"
+          "type": "color"
         },
         "200": {
           "value": "#e0b983",
-          "type": "color",
-          "description": "tags: additional, brown"
+          "type": "color"
         },
         "300": {
           "value": "#d0a363",
-          "type": "color",
-          "description": "tags: additional, brown"
+          "type": "color"
         },
         "400": {
           "value": "#c18f4a",
-          "type": "color",
-          "description": "tags: additional, brown"
+          "type": "color"
         },
         "500": {
           "value": "#b17f38",
-          "type": "color",
-          "description": "tags: additional, brown"
+          "type": "color"
         },
         "600": {
           "value": "#a2702b",
-          "type": "color",
-          "description": "tags: additional, brown"
+          "type": "color"
         },
         "700": {
           "value": "#926322",
-          "type": "color",
-          "description": "tags: additional, brown"
+          "type": "color"
         },
         "800": {
           "value": "#82581c",
-          "type": "color",
-          "description": "tags: additional, brown"
+          "type": "color"
         },
         "900": {
           "value": "#734d17",
-          "type": "color",
-          "description": "tags: additional, brown"
+          "type": "color"
         },
-        "Subtle": {
+        "Tint": {
           "value": "#EFE5D7",
-          "type": "color",
-          "description": "tags: additional, subtle, brown"
+          "type": "color"
+        },
+        "Shade": {
+          "value": "#473316",
+          "type": "color"
+        }
+      },
+      "Violet": {
+        "0": {
+          "value": "#e2d9ff",
+          "type": "color"
+        },
+        "100": {
+          "value": "#c8b5fd",
+          "type": "color"
+        },
+        "200": {
+          "value": "#af93fb",
+          "type": "color"
+        },
+        "300": {
+          "value": "#9a75f8",
+          "type": "color"
+        },
+        "400": {
+          "value": "#885df2",
+          "type": "color"
+        },
+        "500": {
+          "value": "#794ae9",
+          "type": "color"
+        },
+        "600": {
+          "value": "#6c3bdb",
+          "type": "color"
+        },
+        "700": {
+          "value": "#5e2ec6",
+          "type": "color"
+        },
+        "800": {
+          "value": "#5024ab",
+          "type": "color"
+        },
+        "900": {
+          "value": "#411c8c",
+          "type": "color"
+        },
+        "Tint": {
+          "value": "#E4DBFB",
+          "type": "color"
+        },
+        "Shade": {
+          "value": "#301E5D",
+          "type": "color"
+        }
+      },
+      "Cyan": {
+        "0": {
+          "value": "#d9fcff",
+          "type": "color"
+        },
+        "100": {
+          "value": "#a4ecf4",
+          "type": "color"
+        },
+        "200": {
+          "value": "#75dbe8",
+          "type": "color"
+        },
+        "300": {
+          "value": "#4fcadd",
+          "type": "color"
+        },
+        "400": {
+          "value": "#33bbd2",
+          "type": "color"
+        },
+        "500": {
+          "value": "#1eadc6",
+          "type": "color"
+        },
+        "600": {
+          "value": "#11a0bb",
+          "type": "color"
+        },
+        "700": {
+          "value": "#0894b0",
+          "type": "color"
+        },
+        "800": {
+          "value": "#038aa4",
+          "type": "color"
+        },
+        "900": {
+          "value": "#008099",
+          "type": "color"
+        },
+        "Tint": {
+          "value": "#D2EFF4",
+          "type": "color"
+        },
+        "Shade": {
+          "value": "#0C454F",
+          "type": "color"
+        }
+      },
+      "Teal": {
+        "0": {
+          "value": "#d9fff2",
+          "type": "color"
+        },
+        "100": {
+          "value": "#acf1dc",
+          "type": "color"
+        },
+        "200": {
+          "value": "#85e3ca",
+          "type": "color"
+        },
+        "300": {
+          "value": "#65d5ba",
+          "type": "color"
+        },
+        "400": {
+          "value": "#4cc6ac",
+          "type": "color"
+        },
+        "500": {
+          "value": "#3ab89f",
+          "type": "color"
+        },
+        "600": {
+          "value": "#2eaa93",
+          "type": "color"
+        },
+        "700": {
+          "value": "#259c87",
+          "type": "color"
+        },
+        "800": {
+          "value": "#1e8e7b",
+          "type": "color"
+        },
+        "900": {
+          "value": "#19806f",
+          "type": "color"
+        },
+        "Tint": {
+          "value": "#D8F1EC",
+          "type": "color"
+        },
+        "Shade": {
+          "value": "#174A40",
+          "type": "color"
+        }
+      },
+      "Olive": {
+        "0": {
+          "value": "#f2ffd9",
+          "type": "color"
+        },
+        "100": {
+          "value": "#daf1ac",
+          "type": "color"
+        },
+        "200": {
+          "value": "#c3e385",
+          "type": "color"
+        },
+        "300": {
+          "value": "#afd565",
+          "type": "color"
+        },
+        "400": {
+          "value": "#9ec64c",
+          "type": "color"
+        },
+        "500": {
+          "value": "#8eb83a",
+          "type": "color"
+        },
+        "600": {
+          "value": "#81aa2e",
+          "type": "color"
+        },
+        "700": {
+          "value": "#749c25",
+          "type": "color"
+        },
+        "800": {
+          "value": "#688e1e",
+          "type": "color"
+        },
+        "900": {
+          "value": "#5e8019",
+          "type": "color"
+        },
+        "Tint": {
+          "value": "#E8F1D8",
+          "type": "color"
+        },
+        "Shade": {
+          "value": "#394A17",
+          "type": "color"
         }
       },
       "Yellow": {
         "0": {
           "value": "#fffcd9",
-          "type": "color",
-          "description": "tags: additional, yellow"
+          "type": "color"
         },
         "100": {
           "value": "#fcf1aa",
-          "type": "color",
-          "description": "tags: additional, yellow"
+          "type": "color"
         },
         "200": {
           "value": "#f9e47e",
-          "type": "color",
-          "description": "tags: additional, yellow"
+          "type": "color"
         },
         "300": {
           "value": "#f7d358",
-          "type": "color",
-          "description": "tags: additional, yellow"
+          "type": "color"
         },
         "400": {
           "value": "#f4c23b",
-          "type": "color",
-          "description": "tags: additional, yellow"
+          "type": "color"
         },
         "500": {
           "value": "#f1b125",
-          "type": "color",
-          "description": "tags: additional, yellow"
+          "type": "color"
         },
         "600": {
           "value": "#eea015",
-          "type": "color",
-          "description": "tags: additional, yellow"
+          "type": "color"
         },
         "700": {
           "value": "#eb900b",
-          "type": "color",
-          "description": "tags: additional, yellow"
+          "type": "color"
         },
         "800": {
           "value": "#e88104",
-          "type": "color",
-          "description": "tags: additional, yellow"
+          "type": "color"
         },
         "900": {
           "value": "#e67300",
-          "type": "color",
-          "description": "tags: additional, yellow"
+          "type": "color"
         },
-        "Subtle": {
+        "Tint": {
           "value": "#FCEFD3",
-          "type": "color",
-          "description": "tags: additional, subtle, yellow"
+          "type": "color"
+        },
+        "Shade": {
+          "value": "#60470F",
+          "type": "color"
         }
       },
       "Orange": {
         "0": {
           "value": "#ffe6cc",
-          "type": "color",
-          "description": "tags: additional, orange"
+          "type": "color"
         },
         "100": {
           "value": "#ffc48e",
-          "type": "color",
-          "description": "tags: additional, orange"
+          "type": "color"
         },
         "200": {
           "value": "#fea75b",
-          "type": "color",
-          "description": "tags: additional, orange"
+          "type": "color"
         },
         "300": {
           "value": "#fd9038",
-          "type": "color",
-          "description": "tags: additional, orange"
+          "type": "color"
         },
         "400": {
           "value": "#fc7e21",
-          "type": "color",
-          "description": "tags: additional, orange"
+          "type": "color"
         },
         "500": {
           "value": "#f97012",
-          "type": "color",
-          "description": "tags: additional, orange"
+          "type": "color"
         },
         "600": {
           "value": "#f46409",
-          "type": "color",
-          "description": "tags: additional, orange"
+          "type": "color"
         },
         "700": {
           "value": "#e65703",
-          "type": "color",
-          "description": "tags: additional, orange"
+          "type": "color"
         },
         "800": {
           "value": "#cd4901",
-          "type": "color",
-          "description": "tags: additional, orange"
+          "type": "color"
         },
         "900": {
           "value": "#b63d00",
-          "type": "color",
-          "description": "tags: additional, orange"
+          "type": "color"
         },
-        "Subtle": {
+        "Tint": {
           "value": "#FEE2D0",
-          "type": "color",
-          "description": "tags: additional, subtle, orange"
+          "type": "color"
+        },
+        "Shade": {
+          "value": "#642D07",
+          "type": "color"
         }
       },
       "Red": {
         "0": {
           "value": "#ffcabf",
-          "type": "color",
-          "description": "tags: additional, red"
+          "type": "color"
         },
         "100": {
           "value": "#fd9684",
-          "type": "color",
-          "description": "tags: additional, red"
+          "type": "color"
         },
         "200": {
           "value": "#fb6a55",
-          "type": "color",
-          "description": "tags: additional, red"
+          "type": "color"
         },
         "300": {
           "value": "#f84934",
-          "type": "color",
-          "description": "tags: additional, red"
+          "type": "color"
         },
         "400": {
           "value": "#f2321e",
-          "type": "color",
-          "description": "tags: additional, red"
+          "type": "color"
         },
         "500": {
           "value": "#e82010",
-          "type": "color",
-          "description": "tags: additional, red"
+          "type": "color"
         },
         "600": {
           "value": "#d91308",
-          "type": "color",
-          "description": "tags: additional, red"
+          "type": "color"
         },
         "700": {
           "value": "#c30a03",
-          "type": "color",
-          "description": "tags: additional, red"
+          "type": "color"
         },
         "800": {
           "value": "#a70401",
-          "type": "color",
-          "description": "tags: additional, red"
+          "type": "color"
         },
         "900": {
           "value": "#870000",
-          "type": "color",
-          "description": "tags: additional, red"
+          "type": "color"
         },
-        "Subtle": {
+        "Tint": {
           "value": "#FAD2CF",
+          "type": "color"
+        },
+        "Shade": {
+          "value": "#5D0D06",
+          "type": "color"
+        }
+      },
+      "Blue": {
+        "0": {
+          "value": "#d9e2ff",
+          "type": "color"
+        },
+        "100": {
+          "value": "#aabcfd",
+          "type": "color"
+        },
+        "200": {
+          "value": "#7d94f9",
+          "type": "color"
+        },
+        "300": {
+          "value": "#576ff3",
+          "type": "color"
+        },
+        "400": {
+          "value": "#3950ea",
+          "type": "color"
+        },
+        "500": {
+          "value": "#2238df",
+          "type": "color"
+        },
+        "600": {
+          "value": "#1326cf",
+          "type": "color"
+        },
+        "700": {
+          "value": "#0819bd",
+          "type": "color"
+        },
+        "800": {
+          "value": "#0311ab",
+          "type": "color"
+        },
+        "900": {
+          "value": "#000d99",
+          "type": "color"
+        },
+        "Tint": {
+          "value": "#D3D7F9",
+          "type": "color"
+        },
+        "Shade": {
+          "value": "#131F7B",
+          "type": "color"
+        }
+      },
+      "Green": {
+        "0": {
+          "value": "#dbffed",
+          "type": "color"
+        },
+        "100": {
+          "value": "#8ff0c1",
+          "type": "color"
+        },
+        "200": {
+          "value": "#4ee19c",
+          "type": "color"
+        },
+        "300": {
+          "value": "#1bd27f",
+          "type": "color"
+        },
+        "400": {
+          "value": "#00c26d",
+          "type": "color"
+        },
+        "500": {
+          "value": "#00b367",
+          "type": "color"
+        },
+        "600": {
+          "value": "#00a461",
+          "type": "color"
+        },
+        "700": {
+          "value": "#00955a",
+          "type": "color"
+        },
+        "800": {
+          "value": "#008653",
+          "type": "color"
+        },
+        "900": {
+          "value": "#00774b",
+          "type": "color"
+        },
+        "Tint": {
+          "value": "#CCF0E1",
           "type": "color",
-          "description": "tags: additional, subtle, red"
+          "description": "green.500 + #fff 80%"
+        },
+        "Shade": {
+          "value": "#004829",
+          "type": "color",
+          "description": "green.500 + #000 80%"
         }
       }
     },
-    "Raised": {
-      "Standard": {
+    "Line Weight": {
+      "sm": {
+        "value": "1px",
+        "type": "borderWidth"
+      },
+      "md": {
+        "value": "2px",
+        "type": "borderWidth"
+      },
+      "lg": {
+        "value": "4px",
+        "type": "borderWidth"
+      }
+    },
+    "Opacity": {
+      "None": {
+        "value": 0,
+        "type": "opacity"
+      },
+      "Low": {
+        "value": 0.35,
+        "type": "opacity"
+      },
+      "Medium": {
+        "value": 0.5,
+        "type": "opacity"
+      },
+      "Normal": {
+        "value": 0.75,
+        "type": "opacity"
+      },
+      "High": {
+        "value": 0.85,
+        "type": "opacity"
+      },
+      "Full": {
+        "value": 1,
+        "type": "opacity"
+      }
+    },
+    "Core": {
+      "Radius": {
+        "None": {
+          "value": "0px",
+          "type": "borderRadius"
+        },
+        "sm": {
+          "value": "4px",
+          "type": "borderRadius"
+        },
+        "md": {
+          "value": "8px",
+          "type": "borderRadius"
+        },
+        "lg": {
+          "value": "12px",
+          "type": "borderRadius"
+        },
+        "Circle": {
+          "value": "50%",
+          "type": "borderRadius",
+          "description": "Used for ui elements like radio buttons or things like avatars"
+        },
+        "Pill": {
+          "value": "999px",
+          "type": "borderRadius",
+          "description": "Used for pill-shaped ui elements"
+        }
+      },
+      "Spacing": {
+        "Unit": {
+          "x0": {
+            "value": "0px",
+            "type": "spacing"
+          },
+          "x025": {
+            "value": "1px",
+            "type": "spacing"
+          },
+          "x05": {
+            "value": "2px",
+            "type": "spacing"
+          },
+          "x1": {
+            "value": "4px",
+            "type": "spacing"
+          },
+          "x2": {
+            "value": "8px",
+            "type": "spacing"
+          },
+          "x3": {
+            "value": "12px",
+            "type": "spacing"
+          },
+          "x4": {
+            "value": "16px",
+            "type": "spacing"
+          },
+          "x5": {
+            "value": "20px",
+            "type": "spacing"
+          },
+          "x6": {
+            "value": "24px",
+            "type": "spacing"
+          },
+          "x7": {
+            "value": "28px",
+            "type": "spacing"
+          },
+          "x8": {
+            "value": "32px",
+            "type": "spacing"
+          },
+          "x9": {
+            "value": "36px",
+            "type": "spacing"
+          },
+          "x10": {
+            "value": "40px",
+            "type": "spacing"
+          },
+          "x11": {
+            "value": "44px",
+            "type": "spacing"
+          },
+          "x12": {
+            "value": "48px",
+            "type": "spacing"
+          },
+          "x13": {
+            "value": "52px",
+            "type": "spacing"
+          },
+          "x14": {
+            "value": "56px",
+            "type": "spacing"
+          },
+          "x15": {
+            "value": "60px",
+            "type": "spacing"
+          },
+          "x16": {
+            "value": "64px",
+            "type": "spacing"
+          },
+          "x17": {
+            "value": "68px",
+            "type": "spacing"
+          },
+          "x18": {
+            "value": "72px",
+            "type": "spacing"
+          },
+          "x19": {
+            "value": "76px",
+            "type": "spacing"
+          },
+          "x20": {
+            "value": "80px",
+            "type": "spacing"
+          }
+        }
+      }
+    },
+    "Shadow": {
+      "Level 0": {
         "value": [
           {
             "x": 0,
-            "y": 8,
-            "blur": 32,
+            "y": 0,
+            "blur": 0,
             "spread": 0,
             "color": "#0000001a",
             "type": "dropShadow"
-          },
+          }
+        ],
+        "type": "boxShadow"
+      },
+      "Level 1": {
+        "value": [
           {
             "x": 0,
-            "y": 4,
+            "y": 2,
             "blur": 8,
             "spread": 0,
             "color": "#0000001a",
             "type": "dropShadow"
-          }
-        ],
-        "type": "boxShadow",
-        "description": "For bigger interactable elements like cards, etc."
-      },
-      "Hover": {
-        "value": [
-          {
-            "x": 0,
-            "y": 16,
-            "blur": 64,
-            "spread": 0,
-            "color": "#0000001a",
-            "type": "dropShadow"
           },
           {
             "x": 0,
-            "y": 8,
-            "blur": 16,
+            "y": 1,
+            "blur": 2,
             "spread": 0,
             "color": "#0000001a",
             "type": "dropShadow"
           }
         ],
-        "type": "boxShadow",
-        "description": "For bigger interactable elements like cards, etc."
+        "type": "boxShadow"
       },
-      "Pressed": {
+      "Level 2": {
         "value": [
           {
             "x": 0,
@@ -1537,56 +861,30 @@
             "type": "dropShadow"
           }
         ],
-        "type": "boxShadow",
-        "description": "For bigger interactable elements like cards, etc."
-      }
-    },
-    "Floating": {
-      "Standard": {
+        "type": "boxShadow"
+      },
+      "Level 3": {
         "value": [
-          {
-            "x": 0,
-            "y": 12,
-            "blur": 48,
-            "spread": 0,
-            "color": "#0000001a",
-            "type": "dropShadow"
-          },
           {
             "x": 0,
             "y": 6,
-            "blur": 12,
-            "spread": 0,
-            "color": "#0000001a",
-            "type": "dropShadow"
-          }
-        ],
-        "type": "boxShadow",
-        "description": "For floating elements that mostly stay in a fixed position like a FAB."
-      },
-      "Hover": {
-        "value": [
-          {
-            "x": 0,
-            "y": 24,
-            "blur": 96,
-            "spread": 0,
-            "color": "#0000001a",
-            "type": "dropShadow"
-          },
-          {
-            "x": 0,
-            "y": 12,
             "blur": 24,
             "spread": 0,
             "color": "#0000001a",
             "type": "dropShadow"
+          },
+          {
+            "x": 0,
+            "y": 3,
+            "blur": 6,
+            "spread": 0,
+            "color": "#0000001a",
+            "type": "dropShadow"
           }
         ],
-        "type": "boxShadow",
-        "description": "For floating elements that mostly stay in a fixed position like a FAB."
+        "type": "boxShadow"
       },
-      "Pressed": {
+      "Level 4": {
         "value": [
           {
             "x": 0,
@@ -1605,127 +903,1906 @@
             "type": "dropShadow"
           }
         ],
+        "type": "boxShadow"
+      },
+      "Level 5": {
+        "value": [
+          {
+            "x": 0,
+            "y": 10,
+            "blur": 40,
+            "spread": 0,
+            "color": "#0000001a",
+            "type": "dropShadow"
+          },
+          {
+            "x": 0,
+            "y": 5,
+            "blur": 10,
+            "spread": 0,
+            "color": "#0000001a",
+            "type": "dropShadow"
+          }
+        ],
+        "type": "boxShadow"
+      },
+      "Level 6": {
+        "value": [
+          {
+            "x": 0,
+            "y": 12,
+            "blur": 48,
+            "spread": 0,
+            "color": "#0000001a",
+            "type": "dropShadow"
+          },
+          {
+            "x": 0,
+            "y": 6,
+            "blur": 12,
+            "spread": 0,
+            "color": "#0000001a",
+            "type": "dropShadow"
+          }
+        ],
+        "type": "boxShadow"
+      },
+      "Level 7": {
+        "value": [
+          {
+            "x": 0,
+            "y": 14,
+            "blur": 56,
+            "spread": 0,
+            "color": "#0000001a",
+            "type": "dropShadow"
+          },
+          {
+            "x": 0,
+            "y": 7,
+            "blur": 14,
+            "spread": 0,
+            "color": "#0000001a",
+            "type": "dropShadow"
+          }
+        ],
+        "type": "boxShadow"
+      },
+      "Level 8": {
+        "value": [
+          {
+            "x": 0,
+            "y": 16,
+            "blur": 64,
+            "spread": 0,
+            "color": "#0000001a",
+            "type": "dropShadow"
+          },
+          {
+            "x": 0,
+            "y": 8,
+            "blur": 16,
+            "spread": 0,
+            "color": "#0000001a",
+            "type": "dropShadow"
+          }
+        ],
+        "type": "boxShadow"
+      },
+      "Level 9": {
+        "value": [
+          {
+            "x": 0,
+            "y": 18,
+            "blur": 72,
+            "spread": 0,
+            "color": "#0000001a",
+            "type": "dropShadow"
+          },
+          {
+            "x": 0,
+            "y": 9,
+            "blur": 18,
+            "spread": 0,
+            "color": "#0000001a",
+            "type": "dropShadow"
+          }
+        ],
+        "type": "boxShadow"
+      },
+      "Level 10": {
+        "value": [
+          {
+            "x": 0,
+            "y": 20,
+            "blur": 80,
+            "spread": 0,
+            "color": "#0000001a",
+            "type": "dropShadow"
+          },
+          {
+            "x": 0,
+            "y": 10,
+            "blur": 20,
+            "spread": 0,
+            "color": "#0000001a",
+            "type": "dropShadow"
+          }
+        ],
+        "type": "boxShadow"
+      },
+      "Level 11": {
+        "value": [
+          {
+            "x": 0,
+            "y": 22,
+            "blur": 88,
+            "spread": 0,
+            "color": "#0000001a",
+            "type": "dropShadow"
+          },
+          {
+            "x": 0,
+            "y": 11,
+            "blur": 22,
+            "spread": 0,
+            "color": "#0000001a",
+            "type": "dropShadow"
+          }
+        ],
+        "type": "boxShadow"
+      },
+      "Level 12": {
+        "value": [
+          {
+            "x": 0,
+            "y": 24,
+            "blur": 96,
+            "spread": 0,
+            "color": "#0000001a",
+            "type": "dropShadow"
+          },
+          {
+            "x": 0,
+            "y": 12,
+            "blur": 24,
+            "spread": 0,
+            "color": "#0000001a",
+            "type": "dropShadow"
+          }
+        ],
+        "type": "boxShadow"
+      },
+      "Special": {
+        "App Bar": {
+          "Top": {
+            "Flat": {
+              "value": [
+                {
+                  "x": 0,
+                  "y": 1,
+                  "blur": 0,
+                  "spread": 0,
+                  "color": "#0000001a",
+                  "type": "dropShadow"
+                }
+              ],
+              "type": "boxShadow"
+            },
+            "Subtle": {
+              "value": [
+                {
+                  "x": 0,
+                  "y": 1,
+                  "blur": 0,
+                  "spread": 0,
+                  "color": "#0000000d",
+                  "type": "dropShadow"
+                },
+                {
+                  "x": 0,
+                  "y": 2,
+                  "blur": 8,
+                  "spread": 0,
+                  "color": "#0000000d",
+                  "type": "dropShadow"
+                }
+              ],
+              "type": "boxShadow"
+            }
+          },
+          "Bottom": {
+            "Flat": {
+              "value": [
+                {
+                  "x": 0,
+                  "y": -1,
+                  "blur": 0,
+                  "spread": 0,
+                  "color": "#0000001a",
+                  "type": "dropShadow"
+                }
+              ],
+              "type": "boxShadow"
+            },
+            "Subtle": {
+              "value": [
+                {
+                  "x": 0,
+                  "y": -1,
+                  "blur": 0,
+                  "spread": 0,
+                  "color": "#0000000d",
+                  "type": "dropShadow"
+                },
+                {
+                  "x": 0,
+                  "y": -2,
+                  "blur": 8,
+                  "spread": 0,
+                  "color": "#0000000d",
+                  "type": "dropShadow"
+                }
+              ],
+              "type": "boxShadow"
+            }
+          }
+        }
+      }
+    },
+    "Typography": {
+      "Font Family": {
+        "Sans": {
+          "value": "TeleNeoWeb, sans-serif",
+          "type": "fontFamilies"
+        },
+        "Mono": {
+          "value": "monospace",
+          "type": "fontFamilies"
+        }
+      },
+      "Font Weight": {
+        "Thin": {
+          "value": 200,
+          "type": "fontWeights"
+        },
+        "Regular": {
+          "value": 400,
+          "type": "fontWeights"
+        },
+        "Medium": {
+          "value": 500,
+          "type": "fontWeights"
+        },
+        "Bold": {
+          "value": 700,
+          "type": "fontWeights"
+        },
+        "Extra Bold": {
+          "value": 800,
+          "type": "fontWeights"
+        },
+        "Ultra": {
+          "value": 900,
+          "type": "fontWeights"
+        }
+      },
+      "Font Scale": {
+        "1": {
+          "value": "10px",
+          "type": "dimension"
+        },
+        "2": {
+          "value": "12px",
+          "type": "dimension"
+        },
+        "3": {
+          "value": "14px",
+          "type": "dimension"
+        },
+        "4": {
+          "value": "16px",
+          "type": "dimension"
+        },
+        "5": {
+          "value": "18px",
+          "type": "dimension"
+        },
+        "6": {
+          "value": "20px",
+          "type": "dimension"
+        },
+        "7": {
+          "value": "24px",
+          "type": "dimension"
+        },
+        "8": {
+          "value": "28px",
+          "type": "dimension"
+        },
+        "9": {
+          "value": "32px",
+          "type": "dimension"
+        },
+        "10": {
+          "value": "36px",
+          "type": "dimension"
+        },
+        "11": {
+          "value": "42px",
+          "type": "dimension"
+        },
+        "12": {
+          "value": "48px",
+          "type": "dimension"
+        },
+        "13": {
+          "value": "54px",
+          "type": "dimension"
+        },
+        "14": {
+          "value": "60px",
+          "type": "dimension"
+        },
+        "15": {
+          "value": "68px",
+          "type": "dimension"
+        },
+        "16": {
+          "value": "76px",
+          "type": "dimension"
+        }
+      },
+      "Line Spacing": {
+        "None": {
+          "value": 1,
+          "type": "lineHeights"
+        },
+        "Xxs": {
+          "value": 1.15,
+          "type": "lineHeights"
+        },
+        "xs": {
+          "value": 1.2,
+          "type": "lineHeights"
+        },
+        "sm": {
+          "value": 1.25,
+          "type": "lineHeights"
+        },
+        "md": {
+          "value": 1.35,
+          "type": "lineHeights"
+        },
+        "lg": {
+          "value": 1.4,
+          "type": "lineHeights"
+        },
+        "xl": {
+          "value": 1.5,
+          "type": "lineHeights"
+        }
+      },
+      "Letter Spacing": {
+        "None": {
+          "value": 0,
+          "type": "letterSpacing"
+        }
+      }
+    }
+  },
+  "Global": {
+    "Line Weight": {
+      "Standard": {
+        "value": "{Line Weight.sm}",
+        "type": "borderWidth",
+        "description": "Used for ui elements like inputs, dividers, etc."
+      },
+      "Highlight": {
+        "value": "{Line Weight.md}",
+        "type": "borderWidth",
+        "description": "E.g. use for active menu items."
+      },
+      "Bold": {
+        "value": "{Line Weight.lg}",
+        "type": "borderWidth"
+      }
+    },
+    "Opacity": {
+      "Invisible": {
+        "value": "{Opacity.None}",
+        "type": "opacity"
+      },
+      "Transparent": {
+        "value": "{Opacity.Low}",
+        "type": "opacity"
+      },
+      "Semi Transparent": {
+        "value": "{Opacity.Medium}",
+        "type": "opacity"
+      },
+      "Translucent": {
+        "value": "{Opacity.Normal}",
+        "type": "opacity"
+      },
+      "Semi Translucent": {
+        "value": "{Opacity.High}",
+        "type": "opacity"
+      },
+      "Solid": {
+        "value": "{Opacity.Full}",
+        "type": "opacity"
+      }
+    },
+    "Radius": {
+      "Small": {
+        "value": "{Core.Radius.sm}",
+        "type": "borderRadius",
+        "description": "Used for small elements like checkboxes, etc."
+      },
+      "Standard": {
+        "value": "{Core.Radius.md}",
+        "type": "borderRadius",
+        "description": "Used for our main ui elements like buttons, etc."
+      },
+      "Large": {
+        "value": "{Core.Radius.lg}",
+        "type": "borderRadius",
+        "description": "Used mainly for containers like cards or dialogs"
+      },
+      "Pill": {
+        "value": "{Core.Radius.Pill}",
+        "type": "borderRadius",
+        "description": "Used for pill-shaped ui elements"
+      },
+      "Circle": {
+        "value": "{Core.Radius.Circle}",
+        "type": "borderRadius",
+        "description": "Used for ui elements like radio buttons or things like avatars"
+      }
+    },
+    "Spacing": {
+      "Unit": {
+        "x0": {
+          "value": "{Core.Spacing.Unit.x0}",
+          "type": "spacing"
+        },
+        "x025": {
+          "value": "{Core.Spacing.Unit.x025}",
+          "type": "spacing"
+        },
+        "x05": {
+          "value": "{Core.Spacing.Unit.x05}",
+          "type": "spacing"
+        },
+        "x1": {
+          "value": "{Core.Spacing.Unit.x1}",
+          "type": "spacing"
+        },
+        "x2": {
+          "value": "{Core.Spacing.Unit.x2}",
+          "type": "spacing"
+        },
+        "x3": {
+          "value": "{Core.Spacing.Unit.x3}",
+          "type": "spacing"
+        },
+        "x4": {
+          "value": "{Core.Spacing.Unit.x4}",
+          "type": "spacing"
+        },
+        "x5": {
+          "value": "{Core.Spacing.Unit.x5}",
+          "type": "spacing"
+        },
+        "x6": {
+          "value": "{Core.Spacing.Unit.x6}",
+          "type": "spacing"
+        },
+        "x7": {
+          "value": "{Core.Spacing.Unit.x7}",
+          "type": "spacing"
+        },
+        "x8": {
+          "value": "{Core.Spacing.Unit.x8}",
+          "type": "spacing"
+        },
+        "x9": {
+          "value": "{Core.Spacing.Unit.x9}",
+          "type": "spacing"
+        },
+        "x10": {
+          "value": "{Core.Spacing.Unit.x10}",
+          "type": "spacing"
+        },
+        "x11": {
+          "value": "{Core.Spacing.Unit.x11}",
+          "type": "spacing"
+        },
+        "x12": {
+          "value": "{Core.Spacing.Unit.x12}",
+          "type": "spacing"
+        },
+        "x13": {
+          "value": "{Core.Spacing.Unit.x13}",
+          "type": "spacing"
+        },
+        "x14": {
+          "value": "{Core.Spacing.Unit.x14}",
+          "type": "spacing"
+        },
+        "x15": {
+          "value": "{Core.Spacing.Unit.x15}",
+          "type": "spacing"
+        },
+        "x16": {
+          "value": "{Core.Spacing.Unit.x16}",
+          "type": "spacing"
+        },
+        "x17": {
+          "value": "{Core.Spacing.Unit.x17}",
+          "type": "spacing"
+        },
+        "x18": {
+          "value": "{Core.Spacing.Unit.x18}",
+          "type": "spacing"
+        },
+        "x19": {
+          "value": "{Core.Spacing.Unit.x19}",
+          "type": "spacing"
+        },
+        "x20": {
+          "value": "{Core.Spacing.Unit.x20}",
+          "type": "spacing"
+        }
+      }
+    },
+    "Text Style": {
+      "Badge": {
+        "value": "{Font Family.Sans}",
+        "type": "textStyle"
+      },
+      "Small": {
+        "value": "{Font Family.Sans}",
+        "type": "textStyle"
+      },
+      "Small Bold": {
+        "value": "{Font Family.Sans}",
+        "type": "textStyle"
+      },
+      "Caption": {
+        "value": "{Font Family.Sans}",
+        "type": "textStyle"
+      },
+      "Caption Bold": {
+        "value": "{Font Family.Sans}",
+        "type": "textStyle"
+      },
+      "Body": {
+        "value": "{Font Family.Sans}",
+        "type": "textStyle"
+      },
+      "Body Bold": {
+        "value": "{Font Family.Sans}",
+        "type": "textStyle"
+      },
+      "UI": {
+        "value": "{Font Family.Sans}",
+        "type": "textStyle"
+      },
+      "UI Bold": {
+        "value": "{Font Family.Sans}",
+        "type": "textStyle"
+      },
+      "Lead Text": {
+        "value": "{Font Family.Sans}",
+        "type": "textStyle"
+      },
+      "Heading 6": {
+        "value": "{Font Family.Sans}",
+        "type": "textStyle"
+      },
+      "Heading 5": {
+        "value": "{Font Family.Sans}",
+        "type": "textStyle"
+      },
+      "Heading 4": {
+        "value": "{Font Family.Sans}",
+        "type": "textStyle"
+      },
+      "Heading 3": {
+        "value": "{Font Family.Sans}",
+        "type": "textStyle"
+      },
+      "Heading 2": {
+        "value": "{Font Family.Sans}",
+        "type": "textStyle"
+      },
+      "Heading 1": {
+        "value": "{Font Family.Sans}",
+        "type": "textStyle"
+      },
+      "Title 2": {
+        "value": "{Font Family.Sans}",
+        "type": "textStyle"
+      },
+      "Title 1": {
+        "value": "{Font Family.Sans}",
+        "type": "textStyle"
+      }
+    },
+    "Font Size": {
+      "Badge": {
+        "value": "{Typography.Font Scale.1}",
+        "type": "fontSizes"
+      },
+      "Small": {
+        "value": "{Typography.Font Scale.2}",
+        "type": "fontSizes"
+      },
+      "Caption": {
+        "value": "{Typography.Font Scale.3}",
+        "type": "fontSizes"
+      },
+      "Body": {
+        "value": "{Typography.Font Scale.4}",
+        "type": "fontSizes"
+      },
+      "Callout": {
+        "value": "{Typography.Font Scale.6}",
+        "type": "fontSizes"
+      },
+      "Headline 3": {
+        "value": "{Typography.Font Scale.7}",
+        "type": "fontSizes"
+      },
+      "Headline 2": {
+        "value": "{Typography.Font Scale.9}",
+        "type": "fontSizes"
+      },
+      "Headline 1": {
+        "value": "{Typography.Font Scale.11}",
+        "type": "fontSizes"
+      },
+      "Title 3": {
+        "value": "{Typography.Font Scale.13}",
+        "type": "fontSizes"
+      },
+      "Title 2": {
+        "value": "{Typography.Font Scale.15}",
+        "type": "fontSizes"
+      },
+      "Title 1": {
+        "value": "{Typography.Font Scale.16}",
+        "type": "fontSizes"
+      }
+    },
+    "Font Family": {
+      "Sans": {
+        "value": "{Typography.Font Family.Sans}",
+        "type": "fontFamilies"
+      },
+      "Mono": {
+        "value": "{Typography.Font Family.Mono}",
+        "type": "fontFamilies"
+      }
+    },
+    "Font Weight": {
+      "Thin": {
+        "value": "{Typography.Font Weight.Thin}",
+        "type": "fontWeights"
+      },
+      "Regular": {
+        "value": "{Typography.Font Weight.Regular}",
+        "type": "fontWeights"
+      },
+      "Medium": {
+        "value": "{Typography.Font Weight.Medium}",
+        "type": "fontWeights"
+      },
+      "Bold": {
+        "value": "{Typography.Font Weight.Bold}",
+        "type": "fontWeights"
+      },
+      "Extra Bold": {
+        "value": "{Typography.Font Weight.Extra Bold}",
+        "type": "fontWeights"
+      },
+      "Ultra": {
+        "value": "{Typography.Font Weight.Ultra}",
+        "type": "fontWeights"
+      }
+    },
+    "Line Spacing": {
+      "None": {
+        "value": "{Typography.Line Spacing.None}",
+        "type": "lineHeights",
+        "description": "Use for single line in ui elements"
+      },
+      "Extra Tight": {
+        "value": "{Typography.Line Spacing.Xxs}",
+        "type": "lineHeights",
+        "description": "Use for large titles like H1 or H2"
+      },
+      "Tight": {
+        "value": "{Typography.Line Spacing.sm}",
+        "type": "lineHeights",
+        "description": "Use for large headlines like H3, etc."
+      },
+      "Standard": {
+        "value": "{Typography.Line Spacing.lg}",
+        "type": "lineHeights",
+        "description": "Use for most text elements like normal copy, etc."
+      },
+      "Loose": {
+        "value": "{Typography.Line Spacing.xl}",
+        "type": "lineHeights",
+        "description": "Use for multi line text passages with long lines."
+      }
+    },
+    "Letter Spacing": {
+      "Standard": {
+        "value": "{Typography.Letter Spacing.None}",
+        "type": "letterSpacing"
+      }
+    }
+  },
+  "Light": {
+    "Text & Icon": {
+      "Standard": {
+        "value": "{Color.Black}",
+        "type": "color",
+        "description": "Default text color with highest contrast."
+      },
+      "Additional": {
+        "value": "{Color.Black}",
+        "type": "color",
+        "description": "Use in combination with standard text for additional text elements.",
+        "$extensions": {
+          "studio.tokens": {
+            "modify": {
+              "type": "alpha",
+              "value": "0.65",
+              "space": "hsl"
+            }
+          }
+        }
+      },
+      "Disabled": {
+        "value": "{Color.Black}",
+        "type": "color",
+        "description": "Only use for disabled text.",
+        "$extensions": {
+          "studio.tokens": {
+            "modify": {
+              "type": "alpha",
+              "value": "0.4",
+              "space": "hsl"
+            }
+          }
+        }
+      },
+      "Link": {
+        "Standard": {
+          "value": "{Color.Blue.500}",
+          "type": "color"
+        },
+        "Hovered": {
+          "value": "{Color.Blue.700}",
+          "type": "color"
+        },
+        "Visited": {
+          "value": "{Color.Violet.600}",
+          "type": "color"
+        },
+        "Active": {
+          "value": "{Color.Blue.900}",
+          "type": "color"
+        }
+      },
+      "Primary": {
+        "Standard": {
+          "value": "{Color.Brand.Standard}",
+          "type": "color"
+        },
+        "Hovered": {
+          "value": "{Color.Brand.Dark}",
+          "type": "color"
+        },
+        "Pressed": {
+          "value": "{Color.Brand.Darker}",
+          "type": "color"
+        }
+      },
+      "Inverted": {
+        "Standard": {
+          "value": "{Color.White}",
+          "type": "color",
+          "description": "Standard text color inverted to be used on high contrast colors like ui/extra strong"
+        },
+        "Additional": {
+          "value": "{Color.White}",
+          "type": "color",
+          "description": "Additional text color inverted to be used on high contrast colors like ui/extra strong",
+          "$extensions": {
+            "studio.tokens": {
+              "modify": {
+                "type": "alpha",
+                "value": "0.65",
+                "space": "hsl"
+              }
+            }
+          }
+        }
+      },
+      "White": {
+        "Standard": {
+          "value": "{Color.White}",
+          "type": "color",
+          "description": "Light text to be used on backgrounds that are dark in all modes (light & dark)"
+        },
+        "Additional": {
+          "value": "{Color.White}",
+          "type": "color",
+          "description": "Semi-Light text to be used on backgrounds that are dark in all modes (light & dark)",
+          "$extensions": {
+            "studio.tokens": {
+              "modify": {
+                "type": "alpha",
+                "value": "0.65",
+                "space": "hsl"
+              }
+            }
+          }
+        }
+      },
+      "Black": {
+        "Standard": {
+          "value": "{Color.Black}",
+          "type": "color",
+          "description": "This text color is dark in all modes (light & dark)"
+        },
+        "Additional": {
+          "value": "{Color.Black}",
+          "type": "color",
+          "description": "This text color is dark in all modes (light & dark)",
+          "$extensions": {
+            "studio.tokens": {
+              "modify": {
+                "type": "alpha",
+                "value": "0.65",
+                "space": "hsl"
+              }
+            }
+          }
+        }
+      },
+      "Functional": {
+        "Informational": {
+          "value": "{Color.Blue.500}",
+          "type": "color"
+        },
+        "Success": {
+          "value": "{Color.Green.800}",
+          "type": "color"
+        },
+        "Danger": {
+          "value": "{Color.Red.600}",
+          "type": "color"
+        },
+        "Warning": {
+          "value": "{Color.Orange.900}",
+          "type": "color"
+        }
+      },
+      "On Subtle": {
+        "Informational": {
+          "value": "{Color.Blue.500}",
+          "type": "color"
+        },
+        "Success": {
+          "value": "{Color.Green.900}",
+          "type": "color"
+        },
+        "Danger": {
+          "value": "{Color.Red.700}",
+          "type": "color"
+        },
+        "Warning": {
+          "value": "{Color.Orange.900}",
+          "type": "color"
+        },
+        "Violet": {
+          "value": "{Color.Violet.600}",
+          "type": "color"
+        },
+        "Blue": {
+          "value": "{Color.Blue.500}",
+          "type": "color"
+        },
+        "Cyan": {
+          "value": "{Color.Cyan.400}",
+          "type": "color"
+        },
+        "Teal": {
+          "value": "{Color.Teal.400}",
+          "type": "color"
+        },
+        "Green": {
+          "value": "{Color.Green.900}",
+          "type": "color"
+        },
+        "Olive": {
+          "value": "{Color.Olive.400}",
+          "type": "color"
+        },
+        "Brown": {
+          "value": "{Color.Brown.800}",
+          "type": "color"
+        },
+        "Yellow": {
+          "value": "{Color.Yellow.500}",
+          "type": "color"
+        },
+        "Orange": {
+          "value": "{Color.Orange.900}",
+          "type": "color"
+        },
+        "Red": {
+          "value": "{Color.Red.700}",
+          "type": "color"
+        }
+      }
+    },
+    "Background": {
+      "Canvas": {
+        "value": "{Color.Grey.0}",
+        "type": "color",
+        "description": "Use as the background for your product (app, website, etc.)"
+      },
+      "Canvas Subtle": {
+        "value": "{Color.Grey.100}",
+        "type": "color",
+        "description": "Use as the background for your product (app, website, etc.)"
+      },
+      "Backdrop": {
+        "value": "{Color.Black}",
+        "type": "color",
+        "description": "Use to overlay content below dialogs to separate dialog from content below",
+        "$extensions": {
+          "studio.tokens": {
+            "modify": {
+              "type": "alpha",
+              "value": "0.5",
+              "space": "hsl"
+            }
+          }
+        }
+      },
+      "Surface": {
+        "value": "{Color.Grey.0}",
+        "type": "color",
+        "description": "Use as the background of elements like cards, headers, bottom bars, etc."
+      },
+      "Surface Subtle": {
+        "value": "{Color.Grey.300}",
+        "type": "color",
+        "description": "Use as the background of elements like cards, headers, bottom bars, etc."
+      },
+      "Surface Highlight": {
+        "value": "{Color.Grey.1800}",
+        "type": "color",
+        "description": "Use as the background of elements that should stand out highlighted sections, footer, etc."
+      }
+    },
+    "Primary": {
+      "Standard": {
+        "value": "{Color.Brand.Standard}",
+        "type": "color"
+      },
+      "Hovered": {
+        "value": "{Color.Brand.Dark}",
+        "type": "color"
+      },
+      "Pressed": {
+        "value": "{Color.Brand.Darker}",
+        "type": "color"
+      }
+    },
+    "UI": {
+      "Base": {
+        "value": "{Color.Grey.0}",
+        "type": "color"
+      },
+      "Subtle": {
+        "value": "{Color.Grey.300}",
+        "type": "color"
+      },
+      "Faint": {
+        "value": "{Color.Grey.500}",
+        "type": "color"
+      },
+      "Regular": {
+        "value": "{Color.Grey.1000}",
+        "type": "color"
+      },
+      "Strong": {
+        "value": "{Color.Grey.1200}",
+        "type": "color"
+      },
+      "Extra Strong": {
+        "value": "{Color.Grey.1800}",
+        "type": "color"
+      },
+      "White": {
+        "value": "{Color.Grey.0}",
+        "type": "color"
+      },
+      "Black": {
+        "value": "{Color.Grey.2200}",
+        "type": "color"
+      },
+      "Disabled": {
+        "value": "{Color.Grey.600}",
+        "type": "color"
+      },
+      "Border": {
+        "Standard": {
+          "value": "{Color.Black}",
+          "type": "color",
+          "$extensions": {
+            "studio.tokens": {
+              "modify": {
+                "type": "alpha",
+                "value": "0.44",
+                "space": "hsl"
+              }
+            }
+          }
+        },
+        "Hovered": {
+          "value": "{Color.Black}",
+          "type": "color",
+          "$extensions": {
+            "studio.tokens": {
+              "modify": {
+                "type": "alpha",
+                "value": "0.71",
+                "space": "hsl"
+              }
+            }
+          }
+        },
+        "Pressed": {
+          "value": "{Color.Black}",
+          "type": "color",
+          "description": "Use this token for borders in pressed or active state",
+          "$extensions": {
+            "studio.tokens": {
+              "modify": {
+                "type": "alpha",
+                "value": "0.71",
+                "space": "hsl"
+              }
+            }
+          }
+        },
+        "Disabled": {
+          "value": "{Color.Black}",
+          "type": "color",
+          "$extensions": {
+            "studio.tokens": {
+              "modify": {
+                "type": "alpha",
+                "value": "0.14",
+                "space": "hsl"
+              }
+            }
+          }
+        }
+      },
+      "State Fill": {
+        "Standard": {
+          "value": "{Color.Black}",
+          "type": "color",
+          "description": "For outlined and ghost elements: The standard fill is invisible / 0% opacity",
+          "$extensions": {
+            "studio.tokens": {
+              "modify": {
+                "type": "alpha",
+                "value": "0",
+                "space": "hsl"
+              }
+            }
+          }
+        },
+        "Hovered": {
+          "value": "{Color.Black}",
+          "type": "color",
+          "description": "For outlined and ghost elements: When hovered a light, transparent fill is applied",
+          "$extensions": {
+            "studio.tokens": {
+              "modify": {
+                "type": "alpha",
+                "value": "0.07",
+                "space": "hsl"
+              }
+            }
+          }
+        },
+        "Pressed": {
+          "value": "{Color.Black}",
+          "type": "color",
+          "description": "For outlined and ghost elements: When pressed or active a medium transparent fill is applied",
+          "$extensions": {
+            "studio.tokens": {
+              "modify": {
+                "type": "alpha",
+                "value": "0.21",
+                "space": "hsl"
+              }
+            }
+          }
+        },
+        "Hovered Inverted": {
+          "value": "{Color.White}",
+          "type": "color",
+          "description": "For outlined and ghost elements: When hovered a light, transparent fill is applied",
+          "$extensions": {
+            "studio.tokens": {
+              "modify": {
+                "type": "alpha",
+                "value": "0.14",
+                "space": "hsl"
+              }
+            }
+          }
+        },
+        "Pressed Inverted": {
+          "value": "{Color.White}",
+          "type": "color",
+          "description": "For outlined and ghost elements: When pressed or active a medium transparent fill is applied",
+          "$extensions": {
+            "studio.tokens": {
+              "modify": {
+                "type": "alpha",
+                "value": "0.21",
+                "space": "hsl"
+              }
+            }
+          }
+        }
+      }
+    },
+    "Functional": {
+      "Focus": {
+        "Standard": {
+          "value": "{Color.Blue.500}",
+          "type": "color"
+        },
+        "Inverted": {
+          "value": "{Color.Blue.200}",
+          "type": "color"
+        },
+        "On Dark Background": {
+          "value": "{Color.Blue.200}",
+          "type": "color"
+        },
+        "On Light Background": {
+          "value": "{Color.Blue.500}",
+          "type": "color"
+        }
+      },
+      "Informational": {
+        "Standard": {
+          "value": "{Color.Blue.500}",
+          "type": "color"
+        },
+        "Hovered": {
+          "value": "{Color.Blue.600}",
+          "type": "color"
+        },
+        "Pressed": {
+          "value": "{Color.Blue.700}",
+          "type": "color"
+        },
+        "Subtle": {
+          "value": "{Color.Blue.Tint}",
+          "type": "color"
+        }
+      },
+      "Success": {
+        "Standard": {
+          "value": "{Color.Green.500}",
+          "type": "color"
+        },
+        "Hovered": {
+          "value": "{Color.Green.600}",
+          "type": "color"
+        },
+        "Pressed": {
+          "value": "{Color.Green.700}",
+          "type": "color"
+        },
+        "Subtle": {
+          "value": "{Color.Green.Tint}",
+          "type": "color"
+        }
+      },
+      "Danger": {
+        "Standard": {
+          "value": "{Color.Red.500}",
+          "type": "color"
+        },
+        "Hovered": {
+          "value": "{Color.Red.600}",
+          "type": "color"
+        },
+        "Pressed": {
+          "value": "{Color.Red.700}",
+          "type": "color"
+        },
+        "Subtle": {
+          "value": "{Color.Red.Tint}",
+          "type": "color"
+        }
+      },
+      "Warning": {
+        "Standard": {
+          "value": "{Color.Orange.500}",
+          "type": "color"
+        },
+        "Hovered": {
+          "value": "{Color.Orange.600}",
+          "type": "color"
+        },
+        "Pressed": {
+          "value": "{Color.Orange.700}",
+          "type": "color"
+        },
+        "Subtle": {
+          "value": "{Color.Orange.Tint}",
+          "type": "color"
+        }
+      }
+    },
+    "Additional": {
+      "Violet": {
+        "0": {
+          "value": "{Color.Violet.0}",
+          "type": "color",
+          "description": "tags: additional, violet"
+        },
+        "100": {
+          "value": "{Color.Violet.100}",
+          "type": "color",
+          "description": "tags: additional, violet"
+        },
+        "200": {
+          "value": "{Color.Violet.200}",
+          "type": "color",
+          "description": "tags: additional, violet"
+        },
+        "300": {
+          "value": "{Color.Violet.300}",
+          "type": "color",
+          "description": "tags: additional, violet"
+        },
+        "400": {
+          "value": "{Color.Violet.400}",
+          "type": "color",
+          "description": "tags: additional, violet"
+        },
+        "500": {
+          "value": "{Color.Violet.500}",
+          "type": "color",
+          "description": "tags: additional, violet"
+        },
+        "600": {
+          "value": "{Color.Violet.600}",
+          "type": "color",
+          "description": "tags: additional, violet"
+        },
+        "700": {
+          "value": "{Color.Violet.700}",
+          "type": "color",
+          "description": "tags: additional, violet"
+        },
+        "800": {
+          "value": "{Color.Violet.800}",
+          "type": "color",
+          "description": "tags: additional, violet"
+        },
+        "900": {
+          "value": "{Color.Violet.900}",
+          "type": "color",
+          "description": "tags: additional, violet"
+        },
+        "Subtle": {
+          "value": "{Color.Violet.Tint}",
+          "type": "color",
+          "description": "tags: violet, additional"
+        }
+      },
+      "Blue": {
+        "0": {
+          "value": "{Color.Blue.0}",
+          "type": "color",
+          "description": "tags: additional, blue"
+        },
+        "100": {
+          "value": "{Color.Blue.100}",
+          "type": "color",
+          "description": "tags: additional, blue"
+        },
+        "200": {
+          "value": "{Color.Blue.200}",
+          "type": "color",
+          "description": "tags: additional, blue"
+        },
+        "300": {
+          "value": "{Color.Blue.300}",
+          "type": "color",
+          "description": "tags: additional, blue"
+        },
+        "400": {
+          "value": "{Color.Blue.400}",
+          "type": "color",
+          "description": "tags: additional, blue"
+        },
+        "500": {
+          "value": "{Color.Blue.500}",
+          "type": "color",
+          "description": "tags: additional, blue"
+        },
+        "600": {
+          "value": "{Color.Blue.600}",
+          "type": "color",
+          "description": "tags: additional, blue"
+        },
+        "700": {
+          "value": "{Color.Blue.700}",
+          "type": "color",
+          "description": "tags: additional, blue"
+        },
+        "800": {
+          "value": "{Color.Blue.800}",
+          "type": "color",
+          "description": "tags: additional, blue"
+        },
+        "900": {
+          "value": "{Color.Blue.900}",
+          "type": "color",
+          "description": "tags: additional, blue"
+        },
+        "Subtle": {
+          "value": "{Color.Blue.Tint}",
+          "type": "color",
+          "description": "tags: additional, subtle, blue"
+        }
+      },
+      "Cyan": {
+        "0": {
+          "value": "{Color.Cyan.0}",
+          "type": "color",
+          "description": "tags: additional, cyan"
+        },
+        "100": {
+          "value": "{Color.Cyan.100}",
+          "type": "color",
+          "description": "tags: additional, cyan"
+        },
+        "200": {
+          "value": "{Color.Cyan.200}",
+          "type": "color",
+          "description": "tags: additional, cyan"
+        },
+        "300": {
+          "value": "{Color.Cyan.300}",
+          "type": "color",
+          "description": "tags: additional, cyan"
+        },
+        "400": {
+          "value": "{Color.Cyan.400}",
+          "type": "color",
+          "description": "tags: additional, cyan"
+        },
+        "500": {
+          "value": "{Color.Cyan.500}",
+          "type": "color",
+          "description": "tags: additional, cyan"
+        },
+        "600": {
+          "value": "{Color.Cyan.600}",
+          "type": "color",
+          "description": "tags: additional, cyan"
+        },
+        "700": {
+          "value": "{Color.Cyan.700}",
+          "type": "color",
+          "description": "tags: additional, cyan"
+        },
+        "800": {
+          "value": "{Color.Cyan.800}",
+          "type": "color",
+          "description": "tags: additional, cyan"
+        },
+        "900": {
+          "value": "{Color.Cyan.900}",
+          "type": "color",
+          "description": "tags: additional, cyan"
+        },
+        "Subtle": {
+          "value": "{Color.Cyan.Tint}",
+          "type": "color",
+          "description": "tags: additional, subtle, cyan"
+        }
+      },
+      "Teal": {
+        "0": {
+          "value": "{Color.Teal.0}",
+          "type": "color",
+          "description": "tags: additional, teal"
+        },
+        "100": {
+          "value": "{Color.Teal.100}",
+          "type": "color",
+          "description": "tags: additional, teal"
+        },
+        "200": {
+          "value": "{Color.Teal.200}",
+          "type": "color",
+          "description": "tags: additional, teal"
+        },
+        "300": {
+          "value": "{Color.Teal.300}",
+          "type": "color",
+          "description": "tags: additional, teal"
+        },
+        "400": {
+          "value": "{Color.Teal.400}",
+          "type": "color",
+          "description": "tags: additional, teal"
+        },
+        "500": {
+          "value": "{Color.Teal.500}",
+          "type": "color",
+          "description": "tags: additional, teal"
+        },
+        "600": {
+          "value": "{Color.Teal.600}",
+          "type": "color",
+          "description": "tags: additional, teal"
+        },
+        "700": {
+          "value": "{Color.Teal.700}",
+          "type": "color",
+          "description": "tags: additional, teal"
+        },
+        "800": {
+          "value": "{Color.Teal.800}",
+          "type": "color",
+          "description": "tags: additional, teal"
+        },
+        "900": {
+          "value": "{Color.Teal.900}",
+          "type": "color",
+          "description": "tags: additional, teal"
+        },
+        "Subtle": {
+          "value": "{Color.Teal.Tint}",
+          "type": "color",
+          "description": "tags: additional, subtle, teal"
+        }
+      },
+      "Green": {
+        "0": {
+          "value": "{Color.Green.0}",
+          "type": "color",
+          "description": "tags: additional, green"
+        },
+        "100": {
+          "value": "{Color.Green.100}",
+          "type": "color",
+          "description": "tags: additional, green"
+        },
+        "200": {
+          "value": "{Color.Green.200}",
+          "type": "color",
+          "description": "tags: additional, green"
+        },
+        "300": {
+          "value": "{Color.Green.300}",
+          "type": "color",
+          "description": "tags: additional, green"
+        },
+        "400": {
+          "value": "{Color.Green.400}",
+          "type": "color",
+          "description": "tags: additional, green"
+        },
+        "500": {
+          "value": "{Color.Green.500}",
+          "type": "color",
+          "description": "tags: additional, green"
+        },
+        "600": {
+          "value": "{Color.Green.600}",
+          "type": "color",
+          "description": "tags: additional, green"
+        },
+        "700": {
+          "value": "{Color.Green.700}",
+          "type": "color",
+          "description": "tags: additional, green"
+        },
+        "800": {
+          "value": "{Color.Green.800}",
+          "type": "color",
+          "description": "tags: additional, green"
+        },
+        "900": {
+          "value": "{Color.Green.900}",
+          "type": "color",
+          "description": "tags: additional, green"
+        },
+        "Subtle": {
+          "value": "{Color.Green.Tint}",
+          "type": "color",
+          "description": "tags: green, subtle, additional"
+        }
+      },
+      "Olive": {
+        "0": {
+          "value": "{Color.Olive.0}",
+          "type": "color",
+          "description": "tags: additional, olive"
+        },
+        "100": {
+          "value": "{Color.Olive.100}",
+          "type": "color",
+          "description": "tags: additional, olive"
+        },
+        "200": {
+          "value": "{Color.Olive.200}",
+          "type": "color",
+          "description": "tags: additional, olive"
+        },
+        "300": {
+          "value": "{Color.Olive.300}",
+          "type": "color",
+          "description": "tags: additional, olive"
+        },
+        "400": {
+          "value": "{Color.Olive.400}",
+          "type": "color",
+          "description": "tags: additional, olive"
+        },
+        "500": {
+          "value": "{Color.Olive.500}",
+          "type": "color",
+          "description": "tags: additional, olive"
+        },
+        "600": {
+          "value": "{Color.Olive.600}",
+          "type": "color",
+          "description": "tags: additional, olive"
+        },
+        "700": {
+          "value": "{Color.Olive.700}",
+          "type": "color",
+          "description": "tags: additional, olive"
+        },
+        "800": {
+          "value": "{Color.Olive.800}",
+          "type": "color",
+          "description": "tags: additional, olive"
+        },
+        "900": {
+          "value": "{Color.Olive.900}",
+          "type": "color",
+          "description": "tags: additional, olive"
+        },
+        "Subtle": {
+          "value": "{Color.Olive.Tint}",
+          "type": "color",
+          "description": "tags: additional, subtle, olive"
+        }
+      },
+      "Brown": {
+        "0": {
+          "value": "{Color.Brown.0}",
+          "type": "color",
+          "description": "tags: additional, brown"
+        },
+        "100": {
+          "value": "{Color.Brown.100}",
+          "type": "color",
+          "description": "tags: additional, brown"
+        },
+        "200": {
+          "value": "{Color.Brown.200}",
+          "type": "color",
+          "description": "tags: additional, brown"
+        },
+        "300": {
+          "value": "{Color.Brown.300}",
+          "type": "color",
+          "description": "tags: additional, brown"
+        },
+        "400": {
+          "value": "{Color.Brown.400}",
+          "type": "color",
+          "description": "tags: additional, brown"
+        },
+        "500": {
+          "value": "{Color.Brown.500}",
+          "type": "color",
+          "description": "tags: additional, brown"
+        },
+        "600": {
+          "value": "{Color.Brown.600}",
+          "type": "color",
+          "description": "tags: additional, brown"
+        },
+        "700": {
+          "value": "{Color.Brown.700}",
+          "type": "color",
+          "description": "tags: additional, brown"
+        },
+        "800": {
+          "value": "{Color.Brown.800}",
+          "type": "color",
+          "description": "tags: additional, brown"
+        },
+        "900": {
+          "value": "{Color.Brown.900}",
+          "type": "color",
+          "description": "tags: additional, brown"
+        },
+        "Subtle": {
+          "value": "{Color.Brown.Tint}",
+          "type": "color",
+          "description": "tags: additional, subtle, brown"
+        }
+      },
+      "Yellow": {
+        "0": {
+          "value": "{Color.Yellow.0}",
+          "type": "color",
+          "description": "tags: additional, yellow"
+        },
+        "100": {
+          "value": "{Color.Yellow.100}",
+          "type": "color",
+          "description": "tags: additional, yellow"
+        },
+        "200": {
+          "value": "{Color.Yellow.200}",
+          "type": "color",
+          "description": "tags: additional, yellow"
+        },
+        "300": {
+          "value": "{Color.Yellow.300}",
+          "type": "color",
+          "description": "tags: additional, yellow"
+        },
+        "400": {
+          "value": "{Color.Yellow.400}",
+          "type": "color",
+          "description": "tags: additional, yellow"
+        },
+        "500": {
+          "value": "{Color.Yellow.500}",
+          "type": "color",
+          "description": "tags: additional, yellow"
+        },
+        "600": {
+          "value": "{Color.Yellow.600}",
+          "type": "color",
+          "description": "tags: additional, yellow"
+        },
+        "700": {
+          "value": "{Color.Yellow.700}",
+          "type": "color",
+          "description": "tags: additional, yellow"
+        },
+        "800": {
+          "value": "{Color.Yellow.800}",
+          "type": "color",
+          "description": "tags: additional, yellow"
+        },
+        "900": {
+          "value": "{Color.Yellow.900}",
+          "type": "color",
+          "description": "tags: additional, yellow"
+        },
+        "Subtle": {
+          "value": "{Color.Yellow.Tint}",
+          "type": "color",
+          "description": "tags: additional, subtle, yellow"
+        }
+      },
+      "Orange": {
+        "0": {
+          "value": "{Color.Orange.0}",
+          "type": "color",
+          "description": "tags: additional, orange"
+        },
+        "100": {
+          "value": "{Color.Orange.100}",
+          "type": "color",
+          "description": "tags: additional, orange"
+        },
+        "200": {
+          "value": "{Color.Orange.200}",
+          "type": "color",
+          "description": "tags: additional, orange"
+        },
+        "300": {
+          "value": "{Color.Orange.300}",
+          "type": "color",
+          "description": "tags: additional, orange"
+        },
+        "400": {
+          "value": "{Color.Orange.400}",
+          "type": "color",
+          "description": "tags: additional, orange"
+        },
+        "500": {
+          "value": "{Color.Orange.500}",
+          "type": "color",
+          "description": "tags: additional, orange"
+        },
+        "600": {
+          "value": "{Color.Orange.600}",
+          "type": "color",
+          "description": "tags: additional, orange"
+        },
+        "700": {
+          "value": "{Color.Orange.700}",
+          "type": "color",
+          "description": "tags: additional, orange"
+        },
+        "800": {
+          "value": "{Color.Orange.800}",
+          "type": "color",
+          "description": "tags: additional, orange"
+        },
+        "900": {
+          "value": "{Color.Orange.900}",
+          "type": "color",
+          "description": "tags: additional, orange"
+        },
+        "Subtle": {
+          "value": "{Color.Orange.Tint}",
+          "type": "color",
+          "description": "tags: additional, subtle, orange"
+        }
+      },
+      "Red": {
+        "0": {
+          "value": "{Color.Red.0}",
+          "type": "color",
+          "description": "tags: additional, red"
+        },
+        "100": {
+          "value": "{Color.Red.100}",
+          "type": "color",
+          "description": "tags: additional, red"
+        },
+        "200": {
+          "value": "{Color.Red.200}",
+          "type": "color",
+          "description": "tags: additional, red"
+        },
+        "300": {
+          "value": "{Color.Red.300}",
+          "type": "color",
+          "description": "tags: additional, red"
+        },
+        "400": {
+          "value": "{Color.Red.400}",
+          "type": "color",
+          "description": "tags: additional, red"
+        },
+        "500": {
+          "value": "{Color.Red.500}",
+          "type": "color",
+          "description": "tags: additional, red"
+        },
+        "600": {
+          "value": "{Color.Red.600}",
+          "type": "color",
+          "description": "tags: additional, red"
+        },
+        "700": {
+          "value": "{Color.Red.700}",
+          "type": "color",
+          "description": "tags: additional, red"
+        },
+        "800": {
+          "value": "{Color.Red.800}",
+          "type": "color",
+          "description": "tags: additional, red"
+        },
+        "900": {
+          "value": "{Color.Red.900}",
+          "type": "color",
+          "description": "tags: additional, red"
+        },
+        "Subtle": {
+          "value": "{Color.Red.Tint}",
+          "type": "color",
+          "description": "tags: additional, subtle, red"
+        }
+      }
+    },
+    "Raised": {
+      "Standard": {
+        "value": "{Shadow.Level 4}",
+        "type": "boxShadow",
+        "description": "For bigger interactable elements like cards, etc."
+      },
+      "Hover": {
+        "value": "{Shadow.Level 8}",
+        "type": "boxShadow",
+        "description": "For bigger interactable elements like cards, etc."
+      },
+      "Pressed": {
+        "value": "{Shadow.Level 2}",
+        "type": "boxShadow",
+        "description": "For bigger interactable elements like cards, etc."
+      }
+    },
+    "Floating": {
+      "Standard": {
+        "value": "{Shadow.Level 6}",
+        "type": "boxShadow",
+        "description": "For floating elements that mostly stay in a fixed position like a FAB."
+      },
+      "Hover": {
+        "value": "{Shadow.Level 12}",
+        "type": "boxShadow",
+        "description": "For floating elements that mostly stay in a fixed position like a FAB."
+      },
+      "Pressed": {
+        "value": "{Shadow.Level 4}",
         "type": "boxShadow",
         "description": "For floating elements that mostly stay in a fixed position like a FAB."
       }
     },
     "Top": {
-      "value": [
-        {
-          "x": 0,
-          "y": 16,
-          "blur": 64,
-          "spread": 0,
-          "color": "#0000001a",
-          "type": "dropShadow"
-        },
-        {
-          "x": 0,
-          "y": 8,
-          "blur": 16,
-          "spread": 0,
-          "color": "#0000001a",
-          "type": "dropShadow"
-        }
-      ],
+      "value": "{Shadow.Level 8}",
       "type": "boxShadow",
       "description": "For fixed elements that overlay the content e.g. sidebars or bottom sheets"
     },
     "Overlay": {
-      "value": [
-        {
-          "x": 0,
-          "y": 24,
-          "blur": 96,
-          "spread": 0,
-          "color": "#0000001a",
-          "type": "dropShadow"
-        },
-        {
-          "x": 0,
-          "y": 12,
-          "blur": 24,
-          "spread": 0,
-          "color": "#0000001a",
-          "type": "dropShadow"
-        }
-      ],
+      "value": "{Shadow.Level 12}",
       "type": "boxShadow",
       "description": "Highest level e.g. for dialogs or modals"
     },
     "App Bar": {
       "Top": {
         "Raised": {
-          "value": [
-            {
-              "x": 0,
-              "y": 1,
-              "blur": 0,
-              "spread": 0,
-              "color": "#0000000d",
-              "type": "dropShadow"
-            },
-            {
-              "x": 0,
-              "y": 2,
-              "blur": 8,
-              "spread": 0,
-              "color": "#0000000d",
-              "type": "dropShadow"
-            }
-          ],
+          "value": "{Shadow.Special.App Bar.Top.Subtle}",
           "type": "boxShadow",
           "description": "Use for headers, app bar & menus on the top"
         },
         "Flat": {
-          "value": [
-            {
-              "x": 0,
-              "y": 1,
-              "blur": 0,
-              "spread": 0,
-              "color": "#0000001a",
-              "type": "dropShadow"
-            }
-          ],
+          "value": "{Shadow.Special.App Bar.Top.Flat}",
           "type": "boxShadow",
           "description": "Use for headers, app bar & menus on the top"
         }
       },
       "Bottom": {
         "Raised": {
-          "value": [
-            {
-              "x": 0,
-              "y": -1,
-              "blur": 0,
-              "spread": 0,
-              "color": "#0000000d",
-              "type": "dropShadow"
-            },
-            {
-              "x": 0,
-              "y": -2,
-              "blur": 8,
-              "spread": 0,
-              "color": "#0000000d",
-              "type": "dropShadow"
-            }
-          ],
+          "value": "{Shadow.Special.App Bar.Bottom.Subtle}",
           "type": "boxShadow",
           "description": "Use for app navigation and app bars on the bottom"
         },
         "Flat": {
-          "value": [
-            {
-              "x": 0,
-              "y": -1,
-              "blur": 0,
-              "spread": 0,
-              "color": "#0000001a",
-              "type": "dropShadow"
-            }
-          ],
+          "value": "{Shadow.Special.App Bar.Bottom.Flat}",
           "type": "boxShadow",
           "description": "Use for app navigation and app bars on the bottom"
         }
@@ -1735,383 +2812,518 @@
   "Dark": {
     "Text & Icon": {
       "Standard": {
-        "value": "#ffffff",
+        "value": "{Color.White}",
         "type": "color",
         "description": "Default text color with highest contrast."
       },
       "Additional": {
-        "value": "#ffffffa6",
+        "value": "{Color.White}",
         "type": "color",
-        "description": "Use in combination with standard text for additional text elements."
+        "description": "Use in combination with standard text for additional text elements.",
+        "$extensions": {
+          "studio.tokens": {
+            "modify": {
+              "type": "alpha",
+              "value": "0.65",
+              "space": "hsl"
+            }
+          }
+        }
       },
       "Disabled": {
-        "value": "#ffffff4d",
+        "value": "{Color.White}",
         "type": "color",
-        "description": "Only use for disabled text."
+        "description": "Only use for disabled text.",
+        "$extensions": {
+          "studio.tokens": {
+            "modify": {
+              "type": "alpha",
+              "value": "0.3",
+              "space": "hsl"
+            }
+          }
+        }
       },
       "Link": {
         "Standard": {
-          "value": "#7d94f9",
+          "value": "{Color.Blue.200}",
           "type": "color"
         },
         "Hovered": {
-          "value": "#aabcfd",
+          "value": "{Color.Blue.100}",
           "type": "color"
         },
         "Visited": {
-          "value": "#9a75f8",
+          "value": "{Color.Violet.300}",
           "type": "color"
         },
         "Active": {
-          "value": "#d9e2ff",
+          "value": "{Color.Blue.0}",
           "type": "color"
         }
       },
       "Primary": {
         "Standard": {
-          "value": "#e20074",
+          "value": "{Color.Brand.Standard}",
           "type": "color"
         },
         "Hovered": {
-          "value": "#EC59A5",
+          "value": "{Color.Brand.Light}",
           "type": "color"
         },
         "Pressed": {
-          "value": "#F080BA",
+          "value": "{Color.Brand.Lighter}",
           "type": "color"
         }
       },
       "Inverted": {
         "Standard": {
-          "value": "#000000",
+          "value": "{Color.Black}",
           "type": "color",
           "description": "Standard text color inverted to be used on high contrast colors like ui/extra strong"
         },
         "Additional": {
-          "value": "#000000a6",
+          "value": "{Color.Black}",
           "type": "color",
-          "description": "Additional text color inverted to be used on high contrast colors like ui/extra strong"
+          "description": "Additional text color inverted to be used on high contrast colors like ui/extra strong",
+          "$extensions": {
+            "studio.tokens": {
+              "modify": {
+                "type": "alpha",
+                "value": "0.65",
+                "space": "hsl"
+              }
+            }
+          }
         }
       },
       "White": {
         "Standard": {
-          "value": "#ffffff",
+          "value": "{Color.White}",
           "type": "color",
           "description": "Light text to be used on backgrounds that are dark in all modes (light & dark)"
         },
         "Additional": {
-          "value": "#ffffffa6",
+          "value": "{Color.White}",
           "type": "color",
-          "description": "Semi-Light text to be used on backgrounds that are dark in all modes (light & dark)"
+          "description": "Semi-Light text to be used on backgrounds that are dark in all modes (light & dark)",
+          "$extensions": {
+            "studio.tokens": {
+              "modify": {
+                "type": "alpha",
+                "value": "0.65",
+                "space": "hsl"
+              }
+            }
+          }
         }
       },
       "Black": {
         "Standard": {
-          "value": "#000000",
+          "value": "{Color.Black}",
           "type": "color",
           "description": "This text color is dark in all modes (light & dark)"
         },
         "Additional": {
-          "value": "#000000a6",
+          "value": "{Color.Black}",
           "type": "color",
-          "description": "This text color is dark in all modes (light & dark)"
+          "description": "This text color is dark in all modes (light & dark)",
+          "$extensions": {
+            "studio.tokens": {
+              "modify": {
+                "type": "alpha",
+                "value": "0.65",
+                "space": "hsl"
+              }
+            }
+          }
         }
       },
       "Functional": {
         "Informational": {
-          "value": "#7d94f9",
+          "value": "{Color.Blue.200}",
           "type": "color"
         },
         "Success": {
-          "value": "#00b367",
+          "value": "{Color.Green.500}",
           "type": "color"
         },
         "Danger": {
-          "value": "#f84934",
+          "value": "{Color.Red.300}",
           "type": "color"
         },
         "Warning": {
-          "value": "#f97012",
+          "value": "{Color.Orange.500}",
           "type": "color"
         }
       },
       "On Subtle": {
         "Informational": {
-          "value": "#7d94f9",
+          "value": "{Color.Blue.200}",
           "type": "color"
         },
         "Success": {
-          "value": "#1bd27f",
+          "value": "{Color.Green.300}",
           "type": "color"
         },
         "Danger": {
-          "value": "#fb6a55",
+          "value": "{Color.Red.200}",
           "type": "color"
         },
         "Warning": {
-          "value": "#fd9038",
+          "value": "{Color.Orange.300}",
           "type": "color"
         },
         "Violet": {
-          "value": "#af93fb",
+          "value": "{Color.Violet.200}",
           "type": "color"
         },
         "Blue": {
-          "value": "#7d94f9",
+          "value": "{Color.Blue.200}",
           "type": "color"
         },
         "Cyan": {
-          "value": "#33bbd2",
+          "value": "{Color.Cyan.400}",
           "type": "color"
         },
         "Teal": {
-          "value": "#4cc6ac",
+          "value": "{Color.Teal.400}",
           "type": "color"
         },
         "Green": {
-          "value": "#1bd27f",
+          "value": "{Color.Green.300}",
           "type": "color"
         },
         "Olive": {
-          "value": "#9ec64c",
+          "value": "{Color.Olive.400}",
           "type": "color"
         },
         "Brown": {
-          "value": "#d0a363",
+          "value": "{Color.Brown.300}",
           "type": "color"
         },
         "Yellow": {
-          "value": "#f1b125",
+          "value": "{Color.Yellow.500}",
           "type": "color"
         },
         "Orange": {
-          "value": "#fd9038",
+          "value": "{Color.Orange.300}",
           "type": "color"
         },
         "Red": {
-          "value": "#fb6a55",
+          "value": "{Color.Red.200}",
           "type": "color"
         }
       }
     },
     "Background": {
       "Canvas": {
-        "value": "#000000",
+        "value": "{Color.Grey.2200}",
         "type": "color",
         "description": "Use as the background for your product (app, website, etc.)"
       },
       "Canvas Subtle": {
-        "value": "#0e0e0f",
+        "value": "{Color.Grey.2100}",
         "type": "color",
         "description": "Use as the background for your product (app, website, etc.)"
       },
       "Backdrop": {
-        "value": "#000000a6",
+        "value": "{Color.Black}",
         "type": "color",
-        "description": "Use to overlay content below dialogs to separate dialog from content below"
+        "description": "Use to overlay content below dialogs to separate dialog from content below",
+        "$extensions": {
+          "studio.tokens": {
+            "modify": {
+              "type": "alpha",
+              "value": "0.65",
+              "space": "hsl"
+            }
+          }
+        }
       },
       "Surface": {
-        "value": "#1c1c1e",
+        "value": "{Color.Grey.1900}",
         "type": "color",
         "description": "Use as the background of elements like cards, headers, bottom bars, etc."
       },
       "Surface Subtle": {
-        "value": "#242426",
+        "value": "{Color.Grey.1800}",
         "type": "color",
         "description": "Use as the background of elements like cards, headers, bottom bars, etc."
       },
       "Surface Highlight": {
-        "value": "#48484b",
+        "value": "{Color.Grey.1500}",
         "type": "color",
         "description": "Use as the background of elements that should stand out highlighted sections, footer, etc."
       }
     },
     "Primary": {
       "Standard": {
-        "value": "#e20074",
+        "value": "{Color.Brand.Standard}",
         "type": "color"
       },
       "Hovered": {
-        "value": "#C00063",
+        "value": "{Color.Brand.Dark}",
         "type": "color"
       },
       "Pressed": {
-        "value": "#9E0051",
+        "value": "{Color.Brand.Darker}",
         "type": "color"
       }
     },
     "UI": {
       "Base": {
-        "value": "#0e0e0f",
+        "value": "{Color.Grey.2100}",
         "type": "color"
       },
       "Subtle": {
-        "value": "#1c1c1e",
+        "value": "{Color.Grey.1900}",
         "type": "color"
       },
       "Faint": {
-        "value": "#39393c",
+        "value": "{Color.Grey.1600}",
         "type": "color"
       },
       "Regular": {
-        "value": "#656569",
+        "value": "{Color.Grey.1300}",
         "type": "color"
       },
       "Strong": {
-        "value": "#929296",
+        "value": "{Color.Grey.1000}",
         "type": "color"
       },
       "Extra Strong": {
-        "value": "#efeff0",
+        "value": "{Color.Grey.300}",
         "type": "color"
       },
       "White": {
-        "value": "#FFFFFF",
+        "value": "{Color.Grey.0}",
         "type": "color"
       },
       "Black": {
-        "value": "#000000",
+        "value": "{Color.Grey.2200}",
         "type": "color"
       },
       "Disabled": {
-        "value": "#2b2b2d",
+        "value": "{Color.Grey.1700}",
         "type": "color"
       },
       "Border": {
         "Standard": {
-          "value": "#ffffff66",
-          "type": "color"
+          "value": "{Color.Grey.0}",
+          "type": "color",
+          "$extensions": {
+            "studio.tokens": {
+              "modify": {
+                "type": "alpha",
+                "value": "0.4",
+                "space": "hsl"
+              }
+            }
+          }
         },
         "Hovered": {
-          "value": "#ffffff8a",
-          "type": "color"
+          "value": "{Color.Grey.0}",
+          "type": "color",
+          "$extensions": {
+            "studio.tokens": {
+              "modify": {
+                "type": "alpha",
+                "value": "0.54",
+                "space": "hsl"
+              }
+            }
+          }
         },
         "Pressed": {
-          "value": "#fffffff0",
+          "value": "{Color.Grey.0}",
           "type": "color",
-          "description": "Use this token for borders in pressed or active state"
+          "description": "Use this token for borders in pressed or active state",
+          "$extensions": {
+            "studio.tokens": {
+              "modify": {
+                "type": "alpha",
+                "value": "0.94",
+                "space": "hsl"
+              }
+            }
+          }
         },
         "Disabled": {
-          "value": "#ffffff36",
-          "type": "color"
+          "value": "{Color.Grey.0}",
+          "type": "color",
+          "$extensions": {
+            "studio.tokens": {
+              "modify": {
+                "type": "alpha",
+                "value": "0.21",
+                "space": "hsl"
+              }
+            }
+          }
         }
       },
       "State Fill": {
         "Standard": {
-          "value": "#ffffff00",
+          "value": "{Color.White}",
           "type": "color",
-          "description": "For outlined and ghost elements: The standard fill is invisible / 0% opacity"
+          "description": "For outlined and ghost elements: The standard fill is invisible / 0% opacity",
+          "$extensions": {
+            "studio.tokens": {
+              "modify": {
+                "type": "alpha",
+                "value": "0",
+                "space": "hsl"
+              }
+            }
+          }
         },
         "Hovered": {
-          "value": "#ffffff24",
+          "value": "{Color.White}",
           "type": "color",
-          "description": "For outlined and ghost elements: When hovered a light, transparent fill is applied"
+          "description": "For outlined and ghost elements: When hovered a light, transparent fill is applied",
+          "$extensions": {
+            "studio.tokens": {
+              "modify": {
+                "type": "alpha",
+                "value": "0.14",
+                "space": "hsl"
+              }
+            }
+          }
         },
         "Pressed": {
-          "value": "#ffffff45",
+          "value": "{Color.White}",
           "type": "color",
-          "description": "For outlined and ghost elements: When pressed or active a medium transparent fill is applied"
+          "description": "For outlined and ghost elements: When pressed or active a medium transparent fill is applied",
+          "$extensions": {
+            "studio.tokens": {
+              "modify": {
+                "type": "alpha",
+                "value": "0.27",
+                "space": "hsl"
+              }
+            }
+          }
         },
         "Hovered Inverted": {
-          "value": "#00000012",
+          "value": "{Color.Black}",
           "type": "color",
-          "description": "For outlined and ghost elements: When hovered a light, transparent fill is applied"
+          "description": "For outlined and ghost elements: When hovered a light, transparent fill is applied",
+          "$extensions": {
+            "studio.tokens": {
+              "modify": {
+                "type": "alpha",
+                "value": "0.07",
+                "space": "hsl"
+              }
+            }
+          }
         },
         "Pressed Inverted": {
-          "value": "#00000036",
+          "value": "{Color.Black}",
           "type": "color",
-          "description": "For outlined and ghost elements: When pressed or active a medium transparent fill is applied"
+          "description": "For outlined and ghost elements: When pressed or active a medium transparent fill is applied",
+          "$extensions": {
+            "studio.tokens": {
+              "modify": {
+                "type": "alpha",
+                "value": "0.21",
+                "space": "hsl"
+              }
+            }
+          }
         }
       }
     },
     "Functional": {
       "Focus": {
         "Standard": {
-          "value": "#7d94f9",
+          "value": "{Color.Blue.200}",
           "type": "color"
         },
         "Inverted": {
-          "value": "#2238df",
+          "value": "{Color.Blue.500}",
           "type": "color"
         },
         "On Dark Background": {
-          "value": "#7d94f9",
+          "value": "{Color.Blue.200}",
           "type": "color"
         },
         "On Light Background": {
-          "value": "#2238df",
+          "value": "{Color.Blue.500}",
           "type": "color"
         }
       },
       "Informational": {
         "Standard": {
-          "value": "#2238df",
+          "value": "{Color.Blue.500}",
           "type": "color"
         },
         "Hovered": {
-          "value": "#3950ea",
+          "value": "{Color.Blue.400}",
           "type": "color"
         },
         "Pressed": {
-          "value": "#576ff3",
+          "value": "{Color.Blue.300}",
           "type": "color"
         },
         "Subtle": {
-          "value": "#131F7B",
+          "value": "{Color.Blue.Shade}",
           "type": "color"
         }
       },
       "Success": {
         "Standard": {
-          "value": "#00b367",
+          "value": "{Color.Green.500}",
           "type": "color"
         },
         "Hovered": {
-          "value": "#00c26d",
+          "value": "{Color.Green.400}",
           "type": "color"
         },
         "Pressed": {
-          "value": "#1bd27f",
+          "value": "{Color.Green.300}",
           "type": "color"
         },
         "Subtle": {
-          "value": "#004829",
+          "value": "{Color.Green.Shade}",
           "type": "color"
         }
       },
       "Danger": {
         "Standard": {
-          "value": "#e82010",
+          "value": "{Color.Red.500}",
           "type": "color"
         },
         "Hovered": {
-          "value": "#f2321e",
+          "value": "{Color.Red.400}",
           "type": "color"
         },
         "Pressed": {
-          "value": "#f84934",
+          "value": "{Color.Red.300}",
           "type": "color"
         },
         "Subtle": {
-          "value": "#5D0D06",
+          "value": "{Color.Red.Shade}",
           "type": "color"
         }
       },
       "Warning": {
         "Standard": {
-          "value": "#f97012",
+          "value": "{Color.Orange.500}",
           "type": "color"
         },
         "Hovered": {
-          "value": "#fd9038",
+          "value": "{Color.Orange.300}",
           "type": "color"
         },
         "Pressed": {
-          "value": "#fd9038",
+          "value": "{Color.Orange.300}",
           "type": "color"
         },
         "Subtle": {
-          "value": "#642D07",
+          "value": "{Color.Orange.Shade}",
           "type": "color"
         }
       }
@@ -2119,570 +3331,570 @@
     "Additional": {
       "Violet": {
         "0": {
-          "value": "#e2d9ff",
+          "value": "{Color.Violet.0}",
           "type": "color",
           "description": "tags: additional, violet"
         },
         "100": {
-          "value": "#c8b5fd",
+          "value": "{Color.Violet.100}",
           "type": "color",
           "description": "tags: additional, violet"
         },
         "200": {
-          "value": "#af93fb",
+          "value": "{Color.Violet.200}",
           "type": "color",
           "description": "tags: additional, violet"
         },
         "300": {
-          "value": "#9a75f8",
+          "value": "{Color.Violet.300}",
           "type": "color",
           "description": "tags: additional, violet"
         },
         "400": {
-          "value": "#885df2",
+          "value": "{Color.Violet.400}",
           "type": "color",
           "description": "tags: additional, violet"
         },
         "500": {
-          "value": "#794ae9",
+          "value": "{Color.Violet.500}",
           "type": "color",
           "description": "tags: additional, violet"
         },
         "600": {
-          "value": "#6c3bdb",
+          "value": "{Color.Violet.600}",
           "type": "color",
           "description": "tags: additional, violet"
         },
         "700": {
-          "value": "#5e2ec6",
+          "value": "{Color.Violet.700}",
           "type": "color",
           "description": "tags: additional, violet"
         },
         "800": {
-          "value": "#5024ab",
+          "value": "{Color.Violet.800}",
           "type": "color",
           "description": "tags: additional, violet"
         },
         "900": {
-          "value": "#411c8c",
+          "value": "{Color.Violet.900}",
           "type": "color",
           "description": "tags: additional, violet"
         },
         "Subtle": {
-          "value": "#301E5D",
+          "value": "{Color.Violet.Shade}",
           "type": "color",
           "description": "tags: violet, additional"
         }
       },
       "Blue": {
         "0": {
-          "value": "#d9e2ff",
+          "value": "{Color.Blue.0}",
           "type": "color",
           "description": "tags: additional, blue"
         },
         "100": {
-          "value": "#aabcfd",
+          "value": "{Color.Blue.100}",
           "type": "color",
           "description": "tags: additional, blue"
         },
         "200": {
-          "value": "#7d94f9",
+          "value": "{Color.Blue.200}",
           "type": "color",
           "description": "tags: additional, blue"
         },
         "300": {
-          "value": "#576ff3",
+          "value": "{Color.Blue.300}",
           "type": "color",
           "description": "tags: additional, blue"
         },
         "400": {
-          "value": "#3950ea",
+          "value": "{Color.Blue.400}",
           "type": "color",
           "description": "tags: additional, blue"
         },
         "500": {
-          "value": "#2238df",
+          "value": "{Color.Blue.500}",
           "type": "color",
           "description": "tags: additional, blue"
         },
         "600": {
-          "value": "#1326cf",
+          "value": "{Color.Blue.600}",
           "type": "color",
           "description": "tags: additional, blue"
         },
         "700": {
-          "value": "#0819bd",
+          "value": "{Color.Blue.700}",
           "type": "color",
           "description": "tags: additional, blue"
         },
         "800": {
-          "value": "#0311ab",
+          "value": "{Color.Blue.800}",
           "type": "color",
           "description": "tags: additional, blue"
         },
         "900": {
-          "value": "#000d99",
+          "value": "{Color.Blue.900}",
           "type": "color",
           "description": "tags: additional, blue"
         },
         "Subtle": {
-          "value": "#131F7B",
+          "value": "{Color.Blue.Shade}",
           "type": "color",
           "description": "tags: additional, subtle, blue"
         }
       },
       "Cyan": {
         "0": {
-          "value": "#d9fcff",
+          "value": "{Color.Cyan.0}",
           "type": "color",
           "description": "tags: additional, cyan"
         },
         "100": {
-          "value": "#a4ecf4",
+          "value": "{Color.Cyan.100}",
           "type": "color",
           "description": "tags: additional, cyan"
         },
         "200": {
-          "value": "#75dbe8",
+          "value": "{Color.Cyan.200}",
           "type": "color",
           "description": "tags: additional, cyan"
         },
         "300": {
-          "value": "#4fcadd",
+          "value": "{Color.Cyan.300}",
           "type": "color",
           "description": "tags: additional, cyan"
         },
         "400": {
-          "value": "#33bbd2",
+          "value": "{Color.Cyan.400}",
           "type": "color",
           "description": "tags: additional, cyan"
         },
         "500": {
-          "value": "#1eadc6",
+          "value": "{Color.Cyan.500}",
           "type": "color",
           "description": "tags: additional, cyan"
         },
         "600": {
-          "value": "#11a0bb",
+          "value": "{Color.Cyan.600}",
           "type": "color",
           "description": "tags: additional, cyan"
         },
         "700": {
-          "value": "#0894b0",
+          "value": "{Color.Cyan.700}",
           "type": "color",
           "description": "tags: additional, cyan"
         },
         "800": {
-          "value": "#038aa4",
+          "value": "{Color.Cyan.800}",
           "type": "color",
           "description": "tags: additional, cyan"
         },
         "900": {
-          "value": "#008099",
+          "value": "{Color.Cyan.900}",
           "type": "color",
           "description": "tags: additional, cyan"
         },
         "Subtle": {
-          "value": "#0C454F",
+          "value": "{Color.Cyan.Shade}",
           "type": "color",
           "description": "tags: additional, subtle, cyan"
         }
       },
       "Teal": {
         "0": {
-          "value": "#d9fff2",
+          "value": "{Color.Teal.0}",
           "type": "color",
           "description": "tags: additional, teal"
         },
         "100": {
-          "value": "#acf1dc",
+          "value": "{Color.Teal.100}",
           "type": "color",
           "description": "tags: additional, teal"
         },
         "200": {
-          "value": "#85e3ca",
+          "value": "{Color.Teal.200}",
           "type": "color",
           "description": "tags: additional, teal"
         },
         "300": {
-          "value": "#65d5ba",
+          "value": "{Color.Teal.300}",
           "type": "color",
           "description": "tags: additional, teal"
         },
         "400": {
-          "value": "#4cc6ac",
+          "value": "{Color.Teal.400}",
           "type": "color",
           "description": "tags: additional, teal"
         },
         "500": {
-          "value": "#3ab89f",
+          "value": "{Color.Teal.500}",
           "type": "color",
           "description": "tags: additional, teal"
         },
         "600": {
-          "value": "#2eaa93",
+          "value": "{Color.Teal.600}",
           "type": "color",
           "description": "tags: additional, teal"
         },
         "700": {
-          "value": "#259c87",
+          "value": "{Color.Teal.700}",
           "type": "color",
           "description": "tags: additional, teal"
         },
         "800": {
-          "value": "#1e8e7b",
+          "value": "{Color.Teal.800}",
           "type": "color",
           "description": "tags: additional, teal"
         },
         "900": {
-          "value": "#19806f",
+          "value": "{Color.Teal.900}",
           "type": "color",
           "description": "tags: additional, teal"
         },
         "Subtle": {
-          "value": "#174A40",
+          "value": "{Color.Teal.Shade}",
           "type": "color",
           "description": "tags: additional, subtle, teal"
         }
       },
       "Green": {
         "0": {
-          "value": "#dbffed",
+          "value": "{Color.Green.0}",
           "type": "color",
           "description": "tags: additional, green"
         },
         "100": {
-          "value": "#8ff0c1",
+          "value": "{Color.Green.100}",
           "type": "color",
           "description": "tags: additional, green"
         },
         "200": {
-          "value": "#4ee19c",
+          "value": "{Color.Green.200}",
           "type": "color",
           "description": "tags: additional, green"
         },
         "300": {
-          "value": "#1bd27f",
+          "value": "{Color.Green.300}",
           "type": "color",
           "description": "tags: additional, green"
         },
         "400": {
-          "value": "#00c26d",
+          "value": "{Color.Green.400}",
           "type": "color",
           "description": "tags: additional, green"
         },
         "500": {
-          "value": "#00b367",
+          "value": "{Color.Green.500}",
           "type": "color",
           "description": "tags: additional, green"
         },
         "600": {
-          "value": "#00a461",
+          "value": "{Color.Green.600}",
           "type": "color",
           "description": "tags: additional, green"
         },
         "700": {
-          "value": "#00955a",
+          "value": "{Color.Green.700}",
           "type": "color",
           "description": "tags: additional, green"
         },
         "800": {
-          "value": "#008653",
+          "value": "{Color.Green.800}",
           "type": "color",
           "description": "tags: additional, green"
         },
         "900": {
-          "value": "#00774b",
+          "value": "{Color.Green.900}",
           "type": "color",
           "description": "tags: additional, green"
         },
         "Subtle": {
-          "value": "#004829",
+          "value": "{Color.Green.Shade}",
           "type": "color",
           "description": "tags: green, subtle, additional"
         }
       },
       "Olive": {
         "0": {
-          "value": "#f2ffd9",
+          "value": "{Color.Olive.0}",
           "type": "color",
           "description": "tags: additional, olive"
         },
         "100": {
-          "value": "#daf1ac",
+          "value": "{Color.Olive.100}",
           "type": "color",
           "description": "tags: additional, olive"
         },
         "200": {
-          "value": "#c3e385",
+          "value": "{Color.Olive.200}",
           "type": "color",
           "description": "tags: additional, olive"
         },
         "300": {
-          "value": "#afd565",
+          "value": "{Color.Olive.300}",
           "type": "color",
           "description": "tags: additional, olive"
         },
         "400": {
-          "value": "#9ec64c",
+          "value": "{Color.Olive.400}",
           "type": "color",
           "description": "tags: additional, olive"
         },
         "500": {
-          "value": "#8eb83a",
+          "value": "{Color.Olive.500}",
           "type": "color",
           "description": "tags: additional, olive"
         },
         "600": {
-          "value": "#81aa2e",
+          "value": "{Color.Olive.600}",
           "type": "color",
           "description": "tags: additional, olive"
         },
         "700": {
-          "value": "#749c25",
+          "value": "{Color.Olive.700}",
           "type": "color",
           "description": "tags: additional, olive"
         },
         "800": {
-          "value": "#688e1e",
+          "value": "{Color.Olive.800}",
           "type": "color",
           "description": "tags: additional, olive"
         },
         "900": {
-          "value": "#5e8019",
+          "value": "{Color.Olive.900}",
           "type": "color",
           "description": "tags: additional, olive"
         },
         "Subtle": {
-          "value": "#394A17",
+          "value": "{Color.Olive.Shade}",
           "type": "color",
           "description": "tags: additional, subtle, olive"
         }
       },
       "Brown": {
         "0": {
-          "value": "#ffefd9",
+          "value": "{Color.Brown.0}",
           "type": "color",
           "description": "tags: additional, brown"
         },
         "100": {
-          "value": "#efd3ab",
+          "value": "{Color.Brown.100}",
           "type": "color",
           "description": "tags: additional, brown"
         },
         "200": {
-          "value": "#e0b983",
+          "value": "{Color.Brown.200}",
           "type": "color",
           "description": "tags: additional, brown"
         },
         "300": {
-          "value": "#d0a363",
+          "value": "{Color.Brown.300}",
           "type": "color",
           "description": "tags: additional, brown"
         },
         "400": {
-          "value": "#c18f4a",
+          "value": "{Color.Brown.400}",
           "type": "color",
           "description": "tags: additional, brown"
         },
         "500": {
-          "value": "#b17f38",
+          "value": "{Color.Brown.500}",
           "type": "color",
           "description": "tags: additional, brown"
         },
         "600": {
-          "value": "#a2702b",
+          "value": "{Color.Brown.600}",
           "type": "color",
           "description": "tags: additional, brown"
         },
         "700": {
-          "value": "#926322",
+          "value": "{Color.Brown.700}",
           "type": "color",
           "description": "tags: additional, brown"
         },
         "800": {
-          "value": "#82581c",
+          "value": "{Color.Brown.800}",
           "type": "color",
           "description": "tags: additional, brown"
         },
         "900": {
-          "value": "#734d17",
+          "value": "{Color.Brown.900}",
           "type": "color",
           "description": "tags: additional, brown"
         },
         "Subtle": {
-          "value": "#473316",
+          "value": "{Color.Brown.Shade}",
           "type": "color",
           "description": "tags: additional, subtle, brown"
         }
       },
       "Yellow": {
         "0": {
-          "value": "#fffcd9",
+          "value": "{Color.Yellow.0}",
           "type": "color",
           "description": "tags: additional, yellow"
         },
         "100": {
-          "value": "#fcf1aa",
+          "value": "{Color.Yellow.100}",
           "type": "color",
           "description": "tags: additional, yellow"
         },
         "200": {
-          "value": "#f9e47e",
+          "value": "{Color.Yellow.200}",
           "type": "color",
           "description": "tags: additional, yellow"
         },
         "300": {
-          "value": "#f7d358",
+          "value": "{Color.Yellow.300}",
           "type": "color",
           "description": "tags: additional, yellow"
         },
         "400": {
-          "value": "#f4c23b",
+          "value": "{Color.Yellow.400}",
           "type": "color",
           "description": "tags: additional, yellow"
         },
         "500": {
-          "value": "#f1b125",
+          "value": "{Color.Yellow.500}",
           "type": "color",
           "description": "tags: additional, yellow"
         },
         "600": {
-          "value": "#eea015",
+          "value": "{Color.Yellow.600}",
           "type": "color",
           "description": "tags: additional, yellow"
         },
         "700": {
-          "value": "#eb900b",
+          "value": "{Color.Yellow.700}",
           "type": "color",
           "description": "tags: additional, yellow"
         },
         "800": {
-          "value": "#e88104",
+          "value": "{Color.Yellow.800}",
           "type": "color",
           "description": "tags: additional, yellow"
         },
         "900": {
-          "value": "#e67300",
+          "value": "{Color.Yellow.900}",
           "type": "color",
           "description": "tags: additional, yellow"
         },
         "Subtle": {
-          "value": "#60470F",
+          "value": "{Color.Yellow.Shade}",
           "type": "color",
           "description": "tags: additional, subtle, yellow"
         }
       },
       "Orange": {
         "0": {
-          "value": "#ffe6cc",
+          "value": "{Color.Orange.0}",
           "type": "color",
           "description": "tags: additional, orange"
         },
         "100": {
-          "value": "#ffc48e",
+          "value": "{Color.Orange.100}",
           "type": "color",
           "description": "tags: additional, orange"
         },
         "200": {
-          "value": "#fea75b",
+          "value": "{Color.Orange.200}",
           "type": "color",
           "description": "tags: additional, orange"
         },
         "300": {
-          "value": "#fd9038",
+          "value": "{Color.Orange.300}",
           "type": "color",
           "description": "tags: additional, orange"
         },
         "400": {
-          "value": "#fc7e21",
+          "value": "{Color.Orange.400}",
           "type": "color",
           "description": "tags: additional, orange"
         },
         "500": {
-          "value": "#f97012",
+          "value": "{Color.Orange.500}",
           "type": "color",
           "description": "tags: additional, orange"
         },
         "600": {
-          "value": "#f46409",
+          "value": "{Color.Orange.600}",
           "type": "color",
           "description": "tags: additional, orange"
         },
         "700": {
-          "value": "#e65703",
+          "value": "{Color.Orange.700}",
           "type": "color",
           "description": "tags: additional, orange"
         },
         "800": {
-          "value": "#cd4901",
+          "value": "{Color.Orange.800}",
           "type": "color",
           "description": "tags: additional, orange"
         },
         "900": {
-          "value": "#b63d00",
+          "value": "{Color.Orange.900}",
           "type": "color",
           "description": "tags: additional, orange"
         },
         "Subtle": {
-          "value": "#642D07",
+          "value": "{Color.Orange.Shade}",
           "type": "color",
           "description": "tags: additional, subtle, orange"
         }
       },
       "Red": {
         "0": {
-          "value": "#ffcabf",
+          "value": "{Color.Red.0}",
           "type": "color",
           "description": "tags: additional, red"
         },
         "100": {
-          "value": "#fd9684",
+          "value": "{Color.Red.100}",
           "type": "color",
           "description": "tags: additional, red"
         },
         "200": {
-          "value": "#fb6a55",
+          "value": "{Color.Red.200}",
           "type": "color",
           "description": "tags: additional, red"
         },
         "300": {
-          "value": "#f84934",
+          "value": "{Color.Red.300}",
           "type": "color",
           "description": "tags: additional, red"
         },
         "400": {
-          "value": "#f2321e",
+          "value": "{Color.Red.400}",
           "type": "color",
           "description": "tags: additional, red"
         },
         "500": {
-          "value": "#e82010",
+          "value": "{Color.Red.500}",
           "type": "color",
           "description": "tags: additional, red"
         },
         "600": {
-          "value": "#d91308",
+          "value": "{Color.Red.600}",
           "type": "color",
           "description": "tags: additional, red"
         },
         "700": {
-          "value": "#c30a03",
+          "value": "{Color.Red.700}",
           "type": "color",
           "description": "tags: additional, red"
         },
         "800": {
-          "value": "#a70401",
+          "value": "{Color.Red.800}",
           "type": "color",
           "description": "tags: additional, red"
         },
         "900": {
-          "value": "#870000",
+          "value": "{Color.Red.900}",
           "type": "color",
           "description": "tags: additional, red"
         },
         "Subtle": {
-          "value": "#5D0D06",
+          "value": "{Color.Red.Shade}",
           "type": "color",
           "description": "tags: additional, subtle, red"
         }
@@ -2690,266 +3902,119 @@
     },
     "Raised": {
       "Standard": {
-        "value": [
-          {
-            "x": 0,
-            "y": 8,
-            "blur": 32,
-            "spread": 0,
-            "color": "#0000001a",
-            "type": "dropShadow"
-          },
-          {
-            "x": 0,
-            "y": 4,
-            "blur": 8,
-            "spread": 0,
-            "color": "#0000001a",
-            "type": "dropShadow"
-          }
-        ],
+        "value": "{Shadow.Level 4}",
         "type": "boxShadow",
         "description": "For bigger interactable elements like cards, etc."
       },
       "Hover": {
-        "value": [
-          {
-            "x": 0,
-            "y": 16,
-            "blur": 64,
-            "spread": 0,
-            "color": "#0000001a",
-            "type": "dropShadow"
-          },
-          {
-            "x": 0,
-            "y": 8,
-            "blur": 16,
-            "spread": 0,
-            "color": "#0000001a",
-            "type": "dropShadow"
-          }
-        ],
+        "value": "{Shadow.Level 8}",
         "type": "boxShadow",
         "description": "For bigger interactable elements like cards, etc."
       },
       "Pressed": {
-        "value": [
-          {
-            "x": 0,
-            "y": 4,
-            "blur": 16,
-            "spread": 0,
-            "color": "#0000001a",
-            "type": "dropShadow"
-          },
-          {
-            "x": 0,
-            "y": 2,
-            "blur": 4,
-            "spread": 0,
-            "color": "#0000001a",
-            "type": "dropShadow"
-          }
-        ],
+        "value": "{Shadow.Level 2}",
         "type": "boxShadow",
         "description": "For bigger interactable elements like cards, etc."
       }
     },
     "Floating": {
       "Standard": {
-        "value": [
-          {
-            "x": 0,
-            "y": 12,
-            "blur": 48,
-            "spread": 0,
-            "color": "#0000001a",
-            "type": "dropShadow"
-          },
-          {
-            "x": 0,
-            "y": 6,
-            "blur": 12,
-            "spread": 0,
-            "color": "#0000001a",
-            "type": "dropShadow"
-          }
-        ],
+        "value": "{Shadow.Level 6}",
         "type": "boxShadow",
         "description": "For floating elements that mostly stay in a fixed position like a FAB."
       },
       "Hover": {
-        "value": [
-          {
-            "x": 0,
-            "y": 24,
-            "blur": 96,
-            "spread": 0,
-            "color": "#0000001a",
-            "type": "dropShadow"
-          },
-          {
-            "x": 0,
-            "y": 12,
-            "blur": 24,
-            "spread": 0,
-            "color": "#0000001a",
-            "type": "dropShadow"
-          }
-        ],
+        "value": "{Shadow.Level 12}",
         "type": "boxShadow",
         "description": "For floating elements that mostly stay in a fixed position like a FAB."
       },
       "Pressed": {
-        "value": [
-          {
-            "x": 0,
-            "y": 8,
-            "blur": 32,
-            "spread": 0,
-            "color": "#0000001a",
-            "type": "dropShadow"
-          },
-          {
-            "x": 0,
-            "y": 4,
-            "blur": 8,
-            "spread": 0,
-            "color": "#0000001a",
-            "type": "dropShadow"
-          }
-        ],
+        "value": "{Shadow.Level 4}",
         "type": "boxShadow",
         "description": "For floating elements that mostly stay in a fixed position like a FAB."
       }
     },
     "Top": {
-      "value": [
-        {
-          "x": 0,
-          "y": 16,
-          "blur": 64,
-          "spread": 0,
-          "color": "#0000001a",
-          "type": "dropShadow"
-        },
-        {
-          "x": 0,
-          "y": 8,
-          "blur": 16,
-          "spread": 0,
-          "color": "#0000001a",
-          "type": "dropShadow"
-        }
-      ],
+      "value": "{Shadow.Level 8}",
       "type": "boxShadow",
       "description": "For fixed elements that overlay the content e.g. sidebars or bottom sheets"
     },
     "Overlay": {
-      "value": [
-        {
-          "x": 0,
-          "y": 24,
-          "blur": 96,
-          "spread": 0,
-          "color": "#0000001a",
-          "type": "dropShadow"
-        },
-        {
-          "x": 0,
-          "y": 12,
-          "blur": 24,
-          "spread": 0,
-          "color": "#0000001a",
-          "type": "dropShadow"
-        }
-      ],
+      "value": "{Shadow.Level 12}",
       "type": "boxShadow",
       "description": "Highest level e.g. for dialogs or modals"
     },
     "App Bar": {
       "Top": {
         "Raised": {
-          "value": [
-            {
-              "x": 0,
-              "y": 1,
-              "blur": 0,
-              "spread": 0,
-              "color": "#0000000d",
-              "type": "dropShadow"
-            },
-            {
-              "x": 0,
-              "y": 2,
-              "blur": 8,
-              "spread": 0,
-              "color": "#0000000d",
-              "type": "dropShadow"
-            }
-          ],
+          "value": "{Shadow.Special.App Bar.Top.Subtle}",
           "type": "boxShadow",
           "description": "Use for headers, app bar & menus on the top"
         },
         "Flat": {
-          "value": [
-            {
-              "x": 0,
-              "y": 1,
-              "blur": 0,
-              "spread": 0,
-              "color": "#0000001a",
-              "type": "dropShadow"
-            }
-          ],
+          "value": "{Shadow.Special.App Bar.Top.Flat}",
           "type": "boxShadow",
           "description": "Use for headers, app bar & menus on the top"
         }
       },
       "Bottom": {
         "Raised": {
-          "value": [
-            {
-              "x": 0,
-              "y": -1,
-              "blur": 0,
-              "spread": 0,
-              "color": "#0000000d",
-              "type": "dropShadow"
-            },
-            {
-              "x": 0,
-              "y": -2,
-              "blur": 8,
-              "spread": 0,
-              "color": "#0000000d",
-              "type": "dropShadow"
-            }
-          ],
+          "value": "{Shadow.Special.App Bar.Bottom.Subtle}",
           "type": "boxShadow",
           "description": "Use for app navigation and app bars on the bottom"
         },
         "Flat": {
-          "value": [
-            {
-              "x": 0,
-              "y": -1,
-              "blur": 0,
-              "spread": 0,
-              "color": "#0000001a",
-              "type": "dropShadow"
-            }
-          ],
+          "value": "{Shadow.Special.App Bar.Bottom.Flat}",
           "type": "boxShadow",
           "description": "Use for app navigation and app bars on the bottom"
         }
       }
     }
   },
-  "$themes": [],
+  "$themes": [
+    {
+      "id": "0efe74c81045c31912f3f25ceccbb79a4021d482",
+      "name": "Telekom",
+      "$figmaStyleReferences": {},
+      "selectedTokenSets": {
+        "Core": "enabled"
+      },
+      "group": "Core"
+    },
+    {
+      "id": "7a9907de042ac3a05850bed823405e364006587c",
+      "name": "Values",
+      "$figmaStyleReferences": {},
+      "selectedTokenSets": {
+        "Core": "source",
+        "Global": "enabled"
+      },
+      "group": "Global"
+    },
+    {
+      "id": "e84d59b7aab9a411698c3781401bf695dc2d2952",
+      "name": "Light",
+      "$figmaStyleReferences": {},
+      "selectedTokenSets": {
+        "Core": "source",
+        "Light": "enabled"
+      },
+      "group": "Color"
+    },
+    {
+      "id": "e3dd70729694cefd558242ba5e81517f4bc0d626",
+      "name": "Dark",
+      "$figmaStyleReferences": {},
+      "selectedTokenSets": {
+        "Core": "source",
+        "Dark": "enabled"
+      },
+      "group": "Color"
+    }
+  ],
   "$metadata": {
     "tokenSetOrder": [
+      "Core",
       "Global",
       "Light",
       "Dark"
