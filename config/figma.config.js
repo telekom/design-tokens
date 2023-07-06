@@ -173,7 +173,8 @@ function getJSONValue(token, { dictionary, mode }) {
           ...dictionary.getReferences(token.original.value.dark),
         ]
       : dictionary.getReferences(token.original.value);
-    // TODO FIXME shadow-type core tokens result in refs.length === 0
+    // ! "shadow" type core tokens result in refs.length === 0
+    // (color modifiers are not supported within shadow tokens)
     if (refs.length > 0) {
       let ref = refs[0];
       if (typeof mode !== 'undefined' && refs.length === 2) {
