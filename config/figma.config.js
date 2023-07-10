@@ -65,7 +65,7 @@ const THEMES = [
   },
   {
     id: '7a9907de042ac3a05850bed823405e364006587c',
-    name: 'Values',
+    name: 'Value',
     $figmaStyleReferences: {},
     selectedTokenSets: {
       Core: 'source',
