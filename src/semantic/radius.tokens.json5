@@ -1,5 +1,10 @@
 {
   radius: {
+    none: {
+      comment: "Useful for elements with multiple radius values where some corners should be square",
+      value: "{core.radius.none.value}",
+      type: "dimension",
+    },
     small: {
       comment: "Used for small elements like checkboxes, etc.",
       value: "{core.radius.sm.value}",
