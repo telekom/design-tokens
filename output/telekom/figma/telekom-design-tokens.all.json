@@ -1153,7 +1153,7 @@
     "Typography": {
       "Font Family": {
         "Sans": {
-          "value": "TeleNeoWeb, sans-serif",
+          "value": "TeleNeo",
           "type": "fontFamilies"
         },
         "Mono": {
@@ -1163,129 +1163,129 @@
       },
       "Font Weight": {
         "Thin": {
-          "value": 200,
+          "value": "Thin",
           "type": "fontWeights"
         },
         "Regular": {
-          "value": 400,
+          "value": "Regular",
           "type": "fontWeights"
         },
         "Medium": {
-          "value": 500,
+          "value": "Medium",
           "type": "fontWeights"
         },
         "Bold": {
-          "value": 700,
+          "value": "Bold",
           "type": "fontWeights"
         },
         "Extra Bold": {
-          "value": 800,
+          "value": "ExtraBold",
           "type": "fontWeights"
         },
         "Ultra": {
-          "value": 900,
+          "value": "Ultra",
           "type": "fontWeights"
         }
       },
       "Font Scale": {
         "1": {
-          "value": "10px",
+          "value": "10",
           "type": "dimension"
         },
         "2": {
-          "value": "12px",
+          "value": "12",
           "type": "dimension"
         },
         "3": {
-          "value": "14px",
+          "value": "14",
           "type": "dimension"
         },
         "4": {
-          "value": "16px",
+          "value": "16",
           "type": "dimension"
         },
         "5": {
-          "value": "18px",
+          "value": "18",
           "type": "dimension"
         },
         "6": {
-          "value": "20px",
+          "value": "20",
           "type": "dimension"
         },
         "7": {
-          "value": "24px",
+          "value": "24",
           "type": "dimension"
         },
         "8": {
-          "value": "28px",
+          "value": "28",
           "type": "dimension"
         },
         "9": {
-          "value": "32px",
+          "value": "32",
           "type": "dimension"
         },
         "10": {
-          "value": "36px",
+          "value": "36",
           "type": "dimension"
         },
         "11": {
-          "value": "42px",
+          "value": "42",
           "type": "dimension"
         },
         "12": {
-          "value": "48px",
+          "value": "48",
           "type": "dimension"
         },
         "13": {
-          "value": "54px",
+          "value": "54",
           "type": "dimension"
         },
         "14": {
-          "value": "60px",
+          "value": "60",
           "type": "dimension"
         },
         "15": {
-          "value": "68px",
+          "value": "68",
           "type": "dimension"
         },
         "16": {
-          "value": "76px",
+          "value": "76",
           "type": "dimension"
         }
       },
       "Line Spacing": {
         "None": {
-          "value": 1,
+          "value": "100%",
           "type": "lineHeights"
         },
-        "Xxs": {
-          "value": 1.15,
+        "xxs": {
+          "value": "114.99999999999999%",
           "type": "lineHeights"
         },
         "xs": {
-          "value": 1.2,
+          "value": "120%",
           "type": "lineHeights"
         },
         "sm": {
-          "value": 1.25,
+          "value": "125%",
           "type": "lineHeights"
         },
         "md": {
-          "value": 1.35,
+          "value": "135%",
           "type": "lineHeights"
         },
         "lg": {
-          "value": 1.4,
+          "value": "140%",
           "type": "lineHeights"
         },
         "xl": {
-          "value": 1.5,
+          "value": "150%",
           "type": "lineHeights"
         }
       },
       "Letter Spacing": {
         "None": {
-          "value": 0,
+          "value": "0%",
           "type": "letterSpacing"
         }
       }
@@ -1335,6 +1335,11 @@
       }
     },
     "Radius": {
+      "None": {
+        "value": "{Core.Radius.None}",
+        "type": "borderRadius",
+        "description": "Useful for elements with multiple radius values where some corners should be square"
+      },
       "Small": {
         "value": "{Core.Radius.sm}",
         "type": "borderRadius",
@@ -1620,7 +1625,7 @@
         "description": "Use for single line in ui elements"
       },
       "Extra Tight": {
-        "value": "{Typography.Line Spacing.Xxs}",
+        "value": "{Typography.Line Spacing.xxs}",
         "type": "lineHeights",
         "description": "Use for large titles like H1 or H2"
       },
@@ -3983,7 +3988,7 @@
     },
     {
       "id": "7a9907de042ac3a05850bed823405e364006587c",
-      "name": "Values",
+      "name": "Value",
       "$figmaStyleReferences": {},
       "selectedTokenSets": {
         "Core": "source",
