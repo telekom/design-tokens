@@ -1,0 +1,7 @@
+{
+  "type": "prerelease",
+  "comment": "Add semantic radius/none",
+  "packageName": "@telekom/design-tokens",
+  "email": "ac@iconstorm.com",
+  "dependentChangeType": "patch"
+}

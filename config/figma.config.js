@@ -40,6 +40,7 @@ const hasMode = (token) => token.original.value?.light != null;
 const figmaTransformGroup = [
   'attribute/cti',
   'color/alpha-hex',
+  'typography/figma',
   'text-style/figma',
 ];
 
@@ -65,7 +66,7 @@ const THEMES = [
   },
   {
     id: '7a9907de042ac3a05850bed823405e364006587c',
-    name: 'Values',
+    name: 'Value',
     $figmaStyleReferences: {},
     selectedTokenSets: {
       Core: 'source',
@@ -209,9 +210,9 @@ StyleDictionary.registerTransform({
   transitive: true,
   matcher: (token) => token.path[0] === 'text-style',
   transformer: function (token) {
-    const { value } = token;
+    const { value, path } = token;
     return {
-      fontFamily: 'TeleNeo', // FIXME value['font-family'],
+      fontFamily: path.includes('mono') ? 'monospace' : 'TeleNeo',
       fontWeight: fontWeightMap[value['font-weight']],
       lineHeight: `${value['line-spacing'] * 100}%`,
       fontSize: value['font-size'].replace(/px$/, ''),
@@ -220,6 +221,32 @@ StyleDictionary.registerTransform({
       textDecoration: 'none',
       textCase: 'none',
     };
+  },
+});
+
+StyleDictionary.registerTransform({
+  type: 'value',
+  name: 'typography/figma',
+  matcher: (token) => token.path[1] === 'typography',
+  transformer: function (token) {
+    const { value, path } = token;
+    if (path.includes('font-family')) {
+      return path.includes('mono') ? 'monospace' : 'TeleNeo';
+    }
+    if (path.includes('font-weight')) {
+      return fontWeightMap[value];
+    }
+    if (path.includes('line-spacing')) {
+      return `${value * 100}%`;
+    }
+    if (path.includes('font-size') || path.includes('font-scale')) {
+      return value.replace(/px$/, '');
+    }
+    if (path.includes('letter-spacing')) {
+      // This is probably wrong
+      return value + '%';
+    }
+    return value;
   },
 });
 

@@ -24,7 +24,7 @@ setDefaultEnvValue('OUTPUT_PATH', 'dist/');
 setDefaultEnvValue('OUTPUT_BASE_FILENAME', 'design-tokens');
 setDefaultEnvValue('WHITELABEL', true);
 
-const ALWAYS_LOWERCASE = ['xs', 'sm', 'md', 'lg', 'xl', 'xxl'];
+const ALWAYS_LOWERCASE = ['xxs', 'xs', 'sm', 'md', 'lg', 'xl', 'xxl'];
 const spacingUnitRe = /x(\d+)$/g;
 
 // TODO font names: match real filenames (explore sd assets)
@@ -37,6 +37,7 @@ const fontWeightMap = {
   500: 'Medium',
   700: 'Bold',
   800: 'ExtraBold',
+  900: 'Ultra',
 };
 
 function setDefaultEnvValue(key, value) {
