@@ -284,6 +284,26 @@ StyleDictionary.registerTransform({
   },
 });
 
+/**
+ * Calculate composite spacing values based on a ratio, and substeps
+ * @todo document this better
+ */
+StyleDictionary.registerTransform({
+  type: 'value',
+  name: 'spacing-dynamic/px',
+  transitive: true,
+  matcher: (token) => token.original.type === 'spacing-dynamic',
+  transformer: function (token) {
+    const { base, ratio, pow, sub_step } = token.value;
+    let val = Math.pow(ratio, pow) * base;
+    if (sub_step > 0) {
+      const nextStep = Math.pow(ratio, pow + 1) * base;
+      val = val + (nextStep - val) * sub_step;
+    }
+    return `${val}px`;
+  },
+});
+
 module.exports = {
   humanCase,
   isColorAlphaComposite,

@@ -1,99 +1,13 @@
 {
   core: {
     spacing: {
-      unit: {
-        x0: {
-          value: "0px",
-          type: "dimension",
-        },
-        x025: {
-          value: "1px",
-          type: "dimension",
-        },
-        x05: {
-          value: "2px",
-          type: "dimension",
-        },
-        x1: {
-          value: "4px",
-          type: "dimension",
-        },
-        x2: {
-          value: "8px",
-          type: "dimension",
-        },
-        x3: {
-          value: "12px",
-          type: "dimension",
-        },
-        x4: {
-          value: "16px",
-          type: "dimension",
-        },
-        x5: {
-          value: "20px",
-          type: "dimension",
-        },
-        x6: {
-          value: "24px",
-          type: "dimension",
-        },
-        x7: {
-          value: "28px",
-          type: "dimension",
-        },
-        x8: {
-          value: "32px",
-          type: "dimension",
-        },
-        x9: {
-          value: "36px",
-          type: "dimension",
-        },
-        x10: {
-          value: "40px",
-          type: "dimension",
-        },
-        x11: {
-          value: "44px",
-          type: "dimension",
-        },
-        x12: {
-          value: "48px",
-          type: "dimension",
-        },
-        x13: {
-          value: "52px",
-          type: "dimension",
-        },
-        x14: {
-          value: "56px",
-          type: "dimension",
-        },
-        x15: {
-          value: "60px",
-          type: "dimension",
-        },
-        x16: {
-          value: "64px",
-          type: "dimension",
-        },
-        x17: {
-          value: "68px",
-          type: "dimension",
-        },
-        x18: {
-          value: "72px",
-          type: "dimension",
-        },
-        x19: {
-          value: "76px",
-          type: "dimension",
-        },
-        x20: {
-          value: "80px",
-          type: "dimension",
-        },
+      base: {
+        value: 8,
+        type: "number",
+      },
+      ratio: {
+        value: 2,
+        type: "number",
       },
     },
   },

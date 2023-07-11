@@ -1,97 +1,185 @@
 {
   spacing: {
-    unit: {
-      x0: {
-        value: "{core.spacing.unit.x0}",
-        type: "dimension",
+    container: {
+      "125": {
+        value: {
+          base: "{core.spacing.base.value}",
+          ratio: "{core.spacing.ratio.value}",
+          pow: -3,
+          sub_step: 0,
+        },
+        type: "spacing-dynamic",
       },
-      x025: {
-        value: "{core.spacing.unit.x025}",
-        type: "dimension",
+      "250": {
+        value: {
+          base: "{core.spacing.base.value}",
+          ratio: "{core.spacing.ratio.value}",
+          pow: -2,
+          sub_step: 0,
+        },
+        type: "spacing-dynamic",
       },
-      x05: {
-        value: "{core.spacing.unit.x05}",
-        type: "dimension",
+      "500": {
+        value: {
+          base: "{core.spacing.base.value}",
+          ratio: "{core.spacing.ratio.value}",
+          pow: -1,
+          sub_step: 0,
+        },
+        type: "spacing-dynamic",
       },
-      x1: {
-        value: "{core.spacing.unit.x1}",
-        type: "dimension",
+      "1000": {
+        value: {
+          base: "{core.spacing.base.value}",
+          ratio: "{core.spacing.ratio.value}",
+          pow: 0,
+          sub_step: 0,
+        },
+        type: "spacing-dynamic",
       },
-      x2: {
-        value: "{core.spacing.unit.x2}",
-        type: "dimension",
+      "1250": {
+        type: "spacing-dynamic",
+        value: {
+          base: "{core.spacing.base.value}",
+          ratio: "{core.spacing.ratio.value}",
+          pow: 0,
+          sub_step: 0.25,
+        },
       },
-      x3: {
-        value: "{core.spacing.unit.x3}",
-        type: "dimension",
+      "1500": {
+        type: "spacing-dynamic",
+        value: {
+          base: "{core.spacing.base.value}",
+          ratio: "{core.spacing.ratio.value}",
+          pow: 0,
+          sub_step: 0.5,
+        },
       },
-      x4: {
-        value: "{core.spacing.unit.x4}",
-        type: "dimension",
+      "1750": {
+        type: "spacing-dynamic",
+        value: {
+          base: "{core.spacing.base.value}",
+          ratio: "{core.spacing.ratio.value}",
+          pow: 0,
+          sub_step: 0.75,
+        },
       },
-      x5: {
-        value: "{core.spacing.unit.x5}",
-        type: "dimension",
+      "2000": {
+        type: "spacing-dynamic",
+        value: {
+          base: "{core.spacing.base.value}",
+          ratio: "{core.spacing.ratio.value}",
+          pow: 1,
+          sub_step: 0,
+        },
       },
-      x6: {
-        value: "{core.spacing.unit.x6}",
-        type: "dimension",
+      "2250": {
+        type: "spacing-dynamic",
+        value: {
+          base: "{core.spacing.base.value}",
+          ratio: "{core.spacing.ratio.value}",
+          pow: 1,
+          sub_step: 0.25,
+        },
       },
-      x7: {
-        value: "{core.spacing.unit.x7}",
-        type: "dimension",
+      "2500": {
+        type: "spacing-dynamic",
+        value: {
+          base: "{core.spacing.base.value}",
+          ratio: "{core.spacing.ratio.value}",
+          pow: 1,
+          sub_step: 0.5,
+        },
       },
-      x8: {
-        value: "{core.spacing.unit.x8}",
-        type: "dimension",
+      "2750": {
+        type: "spacing-dynamic",
+        value: {
+          base: "{core.spacing.base.value}",
+          ratio: "{core.spacing.ratio.value}",
+          pow: 1,
+          sub_step: 0.75,
+        },
       },
-      x9: {
-        value: "{core.spacing.unit.x9}",
-        type: "dimension",
+      "3000": {
+        type: "spacing-dynamic",
+        value: {
+          base: "{core.spacing.base.value}",
+          ratio: "{core.spacing.ratio.value}",
+          pow: 2,
+          sub_step: 0,
+        },
       },
-      x10: {
-        value: "{core.spacing.unit.x10}",
-        type: "dimension",
+      "3250": {
+        type: "spacing-dynamic",
+        value: {
+          base: "{core.spacing.base.value}",
+          ratio: "{core.spacing.ratio.value}",
+          pow: 2,
+          sub_step: 0.25,
+        },
       },
-      x11: {
-        value: "{core.spacing.unit.x11}",
-        type: "dimension",
+      "3500": {
+        type: "spacing-dynamic",
+        value: {
+          base: "{core.spacing.base.value}",
+          ratio: "{core.spacing.ratio.value}",
+          pow: 2,
+          sub_step: 0.5,
+        },
       },
-      x12: {
-        value: "{core.spacing.unit.x12}",
-        type: "dimension",
+      "3750": {
+        type: "spacing-dynamic",
+        value: {
+          base: "{core.spacing.base.value}",
+          ratio: "{core.spacing.ratio.value}",
+          pow: 2,
+          sub_step: 0.75,
+        },
       },
-      x13: {
-        value: "{core.spacing.unit.x13}",
-        type: "dimension",
+      "4000": {
+        type: "spacing-dynamic",
+        value: {
+          base: "{core.spacing.base.value}",
+          ratio: "{core.spacing.ratio.value}",
+          pow: 3,
+          sub_step: 0,
+        },
       },
-      x14: {
-        value: "{core.spacing.unit.x14}",
-        type: "dimension",
+      "4250": {
+        type: "spacing-dynamic",
+        value: {
+          base: "{core.spacing.base.value}",
+          ratio: "{core.spacing.ratio.value}",
+          pow: 3,
+          sub_step: 0.25,
+        },
       },
-      x15: {
-        value: "{core.spacing.unit.x15}",
-        type: "dimension",
+      "4500": {
+        type: "spacing-dynamic",
+        value: {
+          base: "{core.spacing.base.value}",
+          ratio: "{core.spacing.ratio.value}",
+          pow: 3,
+          sub_step: 0.5,
+        },
       },
-      x16: {
-        value: "{core.spacing.unit.x16}",
-        type: "dimension",
+      "4750": {
+        type: "spacing-dynamic",
+        value: {
+          base: "{core.spacing.base.value}",
+          ratio: "{core.spacing.ratio.value}",
+          pow: 3,
+          sub_step: 0.75,
+        },
       },
-      x17: {
-        value: "{core.spacing.unit.x17}",
-        type: "dimension",
-      },
-      x18: {
-        value: "{core.spacing.unit.x18}",
-        type: "dimension",
-      },
-      x19: {
-        value: "{core.spacing.unit.x19}",
-        type: "dimension",
-      },
-      x20: {
-        value: "{core.spacing.unit.x20}",
-        type: "dimension",
+      "5000": {
+        type: "spacing-dynamic",
+        value: {
+          base: "{core.spacing.base.value}",
+          ratio: "{core.spacing.ratio.value}",
+          pow: 4,
+          sub_step: 0,
+        },
       },
     },
   },
