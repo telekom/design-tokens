@@ -300,7 +300,7 @@ StyleDictionary.registerTransform({
       const nextStep = Math.pow(ratio, pow + 1) * base;
       val = val + (nextStep - val) * sub_step;
     }
-    return `${val}px`;
+    return `${Math.ceil(val)}px`;
   },
 });
 
