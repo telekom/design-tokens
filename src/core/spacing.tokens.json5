@@ -20,7 +20,7 @@
           pow: -3,
           sub_step: 0,
         },
-        type: "spacing-scale",
+        type: "modular-scale",
       },
       "250": {
         value: {
@@ -29,7 +29,7 @@
           pow: -2,
           sub_step: 0,
         },
-        type: "spacing-scale",
+        type: "modular-scale",
       },
       "500": {
         value: {
@@ -38,7 +38,7 @@
           pow: -1,
           sub_step: 0,
         },
-        type: "spacing-scale",
+        type: "modular-scale",
       },
       "1000": {
         value: {
@@ -47,10 +47,10 @@
           pow: 0,
           sub_step: 0,
         },
-        type: "spacing-scale",
+        type: "modular-scale",
       },
       "1250": {
-        type: "spacing-scale",
+        type: "modular-scale",
         value: {
           base: "{core.spacing.base.value}",
           ratio: "{core.spacing.ratio.value}",
@@ -59,7 +59,7 @@
         },
       },
       "1500": {
-        type: "spacing-scale",
+        type: "modular-scale",
         value: {
           base: "{core.spacing.base.value}",
           ratio: "{core.spacing.ratio.value}",
@@ -68,7 +68,7 @@
         },
       },
       "1750": {
-        type: "spacing-scale",
+        type: "modular-scale",
         value: {
           base: "{core.spacing.base.value}",
           ratio: "{core.spacing.ratio.value}",
@@ -77,7 +77,7 @@
         },
       },
       "2000": {
-        type: "spacing-scale",
+        type: "modular-scale",
         value: {
           base: "{core.spacing.base.value}",
           ratio: "{core.spacing.ratio.value}",
@@ -86,7 +86,7 @@
         },
       },
       "2250": {
-        type: "spacing-scale",
+        type: "modular-scale",
         value: {
           base: "{core.spacing.base.value}",
           ratio: "{core.spacing.ratio.value}",
@@ -95,7 +95,7 @@
         },
       },
       "2500": {
-        type: "spacing-scale",
+        type: "modular-scale",
         value: {
           base: "{core.spacing.base.value}",
           ratio: "{core.spacing.ratio.value}",
@@ -104,7 +104,7 @@
         },
       },
       "2750": {
-        type: "spacing-scale",
+        type: "modular-scale",
         value: {
           base: "{core.spacing.base.value}",
           ratio: "{core.spacing.ratio.value}",
@@ -113,7 +113,7 @@
         },
       },
       "3000": {
-        type: "spacing-scale",
+        type: "modular-scale",
         value: {
           base: "{core.spacing.base.value}",
           ratio: "{core.spacing.ratio.value}",
@@ -122,7 +122,7 @@
         },
       },
       "3125": {
-        type: "spacing-scale",
+        type: "modular-scale",
         value: {
           base: "{core.spacing.base.value}",
           ratio: "{core.spacing.ratio.value}",
@@ -131,7 +131,7 @@
         },
       },
       "3250": {
-        type: "spacing-scale",
+        type: "modular-scale",
         value: {
           base: "{core.spacing.base.value}",
           ratio: "{core.spacing.ratio.value}",
@@ -140,7 +140,7 @@
         },
       },
       "3375": {
-        type: "spacing-scale",
+        type: "modular-scale",
         value: {
           base: "{core.spacing.base.value}",
           ratio: "{core.spacing.ratio.value}",
@@ -149,7 +149,7 @@
         },
       },
       "3500": {
-        type: "spacing-scale",
+        type: "modular-scale",
         value: {
           base: "{core.spacing.base.value}",
           ratio: "{core.spacing.ratio.value}",
@@ -158,7 +158,7 @@
         },
       },
       "3625": {
-        type: "spacing-scale",
+        type: "modular-scale",
         value: {
           base: "{core.spacing.base.value}",
           ratio: "{core.spacing.ratio.value}",
@@ -167,7 +167,7 @@
         },
       },
       "3750": {
-        type: "spacing-scale",
+        type: "modular-scale",
         value: {
           base: "{core.spacing.base.value}",
           ratio: "{core.spacing.ratio.value}",
@@ -176,7 +176,7 @@
         },
       },
       "3875": {
-        type: "spacing-scale",
+        type: "modular-scale",
         value: {
           base: "{core.spacing.base.value}",
           ratio: "{core.spacing.ratio.value}",
@@ -185,7 +185,7 @@
         },
       },
       "4000": {
-        type: "spacing-scale",
+        type: "modular-scale",
         value: {
           base: "{core.spacing.base.value}",
           ratio: "{core.spacing.ratio.value}",
@@ -194,7 +194,7 @@
         },
       },
       "4125": {
-        type: "spacing-scale",
+        type: "modular-scale",
         value: {
           base: "{core.spacing.base.value}",
           ratio: "{core.spacing.ratio.value}",
@@ -203,7 +203,7 @@
         },
       },
       "4250": {
-        type: "spacing-scale",
+        type: "modular-scale",
         value: {
           base: "{core.spacing.base.value}",
           ratio: "{core.spacing.ratio.value}",
@@ -212,7 +212,7 @@
         },
       },
       "4375": {
-        type: "spacing-scale",
+        type: "modular-scale",
         value: {
           base: "{core.spacing.base.value}",
           ratio: "{core.spacing.ratio.value}",
@@ -221,7 +221,7 @@
         },
       },
       "4500": {
-        type: "spacing-scale",
+        type: "modular-scale",
         value: {
           base: "{core.spacing.base.value}",
           ratio: "{core.spacing.ratio.value}",
@@ -230,7 +230,7 @@
         },
       },
       "4750": {
-        type: "spacing-scale",
+        type: "modular-scale",
         value: {
           base: "{core.spacing.base.value}",
           ratio: "{core.spacing.ratio.value}",
@@ -239,7 +239,7 @@
         },
       },
       "5000": {
-        type: "spacing-scale",
+        type: "modular-scale",
         value: {
           base: "{core.spacing.base.value}",
           ratio: "{core.spacing.ratio.value}",
@@ -248,7 +248,7 @@
         },
       },
       "5500": {
-        type: "spacing-scale",
+        type: "modular-scale",
         value: {
           base: "{core.spacing.base.value}",
           ratio: "{core.spacing.ratio.value}",
@@ -257,7 +257,7 @@
         },
       },
       "6000": {
-        type: "spacing-scale",
+        type: "modular-scale",
         value: {
           base: "{core.spacing.base.value}",
           ratio: "{core.spacing.ratio.value}",
@@ -266,7 +266,7 @@
         },
       },
       "6500": {
-        type: "spacing-scale",
+        type: "modular-scale",
         value: {
           base: "{core.spacing.base.value}",
           ratio: "{core.spacing.ratio.value}",
@@ -275,7 +275,7 @@
         },
       },
       "7000": {
-        type: "spacing-scale",
+        type: "modular-scale",
         value: {
           base: "{core.spacing.base.value}",
           ratio: "{core.spacing.ratio.value}",
@@ -284,7 +284,7 @@
         },
       },
       "7500": {
-        type: "spacing-scale",
+        type: "modular-scale",
         value: {
           base: "{core.spacing.base.value}",
           ratio: "{core.spacing.ratio.value}",
@@ -293,7 +293,7 @@
         },
       },
       "8000": {
-        type: "spacing-scale",
+        type: "modular-scale",
         value: {
           base: "{core.spacing.base.value}",
           ratio: "{core.spacing.ratio.value}",

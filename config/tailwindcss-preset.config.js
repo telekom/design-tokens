@@ -35,7 +35,7 @@ StyleDictionary.registerFormat({
     dictionary.allTokens
       .filter((token) => token.path[0] !== 'core')
       .map(remapConfigKeys)
-      .map(patchSpacingKeys)
+      // .map(patchSpacingKeys)
       .map(patchStandardToDefault)
       .forEach((token) => {
         deep(tokens, token.configKeys, `var(--${token.name})`);
@@ -120,7 +120,6 @@ const mappings = [
   { original: ['motion', 'duration'], tailwindcss: ['transitionDuration'] },
   { original: ['motion', 'easing'], tailwindcss: ['transitionTimingFunction'] },
   { original: ['radius'], tailwindcss: ['borderRadius'] },
-  { original: ['spacing', 'unit'], tailwindcss: ['spacing'] },
   { original: ['typography', 'font-size'], tailwindcss: ['fontSize'] },
   { original: ['typography', 'font-family'], tailwindcss: ['fontFamily'] },
   { original: ['typography', 'font-weight'], tailwindcss: ['fontWeight'] },
@@ -150,12 +149,12 @@ function remapConfigKeys(token) {
  * Helper function to patch spacing keys (remove `x-` prefix)
  * Example: `x-1` -> `1`
  */
-function patchSpacingKeys(token) {
-  if (token.path[0] === 'spacing') {
-    token.configKeys[1] = token.configKeys[1].substring(2);
-  }
-  return token;
-}
+// function patchSpacingKeys(token) {
+//   if (token.path[0] === 'spacing') {
+//     token.configKeys[1] = token.configKeys[1].substring(2);
+//   }
+//   return token;
+// }
 
 /**
  * Helper function to patch `standard` keys to `DEFAULT`

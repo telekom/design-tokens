@@ -290,19 +290,34 @@ StyleDictionary.registerTransform({
  */
 StyleDictionary.registerTransform({
   type: 'value',
-  name: 'spacing-dynamic/px',
+  name: 'modular-scale/px',
   transitive: true,
-  matcher: (token) => token.original.type === 'spacing-dynamic',
-  transformer: function (token) {
-    const { base, ratio, pow, sub_step } = token.value;
+  matcher: (token) => token.original.type === 'modular-scale',
+  transformer: getModularScaleTransform('px'),
+});
+
+StyleDictionary.registerTransform({
+  type: 'value',
+  name: 'modular-scale/rem',
+  transitive: true,
+  matcher: (token) => token.original.type === 'modular-scale',
+  transformer: getModularScaleTransform('rem'),
+});
+
+function getModularScaleTransform(unit = 'rem') {
+  return function (token) {
+    let { base, ratio, pow, sub_step } = token.value;
+    base = parseFloat(base.replace('px', ''), 10);
+    if (unit === 'px') base = base * 16;
+    ratio = parseFloat(ratio.replace('px', ''), 10);
     let val = Math.pow(ratio, pow) * base;
     if (sub_step > 0) {
       const nextStep = Math.pow(ratio, pow + 1) * base;
       val = val + (nextStep - val) * sub_step;
     }
-    return `${Math.ceil(val)}px`;
-  },
-});
+    return `${unit === 'px' ? Math.ceil(val) : val}${unit}`;
+  }
+}
 
 module.exports = {
   humanCase,

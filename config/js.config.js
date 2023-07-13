@@ -20,6 +20,7 @@ const jsTransformGroup = [
   ...StyleDictionary.transformGroup.js,
   'color/alpha',
   'shadow/css',
+  'modular-scale/rem',
   'text-style/camel',
 ];
 

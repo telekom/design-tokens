@@ -42,7 +42,7 @@ const figmaTransformGroup = [
   'color/alpha-hex',
   'typography/figma',
   'text-style/figma',
-  'spacing-dynamic/px',
+  'modular-scale/px',
 ];
 
 const categoryTypeMap = {

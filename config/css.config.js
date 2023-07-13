@@ -22,7 +22,7 @@ const cssTransformGroup = [
   'time/seconds',
   'content/icon',
   'size/rem',
-  'spacing-dynamic/px',
+  'modular-scale/rem',
   'color/alpha',
   'color/css',
   'text-style/css',
