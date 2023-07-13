@@ -1,185 +1,155 @@
 {
   spacing: {
-    container: {
-      "125": {
-        value: {
-          base: "{core.spacing.base.value}",
-          ratio: "{core.spacing.ratio.value}",
-          pow: -3,
-          sub_step: 0,
-        },
-        type: "spacing-dynamic",
+    composition: {
+      "space-00": {
+        value: "{core.spacing.none.value}",
+        type: "dimension",
       },
-      "250": {
-        value: {
-          base: "{core.spacing.base.value}",
-          ratio: "{core.spacing.ratio.value}",
-          pow: -2,
-          sub_step: 0,
-        },
-        type: "spacing-dynamic",
+      "space-01": {
+        value: "{core.spacing.125.value}",
+        type: "dimension",
       },
-      "500": {
-        value: {
-          base: "{core.spacing.base.value}",
-          ratio: "{core.spacing.ratio.value}",
-          pow: -1,
-          sub_step: 0,
-        },
-        type: "spacing-dynamic",
+      "space-02": {
+        value: "{core.spacing.250.value}",
+        type: "dimension",
       },
-      "1000": {
-        value: {
-          base: "{core.spacing.base.value}",
-          ratio: "{core.spacing.ratio.value}",
-          pow: 0,
-          sub_step: 0,
-        },
-        type: "spacing-dynamic",
+      "space-03": {
+        value: "{core.spacing.500.value}",
+        type: "dimension",
       },
-      "1250": {
-        type: "spacing-dynamic",
-        value: {
-          base: "{core.spacing.base.value}",
-          ratio: "{core.spacing.ratio.value}",
-          pow: 0,
-          sub_step: 0.25,
-        },
+      "space-04": {
+        value: "{core.spacing.1000.value}",
+        type: "dimension",
       },
-      "1500": {
-        type: "spacing-dynamic",
-        value: {
-          base: "{core.spacing.base.value}",
-          ratio: "{core.spacing.ratio.value}",
-          pow: 0,
-          sub_step: 0.5,
-        },
+      "space-05": {
+        value: "{core.spacing.1500.value}",
+        type: "dimension",
       },
-      "1750": {
-        type: "spacing-dynamic",
-        value: {
-          base: "{core.spacing.base.value}",
-          ratio: "{core.spacing.ratio.value}",
-          pow: 0,
-          sub_step: 0.75,
-        },
+      "space-06": {
+        value: "{core.spacing.2000.value}",
+        type: "dimension",
       },
-      "2000": {
-        type: "spacing-dynamic",
-        value: {
-          base: "{core.spacing.base.value}",
-          ratio: "{core.spacing.ratio.value}",
-          pow: 1,
-          sub_step: 0,
-        },
+      "space-07": {
+        value: "{core.spacing.2250.value}",
+        type: "dimension",
       },
-      "2250": {
-        type: "spacing-dynamic",
-        value: {
-          base: "{core.spacing.base.value}",
-          ratio: "{core.spacing.ratio.value}",
-          pow: 1,
-          sub_step: 0.25,
-        },
+      "space-08": {
+        value: "{core.spacing.2500.value}",
+        type: "dimension",
       },
-      "2500": {
-        type: "spacing-dynamic",
-        value: {
-          base: "{core.spacing.base.value}",
-          ratio: "{core.spacing.ratio.value}",
-          pow: 1,
-          sub_step: 0.5,
-        },
+      "space-09": {
+        value: "{core.spacing.2750.value}",
+        type: "dimension",
       },
-      "2750": {
-        type: "spacing-dynamic",
-        value: {
-          base: "{core.spacing.base.value}",
-          ratio: "{core.spacing.ratio.value}",
-          pow: 1,
-          sub_step: 0.75,
-        },
+      "space-10": {
+        value: "{core.spacing.3000.value}",
+        type: "dimension",
       },
-      "3000": {
-        type: "spacing-dynamic",
-        value: {
-          base: "{core.spacing.base.value}",
-          ratio: "{core.spacing.ratio.value}",
-          pow: 2,
-          sub_step: 0,
-        },
+      "space-11": {
+        value: "{core.spacing.3125.value}",
+        type: "dimension",
       },
-      "3250": {
-        type: "spacing-dynamic",
-        value: {
-          base: "{core.spacing.base.value}",
-          ratio: "{core.spacing.ratio.value}",
-          pow: 2,
-          sub_step: 0.25,
-        },
+      "space-12": {
+        value: "{core.spacing.3250.value}",
+        type: "dimension",
       },
-      "3500": {
-        type: "spacing-dynamic",
-        value: {
-          base: "{core.spacing.base.value}",
-          ratio: "{core.spacing.ratio.value}",
-          pow: 2,
-          sub_step: 0.5,
-        },
+      "space-13": {
+        value: "{core.spacing.3375.value}",
+        type: "dimension",
       },
-      "3750": {
-        type: "spacing-dynamic",
-        value: {
-          base: "{core.spacing.base.value}",
-          ratio: "{core.spacing.ratio.value}",
-          pow: 2,
-          sub_step: 0.75,
-        },
+      "space-14": {
+        value: "{core.spacing.3500.value}",
+        type: "dimension",
       },
-      "4000": {
-        type: "spacing-dynamic",
-        value: {
-          base: "{core.spacing.base.value}",
-          ratio: "{core.spacing.ratio.value}",
-          pow: 3,
-          sub_step: 0,
-        },
+      "space-15": {
+        value: "{core.spacing.3625.value}",
+        type: "dimension",
       },
-      "4250": {
-        type: "spacing-dynamic",
-        value: {
-          base: "{core.spacing.base.value}",
-          ratio: "{core.spacing.ratio.value}",
-          pow: 3,
-          sub_step: 0.25,
-        },
+      "space-16": {
+        value: "{core.spacing.3750.value}",
+        type: "dimension",
       },
-      "4500": {
-        type: "spacing-dynamic",
-        value: {
-          base: "{core.spacing.base.value}",
-          ratio: "{core.spacing.ratio.value}",
-          pow: 3,
-          sub_step: 0.5,
-        },
+      "space-17": {
+        value: "{core.spacing.4000.value}",
+        type: "dimension",
       },
-      "4750": {
-        type: "spacing-dynamic",
-        value: {
-          base: "{core.spacing.base.value}",
-          ratio: "{core.spacing.ratio.value}",
-          pow: 3,
-          sub_step: 0.75,
-        },
+      "space-18": {
+        value: "{core.spacing.4125.value}",
+        type: "dimension",
       },
-      "5000": {
-        type: "spacing-dynamic",
-        value: {
-          base: "{core.spacing.base.value}",
-          ratio: "{core.spacing.ratio.value}",
-          pow: 4,
-          sub_step: 0,
-        },
+      "space-19": {
+        value: "{core.spacing.4250.value}",
+        type: "dimension",
+      },
+      "space-20": {
+        value: "{core.spacing.4500.value}",
+        type: "dimension",
+      },
+    },
+    baseline: {
+      "space-00": {
+        value: "{core.spacing.none.value}",
+        type: "dimension",
+      },
+      "space-01": {
+        value: "{core.spacing.500.value}",
+        type: "dimension",
+      },
+      "space-02": {
+        value: "{core.spacing.1000.value}",
+        type: "dimension",
+      },
+      "space-03": {
+        value: "{core.spacing.1500.value}",
+        type: "dimension",
+      },
+      "space-04": {
+        value: "{core.spacing.2000.value}",
+        type: "dimension",
+      },
+      "space-05": {
+        value: "{core.spacing.2500.value}",
+        type: "dimension",
+      },
+      "space-06": {
+        value: "{core.spacing.3000.value}",
+        type: "dimension",
+      },
+      "space-07": {
+        value: "{core.spacing.3500.value}",
+        type: "dimension",
+      },
+      "space-08": {
+        value: "{core.spacing.4000.value}",
+        type: "dimension",
+      },
+      "space-09": {
+        value: "{core.spacing.4500.value}",
+        type: "dimension",
+      },
+      "space-10": {
+        value: "{core.spacing.5000.value}",
+        type: "dimension",
+      },
+      "space-11": {
+        value: "{core.spacing.5500.value}",
+        type: "dimension",
+      },
+      "space-12": {
+        value: "{core.spacing.6000.value}",
+        type: "dimension",
+      },
+      "space-13": {
+        value: "{core.spacing.6500.value}",
+        type: "dimension",
+      },
+      "space-14": {
+        value: "{core.spacing.7000.value}",
+        type: "dimension",
+      },
+      "space-15": {
+        value: "{core.spacing.8000.value}",
+        type: "dimension",
       },
     },
   },

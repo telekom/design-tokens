@@ -105,7 +105,7 @@ function formatJSON(allTokens, { dictionary, mode }) {
     if (path.includes('Motion')) return;
     // Keep `Core` in path to avoid collisions with same name tokens
     const keepCoreInPathToAvoidCollisionsWithSameNameTokens =
-      path[0] === 'Core' && path[1] !== 'Spacing' && path[1] !== 'Radius';
+      path[0] === 'Core' && path[1] !== 'Radius';
     if (
       path[0] === 'Color' ||
       path[0] === 'Shadow' ||
@@ -190,12 +190,18 @@ function getJSONValue(token, { dictionary, mode }) {
           space: 'hsl',
         });
       }
-      if (token.path.includes('spacing') && 'ratio' in token.original.value) {
+      if (token.path[0] === 'core' && 'ratio' in token.original.value) {
         // Handle spacing calculations!
         // TODO clean up the mess below (aka make it more readable)
         const { pow, sub_step } = token.original.value;
-        const baseRef = `{${refs[0].path.map(humanCase).join('.')}}`;
-        const ratioRef = `{${refs[1].path.map(humanCase).join('.')}}`;
+        const baseRef = `{${refs[0].path
+          .map(humanCase)
+          .filter((x) => x !== 'Core')
+          .join('.')}}`;
+        const ratioRef = `{${refs[1].path
+          .map(humanCase)
+          .filter((x) => x !== 'Core')
+          .join('.')}}`;
         const operator = pow < 0 ? '/' : '*';
         const calc = (p) =>
           p === 0
@@ -211,7 +217,7 @@ function getJSONValue(token, { dictionary, mode }) {
         // Everything else!
         const path = ref.path.map(humanCase);
         // Keep `Core` in path to avoid collisions with same name tokens
-        if (path[1] !== 'Spacing' && path[1] !== 'Radius') {
+        if (path[1] !== 'Radius') {
           path.shift();
         }
         value = `{${path.join('.')}}`;

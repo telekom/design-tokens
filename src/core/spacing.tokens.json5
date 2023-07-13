@@ -2,12 +2,304 @@
   core: {
     spacing: {
       base: {
-        value: 8,
-        type: "number",
+        value: "8px",
+        type: "dimension",
       },
       ratio: {
-        value: 2,
+        value: "2",
         type: "number",
+      },
+      none: {
+        value: "0px",
+        type: "dimension",
+      },
+      "125": {
+        value: {
+          base: "{core.spacing.base.value}",
+          ratio: "{core.spacing.ratio.value}",
+          pow: -3,
+          sub_step: 0,
+        },
+        type: "spacing-scale",
+      },
+      "250": {
+        value: {
+          base: "{core.spacing.base.value}",
+          ratio: "{core.spacing.ratio.value}",
+          pow: -2,
+          sub_step: 0,
+        },
+        type: "spacing-scale",
+      },
+      "500": {
+        value: {
+          base: "{core.spacing.base.value}",
+          ratio: "{core.spacing.ratio.value}",
+          pow: -1,
+          sub_step: 0,
+        },
+        type: "spacing-scale",
+      },
+      "1000": {
+        value: {
+          base: "{core.spacing.base.value}",
+          ratio: "{core.spacing.ratio.value}",
+          pow: 0,
+          sub_step: 0,
+        },
+        type: "spacing-scale",
+      },
+      "1250": {
+        type: "spacing-scale",
+        value: {
+          base: "{core.spacing.base.value}",
+          ratio: "{core.spacing.ratio.value}",
+          pow: 0,
+          sub_step: 0.25,
+        },
+      },
+      "1500": {
+        type: "spacing-scale",
+        value: {
+          base: "{core.spacing.base.value}",
+          ratio: "{core.spacing.ratio.value}",
+          pow: 0,
+          sub_step: 0.5,
+        },
+      },
+      "1750": {
+        type: "spacing-scale",
+        value: {
+          base: "{core.spacing.base.value}",
+          ratio: "{core.spacing.ratio.value}",
+          pow: 0,
+          sub_step: 0.75,
+        },
+      },
+      "2000": {
+        type: "spacing-scale",
+        value: {
+          base: "{core.spacing.base.value}",
+          ratio: "{core.spacing.ratio.value}",
+          pow: 1,
+          sub_step: 0,
+        },
+      },
+      "2250": {
+        type: "spacing-scale",
+        value: {
+          base: "{core.spacing.base.value}",
+          ratio: "{core.spacing.ratio.value}",
+          pow: 1,
+          sub_step: 0.25,
+        },
+      },
+      "2500": {
+        type: "spacing-scale",
+        value: {
+          base: "{core.spacing.base.value}",
+          ratio: "{core.spacing.ratio.value}",
+          pow: 1,
+          sub_step: 0.5,
+        },
+      },
+      "2750": {
+        type: "spacing-scale",
+        value: {
+          base: "{core.spacing.base.value}",
+          ratio: "{core.spacing.ratio.value}",
+          pow: 1,
+          sub_step: 0.75,
+        },
+      },
+      "3000": {
+        type: "spacing-scale",
+        value: {
+          base: "{core.spacing.base.value}",
+          ratio: "{core.spacing.ratio.value}",
+          pow: 2,
+          sub_step: 0,
+        },
+      },
+      "3125": {
+        type: "spacing-scale",
+        value: {
+          base: "{core.spacing.base.value}",
+          ratio: "{core.spacing.ratio.value}",
+          pow: 2,
+          sub_step: 0.125,
+        },
+      },
+      "3250": {
+        type: "spacing-scale",
+        value: {
+          base: "{core.spacing.base.value}",
+          ratio: "{core.spacing.ratio.value}",
+          pow: 2,
+          sub_step: 0.25,
+        },
+      },
+      "3375": {
+        type: "spacing-scale",
+        value: {
+          base: "{core.spacing.base.value}",
+          ratio: "{core.spacing.ratio.value}",
+          pow: 2,
+          sub_step: 0.375,
+        },
+      },
+      "3500": {
+        type: "spacing-scale",
+        value: {
+          base: "{core.spacing.base.value}",
+          ratio: "{core.spacing.ratio.value}",
+          pow: 2,
+          sub_step: 0.5,
+        },
+      },
+      "3625": {
+        type: "spacing-scale",
+        value: {
+          base: "{core.spacing.base.value}",
+          ratio: "{core.spacing.ratio.value}",
+          pow: 2,
+          sub_step: 0.625,
+        },
+      },
+      "3750": {
+        type: "spacing-scale",
+        value: {
+          base: "{core.spacing.base.value}",
+          ratio: "{core.spacing.ratio.value}",
+          pow: 2,
+          sub_step: 0.75,
+        },
+      },
+      "3875": {
+        type: "spacing-scale",
+        value: {
+          base: "{core.spacing.base.value}",
+          ratio: "{core.spacing.ratio.value}",
+          pow: 2,
+          sub_step: 0.875,
+        },
+      },
+      "4000": {
+        type: "spacing-scale",
+        value: {
+          base: "{core.spacing.base.value}",
+          ratio: "{core.spacing.ratio.value}",
+          pow: 3,
+          sub_step: 0,
+        },
+      },
+      "4125": {
+        type: "spacing-scale",
+        value: {
+          base: "{core.spacing.base.value}",
+          ratio: "{core.spacing.ratio.value}",
+          pow: 3,
+          sub_step: 0.125,
+        },
+      },
+      "4250": {
+        type: "spacing-scale",
+        value: {
+          base: "{core.spacing.base.value}",
+          ratio: "{core.spacing.ratio.value}",
+          pow: 3,
+          sub_step: 0.25,
+        },
+      },
+      "4375": {
+        type: "spacing-scale",
+        value: {
+          base: "{core.spacing.base.value}",
+          ratio: "{core.spacing.ratio.value}",
+          pow: 3,
+          sub_step: 0.375,
+        },
+      },
+      "4500": {
+        type: "spacing-scale",
+        value: {
+          base: "{core.spacing.base.value}",
+          ratio: "{core.spacing.ratio.value}",
+          pow: 3,
+          sub_step: 0.5,
+        },
+      },
+      "4750": {
+        type: "spacing-scale",
+        value: {
+          base: "{core.spacing.base.value}",
+          ratio: "{core.spacing.ratio.value}",
+          pow: 3,
+          sub_step: 0.75,
+        },
+      },
+      "5000": {
+        type: "spacing-scale",
+        value: {
+          base: "{core.spacing.base.value}",
+          ratio: "{core.spacing.ratio.value}",
+          pow: 4,
+          sub_step: 0,
+        },
+      },
+      "5500": {
+        type: "spacing-scale",
+        value: {
+          base: "{core.spacing.base.value}",
+          ratio: "{core.spacing.ratio.value}",
+          pow: 4,
+          sub_step: 0.5,
+        },
+      },
+      "6000": {
+        type: "spacing-scale",
+        value: {
+          base: "{core.spacing.base.value}",
+          ratio: "{core.spacing.ratio.value}",
+          pow: 5,
+          sub_step: 0,
+        },
+      },
+      "6500": {
+        type: "spacing-scale",
+        value: {
+          base: "{core.spacing.base.value}",
+          ratio: "{core.spacing.ratio.value}",
+          pow: 5,
+          sub_step: 0.5,
+        },
+      },
+      "7000": {
+        type: "spacing-scale",
+        value: {
+          base: "{core.spacing.base.value}",
+          ratio: "{core.spacing.ratio.value}",
+          pow: 6,
+          sub_step: 0,
+        },
+      },
+      "7500": {
+        type: "spacing-scale",
+        value: {
+          base: "{core.spacing.base.value}",
+          ratio: "{core.spacing.ratio.value}",
+          pow: 6,
+          sub_step: 0.5,
+        },
+      },
+      "8000": {
+        type: "spacing-scale",
+        value: {
+          base: "{core.spacing.base.value}",
+          ratio: "{core.spacing.ratio.value}",
+          pow: 7,
+          sub_step: 0,
+        },
       },
     },
   },
