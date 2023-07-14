@@ -286,7 +286,6 @@ StyleDictionary.registerTransform({
 
 /**
  * Calculate composite spacing values based on a ratio, and substeps
- * @todo document this better
  */
 StyleDictionary.registerTransform({
   type: 'value',
@@ -296,6 +295,9 @@ StyleDictionary.registerTransform({
   transformer: getModularScaleTransform('px'),
 });
 
+/**
+ * Calculate composite spacing values based on a ratio, and substeps
+ */
 StyleDictionary.registerTransform({
   type: 'value',
   name: 'modular-scale/rem',
@@ -304,19 +306,24 @@ StyleDictionary.registerTransform({
   transformer: getModularScaleTransform('rem'),
 });
 
+/**
+ * @todo document this better / make it more readable?
+ */
 function getModularScaleTransform(unit = 'rem') {
   return function (token) {
-    let { base, ratio, pow, sub_step } = token.value;
-    base = parseFloat(base.replace('px', ''), 10);
-    if (unit === 'px') base = base * 16;
-    ratio = parseFloat(ratio.replace('px', ''), 10);
-    let val = Math.pow(ratio, pow) * base;
+    const { base, ratio, pow, sub_step } = token.value;
+    const parsedRatio = parseFloat(ratio.replace('px', ''), 10);
+    let parsedBase = parseFloat(base.replace(/([pxrem])+/gi, ''), 10);
+    if (base.indexOf('rem') > 0 && unit === 'px') {
+      parsedBase = parsedBase * 16;
+    }
+    let val = Math.pow(parsedRatio, pow) * parsedBase;
     if (sub_step > 0) {
-      const nextStep = Math.pow(ratio, pow + 1) * base;
+      const nextStep = Math.pow(parsedRatio, pow + 1) * parsedBase;
       val = val + (nextStep - val) * sub_step;
     }
     return `${unit === 'px' ? Math.ceil(val) : val}${unit}`;
-  }
+  };
 }
 
 module.exports = {
