@@ -709,102 +709,6 @@
           "type": "borderRadius",
           "description": "Used for pill-shaped ui elements"
         }
-      },
-      "Spacing": {
-        "Unit": {
-          "x0": {
-            "value": "0px",
-            "type": "spacing"
-          },
-          "x025": {
-            "value": "1px",
-            "type": "spacing"
-          },
-          "x05": {
-            "value": "2px",
-            "type": "spacing"
-          },
-          "x1": {
-            "value": "4px",
-            "type": "spacing"
-          },
-          "x2": {
-            "value": "8px",
-            "type": "spacing"
-          },
-          "x3": {
-            "value": "12px",
-            "type": "spacing"
-          },
-          "x4": {
-            "value": "16px",
-            "type": "spacing"
-          },
-          "x5": {
-            "value": "20px",
-            "type": "spacing"
-          },
-          "x6": {
-            "value": "24px",
-            "type": "spacing"
-          },
-          "x7": {
-            "value": "28px",
-            "type": "spacing"
-          },
-          "x8": {
-            "value": "32px",
-            "type": "spacing"
-          },
-          "x9": {
-            "value": "36px",
-            "type": "spacing"
-          },
-          "x10": {
-            "value": "40px",
-            "type": "spacing"
-          },
-          "x11": {
-            "value": "44px",
-            "type": "spacing"
-          },
-          "x12": {
-            "value": "48px",
-            "type": "spacing"
-          },
-          "x13": {
-            "value": "52px",
-            "type": "spacing"
-          },
-          "x14": {
-            "value": "56px",
-            "type": "spacing"
-          },
-          "x15": {
-            "value": "60px",
-            "type": "spacing"
-          },
-          "x16": {
-            "value": "64px",
-            "type": "spacing"
-          },
-          "x17": {
-            "value": "68px",
-            "type": "spacing"
-          },
-          "x18": {
-            "value": "72px",
-            "type": "spacing"
-          },
-          "x19": {
-            "value": "76px",
-            "type": "spacing"
-          },
-          "x20": {
-            "value": "80px",
-            "type": "spacing"
-          }
-        }
       }
     },
     "Shadow": {
@@ -1150,6 +1054,148 @@
         }
       }
     },
+    "Spacing": {
+      "125": {
+        "value": "{Spacing.Base} / {Spacing.Ratio} / {Spacing.Ratio} / {Spacing.Ratio}",
+        "type": "spacing"
+      },
+      "250": {
+        "value": "{Spacing.Base} / {Spacing.Ratio} / {Spacing.Ratio}",
+        "type": "spacing"
+      },
+      "500": {
+        "value": "{Spacing.Base} / {Spacing.Ratio}",
+        "type": "spacing"
+      },
+      "1000": {
+        "value": "{Spacing.Base}",
+        "type": "spacing"
+      },
+      "1250": {
+        "value": "{Spacing.Base} + (({Spacing.Base} * {Spacing.Ratio} - {Spacing.Base}) * 0.25)",
+        "type": "spacing"
+      },
+      "1500": {
+        "value": "{Spacing.Base} + (({Spacing.Base} * {Spacing.Ratio} - {Spacing.Base}) * 0.5)",
+        "type": "spacing"
+      },
+      "1750": {
+        "value": "{Spacing.Base} + (({Spacing.Base} * {Spacing.Ratio} - {Spacing.Base}) * 0.75)",
+        "type": "spacing"
+      },
+      "2000": {
+        "value": "{Spacing.Base} * {Spacing.Ratio}",
+        "type": "spacing"
+      },
+      "2250": {
+        "value": "{Spacing.Base} * {Spacing.Ratio} + (({Spacing.Base} * {Spacing.Ratio} * {Spacing.Ratio} - {Spacing.Base} * {Spacing.Ratio}) * 0.25)",
+        "type": "spacing"
+      },
+      "2500": {
+        "value": "{Spacing.Base} * {Spacing.Ratio} + (({Spacing.Base} * {Spacing.Ratio} * {Spacing.Ratio} - {Spacing.Base} * {Spacing.Ratio}) * 0.5)",
+        "type": "spacing"
+      },
+      "2750": {
+        "value": "{Spacing.Base} * {Spacing.Ratio} + (({Spacing.Base} * {Spacing.Ratio} * {Spacing.Ratio} - {Spacing.Base} * {Spacing.Ratio}) * 0.75)",
+        "type": "spacing"
+      },
+      "3000": {
+        "value": "{Spacing.Base} * {Spacing.Ratio} * {Spacing.Ratio}",
+        "type": "spacing"
+      },
+      "3125": {
+        "value": "{Spacing.Base} * {Spacing.Ratio} * {Spacing.Ratio} + (({Spacing.Base} * {Spacing.Ratio} * {Spacing.Ratio} * {Spacing.Ratio} - {Spacing.Base} * {Spacing.Ratio} * {Spacing.Ratio}) * 0.125)",
+        "type": "spacing"
+      },
+      "3250": {
+        "value": "{Spacing.Base} * {Spacing.Ratio} * {Spacing.Ratio} + (({Spacing.Base} * {Spacing.Ratio} * {Spacing.Ratio} * {Spacing.Ratio} - {Spacing.Base} * {Spacing.Ratio} * {Spacing.Ratio}) * 0.25)",
+        "type": "spacing"
+      },
+      "3375": {
+        "value": "{Spacing.Base} * {Spacing.Ratio} * {Spacing.Ratio} + (({Spacing.Base} * {Spacing.Ratio} * {Spacing.Ratio} * {Spacing.Ratio} - {Spacing.Base} * {Spacing.Ratio} * {Spacing.Ratio}) * 0.375)",
+        "type": "spacing"
+      },
+      "3500": {
+        "value": "{Spacing.Base} * {Spacing.Ratio} * {Spacing.Ratio} + (({Spacing.Base} * {Spacing.Ratio} * {Spacing.Ratio} * {Spacing.Ratio} - {Spacing.Base} * {Spacing.Ratio} * {Spacing.Ratio}) * 0.5)",
+        "type": "spacing"
+      },
+      "3625": {
+        "value": "{Spacing.Base} * {Spacing.Ratio} * {Spacing.Ratio} + (({Spacing.Base} * {Spacing.Ratio} * {Spacing.Ratio} * {Spacing.Ratio} - {Spacing.Base} * {Spacing.Ratio} * {Spacing.Ratio}) * 0.625)",
+        "type": "spacing"
+      },
+      "3750": {
+        "value": "{Spacing.Base} * {Spacing.Ratio} * {Spacing.Ratio} + (({Spacing.Base} * {Spacing.Ratio} * {Spacing.Ratio} * {Spacing.Ratio} - {Spacing.Base} * {Spacing.Ratio} * {Spacing.Ratio}) * 0.75)",
+        "type": "spacing"
+      },
+      "3875": {
+        "value": "{Spacing.Base} * {Spacing.Ratio} * {Spacing.Ratio} + (({Spacing.Base} * {Spacing.Ratio} * {Spacing.Ratio} * {Spacing.Ratio} - {Spacing.Base} * {Spacing.Ratio} * {Spacing.Ratio}) * 0.875)",
+        "type": "spacing"
+      },
+      "4000": {
+        "value": "{Spacing.Base} * {Spacing.Ratio} * {Spacing.Ratio} * {Spacing.Ratio}",
+        "type": "spacing"
+      },
+      "4125": {
+        "value": "{Spacing.Base} * {Spacing.Ratio} * {Spacing.Ratio} * {Spacing.Ratio} + (({Spacing.Base} * {Spacing.Ratio} * {Spacing.Ratio} * {Spacing.Ratio} * {Spacing.Ratio} - {Spacing.Base} * {Spacing.Ratio} * {Spacing.Ratio} * {Spacing.Ratio}) * 0.125)",
+        "type": "spacing"
+      },
+      "4250": {
+        "value": "{Spacing.Base} * {Spacing.Ratio} * {Spacing.Ratio} * {Spacing.Ratio} + (({Spacing.Base} * {Spacing.Ratio} * {Spacing.Ratio} * {Spacing.Ratio} * {Spacing.Ratio} - {Spacing.Base} * {Spacing.Ratio} * {Spacing.Ratio} * {Spacing.Ratio}) * 0.25)",
+        "type": "spacing"
+      },
+      "4375": {
+        "value": "{Spacing.Base} * {Spacing.Ratio} * {Spacing.Ratio} * {Spacing.Ratio} + (({Spacing.Base} * {Spacing.Ratio} * {Spacing.Ratio} * {Spacing.Ratio} * {Spacing.Ratio} - {Spacing.Base} * {Spacing.Ratio} * {Spacing.Ratio} * {Spacing.Ratio}) * 0.375)",
+        "type": "spacing"
+      },
+      "4500": {
+        "value": "{Spacing.Base} * {Spacing.Ratio} * {Spacing.Ratio} * {Spacing.Ratio} + (({Spacing.Base} * {Spacing.Ratio} * {Spacing.Ratio} * {Spacing.Ratio} * {Spacing.Ratio} - {Spacing.Base} * {Spacing.Ratio} * {Spacing.Ratio} * {Spacing.Ratio}) * 0.5)",
+        "type": "spacing"
+      },
+      "4750": {
+        "value": "{Spacing.Base} * {Spacing.Ratio} * {Spacing.Ratio} * {Spacing.Ratio} + (({Spacing.Base} * {Spacing.Ratio} * {Spacing.Ratio} * {Spacing.Ratio} * {Spacing.Ratio} - {Spacing.Base} * {Spacing.Ratio} * {Spacing.Ratio} * {Spacing.Ratio}) * 0.75)",
+        "type": "spacing"
+      },
+      "5000": {
+        "value": "{Spacing.Base} * {Spacing.Ratio} * {Spacing.Ratio} * {Spacing.Ratio} * {Spacing.Ratio}",
+        "type": "spacing"
+      },
+      "5500": {
+        "value": "{Spacing.Base} * {Spacing.Ratio} * {Spacing.Ratio} * {Spacing.Ratio} * {Spacing.Ratio} + (({Spacing.Base} * {Spacing.Ratio} * {Spacing.Ratio} * {Spacing.Ratio} * {Spacing.Ratio} * {Spacing.Ratio} - {Spacing.Base} * {Spacing.Ratio} * {Spacing.Ratio} * {Spacing.Ratio} * {Spacing.Ratio}) * 0.5)",
+        "type": "spacing"
+      },
+      "6000": {
+        "value": "{Spacing.Base} * {Spacing.Ratio} * {Spacing.Ratio} * {Spacing.Ratio} * {Spacing.Ratio} * {Spacing.Ratio}",
+        "type": "spacing"
+      },
+      "6500": {
+        "value": "{Spacing.Base} * {Spacing.Ratio} * {Spacing.Ratio} * {Spacing.Ratio} * {Spacing.Ratio} * {Spacing.Ratio} + (({Spacing.Base} * {Spacing.Ratio} * {Spacing.Ratio} * {Spacing.Ratio} * {Spacing.Ratio} * {Spacing.Ratio} * {Spacing.Ratio} - {Spacing.Base} * {Spacing.Ratio} * {Spacing.Ratio} * {Spacing.Ratio} * {Spacing.Ratio} * {Spacing.Ratio}) * 0.5)",
+        "type": "spacing"
+      },
+      "7000": {
+        "value": "{Spacing.Base} * {Spacing.Ratio} * {Spacing.Ratio} * {Spacing.Ratio} * {Spacing.Ratio} * {Spacing.Ratio} * {Spacing.Ratio}",
+        "type": "spacing"
+      },
+      "7500": {
+        "value": "{Spacing.Base} * {Spacing.Ratio} * {Spacing.Ratio} * {Spacing.Ratio} * {Spacing.Ratio} * {Spacing.Ratio} * {Spacing.Ratio} + (({Spacing.Base} * {Spacing.Ratio} * {Spacing.Ratio} * {Spacing.Ratio} * {Spacing.Ratio} * {Spacing.Ratio} * {Spacing.Ratio} * {Spacing.Ratio} - {Spacing.Base} * {Spacing.Ratio} * {Spacing.Ratio} * {Spacing.Ratio} * {Spacing.Ratio} * {Spacing.Ratio} * {Spacing.Ratio}) * 0.5)",
+        "type": "spacing"
+      },
+      "8000": {
+        "value": "{Spacing.Base} * {Spacing.Ratio} * {Spacing.Ratio} * {Spacing.Ratio} * {Spacing.Ratio} * {Spacing.Ratio} * {Spacing.Ratio} * {Spacing.Ratio}",
+        "type": "spacing"
+      },
+      "Base": {
+        "value": "8px",
+        "type": "spacing"
+      },
+      "Ratio": {
+        "value": "2",
+        "type": "spacing"
+      },
+      "None": {
+        "value": "0px",
+        "type": "spacing"
+      }
+    },
     "Typography": {
       "Font Family": {
         "Sans": {
@@ -1367,97 +1413,155 @@
       }
     },
     "Spacing": {
-      "Unit": {
-        "x0": {
-          "value": "{Core.Spacing.Unit.x0}",
+      "Composition": {
+        "Space 00": {
+          "value": "{Spacing.None}",
           "type": "spacing"
         },
-        "x025": {
-          "value": "{Core.Spacing.Unit.x025}",
+        "Space 01": {
+          "value": "{Spacing.125}",
           "type": "spacing"
         },
-        "x05": {
-          "value": "{Core.Spacing.Unit.x05}",
+        "Space 02": {
+          "value": "{Spacing.250}",
           "type": "spacing"
         },
-        "x1": {
-          "value": "{Core.Spacing.Unit.x1}",
+        "Space 03": {
+          "value": "{Spacing.500}",
           "type": "spacing"
         },
-        "x2": {
-          "value": "{Core.Spacing.Unit.x2}",
+        "Space 04": {
+          "value": "{Spacing.1000}",
           "type": "spacing"
         },
-        "x3": {
-          "value": "{Core.Spacing.Unit.x3}",
+        "Space 05": {
+          "value": "{Spacing.1500}",
           "type": "spacing"
         },
-        "x4": {
-          "value": "{Core.Spacing.Unit.x4}",
+        "Space 06": {
+          "value": "{Spacing.2000}",
           "type": "spacing"
         },
-        "x5": {
-          "value": "{Core.Spacing.Unit.x5}",
+        "Space 07": {
+          "value": "{Spacing.2250}",
           "type": "spacing"
         },
-        "x6": {
-          "value": "{Core.Spacing.Unit.x6}",
+        "Space 08": {
+          "value": "{Spacing.2500}",
           "type": "spacing"
         },
-        "x7": {
-          "value": "{Core.Spacing.Unit.x7}",
+        "Space 09": {
+          "value": "{Spacing.2750}",
           "type": "spacing"
         },
-        "x8": {
-          "value": "{Core.Spacing.Unit.x8}",
+        "Space 10": {
+          "value": "{Spacing.3000}",
           "type": "spacing"
         },
-        "x9": {
-          "value": "{Core.Spacing.Unit.x9}",
+        "Space 11": {
+          "value": "{Spacing.3125}",
           "type": "spacing"
         },
-        "x10": {
-          "value": "{Core.Spacing.Unit.x10}",
+        "Space 12": {
+          "value": "{Spacing.3250}",
           "type": "spacing"
         },
-        "x11": {
-          "value": "{Core.Spacing.Unit.x11}",
+        "Space 13": {
+          "value": "{Spacing.3375}",
           "type": "spacing"
         },
-        "x12": {
-          "value": "{Core.Spacing.Unit.x12}",
+        "Space 14": {
+          "value": "{Spacing.3500}",
           "type": "spacing"
         },
-        "x13": {
-          "value": "{Core.Spacing.Unit.x13}",
+        "Space 15": {
+          "value": "{Spacing.3625}",
           "type": "spacing"
         },
-        "x14": {
-          "value": "{Core.Spacing.Unit.x14}",
+        "Space 16": {
+          "value": "{Spacing.3750}",
           "type": "spacing"
         },
-        "x15": {
-          "value": "{Core.Spacing.Unit.x15}",
+        "Space 17": {
+          "value": "{Spacing.4000}",
           "type": "spacing"
         },
-        "x16": {
-          "value": "{Core.Spacing.Unit.x16}",
+        "Space 18": {
+          "value": "{Spacing.4125}",
           "type": "spacing"
         },
-        "x17": {
-          "value": "{Core.Spacing.Unit.x17}",
+        "Space 19": {
+          "value": "{Spacing.4250}",
           "type": "spacing"
         },
-        "x18": {
-          "value": "{Core.Spacing.Unit.x18}",
+        "Space 20": {
+          "value": "{Spacing.4500}",
+          "type": "spacing"
+        }
+      },
+      "Baseline": {
+        "Space 00": {
+          "value": "{Spacing.None}",
           "type": "spacing"
         },
-        "x19": {
-          "value": "{Core.Spacing.Unit.x19}",
+        "Space 01": {
+          "value": "{Spacing.500}",
           "type": "spacing"
         },
-        "x20": {
-          "value": "{Core.Spacing.Unit.x20}",
+        "Space 02": {
+          "value": "{Spacing.1000}",
+          "type": "spacing"
+        },
+        "Space 03": {
+          "value": "{Spacing.1500}",
+          "type": "spacing"
+        },
+        "Space 04": {
+          "value": "{Spacing.2000}",
+          "type": "spacing"
+        },
+        "Space 05": {
+          "value": "{Spacing.2500}",
+          "type": "spacing"
+        },
+        "Space 06": {
+          "value": "{Spacing.3000}",
+          "type": "spacing"
+        },
+        "Space 07": {
+          "value": "{Spacing.3500}",
+          "type": "spacing"
+        },
+        "Space 08": {
+          "value": "{Spacing.4000}",
+          "type": "spacing"
+        },
+        "Space 09": {
+          "value": "{Spacing.4500}",
+          "type": "spacing"
+        },
+        "Space 10": {
+          "value": "{Spacing.5000}",
+          "type": "spacing"
+        },
+        "Space 11": {
+          "value": "{Spacing.5500}",
+          "type": "spacing"
+        },
+        "Space 12": {
+          "value": "{Spacing.6000}",
+          "type": "spacing"
+        },
+        "Space 13": {
+          "value": "{Spacing.6500}",
+          "type": "spacing"
+        },
+        "Space 14": {
+          "value": "{Spacing.7000}",
+          "type": "spacing"
+        },
+        "Space 15": {
+          "value": "{Spacing.8000}",
           "type": "spacing"
         }
       }
