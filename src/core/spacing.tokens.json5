@@ -1,98 +1,304 @@
 {
   core: {
     spacing: {
-      unit: {
-        x0: {
-          value: "0px",
-          type: "dimension",
+      base: {
+        value: "8px",
+        type: "dimension",
+      },
+      ratio: {
+        value: "2",
+        type: "number",
+      },
+      none: {
+        value: "0px",
+        type: "dimension",
+      },
+      "125": {
+        value: {
+          base: "{core.spacing.base.value}",
+          ratio: "{core.spacing.ratio.value}",
+          pow: -3,
+          sub_step: 0,
         },
-        x025: {
-          value: "1px",
-          type: "dimension",
+        type: "modular-scale",
+      },
+      "250": {
+        value: {
+          base: "{core.spacing.base.value}",
+          ratio: "{core.spacing.ratio.value}",
+          pow: -2,
+          sub_step: 0,
         },
-        x05: {
-          value: "2px",
-          type: "dimension",
+        type: "modular-scale",
+      },
+      "500": {
+        value: {
+          base: "{core.spacing.base.value}",
+          ratio: "{core.spacing.ratio.value}",
+          pow: -1,
+          sub_step: 0,
         },
-        x1: {
-          value: "4px",
-          type: "dimension",
+        type: "modular-scale",
+      },
+      "1000": {
+        value: {
+          base: "{core.spacing.base.value}",
+          ratio: "{core.spacing.ratio.value}",
+          pow: 0,
+          sub_step: 0,
         },
-        x2: {
-          value: "8px",
-          type: "dimension",
+        type: "modular-scale",
+      },
+      "1250": {
+        type: "modular-scale",
+        value: {
+          base: "{core.spacing.base.value}",
+          ratio: "{core.spacing.ratio.value}",
+          pow: 0,
+          sub_step: 0.25,
         },
-        x3: {
-          value: "12px",
-          type: "dimension",
+      },
+      "1500": {
+        type: "modular-scale",
+        value: {
+          base: "{core.spacing.base.value}",
+          ratio: "{core.spacing.ratio.value}",
+          pow: 0,
+          sub_step: 0.5,
         },
-        x4: {
-          value: "16px",
-          type: "dimension",
+      },
+      "1750": {
+        type: "modular-scale",
+        value: {
+          base: "{core.spacing.base.value}",
+          ratio: "{core.spacing.ratio.value}",
+          pow: 0,
+          sub_step: 0.75,
         },
-        x5: {
-          value: "20px",
-          type: "dimension",
+      },
+      "2000": {
+        type: "modular-scale",
+        value: {
+          base: "{core.spacing.base.value}",
+          ratio: "{core.spacing.ratio.value}",
+          pow: 1,
+          sub_step: 0,
         },
-        x6: {
-          value: "24px",
-          type: "dimension",
+      },
+      "2250": {
+        type: "modular-scale",
+        value: {
+          base: "{core.spacing.base.value}",
+          ratio: "{core.spacing.ratio.value}",
+          pow: 1,
+          sub_step: 0.25,
         },
-        x7: {
-          value: "28px",
-          type: "dimension",
+      },
+      "2500": {
+        type: "modular-scale",
+        value: {
+          base: "{core.spacing.base.value}",
+          ratio: "{core.spacing.ratio.value}",
+          pow: 1,
+          sub_step: 0.5,
         },
-        x8: {
-          value: "32px",
-          type: "dimension",
+      },
+      "2750": {
+        type: "modular-scale",
+        value: {
+          base: "{core.spacing.base.value}",
+          ratio: "{core.spacing.ratio.value}",
+          pow: 1,
+          sub_step: 0.75,
         },
-        x9: {
-          value: "36px",
-          type: "dimension",
+      },
+      "3000": {
+        type: "modular-scale",
+        value: {
+          base: "{core.spacing.base.value}",
+          ratio: "{core.spacing.ratio.value}",
+          pow: 2,
+          sub_step: 0,
         },
-        x10: {
-          value: "40px",
-          type: "dimension",
+      },
+      "3125": {
+        type: "modular-scale",
+        value: {
+          base: "{core.spacing.base.value}",
+          ratio: "{core.spacing.ratio.value}",
+          pow: 2,
+          sub_step: 0.125,
         },
-        x11: {
-          value: "44px",
-          type: "dimension",
+      },
+      "3250": {
+        type: "modular-scale",
+        value: {
+          base: "{core.spacing.base.value}",
+          ratio: "{core.spacing.ratio.value}",
+          pow: 2,
+          sub_step: 0.25,
         },
-        x12: {
-          value: "48px",
-          type: "dimension",
+      },
+      "3375": {
+        type: "modular-scale",
+        value: {
+          base: "{core.spacing.base.value}",
+          ratio: "{core.spacing.ratio.value}",
+          pow: 2,
+          sub_step: 0.375,
         },
-        x13: {
-          value: "52px",
-          type: "dimension",
+      },
+      "3500": {
+        type: "modular-scale",
+        value: {
+          base: "{core.spacing.base.value}",
+          ratio: "{core.spacing.ratio.value}",
+          pow: 2,
+          sub_step: 0.5,
         },
-        x14: {
-          value: "56px",
-          type: "dimension",
+      },
+      "3625": {
+        type: "modular-scale",
+        value: {
+          base: "{core.spacing.base.value}",
+          ratio: "{core.spacing.ratio.value}",
+          pow: 2,
+          sub_step: 0.625,
         },
-        x15: {
-          value: "60px",
-          type: "dimension",
+      },
+      "3750": {
+        type: "modular-scale",
+        value: {
+          base: "{core.spacing.base.value}",
+          ratio: "{core.spacing.ratio.value}",
+          pow: 2,
+          sub_step: 0.75,
         },
-        x16: {
-          value: "64px",
-          type: "dimension",
+      },
+      "3875": {
+        type: "modular-scale",
+        value: {
+          base: "{core.spacing.base.value}",
+          ratio: "{core.spacing.ratio.value}",
+          pow: 2,
+          sub_step: 0.875,
         },
-        x17: {
-          value: "68px",
-          type: "dimension",
+      },
+      "4000": {
+        type: "modular-scale",
+        value: {
+          base: "{core.spacing.base.value}",
+          ratio: "{core.spacing.ratio.value}",
+          pow: 3,
+          sub_step: 0,
         },
-        x18: {
-          value: "72px",
-          type: "dimension",
+      },
+      "4125": {
+        type: "modular-scale",
+        value: {
+          base: "{core.spacing.base.value}",
+          ratio: "{core.spacing.ratio.value}",
+          pow: 3,
+          sub_step: 0.125,
         },
-        x19: {
-          value: "76px",
-          type: "dimension",
+      },
+      "4250": {
+        type: "modular-scale",
+        value: {
+          base: "{core.spacing.base.value}",
+          ratio: "{core.spacing.ratio.value}",
+          pow: 3,
+          sub_step: 0.25,
         },
-        x20: {
-          value: "80px",
-          type: "dimension",
+      },
+      "4375": {
+        type: "modular-scale",
+        value: {
+          base: "{core.spacing.base.value}",
+          ratio: "{core.spacing.ratio.value}",
+          pow: 3,
+          sub_step: 0.375,
+        },
+      },
+      "4500": {
+        type: "modular-scale",
+        value: {
+          base: "{core.spacing.base.value}",
+          ratio: "{core.spacing.ratio.value}",
+          pow: 3,
+          sub_step: 0.5,
+        },
+      },
+      "4750": {
+        type: "modular-scale",
+        value: {
+          base: "{core.spacing.base.value}",
+          ratio: "{core.spacing.ratio.value}",
+          pow: 3,
+          sub_step: 0.75,
+        },
+      },
+      "5000": {
+        type: "modular-scale",
+        value: {
+          base: "{core.spacing.base.value}",
+          ratio: "{core.spacing.ratio.value}",
+          pow: 4,
+          sub_step: 0,
+        },
+      },
+      "5500": {
+        type: "modular-scale",
+        value: {
+          base: "{core.spacing.base.value}",
+          ratio: "{core.spacing.ratio.value}",
+          pow: 4,
+          sub_step: 0.5,
+        },
+      },
+      "6000": {
+        type: "modular-scale",
+        value: {
+          base: "{core.spacing.base.value}",
+          ratio: "{core.spacing.ratio.value}",
+          pow: 5,
+          sub_step: 0,
+        },
+      },
+      "6500": {
+        type: "modular-scale",
+        value: {
+          base: "{core.spacing.base.value}",
+          ratio: "{core.spacing.ratio.value}",
+          pow: 5,
+          sub_step: 0.5,
+        },
+      },
+      "7000": {
+        type: "modular-scale",
+        value: {
+          base: "{core.spacing.base.value}",
+          ratio: "{core.spacing.ratio.value}",
+          pow: 6,
+          sub_step: 0,
+        },
+      },
+      "7500": {
+        type: "modular-scale",
+        value: {
+          base: "{core.spacing.base.value}",
+          ratio: "{core.spacing.ratio.value}",
+          pow: 6,
+          sub_step: 0.5,
+        },
+      },
+      "8000": {
+        type: "modular-scale",
+        value: {
+          base: "{core.spacing.base.value}",
+          ratio: "{core.spacing.ratio.value}",
+          pow: 7,
+          sub_step: 0,
         },
       },
     },

@@ -1,96 +1,154 @@
 {
   spacing: {
-    unit: {
-      x0: {
-        value: "{core.spacing.unit.x0}",
+    composition: {
+      "space-00": {
+        value: "{core.spacing.none.value}",
         type: "dimension",
       },
-      x025: {
-        value: "{core.spacing.unit.x025}",
+      "space-01": {
+        value: "{core.spacing.125.value}",
         type: "dimension",
       },
-      x05: {
-        value: "{core.spacing.unit.x05}",
+      "space-02": {
+        value: "{core.spacing.250.value}",
         type: "dimension",
       },
-      x1: {
-        value: "{core.spacing.unit.x1}",
+      "space-03": {
+        value: "{core.spacing.500.value}",
         type: "dimension",
       },
-      x2: {
-        value: "{core.spacing.unit.x2}",
+      "space-04": {
+        value: "{core.spacing.1000.value}",
         type: "dimension",
       },
-      x3: {
-        value: "{core.spacing.unit.x3}",
+      "space-05": {
+        value: "{core.spacing.1500.value}",
         type: "dimension",
       },
-      x4: {
-        value: "{core.spacing.unit.x4}",
+      "space-06": {
+        value: "{core.spacing.2000.value}",
         type: "dimension",
       },
-      x5: {
-        value: "{core.spacing.unit.x5}",
+      "space-07": {
+        value: "{core.spacing.2250.value}",
         type: "dimension",
       },
-      x6: {
-        value: "{core.spacing.unit.x6}",
+      "space-08": {
+        value: "{core.spacing.2500.value}",
         type: "dimension",
       },
-      x7: {
-        value: "{core.spacing.unit.x7}",
+      "space-09": {
+        value: "{core.spacing.2750.value}",
         type: "dimension",
       },
-      x8: {
-        value: "{core.spacing.unit.x8}",
+      "space-10": {
+        value: "{core.spacing.3000.value}",
         type: "dimension",
       },
-      x9: {
-        value: "{core.spacing.unit.x9}",
+      "space-11": {
+        value: "{core.spacing.3125.value}",
         type: "dimension",
       },
-      x10: {
-        value: "{core.spacing.unit.x10}",
+      "space-12": {
+        value: "{core.spacing.3250.value}",
         type: "dimension",
       },
-      x11: {
-        value: "{core.spacing.unit.x11}",
+      "space-13": {
+        value: "{core.spacing.3375.value}",
         type: "dimension",
       },
-      x12: {
-        value: "{core.spacing.unit.x12}",
+      "space-14": {
+        value: "{core.spacing.3500.value}",
         type: "dimension",
       },
-      x13: {
-        value: "{core.spacing.unit.x13}",
+      "space-15": {
+        value: "{core.spacing.3625.value}",
         type: "dimension",
       },
-      x14: {
-        value: "{core.spacing.unit.x14}",
+      "space-16": {
+        value: "{core.spacing.3750.value}",
         type: "dimension",
       },
-      x15: {
-        value: "{core.spacing.unit.x15}",
+      "space-17": {
+        value: "{core.spacing.4000.value}",
         type: "dimension",
       },
-      x16: {
-        value: "{core.spacing.unit.x16}",
+      "space-18": {
+        value: "{core.spacing.4125.value}",
         type: "dimension",
       },
-      x17: {
-        value: "{core.spacing.unit.x17}",
+      "space-19": {
+        value: "{core.spacing.4250.value}",
         type: "dimension",
       },
-      x18: {
-        value: "{core.spacing.unit.x18}",
+      "space-20": {
+        value: "{core.spacing.4500.value}",
         type: "dimension",
       },
-      x19: {
-        value: "{core.spacing.unit.x19}",
+    },
+    baseline: {
+      "space-00": {
+        value: "{core.spacing.none.value}",
         type: "dimension",
       },
-      x20: {
-        value: "{core.spacing.unit.x20}",
+      "space-01": {
+        value: "{core.spacing.500.value}",
+        type: "dimension",
+      },
+      "space-02": {
+        value: "{core.spacing.1000.value}",
+        type: "dimension",
+      },
+      "space-03": {
+        value: "{core.spacing.1500.value}",
+        type: "dimension",
+      },
+      "space-04": {
+        value: "{core.spacing.2000.value}",
+        type: "dimension",
+      },
+      "space-05": {
+        value: "{core.spacing.2500.value}",
+        type: "dimension",
+      },
+      "space-06": {
+        value: "{core.spacing.3000.value}",
+        type: "dimension",
+      },
+      "space-07": {
+        value: "{core.spacing.3500.value}",
+        type: "dimension",
+      },
+      "space-08": {
+        value: "{core.spacing.4000.value}",
+        type: "dimension",
+      },
+      "space-09": {
+        value: "{core.spacing.4500.value}",
+        type: "dimension",
+      },
+      "space-10": {
+        value: "{core.spacing.5000.value}",
+        type: "dimension",
+      },
+      "space-11": {
+        value: "{core.spacing.5500.value}",
+        type: "dimension",
+      },
+      "space-12": {
+        value: "{core.spacing.6000.value}",
+        type: "dimension",
+      },
+      "space-13": {
+        value: "{core.spacing.6500.value}",
+        type: "dimension",
+      },
+      "space-14": {
+        value: "{core.spacing.7000.value}",
+        type: "dimension",
+      },
+      "space-15": {
+        value: "{core.spacing.8000.value}",
         type: "dimension",
       },
     },

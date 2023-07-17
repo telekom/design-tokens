@@ -42,6 +42,7 @@ const figmaTransformGroup = [
   'color/alpha-hex',
   'typography/figma',
   'text-style/figma',
+  'modular-scale/px',
 ];
 
 const categoryTypeMap = {
@@ -104,7 +105,7 @@ function formatJSON(allTokens, { dictionary, mode }) {
     if (path.includes('Motion')) return;
     // Keep `Core` in path to avoid collisions with same name tokens
     const keepCoreInPathToAvoidCollisionsWithSameNameTokens =
-      path[0] === 'Core' && path[1] !== 'Spacing' && path[1] !== 'Radius';
+      path[0] === 'Core' && path[1] !== 'Radius';
     if (
       path[0] === 'Color' ||
       path[0] === 'Shadow' ||
@@ -189,12 +190,38 @@ function getJSONValue(token, { dictionary, mode }) {
           space: 'hsl',
         });
       }
-      const path = ref.path.map(humanCase);
-      // Keep `Core` in path to avoid collisions with same name tokens
-      if (path[1] !== 'Spacing' && path[1] !== 'Radius') {
-        path.shift();
+      if (token.path[0] === 'core' && 'ratio' in token.original.value) {
+        // Handle spacing calculations!
+        // TODO clean up the mess below (aka make it more readable)
+        const { pow, sub_step } = token.original.value;
+        const baseRef = `{${refs[0].path
+          .map(humanCase)
+          .filter((x) => x !== 'Core')
+          .join('.')}}`;
+        const ratioRef = `{${refs[1].path
+          .map(humanCase)
+          .filter((x) => x !== 'Core')
+          .join('.')}}`;
+        const operator = pow < 0 ? '/' : '*';
+        const calc = (p) =>
+          p === 0
+            ? baseRef
+            : `${baseRef} ${operator} ${new Array(Math.abs(p))
+                .fill(ratioRef)
+                .join(` ${operator} `)}`;
+        const _val = calc(pow);
+        const _next = calc(pow + 1);
+        const _sub = `(${_next} - ${_val}) * ${sub_step}`;
+        value = sub_step > 0 ? `${_val} + (${_sub})` : _val;
+      } else {
+        // Everything else!
+        const path = ref.path.map(humanCase);
+        // Keep `Core` in path to avoid collisions with same name tokens
+        if (path[1] !== 'Radius') {
+          path.shift();
+        }
+        value = `{${path.join('.')}}`;
       }
-      value = `{${path.join('.')}}`;
     }
   }
 

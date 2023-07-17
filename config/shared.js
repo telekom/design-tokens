@@ -284,6 +284,48 @@ StyleDictionary.registerTransform({
   },
 });
 
+/**
+ * Calculate composite spacing values based on a ratio, and substeps
+ */
+StyleDictionary.registerTransform({
+  type: 'value',
+  name: 'modular-scale/px',
+  transitive: true,
+  matcher: (token) => token.original.type === 'modular-scale',
+  transformer: getModularScaleTransform('px'),
+});
+
+/**
+ * Calculate composite spacing values based on a ratio, and substeps
+ */
+StyleDictionary.registerTransform({
+  type: 'value',
+  name: 'modular-scale/rem',
+  transitive: true,
+  matcher: (token) => token.original.type === 'modular-scale',
+  transformer: getModularScaleTransform('rem'),
+});
+
+/**
+ * @todo document this better / make it more readable?
+ */
+function getModularScaleTransform(unit = 'rem') {
+  return function (token) {
+    const { base, ratio, pow, sub_step } = token.value;
+    const parsedRatio = parseFloat(ratio.replace('px', ''), 10);
+    let parsedBase = parseFloat(base.replace(/([pxrem])+/gi, ''), 10);
+    if (base.indexOf('rem') > 0 && unit === 'px') {
+      parsedBase = parsedBase * 16;
+    }
+    let val = Math.pow(parsedRatio, pow) * parsedBase;
+    if (sub_step > 0) {
+      const nextStep = Math.pow(parsedRatio, pow + 1) * parsedBase;
+      val = val + (nextStep - val) * sub_step;
+    }
+    return `${unit === 'px' ? Math.ceil(val) : val}${unit}`;
+  };
+}
+
 module.exports = {
   humanCase,
   isColorAlphaComposite,
