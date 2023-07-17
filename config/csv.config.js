@@ -19,6 +19,7 @@ const cssTransformGroup = [
   'time/seconds',
   'content/icon',
   'size/px',
+  // 'modular-scale/px',
   'color/alpha-hex',
   'color/css',
   'text-style/css',
@@ -91,6 +92,9 @@ function stringifyObjectValue(value, token) {
   }
   if (token.type === 'color' && value.alpha !== undefined) {
     return `${value.color} / ${value.alpha}`;
+  }
+  if (token.type === 'modular-scale') {
+    return JSON.stringify(value);
   }
   return value;
 }

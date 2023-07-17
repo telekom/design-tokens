@@ -24,6 +24,7 @@ const cssTransformGroup = [
   'name/cti/kebab2',
   'time/seconds',
   'content/icon',
+  'modular-scale/rem',
   'size/rem',
   'color/alpha',
   'color/css',
