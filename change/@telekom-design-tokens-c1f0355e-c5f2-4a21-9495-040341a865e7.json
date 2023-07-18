@@ -1,7 +1,0 @@
-{
-  "type": "prerelease",
-  "comment": "Improve Figma output with core tokens with refs, and $themes",
-  "packageName": "@telekom/design-tokens",
-  "email": "ac@iconstorm.com",
-  "dependentChangeType": "patch"
-}

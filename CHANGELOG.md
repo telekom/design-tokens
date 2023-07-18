@@ -1,8 +1,20 @@
 # Change Log - @telekom/design-tokens
 
-This log was last generated on Mon, 19 Jun 2023 10:39:06 GMT and should not be manually modified.
+This log was last generated on Tue, 18 Jul 2023 12:43:52 GMT and should not be manually modified.
 
 <!-- Start content -->
+
+## 1.0.0-beta.8
+
+Tue, 18 Jul 2023 12:43:52 GMT
+
+### Changes
+
+- Refactor spacing tokens completely, better semantics (ac@iconstorm.com)
+- Add semantic radius/none (ac@iconstorm.com)
+- Improve Figma output with core tokens with refs, and $themes (ac@iconstorm.com)
+- Add CSV output to import in Notion database (ac@iconstorm.com)
+- Improve types for typography tokens in Figma (ac@iconstorm.com)
 
 ## 1.0.0-beta.7
 

@@ -2,6 +2,45 @@
   "name": "@telekom/design-tokens",
   "entries": [
     {
+      "date": "Tue, 18 Jul 2023 12:43:52 GMT",
+      "tag": "@telekom/design-tokens_v1.0.0-beta.8",
+      "version": "1.0.0-beta.8",
+      "comments": {
+        "prerelease": [
+          {
+            "author": "ac@iconstorm.com",
+            "package": "@telekom/design-tokens",
+            "commit": "6c4a14486d2d68738ee90c19c9807f23c2c48b39",
+            "comment": "Refactor spacing tokens completely, better semantics"
+          },
+          {
+            "author": "ac@iconstorm.com",
+            "package": "@telekom/design-tokens",
+            "commit": "44d3200b90cfa69a5025a94d64ce888ebb03fbef",
+            "comment": "Add semantic radius/none"
+          },
+          {
+            "author": "ac@iconstorm.com",
+            "package": "@telekom/design-tokens",
+            "commit": "66034e8c7e324bdd17c0bed31edf828271c6a62f",
+            "comment": "Improve Figma output with core tokens with refs, and $themes"
+          },
+          {
+            "author": "ac@iconstorm.com",
+            "package": "@telekom/design-tokens",
+            "commit": "7d664547fc03d58e63dd2c9c59e6705fb2d9f5ab",
+            "comment": "Add CSV output to import in Notion database"
+          },
+          {
+            "author": "ac@iconstorm.com",
+            "package": "@telekom/design-tokens",
+            "commit": "8d68a0b28ae3c5fbdbcd5486a8d3fafffb95b5d2",
+            "comment": "Improve types for typography tokens in Figma"
+          }
+        ]
+      }
+    },
+    {
       "date": "Mon, 19 Jun 2023 10:39:06 GMT",
       "tag": "@telekom/design-tokens_v1.0.0-beta.7",
       "version": "1.0.0-beta.7",
