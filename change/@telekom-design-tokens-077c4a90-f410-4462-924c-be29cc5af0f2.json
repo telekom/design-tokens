@@ -1,7 +1,0 @@
-{
-  "type": "prerelease",
-  "comment": "Refactor spacing tokens completely, better semantics",
-  "packageName": "@telekom/design-tokens",
-  "email": "ac@iconstorm.com",
-  "dependentChangeType": "patch"
-}

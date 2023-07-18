@@ -1,7 +1,0 @@
-{
-  "type": "prerelease",
-  "comment": "Add CSV output to import in Notion database",
-  "packageName": "@telekom/design-tokens",
-  "email": "ac@iconstorm.com",
-  "dependentChangeType": "patch"
-}

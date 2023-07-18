@@ -1,7 +1,0 @@
-{
-  "type": "prerelease",
-  "comment": "Improve types for typography tokens in Figma",
-  "packageName": "@telekom/design-tokens",
-  "email": "ac@iconstorm.com",
-  "dependentChangeType": "patch"
-}
