@@ -172,11 +172,11 @@
         "type": "color"
       },
       "Cyan": {
-        "value": "{Color.Cyan.400}",
+        "value": "#00738A",
         "type": "color"
       },
       "Teal": {
-        "value": "{Color.Teal.400}",
+        "value": "#177364",
         "type": "color"
       },
       "Green": {
@@ -184,7 +184,7 @@
         "type": "color"
       },
       "Olive": {
-        "value": "{Color.Olive.400}",
+        "value": "#557317",
         "type": "color"
       },
       "Brown": {
@@ -192,7 +192,7 @@
         "type": "color"
       },
       "Yellow": {
-        "value": "{Color.Yellow.500}",
+        "value": "#AC5600",
         "type": "color"
       },
       "Orange": {
