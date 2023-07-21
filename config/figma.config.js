@@ -171,8 +171,8 @@ function getJSONValue(token, { dictionary, mode }) {
   if (dictionary.usesReference(token.original.value)) {
     let refs = hasMode(token)
       ? [
-          ...dictionary.getReferences(token.original.value.light),
-          ...dictionary.getReferences(token.original.value.dark),
+          ...getRefOrHardcodedValue(token.original.value.light, { dictionary }),
+          ...getRefOrHardcodedValue(token.original.value.dark, { dictionary }),
         ]
       : dictionary.getReferences(token.original.value);
     // ! "shadow" type core tokens result in refs.length === 0
@@ -213,6 +213,9 @@ function getJSONValue(token, { dictionary, mode }) {
         const _next = calc(pow + 1);
         const _sub = `(${_next} - ${_val}) * ${sub_step}`;
         value = sub_step > 0 ? `${_val} + (${_sub})` : _val;
+      } else if (hasMode(token) && typeof ref === 'string') {
+        // Special case for hard-coded values in either light or dark mode
+        value = ref;
       } else {
         // Everything else!
         const path = ref.path.map(humanCase);
@@ -229,6 +232,12 @@ function getJSONValue(token, { dictionary, mode }) {
     value,
     ...attributes,
   };
+}
+
+// Special case for hard-coded values in either light or dark mode
+function getRefOrHardcodedValue(value, { dictionary }) {
+  const refs = dictionary.getReferences(value);
+  return refs.length > 0 ? refs : [value];
 }
 
 StyleDictionary.registerTransform({
