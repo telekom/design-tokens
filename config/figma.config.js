@@ -168,7 +168,6 @@ function getJSONValue(token, { dictionary, mode }) {
   } else if (token.path.includes('size')) {
     attributes.type = categoryTypeMap['size'];
   }
-  
 
   // Keep reference when appropriate e.g. `{Core.Color.Black}`
   // (mode is important!)
