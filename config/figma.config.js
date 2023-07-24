@@ -51,6 +51,7 @@ const categoryTypeMap = {
   radius: 'borderRadius',
   shadow: 'boxShadow',
   spacing: 'spacing',
+  size: 'sizing',
   textStyle: 'typography',
   font: 'fontFamilies',
 };
@@ -164,7 +165,10 @@ function getJSONValue(token, { dictionary, mode }) {
     attributes.type = categoryTypeMap['radius'];
   } else if (token.path.includes('spacing')) {
     attributes.type = categoryTypeMap['spacing'];
+  } else if (token.path.includes('size')) {
+    attributes.type = categoryTypeMap['size'];
   }
+  
 
   // Keep reference when appropriate e.g. `{Core.Color.Black}`
   // (mode is important!)
@@ -224,6 +228,9 @@ function getJSONValue(token, { dictionary, mode }) {
           path.shift();
         }
         value = `{${path.join('.')}}`;
+        // value = typeof token.original.value === 'string'
+        //   ? token.original.value.replace(ref.value, () => `{${path.join('.')}}`)
+        //   : `{${path.join('.')}}`;
       }
     }
   }
