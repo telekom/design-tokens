@@ -52,7 +52,7 @@ const categoryTypeMap = {
   shadow: 'boxShadow',
   spacing: 'spacing',
   size: 'sizing',
-  textStyle: 'typography',
+  'text-style': 'typography',
   font: 'fontFamilies',
 };
 
@@ -138,7 +138,7 @@ function getJSONValue(token, { dictionary, mode }) {
   }
   // Set type
   if (token.path.includes('typography')) {
-    if (token.path.includes('font-size')) {
+    if (token.path.includes('font-size') || token.path.includes('font-scale')) {
       attributes.type = 'fontSizes';
     }
     if (token.path.includes('font-family')) {
@@ -153,8 +153,8 @@ function getJSONValue(token, { dictionary, mode }) {
     if (token.path.includes('letter-spacing')) {
       attributes.type = 'letterSpacing';
     }
-  } else if (token.path.includes('textStyle')) {
-    attributes.type = categoryTypeMap['textStyle'];
+  } else if (token.path.includes('text-style')) {
+    attributes.type = categoryTypeMap['text-style'];
   } else if (token.path.includes('shadow')) {
     attributes.type = categoryTypeMap['shadow'];
   } else if (token.path.includes('line-weight')) {
