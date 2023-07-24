@@ -165,6 +165,8 @@ function getJSONValue(token, { dictionary, mode }) {
     attributes.type = categoryTypeMap['radius'];
   } else if (token.path.includes('spacing')) {
     attributes.type = categoryTypeMap['spacing'];
+  } else if (token.path.includes('dimension')) {
+    attributes.type = categoryTypeMap['spacing'];
   } else if (token.path.includes('size')) {
     attributes.type = categoryTypeMap['size'];
   }
