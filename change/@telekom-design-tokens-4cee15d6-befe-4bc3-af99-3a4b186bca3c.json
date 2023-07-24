@@ -1,0 +1,7 @@
+{
+  "type": "prerelease",
+  "comment": "Add new tokens including radius/xs and radius/md-sm, shadow/intense, line-spacing/moderate and branding new sizing",
+  "packageName": "@telekom/design-tokens",
+  "email": "ac@iconstorm.com",
+  "dependentChangeType": "patch"
+}
