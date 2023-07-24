@@ -197,6 +197,7 @@ module.exports = {
         {
           destination: OUTPUT_BASE_FILENAME + '.config.js',
           format: 'tailwindcss/preset',
+          filter: (token) => !token.path.includes('experimental'),
           options: {
             fileHeader: 'tailwindcss/preset-header',
           },
