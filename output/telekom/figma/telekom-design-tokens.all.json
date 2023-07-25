@@ -641,6 +641,232 @@
         }
       }
     },
+    "Dimension": {
+      "125": {
+        "value": "{Dimension.Base} / {Dimension.Ratio} / {Dimension.Ratio} / {Dimension.Ratio}",
+        "type": "spacing"
+      },
+      "250": {
+        "value": "{Dimension.Base} / {Dimension.Ratio} / {Dimension.Ratio}",
+        "type": "spacing"
+      },
+      "500": {
+        "value": "{Dimension.Base} / {Dimension.Ratio}",
+        "type": "spacing"
+      },
+      "750": {
+        "value": "{Dimension.Base} / {Dimension.Ratio} + (({Dimension.Base} - {Dimension.Base} / {Dimension.Ratio}) * 0.5)",
+        "type": "spacing"
+      },
+      "1000": {
+        "value": "{Dimension.Base}",
+        "type": "spacing"
+      },
+      "1250": {
+        "value": "{Dimension.Base} + (({Dimension.Base} * {Dimension.Ratio} - {Dimension.Base}) * 0.25)",
+        "type": "spacing"
+      },
+      "1500": {
+        "value": "{Dimension.Base} + (({Dimension.Base} * {Dimension.Ratio} - {Dimension.Base}) * 0.5)",
+        "type": "spacing"
+      },
+      "1750": {
+        "value": "{Dimension.Base} + (({Dimension.Base} * {Dimension.Ratio} - {Dimension.Base}) * 0.75)",
+        "type": "spacing"
+      },
+      "2000": {
+        "value": "{Dimension.Base} * {Dimension.Ratio}",
+        "type": "spacing"
+      },
+      "2250": {
+        "value": "{Dimension.Base} * {Dimension.Ratio} + (({Dimension.Base} * {Dimension.Ratio} * {Dimension.Ratio} - {Dimension.Base} * {Dimension.Ratio}) * 0.25)",
+        "type": "spacing"
+      },
+      "2500": {
+        "value": "{Dimension.Base} * {Dimension.Ratio} + (({Dimension.Base} * {Dimension.Ratio} * {Dimension.Ratio} - {Dimension.Base} * {Dimension.Ratio}) * 0.5)",
+        "type": "spacing"
+      },
+      "2750": {
+        "value": "{Dimension.Base} * {Dimension.Ratio} + (({Dimension.Base} * {Dimension.Ratio} * {Dimension.Ratio} - {Dimension.Base} * {Dimension.Ratio}) * 0.75)",
+        "type": "spacing"
+      },
+      "3000": {
+        "value": "{Dimension.Base} * {Dimension.Ratio} * {Dimension.Ratio}",
+        "type": "spacing"
+      },
+      "3125": {
+        "value": "{Dimension.Base} * {Dimension.Ratio} * {Dimension.Ratio} + (({Dimension.Base} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} - {Dimension.Base} * {Dimension.Ratio} * {Dimension.Ratio}) * 0.125)",
+        "type": "spacing"
+      },
+      "3250": {
+        "value": "{Dimension.Base} * {Dimension.Ratio} * {Dimension.Ratio} + (({Dimension.Base} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} - {Dimension.Base} * {Dimension.Ratio} * {Dimension.Ratio}) * 0.25)",
+        "type": "spacing"
+      },
+      "3375": {
+        "value": "{Dimension.Base} * {Dimension.Ratio} * {Dimension.Ratio} + (({Dimension.Base} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} - {Dimension.Base} * {Dimension.Ratio} * {Dimension.Ratio}) * 0.375)",
+        "type": "spacing"
+      },
+      "3500": {
+        "value": "{Dimension.Base} * {Dimension.Ratio} * {Dimension.Ratio} + (({Dimension.Base} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} - {Dimension.Base} * {Dimension.Ratio} * {Dimension.Ratio}) * 0.5)",
+        "type": "spacing"
+      },
+      "3625": {
+        "value": "{Dimension.Base} * {Dimension.Ratio} * {Dimension.Ratio} + (({Dimension.Base} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} - {Dimension.Base} * {Dimension.Ratio} * {Dimension.Ratio}) * 0.625)",
+        "type": "spacing"
+      },
+      "3750": {
+        "value": "{Dimension.Base} * {Dimension.Ratio} * {Dimension.Ratio} + (({Dimension.Base} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} - {Dimension.Base} * {Dimension.Ratio} * {Dimension.Ratio}) * 0.75)",
+        "type": "spacing"
+      },
+      "3875": {
+        "value": "{Dimension.Base} * {Dimension.Ratio} * {Dimension.Ratio} + (({Dimension.Base} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} - {Dimension.Base} * {Dimension.Ratio} * {Dimension.Ratio}) * 0.875)",
+        "type": "spacing"
+      },
+      "4000": {
+        "value": "{Dimension.Base} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio}",
+        "type": "spacing"
+      },
+      "4125": {
+        "value": "{Dimension.Base} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} + (({Dimension.Base} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} - {Dimension.Base} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio}) * 0.125)",
+        "type": "spacing"
+      },
+      "4250": {
+        "value": "{Dimension.Base} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} + (({Dimension.Base} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} - {Dimension.Base} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio}) * 0.25)",
+        "type": "spacing"
+      },
+      "4375": {
+        "value": "{Dimension.Base} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} + (({Dimension.Base} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} - {Dimension.Base} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio}) * 0.375)",
+        "type": "spacing"
+      },
+      "4500": {
+        "value": "{Dimension.Base} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} + (({Dimension.Base} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} - {Dimension.Base} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio}) * 0.5)",
+        "type": "spacing"
+      },
+      "4625": {
+        "value": "{Dimension.Base} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} + (({Dimension.Base} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} - {Dimension.Base} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio}) * 0.625)",
+        "type": "spacing"
+      },
+      "4750": {
+        "value": "{Dimension.Base} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} + (({Dimension.Base} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} - {Dimension.Base} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio}) * 0.75)",
+        "type": "spacing"
+      },
+      "4875": {
+        "value": "{Dimension.Base} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} + (({Dimension.Base} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} - {Dimension.Base} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio}) * 0.875)",
+        "type": "spacing"
+      },
+      "5000": {
+        "value": "{Dimension.Base} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio}",
+        "type": "spacing"
+      },
+      "5125": {
+        "value": "{Dimension.Base} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} + (({Dimension.Base} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} - {Dimension.Base} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio}) * 0.125)",
+        "type": "spacing"
+      },
+      "5250": {
+        "value": "{Dimension.Base} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} + (({Dimension.Base} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} - {Dimension.Base} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio}) * 0.25)",
+        "type": "spacing"
+      },
+      "5375": {
+        "value": "{Dimension.Base} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} + (({Dimension.Base} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} - {Dimension.Base} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio}) * 0.375)",
+        "type": "spacing"
+      },
+      "5500": {
+        "value": "{Dimension.Base} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} + (({Dimension.Base} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} - {Dimension.Base} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio}) * 0.5)",
+        "type": "spacing"
+      },
+      "5625": {
+        "value": "{Dimension.Base} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} + (({Dimension.Base} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} - {Dimension.Base} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio}) * 0.625)",
+        "type": "spacing"
+      },
+      "5750": {
+        "value": "{Dimension.Base} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} + (({Dimension.Base} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} - {Dimension.Base} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio}) * 0.75)",
+        "type": "spacing"
+      },
+      "5875": {
+        "value": "{Dimension.Base} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} + (({Dimension.Base} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} - {Dimension.Base} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio}) * 0.875)",
+        "type": "spacing"
+      },
+      "6000": {
+        "value": "{Dimension.Base} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio}",
+        "type": "spacing"
+      },
+      "6125": {
+        "value": "{Dimension.Base} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} + (({Dimension.Base} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} - {Dimension.Base} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio}) * 0.125)",
+        "type": "spacing"
+      },
+      "6250": {
+        "value": "{Dimension.Base} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} + (({Dimension.Base} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} - {Dimension.Base} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio}) * 0.25)",
+        "type": "spacing"
+      },
+      "6375": {
+        "value": "{Dimension.Base} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} + (({Dimension.Base} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} - {Dimension.Base} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio}) * 0.375)",
+        "type": "spacing"
+      },
+      "6500": {
+        "value": "{Dimension.Base} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} + (({Dimension.Base} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} - {Dimension.Base} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio}) * 0.5)",
+        "type": "spacing"
+      },
+      "6625": {
+        "value": "{Dimension.Base} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} + (({Dimension.Base} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} - {Dimension.Base} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio}) * 0.625)",
+        "type": "spacing"
+      },
+      "6750": {
+        "value": "{Dimension.Base} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} + (({Dimension.Base} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} - {Dimension.Base} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio}) * 0.75)",
+        "type": "spacing"
+      },
+      "6875": {
+        "value": "{Dimension.Base} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} + (({Dimension.Base} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} - {Dimension.Base} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio}) * 0.875)",
+        "type": "spacing"
+      },
+      "7000": {
+        "value": "{Dimension.Base} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio}",
+        "type": "spacing"
+      },
+      "7125": {
+        "value": "{Dimension.Base} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} + (({Dimension.Base} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} - {Dimension.Base} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio}) * 0.125)",
+        "type": "spacing"
+      },
+      "7250": {
+        "value": "{Dimension.Base} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} + (({Dimension.Base} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} - {Dimension.Base} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio}) * 0.25)",
+        "type": "spacing"
+      },
+      "7375": {
+        "value": "{Dimension.Base} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} + (({Dimension.Base} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} - {Dimension.Base} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio}) * 0.375)",
+        "type": "spacing"
+      },
+      "7500": {
+        "value": "{Dimension.Base} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} + (({Dimension.Base} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} - {Dimension.Base} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio}) * 0.5)",
+        "type": "spacing"
+      },
+      "7625": {
+        "value": "{Dimension.Base} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} + (({Dimension.Base} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} - {Dimension.Base} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio}) * 0.625)",
+        "type": "spacing"
+      },
+      "7750": {
+        "value": "{Dimension.Base} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} + (({Dimension.Base} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} - {Dimension.Base} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio}) * 0.75)",
+        "type": "spacing"
+      },
+      "7875": {
+        "value": "{Dimension.Base} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} + (({Dimension.Base} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} - {Dimension.Base} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio}) * 0.875)",
+        "type": "spacing"
+      },
+      "8000": {
+        "value": "{Dimension.Base} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio} * {Dimension.Ratio}",
+        "type": "spacing"
+      },
+      "Base": {
+        "value": "8px",
+        "type": "spacing"
+      },
+      "Ratio": {
+        "value": "2",
+        "type": "spacing"
+      },
+      "None": {
+        "value": "0px",
+        "type": "spacing"
+      }
+    },
     "Line Weight": {
       "sm": {
         "value": "1px",
@@ -687,8 +913,16 @@
           "value": "0px",
           "type": "borderRadius"
         },
+        "xs": {
+          "value": "2px",
+          "type": "borderRadius"
+        },
         "sm": {
           "value": "4px",
+          "type": "borderRadius"
+        },
+        "Md Sm": {
+          "value": "6px",
           "type": "borderRadius"
         },
         "md": {
@@ -1051,149 +1285,36 @@
               "type": "boxShadow"
             }
           }
+        },
+        "Intense": {
+          "value": [
+            {
+              "x": 0,
+              "y": 0,
+              "blur": 2,
+              "spread": 0,
+              "color": "#0000003d",
+              "type": "dropShadow"
+            },
+            {
+              "x": 0,
+              "y": 2,
+              "blur": 4,
+              "spread": 0,
+              "color": "#0000003d",
+              "type": "dropShadow"
+            },
+            {
+              "x": 0,
+              "y": 4,
+              "blur": 12,
+              "spread": 0,
+              "color": "#00000042",
+              "type": "dropShadow"
+            }
+          ],
+          "type": "boxShadow"
         }
-      }
-    },
-    "Spacing": {
-      "125": {
-        "value": "{Spacing.Base} / {Spacing.Ratio} / {Spacing.Ratio} / {Spacing.Ratio}",
-        "type": "spacing"
-      },
-      "250": {
-        "value": "{Spacing.Base} / {Spacing.Ratio} / {Spacing.Ratio}",
-        "type": "spacing"
-      },
-      "500": {
-        "value": "{Spacing.Base} / {Spacing.Ratio}",
-        "type": "spacing"
-      },
-      "1000": {
-        "value": "{Spacing.Base}",
-        "type": "spacing"
-      },
-      "1250": {
-        "value": "{Spacing.Base} + (({Spacing.Base} * {Spacing.Ratio} - {Spacing.Base}) * 0.25)",
-        "type": "spacing"
-      },
-      "1500": {
-        "value": "{Spacing.Base} + (({Spacing.Base} * {Spacing.Ratio} - {Spacing.Base}) * 0.5)",
-        "type": "spacing"
-      },
-      "1750": {
-        "value": "{Spacing.Base} + (({Spacing.Base} * {Spacing.Ratio} - {Spacing.Base}) * 0.75)",
-        "type": "spacing"
-      },
-      "2000": {
-        "value": "{Spacing.Base} * {Spacing.Ratio}",
-        "type": "spacing"
-      },
-      "2250": {
-        "value": "{Spacing.Base} * {Spacing.Ratio} + (({Spacing.Base} * {Spacing.Ratio} * {Spacing.Ratio} - {Spacing.Base} * {Spacing.Ratio}) * 0.25)",
-        "type": "spacing"
-      },
-      "2500": {
-        "value": "{Spacing.Base} * {Spacing.Ratio} + (({Spacing.Base} * {Spacing.Ratio} * {Spacing.Ratio} - {Spacing.Base} * {Spacing.Ratio}) * 0.5)",
-        "type": "spacing"
-      },
-      "2750": {
-        "value": "{Spacing.Base} * {Spacing.Ratio} + (({Spacing.Base} * {Spacing.Ratio} * {Spacing.Ratio} - {Spacing.Base} * {Spacing.Ratio}) * 0.75)",
-        "type": "spacing"
-      },
-      "3000": {
-        "value": "{Spacing.Base} * {Spacing.Ratio} * {Spacing.Ratio}",
-        "type": "spacing"
-      },
-      "3125": {
-        "value": "{Spacing.Base} * {Spacing.Ratio} * {Spacing.Ratio} + (({Spacing.Base} * {Spacing.Ratio} * {Spacing.Ratio} * {Spacing.Ratio} - {Spacing.Base} * {Spacing.Ratio} * {Spacing.Ratio}) * 0.125)",
-        "type": "spacing"
-      },
-      "3250": {
-        "value": "{Spacing.Base} * {Spacing.Ratio} * {Spacing.Ratio} + (({Spacing.Base} * {Spacing.Ratio} * {Spacing.Ratio} * {Spacing.Ratio} - {Spacing.Base} * {Spacing.Ratio} * {Spacing.Ratio}) * 0.25)",
-        "type": "spacing"
-      },
-      "3375": {
-        "value": "{Spacing.Base} * {Spacing.Ratio} * {Spacing.Ratio} + (({Spacing.Base} * {Spacing.Ratio} * {Spacing.Ratio} * {Spacing.Ratio} - {Spacing.Base} * {Spacing.Ratio} * {Spacing.Ratio}) * 0.375)",
-        "type": "spacing"
-      },
-      "3500": {
-        "value": "{Spacing.Base} * {Spacing.Ratio} * {Spacing.Ratio} + (({Spacing.Base} * {Spacing.Ratio} * {Spacing.Ratio} * {Spacing.Ratio} - {Spacing.Base} * {Spacing.Ratio} * {Spacing.Ratio}) * 0.5)",
-        "type": "spacing"
-      },
-      "3625": {
-        "value": "{Spacing.Base} * {Spacing.Ratio} * {Spacing.Ratio} + (({Spacing.Base} * {Spacing.Ratio} * {Spacing.Ratio} * {Spacing.Ratio} - {Spacing.Base} * {Spacing.Ratio} * {Spacing.Ratio}) * 0.625)",
-        "type": "spacing"
-      },
-      "3750": {
-        "value": "{Spacing.Base} * {Spacing.Ratio} * {Spacing.Ratio} + (({Spacing.Base} * {Spacing.Ratio} * {Spacing.Ratio} * {Spacing.Ratio} - {Spacing.Base} * {Spacing.Ratio} * {Spacing.Ratio}) * 0.75)",
-        "type": "spacing"
-      },
-      "3875": {
-        "value": "{Spacing.Base} * {Spacing.Ratio} * {Spacing.Ratio} + (({Spacing.Base} * {Spacing.Ratio} * {Spacing.Ratio} * {Spacing.Ratio} - {Spacing.Base} * {Spacing.Ratio} * {Spacing.Ratio}) * 0.875)",
-        "type": "spacing"
-      },
-      "4000": {
-        "value": "{Spacing.Base} * {Spacing.Ratio} * {Spacing.Ratio} * {Spacing.Ratio}",
-        "type": "spacing"
-      },
-      "4125": {
-        "value": "{Spacing.Base} * {Spacing.Ratio} * {Spacing.Ratio} * {Spacing.Ratio} + (({Spacing.Base} * {Spacing.Ratio} * {Spacing.Ratio} * {Spacing.Ratio} * {Spacing.Ratio} - {Spacing.Base} * {Spacing.Ratio} * {Spacing.Ratio} * {Spacing.Ratio}) * 0.125)",
-        "type": "spacing"
-      },
-      "4250": {
-        "value": "{Spacing.Base} * {Spacing.Ratio} * {Spacing.Ratio} * {Spacing.Ratio} + (({Spacing.Base} * {Spacing.Ratio} * {Spacing.Ratio} * {Spacing.Ratio} * {Spacing.Ratio} - {Spacing.Base} * {Spacing.Ratio} * {Spacing.Ratio} * {Spacing.Ratio}) * 0.25)",
-        "type": "spacing"
-      },
-      "4375": {
-        "value": "{Spacing.Base} * {Spacing.Ratio} * {Spacing.Ratio} * {Spacing.Ratio} + (({Spacing.Base} * {Spacing.Ratio} * {Spacing.Ratio} * {Spacing.Ratio} * {Spacing.Ratio} - {Spacing.Base} * {Spacing.Ratio} * {Spacing.Ratio} * {Spacing.Ratio}) * 0.375)",
-        "type": "spacing"
-      },
-      "4500": {
-        "value": "{Spacing.Base} * {Spacing.Ratio} * {Spacing.Ratio} * {Spacing.Ratio} + (({Spacing.Base} * {Spacing.Ratio} * {Spacing.Ratio} * {Spacing.Ratio} * {Spacing.Ratio} - {Spacing.Base} * {Spacing.Ratio} * {Spacing.Ratio} * {Spacing.Ratio}) * 0.5)",
-        "type": "spacing"
-      },
-      "4750": {
-        "value": "{Spacing.Base} * {Spacing.Ratio} * {Spacing.Ratio} * {Spacing.Ratio} + (({Spacing.Base} * {Spacing.Ratio} * {Spacing.Ratio} * {Spacing.Ratio} * {Spacing.Ratio} - {Spacing.Base} * {Spacing.Ratio} * {Spacing.Ratio} * {Spacing.Ratio}) * 0.75)",
-        "type": "spacing"
-      },
-      "5000": {
-        "value": "{Spacing.Base} * {Spacing.Ratio} * {Spacing.Ratio} * {Spacing.Ratio} * {Spacing.Ratio}",
-        "type": "spacing"
-      },
-      "5500": {
-        "value": "{Spacing.Base} * {Spacing.Ratio} * {Spacing.Ratio} * {Spacing.Ratio} * {Spacing.Ratio} + (({Spacing.Base} * {Spacing.Ratio} * {Spacing.Ratio} * {Spacing.Ratio} * {Spacing.Ratio} * {Spacing.Ratio} - {Spacing.Base} * {Spacing.Ratio} * {Spacing.Ratio} * {Spacing.Ratio} * {Spacing.Ratio}) * 0.5)",
-        "type": "spacing"
-      },
-      "6000": {
-        "value": "{Spacing.Base} * {Spacing.Ratio} * {Spacing.Ratio} * {Spacing.Ratio} * {Spacing.Ratio} * {Spacing.Ratio}",
-        "type": "spacing"
-      },
-      "6500": {
-        "value": "{Spacing.Base} * {Spacing.Ratio} * {Spacing.Ratio} * {Spacing.Ratio} * {Spacing.Ratio} * {Spacing.Ratio} + (({Spacing.Base} * {Spacing.Ratio} * {Spacing.Ratio} * {Spacing.Ratio} * {Spacing.Ratio} * {Spacing.Ratio} * {Spacing.Ratio} - {Spacing.Base} * {Spacing.Ratio} * {Spacing.Ratio} * {Spacing.Ratio} * {Spacing.Ratio} * {Spacing.Ratio}) * 0.5)",
-        "type": "spacing"
-      },
-      "7000": {
-        "value": "{Spacing.Base} * {Spacing.Ratio} * {Spacing.Ratio} * {Spacing.Ratio} * {Spacing.Ratio} * {Spacing.Ratio} * {Spacing.Ratio}",
-        "type": "spacing"
-      },
-      "7500": {
-        "value": "{Spacing.Base} * {Spacing.Ratio} * {Spacing.Ratio} * {Spacing.Ratio} * {Spacing.Ratio} * {Spacing.Ratio} * {Spacing.Ratio} + (({Spacing.Base} * {Spacing.Ratio} * {Spacing.Ratio} * {Spacing.Ratio} * {Spacing.Ratio} * {Spacing.Ratio} * {Spacing.Ratio} * {Spacing.Ratio} - {Spacing.Base} * {Spacing.Ratio} * {Spacing.Ratio} * {Spacing.Ratio} * {Spacing.Ratio} * {Spacing.Ratio} * {Spacing.Ratio}) * 0.5)",
-        "type": "spacing"
-      },
-      "8000": {
-        "value": "{Spacing.Base} * {Spacing.Ratio} * {Spacing.Ratio} * {Spacing.Ratio} * {Spacing.Ratio} * {Spacing.Ratio} * {Spacing.Ratio} * {Spacing.Ratio}",
-        "type": "spacing"
-      },
-      "Base": {
-        "value": "8px",
-        "type": "spacing"
-      },
-      "Ratio": {
-        "value": "2",
-        "type": "spacing"
-      },
-      "None": {
-        "value": "0px",
-        "type": "spacing"
       }
     },
     "Typography": {
@@ -1236,67 +1357,67 @@
       "Font Scale": {
         "1": {
           "value": "10",
-          "type": "dimension"
+          "type": "fontSizes"
         },
         "2": {
           "value": "12",
-          "type": "dimension"
+          "type": "fontSizes"
         },
         "3": {
           "value": "14",
-          "type": "dimension"
+          "type": "fontSizes"
         },
         "4": {
           "value": "16",
-          "type": "dimension"
+          "type": "fontSizes"
         },
         "5": {
           "value": "18",
-          "type": "dimension"
+          "type": "fontSizes"
         },
         "6": {
           "value": "20",
-          "type": "dimension"
+          "type": "fontSizes"
         },
         "7": {
           "value": "24",
-          "type": "dimension"
+          "type": "fontSizes"
         },
         "8": {
           "value": "28",
-          "type": "dimension"
+          "type": "fontSizes"
         },
         "9": {
           "value": "32",
-          "type": "dimension"
+          "type": "fontSizes"
         },
         "10": {
           "value": "36",
-          "type": "dimension"
+          "type": "fontSizes"
         },
         "11": {
           "value": "42",
-          "type": "dimension"
+          "type": "fontSizes"
         },
         "12": {
           "value": "48",
-          "type": "dimension"
+          "type": "fontSizes"
         },
         "13": {
           "value": "54",
-          "type": "dimension"
+          "type": "fontSizes"
         },
         "14": {
           "value": "60",
-          "type": "dimension"
+          "type": "fontSizes"
         },
         "15": {
           "value": "68",
-          "type": "dimension"
+          "type": "fontSizes"
         },
         "16": {
           "value": "76",
-          "type": "dimension"
+          "type": "fontSizes"
         }
       },
       "Line Spacing": {
@@ -1338,6 +1459,231 @@
     }
   },
   "Global": {
+    "Radius": {
+      "Experimental": {
+        "Focus": {
+          "Extra Small": {
+            "value": "{Core.Radius.xs}",
+            "type": "borderRadius"
+          },
+          "Small": {
+            "value": "{Core.Radius.sm} + 1px",
+            "type": "borderRadius"
+          },
+          "Standard": {
+            "value": "{Core.Radius.md} + 1px",
+            "type": "borderRadius"
+          },
+          "Large": {
+            "value": "{Core.Radius.lg} + 1px",
+            "type": "borderRadius"
+          }
+        }
+      },
+      "None": {
+        "value": "{Core.Radius.None}",
+        "type": "borderRadius",
+        "description": "Useful for elements with multiple radius values where some corners should be square"
+      },
+      "Extra Small": {
+        "value": "{Core.Radius.xs}",
+        "type": "borderRadius"
+      },
+      "Small": {
+        "value": "{Core.Radius.sm}",
+        "type": "borderRadius",
+        "description": "Used for small elements like checkboxes, etc."
+      },
+      "Medium Small": {
+        "value": "{Core.Radius.Md Sm}",
+        "type": "borderRadius",
+        "description": "Edge-case, use sparingly"
+      },
+      "Standard": {
+        "value": "{Core.Radius.md}",
+        "type": "borderRadius",
+        "description": "Used for our main ui elements like buttons, etc."
+      },
+      "Large": {
+        "value": "{Core.Radius.lg}",
+        "type": "borderRadius",
+        "description": "Used mainly for containers like cards or dialogs"
+      },
+      "Pill": {
+        "value": "{Core.Radius.Pill}",
+        "type": "borderRadius",
+        "description": "Used for pill-shaped ui elements"
+      },
+      "Circle": {
+        "value": "{Core.Radius.Circle}",
+        "type": "borderRadius",
+        "description": "Used for ui elements like radio buttons or things like avatars"
+      }
+    },
+    "Size": {
+      "Experimental": {
+        "Focus": {
+          "Extra Tiny": {
+            "value": "{Size.Icon.Extra Small} + 2px",
+            "type": "sizing"
+          },
+          "Tiny": {
+            "value": "{Size.Icon.Small} + 2px",
+            "type": "sizing"
+          },
+          "Extra Extra Small": {
+            "value": "{Size.Icon.Medium} + 2px",
+            "type": "sizing"
+          },
+          "Extra Small": {
+            "value": "{Size.Icon.Large} + 2px",
+            "type": "sizing"
+          },
+          "Small": {
+            "value": "{Size.Form Element Height.Small} + 2px",
+            "type": "sizing"
+          },
+          "Standard": {
+            "value": "{Size.Form Element Height.Standard} + 2px",
+            "type": "sizing"
+          }
+        }
+      },
+      "Icon": {
+        "Extra Small": {
+          "value": "{Dimension.1500}",
+          "type": "sizing"
+        },
+        "Small": {
+          "value": "{Dimension.2000}",
+          "type": "sizing"
+        },
+        "Medium": {
+          "value": "{Dimension.2250}",
+          "type": "sizing"
+        },
+        "Large": {
+          "value": "{Dimension.2500}",
+          "type": "sizing"
+        },
+        "Extra Large": {
+          "value": "{Dimension.3500}",
+          "type": "sizing"
+        }
+      },
+      "Form Element Height": {
+        "Small": {
+          "value": "{Dimension.3000}",
+          "type": "sizing"
+        },
+        "Standard": {
+          "value": "{Dimension.3375}",
+          "type": "sizing"
+        }
+      },
+      "Generic": {
+        "Size 01": {
+          "value": "{Dimension.500}",
+          "type": "sizing"
+        },
+        "Size 02": {
+          "value": "{Dimension.750}",
+          "type": "sizing"
+        },
+        "Size 03": {
+          "value": "{Dimension.1000}",
+          "type": "sizing"
+        },
+        "Size 04": {
+          "value": "{Dimension.1500}",
+          "type": "sizing"
+        },
+        "Size 05": {
+          "value": "{Dimension.2000}",
+          "type": "sizing"
+        },
+        "Size 06": {
+          "value": "{Dimension.2250}",
+          "type": "sizing"
+        },
+        "Size 07": {
+          "value": "{Dimension.2500}",
+          "type": "sizing"
+        },
+        "Size 08": {
+          "value": "{Dimension.2750}",
+          "type": "sizing"
+        },
+        "Size 09": {
+          "value": "{Dimension.3000}",
+          "type": "sizing"
+        },
+        "Size 10": {
+          "value": "{Dimension.3125}",
+          "type": "sizing"
+        },
+        "Size 11": {
+          "value": "{Dimension.3250}",
+          "type": "sizing"
+        },
+        "Size 12": {
+          "value": "{Dimension.3375}",
+          "type": "sizing"
+        },
+        "Size 13": {
+          "value": "{Dimension.3500}",
+          "type": "sizing"
+        },
+        "Size 14": {
+          "value": "{Dimension.3625}",
+          "type": "sizing"
+        },
+        "Size 15": {
+          "value": "{Dimension.3750}",
+          "type": "sizing"
+        },
+        "Size 16": {
+          "value": "{Dimension.4000}",
+          "type": "sizing"
+        },
+        "Size 17": {
+          "value": "{Dimension.4125}",
+          "type": "sizing"
+        },
+        "Size 18": {
+          "value": "{Dimension.4250}",
+          "type": "sizing"
+        },
+        "Size 19": {
+          "value": "{Dimension.4500}",
+          "type": "sizing"
+        },
+        "Size 20": {
+          "value": "{Dimension.5000}",
+          "type": "sizing"
+        },
+        "Size 21": {
+          "value": "{Dimension.5500}",
+          "type": "sizing"
+        },
+        "Size 22": {
+          "value": "{Dimension.6000}",
+          "type": "sizing"
+        },
+        "Size 23": {
+          "value": "{Dimension.6250}",
+          "type": "sizing"
+        },
+        "Size 24": {
+          "value": "{Dimension.6750}",
+          "type": "sizing"
+        },
+        "Size 25": {
+          "value": "{Dimension.7125}",
+          "type": "sizing"
+        }
+      }
+    },
     "Line Weight": {
       "Standard": {
         "value": "{Line Weight.sm}",
@@ -1380,188 +1726,160 @@
         "type": "opacity"
       }
     },
-    "Radius": {
-      "None": {
-        "value": "{Core.Radius.None}",
-        "type": "borderRadius",
-        "description": "Useful for elements with multiple radius values where some corners should be square"
-      },
-      "Small": {
-        "value": "{Core.Radius.sm}",
-        "type": "borderRadius",
-        "description": "Used for small elements like checkboxes, etc."
-      },
-      "Standard": {
-        "value": "{Core.Radius.md}",
-        "type": "borderRadius",
-        "description": "Used for our main ui elements like buttons, etc."
-      },
-      "Large": {
-        "value": "{Core.Radius.lg}",
-        "type": "borderRadius",
-        "description": "Used mainly for containers like cards or dialogs"
-      },
-      "Pill": {
-        "value": "{Core.Radius.Pill}",
-        "type": "borderRadius",
-        "description": "Used for pill-shaped ui elements"
-      },
-      "Circle": {
-        "value": "{Core.Radius.Circle}",
-        "type": "borderRadius",
-        "description": "Used for ui elements like radio buttons or things like avatars"
-      }
-    },
     "Spacing": {
       "Composition": {
         "Space 00": {
-          "value": "{Spacing.None}",
+          "value": "{Dimension.None}",
           "type": "spacing"
         },
         "Space 01": {
-          "value": "{Spacing.125}",
+          "value": "{Dimension.125}",
           "type": "spacing"
         },
         "Space 02": {
-          "value": "{Spacing.250}",
+          "value": "{Dimension.250}",
           "type": "spacing"
         },
         "Space 03": {
-          "value": "{Spacing.500}",
+          "value": "{Dimension.500}",
           "type": "spacing"
         },
         "Space 04": {
-          "value": "{Spacing.1000}",
+          "value": "{Dimension.1000}",
           "type": "spacing"
         },
         "Space 05": {
-          "value": "{Spacing.1500}",
+          "value": "{Dimension.1500}",
           "type": "spacing"
         },
         "Space 06": {
-          "value": "{Spacing.2000}",
+          "value": "{Dimension.2000}",
           "type": "spacing"
         },
         "Space 07": {
-          "value": "{Spacing.2250}",
+          "value": "{Dimension.2250}",
           "type": "spacing"
         },
         "Space 08": {
-          "value": "{Spacing.2500}",
+          "value": "{Dimension.2500}",
           "type": "spacing"
         },
         "Space 09": {
-          "value": "{Spacing.2750}",
+          "value": "{Dimension.2750}",
           "type": "spacing"
         },
         "Space 10": {
-          "value": "{Spacing.3000}",
+          "value": "{Dimension.3000}",
           "type": "spacing"
         },
         "Space 11": {
-          "value": "{Spacing.3125}",
+          "value": "{Dimension.3125}",
           "type": "spacing"
         },
         "Space 12": {
-          "value": "{Spacing.3250}",
+          "value": "{Dimension.3250}",
           "type": "spacing"
         },
         "Space 13": {
-          "value": "{Spacing.3375}",
+          "value": "{Dimension.3375}",
           "type": "spacing"
         },
         "Space 14": {
-          "value": "{Spacing.3500}",
+          "value": "{Dimension.3500}",
           "type": "spacing"
         },
         "Space 15": {
-          "value": "{Spacing.3625}",
+          "value": "{Dimension.3625}",
           "type": "spacing"
         },
         "Space 16": {
-          "value": "{Spacing.3750}",
+          "value": "{Dimension.3750}",
           "type": "spacing"
         },
         "Space 17": {
-          "value": "{Spacing.4000}",
+          "value": "{Dimension.4000}",
           "type": "spacing"
         },
         "Space 18": {
-          "value": "{Spacing.4125}",
+          "value": "{Dimension.4125}",
           "type": "spacing"
         },
         "Space 19": {
-          "value": "{Spacing.4250}",
+          "value": "{Dimension.4250}",
           "type": "spacing"
         },
         "Space 20": {
-          "value": "{Spacing.4500}",
+          "value": "{Dimension.4375}",
+          "type": "spacing"
+        },
+        "Space 21": {
+          "value": "{Dimension.4500}",
           "type": "spacing"
         }
       },
       "Baseline": {
         "Space 00": {
-          "value": "{Spacing.None}",
+          "value": "{Dimension.None}",
           "type": "spacing"
         },
         "Space 01": {
-          "value": "{Spacing.500}",
+          "value": "{Dimension.500}",
           "type": "spacing"
         },
         "Space 02": {
-          "value": "{Spacing.1000}",
+          "value": "{Dimension.1000}",
           "type": "spacing"
         },
         "Space 03": {
-          "value": "{Spacing.1500}",
+          "value": "{Dimension.1500}",
           "type": "spacing"
         },
         "Space 04": {
-          "value": "{Spacing.2000}",
+          "value": "{Dimension.2000}",
           "type": "spacing"
         },
         "Space 05": {
-          "value": "{Spacing.2500}",
+          "value": "{Dimension.2500}",
           "type": "spacing"
         },
         "Space 06": {
-          "value": "{Spacing.3000}",
+          "value": "{Dimension.3000}",
           "type": "spacing"
         },
         "Space 07": {
-          "value": "{Spacing.3500}",
+          "value": "{Dimension.3500}",
           "type": "spacing"
         },
         "Space 08": {
-          "value": "{Spacing.4000}",
+          "value": "{Dimension.4000}",
           "type": "spacing"
         },
         "Space 09": {
-          "value": "{Spacing.4500}",
+          "value": "{Dimension.4500}",
           "type": "spacing"
         },
         "Space 10": {
-          "value": "{Spacing.5000}",
+          "value": "{Dimension.5000}",
           "type": "spacing"
         },
         "Space 11": {
-          "value": "{Spacing.5500}",
+          "value": "{Dimension.5500}",
           "type": "spacing"
         },
         "Space 12": {
-          "value": "{Spacing.6000}",
+          "value": "{Dimension.6000}",
           "type": "spacing"
         },
         "Space 13": {
-          "value": "{Spacing.6500}",
+          "value": "{Dimension.6500}",
           "type": "spacing"
         },
         "Space 14": {
-          "value": "{Spacing.7000}",
+          "value": "{Dimension.7000}",
           "type": "spacing"
         },
         "Space 15": {
-          "value": "{Spacing.8000}",
+          "value": "{Dimension.8000}",
           "type": "spacing"
         }
       }
@@ -1569,75 +1887,75 @@
     "Text Style": {
       "Badge": {
         "value": "{Font Family.Sans}",
-        "type": "textStyle"
+        "type": "typography"
       },
       "Small": {
         "value": "{Font Family.Sans}",
-        "type": "textStyle"
+        "type": "typography"
       },
       "Small Bold": {
         "value": "{Font Family.Sans}",
-        "type": "textStyle"
+        "type": "typography"
       },
       "Caption": {
         "value": "{Font Family.Sans}",
-        "type": "textStyle"
+        "type": "typography"
       },
       "Caption Bold": {
         "value": "{Font Family.Sans}",
-        "type": "textStyle"
+        "type": "typography"
       },
       "Body": {
         "value": "{Font Family.Sans}",
-        "type": "textStyle"
+        "type": "typography"
       },
       "Body Bold": {
         "value": "{Font Family.Sans}",
-        "type": "textStyle"
+        "type": "typography"
       },
       "UI": {
         "value": "{Font Family.Sans}",
-        "type": "textStyle"
+        "type": "typography"
       },
       "UI Bold": {
         "value": "{Font Family.Sans}",
-        "type": "textStyle"
+        "type": "typography"
       },
       "Lead Text": {
         "value": "{Font Family.Sans}",
-        "type": "textStyle"
+        "type": "typography"
       },
       "Heading 6": {
         "value": "{Font Family.Sans}",
-        "type": "textStyle"
+        "type": "typography"
       },
       "Heading 5": {
         "value": "{Font Family.Sans}",
-        "type": "textStyle"
+        "type": "typography"
       },
       "Heading 4": {
         "value": "{Font Family.Sans}",
-        "type": "textStyle"
+        "type": "typography"
       },
       "Heading 3": {
         "value": "{Font Family.Sans}",
-        "type": "textStyle"
+        "type": "typography"
       },
       "Heading 2": {
         "value": "{Font Family.Sans}",
-        "type": "textStyle"
+        "type": "typography"
       },
       "Heading 1": {
         "value": "{Font Family.Sans}",
-        "type": "textStyle"
+        "type": "typography"
       },
       "Title 2": {
         "value": "{Font Family.Sans}",
-        "type": "textStyle"
+        "type": "typography"
       },
       "Title 1": {
         "value": "{Font Family.Sans}",
-        "type": "textStyle"
+        "type": "typography"
       }
     },
     "Font Size": {
@@ -1737,6 +2055,10 @@
         "value": "{Typography.Line Spacing.sm}",
         "type": "lineHeights",
         "description": "Use for large headlines like H3, etc."
+      },
+      "Moderate": {
+        "value": "{Typography.Line Spacing.md}",
+        "type": "lineHeights"
       },
       "Standard": {
         "value": "{Typography.Line Spacing.lg}",
@@ -2890,6 +3212,11 @@
       "value": "{Shadow.Level 12}",
       "type": "boxShadow",
       "description": "Highest level e.g. for dialogs or modals"
+    },
+    "Intense": {
+      "value": "{Shadow.Special.Intense}",
+      "type": "boxShadow",
+      "description": "Useful for accessibility purposes"
     },
     "App Bar": {
       "Top": {
@@ -4052,6 +4379,11 @@
       "value": "{Shadow.Level 12}",
       "type": "boxShadow",
       "description": "Highest level e.g. for dialogs or modals"
+    },
+    "Intense": {
+      "value": "{Shadow.Special.Intense}",
+      "type": "boxShadow",
+      "description": "Useful for accessibility purposes"
     },
     "App Bar": {
       "Top": {
