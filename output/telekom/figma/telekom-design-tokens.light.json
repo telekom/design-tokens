@@ -1133,6 +1133,11 @@
     "type": "boxShadow",
     "description": "Highest level e.g. for dialogs or modals"
   },
+  "Intense": {
+    "value": "{Shadow.Special.Intense}",
+    "type": "boxShadow",
+    "description": "Useful for accessibility purposes"
+  },
   "App Bar": {
     "Top": {
       "Raised": {
