@@ -1,0 +1,56 @@
+{
+  radius: {
+    experimental: {
+      comment: "Figma-only due to constraints, in favor of themability",
+      focus: {
+        "extra-small": {
+          value: "{core.radius.xs.value}",
+          type: "dimension",
+        },
+        small: {
+          value: "{core.radius.sm.value} + 1px",
+          type: "dimension",
+        },
+        standard: {
+          value: "{core.radius.md.value} + 1px",
+          type: "dimension",
+        },
+        large: {
+          value: "{core.radius.lg.value} + 1px",
+          type: "dimension",
+        },
+      },
+    },
+  },
+  size: {
+    experimental: {
+      comment: "Figma-only due to constraints, in favor of themability",
+      focus: {
+        "extra-tiny": {
+          value: "{size.icon.extra-small.value} + 2px",
+          type: "dimension",
+        },
+        tiny: {
+          value: "{size.icon.small.value} + 2px",
+          type: "dimension",
+        },
+        "extra-extra-small": {
+          value: "{size.icon.medium.value} + 2px",
+          type: "dimension",
+        },
+        "extra-small": {
+          value: "{size.icon.large.value} + 2px",
+          type: "dimension",
+        },
+        small: {
+          value: "{size.form-element-height.small.value} + 2px",
+          type: "dimension",
+        },
+        standard: {
+          value: "{size.form-element-height.standard.value} + 2px",
+          type: "dimension",
+        },
+      },
+    },
+  },
+}

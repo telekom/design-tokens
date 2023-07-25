@@ -437,6 +437,44 @@
             },
           },
         },
+        intense: {
+          value: [
+            {
+              x: 0,
+              y: 0,
+              blur: 2,
+              spread: 0,
+              color: {
+                color: "{core.color.black}",
+                alpha: 0.24,
+              },
+              type: "dropShadow",
+            },
+            {
+              x: 0,
+              y: 2,
+              blur: 4,
+              spread: 0,
+              color: {
+                color: "{core.color.black}",
+                alpha: 0.24,
+              },
+              type: "dropShadow",
+            },
+            {
+              x: 0,
+              y: 4,
+              blur: 12,
+              spread: 0,
+              color: {
+                color: "{core.color.black}",
+                alpha: 0.26,
+              },
+              type: "dropShadow",
+            },
+          ],
+          type: "shadow",
+        },
       },
     },
   },

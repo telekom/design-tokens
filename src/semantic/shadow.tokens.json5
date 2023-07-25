@@ -105,6 +105,18 @@
         },
       },
     },
+    intense: {
+      comment: "Useful for accessibility purposes",
+      value: "{core.shadow.special.intense.value}",
+      type: "shadow",
+      extensions: {
+        telekom: {
+          sketch: {
+            uuid: "38FD35C2-6E66-43F7-8816-5083156FD4EB",
+          },
+        },
+      },
+    },
     // header, app bar top
     "app-bar": {
       top: {
