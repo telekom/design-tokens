@@ -88,7 +88,8 @@ module.exports = {
         {
           destination: OUTPUT_BASE_FILENAME + '.light.json',
           format: 'json/flat',
-          filter: (token) => token.path[0] !== 'core',
+          filter: (token) =>
+            token.path[0] !== 'core' && !token.path.includes('experimental'),
         },
       ],
     },

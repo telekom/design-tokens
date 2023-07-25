@@ -270,9 +270,10 @@ module.exports = {
           destination: OUTPUT_BASE_FILENAME + '.light.json',
           format: 'json/sketch-gen',
           filter: (token) =>
-            token.path[0] === 'color' ||
-            token.path[0] === 'text-style' ||
-            token.path[0] === 'shadow',
+            (token.path[0] === 'color' ||
+              token.path[0] === 'text-style' ||
+              token.path[0] === 'shadow') &&
+            !token.path.includes('experimental'),
           options: {
             mode: 'light',
           },
@@ -287,9 +288,10 @@ module.exports = {
           destination: OUTPUT_BASE_FILENAME + '.dark.json',
           format: 'json/sketch-gen',
           filter: (token) =>
-            token.path[0] === 'color' ||
-            token.path[0] === 'text-style' ||
-            token.path[0] === 'shadow',
+            (token.path[0] === 'color' ||
+              token.path[0] === 'text-style' ||
+              token.path[0] === 'shadow') &&
+            !token.path.includes('experimental'),
           options: {
             mode: 'dark',
           },

@@ -51,7 +51,8 @@ const categoryTypeMap = {
   radius: 'borderRadius',
   shadow: 'boxShadow',
   spacing: 'spacing',
-  textStyle: 'typography',
+  size: 'sizing',
+  'text-style': 'typography',
   font: 'fontFamilies',
 };
 
@@ -137,7 +138,7 @@ function getJSONValue(token, { dictionary, mode }) {
   }
   // Set type
   if (token.path.includes('typography')) {
-    if (token.path.includes('font-size')) {
+    if (token.path.includes('font-size') || token.path.includes('font-scale')) {
       attributes.type = 'fontSizes';
     }
     if (token.path.includes('font-family')) {
@@ -152,8 +153,8 @@ function getJSONValue(token, { dictionary, mode }) {
     if (token.path.includes('letter-spacing')) {
       attributes.type = 'letterSpacing';
     }
-  } else if (token.path.includes('textStyle')) {
-    attributes.type = categoryTypeMap['textStyle'];
+  } else if (token.path.includes('text-style')) {
+    attributes.type = categoryTypeMap['text-style'];
   } else if (token.path.includes('shadow')) {
     attributes.type = categoryTypeMap['shadow'];
   } else if (token.path.includes('line-weight')) {
@@ -164,6 +165,10 @@ function getJSONValue(token, { dictionary, mode }) {
     attributes.type = categoryTypeMap['radius'];
   } else if (token.path.includes('spacing')) {
     attributes.type = categoryTypeMap['spacing'];
+  } else if (token.path.includes('dimension')) {
+    attributes.type = categoryTypeMap['spacing'];
+  } else if (token.path.includes('size')) {
+    attributes.type = categoryTypeMap['size'];
   }
 
   // Keep reference when appropriate e.g. `{Core.Color.Black}`
@@ -190,8 +195,8 @@ function getJSONValue(token, { dictionary, mode }) {
           space: 'hsl',
         });
       }
+      // Handle spacing calculations!
       if (token.path[0] === 'core' && 'ratio' in token.original.value) {
-        // Handle spacing calculations!
         // TODO clean up the mess below (aka make it more readable)
         const { pow, sub_step } = token.original.value;
         const baseRef = `{${refs[0].path
@@ -216,6 +221,10 @@ function getJSONValue(token, { dictionary, mode }) {
       } else if (hasMode(token) && typeof ref === 'string') {
         // Special case for hard-coded values in either light or dark mode
         value = ref;
+      } else if (token.path.includes('experimental')) {
+        // This is assuming all "experimental" tokens have math (not good!)
+        const path = ref.path.map(humanCase);
+        value = token.value.replace(ref.value, () => `{${path.join('.')}}`);
       } else {
         // Everything else!
         const path = ref.path.map(humanCase);

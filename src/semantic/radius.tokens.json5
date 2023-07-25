@@ -5,9 +5,19 @@
       value: "{core.radius.none.value}",
       type: "dimension",
     },
+    "extra-small": {
+      comment: "",
+      value: "{core.radius.xs.value}",
+      type: "dimension",
+    },
     small: {
       comment: "Used for small elements like checkboxes, etc.",
       value: "{core.radius.sm.value}",
+      type: "dimension",
+    },
+    "medium-small": {
+      comment: "Edge-case, use sparingly",
+      value: "{core.radius.md-sm.value}",
       type: "dimension",
     },
     standard: {

@@ -5,8 +5,16 @@
         value: "0px",
         type: "dimension",
       },
+      xs: {
+        value: "2px",
+        type: "dimension",
+      },
       sm: {
         value: "4px",
+        type: "dimension",
+      },
+      "md-sm": {
+        value: "6px",
         type: "dimension",
       },
       md: {

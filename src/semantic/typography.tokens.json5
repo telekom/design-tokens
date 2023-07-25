@@ -98,6 +98,11 @@
         value: "{core.typography.line-spacing.sm}",
         type: "number",
       },
+      moderate: {
+        comment: "",
+        value: "{core.typography.line-spacing.md}",
+        type: "number",
+      },
       standard: {
         comment: "Use for most text elements like normal copy, etc.",
         value: "{core.typography.line-spacing.lg}",
