@@ -2,47 +2,47 @@
   typography: {
     "font-size": {
       badge: {
-        value: "{core.typography.font-scale.1.value}",
+        value: "{core.typography.font-scale.10.value}",
         type: "dimension",
       },
       small: {
-        value: "{core.typography.font-scale.2.value}",
+        value: "{core.typography.font-scale.12.value}",
         type: "dimension",
       },
       caption: {
-        value: "{core.typography.font-scale.3.value}",
+        value: "{core.typography.font-scale.14.value}",
         type: "dimension",
       },
       body: {
-        value: "{core.typography.font-scale.4.value}",
+        value: "{core.typography.font-scale.16.value}",
         type: "dimension",
       },
       callout: {
-        value: "{core.typography.font-scale.6.value}",
+        value: "{core.typography.font-scale.20.value}",
         type: "dimension",
       },
       "headline-3": {
-        value: "{core.typography.font-scale.7.value}",
+        value: "{core.typography.font-scale.24.value}",
         type: "dimension",
       },
       "headline-2": {
-        value: "{core.typography.font-scale.9.value}",
+        value: "{core.typography.font-scale.32.value}",
         type: "dimension",
       },
       "headline-1": {
-        value: "{core.typography.font-scale.11.value}",
+        value: "{core.typography.font-scale.42.value}",
         type: "dimension",
       },
       "title-3": {
-        value: "{core.typography.font-scale.13.value}",
+        value: "{core.typography.font-scale.54.value}",
         type: "dimension",
       },
       "title-2": {
-        value: "{core.typography.font-scale.15.value}",
+        value: "{core.typography.font-scale.68.value}",
         type: "dimension",
       },
       "title-1": {
-        value: "{core.typography.font-scale.16.value}",
+        value: "{core.typography.font-scale.76.value}",
         type: "dimension",
       },
     },

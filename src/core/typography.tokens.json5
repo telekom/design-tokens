@@ -38,68 +38,83 @@
         },
       },
       "font-scale": {
-        comment: "Font scale is based on a formular: stepX = fontScale[x - 1] + (parseInt((x - 2) / 4) + 1) * 2; fontScale.push(stepX), where fontScale[0] = 10",
-        "1": {
+        "10": {
           value: "10px",
           type: "dimension",
         },
-        "2": {
+        "12": {
           value: "12px",
           type: "dimension",
         },
-        "3": {
+        "14": {
           value: "14px",
           type: "dimension",
         },
-        "4": {
+        "16": {
           value: "16px",
           type: "dimension",
         },
-        "5": {
+        "18": {
           value: "18px",
           type: "dimension",
         },
-        "6": {
+        "19": {
+          value: "19px",
+          type: "dimension",
+        },
+        "20": {
           value: "20px",
           type: "dimension",
         },
-        "7": {
+        "22": {
+          value: "22px",
+          type: "dimension",
+        },
+        "24": {
           value: "24px",
           type: "dimension",
         },
-        "8": {
+        "26": {
+          value: "26px",
+          type: "dimension",
+        },
+        "28": {
           value: "28px",
           type: "dimension",
         },
-        "9": {
+        "30": {
+          value: "30px",
+          type: "dimension",
+        },
+        "32": {
           value: "32px",
           type: "dimension",
         },
-        "10": {
+        "36": {
           value: "36px",
           type: "dimension",
         },
-        "11": {
+        "42": {
           value: "42px",
           type: "dimension",
         },
-        "12": {
+        "48": {
           value: "48px",
           type: "dimension",
         },
-        "13": {
+        "54": {
           value: "54px",
           type: "dimension",
         },
-        "14": {
+        "60": {
           value: "60px",
           type: "dimension",
         },
-        "15": {
+        "68": {
           value: "68px",
           type: "dimension",
         },
-        "16": {
+        "76": {
           value: "76px",
           type: "dimension",
         },

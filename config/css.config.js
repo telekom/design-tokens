@@ -21,7 +21,7 @@ const cssTransformGroup = [
   'name/cti/kebab2',
   'time/seconds',
   'content/icon',
-  'size/rem',
+  'size/px',
   'modular-scale/rem',
   'color/alpha',
   'color/css',
@@ -40,12 +40,23 @@ StyleDictionary.registerAction({
       fs.readFileSync(buildPath + OUTPUT_BASE_FILENAME + '.dark.json')
     );
     const lightOnly = pick(light, Object.keys(darkOnly));
+    const typeMobile = Object.keys(light)
+      .filter((key) => key.includes('-mobile'))
+      .reduce((acc, key) => {
+        acc[key.replace('-mobile', '')] = `var(--${key})`;
+        return acc;
+      }, {});
+
     const data = `:root {
 ${printVariables(light)}
 }
 
 [data-mode="dark"] {
 ${printVariables(darkOnly)}
+}
+
+[data-type-scale="mobile"] {
+${printVariables(typeMobile)}
 }
 
 @media (prefers-color-scheme: dark) {
