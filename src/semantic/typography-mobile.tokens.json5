@@ -1,0 +1,53 @@
+{
+  typography: {
+    "font-size": {
+      mobile: {
+        comment: "Optimised for small viewports (aka mobile)",
+        badge: {
+          value: "{core.typography.font-scale.10.value}",
+          type: "dimension",
+        },
+        small: {
+          value: "{core.typography.font-scale.12.value}",
+          type: "dimension",
+        },
+        caption: {
+          value: "{core.typography.font-scale.14.value}",
+          type: "dimension",
+        },
+        body: {
+          value: "{core.typography.font-scale.16.value}",
+          type: "dimension",
+        },
+        callout: {
+          value: "{core.typography.font-scale.19.value}",
+          type: "dimension",
+        },
+        "headline-3": {
+          value: "{core.typography.font-scale.22.value}",
+          type: "dimension",
+        },
+        "headline-2": {
+          value: "{core.typography.font-scale.26.value}",
+          type: "dimension",
+        },
+        "headline-1": {
+          value: "{core.typography.font-scale.30.value}",
+          type: "dimension",
+        },
+        "title-3": {
+          value: "{core.typography.font-scale.36.value}",
+          type: "dimension",
+        },
+        "title-2": {
+          value: "{core.typography.font-scale.42.value}",
+          type: "dimension",
+        },
+        "title-1": {
+          value: "{core.typography.font-scale.48.value}",
+          type: "dimension",
+        },
+      },
+    },
+  },
+}
