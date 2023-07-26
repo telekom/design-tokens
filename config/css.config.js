@@ -27,6 +27,7 @@ const cssTransformGroup = [
   'color/css',
   'text-style/css',
   'cubic-bezier/css',
+  'fluid-dimension/css',
 ];
 
 StyleDictionary.registerAction({
@@ -74,6 +75,41 @@ ${printVariables(lightOnly, '    ')}
     //
   },
 });
+
+StyleDictionary.registerTransform({
+  type: 'value',
+  name: 'fluid-dimension/css',
+  transitive: true,
+  matcher: (token) => token.type === 'fluid-dimension',
+  transformer: function (token) {
+    const { value } = token;
+    // TODO get these 2 from somewhere? (extension?)
+    const from = 320;
+    const to = 1680;
+    const min = ensurePxNum(value.min);
+    const max = ensurePxNum(value.max);
+    // Formula: https://www.aleksandrhovhannisyan.com/blog/fluid-type-scale-with-css-clamp/
+    const slope = (max - min) / (to - from);
+    const vw = (slope * 100).toFixed(1);
+    const intercept = min - slope * min;
+    const val = `clamp(${toRem(min)}rem, calc(${toRem(
+      intercept
+    )}rem + ${vw}vw), ${toRem(max)}rem)`;
+    return val;
+  },
+});
+
+function ensurePxNum(value, base = 16) {
+  const num = parseFloat(value.replace(/([pxrem])+/gi, ''), 10);
+  if (value.indexOf('px') > 0) {
+    return num;
+  }
+  return num * base;
+}
+
+function toRem(value, base = 16) {
+  return (value / base).toFixed(3);
+}
 
 function printVariables(json, indentation = '  ') {
   return Object.keys(json)
