@@ -1,0 +1,16 @@
+{
+  typography: {
+    "font-size": {
+      fluid: {
+        comment: "Testing fluid typography",
+        "headline-1": {
+          value: {
+            min: "{core.typography.font-scale.30.value}",
+            max: "{core.typography.font-scale.42.value}",
+          },
+          type: "fluid-dimension",
+        },
+      },
+    },
+  },
+}
