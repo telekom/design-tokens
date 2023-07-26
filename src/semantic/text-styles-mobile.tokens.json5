@@ -4,7 +4,7 @@
       badge: {
         value: {
           "font-family": "{typography.font-family.sans}",
-          "font-size": "{typography.font-size.badge}",
+          "font-size": "{typography.font-size.mobile.badge}",
           "font-weight": "{typography.font-weight.regular}",
           "line-spacing": "{core.typography.line-spacing.xs}",
           "letter-spacing": "{typography.letter-spacing.standard}",
@@ -21,7 +21,7 @@
       small: {
         value: {
           "font-family": "{typography.font-family.sans}",
-          "font-size": "{typography.font-size.small}",
+          "font-size": "{typography.font-size.mobile.small}",
           "font-weight": "{typography.font-weight.medium}",
           "line-spacing": "{core.typography.line-spacing.xs}",
           "letter-spacing": "{typography.letter-spacing.standard}",
@@ -38,7 +38,7 @@
       "small-bold": {
         value: {
           "font-family": "{typography.font-family.sans}",
-          "font-size": "{typography.font-size.small}",
+          "font-size": "{typography.font-size.mobile.small}",
           "font-weight": "{typography.font-weight.bold}",
           "line-spacing": "{core.typography.line-spacing.xs}",
           "letter-spacing": "{typography.letter-spacing.standard}",
@@ -55,7 +55,7 @@
       caption: {
         value: {
           "font-family": "{typography.font-family.sans}",
-          "font-size": "{typography.font-size.caption}",
+          "font-size": "{typography.font-size.mobile.caption}",
           "font-weight": "{typography.font-weight.regular}",
           "line-spacing": "{core.typography.line-spacing.xs}",
           "letter-spacing": "{typography.letter-spacing.standard}",
@@ -72,7 +72,7 @@
       "caption-bold": {
         value: {
           "font-family": "{typography.font-family.sans}",
-          "font-size": "{typography.font-size.caption}",
+          "font-size": "{typography.font-size.mobile.caption}",
           "font-weight": "{typography.font-weight.bold}",
           "line-spacing": "{core.typography.line-spacing.xs}",
           "letter-spacing": "{typography.letter-spacing.standard}",
@@ -89,7 +89,7 @@
       body: {
         value: {
           "font-family": "{typography.font-family.sans}",
-          "font-size": "{typography.font-size.body}",
+          "font-size": "{typography.font-size.mobile.body}",
           "font-weight": "{typography.font-weight.regular}",
           "line-spacing": "{typography.line-spacing.tight}",
           "letter-spacing": "{typography.letter-spacing.standard}",
@@ -106,7 +106,7 @@
       "body-bold": {
         value: {
           "font-family": "{typography.font-family.sans}",
-          "font-size": "{typography.font-size.body}",
+          "font-size": "{typography.font-size.mobile.body}",
           "font-weight": "{typography.font-weight.bold}",
           "line-spacing": "{typography.line-spacing.tight}",
           "letter-spacing": "{typography.letter-spacing.standard}",
@@ -123,7 +123,7 @@
       ui: {
         value: {
           "font-family": "{typography.font-family.sans}",
-          "font-size": "{typography.font-size.body}",
+          "font-size": "{typography.font-size.mobile.body}",
           "font-weight": "{typography.font-weight.medium}",
           "line-spacing": "{typography.line-spacing.none}",
           "letter-spacing": "{typography.letter-spacing.standard}",
@@ -140,7 +140,7 @@
       "ui-bold": {
         value: {
           "font-family": "{typography.font-family.sans}",
-          "font-size": "{typography.font-size.body}",
+          "font-size": "{typography.font-size.mobile.body}",
           "font-weight": "{typography.font-weight.bold}",
           "line-spacing": "{typography.line-spacing.none}",
           "letter-spacing": "{typography.letter-spacing.standard}",
@@ -157,7 +157,7 @@
       "lead-text": {
         value: {
           "font-family": "{typography.font-family.sans}",
-          "font-size": "{typography.font-size.callout}",
+          "font-size": "{typography.font-size.mobile.callout}",
           "font-weight": "{typography.font-weight.regular}",
           "line-spacing": "{core.typography.line-spacing.xs}",
           "letter-spacing": "{typography.letter-spacing.standard}",
@@ -174,7 +174,7 @@
       "heading-6": {
         value: {
           "font-family": "{typography.font-family.sans}",
-          "font-size": "{typography.font-size.body}",
+          "font-size": "{typography.font-size.mobile.body}",
           "font-weight": "{typography.font-weight.bold}",
           "line-spacing": "{core.typography.line-spacing.xxs}",
           "letter-spacing": "{typography.letter-spacing.standard}",
@@ -191,7 +191,7 @@
       "heading-5": {
         value: {
           "font-family": "{typography.font-family.sans}",
-          "font-size": "{typography.font-size.callout}",
+          "font-size": "{typography.font-size.mobile.callout}",
           "font-weight": "{typography.font-weight.extra-bold}",
           "line-spacing": "{core.typography.line-spacing.xs}",
           "letter-spacing": "{typography.letter-spacing.standard}",
@@ -208,7 +208,7 @@
       "heading-4": {
         value: {
           "font-family": "{typography.font-family.sans}",
-          "font-size": "{typography.font-size.headline-3}",
+          "font-size": "{typography.font-size.mobile.headline-3}",
           "font-weight": "{typography.font-weight.extra-bold}",
           "line-spacing": "{core.typography.line-spacing.xxs}",
           "letter-spacing": "{typography.letter-spacing.standard}",
@@ -225,7 +225,7 @@
       "heading-3": {
         value: {
           "font-family": "{typography.font-family.sans}",
-          "font-size": "{typography.font-size.headline-2}",
+          "font-size": "{typography.font-size.mobile.headline-2}",
           "font-weight": "{typography.font-weight.extra-bold}",
           "line-spacing": "{core.typography.line-spacing.xxs}",
           "letter-spacing": "{typography.letter-spacing.standard}",
@@ -242,7 +242,7 @@
       "heading-2": {
         value: {
           "font-family": "{typography.font-family.sans}",
-          "font-size": "{typography.font-size.headline-1}",
+          "font-size": "{typography.font-size.mobile.headline-1}",
           "font-weight": "{typography.font-weight.extra-bold}",
           "line-spacing": "{core.typography.line-spacing.xxs}",
           "letter-spacing": "{typography.letter-spacing.standard}",
@@ -259,7 +259,7 @@
       "heading-1": {
         value: {
           "font-family": "{typography.font-family.sans}",
-          "font-size": "{typography.font-size.title-3}",
+          "font-size": "{typography.font-size.mobile.title-3}",
           "font-weight": "{typography.font-weight.extra-bold}",
           "line-spacing": "{core.typography.line-spacing.xxs}",
           "letter-spacing": "{typography.letter-spacing.standard}",
@@ -276,7 +276,7 @@
       "title-2": {
         value: {
           "font-family": "{typography.font-family.sans}",
-          "font-size": "{typography.font-size.title-2}",
+          "font-size": "{typography.font-size.mobile.title-2}",
           "font-weight": "{typography.font-weight.extra-bold}",
           "line-spacing": "{core.typography.line-spacing.xxs}",
           "letter-spacing": "{typography.letter-spacing.standard}",
@@ -293,7 +293,7 @@
       "title-1": {
         value: {
           "font-family": "{typography.font-family.sans}",
-          "font-size": "{typography.font-size.title-1}",
+          "font-size": "{typography.font-size.mobile.title-1}",
           "font-weight": "{typography.font-weight.extra-bold}",
           "line-spacing": "{core.typography.line-spacing.xxs}",
           "letter-spacing": "{typography.letter-spacing.standard}",
