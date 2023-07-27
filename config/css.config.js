@@ -112,7 +112,7 @@ StyleDictionary.registerTransform({
       font-size: clamp(MinSize[rem], yIntersection[rem] + Slope * 100vw, MaxSize[rem])
     */
     const slope = (max - min) / (maxWidth - minWidth);
-    const interception = -1 * from * slope + min;
+    const interception = -1 * minWidth * slope + min;
     const vw = (slope * 100).toFixed(1);
     const _min = `${pxToRem(min)}rem`;
     const _prefered = `calc(${pxToRem(interception)}rem + ${vw}vw)`;
