@@ -225,7 +225,7 @@ function getJSONValue(token, { dictionary, mode }) {
         // This is assuming all "experimental" tokens have math (not good!)
         // FIXME could this be the default and replace the code below?
         refs.forEach((_ref) => {
-          const _path = _ref.path.map(humanCase);
+          const _path = _ref.path.map(humanCase).filter((x) => x !== 'Core');
           value = value.replace(_ref.value, () => `{${_path.join('.')}}`);
         });
       } else {
