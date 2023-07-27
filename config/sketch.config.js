@@ -273,7 +273,8 @@ module.exports = {
             (token.path[0] === 'color' ||
               token.path[0] === 'text-style' ||
               token.path[0] === 'shadow') &&
-            !token.path.includes('experimental'),
+            !token.path.includes('experimental') &&
+            !token.path.includes('fluid'),
           options: {
             mode: 'light',
           },
@@ -291,7 +292,8 @@ module.exports = {
             (token.path[0] === 'color' ||
               token.path[0] === 'text-style' ||
               token.path[0] === 'shadow') &&
-            !token.path.includes('experimental'),
+            !token.path.includes('experimental') &&
+            !token.path.includes('fluid'),
           options: {
             mode: 'dark',
           },

@@ -63,7 +63,9 @@ module.exports = {
         {
           destination: OUTPUT_BASE_FILENAME + '.light.js',
           format: 'javascript/esm',
-          filter: (token) => !token.path.includes('experimental'),
+          filter: (token) =>
+            !token.path.includes('experimental') &&
+            !token.path.includes('fluid'),
         },
       ],
     },
@@ -74,7 +76,9 @@ module.exports = {
         {
           destination: OUTPUT_BASE_FILENAME + '.dark.js',
           format: 'javascript/esm',
-          filter: (token) => !token.path.includes('experimental'),
+          filter: (token) =>
+            !token.path.includes('experimental') &&
+            !token.path.includes('fluid'),
         },
       ],
     },
