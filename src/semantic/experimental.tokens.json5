@@ -51,6 +51,26 @@
           type: "dimension",
         },
       },
+      "size-01": {
+        value: "{core.dimension.2000.value} + {core.dimension.250.value}",
+        type: "dimension",
+      },
+      "size-02": {
+        value: "{core.dimension.3250.value} + {core.dimension.250.value}",
+        type: "dimension",
+      },
+      "size-03": {
+        value: "{core.dimension.4000.value} + {core.dimension.500.value}",
+        type: "dimension",
+      },
+      "size-04": {
+        value: "{core.dimension.4250.value} + {core.dimension.500.value}",
+        type: "dimension",
+      },
+      "size-05": {
+        value: "{core.dimension.5000.value} + {core.dimension.1000.value}",
+        type: "dimension",
+      },
     },
   },
 }
