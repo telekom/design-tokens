@@ -23,6 +23,8 @@ setDefaultEnvValue('PREFIX', 'telekom');
 setDefaultEnvValue('OUTPUT_PATH', 'dist/');
 setDefaultEnvValue('OUTPUT_BASE_FILENAME', 'design-tokens');
 setDefaultEnvValue('WHITELABEL', true);
+setDefaultEnvValue('FLUID_WIDTH_MIN', '320');
+setDefaultEnvValue('FLUID_WIDTH_MAX', '1680');
 
 const ALWAYS_LOWERCASE = ['xxs', 'xs', 'sm', 'md', 'lg', 'xl', 'xxl'];
 const spacingUnitRe = /x(\d+)$/g;
@@ -62,6 +64,18 @@ function humanCase(str) {
 
 function isColorAlphaComposite(value) {
   return value.hasOwnProperty('color') && typeof value.alpha === 'number';
+}
+
+function ensurePxNumFromDimension(value, base = 16) {
+  const num = parseFloat(value.replace(/([pxrem])+/gi, ''), 10);
+  if (value.indexOf('px') > 0) {
+    return num;
+  }
+  return num * base;
+}
+
+function pxToRem(value, base = 16) {
+  return (value / base).toFixed(3);
 }
 
 // Transforms
@@ -268,7 +282,10 @@ StyleDictionary.registerTransform({
   matcher: (token) => token.path[0] === 'text-style',
   transformer: function (token) {
     const x = token.value;
-    return `${x['font-weight']} ${x['font-size']}/${x['line-spacing']} ${x['font-family']}`;
+    const fontSizeAlias = `var(--telekom-${token.original.value['font-size']
+      .slice(1, -1)
+      .replace(/\./g, '-')})`;
+    return `${x['font-weight']} ${fontSizeAlias}/${x['line-spacing']} ${x['font-family']}`;
   },
 });
 
@@ -329,6 +346,8 @@ function getModularScaleTransform(unit = 'rem') {
 module.exports = {
   humanCase,
   isColorAlphaComposite,
+  ensurePxNumFromDimension,
+  pxToRem,
   fontFamilyMap,
   fontWeightMap,
 };
