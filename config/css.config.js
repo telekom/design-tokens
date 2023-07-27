@@ -11,8 +11,15 @@
 const fs = require('fs-extra');
 const StyleDictionary = require('style-dictionary');
 const pick = require('lodash/pick');
+const { ensurePxNumFromDimension, pxToRem } = require('./shared');
 
-const { PREFIX, OUTPUT_PATH, OUTPUT_BASE_FILENAME } = process.env;
+const {
+  PREFIX,
+  OUTPUT_PATH,
+  OUTPUT_BASE_FILENAME,
+  FLUID_WIDTH_MIN,
+  FLUID_WIDTH_MAX,
+} = process.env;
 const WHITELABEL = process.env.WHITELABEL !== 'false';
 
 // Use custom 'name/cti/kebab2' plus 'color/alpha'
@@ -47,6 +54,12 @@ StyleDictionary.registerAction({
         acc[key.replace('-mobile', '')] = `var(--${key})`;
         return acc;
       }, {});
+    const typeFluid = Object.keys(light)
+      .filter((key) => key.includes('-fluid'))
+      .reduce((acc, key) => {
+        acc[key.replace('-fluid', '')] = `var(--${key})`;
+        return acc;
+      }, {});
 
     const data = `:root {
 ${printVariables(light)}
@@ -56,8 +69,14 @@ ${printVariables(light)}
 ${printVariables(darkOnly)}
 }
 
+/* Overwrite font size tokens with mobile counterpart */
 [data-type-scale="mobile"] {
 ${printVariables(typeMobile)}
+}
+
+/* Overwrite font size tokens with fluid counterpart */
+[data-type-scale="fluid"] {
+${printVariables(typeFluid)}
 }
 
 @media (prefers-color-scheme: dark) {
@@ -82,34 +101,25 @@ StyleDictionary.registerTransform({
   transitive: true,
   matcher: (token) => token.type === 'fluid-dimension',
   transformer: function (token) {
-    const { value } = token;
-    // TODO get these 2 from somewhere? (extension?)
-    const from = 320;
-    const to = 1680;
-    const min = ensurePxNum(value.min);
-    const max = ensurePxNum(value.max);
-    // Formula: https://www.aleksandrhovhannisyan.com/blog/fluid-type-scale-with-css-clamp/
-    const slope = (max - min) / (to - from);
+    const minWidth = parseInt(FLUID_WIDTH_MIN || 320, 10);
+    const maxWidth = parseInt(FLUID_WIDTH_MAX || 1500, 10);
+    const min = ensurePxNumFromDimension(token.value.min);
+    const max = ensurePxNumFromDimension(token.value.max);
+    /*
+      https://utopia.fyi/blog/clamp
+      Slope = (MaxSize - MinSize) / (MaxWidth - MinWidth)
+      yIntersection = (-1 * MinWidth) * Slope + MinSize
+      font-size: clamp(MinSize[rem], yIntersection[rem] + Slope * 100vw, MaxSize[rem])
+    */
+    const slope = (max - min) / (maxWidth - minWidth);
+    const interception = -1 * from * slope + min;
     const vw = (slope * 100).toFixed(1);
-    const intercept = min - slope * min;
-    const val = `clamp(${toRem(min)}rem, calc(${toRem(
-      intercept
-    )}rem + ${vw}vw), ${toRem(max)}rem)`;
-    return val;
+    const _min = `${pxToRem(min)}rem`;
+    const _prefered = `calc(${pxToRem(interception)}rem + ${vw}vw)`;
+    const _max = `${pxToRem(max)}rem`;
+    return `clamp(${_min}, ${_prefered}, ${_max})`;
   },
 });
-
-function ensurePxNum(value, base = 16) {
-  const num = parseFloat(value.replace(/([pxrem])+/gi, ''), 10);
-  if (value.indexOf('px') > 0) {
-    return num;
-  }
-  return num * base;
-}
-
-function toRem(value, base = 16) {
-  return (value / base).toFixed(3);
-}
 
 function printVariables(json, indentation = '  ') {
   return Object.keys(json)
