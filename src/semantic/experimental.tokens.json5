@@ -4,19 +4,19 @@
       comment: "Figma-only due to constraints, in favor of themability",
       focus: {
         "extra-small": {
-          value: "{core.radius.xs.value}",
+          value: "{core.radius.10.value}",
           type: "dimension",
         },
         small: {
-          value: "{core.radius.sm.value} + 1px",
+          value: "{core.radius.20.value} + 1px",
           type: "dimension",
         },
         standard: {
-          value: "{core.radius.md.value} + 1px",
+          value: "{core.radius.40.value} + 1px",
           type: "dimension",
         },
         large: {
-          value: "{core.radius.lg.value} + 1px",
+          value: "{core.radius.60.value} + 1px",
           type: "dimension",
         },
       },
@@ -50,6 +50,26 @@
           value: "{size.form-element-height.standard.value} + 2px",
           type: "dimension",
         },
+      },
+      "size-01": {
+        value: "{core.dimension.2000.value} + {core.dimension.250.value}",
+        type: "dimension",
+      },
+      "size-02": {
+        value: "{core.dimension.3250.value} + {core.dimension.250.value}",
+        type: "dimension",
+      },
+      "size-03": {
+        value: "{core.dimension.4000.value} - {core.dimension.500.value}",
+        type: "dimension",
+      },
+      "size-04": {
+        value: "{core.dimension.4250.value} + {core.dimension.500.value}",
+        type: "dimension",
+      },
+      "size-05": {
+        value: "{core.dimension.5000.value} - {core.dimension.1000.value}",
+        type: "dimension",
       },
     },
   },

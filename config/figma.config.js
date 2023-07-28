@@ -104,14 +104,11 @@ function formatJSON(allTokens, { dictionary, mode }) {
   allTokens.forEach((token) => {
     const path = token.path.map(humanCase);
     if (path.includes('Motion')) return;
-    // Keep `Core` in path to avoid collisions with same name tokens
-    const keepCoreInPathToAvoidCollisionsWithSameNameTokens =
-      path[0] === 'Core' && path[1] !== 'Radius';
     if (
       path[0] === 'Color' ||
       path[0] === 'Shadow' ||
       path[0] === 'Typography' ||
-      keepCoreInPathToAvoidCollisionsWithSameNameTokens
+      path[0] === 'Core'
     ) {
       path.shift();
     }
@@ -223,15 +220,14 @@ function getJSONValue(token, { dictionary, mode }) {
         value = ref;
       } else if (token.path.includes('experimental')) {
         // This is assuming all "experimental" tokens have math (not good!)
-        const path = ref.path.map(humanCase);
-        value = token.value.replace(ref.value, () => `{${path.join('.')}}`);
+        // FIXME could this be the default and replace the code below?
+        refs.forEach((_ref) => {
+          const _path = _ref.path.map(humanCase).filter((x) => x !== 'Core');
+          value = value.replace(_ref.value, () => `{${_path.join('.')}}`);
+        });
       } else {
         // Everything else!
-        const path = ref.path.map(humanCase);
-        // Keep `Core` in path to avoid collisions with same name tokens
-        if (path[1] !== 'Radius') {
-          path.shift();
-        }
+        const path = ref.path.map(humanCase).filter((x) => x !== 'Core');
         value = `{${path.join('.')}}`;
       }
     }
