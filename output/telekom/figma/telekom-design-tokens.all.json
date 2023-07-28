@@ -907,42 +907,40 @@
         "type": "opacity"
       }
     },
-    "Core": {
-      "Radius": {
-        "None": {
-          "value": "0px",
-          "type": "borderRadius"
-        },
-        "xs": {
-          "value": "2px",
-          "type": "borderRadius"
-        },
-        "sm": {
-          "value": "4px",
-          "type": "borderRadius"
-        },
-        "Md Sm": {
-          "value": "6px",
-          "type": "borderRadius"
-        },
-        "md": {
-          "value": "8px",
-          "type": "borderRadius"
-        },
-        "lg": {
-          "value": "12px",
-          "type": "borderRadius"
-        },
-        "Circle": {
-          "value": "50%",
-          "type": "borderRadius",
-          "description": "Used for ui elements like radio buttons or things like avatars"
-        },
-        "Pill": {
-          "value": "999px",
-          "type": "borderRadius",
-          "description": "Used for pill-shaped ui elements"
-        }
+    "Radius": {
+      "0": {
+        "value": "0px",
+        "type": "borderRadius"
+      },
+      "10": {
+        "value": "2px",
+        "type": "borderRadius"
+      },
+      "20": {
+        "value": "4px",
+        "type": "borderRadius"
+      },
+      "30": {
+        "value": "6px",
+        "type": "borderRadius"
+      },
+      "40": {
+        "value": "8px",
+        "type": "borderRadius"
+      },
+      "60": {
+        "value": "12px",
+        "type": "borderRadius"
+      },
+      "500": {
+        "value": "50%",
+        "type": "borderRadius",
+        "description": "Used for ui elements like radio buttons or things like avatars"
+      },
+      "900": {
+        "value": "999px",
+        "type": "borderRadius",
+        "description": "Used for pill-shaped ui elements"
       }
     },
     "Shadow": {
@@ -1463,59 +1461,59 @@
       "Experimental": {
         "Focus": {
           "Extra Small": {
-            "value": "{Core.Radius.xs}",
+            "value": "{Radius.10}",
             "type": "borderRadius"
           },
           "Small": {
-            "value": "{Core.Radius.sm} + 1px",
+            "value": "{Radius.20} + 1px",
             "type": "borderRadius"
           },
           "Standard": {
-            "value": "{Core.Radius.md} + 1px",
+            "value": "{Radius.40} + 1px",
             "type": "borderRadius"
           },
           "Large": {
-            "value": "{Core.Radius.lg} + 1px",
+            "value": "{Radius.60} + 1px",
             "type": "borderRadius"
           }
         }
       },
       "None": {
-        "value": "{Core.Radius.None}",
+        "value": "{Radius.0}",
         "type": "borderRadius",
         "description": "Useful for elements with multiple radius values where some corners should be square"
       },
       "Extra Small": {
-        "value": "{Core.Radius.xs}",
+        "value": "{Radius.10}",
         "type": "borderRadius"
       },
       "Small": {
-        "value": "{Core.Radius.sm}",
+        "value": "{Radius.20}",
         "type": "borderRadius",
         "description": "Used for small elements like checkboxes, etc."
       },
       "Medium Small": {
-        "value": "{Core.Radius.Md Sm}",
+        "value": "{Radius.30}",
         "type": "borderRadius",
         "description": "Edge-case, use sparingly"
       },
       "Standard": {
-        "value": "{Core.Radius.md}",
+        "value": "{Radius.40}",
         "type": "borderRadius",
         "description": "Used for our main ui elements like buttons, etc."
       },
       "Large": {
-        "value": "{Core.Radius.lg}",
+        "value": "{Radius.60}",
         "type": "borderRadius",
         "description": "Used mainly for containers like cards or dialogs"
       },
       "Pill": {
-        "value": "{Core.Radius.Pill}",
+        "value": "{Radius.900}",
         "type": "borderRadius",
         "description": "Used for pill-shaped ui elements"
       },
       "Circle": {
-        "value": "{Core.Radius.Circle}",
+        "value": "{Radius.500}",
         "type": "borderRadius",
         "description": "Used for ui elements like radio buttons or things like avatars"
       }
@@ -1547,6 +1545,26 @@
             "value": "{Size.Form Element Height.Standard} + 2px",
             "type": "sizing"
           }
+        },
+        "Size 01": {
+          "value": "{Dimension.2000} + {Dimension.250}",
+          "type": "sizing"
+        },
+        "Size 02": {
+          "value": "{Dimension.3250} + {Dimension.250}",
+          "type": "sizing"
+        },
+        "Size 03": {
+          "value": "{Dimension.4000} - {Dimension.500}",
+          "type": "sizing"
+        },
+        "Size 04": {
+          "value": "{Dimension.4250} + {Dimension.500}",
+          "type": "sizing"
+        },
+        "Size 05": {
+          "value": "{Dimension.5000} - {Dimension.1000}",
+          "type": "sizing"
         }
       },
       "Icon": {
@@ -1886,75 +1904,75 @@
     },
     "Text Style": {
       "Badge": {
-        "value": "{Font Family.Sans}",
+        "value": "{Typography.Font Family.Sans}",
         "type": "typography"
       },
       "Small": {
-        "value": "{Font Family.Sans}",
+        "value": "{Typography.Font Family.Sans}",
         "type": "typography"
       },
       "Small Bold": {
-        "value": "{Font Family.Sans}",
+        "value": "{Typography.Font Family.Sans}",
         "type": "typography"
       },
       "Caption": {
-        "value": "{Font Family.Sans}",
+        "value": "{Typography.Font Family.Sans}",
         "type": "typography"
       },
       "Caption Bold": {
-        "value": "{Font Family.Sans}",
+        "value": "{Typography.Font Family.Sans}",
         "type": "typography"
       },
       "Body": {
-        "value": "{Font Family.Sans}",
+        "value": "{Typography.Font Family.Sans}",
         "type": "typography"
       },
       "Body Bold": {
-        "value": "{Font Family.Sans}",
+        "value": "{Typography.Font Family.Sans}",
         "type": "typography"
       },
       "UI": {
-        "value": "{Font Family.Sans}",
+        "value": "{Typography.Font Family.Sans}",
         "type": "typography"
       },
       "UI Bold": {
-        "value": "{Font Family.Sans}",
+        "value": "{Typography.Font Family.Sans}",
         "type": "typography"
       },
       "Lead Text": {
-        "value": "{Font Family.Sans}",
+        "value": "{Typography.Font Family.Sans}",
         "type": "typography"
       },
       "Heading 6": {
-        "value": "{Font Family.Sans}",
+        "value": "{Typography.Font Family.Sans}",
         "type": "typography"
       },
       "Heading 5": {
-        "value": "{Font Family.Sans}",
+        "value": "{Typography.Font Family.Sans}",
         "type": "typography"
       },
       "Heading 4": {
-        "value": "{Font Family.Sans}",
+        "value": "{Typography.Font Family.Sans}",
         "type": "typography"
       },
       "Heading 3": {
-        "value": "{Font Family.Sans}",
+        "value": "{Typography.Font Family.Sans}",
         "type": "typography"
       },
       "Heading 2": {
-        "value": "{Font Family.Sans}",
+        "value": "{Typography.Font Family.Sans}",
         "type": "typography"
       },
       "Heading 1": {
-        "value": "{Font Family.Sans}",
+        "value": "{Typography.Font Family.Sans}",
         "type": "typography"
       },
       "Title 2": {
-        "value": "{Font Family.Sans}",
+        "value": "{Typography.Font Family.Sans}",
         "type": "typography"
       },
       "Title 1": {
-        "value": "{Font Family.Sans}",
+        "value": "{Typography.Font Family.Sans}",
         "type": "typography"
       }
     },
