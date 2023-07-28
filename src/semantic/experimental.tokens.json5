@@ -64,7 +64,7 @@
         type: "dimension",
       },
       "size-04": {
-        value: "{core.dimension.4250.value} - {core.dimension.500.value}",
+        value: "{core.dimension.4250.value} + {core.dimension.500.value}",
         type: "dimension",
       },
       "size-05": {
