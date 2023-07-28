@@ -8,43 +8,43 @@
           type: "dimension",
         },
         small: {
-          value: "{core.typography.font-scale.12.value}",
+          value: "{core.typography.font-scale.20.value}",
           type: "dimension",
         },
         caption: {
-          value: "{core.typography.font-scale.14.value}",
-          type: "dimension",
-        },
-        body: {
-          value: "{core.typography.font-scale.16.value}",
-          type: "dimension",
-        },
-        callout: {
-          value: "{core.typography.font-scale.19.value}",
-          type: "dimension",
-        },
-        "headline-3": {
-          value: "{core.typography.font-scale.22.value}",
-          type: "dimension",
-        },
-        "headline-2": {
-          value: "{core.typography.font-scale.26.value}",
-          type: "dimension",
-        },
-        "headline-1": {
           value: "{core.typography.font-scale.30.value}",
           type: "dimension",
         },
+        body: {
+          value: "{core.typography.font-scale.40.value}",
+          type: "dimension",
+        },
+        callout: {
+          value: "{core.typography.font-scale.55.value}",
+          type: "dimension",
+        },
+        "headline-3": {
+          value: "{core.typography.font-scale.70.value}",
+          type: "dimension",
+        },
+        "headline-2": {
+          value: "{core.typography.font-scale.90.value}",
+          type: "dimension",
+        },
+        "headline-1": {
+          value: "{core.typography.font-scale.110.value}",
+          type: "dimension",
+        },
         "title-3": {
-          value: "{core.typography.font-scale.36.value}",
+          value: "{core.typography.font-scale.140.value}",
           type: "dimension",
         },
         "title-2": {
-          value: "{core.typography.font-scale.42.value}",
+          value: "{core.typography.font-scale.180.value}",
           type: "dimension",
         },
         "title-1": {
-          value: "{core.typography.font-scale.48.value}",
+          value: "{core.typography.font-scale.220.value}",
           type: "dimension",
         },
       },
