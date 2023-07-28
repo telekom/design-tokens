@@ -24,7 +24,7 @@ setDefaultEnvValue('OUTPUT_PATH', 'dist/');
 setDefaultEnvValue('OUTPUT_BASE_FILENAME', 'design-tokens');
 setDefaultEnvValue('WHITELABEL', true);
 setDefaultEnvValue('FLUID_WIDTH_MIN', '320');
-setDefaultEnvValue('FLUID_WIDTH_MAX', '1680');
+setDefaultEnvValue('FLUID_WIDTH_MAX', '1040');
 
 const ALWAYS_LOWERCASE = ['xxs', 'xs', 'sm', 'md', 'lg', 'xl', 'xxl'];
 const spacingUnitRe = /x(\d+)$/g;
