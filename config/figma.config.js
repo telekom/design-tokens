@@ -104,14 +104,11 @@ function formatJSON(allTokens, { dictionary, mode }) {
   allTokens.forEach((token) => {
     const path = token.path.map(humanCase);
     if (path.includes('Motion')) return;
-    // Keep `Core` in path to avoid collisions with same name tokens
-    const keepCoreInPathToAvoidCollisionsWithSameNameTokens =
-      path[0] === 'Core' && path[1] !== 'Radius';
     if (
       path[0] === 'Color' ||
       path[0] === 'Shadow' ||
       path[0] === 'Typography' ||
-      keepCoreInPathToAvoidCollisionsWithSameNameTokens
+      path[0] === 'Core'
     ) {
       path.shift();
     }
@@ -230,11 +227,7 @@ function getJSONValue(token, { dictionary, mode }) {
         });
       } else {
         // Everything else!
-        const path = ref.path.map(humanCase);
-        // Keep `Core` in path to avoid collisions with same name tokens
-        if (path[1] !== 'Radius') {
-          path.shift();
-        }
+        const path = ref.path.map(humanCase).filter((x) => x !== 'Core');
         value = `{${path.join('.')}}`;
       }
     }
