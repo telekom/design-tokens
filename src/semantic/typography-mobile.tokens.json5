@@ -20,19 +20,19 @@
           type: "dimension",
         },
         callout: {
-          value: "{core.typography.font-scale.55.value}",
+          value: "{core.typography.font-scale.60.value}",
           type: "dimension",
         },
         "headline-3": {
-          value: "{core.typography.font-scale.70.value}",
+          value: "{core.typography.font-scale.80.value}",
           type: "dimension",
         },
         "headline-2": {
-          value: "{core.typography.font-scale.90.value}",
+          value: "{core.typography.font-scale.100.value}",
           type: "dimension",
         },
         "headline-1": {
-          value: "{core.typography.font-scale.110.value}",
+          value: "{core.typography.font-scale.120.value}",
           type: "dimension",
         },
         "title-3": {
