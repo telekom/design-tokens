@@ -58,10 +58,6 @@
           value: "18px",
           type: "dimension",
         },
-        "55": {
-          value: "19px",
-          type: "dimension",
-        },
         "60": {
           value: "20px",
           type: "dimension",
