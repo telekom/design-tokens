@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Typography Demo</title>
+
+  <link rel="stylesheet" href="https://unpkg.com/@telekom/scale-components@3.0.0-beta.137/dist/scale-components/scale-components.css">
+  <link rel="stylesheet" href="design-tokens.all.css">
+  <style>
+    body {
+      margin: 0;
+      padding: 1rem;
+      background: var(--telekom-color-background-canvas-subtle);
+      color: var(--telekom-color-text-and-icon-standard);
+    }
+
+    p {
+      max-width: 42ch;
+      margin-top: 0;
+    }
+
+    font-size {
+      color: var(--telekom-color-text-and-icon-functional-informational);
+    }
+  </style>
+</head>
+<body>
+  <p>
+    <label for="options">Type Scale</label>
+    <select id="options">
+      <option value="">Default</option>
+      <option value="mobile">Mobile</option>
+      <option value="fluid">Fluid</option>
+    </select>
+  </p>
+
+  <p style="font: var(--telekom-text-style-title-1)">Title 1. <font-size></font-size> Blabla, blablablablabla.</p>
+  <p style="font: var(--telekom-text-style-title-2)">Title 2. <font-size></font-size> Blablablablabla.</p>
+  <p style="font: var(--telekom-text-style-heading-1)">Heading 1. <font-size></font-size> Blablablablabla, blablablabla, blablabla blablablabla.</p>
+  <p style="font: var(--telekom-text-style-heading-2)">Heading 2. <font-size></font-size> Blabla.</p>
+  <p style="font: var(--telekom-text-style-heading-3)">Heading 3. <font-size></font-size> Blabla, blablablablabla, blablabla.</p>
+  <p style="font: var(--telekom-text-style-heading-4)">Heading 4. <font-size></font-size> Blabla, blablabla.</p>
+  <p style="font: var(--telekom-text-style-heading-5)">Heading 5. <font-size></font-size> Bla, blabla, blablabla blabla.</p>
+  <p style="font: var(--telekom-text-style-heading-6)">Heading 6. <font-size></font-size> Blablabla blablablablabla.</p>
+  <p style="font: var(--telekom-text-style-lead-text)">Lead Text. <font-size></font-size> Blabla blablablabla blablablabla, blabla blablabla bla. Blablablabla, bla, blabla blablablablabla bla bla, bla blabla blablablablabla blablablabla blabla. Bla bla, blablabla, bla, blablablablabla blablablabla blablablabla blabla blablablablabla. Blablabla, bla blablabla blablablabla blabla, blablablabla blablablabla bla.</p>
+  <p style="font: var(--telekom-text-style-ui)">UI. <font-size></font-size> Bla, blablablabla bla blablablabla bla blabla blabla blablablabla blabla blablablablabla blablablablabla bla. Blabla blablablabla, blablablablabla, bla, blablablabla blablabla.</p>
+  <p style="font: var(--telekom-text-style-body)">Body. <font-size></font-size> Blablablablabla bla blablablablabla bla blablablabla blabla blabla blabla blablabla. Bla blablabla bla blablablabla, bla, blablablabla blabla bla. Blablabla, blablablabla blablablablabla blablabla blablablablabla blablablabla bla, blablablablabla blablablablabla, blablablablabla blablablabla bla.</p>
+  <p style="font: var(--telekom-text-style-caption)">Caption. <font-size></font-size> Bla, blablablabla bla blablablabla</p>
+  <p style="font: var(--telekom-text-style-small)">Small. <font-size></font-size> Blabla blablablablabla bla blablabla, blablabla blabla. Blablabla blablabla blabla blablablabla blabla blablablabla. Blabla blabla blablablablabla, blablablablabla blablabla blabla. Blablablabla blablabla blablabla, blablablabla, blablabla bla.</p>
+
+  <script>
+    options.addEventListener('change', (event) => {
+      document.body.setAttribute('data-type-scale', event.target.value)
+    })
+
+    class FontSize extends HTMLElement {  
+      connectedCallback() {
+        this.observer = new ResizeObserver(() => this.set())
+        this.observer.observe(this.parentElement)
+        this.set()
+      }
+      
+      set() {
+        const style = getComputedStyle(this.parentElement)
+        const lineHeightUnitless = parseFloat(style.lineHeight, 10) / parseFloat(style.fontSize, 10)
+        this.info = `${style.fontSize}/${lineHeightUnitless.toFixed(2)}`
+        this.update()
+      }
+
+      update() {
+        this.textContent = this.info || ''
+      }
+    }
+
+    customElements.define('font-size', FontSize)
+  </script>
+</body>
+</html>
