@@ -14,6 +14,7 @@ const INTEGRATION_SECRET = process.env.NOTION_TOKEN;
 const LIST_OF_SOURCES_DATABASE_ID = process.env.NOTION_DATABASE_ID;
 const PAGE_EMOJI = '🍬';
 const DATABASE_EMOJI = '🍭';
+const TEST_LIMIT = 10;
 
 const Tier_select_opts = [
   { name: 'Core', color: 'default' },
@@ -88,6 +89,8 @@ main();
 async function main() {
   const data = await fs.readFile('dist/csv/design-tokens.all.csv', 'utf8');
 
+  console.log('Setting up database...');
+
   // Create new page in list of sources database
   const res_source_page = await create_source_page(
     'Source ' + new Date().toISOString().slice(0, 10)
@@ -98,90 +101,97 @@ async function main() {
 
   // TODO handle errors
   const csv_data = Papa.parse(data, { header: true });
-  const tokens = [...csv_data.data].slice(0, 4);
+  const tokens =
+    TEST_LIMIT != null
+      ? csv_data.data.slice(0, TEST_LIMIT)
+      : [...csv_data.data];
   const result = [];
 
   // Insert data into tokens database
   async function insert_data() {
     if (tokens.length === 0) return;
     const next = tokens.pop();
-    const res = await notion.pages.create({
-      parent: {
-        type: 'database_id',
-        database_id: res_tokens_database.id,
-      },
-      properties: {
-        Name: {
-          title: [
-            {
-              text: {
-                content: next.Name,
-              },
-            },
-          ],
-        },
-        Tier: {
-          select: {
-            name: next.Tier,
-          },
-        },
-        Category: {
-          select: {
-            name: next.Category,
-          },
-        },
-        Type: {
-          select: {
-            name: next.Type,
-          },
-        },
-        Value: {
-          rich_text: [
-            {
-              type: 'text',
-              text: {
-                content: next.Value,
-                link: null,
-              },
-            },
-          ],
-        },
-        'Value (dark)': {
-          rich_text: [
-            {
-              type: 'text',
-              text: {
-                content: next['Value (dark)'],
-                link: null,
-              },
-            },
-          ],
-        },
-        Description: {
-          rich_text: [
-            {
-              type: 'text',
-              text: {
-                content: next.Description,
-                link: null,
-              },
-            },
-          ],
-        },
-        'Is Alias?': {
-          checkbox: next['Is Alias?'] === 'Yes',
-        },
-      },
-    });
+    const res = await create_token_page(res_tokens_database.id, next);
     result.push(res);
     console.log('Created page', res.id);
     await sleep(1000);
     return insert_data();
   }
 
-  console.log(`Creating ${tokens.length} pages...`);
+  console.log(`Adding ${tokens.length} pages...`);
   await insert_data();
   console.log('Done');
+}
+
+function create_token_page(parent_id, next) {
+  return notion.pages.create({
+    parent: {
+      type: 'database_id',
+      database_id: parent_id,
+    },
+    properties: {
+      Name: {
+        title: [
+          {
+            text: {
+              content: next.Name,
+            },
+          },
+        ],
+      },
+      Tier: {
+        select: {
+          name: next.Tier,
+        },
+      },
+      Category: {
+        select: {
+          name: next.Category,
+        },
+      },
+      Type: {
+        select: {
+          name: next.Type,
+        },
+      },
+      Value: {
+        rich_text: [
+          {
+            type: 'text',
+            text: {
+              content: next.Value,
+              link: null,
+            },
+          },
+        ],
+      },
+      'Value (dark)': {
+        rich_text: [
+          {
+            type: 'text',
+            text: {
+              content: next['Value (dark)'],
+              link: null,
+            },
+          },
+        ],
+      },
+      Description: {
+        rich_text: [
+          {
+            type: 'text',
+            text: {
+              content: next.Description,
+              link: null,
+            },
+          },
+        ],
+      },
+      'Is Alias?': {
+        checkbox: next['Is Alias?'] === 'Yes',
+      },
+    },
+  });
 }
 
 function create_source_page(title) {
