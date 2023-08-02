@@ -17,7 +17,7 @@ const Color = require('tinycolor2');
 
 setDefaultEnvValue(
   'CONFIG',
-  'css,js,figma,sketch,docs-json,tailwindcss-preset,csv'
+  'css,js,figma,sketch,docs-json,tailwindcss-preset,csv,compose'
 );
 setDefaultEnvValue('PREFIX', 'telekom');
 setDefaultEnvValue('OUTPUT_PATH', 'dist/');
@@ -132,6 +132,18 @@ StyleDictionary.registerTransform({
   matcher: (token) => token.original.type === 'color',
   transformer: StyleDictionary.transform['color/css'].transformer,
 });
+
+StyleDictionary.registerTransform({
+  type: 'value',
+  name: 'color/composeColor',
+  matcher: (token) => token.original.type === 'color',
+  transformer: StyleDictionary.transform['color/composeColor'].transformer,
+  // transformer: (prop) => {
+  //   const hex8 = Color(prop.value).toHex8();
+  //   return `Color(0x${hex8})`;
+  // }
+});
+
 
 /**
  * Handle composite colors with `alpha`, also for "shadow" type
