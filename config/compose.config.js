@@ -29,6 +29,7 @@ module.exports = {
             destination: OUTPUT_BASE_FILENAME + '.light.kt',
             format: 'compose/object',
             packageName: 'de.telekom.tokens',
+            className: 'ScaleTokensLight',
             filter: (token) => {
                 if (token.path[0] !== 'core' && !token.path.includes('experimental') && token.type === 'color') {
 
@@ -51,6 +52,7 @@ module.exports = {
             destination: OUTPUT_BASE_FILENAME + '.dark.kt',
             format: 'compose/object',
             packageName: 'de.telekom.tokens',
+            className: 'ScaleTokensDark',
             filter: (token) => {
                 if (token.path[0] !== 'core' && token.original.value?.dark != null && token.type === 'color')
 
