@@ -643,20 +643,24 @@
     },
     "Dimension": {
       "125": {
-        "value": "{Dimension.Base} / {Dimension.Ratio} / {Dimension.Ratio} / {Dimension.Ratio}",
-        "type": "spacing"
+        "value": "{Dimension.Base} * 0.125",
+        "type": "spacing",
+        "description": "Not affected by the ratio, just a multiplier of the base value"
       },
       "250": {
-        "value": "{Dimension.Base} / {Dimension.Ratio} / {Dimension.Ratio}",
-        "type": "spacing"
+        "value": "{Dimension.Base} * 0.25",
+        "type": "spacing",
+        "description": "Not affected by the ratio, just a multiplier of the base value"
       },
       "500": {
-        "value": "{Dimension.Base} / {Dimension.Ratio}",
-        "type": "spacing"
+        "value": "{Dimension.Base} * 0.5",
+        "type": "spacing",
+        "description": "Not affected by the ratio, just a multiplier of the base value"
       },
       "750": {
-        "value": "{Dimension.Base} / {Dimension.Ratio} + (({Dimension.Base} - {Dimension.Base} / {Dimension.Ratio}) * 0.5)",
-        "type": "spacing"
+        "value": "{Dimension.Base} * 0.75",
+        "type": "spacing",
+        "description": "Not affected by the ratio, just a multiplier of the base value"
       },
       "1000": {
         "value": "{Dimension.Base}",
