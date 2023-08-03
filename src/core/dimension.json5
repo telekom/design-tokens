@@ -17,37 +17,45 @@
         value: {
           base: "{core.dimension.base.value}",
           ratio: "{core.dimension.ratio.value}",
-          pow: -3,
+          pow: 0,
           sub_step: 0,
+          not_really_modular_just_multiply_base: 0.125,
         },
         type: "modular-scale",
+        comment: "Not affected by the ratio, just a multiplier of the base value",
       },
       "250": {
         value: {
           base: "{core.dimension.base.value}",
           ratio: "{core.dimension.ratio.value}",
-          pow: -2,
+          pow: 0,
           sub_step: 0,
+          not_really_modular_just_multiply_base: 0.25,
         },
         type: "modular-scale",
+        comment: "Not affected by the ratio, just a multiplier of the base value",
       },
       "500": {
         value: {
           base: "{core.dimension.base.value}",
           ratio: "{core.dimension.ratio.value}",
-          pow: -1,
+          pow: 0,
           sub_step: 0,
+          not_really_modular_just_multiply_base: 0.5,
         },
         type: "modular-scale",
+        comment: "Not affected by the ratio, just a multiplier of the base value",
       },
       "750": {
         value: {
           base: "{core.dimension.base.value}",
           ratio: "{core.dimension.ratio.value}",
-          pow: -1,
-          sub_step: 0.5,
+          pow: 0,
+          sub_step: 0,
+          not_really_modular_just_multiply_base: 0.75,
         },
         type: "modular-scale",
+        comment: "Not affected by the ratio, just a multiplier of the base value",
       },
       "1000": {
         value: {

@@ -195,7 +195,8 @@ function getJSONValue(token, { dictionary, mode }) {
       // Handle spacing calculations!
       if (token.path[0] === 'core' && 'ratio' in token.original.value) {
         // TODO clean up the mess below (aka make it more readable)
-        const { pow, sub_step } = token.original.value;
+        const { pow, sub_step, not_really_modular_just_multiply_base } =
+          token.original.value;
         const baseRef = `{${refs[0].path
           .map(humanCase)
           .filter((x) => x !== 'Core')
@@ -205,16 +206,20 @@ function getJSONValue(token, { dictionary, mode }) {
           .filter((x) => x !== 'Core')
           .join('.')}}`;
         const operator = pow < 0 ? '/' : '*';
-        const calc = (p) =>
-          p === 0
-            ? baseRef
-            : `${baseRef} ${operator} ${new Array(Math.abs(p))
-                .fill(ratioRef)
-                .join(` ${operator} `)}`;
-        const _val = calc(pow);
-        const _next = calc(pow + 1);
-        const _sub = `(${_next} - ${_val}) * ${sub_step}`;
-        value = sub_step > 0 ? `${_val} + (${_sub})` : _val;
+        if (not_really_modular_just_multiply_base) {
+          value = `${baseRef} * ${not_really_modular_just_multiply_base}`;
+        } else {
+          const calc = (p) =>
+            p === 0
+              ? baseRef
+              : `${baseRef} ${operator} ${new Array(Math.abs(p))
+                  .fill(ratioRef)
+                  .join(` ${operator} `)}`;
+          const _val = calc(pow);
+          const _next = calc(pow + 1);
+          const _sub = `(${_next} - ${_val}) * ${sub_step}`;
+          value = sub_step > 0 ? `${_val} + (${_sub})` : _val;
+        }
       } else if (hasMode(token) && typeof ref === 'string') {
         // Special case for hard-coded values in either light or dark mode
         value = ref;
