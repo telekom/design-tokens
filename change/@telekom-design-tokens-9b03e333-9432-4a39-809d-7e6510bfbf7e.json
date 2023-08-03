@@ -1,0 +1,7 @@
+{
+  "type": "prerelease",
+  "comment": "Fix spacing classes in tailwindcss-preset output",
+  "packageName": "@telekom/design-tokens",
+  "email": "ac@iconstorm.com",
+  "dependentChangeType": "patch"
+}
