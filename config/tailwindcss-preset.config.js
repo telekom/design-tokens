@@ -35,7 +35,7 @@ StyleDictionary.registerFormat({
     dictionary.allTokens
       .filter((token) => token.path[0] !== 'core')
       .map(remapConfigKeys)
-      // .map(patchSpacingKeys)
+      .map(patchSpacingKeys)
       .map(patchStandardToDefault)
       .forEach((token) => {
         deep(tokens, token.configKeys, `var(--${token.name})`);
@@ -43,11 +43,11 @@ StyleDictionary.registerFormat({
 
     const rawSource = `
       ${header}
-      
+
       const plugin = require('tailwindcss/plugin');
 
       /**
-       * Flatten shadow keys similarly to 
+       * Flatten shadow keys similarly to
        * \`flattenColorPalette\` utility function used by core color plugins
        */
       const flattenShadows = (shadows) =>
@@ -62,7 +62,7 @@ StyleDictionary.registerFormat({
           )
         )
 
-      module.exports = 
+      module.exports =
         {
           theme: ${JSON.stringify(tokens)},
           plugins: [
@@ -124,6 +124,7 @@ const mappings = [
   { original: ['typography', 'font-family'], tailwindcss: ['fontFamily'] },
   { original: ['typography', 'font-weight'], tailwindcss: ['fontWeight'] },
   { original: ['typography', 'line-spacing'], tailwindcss: ['lineHeight'] },
+  { original: ['size'], tailwindcss: ['spacing'] },
   {
     original: ['typography', 'letter-spacing'],
     tailwindcss: ['letterSpacing'],
@@ -146,21 +147,23 @@ function remapConfigKeys(token) {
 }
 
 /**
- * Helper function to patch spacing keys (remove `x-` prefix)
- * Example: `x-1` -> `1`
+ * Helper function to flatten spacing keys.
+ * Additionally transforms `componsition/space-{n}` into `{n}`
  */
-// function patchSpacingKeys(token) {
-//   if (token.path[0] === 'spacing') {
-//     token.configKeys[1] = token.configKeys[1].substring(2);
-//   }
-//   return token;
-// }
+function patchSpacingKeys(token) {
+  if (token.path[0] === 'spacing' || token.path[0] === 'size') {
+    token.configKeys = token.path.includes('composition')
+      ? [token.configKeys[0], parseInt(token.path.at(-1).split('-').at(-1), 10)]
+      : [token.configKeys[0], token.configKeys.slice(1).join('-')];
+  }
+  return token;
+}
 
 /**
  * Helper function to patch `standard` keys to `DEFAULT`
  */
 function patchStandardToDefault(token) {
-  if (token.path.at(-1) === 'standard') {
+  if (token.path.at(-1) === 'standard' && token.path[0] !== 'size') {
     token.configKeys[token.configKeys.length - 1] = 'DEFAULT';
   }
   return token;
