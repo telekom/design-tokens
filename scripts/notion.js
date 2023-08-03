@@ -226,8 +226,8 @@ function create_tokens_database(parent_page_id) {
     title: [
       {
         type: 'text',
-        text: { content: 'New database' },
-        plain_text: 'New database',
+        text: { content: 'Tokens database' },
+        plain_text: 'Tokens database',
       },
     ],
     properties: source_database_props,
