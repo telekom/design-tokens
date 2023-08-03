@@ -25,7 +25,7 @@
     }
   </style>
 </head>
-<body>
+<body data-type-scale="">
   <p>
     <label for="options">Type Scale</label>
     <select id="options">
@@ -45,8 +45,11 @@
   <p style="font: var(--telekom-text-style-heading-6)">Heading 6. <font-size></font-size> Blablabla blablablablabla.</p>
   <p style="font: var(--telekom-text-style-lead-text)">Lead Text. <font-size></font-size> Blabla blablablabla blablablabla, blabla blablabla bla. Blablablabla, bla, blabla blablablablabla bla bla, bla blabla blablablablabla blablablabla blabla. Bla bla, blablabla, bla, blablablablabla blablablabla blablablabla blabla blablablablabla. Blablabla, bla blablabla blablablabla blabla, blablablabla blablablabla bla.</p>
   <p style="font: var(--telekom-text-style-ui)">UI. <font-size></font-size> Bla, blablablabla bla blablablabla bla blabla blabla blablablabla blabla blablablablabla blablablablabla bla. Blabla blablablabla, blablablablabla, bla, blablablabla blablabla.</p>
+  <p style="font: var(--telekom-text-style-ui-bold)">UI Bold. <font-size></font-size> Bla, blablablabla bla blablablabla bla blabla blabla blablablabla blabla blablablablabla blablablablabla bla. Blabla blablablabla, blablablablabla, bla, blablablabla blablabla.</p>
   <p style="font: var(--telekom-text-style-body)">Body. <font-size></font-size> Blablablablabla bla blablablablabla bla blablablabla blabla blabla blabla blablabla. Bla blablabla bla blablablabla, bla, blablablabla blabla bla. Blablabla, blablablabla blablablablabla blablabla blablablablabla blablablabla bla, blablablablabla blablablablabla, blablablablabla blablablabla bla.</p>
+  <p style="font: var(--telekom-text-style-body-bold)">Body Bold. <font-size></font-size> Blablablablabla bla blablablablabla bla blablablabla blabla blabla blabla blablabla. Bla blablabla bla blablablabla, bla, blablablabla blabla bla. Blablabla, blablablabla blablablablabla blablabla blablablablabla blablablabla bla, blablablablabla blablablablabla, blablablablabla blablablabla bla.</p>
   <p style="font: var(--telekom-text-style-caption)">Caption. <font-size></font-size> Bla, blablablabla bla blablablabla</p>
+  <p style="font: var(--telekom-text-style-caption-bold)">Caption Bold. <font-size></font-size> Bla, blablablabla bla blablablabla</p>
   <p style="font: var(--telekom-text-style-small)">Small. <font-size></font-size> Blabla blablablablabla bla blablabla, blablabla blabla. Blablabla blablabla blabla blablablabla blabla blablablabla. Blabla blabla blablablablabla, blablablablabla blablabla blabla. Blablablabla blablabla blablabla, blablablabla, blablabla bla.</p>
 
   <script>
@@ -63,7 +66,8 @@
       
       set() {
         const style = getComputedStyle(this.parentElement)
-        const lineHeightUnitless = parseFloat(style.lineHeight, 10) / parseFloat(style.fontSize, 10)
+        const lineHeightPx = parseFloat(style.lineHeight, 10)
+        const lineHeightUnitless = lineHeightPx / parseFloat(style.fontSize, 10)
         this.info = `${style.fontSize}/${lineHeightUnitless.toFixed(2)}`
         this.update()
       }
