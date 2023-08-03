@@ -10,11 +10,10 @@ const Papa = require('papaparse');
   4. Set both the integration secret (token) and database id as environment variables (below)
 */
 
-const INTEGRATION_SECRET = process.env.NOTION_TOKEN;
-const LIST_OF_SOURCES_DATABASE_ID = process.env.NOTION_DATABASE_ID;
-const PAGE_EMOJI = '🍬';
-const DATABASE_EMOJI = '🍭';
-const TEST_LIMIT = 10;
+const INTEGRATION_SECRET = process.env.NOTION_TOKEN || 'secret_XXhiZjBRILpsvqg7xSoRFuSQ19EY0USla0uyJg0IHGu';
+const LIST_OF_SOURCES_DATABASE_ID = process.env.NOTION_DATABASE_ID || 'fba0e85618c64891b38318e71f23b98b';
+const PAGE_EMOJI = '💾';
+const TEST_LIMIT = undefined;
 
 const Tier_select_opts = [
   { name: 'Core', color: 'default' },
@@ -220,10 +219,6 @@ function create_source_page(title) {
 
 function create_tokens_database(parent_page_id) {
   return notion.databases.create({
-    icon: {
-      type: 'emoji',
-      emoji: DATABASE_EMOJI,
-    },
     parent: {
       type: 'page_id',
       page_id: parent_page_id,

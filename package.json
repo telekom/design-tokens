@@ -21,7 +21,7 @@
     "format": "prettier --write \"src/**/*{json,json5}\" \"scripts/**/*.js\" \"config/**/*.js\"",
     "sketch-uuid": "uuid | awk '{print toupper($0)}'",
     "uuid-copy": "uuid | tr -d '\\n' | pbcopy",
-    "test-notion": "node scripts/notion.js"
+    "update:notion": "node scripts/notion.js"
   },
   "repository": {
     "type": "git",
