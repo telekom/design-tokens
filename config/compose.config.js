@@ -6,6 +6,17 @@ const WHITELABEL = process.env.WHITELABEL !== 'false';
 
 
 StyleDictionary.registerTransform({
+  type: 'name',
+  name: 'name/camelCase',
+  matcher: (token) => token.original.type === 'color',
+  transformer: (token) => {
+    const formatted = token.path.map(el => format(el))
+    token.name = `Telekom${formatted.toString().replace(/,/g, '')}`
+    return token.name
+  }
+});
+
+StyleDictionary.registerTransform({
   type: 'value',
   name: 'color/composeColor',
   matcher: (token) => token.original.type === 'color',
@@ -34,6 +45,7 @@ StyleDictionary.registerTransform({
 const composeObjectTransformGroup = [
     'has-alpha',
     'color/composeColor',
+    'name/camelCase',
     // 'comment/composeStripComments'
   ];
 
@@ -65,8 +77,6 @@ module.exports = {
             filter: (token) => {
                 if (token.path[0] !== 'core' && !token.path.includes('experimental') && token.type === 'color') {
                   {
-                      const formatted = token.path.map(el => format(el))
-                      token.name = `Telekom${formatted.toString().replace(/,/g, '')}`
                       // delete token.comment
                       // delete token.original.comment
                       return token
@@ -89,8 +99,6 @@ module.exports = {
             filter: (token) => {
                 if (token.path[0] !== 'core' && token.original.value?.dark != null && token.type === 'color')
                 {
-                    const formatted = token.path.map(el => format(el))
-                    token.name = `Telekom${formatted.toString().replace(/,/g, '')}`
                     return token
                 }
             }
