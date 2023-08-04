@@ -133,32 +133,6 @@ StyleDictionary.registerTransform({
   transformer: StyleDictionary.transform['color/css'].transformer,
 });
 
-StyleDictionary.registerTransform({
-  type: 'value',
-  name: 'color/composeColor',
-  matcher: (token) => token.original.type === 'color',
-  transformer: (token) => {
-    const hex8 = Color(token.value).toHex8();
-    return `Color(0x${hex8})`;
-  }
-});
-
-StyleDictionary.registerTransform({
-  type: 'value',
-  name: 'has-alpha',
-  transitive: true, 
-  transformer: function (token) {
-    if (token.value?.alpha != null) {
-      const hex = Color(token.value.color.replace('Color(0x', '').slice(0, -3))
-      const hex8withAlpha = hex.setAlpha(token.value.alpha)
-      token.value = `Color(0x${hex8withAlpha.toHex8()})`;
-      return token.value
-    } else {
-      return token.value;      
-    }
-  },
-});
-
 /**
  * Handle composite colors with `alpha`, also for "shadow" type
  * e.g. { value: { color: "{core.color.black}", alpha: 0.5 }
