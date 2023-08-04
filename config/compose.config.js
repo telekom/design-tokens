@@ -2,7 +2,9 @@ const { PREFIX, OUTPUT_PATH, OUTPUT_BASE_FILENAME } = process.env;
 const WHITELABEL = process.env.WHITELABEL !== 'false';
 
 const composeObjectTransformGroup = [
+    'has-alpha',
     'color/composeColor',
+    // 'comment/composeStripComments'
   ];
 
 function format(string){
@@ -32,10 +34,11 @@ module.exports = {
             className: 'ScaleTokensLight',
             filter: (token) => {
                 if (token.path[0] !== 'core' && !token.path.includes('experimental') && token.type === 'color') {
-
                   {
                       const formatted = token.path.map(el => format(el))
                       token.name = `Telekom${formatted.toString().replace(/,/g, '')}`
+                      // delete token.comment
+                      // delete token.original.comment
                       return token
                   }
                 }
@@ -55,7 +58,6 @@ module.exports = {
             className: 'ScaleTokensDark',
             filter: (token) => {
                 if (token.path[0] !== 'core' && token.original.value?.dark != null && token.type === 'color')
-
                 {
                     const formatted = token.path.map(el => format(el))
                     token.name = `Telekom${formatted.toString().replace(/,/g, '')}`
