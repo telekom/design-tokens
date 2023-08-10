@@ -109,7 +109,7 @@ function formatJSON(allTokens, { dictionary, mode }) {
       path[0] === 'Shadow' ||
       // why is this here, shouldn't font styles be grouped together under Typography?
       path[0] === 'Typography' ||
-      path[0] === 'Core' 
+      path[0] === 'Core'
     ) {
       path.shift();
     }
@@ -173,7 +173,6 @@ function getJSONValue(token, { dictionary, mode }) {
   // Keep reference when appropriate e.g. `{Core.Color.Black}`
   // (mode is important!)
   if (dictionary.usesReference(token.original.value)) {
-
     let refs;
 
     if (hasMode(token)) {
@@ -230,9 +229,8 @@ function getJSONValue(token, { dictionary, mode }) {
           const _path = _ref.path.map(humanCase).filter((x) => x !== 'Core');
           value = value.replace(_ref.value, () => `{${_path.join('.')}}`);
         });
-      } 
-      else if (token.path.includes('text-style')) {
-        refs.forEach( (_ref) => {
+      } else if (token.path.includes('text-style')) {
+        refs.forEach((_ref) => {
           // we could use the path to reference typography token, doesnt work in studio
           const path = _ref.path.map(humanCase).filter((x) => x !== 'Core');
           if (path.includes('Font Family')) {
@@ -259,10 +257,9 @@ function getJSONValue(token, { dictionary, mode }) {
           } else if (path.includes('Text Case')) {
             // value.textCase = `{${path.join('.')}}`;
             value.textCase = `${_ref.value}`;
-          }          
-        })
-      }
-      else {
+          }
+        });
+      } else {
         // Everything else!
         const path = ref.path.map(humanCase).filter((x) => x !== 'Core');
         value = `{${path.join('.')}}`;
@@ -304,7 +301,7 @@ StyleDictionary.registerTransform({
       letterSpacing: `${value['letter-spacing']}`,
       paragraphSpacing: '0',
       textDecoration: 'none',
-      textCase: 'none',         
+      textCase: 'none',
     };
   },
 });
