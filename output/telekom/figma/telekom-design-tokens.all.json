@@ -1908,75 +1908,237 @@
     },
     "Text Style": {
       "Badge": {
-        "value": "{Typography.Font Family.Sans}",
+        "value": {
+          "fontFamily": "TeleNeo",
+          "fontWeight": "Regular",
+          "lineHeight": "120%",
+          "fontSize": "10",
+          "letterSpacing": "0%",
+          "paragraphSpacing": "0",
+          "textDecoration": "none",
+          "textCase": "none"
+        },
         "type": "typography"
       },
       "Small": {
-        "value": "{Typography.Font Family.Sans}",
+        "value": {
+          "fontFamily": "TeleNeo",
+          "fontWeight": "Medium",
+          "lineHeight": "135%",
+          "fontSize": "12",
+          "letterSpacing": "0%",
+          "paragraphSpacing": "0",
+          "textDecoration": "none",
+          "textCase": "none"
+        },
         "type": "typography"
       },
       "Small Bold": {
-        "value": "{Typography.Font Family.Sans}",
+        "value": {
+          "fontFamily": "TeleNeo",
+          "fontWeight": "Bold",
+          "lineHeight": "135%",
+          "fontSize": "12",
+          "letterSpacing": "0%",
+          "paragraphSpacing": "0",
+          "textDecoration": "none",
+          "textCase": "none"
+        },
         "type": "typography"
       },
       "Caption": {
-        "value": "{Typography.Font Family.Sans}",
+        "value": {
+          "fontFamily": "TeleNeo",
+          "fontWeight": "Regular",
+          "lineHeight": "140%",
+          "fontSize": "14",
+          "letterSpacing": "0%",
+          "paragraphSpacing": "0",
+          "textDecoration": "none",
+          "textCase": "none"
+        },
         "type": "typography"
       },
       "Caption Bold": {
-        "value": "{Typography.Font Family.Sans}",
+        "value": {
+          "fontFamily": "TeleNeo",
+          "fontWeight": "Bold",
+          "lineHeight": "140%",
+          "fontSize": "14",
+          "letterSpacing": "0%",
+          "paragraphSpacing": "0",
+          "textDecoration": "none",
+          "textCase": "none"
+        },
         "type": "typography"
       },
       "Body": {
-        "value": "{Typography.Font Family.Sans}",
+        "value": {
+          "fontFamily": "TeleNeo",
+          "fontWeight": "Regular",
+          "lineHeight": "140%",
+          "fontSize": "16",
+          "letterSpacing": "0%",
+          "paragraphSpacing": "0",
+          "textDecoration": "none",
+          "textCase": "none"
+        },
         "type": "typography"
       },
       "Body Bold": {
-        "value": "{Typography.Font Family.Sans}",
+        "value": {
+          "fontFamily": "TeleNeo",
+          "fontWeight": "Bold",
+          "lineHeight": "140%",
+          "fontSize": "16",
+          "letterSpacing": "0%",
+          "paragraphSpacing": "0",
+          "textDecoration": "none",
+          "textCase": "none"
+        },
         "type": "typography"
       },
       "UI": {
-        "value": "{Typography.Font Family.Sans}",
+        "value": {
+          "fontFamily": "TeleNeo",
+          "fontWeight": "Medium",
+          "lineHeight": "100%",
+          "fontSize": "16",
+          "letterSpacing": "0%",
+          "paragraphSpacing": "0",
+          "textDecoration": "none",
+          "textCase": "none"
+        },
         "type": "typography"
       },
       "UI Bold": {
-        "value": "{Typography.Font Family.Sans}",
+        "value": {
+          "fontFamily": "TeleNeo",
+          "fontWeight": "Bold",
+          "lineHeight": "100%",
+          "fontSize": "16",
+          "letterSpacing": "0%",
+          "paragraphSpacing": "0",
+          "textDecoration": "none",
+          "textCase": "none"
+        },
         "type": "typography"
       },
       "Lead Text": {
-        "value": "{Typography.Font Family.Sans}",
+        "value": {
+          "fontFamily": "TeleNeo",
+          "fontWeight": "Regular",
+          "lineHeight": "140%",
+          "fontSize": "20",
+          "letterSpacing": "0%",
+          "paragraphSpacing": "0",
+          "textDecoration": "none",
+          "textCase": "none"
+        },
         "type": "typography"
       },
       "Heading 6": {
-        "value": "{Typography.Font Family.Sans}",
+        "value": {
+          "fontFamily": "TeleNeo",
+          "fontWeight": "Bold",
+          "lineHeight": "140%",
+          "fontSize": "16",
+          "letterSpacing": "0%",
+          "paragraphSpacing": "0",
+          "textDecoration": "none",
+          "textCase": "none"
+        },
         "type": "typography"
       },
       "Heading 5": {
-        "value": "{Typography.Font Family.Sans}",
+        "value": {
+          "fontFamily": "TeleNeo",
+          "fontWeight": "ExtraBold",
+          "lineHeight": "140%",
+          "fontSize": "20",
+          "letterSpacing": "0%",
+          "paragraphSpacing": "0",
+          "textDecoration": "none",
+          "textCase": "none"
+        },
         "type": "typography"
       },
       "Heading 4": {
-        "value": "{Typography.Font Family.Sans}",
+        "value": {
+          "fontFamily": "TeleNeo",
+          "fontWeight": "ExtraBold",
+          "lineHeight": "135%",
+          "fontSize": "24",
+          "letterSpacing": "0%",
+          "paragraphSpacing": "0",
+          "textDecoration": "none",
+          "textCase": "none"
+        },
         "type": "typography"
       },
       "Heading 3": {
-        "value": "{Typography.Font Family.Sans}",
+        "value": {
+          "fontFamily": "TeleNeo",
+          "fontWeight": "ExtraBold",
+          "lineHeight": "125%",
+          "fontSize": "32",
+          "letterSpacing": "0%",
+          "paragraphSpacing": "0",
+          "textDecoration": "none",
+          "textCase": "none"
+        },
         "type": "typography"
       },
       "Heading 2": {
-        "value": "{Typography.Font Family.Sans}",
+        "value": {
+          "fontFamily": "TeleNeo",
+          "fontWeight": "ExtraBold",
+          "lineHeight": "114.99999999999999%",
+          "fontSize": "42",
+          "letterSpacing": "0%",
+          "paragraphSpacing": "0",
+          "textDecoration": "none",
+          "textCase": "none"
+        },
         "type": "typography"
       },
       "Heading 1": {
-        "value": "{Typography.Font Family.Sans}",
+        "value": {
+          "fontFamily": "TeleNeo",
+          "fontWeight": "ExtraBold",
+          "lineHeight": "120%",
+          "fontSize": "54",
+          "letterSpacing": "0%",
+          "paragraphSpacing": "0",
+          "textDecoration": "none",
+          "textCase": "none"
+        },
         "type": "typography"
       },
       "Title 2": {
-        "value": "{Typography.Font Family.Sans}",
+        "value": {
+          "fontFamily": "TeleNeo",
+          "fontWeight": "ExtraBold",
+          "lineHeight": "114.99999999999999%",
+          "fontSize": "68",
+          "letterSpacing": "0%",
+          "paragraphSpacing": "0",
+          "textDecoration": "none",
+          "textCase": "none"
+        },
         "type": "typography"
       },
       "Title 1": {
-        "value": "{Typography.Font Family.Sans}",
+        "value": {
+          "fontFamily": "TeleNeo",
+          "fontWeight": "ExtraBold",
+          "lineHeight": "114.99999999999999%",
+          "fontSize": "76",
+          "letterSpacing": "0%",
+          "paragraphSpacing": "0",
+          "textDecoration": "none",
+          "textCase": "none"
+        },
         "type": "typography"
       }
     },
