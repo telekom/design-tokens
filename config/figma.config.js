@@ -137,9 +137,6 @@ function getJSONValue(token, { dictionary, mode }) {
   }
   // Set type
   if (token.path.includes('typography')) {
-    if (token.path.includes('text-style')) {
-      console.log('INCLUDES TYPOGRAPHY!')
-    }
     if (token.path.includes('font-size') || token.path.includes('font-scale')) {
       attributes.type = 'fontSizes';
     }
@@ -156,7 +153,6 @@ function getJSONValue(token, { dictionary, mode }) {
       attributes.type = 'letterSpacing';
     }
   } else if (token.path.includes('text-style')) {
-    console.log('INCLUDES TEXT STYLE!', token.path, token)
     attributes.type = categoryTypeMap['text-style'];
   } else if (token.path.includes('shadow')) {
     attributes.type = categoryTypeMap['shadow'];
