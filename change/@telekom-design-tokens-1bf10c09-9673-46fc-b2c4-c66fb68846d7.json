@@ -1,0 +1,7 @@
+{
+  "type": "prerelease",
+  "comment": "fix figma output to pass all text styles values",
+  "packageName": "@telekom/design-tokens",
+  "email": "felix.weber@iconstorm.com",
+  "dependentChangeType": "patch"
+}

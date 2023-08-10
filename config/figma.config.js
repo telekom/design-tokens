@@ -107,6 +107,7 @@ function formatJSON(allTokens, { dictionary, mode }) {
     if (
       path[0] === 'Color' ||
       path[0] === 'Shadow' ||
+      // why is this here, shouldn't font styles be grouped together under Typography?
       path[0] === 'Typography' ||
       path[0] === 'Core'
     ) {
@@ -114,6 +115,7 @@ function formatJSON(allTokens, { dictionary, mode }) {
     }
     deep(output, path, getJSONValue(token, { dictionary, mode }));
   });
+
   return output;
 }
 
@@ -171,14 +173,16 @@ function getJSONValue(token, { dictionary, mode }) {
   // Keep reference when appropriate e.g. `{Core.Color.Black}`
   // (mode is important!)
   if (dictionary.usesReference(token.original.value)) {
-    let refs = hasMode(token)
-      ? [
-          ...getRefOrHardcodedValue(token.original.value.light, { dictionary }),
-          ...getRefOrHardcodedValue(token.original.value.dark, { dictionary }),
-        ]
-      : dictionary.getReferences(token.original.value);
-    // ! "shadow" type core tokens result in refs.length === 0
-    // (color modifiers are not supported within shadow tokens)
+    let refs;
+
+    if (hasMode(token)) {
+      refs = [
+        ...getRefOrHardcodedValue(token.original.value.light, { dictionary }),
+        ...getRefOrHardcodedValue(token.original.value.dark, { dictionary }),
+      ];
+    } else {
+      refs = dictionary.getReferences(token.original.value);
+    }
     if (refs.length > 0) {
       let ref = refs[0];
       if (typeof mode !== 'undefined' && refs.length === 2) {
@@ -230,6 +234,36 @@ function getJSONValue(token, { dictionary, mode }) {
           const _path = _ref.path.map(humanCase).filter((x) => x !== 'Core');
           value = value.replace(_ref.value, () => `{${_path.join('.')}}`);
         });
+      } else if (token.path.includes('text-style')) {
+        refs.forEach((_ref) => {
+          // we could use the path to reference typography token, doesnt work in studio
+          const path = _ref.path.map(humanCase).filter((x) => x !== 'Core');
+          if (path.includes('Font Family')) {
+            // value.fontFamily = `{${path.join('.')}}`;
+            value.fontFamily = `${_ref.value}`;
+          } else if (path.includes('Font Weight')) {
+            // value.fontWeight = `{${path.join('.')}}`;
+            value.fontWeight = `${_ref.value}`;
+          } else if (path.includes('Line Spacing')) {
+            // value.lineHeight = `{${path.join('.')}}`;
+            value.lineHeight = `${_ref.value}`;
+          } else if (path.includes('Font Size')) {
+            // value.fontSize = `{${path.join('.')}}`;
+            value.fontSize = `${_ref.value}`;
+          } else if (path.includes('Letter Spacing')) {
+            // value.letterSpacing = `{${path.join('.')}}`;
+            value.letterSpacing = `${_ref.value}`;
+          } else if (path.includes('Paragraph Spacing')) {
+            // value.paragraphSpacing = `{${path.join('.')}}`;
+            value.paragraphSpacing = `${_ref.value}`;
+          } else if (path.includes('Text Decoration')) {
+            // value.textDecoration = `{${path.join('.')}}`;
+            value.textDecoration = `${_ref.value}`;
+          } else if (path.includes('Text Case')) {
+            // value.textCase = `{${path.join('.')}}`;
+            value.textCase = `${_ref.value}`;
+          }
+        });
       } else {
         // Everything else!
         const path = ref.path.map(humanCase).filter((x) => x !== 'Core');
@@ -237,7 +271,6 @@ function getJSONValue(token, { dictionary, mode }) {
       }
     }
   }
-
   return {
     value,
     ...attributes,
@@ -258,11 +291,19 @@ StyleDictionary.registerTransform({
   transformer: function (token) {
     const { value, path } = token;
     return {
-      fontFamily: path.includes('mono') ? 'monospace' : 'TeleNeo',
-      fontWeight: fontWeightMap[value['font-weight']],
-      lineHeight: `${value['line-spacing'] * 100}%`,
-      fontSize: value['font-size'].replace(/px$/, ''),
-      letterSpacing: value['letter-spacing'] + '%',
+      // fontFamily: path.includes('mono') ? 'monospace' : 'TeleNeo',
+      // fontWeight: fontWeightMap[value['font-weight']],
+      // lineHeight: `${value['line-spacing'] * 100}%`,
+      // fontSize: value['font-size'].replace(/px$/, ''),
+      // letterSpacing: value['letter-spacing'] + '%',
+      // paragraphSpacing: '0',
+      // textDecoration: 'none',
+      // textCase: 'none',
+      fontFamily: `${value['font-family']}`,
+      fontWeight: `${value['font-weight']}`,
+      lineHeight: `${value['line-spacing']}`,
+      fontSize: `${value['font-size']}`,
+      letterSpacing: `${value['letter-spacing']}`,
       paragraphSpacing: '0',
       textDecoration: 'none',
       textCase: 'none',
