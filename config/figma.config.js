@@ -235,34 +235,21 @@ function getJSONValue(token, { dictionary, mode }) {
           value = value.replace(_ref.value, () => `{${_path.join('.')}}`);
         });
       } else if (token.path.includes('text-style')) {
+        // Special case for text styles
+        const pathToTokensStudioKeyMap = {
+          'Font Family': 'fontFamily',
+          'Font Size': 'fontSize',
+          'Font Weight': 'fontWeight',
+          'Line Spacing': 'lineHeight',
+          'Letter Spacing': 'letterSpacing',
+        };
         refs.forEach((_ref) => {
-          // we could use the path to reference typography token, doesnt work in studio
           const path = _ref.path.map(humanCase).filter((x) => x !== 'Core');
-          if (path.includes('Font Family')) {
-            // value.fontFamily = `{${path.join('.')}}`;
-            value.fontFamily = `${_ref.value}`;
-          } else if (path.includes('Font Weight')) {
-            // value.fontWeight = `{${path.join('.')}}`;
-            value.fontWeight = `${_ref.value}`;
-          } else if (path.includes('Line Spacing')) {
-            // value.lineHeight = `{${path.join('.')}}`;
-            value.lineHeight = `${_ref.value}`;
-          } else if (path.includes('Font Size')) {
-            // value.fontSize = `{${path.join('.')}}`;
-            value.fontSize = `${_ref.value}`;
-          } else if (path.includes('Letter Spacing')) {
-            // value.letterSpacing = `{${path.join('.')}}`;
-            value.letterSpacing = `${_ref.value}`;
-          } else if (path.includes('Paragraph Spacing')) {
-            // value.paragraphSpacing = `{${path.join('.')}}`;
-            value.paragraphSpacing = `${_ref.value}`;
-          } else if (path.includes('Text Decoration')) {
-            // value.textDecoration = `{${path.join('.')}}`;
-            value.textDecoration = `${_ref.value}`;
-          } else if (path.includes('Text Case')) {
-            // value.textCase = `{${path.join('.')}}`;
-            value.textCase = `${_ref.value}`;
+          const key = path[1];
+          if (!_ref.path.includes('core')) {
+            path.shift();
           }
+          value[pathToTokensStudioKeyMap[key]] = `{${path.join('.')}}`;
         });
       } else {
         // Everything else!
