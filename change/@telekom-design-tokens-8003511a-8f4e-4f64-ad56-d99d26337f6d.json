@@ -1,7 +1,0 @@
-{
-  "type": "prerelease",
-  "comment": "Add new size/experimental, rename core/radius tokens",
-  "packageName": "@telekom/design-tokens",
-  "email": "ac@iconstorm.com",
-  "dependentChangeType": "patch"
-}

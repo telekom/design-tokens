@@ -1,8 +1,20 @@
 # Change Log - @telekom/design-tokens
 
-This log was last generated on Tue, 18 Jul 2023 12:43:52 GMT and should not be manually modified.
+This log was last generated on Mon, 18 Sep 2023 10:03:42 GMT and should not be manually modified.
 
 <!-- Start content -->
+
+## 1.0.0-beta.9
+
+Mon, 18 Sep 2023 10:03:42 GMT
+
+### Changes
+
+- fix figma output to pass all text styles values (felix.weber@iconstorm.com)
+- Make _small sizes_ in core/dimension values not modular, to prevent unwanted results while adjusting the ratio (ac@iconstorm.com)
+- Fix spacing classes in tailwindcss-preset output (ac@iconstorm.com)
+- Add new size/experimental, rename core/radius tokens (ac@iconstorm.com)
+- Add new tokens including radius/xs and radius/md-sm, shadow/intense, line-spacing/moderate and the brand new sizing (ac@iconstorm.com)
 
 ## 1.0.0-beta.8
 
