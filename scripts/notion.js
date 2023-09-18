@@ -10,8 +10,9 @@ const Papa = require('papaparse');
   4. Set both the integration secret (token) and database id as environment variables (below)
 */
 
-const INTEGRATION_SECRET = process.env.NOTION_TOKEN || 'secret_XXhiZjBRILpsvqg7xSoRFuSQ19EY0USla0uyJg0IHGu';
-const LIST_OF_SOURCES_DATABASE_ID = process.env.NOTION_DATABASE_ID || 'fba0e85618c64891b38318e71f23b98b';
+const INTEGRATION_SECRET = process.env.NOTION_TOKEN;
+const LIST_OF_SOURCES_DATABASE_ID =
+  process.env.NOTION_DATABASE_ID || 'fba0e85618c64891b38318e71f23b98b';
 const PAGE_EMOJI = '💾';
 const TEST_LIMIT = undefined;
 
