@@ -1,7 +1,0 @@
-{
-  "type": "prerelease",
-  "comment": "Make _small sizes_ in core/dimension values not modular, to prevent unwanted results while adjusting the ratio",
-  "packageName": "@telekom/design-tokens",
-  "email": "ac@iconstorm.com",
-  "dependentChangeType": "patch"
-}

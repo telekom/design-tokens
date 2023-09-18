@@ -2,6 +2,45 @@
   "name": "@telekom/design-tokens",
   "entries": [
     {
+      "date": "Mon, 18 Sep 2023 10:03:42 GMT",
+      "tag": "@telekom/design-tokens_v1.0.0-beta.9",
+      "version": "1.0.0-beta.9",
+      "comments": {
+        "prerelease": [
+          {
+            "author": "felix.weber@iconstorm.com",
+            "package": "@telekom/design-tokens",
+            "commit": "88efbfdc0e671e2cd4ae17437e5dae663c134cf0",
+            "comment": "fix figma output to pass all text styles values"
+          },
+          {
+            "author": "ac@iconstorm.com",
+            "package": "@telekom/design-tokens",
+            "commit": "580234e7b41ca42ecf181dfc0c12fec94b1afb9e",
+            "comment": "Make _small sizes_ in core/dimension values not modular, to prevent unwanted results while adjusting the ratio"
+          },
+          {
+            "author": "ac@iconstorm.com",
+            "package": "@telekom/design-tokens",
+            "commit": "262c92f9b35f95962fa2b3f022e89cd700cfd8fb",
+            "comment": "Fix spacing classes in tailwindcss-preset output"
+          },
+          {
+            "author": "ac@iconstorm.com",
+            "package": "@telekom/design-tokens",
+            "commit": "6ef06e866113dd8b6b8532827393e65c630ddf17",
+            "comment": "Add new size/experimental, rename core/radius tokens"
+          },
+          {
+            "author": "ac@iconstorm.com",
+            "package": "@telekom/design-tokens",
+            "commit": "e202deef5c69864471dc2dd9ba3bf89b386a916d",
+            "comment": "Add new tokens including radius/xs and radius/md-sm, shadow/intense, line-spacing/moderate and the brand new sizing"
+          }
+        ]
+      }
+    },
+    {
       "date": "Tue, 18 Jul 2023 12:43:52 GMT",
       "tag": "@telekom/design-tokens_v1.0.0-beta.8",
       "version": "1.0.0-beta.8",
