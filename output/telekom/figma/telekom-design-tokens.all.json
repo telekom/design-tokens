@@ -1909,11 +1909,11 @@
     "Text Style": {
       "Badge": {
         "value": {
-          "fontFamily": "TeleNeo",
-          "fontWeight": "Regular",
-          "lineHeight": "120%",
-          "fontSize": "10",
-          "letterSpacing": "0%",
+          "fontFamily": "{Font Family.Sans}",
+          "fontWeight": "{Font Weight.Regular}",
+          "lineHeight": "{Typography.Line Spacing.xs}",
+          "fontSize": "{Font Size.Badge}",
+          "letterSpacing": "{Letter Spacing.Standard}",
           "paragraphSpacing": "0",
           "textDecoration": "none",
           "textCase": "none"
@@ -1922,11 +1922,11 @@
       },
       "Small": {
         "value": {
-          "fontFamily": "TeleNeo",
-          "fontWeight": "Medium",
-          "lineHeight": "135%",
-          "fontSize": "12",
-          "letterSpacing": "0%",
+          "fontFamily": "{Font Family.Sans}",
+          "fontWeight": "{Font Weight.Medium}",
+          "lineHeight": "{Typography.Line Spacing.md}",
+          "fontSize": "{Font Size.Small}",
+          "letterSpacing": "{Letter Spacing.Standard}",
           "paragraphSpacing": "0",
           "textDecoration": "none",
           "textCase": "none"
@@ -1935,11 +1935,11 @@
       },
       "Small Bold": {
         "value": {
-          "fontFamily": "TeleNeo",
-          "fontWeight": "Bold",
-          "lineHeight": "135%",
-          "fontSize": "12",
-          "letterSpacing": "0%",
+          "fontFamily": "{Font Family.Sans}",
+          "fontWeight": "{Font Weight.Bold}",
+          "lineHeight": "{Typography.Line Spacing.md}",
+          "fontSize": "{Font Size.Small}",
+          "letterSpacing": "{Letter Spacing.Standard}",
           "paragraphSpacing": "0",
           "textDecoration": "none",
           "textCase": "none"
@@ -1948,11 +1948,11 @@
       },
       "Caption": {
         "value": {
-          "fontFamily": "TeleNeo",
-          "fontWeight": "Regular",
-          "lineHeight": "140%",
-          "fontSize": "14",
-          "letterSpacing": "0%",
+          "fontFamily": "{Font Family.Sans}",
+          "fontWeight": "{Font Weight.Regular}",
+          "lineHeight": "{Line Spacing.Standard}",
+          "fontSize": "{Font Size.Caption}",
+          "letterSpacing": "{Letter Spacing.Standard}",
           "paragraphSpacing": "0",
           "textDecoration": "none",
           "textCase": "none"
@@ -1961,11 +1961,11 @@
       },
       "Caption Bold": {
         "value": {
-          "fontFamily": "TeleNeo",
-          "fontWeight": "Bold",
-          "lineHeight": "140%",
-          "fontSize": "14",
-          "letterSpacing": "0%",
+          "fontFamily": "{Font Family.Sans}",
+          "fontWeight": "{Font Weight.Bold}",
+          "lineHeight": "{Line Spacing.Standard}",
+          "fontSize": "{Font Size.Caption}",
+          "letterSpacing": "{Letter Spacing.Standard}",
           "paragraphSpacing": "0",
           "textDecoration": "none",
           "textCase": "none"
@@ -1974,11 +1974,11 @@
       },
       "Body": {
         "value": {
-          "fontFamily": "TeleNeo",
-          "fontWeight": "Regular",
-          "lineHeight": "140%",
-          "fontSize": "16",
-          "letterSpacing": "0%",
+          "fontFamily": "{Font Family.Sans}",
+          "fontWeight": "{Font Weight.Regular}",
+          "lineHeight": "{Line Spacing.Standard}",
+          "fontSize": "{Font Size.Body}",
+          "letterSpacing": "{Letter Spacing.Standard}",
           "paragraphSpacing": "0",
           "textDecoration": "none",
           "textCase": "none"
@@ -1987,11 +1987,11 @@
       },
       "Body Bold": {
         "value": {
-          "fontFamily": "TeleNeo",
-          "fontWeight": "Bold",
-          "lineHeight": "140%",
-          "fontSize": "16",
-          "letterSpacing": "0%",
+          "fontFamily": "{Font Family.Sans}",
+          "fontWeight": "{Font Weight.Bold}",
+          "lineHeight": "{Line Spacing.Standard}",
+          "fontSize": "{Font Size.Body}",
+          "letterSpacing": "{Letter Spacing.Standard}",
           "paragraphSpacing": "0",
           "textDecoration": "none",
           "textCase": "none"
@@ -2000,11 +2000,11 @@
       },
       "UI": {
         "value": {
-          "fontFamily": "TeleNeo",
-          "fontWeight": "Medium",
-          "lineHeight": "100%",
-          "fontSize": "16",
-          "letterSpacing": "0%",
+          "fontFamily": "{Font Family.Sans}",
+          "fontWeight": "{Font Weight.Medium}",
+          "lineHeight": "{Line Spacing.None}",
+          "fontSize": "{Font Size.Body}",
+          "letterSpacing": "{Letter Spacing.Standard}",
           "paragraphSpacing": "0",
           "textDecoration": "none",
           "textCase": "none"
@@ -2013,11 +2013,11 @@
       },
       "UI Bold": {
         "value": {
-          "fontFamily": "TeleNeo",
-          "fontWeight": "Bold",
-          "lineHeight": "100%",
-          "fontSize": "16",
-          "letterSpacing": "0%",
+          "fontFamily": "{Font Family.Sans}",
+          "fontWeight": "{Font Weight.Bold}",
+          "lineHeight": "{Line Spacing.None}",
+          "fontSize": "{Font Size.Body}",
+          "letterSpacing": "{Letter Spacing.Standard}",
           "paragraphSpacing": "0",
           "textDecoration": "none",
           "textCase": "none"
@@ -2026,11 +2026,11 @@
       },
       "Lead Text": {
         "value": {
-          "fontFamily": "TeleNeo",
-          "fontWeight": "Regular",
-          "lineHeight": "140%",
-          "fontSize": "20",
-          "letterSpacing": "0%",
+          "fontFamily": "{Font Family.Sans}",
+          "fontWeight": "{Font Weight.Regular}",
+          "lineHeight": "{Line Spacing.Standard}",
+          "fontSize": "{Font Size.Callout}",
+          "letterSpacing": "{Letter Spacing.Standard}",
           "paragraphSpacing": "0",
           "textDecoration": "none",
           "textCase": "none"
@@ -2039,11 +2039,11 @@
       },
       "Heading 6": {
         "value": {
-          "fontFamily": "TeleNeo",
-          "fontWeight": "Bold",
-          "lineHeight": "140%",
-          "fontSize": "16",
-          "letterSpacing": "0%",
+          "fontFamily": "{Font Family.Sans}",
+          "fontWeight": "{Font Weight.Bold}",
+          "lineHeight": "{Line Spacing.Standard}",
+          "fontSize": "{Font Size.Body}",
+          "letterSpacing": "{Letter Spacing.Standard}",
           "paragraphSpacing": "0",
           "textDecoration": "none",
           "textCase": "none"
@@ -2052,11 +2052,11 @@
       },
       "Heading 5": {
         "value": {
-          "fontFamily": "TeleNeo",
-          "fontWeight": "ExtraBold",
-          "lineHeight": "140%",
-          "fontSize": "20",
-          "letterSpacing": "0%",
+          "fontFamily": "{Font Family.Sans}",
+          "fontWeight": "{Font Weight.Extra Bold}",
+          "lineHeight": "{Line Spacing.Standard}",
+          "fontSize": "{Font Size.Callout}",
+          "letterSpacing": "{Letter Spacing.Standard}",
           "paragraphSpacing": "0",
           "textDecoration": "none",
           "textCase": "none"
@@ -2065,11 +2065,11 @@
       },
       "Heading 4": {
         "value": {
-          "fontFamily": "TeleNeo",
-          "fontWeight": "ExtraBold",
-          "lineHeight": "135%",
-          "fontSize": "24",
-          "letterSpacing": "0%",
+          "fontFamily": "{Font Family.Sans}",
+          "fontWeight": "{Font Weight.Extra Bold}",
+          "lineHeight": "{Typography.Line Spacing.md}",
+          "fontSize": "{Font Size.Headline 3}",
+          "letterSpacing": "{Letter Spacing.Standard}",
           "paragraphSpacing": "0",
           "textDecoration": "none",
           "textCase": "none"
@@ -2078,11 +2078,11 @@
       },
       "Heading 3": {
         "value": {
-          "fontFamily": "TeleNeo",
-          "fontWeight": "ExtraBold",
-          "lineHeight": "125%",
-          "fontSize": "32",
-          "letterSpacing": "0%",
+          "fontFamily": "{Font Family.Sans}",
+          "fontWeight": "{Font Weight.Extra Bold}",
+          "lineHeight": "{Line Spacing.Tight}",
+          "fontSize": "{Font Size.Headline 2}",
+          "letterSpacing": "{Letter Spacing.Standard}",
           "paragraphSpacing": "0",
           "textDecoration": "none",
           "textCase": "none"
@@ -2091,11 +2091,11 @@
       },
       "Heading 2": {
         "value": {
-          "fontFamily": "TeleNeo",
-          "fontWeight": "ExtraBold",
-          "lineHeight": "114.99999999999999%",
-          "fontSize": "42",
-          "letterSpacing": "0%",
+          "fontFamily": "{Font Family.Sans}",
+          "fontWeight": "{Font Weight.Extra Bold}",
+          "lineHeight": "{Line Spacing.Extra Tight}",
+          "fontSize": "{Font Size.Headline 1}",
+          "letterSpacing": "{Letter Spacing.Standard}",
           "paragraphSpacing": "0",
           "textDecoration": "none",
           "textCase": "none"
@@ -2104,11 +2104,11 @@
       },
       "Heading 1": {
         "value": {
-          "fontFamily": "TeleNeo",
-          "fontWeight": "ExtraBold",
-          "lineHeight": "120%",
-          "fontSize": "54",
-          "letterSpacing": "0%",
+          "fontFamily": "{Font Family.Sans}",
+          "fontWeight": "{Font Weight.Extra Bold}",
+          "lineHeight": "{Typography.Line Spacing.xs}",
+          "fontSize": "{Font Size.Title 3}",
+          "letterSpacing": "{Letter Spacing.Standard}",
           "paragraphSpacing": "0",
           "textDecoration": "none",
           "textCase": "none"
@@ -2117,11 +2117,11 @@
       },
       "Title 2": {
         "value": {
-          "fontFamily": "TeleNeo",
-          "fontWeight": "ExtraBold",
-          "lineHeight": "114.99999999999999%",
-          "fontSize": "68",
-          "letterSpacing": "0%",
+          "fontFamily": "{Font Family.Sans}",
+          "fontWeight": "{Font Weight.Extra Bold}",
+          "lineHeight": "{Line Spacing.Extra Tight}",
+          "fontSize": "{Font Size.Title 2}",
+          "letterSpacing": "{Letter Spacing.Standard}",
           "paragraphSpacing": "0",
           "textDecoration": "none",
           "textCase": "none"
@@ -2130,11 +2130,11 @@
       },
       "Title 1": {
         "value": {
-          "fontFamily": "TeleNeo",
-          "fontWeight": "ExtraBold",
-          "lineHeight": "114.99999999999999%",
-          "fontSize": "76",
-          "letterSpacing": "0%",
+          "fontFamily": "{Font Family.Sans}",
+          "fontWeight": "{Font Weight.Extra Bold}",
+          "lineHeight": "{Line Spacing.Extra Tight}",
+          "fontSize": "{Font Size.Title 1}",
+          "letterSpacing": "{Letter Spacing.Standard}",
           "paragraphSpacing": "0",
           "textDecoration": "none",
           "textCase": "none"
