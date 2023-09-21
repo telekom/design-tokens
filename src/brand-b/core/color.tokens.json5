@@ -1,0 +1,34 @@
+{
+  core: {
+    color: {
+      brand: {
+        comment: "Contrast with white is acceptable according to APCA for buttons, etc.",
+        standard: {
+          comment: "Defined by brand, can not be changed",
+          value: "#00FFFF",
+          type: "color",
+        },
+        dark: {
+          comment: "Brand cyan with 15% black overlay",
+          value: "#00D9D9",
+          type: "color",
+        },
+        darker: {
+          comment: "Brand cyan with 30% black overlay",
+          value: "#00B2B2",
+          type: "color",
+        },
+        light: {
+          comment: "Brand cyan with 35% white overlay",
+          value: "#59FFFF",
+          type: "color",
+        },
+        lighter: {
+          comment: "Brand cyan with 50% white overlay",
+          value: "#80FFFF",
+          type: "color",
+        },
+      },
+    },
+  },
+}

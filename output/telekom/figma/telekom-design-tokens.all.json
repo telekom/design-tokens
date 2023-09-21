@@ -4596,6 +4596,90 @@
       }
     }
   },
+  "Brand / Brand A": {
+    "Color": {
+      "Brand": {
+        "Standard": {
+          "value": "#80FFFF",
+          "type": "color",
+          "description": "Defined by brand, can not be changed"
+        },
+        "Dark": {
+          "value": "#00D900",
+          "type": "color",
+          "description": "Brand lime with 15% black overlay"
+        },
+        "Darker": {
+          "value": "#00B200",
+          "type": "color",
+          "description": "Brand lime with 30% black overlay"
+        },
+        "Light": {
+          "value": "#59FF59",
+          "type": "color",
+          "description": "Brand lime with 35% white overlay"
+        },
+        "Lighter": {
+          "value": "#80FF80",
+          "type": "color",
+          "description": "Brand lime with 50% white overlay"
+        }
+      }
+    }
+  },
+  "Brand / Brand B": {
+    "Color": {
+      "Brand": {
+        "Standard": {
+          "value": "#00FFFF",
+          "type": "color",
+          "description": "Defined by brand, can not be changed"
+        },
+        "Dark": {
+          "value": "#00D9D9",
+          "type": "color",
+          "description": "Brand cyan with 15% black overlay"
+        },
+        "Darker": {
+          "value": "#00B2B2",
+          "type": "color",
+          "description": "Brand cyan with 30% black overlay"
+        },
+        "Light": {
+          "value": "#59FFFF",
+          "type": "color",
+          "description": "Brand cyan with 35% white overlay"
+        },
+        "Lighter": {
+          "value": "#80FFFF",
+          "type": "color",
+          "description": "Brand cyan with 50% white overlay"
+        }
+      }
+    },
+    "Radius": {
+      "10": {
+        "value": "4px",
+        "type": "borderRadius"
+      },
+      "20": {
+        "value": "8px",
+        "type": "borderRadius"
+      },
+      "30": {
+        "value": "16px",
+        "type": "borderRadius"
+      },
+      "40": {
+        "value": "24px",
+        "type": "borderRadius"
+      },
+      "60": {
+        "value": "24px",
+        "type": "borderRadius"
+      }
+    }
+  },
   "$themes": [
     {
       "id": "0efe74c81045c31912f3f25ceccbb79a4021d482",
@@ -4603,6 +4687,26 @@
       "$figmaStyleReferences": {},
       "selectedTokenSets": {
         "Core": "enabled"
+      },
+      "group": "Core"
+    },
+    {
+      "id": "WTzgWaHSDHKtZsGugyVR2WxQp2Bro7DkWAwiAqf3",
+      "name": "Brand A",
+      "$figmaStyleReferences": {},
+      "selectedTokenSets": {
+        "Core": "source",
+        "Brand / Brand A": "enabled"
+      },
+      "group": "Core"
+    },
+    {
+      "id": "JqjJf4OogwdBvQrrSChBW8Fiz0XDJoPx8omAOqZo",
+      "name": "Brand B",
+      "$figmaStyleReferences": {},
+      "selectedTokenSets": {
+        "Core": "source",
+        "Brand / Brand B": "enabled"
       },
       "group": "Core"
     },
@@ -4638,11 +4742,6 @@
     }
   ],
   "$metadata": {
-    "tokenSetOrder": [
-      "Core",
-      "Global",
-      "Light",
-      "Dark"
-    ]
+    "tokenSetOrder": ["Core", "Global", "Light", "Dark"]
   }
 }
