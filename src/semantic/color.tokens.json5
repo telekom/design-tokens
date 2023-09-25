@@ -1379,7 +1379,7 @@
         hovered: {
           value: {
             light: "{core.color.orange.600}",
-            dark: "{core.color.orange.300}",
+            dark: "{core.color.orange.400}",
           },
           type: "color",
           extensions: {
