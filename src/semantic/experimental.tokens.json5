@@ -25,32 +25,6 @@
   size: {
     experimental: {
       comment: "Figma-only due to constraints, in favor of themability",
-      focus: {
-        "extra-tiny": {
-          value: "{size.icon.extra-small.value} + 2px",
-          type: "dimension",
-        },
-        tiny: {
-          value: "{size.icon.small.value} + 2px",
-          type: "dimension",
-        },
-        "extra-extra-small": {
-          value: "{size.icon.medium.value} + 2px",
-          type: "dimension",
-        },
-        "extra-small": {
-          value: "{size.icon.large.value} + 2px",
-          type: "dimension",
-        },
-        small: {
-          value: "{size.form-element-height.small.value} + 2px",
-          type: "dimension",
-        },
-        standard: {
-          value: "{size.form-element-height.standard.value} + 2px",
-          type: "dimension",
-        },
-      },
       "size-01": {
         value: "{core.dimension.2000.value} + {core.dimension.250.value}",
         type: "dimension",
