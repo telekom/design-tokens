@@ -504,7 +504,7 @@
         "type": "color"
       },
       "Hovered": {
-        "value": "{Color.Orange.300}",
+        "value": "{Color.Orange.400}",
         "type": "color"
       },
       "Pressed": {
