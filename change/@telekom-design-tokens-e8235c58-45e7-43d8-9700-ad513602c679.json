@@ -1,0 +1,7 @@
+{
+  "type": "prerelease",
+  "comment": "Fix value for color/functional/warning/hovered, remove size/experimental/focus tokens",
+  "packageName": "@telekom/design-tokens",
+  "email": "ac@iconstorm.com",
+  "dependentChangeType": "patch"
+}
