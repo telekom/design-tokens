@@ -16,7 +16,7 @@
     "build:output": "OUTPUT_BASE_FILENAME=telekom-design-tokens OUTPUT_PATH=output/telekom/ WHITELABEL=false CONFIG=figma node config/build.js",
     "change": "beachball change --branch main",
     "check": "beachball check",
-    "publish:beachball": "beachball publish",
+    "release": "beachball publish --no-publish",
     "prepublishOnly": "npm run build",
     "format": "prettier --write \"src/**/*{json,json5}\" \"scripts/**/*.js\" \"config/**/*.js\"",
     "sketch-uuid": "uuid | awk '{print toupper($0)}'",
@@ -35,7 +35,7 @@
   "homepage": "https://github.com/telekom/design-tokens#readme",
   "devDependencies": {
     "@notionhq/client": "^2.2.9",
-    "beachball": "^2.21.0",
+    "beachball": "^2.39.0",
     "deep-get-set": "^1.1.1",
     "fs-extra": "^10.0.0",
     "lodash": "^4.17.21",
