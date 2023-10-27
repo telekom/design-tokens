@@ -19,9 +19,9 @@ By following the instructions for the open source version, you obtain source cod
 
 If you want to use the source code, remove the following folders. These folders contain all the protected brand and design assets of the Telekom and are not available under the MPL-2.0 License:
 
-| Folder                                     | Content                    |
-| ------------------------------------------ | -------------------------- |
-| src/telekom                                | Telekom tokens             |
+| Folder      | Content        |
+| ----------- | -------------- |
+| src/telekom | Telekom tokens |
 
 ### Setup with NPM
 
@@ -64,6 +64,26 @@ We always welcome and encourage contributions and feedback. For more information
 ## Contributors
 
 Our commitment to open source means that we are enabling - even encouraging - all interested parties to contribute and become part of its developer community.
+
+## Release process
+
+It's good practice to add a [Change file](https://microsoft.github.io/beachball/concepts/change-files.html#what-is-a-change-file) in PRs.
+
+> Until `beta` is removed from the version, the `type` in the Change file MUST be "prerelease".
+
+When main is ready for a release, the only step needed is to run the following command locally:
+
+```
+npm run release
+```
+
+This will trigger `beachball` to do the following:
+
+Bump the package version <br>
+Update the CHANGELOG.md file <br>
+Push git tags to the repo <br>
+
+In the repo, the git tag being pushed will trigger [a GitHub action](https://github.com/telekom/design-tokens/blob/main/.github/workflows/publish.yml) that will publish the package to npm.
 
 # Licensing
 
