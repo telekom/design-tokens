@@ -1,8 +1,8 @@
-name: publish
+name: Publish to npm
 on:
   push:
     tags:
-      - "v*"
+      - "@telekom/design-tokens_v*"
   workflow_dispatch: {}
 
 jobs:
