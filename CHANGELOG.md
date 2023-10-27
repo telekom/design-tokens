@@ -1,8 +1,17 @@
 # Change Log - @telekom/design-tokens
 
-This log was last generated on Mon, 18 Sep 2023 10:03:42 GMT and should not be manually modified.
+This log was last generated on Fri, 27 Oct 2023 08:22:04 GMT and should not be manually modified.
 
 <!-- Start content -->
+
+## 1.0.0-beta.10
+
+Fri, 27 Oct 2023 08:22:04 GMT
+
+### Changes
+
+- Add publish workflow (arturo@arturu.com)
+- Fix value for color/functional/warning/hovered, remove size/experimental/focus tokens (ac@iconstorm.com)
 
 ## 1.0.0-beta.9
 
