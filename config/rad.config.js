@@ -42,7 +42,7 @@ StyleDictionary.registerAction({
       fs.readFileSync(buildPath + OUTPUT_BASE_FILENAME + '.dark.json')
     );
     const lightOnly = pick(light, Object.keys(darkOnly));
-    const data = `:root {
+    let data = `:root {
 ${printVariables(light)}
 }
 
@@ -59,6 +59,13 @@ ${printVariables(darkOnly, '    ')}
 ${printVariables(lightOnly, '    ')}
   }
 }`;
+    const typographyClasses = fs.readFileSync(
+      buildPath + OUTPUT_BASE_FILENAME + '.typography.css'
+    );
+    const colorClasses = fs.readFileSync(
+      buildPath + OUTPUT_BASE_FILENAME + '.colors.css'
+    );
+    data += '\n\n' + typographyClasses + '\n\n' + colorClasses;
     await fs.writeFile(buildPath + OUTPUT_BASE_FILENAME + '.all.css', data);
   },
   undo: async function () {
@@ -107,6 +114,27 @@ module.exports = {
             token.path[0] !== 'core' && token.original.value?.dark != null,
         },
       ],
+    },
+    extraClasses: {
+      transforms: [...cssTransformGroup],
+      prefix: '',
+      buildPath: OUTPUT_PATH + 'rad/',
+      files: [
+        {
+          destination: OUTPUT_BASE_FILENAME + '.typography.css',
+          format: 'css/typography-classes',
+          filter: (token) => {
+            return token.path[0] === 'text-style';
+          },
+        },
+        {
+          destination: OUTPUT_BASE_FILENAME + '.colors.css',
+          format: 'css/colors-classes',
+          filter: (token) => {
+            return token.path[0] === 'color' && token.path[1] === 'text-&-icon';
+          },
+        },
+      ],
       actions: ['bundle_css'],
     },
   },
@@ -125,5 +153,46 @@ StyleDictionary.registerTransform({
       return result.replace('color-', '');
     }
     return result.replace('-x-', '-x');
+  },
+});
+
+StyleDictionary.registerFormat({
+  name: 'css/typography-classes',
+  formatter: function ({ dictionary }) {
+    const obj = {};
+    dictionary.allTokens.forEach((token) => {
+      const style = token.path[1];
+      obj[style] = {
+        font: token.value,
+      };
+    });
+    return Object.keys(obj)
+      .map((typoStyle) => {
+        return `.${typoStyle} {\n${Object.keys(obj[typoStyle])
+          .map((key) => {
+            return `  ${key}: ${obj[typoStyle][key]};`;
+          })
+          .join(`\n`)}\n}`;
+      })
+      .join(`\n\n`);
+  },
+});
+
+StyleDictionary.registerFormat({
+  name: 'css/colors-classes',
+  formatter: function ({ dictionary }) {
+    return dictionary.allTokens
+      .map((token) => {
+        return (
+          '.' +
+          token.name +
+          ' {\n  color: ' +
+          'var(--' +
+          token.name +
+          ')' +
+          ';\n}'
+        );
+      })
+      .join('\n\n');
   },
 });
