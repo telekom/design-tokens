@@ -13,7 +13,7 @@ const StyleDictionary = require('style-dictionary');
 const pick = require('lodash/pick');
 const kebabCase = require('lodash/kebabCase');
 
-const { PREFIX, OUTPUT_PATH, OUTPUT_BASE_FILENAME } = process.env;
+const { OUTPUT_PATH, OUTPUT_BASE_FILENAME } = process.env;
 const WHITELABEL = process.env.WHITELABEL !== 'false';
 
 // Use custom 'name/cti/kebab2' plus 'color/alpha'
@@ -32,7 +32,7 @@ const cssTransformGroup = [
 ];
 
 StyleDictionary.registerAction({
-  name: 'bundle_css',
+  name: 'bundle_css_rad',
   do: async function (_, config) {
     const { buildPath } = config;
     const light = JSON.parse(
@@ -135,7 +135,7 @@ module.exports = {
           },
         },
       ],
-      actions: ['bundle_css'],
+      actions: ['bundle_css_rad'],
     },
   },
 };
