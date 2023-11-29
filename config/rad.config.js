@@ -8,6 +8,7 @@
  * file, You can obtain one at https://mozilla.org/MPL/2.0/.
  */
 
+const PREFIX = 'ODS';
 const fs = require('fs-extra');
 const StyleDictionary = require('style-dictionary');
 const pick = require('lodash/pick');
@@ -168,7 +169,9 @@ StyleDictionary.registerFormat({
     });
     return Object.keys(obj)
       .map((typoStyle) => {
-        return `.${typoStyle} {\n${Object.keys(obj[typoStyle])
+        return `.${PREFIX + 'Typography-' + typoStyle} {\n${Object.keys(
+          obj[typoStyle]
+        )
           .map((key) => {
             return `  ${key}: ${obj[typoStyle][key]};`;
           })
@@ -185,6 +188,8 @@ StyleDictionary.registerFormat({
       .map((token) => {
         return (
           '.' +
+          PREFIX +
+          `Colors-` +
           token.name +
           ' {\n  color: ' +
           'var(--' +
