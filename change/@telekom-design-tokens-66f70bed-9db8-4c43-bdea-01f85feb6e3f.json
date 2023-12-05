@@ -1,0 +1,7 @@
+{
+  "type": "prerelease",
+  "comment": "Add rad config",
+  "packageName": "@telekom/design-tokens",
+  "email": "@DimitrisXenias",
+  "dependentChangeType": "patch"
+}
