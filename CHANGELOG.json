@@ -2,6 +2,21 @@
   "name": "@telekom/design-tokens",
   "entries": [
     {
+      "date": "Wed, 06 Dec 2023 08:58:51 GMT",
+      "tag": "@telekom/design-tokens_v1.0.0-beta.11",
+      "version": "1.0.0-beta.11",
+      "comments": {
+        "prerelease": [
+          {
+            "author": "@DimitrisXenias",
+            "package": "@telekom/design-tokens",
+            "commit": "f013d28b04188251013015959c115ebbcfa2b611",
+            "comment": "Add rad config"
+          }
+        ]
+      }
+    },
+    {
       "date": "Fri, 27 Oct 2023 08:22:04 GMT",
       "version": "1.0.0-beta.10",
       "tag": "@telekom/design-tokens_v1.0.0-beta.10",
