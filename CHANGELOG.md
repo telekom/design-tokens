@@ -1,8 +1,16 @@
 # Change Log - @telekom/design-tokens
 
-This log was last generated on Fri, 27 Oct 2023 08:22:04 GMT and should not be manually modified.
+This log was last generated on Wed, 06 Dec 2023 08:58:51 GMT and should not be manually modified.
 
 <!-- Start content -->
+
+## 1.0.0-beta.11
+
+Wed, 06 Dec 2023 08:58:51 GMT
+
+### Changes
+
+- Add rad config (@DimitrisXenias)
 
 ## 1.0.0-beta.10
 
