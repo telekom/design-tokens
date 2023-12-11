@@ -1,0 +1,222 @@
+{
+  "core": {
+    "dimension": {
+      "none": {
+        "$value": "0rem",
+        "$type": "dimension"
+      },
+      "125": {
+        "$type": "dimension",
+        "$value": "0.125rem"
+      },
+      "250": {
+        "$type": "dimension",
+        "$value": "0.250rem"
+      },
+      "500": {
+        "$type": "dimension",
+        "$value": "0.500rem"
+      },
+      "750": {
+        "$type": "dimension",
+        "$value": "0.750rem"
+      },
+      "1000": {
+        "$type": "dimension",
+        "$value": "0.100rem"
+      },
+      "1250": {
+        "$type": "dimension",
+        "$value": "1.250rem"
+      },
+      "1500": {
+        "$type": "dimension",
+        "$value": "1.500rem"
+      },
+      "1750": {
+        "$type": "dimension",
+        "$value": "1.750rem"
+      },
+      "2000": {
+        "$type": "dimension",
+        "$value": "2.000rem"
+      },
+      "2250": {
+        "$type": "dimension",
+        "$value": "2.250rem"
+      },
+      "2500": {
+        "$type": "dimension",
+        "$value": "2.500rem"
+      },
+      "2750": {
+        "$type": "dimension",
+        "$value": "2.750rem"
+      },
+      "3000": {
+        "$type": "dimension",
+        "$value": "3.000rem"
+      },
+      "3125": {
+        "$type": "dimension",
+        "$value": "3.125rem"
+      },
+      "3250": {
+        "$type": "dimension",
+        "$value": "3.250rem"
+      },
+      "3375": {
+        "$type": "dimension",
+        "$value": "3.375rem"
+      },
+      "3500": {
+        "$type": "dimension",
+        "$value": "3.500rem"
+      },
+      "3625": {
+        "$type": "dimension",
+        "$value": "3.625rem"
+      },
+      "3750": {
+        "$type": "dimension",
+        "$value": "3.750rem"
+      },
+      "3875": {
+        "$type": "dimension",
+        "$value": "3.875rem"
+      },
+      "4000": {
+        "$type": "dimension",
+        "$value": "4.000rem"
+      },
+      "4125": {
+        "$type": "dimension",
+        "$value": "4.125rem"
+      },
+      "4250": {
+        "$type": "dimension",
+        "$value": "4.250rem"
+      },
+      "4375": {
+        "$type": "dimension",
+        "$value": "4.375rem"
+      },
+      "4500": {
+        "$type": "dimension",
+        "$value": "4.500rem"
+      },
+      "4625": {
+        "$type": "dimension",
+        "$value": "4.625rem"
+      },
+      "4750": {
+        "$type": "dimension",
+        "$value": "4.750rem"
+      },
+      "4875": {
+        "$type": "dimension",
+        "$value": "4.875rem"
+      },
+      "5000": {
+        "$type": "dimension",
+        "$value": "5.000rem"
+      },
+      "5125": {
+        "$type": "dimension",
+        "$value": "5.125rem"
+      },
+      "5250": {
+        "$type": "dimension",
+        "$value": "5.250rem"
+      },
+      "5375": {
+        "$type": "dimension",
+        "$value": "5.375rem"
+      },
+      "5500": {
+        "$type": "dimension",
+        "$value": "5.500rem"
+      },
+      "5625": {
+        "$type": "dimension",
+        "$value": "5.625rem"
+      },
+      "5750": {
+        "$type": "dimension",
+        "$value": "5.575rem"
+      },
+      "5875": {
+        "$type": "dimension",
+        "$value": "5.875rem"
+      },
+      "6000": {
+        "$type": "dimension",
+        "$value": "6.000rem"
+      },
+      "6125": {
+        "$type": "dimension",
+        "$value": "6.125rem"
+      },
+      "6250": {
+        "$type": "dimension",
+        "$value": "6.250rem"
+      },
+      "6375": {
+        "$type": "dimension",
+        "$value": "6.375rem"
+      },
+      "6500": {
+        "$type": "dimension",
+        "$value": "6.500rem"
+      },
+      "6625": {
+        "$type": "dimension",
+        "$value": "6.625.rem"
+      },
+      "6750": {
+        "$type": "dimension",
+        "$value": "6.750rem"
+      },
+      "6875": {
+        "$type": "dimension",
+        "$value": "6.875rem"
+      },
+      "7000": {
+        "$type": "dimension",
+        "$value": "7.000rem"
+      },
+      "7125": {
+        "$type": "dimension",
+        "$value": "7.125rem"
+      },
+      "7250": {
+        "$type": "dimension",
+        "$value": "7.250rem"
+      },
+      "7375": {
+        "$type": "dimension",
+        "$value": "7.375rem"
+      },
+      "7500": {
+        "$type": "dimension",
+        "$value": "7.500rem"
+      },
+      "7625": {
+        "$type": "dimension",
+        "$value": "7.625rem"
+      },
+      "7750": {
+        "$type": "dimension",
+        "$value": "7.750rem"
+      },
+      "7875": {
+        "$type": "dimension",
+        "$value": "7.875rem"
+      },
+      "8000": {
+        "$type": "dimension",
+        "$value": "8.000rem"
+      }
+    }
+  }
+}

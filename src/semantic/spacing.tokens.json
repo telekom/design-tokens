@@ -1,0 +1,69 @@
+{
+  "spacing": {
+    "$type": "dimension",
+    "component": {
+      "01": {
+        "$value": "{core.dimension.125}"
+      },
+      "02": {
+        "$value": "{core.dimension.500}"
+      },
+      "03": {
+        "$value": "{core.dimension.750}"
+      },
+      "04": {
+        "$value": "{core.dimension.1000}"
+      },
+      "05": {
+        "$value": "{core.dimension.1250}"
+      },
+      "06": {
+        "$value": "{core.dimension.1500}"
+      },
+      "07": {
+        "$value": "{core.dimension.2000}"
+      },
+      "08": {
+        "$value": "{core.dimension.2500}"
+      },
+      "09": {
+        "$value": "{core.dimension.3000}"
+      },
+      "10": {
+        "$value": "{core.dimension.3500}"
+      }
+    },
+    "layout": {
+      "01": {
+        "$value": "{core.dimension.1000}"
+      },
+      "02": {
+        "$value": "{core.dimension.1250}"
+      },
+      "03": {
+        "$value": "{core.dimension.2000}"
+      },
+      "04": {
+        "$value": "{core.dimension.2500}"
+      },
+      "05": {
+        "$value": "{core.dimension.3000}"
+      },
+      "06": {
+        "$value": "{core.dimension.3500}"
+      },
+      "07": {
+        "$value": "{core.dimension.4000}"
+      },
+      "08": {
+        "$value": "{core.dimension.5250}"
+      },
+      "09": {
+        "$value": "{core.dimension.6000}"
+      },
+      "10": {
+        "$value": "{core.dimension.8000}"
+      }
+    }
+  }
+}
