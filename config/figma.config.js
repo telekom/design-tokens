@@ -274,7 +274,8 @@ StyleDictionary.registerTransform({
   type: 'value',
   name: 'text-style/figma',
   transitive: true,
-  matcher: (token) => token.path[0] === 'text-style',
+  matcher: (token) =>
+    token.path[0] === 'text-style' && !token.path.includes('fluid'),
   transformer: function (token) {
     const { value, path } = token;
     return {
@@ -444,6 +445,7 @@ module.exports = {
           filter: (token) =>
             token.path[0] !== 'core' &&
             token.path[0] !== 'motion' &&
+            !token.path.includes('fluid') &&
             !shouldHaveMode(token),
         },
       ],
@@ -455,7 +457,8 @@ module.exports = {
         {
           destination: TMP_NAME + '.light.json',
           format: 'json/figma-mode',
-          filter: shouldHaveMode,
+          filter: (token) =>
+            shouldHaveMode(token) && !token.path.includes('fluid'),
           options: {
             mode: 'light',
           },
@@ -469,7 +472,8 @@ module.exports = {
         {
           destination: TMP_NAME + '.dark.json',
           format: 'json/figma-mode',
-          filter: shouldHaveMode,
+          filter: (token) =>
+            shouldHaveMode(token) && !token.path.includes('fluid'),
           options: {
             mode: 'dark',
           },

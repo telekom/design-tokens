@@ -1,0 +1,188 @@
+{
+  "text-style": {
+    fluid: {
+      // line spacing should be fluid as well!
+      comment: "Fluid scale, currently only supported in web browsers. See https://utopia.fyi/blog/clamp/",
+      badge: {
+        value: {
+          "font-family": "{typography.font-family.sans}",
+          "font-size": "{typography.font-size.fluid.badge}",
+          "font-weight": "{typography.font-weight.regular}",
+          "line-spacing": "{core.typography.line-spacing.xs}",
+          "letter-spacing": "{typography.letter-spacing.standard}",
+        },
+        type: "textStyle",
+      },
+      small: {
+        value: {
+          "font-family": "{typography.font-family.sans}",
+          "font-size": "{typography.font-size.fluid.small}",
+          "font-weight": "{typography.font-weight.medium}",
+          "line-spacing": "{core.typography.line-spacing.md}",
+          "letter-spacing": "{typography.letter-spacing.standard}",
+        },
+        type: "textStyle",
+      },
+      "small-bold": {
+        value: {
+          "font-family": "{typography.font-family.sans}",
+          "font-size": "{typography.font-size.fluid.small}",
+          "font-weight": "{typography.font-weight.bold}",
+          "line-spacing": "{core.typography.line-spacing.md}",
+          "letter-spacing": "{typography.letter-spacing.standard}",
+        },
+        type: "textStyle",
+      },
+      caption: {
+        value: {
+          "font-family": "{typography.font-family.sans}",
+          "font-size": "{typography.font-size.fluid.caption}",
+          "font-weight": "{typography.font-weight.regular}",
+          "line-spacing": "{typography.line-spacing.standard}",
+          "letter-spacing": "{typography.letter-spacing.standard}",
+        },
+        type: "textStyle",
+      },
+      "caption-bold": {
+        value: {
+          "font-family": "{typography.font-family.sans}",
+          "font-size": "{typography.font-size.fluid.caption}",
+          "font-weight": "{typography.font-weight.bold}",
+          "line-spacing": "{typography.line-spacing.standard}",
+          "letter-spacing": "{typography.letter-spacing.standard}",
+        },
+        type: "textStyle",
+      },
+      body: {
+        value: {
+          "font-family": "{typography.font-family.sans}",
+          "font-size": "{typography.font-size.fluid.body}",
+          "font-weight": "{typography.font-weight.regular}",
+          "line-spacing": "{typography.line-spacing.standard}",
+          "letter-spacing": "{typography.letter-spacing.standard}",
+        },
+        type: "textStyle",
+      },
+      "body-bold": {
+        value: {
+          "font-family": "{typography.font-family.sans}",
+          "font-size": "{typography.font-size.fluid.body}",
+          "font-weight": "{typography.font-weight.bold}",
+          "line-spacing": "{typography.line-spacing.standard}",
+          "letter-spacing": "{typography.letter-spacing.standard}",
+        },
+        type: "textStyle",
+      },
+      ui: {
+        value: {
+          "font-family": "{typography.font-family.sans}",
+          "font-size": "{typography.font-size.fluid.body}",
+          "font-weight": "{typography.font-weight.medium}",
+          "line-spacing": "{typography.line-spacing.none}",
+          "letter-spacing": "{typography.letter-spacing.standard}",
+        },
+        type: "textStyle",
+      },
+      "ui-bold": {
+        value: {
+          "font-family": "{typography.font-family.sans}",
+          "font-size": "{typography.font-size.fluid.body}",
+          "font-weight": "{typography.font-weight.bold}",
+          "line-spacing": "{typography.line-spacing.none}",
+          "letter-spacing": "{typography.letter-spacing.standard}",
+        },
+        type: "textStyle",
+      },
+      "lead-text": {
+        value: {
+          "font-family": "{typography.font-family.sans}",
+          "font-size": "{typography.font-size.fluid.callout}",
+          "font-weight": "{typography.font-weight.regular}",
+          "line-spacing": "{typography.line-spacing.standard}",
+          "letter-spacing": "{typography.letter-spacing.standard}",
+        },
+        type: "textStyle",
+      },
+      "heading-6": {
+        value: {
+          "font-family": "{typography.font-family.sans}",
+          "font-size": "{typography.font-size.fluid.body}",
+          "font-weight": "{typography.font-weight.bold}",
+          "line-spacing": "{typography.line-spacing.standard}",
+          "letter-spacing": "{typography.letter-spacing.standard}",
+        },
+        type: "textStyle",
+      },
+      "heading-5": {
+        value: {
+          "font-family": "{typography.font-family.sans}",
+          "font-size": "{typography.font-size.fluid.callout}",
+          "font-weight": "{typography.font-weight.extra-bold}",
+          "line-spacing": "{typography.line-spacing.standard}",
+          "letter-spacing": "{typography.letter-spacing.standard}",
+        },
+        type: "textStyle",
+      },
+      "heading-4": {
+        value: {
+          "font-family": "{typography.font-family.sans}",
+          "font-size": "{typography.font-size.fluid.headline-3}",
+          "font-weight": "{typography.font-weight.extra-bold}",
+          "line-spacing": "{core.typography.line-spacing.md}",
+          "letter-spacing": "{typography.letter-spacing.standard}",
+        },
+        type: "textStyle",
+      },
+      "heading-3": {
+        value: {
+          "font-family": "{typography.font-family.sans}",
+          "font-size": "{typography.font-size.fluid.headline-2}",
+          "font-weight": "{typography.font-weight.extra-bold}",
+          "line-spacing": "{typography.line-spacing.tight}",
+          "letter-spacing": "{typography.letter-spacing.standard}",
+        },
+        type: "textStyle",
+      },
+      "heading-2": {
+        value: {
+          "font-family": "{typography.font-family.sans}",
+          "font-size": "{typography.font-size.fluid.headline-1}",
+          "font-weight": "{typography.font-weight.extra-bold}",
+          "line-spacing": "{typography.line-spacing.extra-tight}",
+          "letter-spacing": "{typography.letter-spacing.standard}",
+        },
+        type: "textStyle",
+      },
+      "heading-1": {
+        value: {
+          "font-family": "{typography.font-family.sans}",
+          "font-size": "{typography.font-size.fluid.title-3}",
+          "font-weight": "{typography.font-weight.extra-bold}",
+          "line-spacing": "{core.typography.line-spacing.xs}",
+          "letter-spacing": "{typography.letter-spacing.standard}",
+        },
+        type: "textStyle",
+      },
+      "title-2": {
+        value: {
+          "font-family": "{typography.font-family.sans}",
+          "font-size": "{typography.font-size.fluid.title-2}",
+          "font-weight": "{typography.font-weight.extra-bold}",
+          "line-spacing": "{typography.line-spacing.extra-tight}",
+          "letter-spacing": "{typography.letter-spacing.standard}",
+        },
+        type: "textStyle",
+      },
+      "title-1": {
+        value: {
+          "font-family": "{typography.font-family.sans}",
+          "font-size": "{typography.font-size.fluid.title-1}",
+          "font-weight": "{typography.font-weight.extra-bold}",
+          "line-spacing": "{typography.line-spacing.extra-tight}",
+          "letter-spacing": "{typography.letter-spacing.standard}",
+        },
+        type: "textStyle",
+      },
+    },
+  },
+}
