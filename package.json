@@ -20,8 +20,7 @@
     "prepublishOnly": "npm run build",
     "format": "prettier --write \"src/**/*{json,json5}\" \"scripts/**/*.js\" \"config/**/*.js\"",
     "sketch-uuid": "uuid | awk '{print toupper($0)}'",
-    "uuid-copy": "uuid | tr -d '\\n' | pbcopy",
-    "update:notion": "node scripts/notion.js"
+    "uuid-copy": "uuid | tr -d '\\n' | pbcopy"
   },
   "repository": {
     "type": "git",
@@ -34,12 +33,10 @@
   },
   "homepage": "https://github.com/telekom/design-tokens#readme",
   "devDependencies": {
-    "@notionhq/client": "^2.2.9",
     "beachball": "^2.39.0",
     "deep-get-set": "^1.1.1",
     "fs-extra": "^10.0.0",
     "lodash": "^4.17.21",
-    "papaparse": "^5.4.1",
     "prettier": "^2.4.1",
     "rimraf": "^3.0.2",
     "style-dictionary": "^3.1.1",

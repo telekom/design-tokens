@@ -27,53 +27,6 @@ const cssTransformGroup = [
   'shadow/css',
 ];
 
-StyleDictionary.registerFormat({
-  name: `csv/notion`,
-  formatter: function ({ dictionary }) {
-    const isRef = dictionary.usesReference.bind(dictionary);
-    const hasMode = (token) =>
-      typeof token.original.value === 'object' &&
-      'light' in token.original.value;
-    const heading = [
-      'Name',
-      'Tier',
-      'Category',
-      'Type',
-      'Value',
-      'Value (dark)',
-      'Description',
-      'Is Alias?',
-    ].join(SEPARATOR);
-
-    const rows = dictionary.allTokens.map((token) => {
-      const namePath =
-        token.path[0] === 'core' ? token.path.slice(2) : token.path.slice(1);
-      const category = token.path[0] === 'core' ? token.path[1] : token.path[0];
-      let value = [token.value, ''];
-      if (hasMode(token)) {
-        value = isRef(token.original.value)
-          ? [token.original.value.light, token.original.value.dark]
-          : [token.value.light, token.value.dark];
-      } else if (isRef(token.original.value)) {
-        value[0] = token.original.value;
-      }
-
-      return [
-        namePath.map(humanCase).join(' / '), // Name
-        token.path[0] === 'core' ? 'Core' : 'Semantic', // Tier
-        humanCase(category), // Category
-        token.type, // Type
-        stringifyObjectValue(value[0], token), // Value
-        stringifyObjectValue(value[1], token), // Value (dark)
-        token.original.comment || '', // Description
-        isRef(token.original.value) ? 'Yes' : 'No', // Is Alias?
-      ].join(SEPARATOR);
-    });
-
-    return [heading, ...rows].join('\n');
-  },
-});
-
 function stringifyObjectValue(value, token) {
   if (typeof value === 'string') {
     return value;
