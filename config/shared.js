@@ -17,7 +17,7 @@ const Color = require('tinycolor2');
 
 setDefaultEnvValue(
   'CONFIG',
-  'css,rad,js,figma,sketch,docs-json,tailwindcss-preset,csv'
+  'css,rad,js,figma,sketch,docs-json,tailwindcss-preset'
 );
 setDefaultEnvValue('PREFIX', 'telekom');
 setDefaultEnvValue('OUTPUT_PATH', 'dist/');
