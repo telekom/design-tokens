@@ -14,6 +14,10 @@
           value: "#5300FF",
           type: "color",
         },
+        standard_dark: {
+          value: "#8F59FF",
+          type: "color",
+        },
         dark: {
           comment: "Brand with 15% black overlay",
           value: "#4700D9",

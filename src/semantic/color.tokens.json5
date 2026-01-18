@@ -121,7 +121,7 @@
         standard: {
           value: {
             light: "{core.color.brand.standard}",
-            dark: "{core.color.brand.standard}",
+            dark: "{core.color.brand.standard_dark}",
           },
           type: "color",
           extensions: {
@@ -689,7 +689,7 @@
       standard: {
         value: {
           light: "{core.color.brand.standard}",
-          dark: "{core.color.brand.standard}",
+          dark: "{core.color.brand.standard_dark}",
         },
         type: "color",
         extensions: {

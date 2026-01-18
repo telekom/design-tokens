@@ -53,7 +53,7 @@
     },
     "Primary": {
       "Standard": {
-        "value": "{Color.Brand.Standard}",
+        "value": "{Color.Brand.Standard_dark}",
         "type": "color"
       },
       "Hovered": {
@@ -248,7 +248,7 @@
   },
   "Primary": {
     "Standard": {
-      "value": "{Color.Brand.Standard}",
+      "value": "{Color.Brand.Standard_dark}",
       "type": "color"
     },
     "Hovered": {
