@@ -8,6 +8,11 @@
           value: "#e20074",
           type: "color",
         },
+        standard_dark: {
+          comment: "For dark mode with black background",
+          value: "#f61488",
+          type: "color",
+        },
         dark: {
           comment: "Brand magenta with 15% black overlay",
           value: "#C00063",

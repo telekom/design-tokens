@@ -53,7 +53,7 @@
     },
     "Primary": {
       "Standard": {
-        "value": "{Color.Brand.Standard}",
+        "value": "{Color.Brand.Standard_dark}",
         "type": "color"
       },
       "Hovered": {
@@ -231,7 +231,7 @@
       }
     },
     "Surface": {
-      "value": "{Color.Grey.1900}",
+      "value": "{Color.Grey.2000}",
       "type": "color",
       "description": "Use as the background of elements like cards, headers, bottom bars, etc."
     },
@@ -248,7 +248,7 @@
   },
   "Primary": {
     "Standard": {
-      "value": "{Color.Brand.Standard}",
+      "value": "{Color.Brand.Standard_dark}",
       "type": "color"
     },
     "Hovered": {

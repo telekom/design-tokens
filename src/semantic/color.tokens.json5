@@ -121,7 +121,7 @@
         standard: {
           value: {
             light: "{core.color.brand.standard}",
-            dark: "{core.color.brand.standard}",
+            dark: "{core.color.brand.standard_dark}",
           },
           type: "color",
           extensions: {
@@ -615,7 +615,7 @@
         comment: "Use as the background of elements like cards, headers, bottom bars, etc.",
         value: {
           light: "{core.color.grey.0}",
-          dark: "{core.color.grey.1900}",
+          dark: "{core.color.grey.2000}",
         },
         type: "color",
         extensions: {
@@ -689,7 +689,7 @@
       standard: {
         value: {
           light: "{core.color.brand.standard}",
-          dark: "{core.color.brand.standard}",
+          dark: "{core.color.brand.standard_dark}",
         },
         type: "color",
         extensions: {
