@@ -2,6 +2,21 @@
   "name": "@telekom/design-tokens",
   "entries": [
     {
+      "date": "Thu, 22 Jan 2026 11:26:35 GMT",
+      "version": "1.0.0-beta.12",
+      "tag": "@telekom/design-tokens_v1.0.0-beta.12",
+      "comments": {
+        "patch": [
+          {
+            "author": "baghdoust@gmail.com",
+            "package": "@telekom/design-tokens",
+            "commit": "not available",
+            "comment": "fix: add magenta color token for dark mode and adjust black level for sufficient contrast for accessibility"
+          }
+        ]
+      }
+    },
+    {
       "date": "Wed, 06 Dec 2023 08:58:51 GMT",
       "tag": "@telekom/design-tokens_v1.0.0-beta.11",
       "version": "1.0.0-beta.11",

@@ -1,8 +1,16 @@
 # Change Log - @telekom/design-tokens
 
-This log was last generated on Wed, 06 Dec 2023 08:58:51 GMT and should not be manually modified.
+This log was last generated on Thu, 22 Jan 2026 11:26:35 GMT and should not be manually modified.
 
 <!-- Start content -->
+
+## 1.0.0-beta.12
+
+Thu, 22 Jan 2026 11:26:35 GMT
+
+### Patches
+
+- fix: add magenta color token for dark mode and adjust black level for sufficient contrast for accessibility (baghdoust@gmail.com)
 
 ## 1.0.0-beta.11
 
